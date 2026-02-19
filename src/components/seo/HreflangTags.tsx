@@ -1,0 +1,28 @@
+import { Helmet } from "react-helmet-async";
+
+interface HreflangTagsProps {
+  slug?: string; // e.g. "" for home, "clubs" for /clubs
+}
+
+const LANGS = ["fr", "de", "es", "pt", "it", "en"];
+const BASE = "https://akoky.com";
+
+const HreflangTags = ({ slug = "" }: HreflangTagsProps) => {
+  const path = slug ? `/${slug}` : "";
+  return (
+    <Helmet>
+      {LANGS.map((lang) => (
+        <link
+          key={lang}
+          rel="alternate"
+          hrefLang={lang}
+          href={lang === "fr" ? `${BASE}${path}` : `${BASE}/${lang}${path}`}
+        />
+      ))}
+      <link rel="alternate" hrefLang="x-default" href={`${BASE}${path}`} />
+      <link rel="alternate" hrefLang="fr-BE" href={`https://akoky.be${path}`} />
+    </Helmet>
+  );
+};
+
+export default HreflangTags;
