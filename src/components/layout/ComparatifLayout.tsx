@@ -28,6 +28,7 @@ interface ComparatifLayoutProps {
   canonical: string;
   heroTitle: string;
   heroSubtitle: string;
+  heroImage?: string;
   competitorName: string;
   verdict: React.ReactNode;
   whyAkoky: Array<{
@@ -50,6 +51,7 @@ const ComparatifLayout = ({
   canonical,
   heroTitle,
   heroSubtitle,
+  heroImage = "https://legal.akoky.com/UPLOAD-AKOKY/AKOKY.COM/images/hero-home/home2-desktop.webp",
   competitorName,
   verdict,
   whyAkoky,
@@ -89,8 +91,8 @@ const ComparatifLayout = ({
           <div className="absolute inset-0 z-0">
             <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-background z-10" />
             <img 
-              src="https://legal.akoky.com/UPLOAD-AKOKY/AKOKY.COM/images/hero-home/home2-desktop.webp" 
-              alt="Comparatif Akoky"
+              src={heroImage} 
+              alt={`Comparatif AKOKY vs ${competitorName}`}
               className="w-full h-full object-cover opacity-40"
             />
           </div>
