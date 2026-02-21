@@ -15,6 +15,14 @@ import AkokyVsJmDate from "./pages/comparatifs/AkokyVsJmDate";
 import AkokyVsJmLibertins from "./pages/comparatifs/AkokyVsJmLibertins";
 import AkokyVsSexyLib from "./pages/comparatifs/AkokyVsSexyLib";
 import MeilleurSiteLibertin from "./pages/comparatifs/MeilleurSiteLibertin";
+import Avis from "./pages/Avis";
+import Clubbing from "./pages/Clubbing";
+import ClubbingFranceEurope from "./pages/ClubbingFranceEurope";
+import ClubbingBelgique from "./pages/ClubbingBelgique";
+import ClubbingSuisse from "./pages/ClubbingSuisse";
+import ClubbingLuxembourg from "./pages/ClubbingLuxembourg";
+import ClubsEchangistesFrance from "./pages/ClubsEchangistesFrance";
+import Parrainage from "./pages/Parrainage";
 
 const queryClient = new QueryClient();
 
@@ -38,6 +46,14 @@ const App = () => (
             <Route path="/akoky-vs-jmlibertins" element={<AkokyVsJmLibertins />} />
             <Route path="/akoky-vs-sexylib" element={<AkokyVsSexyLib />} />
             <Route path="/meilleur-site-libertin" element={<MeilleurSiteLibertin />} />
+            <Route path="/avis" element={<Avis />} />
+            <Route path="/clubbing" element={<Clubbing />} />
+            <Route path="/clubbing-france-europe" element={<ClubbingFranceEurope />} />
+            <Route path="/clubbing-belgique" element={<ClubbingBelgique />} />
+            <Route path="/clubbing-suisse" element={<ClubbingSuisse />} />
+            <Route path="/clubbing-luxembourg" element={<ClubbingLuxembourg />} />
+            <Route path="/clubs-echangistes-france" element={<ClubsEchangistesFrance />} />
+            <Route path="/parrainage" element={<Parrainage />} />
 
             {/* Autres langues — préfixe /[lang]/ */}
             <Route path="/de" element={<LangPlaceholder lang="de" />} />
