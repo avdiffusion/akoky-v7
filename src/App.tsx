@@ -23,6 +23,14 @@ import ClubbingSuisse from "./pages/ClubbingSuisse";
 import ClubbingLuxembourg from "./pages/ClubbingLuxembourg";
 import ClubsEchangistesFrance from "./pages/ClubsEchangistesFrance";
 import Parrainage from "./pages/Parrainage";
+import ClubsLibertinsBruxelles from "./pages/ClubsLibertinsBruxelles";
+import ClubsLibertinsCharleroi from "./pages/ClubsLibertinsCharleroi";
+import ClubsLibertinsFlandre from "./pages/ClubsLibertinsFlandre";
+import ClubsLibertinsGand from "./pages/ClubsLibertinsGand";
+import ClubsLibertinsGeneve from "./pages/ClubsLibertinsGeneve";
+import ClubsLibertinsDijon from "./pages/ClubsLibertinsDijon";
+import ClubsLibertinsCapDagde from "./pages/ClubsLibertinsCapDagde";
+import Application from "./pages/Application";
 
 const queryClient = new QueryClient();
 
@@ -54,6 +62,14 @@ const App = () => (
             <Route path="/clubbing-luxembourg" element={<ClubbingLuxembourg />} />
             <Route path="/clubs-echangistes-france" element={<ClubsEchangistesFrance />} />
             <Route path="/parrainage" element={<Parrainage />} />
+            <Route path="/clubs-libertins-bruxelles" element={<ClubsLibertinsBruxelles />} />
+            <Route path="/clubs-libertins-charleroi" element={<ClubsLibertinsCharleroi />} />
+            <Route path="/clubs-libertins-flandre" element={<ClubsLibertinsFlandre />} />
+            <Route path="/clubs-libertins-gand" element={<ClubsLibertinsGand />} />
+            <Route path="/clubs-libertins-geneve" element={<ClubsLibertinsGeneve />} />
+            <Route path="/clubs-libertins-dijon" element={<ClubsLibertinsDijon />} />
+            <Route path="/clubs-libertins-cap-dagde" element={<ClubsLibertinsCapDagde />} />
+            <Route path="/application" element={<Application />} />
 
             {/* Autres langues — préfixe /[lang]/ */}
             <Route path="/de" element={<LangPlaceholder lang="de" />} />
