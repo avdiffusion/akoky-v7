@@ -31,6 +31,14 @@ import ClubsLibertinsGeneve from "./pages/ClubsLibertinsGeneve";
 import ClubsLibertinsDijon from "./pages/ClubsLibertinsDijon";
 import ClubsLibertinsCapDagde from "./pages/ClubsLibertinsCapDagde";
 import Application from "./pages/Application";
+import ClubsLibertinsGrandEst from "./pages/ClubsLibertinsGrandEst";
+import ClubsLibertinsGrenoble from "./pages/ClubsLibertinsGrenoble";
+import ClubsLibertinsHautsDeFrance from "./pages/ClubsLibertinsHautsDeFrance";
+import ClubsLibertinsIleDeFrance from "./pages/ClubsLibertinsIleDeFrance";
+import ClubsLibertinsLausanne from "./pages/ClubsLibertinsLausanne";
+import ClubsLibertinsLiege from "./pages/ClubsLibertinsLiege";
+import ClubsLibertinsLille from "./pages/ClubsLibertinsLille";
+import Akoky from "./pages/Akoky";
 
 const queryClient = new QueryClient();
 
@@ -70,6 +78,17 @@ const App = () => (
             <Route path="/clubs-libertins-dijon" element={<ClubsLibertinsDijon />} />
             <Route path="/clubs-libertins-cap-dagde" element={<ClubsLibertinsCapDagde />} />
             <Route path="/application" element={<Application />} />
+            
+            {/* Nouvelles pages V3 */}
+            <Route path="/clubs-libertins-grand-est" element={<ClubsLibertinsGrandEst />} />
+            <Route path="/clubs-libertins-grenoble" element={<ClubsLibertinsGrenoble />} />
+            <Route path="/clubs-libertins-hauts-de-france" element={<ClubsLibertinsHautsDeFrance />} />
+            <Route path="/clubs-libertins-ile-de-france" element={<ClubsLibertinsIleDeFrance />} />
+            <Route path="/clubs-libertins-lausanne" element={<ClubsLibertinsLausanne />} />
+            <Route path="/clubs-libertins-liege" element={<ClubsLibertinsLiege />} />
+            <Route path="/clubs-libertins-lille" element={<ClubsLibertinsLille />} />
+            <Route path="/akoky.html" element={<Akoky />} />
+            <Route path="/akoky" element={<Akoky />} />
 
             {/* Autres langues — préfixe /[lang]/ */}
             <Route path="/de" element={<LangPlaceholder lang="de" />} />
