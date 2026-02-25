@@ -39,6 +39,11 @@ import ClubsLibertinsLausanne from "./pages/ClubsLibertinsLausanne";
 import ClubsLibertinsLiege from "./pages/ClubsLibertinsLiege";
 import ClubsLibertinsLille from "./pages/ClubsLibertinsLille";
 import Akoky from "./pages/Akoky";
+import ClubsLibertinsParis from "./pages/ClubsLibertinsParis";
+import ClubsLibertinsLyon from "./pages/ClubsLibertinsLyon";
+import ClubsLibertinsMarseille from "./pages/ClubsLibertinsMarseille";
+import ClubsLibertinsBordeaux from "./pages/ClubsLibertinsBordeaux";
+import ClubsLibertinsToulouse from "./pages/ClubsLibertinsToulouse";
 
 const queryClient = new QueryClient();
 
@@ -89,6 +94,11 @@ const App = () => (
             <Route path="/clubs-libertins-lille" element={<ClubsLibertinsLille />} />
             <Route path="/akoky.html" element={<Akoky />} />
             <Route path="/akoky" element={<Akoky />} />
+            <Route path="/clubs-libertins-paris" element={<ClubsLibertinsParis />} />
+            <Route path="/clubs-libertins-lyon" element={<ClubsLibertinsLyon />} />
+            <Route path="/clubs-libertins-marseille" element={<ClubsLibertinsMarseille />} />
+            <Route path="/clubs-libertins-bordeaux" element={<ClubsLibertinsBordeaux />} />
+            <Route path="/clubs-libertins-toulouse" element={<ClubsLibertinsToulouse />} />
 
             {/* Autres langues — préfixe /[lang]/ */}
             <Route path="/de" element={<LangPlaceholder lang="de" />} />
