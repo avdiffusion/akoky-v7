@@ -44,6 +44,13 @@ import ClubsLibertinsLyon from "./pages/ClubsLibertinsLyon";
 import ClubsLibertinsMarseille from "./pages/ClubsLibertinsMarseille";
 import ClubsLibertinsBordeaux from "./pages/ClubsLibertinsBordeaux";
 import ClubsLibertinsToulouse from "./pages/ClubsLibertinsToulouse";
+import ClubsLibertinsNice from "./pages/ClubsLibertinsNice";
+import ClubsLibertinsMontpellier from "./pages/ClubsLibertinsMontpellier";
+import ClubsLibertinsNantes from "./pages/ClubsLibertinsNantes";
+import ClubsLibertinsRennes from "./pages/ClubsLibertinsRennes";
+import ClubsLibertinsStrasbourg from "./pages/ClubsLibertinsStrasbourg";
+import ClubsLibertinsReims from "./pages/ClubsLibertinsReims";
+import ClubsLibertinsToulon from "./pages/ClubsLibertinsToulon";
 
 const queryClient = new QueryClient();
 
