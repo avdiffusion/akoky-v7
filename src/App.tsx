@@ -106,6 +106,13 @@ const App = () => (
             <Route path="/clubs-libertins-marseille" element={<ClubsLibertinsMarseille />} />
             <Route path="/clubs-libertins-bordeaux" element={<ClubsLibertinsBordeaux />} />
             <Route path="/clubs-libertins-toulouse" element={<ClubsLibertinsToulouse />} />
+            <Route path="/clubs-libertins-nice" element={<ClubsLibertinsNice />} />
+            <Route path="/clubs-libertins-montpellier" element={<ClubsLibertinsMontpellier />} />
+            <Route path="/clubs-libertins-nantes" element={<ClubsLibertinsNantes />} />
+            <Route path="/clubs-libertins-rennes" element={<ClubsLibertinsRennes />} />
+            <Route path="/clubs-libertins-strasbourg" element={<ClubsLibertinsStrasbourg />} />
+            <Route path="/clubs-libertins-reims" element={<ClubsLibertinsReims />} />
+            <Route path="/clubs-libertins-toulon" element={<ClubsLibertinsToulon />} />
 
             {/* Autres langues — préfixe /[lang]/ */}
             <Route path="/de" element={<LangPlaceholder lang="de" />} />
