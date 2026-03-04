@@ -51,6 +51,21 @@ import ClubsLibertinsRennes from "./pages/ClubsLibertinsRennes";
 import ClubsLibertinsStrasbourg from "./pages/ClubsLibertinsStrasbourg";
 import ClubsLibertinsReims from "./pages/ClubsLibertinsReims";
 import ClubsLibertinsToulon from "./pages/ClubsLibertinsToulon";
+import ClubsLibertinsBale from "./pages/ClubsLibertinsBale";
+import ClubsLibertinsZurich from "./pages/ClubsLibertinsZurich";
+import ClubsLibertinsLuxembourg from "./pages/ClubsLibertinsLuxembourg";
+import ClubsLibertinsBruges from "./pages/ClubsLibertinsBruges";
+import ClubsLibertinsAnvers from "./pages/ClubsLibertinsAnvers";
+import ClubsLibertinsWallonie from "./pages/ClubsLibertinsWallonie";
+import ClubsLibertinsBruxellesRegion from "./pages/ClubsLibertinsBruxellesRegion";
+import ClubsLibertinsPaca from "./pages/ClubsLibertinsPaca";
+import ClubsLibertinsNormandie from "./pages/ClubsLibertinsNormandie";
+import ClubsLibertinsNouvelleAquitaine from "./pages/ClubsLibertinsNouvelleAquitaine";
+import ClubsLibertinsBretagne from "./pages/ClubsLibertinsBretagne";
+import ClubsLibertinsAuvergneRhoneAlpes from "./pages/ClubsLibertinsAuvergneRhoneAlpes";
+import ClubsLibertinsOccitanie from "./pages/ClubsLibertinsOccitanie";
+import ClubsLibertinsPaysDelaLoire from "./pages/ClubsLibertinsPaysDelaLoire";
+import ClubsLibertinsGeneral from "./pages/ClubsLibertinsGeneral";
 
 const queryClient = new QueryClient();
 
