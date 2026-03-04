@@ -51,6 +51,21 @@ import ClubsLibertinsRennes from "./pages/ClubsLibertinsRennes";
 import ClubsLibertinsStrasbourg from "./pages/ClubsLibertinsStrasbourg";
 import ClubsLibertinsReims from "./pages/ClubsLibertinsReims";
 import ClubsLibertinsToulon from "./pages/ClubsLibertinsToulon";
+import ClubsLibertinsBale from "./pages/ClubsLibertinsBale";
+import ClubsLibertinsZurich from "./pages/ClubsLibertinsZurich";
+import ClubsLibertinsLuxembourg from "./pages/ClubsLibertinsLuxembourg";
+import ClubsLibertinsBruges from "./pages/ClubsLibertinsBruges";
+import ClubsLibertinsAnvers from "./pages/ClubsLibertinsAnvers";
+import ClubsLibertinsWallonie from "./pages/ClubsLibertinsWallonie";
+import ClubsLibertinsBruxellesRegion from "./pages/ClubsLibertinsBruxellesRegion";
+import ClubsLibertinsPaca from "./pages/ClubsLibertinsPaca";
+import ClubsLibertinsNormandie from "./pages/ClubsLibertinsNormandie";
+import ClubsLibertinsNouvelleAquitaine from "./pages/ClubsLibertinsNouvelleAquitaine";
+import ClubsLibertinsBretagne from "./pages/ClubsLibertinsBretagne";
+import ClubsLibertinsAuvergneRhoneAlpes from "./pages/ClubsLibertinsAuvergneRhoneAlpes";
+import ClubsLibertinsOccitanie from "./pages/ClubsLibertinsOccitanie";
+import ClubsLibertinsPaysDelaLoire from "./pages/ClubsLibertinsPaysDelaLoire";
+import ClubsLibertinsGeneral from "./pages/ClubsLibertinsGeneral";
 
 const queryClient = new QueryClient();
 
@@ -113,6 +128,21 @@ const App = () => (
             <Route path="/clubs-libertins-strasbourg" element={<ClubsLibertinsStrasbourg />} />
             <Route path="/clubs-libertins-reims" element={<ClubsLibertinsReims />} />
             <Route path="/clubs-libertins-toulon" element={<ClubsLibertinsToulon />} />
+            <Route path="/clubs-libertins-bale" element={<ClubsLibertinsBale />} />
+            <Route path="/clubs-libertins-zurich" element={<ClubsLibertinsZurich />} />
+            <Route path="/clubs-libertins-luxembourg" element={<ClubsLibertinsLuxembourg />} />
+            <Route path="/clubs-libertins-bruges" element={<ClubsLibertinsBruges />} />
+            <Route path="/clubs-libertins-anvers" element={<ClubsLibertinsAnvers />} />
+            <Route path="/clubs-libertins-wallonie" element={<ClubsLibertinsWallonie />} />
+            <Route path="/clubs-libertins-bruxelles-region" element={<ClubsLibertinsBruxellesRegion />} />
+            <Route path="/clubs-libertins-paca" element={<ClubsLibertinsPaca />} />
+            <Route path="/clubs-libertins-normandie" element={<ClubsLibertinsNormandie />} />
+            <Route path="/clubs-libertins-nouvelle-aquitaine" element={<ClubsLibertinsNouvelleAquitaine />} />
+            <Route path="/clubs-libertins-bretagne" element={<ClubsLibertinsBretagne />} />
+            <Route path="/clubs-libertins-auvergne-rhone-alpes" element={<ClubsLibertinsAuvergneRhoneAlpes />} />
+            <Route path="/clubs-libertins-occitanie" element={<ClubsLibertinsOccitanie />} />
+            <Route path="/clubs-libertins-pays-de-la-loire" element={<ClubsLibertinsPaysDelaLoire />} />
+            <Route path="/clubs-libertins" element={<ClubsLibertinsGeneral />} />
 
             {/* Autres langues — préfixe /[lang]/ */}
             <Route path="/de" element={<LangPlaceholder lang="de" />} />
