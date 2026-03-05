@@ -138,6 +138,28 @@ const App = () => (
             <Route path="/clubs-libertins-lille" element={<ClubsLibertinsLille />} />
             <Route path="/akoky.html" element={<Akoky />} />
             <Route path="/akoky" element={<Akoky />} />
+            <Route path="/vip" element={<Vip />} />
+            <Route path="/vision" element={<Vision />} />
+            <Route path="/presse" element={<Presse />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/cookies" element={<Cookies />} />
+            <Route path="/live" element={<Live />} />
+            <Route path="/jeux" element={<Jeux />} />
+            <Route path="/faq" element={<Faq />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/evenements" element={<Evenements />} />
+            <Route path="/concours" element={<Concours />} />
+            <Route path="/concours-six-cles" element={<ConcoursSixCles />} />
+            <Route path="/lexique" element={<Lexique />} />
+            <Route path="/libertinage" element={<Libertinage />} />
+            <Route path="/actualites-libertines" element={<ActualitesLibertines />} />
+            <Route path="/saunas-libertins" element={<SaunasLibertins />} />
+            <Route path="/guide-libertin-france" element={<GuideLibertin />} />
+            <Route path="/guide-ultime-libertinage-france" element={<GuideUltimeLibertinage />} />
+            <Route path="/debuter-libertinage" element={<DebuterLibertinage />} />
+            <Route path="/questions-debutants-libertinage" element={<QuestionsDebutants />} />
+            <Route path="/premier-club-libertin" element={<PremierClubLibertin />} />
+            <Route path="/premier-rendez-vous-libertin" element={<PremierRendezVousLibertin />} />
             <Route path="/clubs-libertins-paris" element={<ClubsLibertinsParis />} />
             <Route path="/clubs-libertins-lyon" element={<ClubsLibertinsLyon />} />
             <Route path="/clubs-libertins-marseille" element={<ClubsLibertinsMarseille />} />
