@@ -115,7 +115,7 @@ const MejorSitioLibertino = () => (
 
           <h3 className="text-xl font-semibold text-primary mt-8 mb-3">Lovoo — App de Citas Generalista</h3>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            Lovoo es une app de citas très popular en España entre jóvenes, pero no tiene ninguna funcionalidad libertina. Sin multiperfil, sin clubes, sin eventos swinger.
+            Lovoo es una app de citas muy popular en España entre jóvenes, pero no tiene ninguna funcionalidad libertina. Sin multiperfil, sin clubes, sin eventos swinger.
             <Link to="/es/akoky-vs-lovoo" className="text-primary font-semibold ml-1 hover:underline">Leer comparativa →</Link>
           </p>
 
