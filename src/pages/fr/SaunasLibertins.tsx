@@ -86,7 +86,7 @@ const SaunasLibertins = () => (
       canonical="https://akoky.com/fr/saunas-libertins"
       heroTitle="Saunas Libertins en France"
       heroSubtitle="Découvrez l'univers intimiste des saunas libertins : guide complet, espaces typiques et annuaire par région pour trouver l'établissement idéal."
-      heroImage="https://akoky.com/images/sauna-cover.webp"
+      heroImage="/images/sauna-cover.webp"
       breadcrumb={[{ label: "Saunas Libertins" }]}
       faq={FAQ}
     >
