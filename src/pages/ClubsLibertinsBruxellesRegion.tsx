@@ -36,7 +36,7 @@ const ClubsLibertinsBruxellesRegion = () => {
 
           <h2 className="text-3xl font-bold text-foreground font-display">Clubs libertins et saunas dans la Région de Bruxelles</h2>
           <p>La Région de Bruxelles-Capitale abrite une offre variée d'établissements libertins, allant des clubs urbains aux saunas haut de gamme.</p>
-          <Link to="/clubs-libertins-bruxelles" className="text-primary hover:underline">Découvrir les clubs de Bruxelles →</Link>
+          <Link to="/fr/clubs-libertins-bruxelles" className="text-primary hover:underline">Découvrir les clubs de Bruxelles →</Link>
 
           <h2 className="text-3xl font-bold text-foreground font-display">Bruxelles, Wallonie et Flandre : une scène connectée</h2>
           <p>Bruxelles joue un rôle central dans la scène libertine belge, servant de point de rencontre entre la Wallonie et la Flandre.</p>
