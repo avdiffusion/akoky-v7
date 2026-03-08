@@ -91,13 +91,19 @@ import MeilleurSiteLibertin from "./pages/comparatifs/MeilleurSiteLibertin";
 
 
 // ─── Pages FR livraison 6 ─────────────────────────────────────────────────────
-import BlogFr from "./pages/fr/BlogFr";
 import FaqFr from "./pages/fr/FaqFr";
 import CookiesFr from "./pages/fr/CookiesFr";
 import GuideLibertin from "./pages/fr/GuideLibertin";
 import GuideUltimeLibertin from "./pages/fr/GuideUltimeLibertin";
 import ConcoursSixCles from "./pages/fr/ConcoursSixCles";
 import AnnuaireClubs from "./pages/fr/AnnuaireClubs";
+
+// ─── Blog system ──────────────────────────────────────────────────────────────
+import BlogListing from "./pages/blog/BlogListing";
+import BlogArticlePage from "./pages/blog/BlogArticle";
+import BlogAdmin from "./pages/admin/BlogAdmin";
+import BlogEditor from "./pages/admin/BlogEditor";
+import BlogLogin from "./pages/admin/BlogLogin";
 
 // ─── Pages ES livraison 3 ─────────────────────────────────────────────────────
 import HomeEs from "./pages/es/HomeEs";
