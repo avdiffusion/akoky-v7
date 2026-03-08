@@ -25,7 +25,7 @@ const Libertinage = () => (
     <ContentPageLayout
       lang="fr"
       title="Le Libertinage Moderne : Guide Complet 2026"
-      description="Qu'est-ce que le libertinage ? Guide complet sur les pratiques, valeurs et formes du libertinage mod"
+      description="Qu'est-ce que le libertinage ? Guide complet sur les pratiques, valeurs et formes du libertinage moderne. Consentement, couples, numérique. AKOKY."
       canonical="https://akoky.com/fr/libertinage"
       heroTitle="Le Libertinage Moderne : Définition, Pratiques & Éthique"
       heroSubtitle="Tout comprendre sur le libertinage aujourd'hui : définitions, formes de pratiques, consentement et vie en couple."

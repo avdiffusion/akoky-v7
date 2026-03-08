@@ -43,7 +43,7 @@ const QuestionsDebutantsLibertinage = () => (
     <ContentPageLayout
       lang="fr"
       title="Questions de Débutants sur le Libertinage – 24 Réponses"
-      description="Les 24 questions les plus fréquentes des débutants sur le libertinage. Réponses complètes et bienvei"
+      description="Les 24 questions les plus fréquentes des débutants sur le libertinage. Réponses complètes et bienveillantes par AKOKY."
       canonical="https://akoky.com/fr/questions-debutants-libertinage"
       heroTitle="Questions de Débutants sur le Libertinage"
       heroSubtitle="Les réponses aux questions que tout débutant se pose sur le libertinage."

@@ -18,7 +18,7 @@ const Vision = () => (
     <ContentPageLayout
       lang="fr"
       title="Notre Vision AKOKY – La Plateforme Libertine Premium"
-      description="Découvrez la vision d'AKOKY : révolutionner le libertinage numérique avec éthique, innovation et bie"
+      description="Découvrez la vision d'AKOKY : révolutionner le libertinage numérique avec éthique, innovation et bienveillance."
       canonical="https://akoky.com/fr/vision"
       heroTitle="Notre Vision"
       heroSubtitle="La vision fondatrice d'AKOKY pour révolutionner le libertinage."
