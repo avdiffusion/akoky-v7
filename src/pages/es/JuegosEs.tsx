@@ -1,6 +1,7 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
+import { Link } from "react-router-dom";
 
 const FAQ = [
   { question: "¿Los juegos AKOKY son gratuitos?", answer: "Algunos juegos son accesibles gratuitamente para todos los miembros. Otros contenidos están reservados a los miembros VIP." },
