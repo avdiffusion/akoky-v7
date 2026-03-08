@@ -474,6 +474,11 @@ const App = () => (
             <Route path="/es/vision" element={<VisionEs />} />
             <Route path="/es/vip" element={<VipEs />} />
             <Route path="/es/akoky-vs-wyylde" element={<AkokyVsWyyldeEs />} />
+            <Route path="/es/akoky-vs-nouslib" element={<AkokyVsNousLibEs />} />
+            <Route path="/es/akoky-vs-jmdate" element={<AkokyVsJmDateEs />} />
+            <Route path="/es/akoky-vs-sexylib" element={<AkokyVsSexyLibEs />} />
+            <Route path="/es/akoky-vs-casualclub" element={<AkokyVsCasualClubEs />} />
+            <Route path="/es/akoky-vs-lovoo" element={<AkokyVsLovooEs />} />
             <Route path="/es/mejor-sitio-libertino" element={<MejorSitioLibertino />} />
             <Route path="/es/saunas-libertinos" element={<SaunasLibertinos />} />
             <Route path="/es/actualidad-libertina" element={<ActualidadLibertina />} />
