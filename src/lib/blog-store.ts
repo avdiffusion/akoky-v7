@@ -2,7 +2,7 @@ import { BlogArticle, BlogLang, BlogCategory } from "./blog-types";
 import { SEED_ARTICLES } from "./blog-seed";
 
 const STORAGE_KEY = "akoky_blog_articles";
-const SEED_KEY = "akoky_blog_seeded_v4";
+const SEED_KEY = "akoky_blog_seeded_v5";
 const AUTH_KEY = "akoky_blog_auth";
 const ADMIN_PASSWORD = "@Akoky2026";
 const ADMIN_DOB = "12/05/1977";
@@ -14,10 +14,8 @@ const LOCKOUT_DURATION_MS = 15 * 60 * 1000; // 15 minutes
 // ── Auto-seed on first load ──────────────────────────────────────────────────
 function ensureSeeded(): void {
   if (!localStorage.getItem(SEED_KEY)) {
-    const existing = localStorage.getItem(STORAGE_KEY);
-    if (!existing || JSON.parse(existing).length === 0) {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(SEED_ARTICLES));
-    }
+    // Force re-seed with latest articles (FR + ES)
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(SEED_ARTICLES));
     localStorage.setItem(SEED_KEY, "true");
   }
 }
