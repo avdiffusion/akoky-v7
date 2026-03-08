@@ -113,6 +113,8 @@ const BlogListing = ({ lang }: BlogListingProps) => {
 
   const canonical = lang === "fr" ? "https://akoky.com/fr/blog" : `https://akoky.com/${lang}/blog`;
 
+  const LOCALE_MAP: Record<string, string> = { fr: "fr_FR", en: "en_US", es: "es_ES", de: "de_DE", it: "it_IT", pt: "pt_PT" };
+
   return (
     <>
       <Helmet>
@@ -120,23 +122,47 @@ const BlogListing = ({ lang }: BlogListingProps) => {
         <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
         <link rel="canonical" href={canonical} />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+        <meta property="og:type" content="blog" />
+        <meta property="og:site_name" content="AKOKY" />
         <meta property="og:title" content={meta.title} />
         <meta property="og:description" content={meta.description} />
         <meta property="og:url" content={canonical} />
-        <meta property="og:type" content="blog" />
+        <meta property="og:image" content="https://akoky.com/images/blog-cover-ak.webp" />
+        <meta property="og:locale" content={LOCALE_MAP[lang] || "fr_FR"} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@akoky_official" />
+        <meta name="twitter:title" content={meta.title} />
+        <meta name="twitter:description" content={meta.description} />
+        {/* Hreflang for blog listing */}
+        {["fr", "en", "es", "de", "it", "pt"].map((l) => (
+          <link key={l} rel="alternate" hrefLang={l} href={`https://akoky.com/${l}/blog`} />
+        ))}
+        <link rel="alternate" hrefLang="x-default" href="https://akoky.com/fr/blog" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Blog",
             name: meta.heroTitle,
             url: canonical,
+            inLanguage: lang,
             description: meta.description,
             publisher: { "@type": "Organization", name: "AKOKY", url: "https://akoky.com" },
           })}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: lang === "es" ? "Inicio" : lang === "fr" ? "Accueil" : "Home", item: `https://akoky.com/${lang}` },
+              { "@type": "ListItem", position: 2, name: "Blog", item: canonical },
+            ],
+          })}
+        </script>
       </Helmet>
 
-      <Header />
+      <Header lang={lang} />
 
       <main className="min-h-screen bg-background">
         {/* Hero with cover image */}

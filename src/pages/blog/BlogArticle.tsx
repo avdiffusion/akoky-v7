@@ -13,6 +13,17 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Calendar, Globe } from "lucide-react";
 import { useEffect } from "react";
 
+const LOCALE_MAP: Record<BlogLang, string> = { fr: "fr_FR", en: "en_US", es: "es_ES", de: "de_DE", it: "it_IT", pt: "pt_PT" };
+
+const LABELS: Record<BlogLang, { home: string; blog: string; back: string; alsoIn: string }> = {
+  fr: { home: "Accueil", blog: "Blog", back: "Retour au blog", alsoIn: "Cet article est aussi disponible en :" },
+  en: { home: "Home", blog: "Blog", back: "Back to blog", alsoIn: "This article is also available in:" },
+  es: { home: "Inicio", blog: "Blog", back: "Volver al blog", alsoIn: "Este artículo también está disponible en:" },
+  de: { home: "Startseite", blog: "Blog", back: "Zurück zum Blog", alsoIn: "Dieser Artikel ist auch verfügbar in:" },
+  it: { home: "Home", blog: "Blog", back: "Torna al blog", alsoIn: "Questo articolo è disponibile anche in:" },
+  pt: { home: "Início", blog: "Blog", back: "Voltar ao blog", alsoIn: "Este artigo também está disponível em:" },
+};
+
 interface BlogArticleProps {
   lang: BlogLang;
 }
@@ -30,9 +41,8 @@ const BlogArticlePage = ({ lang }: BlogArticleProps) => {
   if (!article) return <Navigate to={`/${lang}/blog`} replace />;
 
   const t = article.translations[lang]!;
-  const canonical = lang === "fr"
-    ? `https://akoky.com/fr/blog/${t.slug}`
-    : `https://akoky.com/${lang}/blog/${t.slug}`;
+  const labels = LABELS[lang];
+  const canonical = `https://akoky.com/${lang}/blog/${t.slug}`;
 
   const categoryLabel = BLOG_CATEGORIES.find((c) => c.value === article.category)?.label[lang] || "";
 
@@ -41,6 +51,37 @@ const BlogArticlePage = ({ lang }: BlogArticleProps) => {
     (l) => l !== lang && article.translations[l]?.published
   );
 
+  // BreadcrumbList Schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: labels.home, item: `https://akoky.com/${lang}` },
+      { "@type": "ListItem", position: 2, name: labels.blog, item: `https://akoky.com/${lang}/blog` },
+      { "@type": "ListItem", position: 3, name: t.title, item: canonical },
+    ],
+  };
+
+  // Article Schema
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: t.metaTitle || t.title,
+    description: t.metaDescription,
+    url: canonical,
+    inLanguage: lang,
+    image: article.image ? `https://akoky.com${article.image}` : undefined,
+    datePublished: article.createdAt,
+    dateModified: article.updatedAt,
+    author: { "@type": "Organization", name: "AKOKY", url: "https://akoky.com" },
+    publisher: {
+      "@type": "Organization",
+      name: "AKOKY",
+      logo: { "@type": "ImageObject", url: "https://akoky.com/images/logo-akoky.webp" },
+    },
+    mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
+  };
+
   return (
     <>
       <Helmet>
@@ -48,49 +89,35 @@ const BlogArticlePage = ({ lang }: BlogArticleProps) => {
         <title>{t.metaTitle || t.title}</title>
         <meta name="description" content={t.metaDescription} />
         <link rel="canonical" href={canonical} />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
         <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="AKOKY" />
         <meta property="og:title" content={t.metaTitle || t.title} />
         <meta property="og:description" content={t.metaDescription} />
         <meta property="og:url" content={canonical} />
+        <meta property="og:locale" content={LOCALE_MAP[lang]} />
         {article.image && <meta property="og:image" content={`https://akoky.com${article.image}`} />}
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@akoky_official" />
         <meta name="twitter:title" content={t.metaTitle || t.title} />
         <meta name="twitter:description" content={t.metaDescription} />
+        {article.image && <meta name="twitter:image" content={`https://akoky.com${article.image}`} />}
         {/* Hreflang */}
         {BLOG_LANGS.filter((l) => article.translations[l]?.published).map((l) => (
           <link
             key={l}
             rel="alternate"
             hrefLang={l}
-            href={
-              l === "fr"
-                ? `https://akoky.com/fr/blog/${article.translations[l]!.slug}`
-                : `https://akoky.com/${l}/blog/${article.translations[l]!.slug}`
-            }
+            href={`https://akoky.com/${l}/blog/${article.translations[l]!.slug}`}
           />
         ))}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            headline: t.metaTitle || t.title,
-            description: t.metaDescription,
-            url: canonical,
-            image: article.image ? `https://akoky.com${article.image}` : undefined,
-            datePublished: article.createdAt,
-            dateModified: article.updatedAt,
-            author: { "@type": "Organization", name: "AKOKY" },
-            publisher: {
-              "@type": "Organization",
-              name: "AKOKY",
-              logo: { "@type": "ImageObject", url: "https://akoky.com/images/logo-akoky.webp" },
-            },
-            mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
-          })}
-        </script>
+        <link rel="alternate" hrefLang="x-default" href={`https://akoky.com/fr/blog/${article.translations.fr?.slug || t.slug}`} />
+        {/* Schemas */}
+        <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
-      <Header />
+      <Header lang={lang} />
 
       <main className="min-h-screen bg-background">
         {/* Hero Image */}
@@ -110,13 +137,13 @@ const BlogArticlePage = ({ lang }: BlogArticleProps) => {
         <article className="py-12 px-4">
           <div className="container max-w-3xl mx-auto">
             {/* Breadcrumb */}
-            <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-8 flex-wrap">
+            <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-8 flex-wrap" aria-label="Breadcrumb">
               <Link to={`/${lang}`} className="hover:text-primary transition-colors">
-                {lang === "fr" ? "Accueil" : "Home"}
+                {labels.home}
               </Link>
               <span>›</span>
               <Link to={`/${lang}/blog`} className="hover:text-primary transition-colors">
-                Blog
+                {labels.blog}
               </Link>
               <span>›</span>
               <span className="text-foreground">{t.title}</span>
@@ -160,7 +187,7 @@ const BlogArticlePage = ({ lang }: BlogArticleProps) => {
               <div className="mt-12 p-6 bg-card/50 border border-border rounded-2xl">
                 <div className="flex items-center gap-2 text-sm font-medium text-foreground mb-3">
                   <Globe className="h-4 w-4 text-primary" />
-                  {lang === "fr" ? "Cet article est aussi disponible en :" : "Also available in:"}
+                  {labels.alsoIn}
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {otherLangs.map((l) => (
@@ -183,7 +210,7 @@ const BlogArticlePage = ({ lang }: BlogArticleProps) => {
                 className="inline-flex items-center gap-2 text-primary hover:underline"
               >
                 <ArrowLeft className="h-4 w-4" />
-                {lang === "fr" ? "Retour au blog" : "Back to blog"}
+                {labels.back}
               </Link>
             </div>
           </div>

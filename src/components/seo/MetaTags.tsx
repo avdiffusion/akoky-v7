@@ -1,5 +1,14 @@
 import { Helmet } from "react-helmet-async";
 
+const LOCALE_MAP: Record<string, string> = {
+  fr: "fr_FR",
+  en: "en_US",
+  es: "es_ES",
+  de: "de_DE",
+  it: "it_IT",
+  pt: "pt_PT",
+};
+
 interface MetaTagsProps {
   title: string;
   description: string;
@@ -27,7 +36,7 @@ const MetaTags = ({
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
-    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:locale" content={LOCALE_MAP[lang] || "fr_FR"} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@akoky_official" />
     <meta name="twitter:title" content={title} />
