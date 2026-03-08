@@ -21,7 +21,7 @@ const ClubsLibertinsGeneral = () => {
       canonical="https://akoky.com/clubs-libertins"
       heroTitle="Clubs Libertins en France"
       heroSubtitle="Le guide de référence pour découvrir et choisir votre club libertin idéal"
-      heroImage="https://akoky.com/images/club.webp"
+      heroImage="/images/club.webp"
       faq={faq}
       breadcrumb={[{ label: "Clubs Libertins en France" }]}
     >
