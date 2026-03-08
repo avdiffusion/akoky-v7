@@ -33,12 +33,6 @@ const PAGE_SCHEMA = {
 
 const ConcursoEs = () => (
   <>
-    <MetaTags
-      title="Concursos AKOKY – Gana Experiencias Libertinas Exclusivas"
-      description="Participa gratuitamente en los concursos Akoky y gana estancias en los mejores clubes libertinos de España y Europa, suscripciones VIP y experiencias únicas."
-      canonical="https://akoky.com/es/concurso"
-      lang="es"
-    />
     <HreflangTags slug="concurso" />
 
     <ContentPageLayout

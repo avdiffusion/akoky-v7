@@ -35,12 +35,6 @@ const FAQ = [
 
 const AvisEs = () => (
   <>
-    <MetaTags
-      title="Opiniones AKOKY – Testimonios Verificados de la Comunidad Libertina"
-      description="Lee las opiniones auténticas y verificadas de los miembros de AKOKY. Testimonios reales sobre la experiencia, eventos, clubs asociados y suscripción premium."
-      canonical="https://akoky.com/es/avis"
-      lang="es"
-    />
     <HreflangTags slug="avis" />
 
     <ContentPageLayout
