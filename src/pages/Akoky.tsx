@@ -164,7 +164,7 @@ const Akoky = () => {
               <p className="text-xs text-muted-foreground mt-4">📺 Compatible TV · Chromecast · Smart TV</p>
             </div>
             <div>
-              <img src="https://akoky.com/fr/images/app-tv.webp" alt="Jeux Akoky sur télévision et grand écran" className="rounded-2xl shadow-2xl border border-border mx-auto" loading="lazy" />
+              <img src="/images/app-tv.webp" alt="Jeux Akoky sur télévision et grand écran" className="rounded-2xl shadow-2xl border border-border mx-auto" loading="lazy" />
             </div>
           </div>
         </div>
