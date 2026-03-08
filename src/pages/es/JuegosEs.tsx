@@ -24,6 +24,7 @@ const JuegosEs = () => (
       canonical="https://akoky.com/es/juegos"
       heroTitle="Juegos Libertinos AKOKY"
       heroSubtitle="Anima tus veladas con nuestros juegos exclusivos: ruleta, dados, verdad o reto y más."
+      heroImage="/images/es-juegos-cover.webp"
       breadcrumb={[{ label: "Juegos Libertinos AKOKY" }]}
       faq={FAQ}
     >

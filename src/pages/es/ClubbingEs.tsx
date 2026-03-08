@@ -24,6 +24,7 @@ const ClubbingEs = () => (
       canonical="https://akoky.com/es/clubbing"
       heroTitle="Clubbing Libertino en España"
       heroSubtitle="Descubre la escena del clubbing libertino: preparación, códigos, los mejores clubs y cómo vivir la experiencia al máximo."
+      heroImage="/images/es-eventos-cover.webp"
       breadcrumb={[{ label: "Clubbing Libertino en España" }]}
       faq={FAQ}
     >

@@ -24,6 +24,7 @@ const VisionEs = () => (
       canonical="https://akoky.com/es/vision"
       heroTitle="Nuestra Visión"
       heroSubtitle="AKOKY nació de una convicción: el libertinaje moderno merece una plataforma a su altura."
+      heroImage="/images/es-vision-cover.webp"
       breadcrumb={[{ label: "Nuestra Visión" }]}
       faq={FAQ}
     >
