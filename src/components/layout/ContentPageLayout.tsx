@@ -67,7 +67,7 @@ const ContentPageLayout = ({
 }: ContentPageLayoutProps) => {
   const safeLang = (lang || "fr") as Lang;
   const homeLabel = HOME_LABELS[safeLang];
-  const homeHref = safeLang === "fr" ? "/" : `/${safeLang}`;
+  const homeHref = `/${safeLang}`;
   const faqTitle = FAQ_TITLES[safeLang];
   const cta = CTA_DATA[safeLang];
 
