@@ -22,7 +22,10 @@ interface ComparisonTableProps {
   competitorName: string;
 }
 
+type Lang = "fr" | "en" | "es" | "de" | "it" | "pt";
+
 interface ComparatifLayoutProps {
+  lang?: Lang;
   title: string;
   description: string;
   canonical: string;
@@ -46,6 +49,7 @@ interface ComparatifLayoutProps {
 }
 
 const ComparatifLayout = ({
+  lang = "fr",
   title,
   description,
   canonical,
@@ -290,7 +294,7 @@ const ComparatifLayout = ({
         </section>
       </main>
 
-      <Footer />
+      <Footer lang={lang} />
     </>
   );
 };
