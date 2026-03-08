@@ -492,7 +492,8 @@ const App = () => (
             <Route path="/es/politica-cookies" element={<CookiesGuideEs />} />
             <Route path="/es/sala-de-prensa" element={<PresseGuideEs />} />
             <Route path="/es/faq" element={<Navigate to="https://ask.akoky.com" replace />} />
-            <Route path="/es/blog" element={<Navigate to="https://blog.akoky.com" replace />} />
+            <Route path="/es/blog" element={<BlogListing lang="es" />} />
+            <Route path="/es/blog/:slug" element={<BlogArticlePage lang="es" />} />
 
             {/* ══════════════════════════════════════════════════════════════
                 ROUTES DE
