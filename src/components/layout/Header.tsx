@@ -57,7 +57,6 @@ const NAV_LINKS: Record<Lang, NavLink[]> = {
 
 const AVIS_LABELS: Record<Lang, { href: string; label: string }> = {
   fr: { href: "/fr/avis", label: "AVIS" },
-  en: { href: "/en/reviews", label: "REVIEWS" },
   es: { href: "/es/avis", label: "OPINIONES" },
   de: { href: "/de/bewertungen", label: "BEWERTUNGEN" },
   it: { href: "/it/recensioni", label: "RECENSIONI" },
