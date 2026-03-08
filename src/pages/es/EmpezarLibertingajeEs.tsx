@@ -25,6 +25,7 @@ const EmpezarLibertingajeEs = () => (
       canonical="https://akoky.com/es/empezar-libertinaje"
       heroTitle="Empezar en el Libertinaje, a Tu Ritmo"
       heroSubtitle="Una guía práctica y respetuosa para descubrir este universo paso a paso, en pareja o solo/a."
+      heroImage="/images/debuter-libertinage-cover.webp"
       breadcrumb={[{ label: "Empezar en el Libertinaje, a Tu Ritmo" }]}
       faq={FAQ}
     >
