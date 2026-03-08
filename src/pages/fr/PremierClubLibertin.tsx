@@ -182,7 +182,7 @@ const PremierClubLibertin = () => (
               <ul className="space-y-2">
                 {["Préservatifs (le club en fournit mais prévoyez les vôtres)", "Gel lubrifiant", "Lingettes intimes", "Brosse à dents / chewing-gum", "Tenue de rechange confortable", "Chargeur de téléphone", "Eau / boisson (selon règlement du club)", "Argent liquide (certains clubs n'acceptent pas la CB)"].map((item, i) => (
                   <li key={i} className="flex items-start gap-2 text-muted-foreground text-sm">
-                    <span className="text-green-500">✓</span><span>{item}</span>
+                    <span className="text-primary">✓</span><span>{item}</span>
                   </li>
                 ))}
               </ul>
