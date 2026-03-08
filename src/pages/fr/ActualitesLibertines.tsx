@@ -12,7 +12,7 @@ const ActualitesLibertines = () => (
       description="Suivez les actualités et tendances de la communauté libertine francophone. Nouveautés, événements et lifestyle libertin sur AKOKY."
       canonical="https://akoky.com/fr/actualites-libertines"
       lang="fr"
-      ogImage="https://akoky.com/images/actualites-libertines-cover.webp"
+      ogImage="/images/actualites-libertines-cover.webp"
     />
     <HreflangTags slug="actualites-libertines" />
     <ContentPageLayout
