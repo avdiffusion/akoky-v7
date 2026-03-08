@@ -100,6 +100,7 @@ const SauneLibertineIt = () => {
         canonical="https://akoky.com/it/saune-libertine"
         heroTitle="Saune Libertine in Italia"
         heroSubtitle="Benessere, relax e sensualità — Le migliori strutture termali libertine italiane nel 2026"
+        heroImage="/images/es-saunas-cover.webp"
         breadcrumb={[{ label: "Saune Libertine" }]}
         faq={FAQ}
       >

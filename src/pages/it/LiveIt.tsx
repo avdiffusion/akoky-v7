@@ -28,9 +28,9 @@ const LIVE_TYPES = [
 
 const LiveIt = () => (
   <>
-    <MetaTags title="Live Libertini AKOKY 2026 | Streaming Premium Sicuro e Discreto" description="Scopri 20+ live libertini a settimana: atmosfera di club in diretta, serate esclusive, contenuti VIP. Streaming sicuro, moderato e discreto." canonical="https://akoky.com/it/live" lang="it" ogImage="/images/live-akoky.webp" />
+    <MetaTags title="Live Libertini AKOKY 2026 | Streaming Premium Sicuro e Discreto" description="Scopri 20+ live libertini a settimana: atmosfera di club in diretta, serate esclusive, contenuti VIP. Streaming sicuro, moderato e discreto." canonical="https://akoky.com/it/live" lang="it" ogImage="/images/es-live-cover.webp" />
     <HreflangTags slug="live" />
-    <ContentPageLayout lang="it" title="Live Libertini AKOKY 2026 | Streaming Premium" description="20+ live libertini a settimana." canonical="https://akoky.com/it/live" heroTitle="AKOKY Live — Video e Incontri in Diretta" heroSubtitle="20+ live a settimana: club in diretta, serate esclusive, contenuti VIP. Sicuro, moderato e discreto." heroImage="/images/live-akoky.webp" breadcrumb={[{ label: "Live AKOKY" }]} faq={FAQ}>
+    <ContentPageLayout lang="it" title="Live Libertini AKOKY 2026 | Streaming Premium" description="20+ live libertini a settimana." canonical="https://akoky.com/it/live" heroTitle="AKOKY Live — Video e Incontri in Diretta" heroSubtitle="20+ live a settimana: club in diretta, serate esclusive, contenuti VIP. Sicuro, moderato e discreto." heroImage="/images/es-live-cover.webp" breadcrumb={[{ label: "Live AKOKY" }]} faq={FAQ}>
 
       {/* Stats */}
       <section className="py-12 px-4">

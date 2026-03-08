@@ -31,7 +31,7 @@ const VisioneIt = () => (
   <>
     <MetaTags title="AKOKY | La Nostra Visione — L'Evoluzione del Libertinismo Moderno" description="Scopri la visione di AKOKY: una piattaforma libertina moderna, sicura e responsabile. Da AcoquinementVotre ad AKOKY." canonical="https://akoky.com/it/visione" lang="it" />
     <HreflangTags slug="visione" />
-    <ContentPageLayout lang="it" title="AKOKY | La Nostra Visione" description="Scopri la visione di AKOKY." canonical="https://akoky.com/it/visione" heroTitle="La Nostra Visione" heroSubtitle="AKOKY è nata da una convinzione: il libertinismo moderno merita una piattaforma all'altezza." heroImage="/images/vision-cover.webp" breadcrumb={[{ label: "La Nostra Visione" }]} faq={FAQ}>
+    <ContentPageLayout lang="it" title="AKOKY | La Nostra Visione" description="Scopri la visione di AKOKY." canonical="https://akoky.com/it/visione" heroTitle="La Nostra Visione" heroSubtitle="AKOKY è nata da una convinzione: il libertinismo moderno merita una piattaforma all'altezza." heroImage="/images/es-vision-cover.webp" breadcrumb={[{ label: "La Nostra Visione" }]} faq={FAQ}>
 
       {/* Key Stats */}
       <section className="py-12 px-4">

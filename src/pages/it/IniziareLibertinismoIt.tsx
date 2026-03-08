@@ -39,9 +39,9 @@ const SAFETY = [
 
 const IniziareLibertinismoIt = () => (
   <>
-    <MetaTags title="Iniziare nel Libertinismo 2026 | Guida Completa Coppie e Single — AKOKY" description="Guida completa per iniziare nel libertinismo: primi passi, consenso, scegliere il club, gestire la gelosia. Consigli pratici per coppie e single." canonical="https://akoky.com/it/iniziare-libertinismo" lang="it" ogImage="/images/debuter-libertinage-cover.webp" />
+    <MetaTags title="Iniziare nel Libertinismo 2026 | Guida Completa Coppie e Single — AKOKY" description="Guida completa per iniziare nel libertinismo: primi passi, consenso, scegliere il club, gestire la gelosia. Consigli pratici per coppie e single." canonical="https://akoky.com/it/iniziare-libertinismo" lang="it" ogImage="/images/es-debuter-cover.webp" />
     <HreflangTags slug="iniziare-libertinismo" />
-    <ContentPageLayout lang="it" title="Iniziare nel Libertinismo 2026 | Guida Completa" description="Guida completa per iniziare nel libertinismo." canonical="https://akoky.com/it/iniziare-libertinismo" heroTitle="Iniziare nel Libertinismo, al Tuo Ritmo" heroSubtitle="Una guida pratica e rispettosa per scoprire questo universo passo dopo passo, in coppia o da solo/a." heroImage="/images/debuter-libertinage-cover.webp" breadcrumb={[{ label: "Iniziare nel Libertinismo" }]} faq={FAQ}>
+    <ContentPageLayout lang="it" title="Iniziare nel Libertinismo 2026 | Guida Completa" description="Guida completa per iniziare nel libertinismo." canonical="https://akoky.com/it/iniziare-libertinismo" heroTitle="Iniziare nel Libertinismo, al Tuo Ritmo" heroSubtitle="Una guida pratica e rispettosa per scoprire questo universo passo dopo passo, in coppia o da solo/a." heroImage="/images/es-debuter-cover.webp" breadcrumb={[{ label: "Iniziare nel Libertinismo" }]} faq={FAQ}>
 
       {/* Quick links */}
       <section className="py-12 px-4">

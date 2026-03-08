@@ -33,7 +33,7 @@ const GiochiIt = () => (
   <>
     <MetaTags title="Giochi Libertini AKOKY | Animazioni e Attività per Serate" description="Scopri i nostri giochi libertini: carte piccanti, sfide, animazioni interattive. Ludico, conviviale e rispettoso." canonical="https://akoky.com/it/giochi" lang="it" />
     <HreflangTags slug="giochi" />
-    <ContentPageLayout lang="it" title="Giochi Libertini AKOKY | Animazioni e Attività" description="Giochi libertini per animare le tue serate." canonical="https://akoky.com/it/giochi" heroTitle="Giochi Libertini AKOKY" heroSubtitle="Anima le tue serate con i nostri giochi esclusivi: roulette, dado, verità o sfida e altro ancora." heroImage="/images/cover-jeux.webp" breadcrumb={[{ label: "Giochi Libertini" }]} faq={FAQ}>
+    <ContentPageLayout lang="it" title="Giochi Libertini AKOKY | Animazioni e Attività" description="Giochi libertini per animare le tue serate." canonical="https://akoky.com/it/giochi" heroTitle="Giochi Libertini AKOKY" heroSubtitle="Anima le tue serate con i nostri giochi esclusivi: roulette, dado, verità o sfida e altro ancora." heroImage="/images/es-juegos-cover.webp" breadcrumb={[{ label: "Giochi Libertini" }]} faq={FAQ}>
 
       {/* Stats */}
       <section className="py-12 px-4">

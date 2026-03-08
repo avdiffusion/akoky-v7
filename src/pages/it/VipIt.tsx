@@ -41,9 +41,9 @@ const TESTIMONIALS = [
 
 const VipIt = () => (
   <>
-    <MetaTags title="AKOKY VIP 2026 | Abbonamento Premium — Funzionalità Esclusive" description="Scopri lo stato VIP AKOKY: multi-profilo, eventi esclusivi, live premium, album privati. Unisciti all'élite della community libertina europea." canonical="https://akoky.com/it/vip" lang="it" ogImage="/images/vip-cover.webp" />
+    <MetaTags title="AKOKY VIP 2026 | Abbonamento Premium — Funzionalità Esclusive" description="Scopri lo stato VIP AKOKY: multi-profilo, eventi esclusivi, live premium, album privati. Unisciti all'élite della community libertina europea." canonical="https://akoky.com/it/vip" lang="it" ogImage="/images/es-vip-cover.webp" />
     <HreflangTags slug="vip" />
-    <ContentPageLayout lang="it" title="AKOKY VIP 2026 | Abbonamento Premium" description="Scopri lo stato VIP AKOKY." canonical="https://akoky.com/it/vip" heroTitle="Stato VIP AKOKY" heroSubtitle="Accedi a privilegi esclusivi e vivi l'esperienza libertina al suo livello più alto." heroImage="/images/vip-cover.webp" breadcrumb={[{ label: "Stato VIP AKOKY" }]} faq={FAQ}>
+    <ContentPageLayout lang="it" title="AKOKY VIP 2026 | Abbonamento Premium" description="Scopri lo stato VIP AKOKY." canonical="https://akoky.com/it/vip" heroTitle="Stato VIP AKOKY" heroSubtitle="Accedi a privilegi esclusivi e vivi l'esperienza libertina al suo livello più alto." heroImage="/images/es-vip-cover.webp" breadcrumb={[{ label: "Stato VIP AKOKY" }]} faq={FAQ}>
 
       {/* Stats */}
       <section className="py-12 px-4">
