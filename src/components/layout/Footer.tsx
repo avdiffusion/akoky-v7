@@ -10,8 +10,8 @@ interface FooterLink { href: string; icon: string; label: string }
 
 const DISCOVER_LINKS: Record<Lang, FooterLink[]> = {
   fr: [
-    { href: "/", icon: "🏠", label: "Accueil" },
-    { href: "/akoky", icon: "ℹ️", label: "À propos" },
+    { href: "/fr", icon: "🏠", label: "Accueil" },
+    { href: "/fr/akoky", icon: "ℹ️", label: "À propos" },
     { href: "/fr/blog", icon: "📖", label: "Blog" },
     { href: "/fr/evenements", icon: "📅", label: "Événements" },
     { href: "/fr/jeux", icon: "🎮", label: "Jeux" },
