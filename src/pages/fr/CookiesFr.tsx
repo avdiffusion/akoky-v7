@@ -7,7 +7,7 @@ const CookiesFr = () => (
     <MetaTags title="Politique Cookies AKOKY | Gestion & Confidentialité" description="Politique de gestion des cookies AKOKY : cookies essentiels, analytiques, publicitaires. Vos choix, vos données, votre confidentialité." canonical="https://akoky.com/fr/cookies" lang="fr" />
     <HreflangTags slug="cookies" />
     <ContentPageLayout lang="fr" title="Politique Cookies AKOKY | Gestion & Confidentialité" description="Politique de gestion des cookies AKOKY : cookies essentiels, analytiques, publicitaires. Vos choix, vos données, votre confidentialité." canonical="https://akoky.com/fr/cookies" heroTitle="Politique de Cookies" heroSubtitle="Transparence totale sur l&#39;utilisation des cookies sur AKOKY"
-      heroImage="https://akoky.com/images/logo-akoky.webp" breadcrumb={[{ label: "Politique de Cookies" }]}>
+      heroImage="/images/logo-akoky.webp" breadcrumb={[{ label: "Politique de Cookies" }]}>
       <section className="py-12 md:py-20 px-4">
         <div className="container max-w-4xl mx-auto">
           <p className="text-muted-foreground leading-relaxed mb-4">Transparence totale sur l&#39;utilisation des cookies sur AKOKY</p>

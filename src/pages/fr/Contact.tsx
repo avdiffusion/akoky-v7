@@ -24,7 +24,7 @@ const Contact = () => (
       canonical="https://akoky.com/fr/contact"
       heroTitle="Contact"
       heroSubtitle="Une question ? Notre équipe est à votre écoute"
-      heroImage="https://akoky.com/images/logo-akoky.webp"
+      heroImage="/images/logo-akoky.webp"
       breadcrumb={[{ label: "Contact" }]}
       faq={FAQ}
     >

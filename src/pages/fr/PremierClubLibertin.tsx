@@ -17,7 +17,7 @@ const PremierClubLibertin = () => (
       description="Guide complet pour votre premier club libertin : comment choisir, s'y préparer et profiter de l'expérience. Conseils AKOKY."
       canonical="https://akoky.com/fr/premier-club-libertin"
       lang="fr"
-      ogImage="https://akoky.com/images/premier-club-cover.webp"
+      ogImage="/images/premier-club-cover.webp"
     />
     <HreflangTags slug="premier-club-libertin" />
     <ContentPageLayout

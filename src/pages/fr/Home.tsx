@@ -531,7 +531,7 @@ const Home = () => {
                 {
                   title: "Débuter dans le Libertinage — Conseils Pratiques",
                   desc: "Guide complet pour les débutants : comment préparer votre première expérience libertine et respecter les codes.",
-                  image: "https://akoky.com/images/debuter-libertinage-cover.webp",
+                  image: "/images/debuter-libertinage-cover.webp",
                   href: "https://akoky.com/fr/blogs/debuter-libertinage-france-conseils",
                   tag: "Débutants",
                 },

@@ -7,7 +7,7 @@ const ConcoursSixCles = () => (
     <MetaTags title="Le Jeu des Six Clés Akoky 2026 – Gagnez un séjour au RIAD5 Cap d&#39;Agde" description="Participez au concours Akoky 2026 : trouvez 6 clés cachées sur le site et l&#39;application pour gagner une semaine au RIAD5 Cap d&#39;Agde d&#39;une valeur de 4 500 €. Concours gratuit, 1 gagnant." canonical="https://akoky.com/fr/concours-six-cles" lang="fr" />
     <HreflangTags slug="concours-six-cles" />
     <ContentPageLayout lang="fr" title="Le Jeu des Six Clés Akoky 2026 – Gagnez un séjour au RIAD5 Cap d&#39;Agde" description="Participez au concours Akoky 2026 : trouvez 6 clés cachées sur le site et l&#39;application pour gagner une semaine au RIAD5 Cap d&#39;Agde d&#39;une valeur de 4 500 €. Concours gratuit, 1 gagnant." canonical="https://akoky.com/fr/concours-six-cles" heroTitle="Le Jeu des Six Clés" heroSubtitle="Explorez AKOKY, trouvez les 6 clés cachées et gagnez une semaine au RIAD5 Cap d&#39;Agde — valeur 4 500 €"
-      heroImage="https://akoky.com/images/concours/six-cles.webp" breadcrumb={[{ label: "Le Jeu des Six Clés" }]}>
+      heroImage="/images/concours/six-cles.webp" breadcrumb={[{ label: "Le Jeu des Six Clés" }]}>
       <section className="py-12 md:py-20 px-4">
         <div className="container max-w-4xl mx-auto">
           <p className="text-muted-foreground leading-relaxed mb-4">Explorez Akoky, trouvez les 6 clés cachées et gagnez</p>

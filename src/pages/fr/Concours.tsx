@@ -24,7 +24,7 @@ const Concours = () => (
       canonical="https://akoky.com/fr/concours"
       heroTitle="Concours Akoky - Gagnez des séjours libertins en Europe | Jeux communauté adulte"
       heroSubtitle="Transformez votre réseau en opportunités de victoire"
-      heroImage="https://akoky.com/images/concours/six-cles.webp"
+      heroImage="/images/concours/six-cles.webp"
       breadcrumb={[{ label: "Concours Akoky - Gagnez des séjours libertins en Europe | Jeux communauté adulte" }]}
       faq={FAQ}
     >

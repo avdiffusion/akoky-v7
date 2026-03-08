@@ -22,7 +22,7 @@ const PremierRendezVousLibertin = () => (
       canonical="https://akoky.com/fr/premier-rendez-vous-libertin"
       heroTitle="Votre Premier Rendez-vous Libertin"
       heroSubtitle="Guide pratique pour bien préparer et vivre votre premier rendez-vous libertin."
-      heroImage="https://akoky.com/images/premier-rendez-vous-libertin-cover.webp"
+      heroImage="/images/premier-rendez-vous-libertin-cover.webp"
       breadcrumb={[{ label: "Premier Rendez-vous Libertin" }]}
       faq={FAQ}
     >
