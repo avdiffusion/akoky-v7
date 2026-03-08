@@ -47,7 +47,17 @@ const Application = () => {
   };
 
   return (
+    <>
+    <MetaTags
+      title="App AKOKY iOS/Android | Messagerie & Géolocalisation Clubs"
+      description="Téléchargez l'app AKOKY : messagerie sécurisée, géolocalisation des 120 clubs libertins, notifications événements. Disponible iOS & Android. Gratuit."
+      canonical="https://akoky.com/fr/application"
+      lang="fr"
+      ogImage="/images/app-cover.webp"
+    />
+    <HreflangTags slug="application" />
     <ContentPageLayout
+      lang="fr"
       title="App AKOKY iOS/Android | Messagerie & Géolocalisation Clubs"
       description="Téléchargez l'app AKOKY : messagerie sécurisée, géolocalisation des 120 clubs libertins, notifications événements. Disponible iOS & Android. Gratuit."
       canonical="https://akoky.com/fr/application"

@@ -237,6 +237,7 @@ const Akoky = () => {
         </div>
       </section>
     </ContentPageLayout>
+    </>
   );
 };
 
