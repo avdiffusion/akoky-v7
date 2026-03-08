@@ -161,7 +161,7 @@ const ClubbingIt = () => {
               {cities.map((c, i) => (
                 <Link
                   key={c.label}
-                  to={`/it/club-libertini`}
+                  to={c.href}
                   className="relative overflow-hidden bg-card border border-border rounded-2xl p-5 hover:border-primary/60 hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 group hover:-translate-y-1"
                   style={{ animationDelay: `${i * 50}ms` }}
                 >
