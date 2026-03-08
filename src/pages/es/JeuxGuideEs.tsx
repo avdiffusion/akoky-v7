@@ -23,9 +23,9 @@ const GAMES = [
 
 const JeuxGuideEs = () => (
   <>
-    <MetaTags title="Juegos Libertinos AKOKY Space – Quiz y Desafíos Sensuales | AKOKY" description="Descubre AKOKY Space: juegos libertinos, quiz y desafíos para explorar tu sexualidad con complicidad. Gratuito, privado, para parejas y solteros." canonical="https://akoky.com/es/juegos-libertinos-guia" lang="es" ogImage="/images/cover-jeux.webp" />
+    <MetaTags title="Juegos Libertinos AKOKY Space – Quiz y Desafíos Sensuales | AKOKY" description="Descubre AKOKY Space: juegos libertinos, quiz y desafíos para explorar tu sexualidad con complicidad. Gratuito, privado, para parejas y solteros." canonical="https://akoky.com/es/juegos-libertinos-guia" lang="es" ogImage="/images/es-juegos-cover.webp" />
     <HreflangTags slug="juegos-libertinos-guia" />
-    <ContentPageLayout lang="es" title="Juegos Libertinos AKOKY Space – Quiz y Desafíos Sensuales" description="Descubre AKOKY Space: juegos libertinos, quiz y desafíos para explorar tu sexualidad con complicidad." canonical="https://akoky.com/es/juegos-libertinos-guia" heroTitle="AKOKY Space – Juegos Libertinos y Exploración" heroSubtitle="Quiz sensuales, desafíos y juegos libertinos para explorar y compartir con benevolencia." heroImage="/images/cover-jeux.webp" breadcrumb={[{ label: "Juegos AKOKY Space" }]} faq={FAQ}>
+    <ContentPageLayout lang="es" title="Juegos Libertinos AKOKY Space – Quiz y Desafíos Sensuales" description="Descubre AKOKY Space: juegos libertinos, quiz y desafíos para explorar tu sexualidad con complicidad." canonical="https://akoky.com/es/juegos-libertinos-guia" heroTitle="AKOKY Space – Juegos Libertinos y Exploración" heroSubtitle="Quiz sensuales, desafíos y juegos libertinos para explorar y compartir con benevolencia." heroImage="/images/es-juegos-cover.webp" breadcrumb={[{ label: "Juegos AKOKY Space" }]} faq={FAQ}>
 
       {/* Catálogo de juegos */}
       <section className="py-12 px-4 bg-background">
@@ -43,7 +43,6 @@ const JeuxGuideEs = () => (
         </div>
       </section>
 
-      {/* Pourquoi AKOKY Space */}
       <section className="py-12 px-4 bg-card/50">
         <div className="container max-w-5xl mx-auto">
           <h2 className="text-2xl font-bold text-foreground mb-5">¿Por qué AKOKY Space?</h2>
@@ -63,7 +62,6 @@ const JeuxGuideEs = () => (
         </div>
       </section>
 
-      {/* Cómo funciona */}
       <section className="py-12 px-4 bg-background">
         <div className="container max-w-5xl mx-auto">
           <h2 className="text-2xl font-bold text-foreground mb-5">¿Cómo funciona?</h2>
@@ -84,7 +82,6 @@ const JeuxGuideEs = () => (
         </div>
       </section>
 
-      {/* CTA */}
       <section className="py-12 px-4 bg-card/50">
         <div className="container max-w-3xl mx-auto text-center">
           <h2 className="text-2xl font-bold text-foreground mb-4">¿Listo para jugar?</h2>

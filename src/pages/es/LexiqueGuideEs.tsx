@@ -6,7 +6,7 @@ const LexiqueGuideEs = () => (
   <>
     <MetaTags title="Léxico Libertino 2026 | 200+ Términos Definidos — AKOKY" description="Diccionario libertino completo: swapping, mélangisme, candaulismo. Domina el vocabulario." canonical="https://akoky.com/es/lexico-libertino-guia" lang="es" />
     <HreflangTags slug="lexico-libertino-guia" />
-    <ContentPageLayout lang="es" title="Léxico Libertino 2026 | 200+ Términos Definidos — AKOKY" description="Diccionario libertino completo: swapping, mélangisme, candaulismo. Domina el vocabulario." canonical="https://akoky.com/es/lexico-libertino-guia" heroTitle="Léxico Libertino" heroSubtitle="200+ términos del mundo libertino definidos y explicados" breadcrumb={[{ label: "Léxico Libertino" }]}>
+    <ContentPageLayout lang="es" title="Léxico Libertino 2026 | 200+ Términos Definidos — AKOKY" description="Diccionario libertino completo: swapping, mélangisme, candaulismo. Domina el vocabulario." canonical="https://akoky.com/es/lexico-libertino-guia" heroTitle="Léxico Libertino" heroSubtitle="200+ términos del mundo libertino definidos y explicados" heroImage="/images/es-lexico-cover.webp" breadcrumb={[{ label: "Léxico Libertino" }]}>
       <section className="py-12 md:py-20 px-4">
         <div className="container max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">Los Términos Esenciales del Libertinaje</h2>

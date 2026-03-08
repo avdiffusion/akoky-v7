@@ -33,9 +33,9 @@ const BENEFITS = [
 
 const EvenementsGuideEs = () => (
   <>
-    <MetaTags title="Eventos Libertinos en España 2026 | AKOKY" description="300+ eventos libertinos al mes: veladas exclusivas, fines de semana temáticos, aperitivos libertinos en España y Europa con AKOKY." canonical="https://akoky.com/es/eventos-libertinos-guia" lang="es" ogImage="/images/events-akoky-cover.webp" />
+    <MetaTags title="Eventos Libertinos en España 2026 | AKOKY" description="300+ eventos libertinos al mes: veladas exclusivas, fines de semana temáticos, aperitivos libertinos en España y Europa con AKOKY." canonical="https://akoky.com/es/eventos-libertinos-guia" lang="es" ogImage="/images/es-eventos-cover.webp" />
     <HreflangTags slug="eventos-libertinos-guia" />
-    <ContentPageLayout lang="es" title="Eventos Libertinos en España 2026 | AKOKY" description="300+ eventos libertinos al mes en España y Europa." canonical="https://akoky.com/es/eventos-libertinos-guia" heroTitle="Eventos Libertinos" heroSubtitle="300+ eventos libertinos por mes en España y Europa — Veladas exclusivas, fines de semana temáticos, aperitivos afterwork" heroImage="/images/events-akoky-cover.webp" breadcrumb={[{ label: "Eventos Libertinos" }]} faq={FAQ}>
+    <ContentPageLayout lang="es" title="Eventos Libertinos en España 2026 | AKOKY" description="300+ eventos libertinos al mes en España y Europa." canonical="https://akoky.com/es/eventos-libertinos-guia" heroTitle="Eventos Libertinos" heroSubtitle="300+ eventos libertinos por mes en España y Europa — Veladas exclusivas, fines de semana temáticos, aperitivos afterwork" heroImage="/images/es-eventos-cover.webp" breadcrumb={[{ label: "Eventos Libertinos" }]} faq={FAQ}>
 
       {/* Cards eventos */}
       <section className="py-12 px-4 bg-background">

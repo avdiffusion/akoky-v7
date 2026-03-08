@@ -13,7 +13,7 @@ const ContactGuideEs = () => (
   <>
     <MetaTags title="Contacto AKOKY | Soporte y Asistencia" description="Contacta con Akoky: soporte, colaboraciones, prensa y afiliación." canonical="https://akoky.com/es/contacto-akoky" lang="es" />
     <HreflangTags slug="contacto-akoky" />
-    <ContentPageLayout lang="es" title="Contacto AKOKY" description="Soporte y asistencia AKOKY." canonical="https://akoky.com/es/contacto-akoky" heroTitle="Contacto" heroSubtitle="¿Una pregunta? Nuestro equipo está a tu disposición" heroImage="/images/logo-akoky.webp" breadcrumb={[{ label: "Contacto" }]} faq={FAQ}>
+    <ContentPageLayout lang="es" title="Contacto AKOKY" description="Soporte y asistencia AKOKY." canonical="https://akoky.com/es/contacto-akoky" heroTitle="Contacto" heroSubtitle="¿Una pregunta? Nuestro equipo está a tu disposición" heroImage="/images/es-contacto-cover.webp" breadcrumb={[{ label: "Contacto" }]} faq={FAQ}>
       <section className="py-16 px-4">
         <div className="container max-w-4xl mx-auto space-y-12">
           <div>
