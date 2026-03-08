@@ -101,7 +101,7 @@ const PremierClubLibertin = () => (
                 <div className="bg-background border border-border rounded-xl p-4">
                   <p className="text-sm font-medium text-destructive mb-1">❌ Mythe</p>
                   <p className="text-muted-foreground text-sm mb-2">Il faut être "canon" pour être accepté</p>
-                  <p className="text-sm font-medium text-green-500 mb-1">✅ Réalité</p>
+                  <p className="text-sm font-medium text-primary mb-1">✅ Réalité</p>
                   <p className="text-muted-foreground text-sm">Tous les physiques sont bienvenus, la bienveillance prime</p>
                 </div>
               </div>
