@@ -300,6 +300,7 @@ import GuideGuidePt from "./pages/pt/GuideGuidePt";
 import GuideUltimeGuidePt from "./pages/pt/GuideUltimeGuidePt";
 import ConcoursGuidePt from "./pages/pt/ConcoursGuidePt";
 import ConcursoPt from "./pages/pt/ConcursoPt";
+import PrimeiroEncontroLibertinoPt from "./pages/pt/PrimeiroEncontroLibertinoPt";
 import ConcoursClesGuidePt from "./pages/pt/ConcoursClesGuidePt";
 import ContactGuidePt from "./pages/pt/ContactGuidePt";
 import CookiesGuidePt from "./pages/pt/CookiesGuidePt";
@@ -657,6 +658,7 @@ const App = () => (
             <Route path="/pt/visao-akoky-guia" element={<VisionGuidePt />} />
             <Route path="/pt/primeiro-clube-libertino" element={<PremierClubGuidePt />} />
             <Route path="/pt/primeira-experiencia-libertina" element={<PremierRdvGuidePt />} />
+            <Route path="/pt/primeiro-encontro-libertino" element={<PrimeiroEncontroLibertinoPt />} />
             <Route path="/pt/perguntas-principiantes-guia" element={<QuestionsGuidePt />} />
             <Route path="/pt/guia-libertinismo-completo" element={<GuideGuidePt />} />
             <Route path="/pt/guia-definitivo-libertinismo" element={<GuideUltimeGuidePt />} />
