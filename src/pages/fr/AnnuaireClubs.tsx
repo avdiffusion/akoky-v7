@@ -4,6 +4,8 @@ import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
 import SchemaOrg from "@/components/seo/SchemaOrg";
+import ClubCard from "@/components/clubs/ClubCard";
+import ClubDetailModal from "@/components/clubs/ClubDetailModal";
 import {
   parseEtablissements,
   getByLang,
@@ -11,7 +13,6 @@ import {
   getCountries,
   getTypes,
   getClubUrl,
-  getTypeBadgeColor,
   type Etablissement,
 } from "@/lib/etablissements";
 
@@ -22,6 +23,7 @@ const AnnuaireClubs = () => {
   const [selectedCountry, setSelectedCountry] = useState<string>("");
   const [selectedRegion, setSelectedRegion] = useState<string>("");
   const [selectedType, setSelectedType] = useState<string>("");
+  const [selectedClub, setSelectedClub] = useState<Etablissement | null>(null);
 
   useEffect(() => {
     fetch("/data/etablissement.csv")
@@ -292,51 +294,11 @@ const AnnuaireClubs = () => {
                             </h3>
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                               {clubs.map((club) => (
-                                <a
+                                <ClubCard
                                   key={club.id}
-                                  href={getClubUrl(club.slug)}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="group border border-border rounded-xl bg-card hover:border-primary hover:shadow-lg hover:shadow-primary/5 transition-all duration-200 overflow-hidden"
-                                >
-                                  {/* Image */}
-                                  <div className="aspect-[16/7] overflow-hidden relative">
-                                    <img
-                                      src={club.image}
-                                      alt={`${club.name} — ${club.type} à ${club.city}`}
-                                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                      loading="lazy"
-                                    />
-                                    <div className="absolute top-2 right-2 flex gap-1">
-                                      {club.verified && (
-                                        <span className="text-[10px] bg-green-500/90 text-white px-2 py-0.5 rounded-full font-bold">✓ Vérifié</span>
-                                      )}
-                                    </div>
-                                  </div>
-                                  {/* Info */}
-                                  <div className="p-4">
-                                    <div className="flex items-start justify-between gap-2 mb-2">
-                                      <h4 className="text-sm font-bold text-foreground leading-tight group-hover:text-primary transition-colors">
-                                        {club.name}
-                                      </h4>
-                                      <span className={`shrink-0 text-[10px] px-2 py-0.5 rounded-full border font-semibold ${getTypeBadgeColor(club.type)}`}>
-                                        {club.type}
-                                      </span>
-                                    </div>
-                                    <p className="text-xs text-muted-foreground line-clamp-2 mb-2">{club.description}</p>
-                                    <div className="flex items-center justify-between">
-                                      <p className="text-xs text-muted-foreground">
-                                        📍 {club.city}
-                                      </p>
-                                      {club.schedule && club.schedule !== "n/a" && (
-                                        <p className="text-[10px] text-muted-foreground">🕐 {club.schedule.split(";")[0]}</p>
-                                      )}
-                                    </div>
-                                    <span className="inline-flex items-center gap-1 text-primary text-xs font-semibold mt-2 group-hover:gap-2 transition-all">
-                                      Voir la fiche →
-                                    </span>
-                                  </div>
-                                </a>
+                                  club={club}
+                                  onOpenDetail={setSelectedClub}
+                                />
                               ))}
                             </div>
                           </div>
@@ -418,6 +380,8 @@ const AnnuaireClubs = () => {
           </div>
         </section>
       </ContentPageLayout>
+
+      <ClubDetailModal club={selectedClub} onClose={() => setSelectedClub(null)} />
     </>
   );
 };
