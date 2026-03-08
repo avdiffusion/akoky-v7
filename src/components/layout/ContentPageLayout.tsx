@@ -92,18 +92,27 @@ const ContentPageLayout = ({
     }))
   } : null;
 
+  const LOCALE_MAP: Record<string, string> = { fr: "fr_FR", en: "en_US", es: "es_ES", de: "de_DE", it: "it_IT", pt: "pt_PT" };
+
   return (
     <>
       <Helmet>
+        <html lang={safeLang} />
         <title>{title}</title>
         <meta name="description" content={description} />
         <link rel="canonical" href={canonical} />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="AKOKY" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={canonical} />
-        <meta property="og:image" content="https://akoky.com/images/logo-akoky.webp" />
+        <meta property="og:image" content={heroImage?.startsWith("http") ? heroImage : `https://akoky.com${heroImage}`} />
+        <meta property="og:locale" content={LOCALE_MAP[safeLang] || "fr_FR"} />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@akoky_official" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
         {schema && (
           <script type="application/ld+json">
             {JSON.stringify(Array.isArray(schema) ? schema : [schema])}
