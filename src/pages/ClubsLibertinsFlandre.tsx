@@ -57,7 +57,7 @@ const ClubsLibertinsFlandre = () => {
               <div className="bg-card/50 p-6 rounded-xl border border-white/10">
                 <h3 className="text-xl font-bold text-white mb-3">Gand</h3>
                 <p className="text-gray-300 mb-4 text-sm">Gand, ville historique et universitaire, offre une scène libertine plus intimiste. Ses clubs sont appréciés pour leur ambiance chaleureuse et leur clientèle locale. La ville attire également de nombreux visiteurs néerlandais, grâce à sa proximité géographique.</p>
-                <Link to="/clubs-libertins-gand" className="text-primary hover:underline text-sm font-medium">Découvrir Gand →</Link>
+                <Link to="/fr/clubs-libertins-gand" className="text-primary hover:underline text-sm font-medium">Découvrir Gand →</Link>
               </div>
               <div className="bg-card/50 p-6 rounded-xl border border-white/10">
                 <h3 className="text-xl font-bold text-white mb-3">Bruges</h3>
