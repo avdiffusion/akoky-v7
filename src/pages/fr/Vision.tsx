@@ -124,7 +124,7 @@ const Vision = () => (
           <h2 className="text-2xl font-bold text-foreground mb-5">Akoky aujourd'hui, Akoky demain</h2>
             <p className="text-muted-foreground leading-relaxed mb-3">Une ambition européenne, une vision à long terme</p>
             <p className="text-muted-foreground leading-relaxed mb-3">Akoky est aujourd'hui une plateforme en pleine croissance, portée par une communauté qui partage ses valeurs. Mais notre vision ne s'arrête pas là. Nous travaillons à structurer un écosystème complet autour du libertinage moderne, en Europe et au-delà.</p>
-            <p className="text-muted-foreground leading-relaxed mb-3">Cette ambition passe par plusieurs axes. D'abord, le renforcement de nos partenariats avec les clubs libertins, les organisateurs d'événements et les acteurs du milieu. Akoky n'est pas une plateforme isolée : nous croyons en la collaboration, en la co-construction d'un espace libertin plus sain et plus attractif. Les clubs partenaires bénéficient d</p>
+            <p className="text-muted-foreground leading-relaxed mb-3">Cette ambition passe par plusieurs axes. D'abord, le renforcement de nos partenariats avec les clubs libertins, les organisateurs d'événements et les acteurs du milieu. Akoky n'est pas une plateforme isolée : nous croyons en la collaboration, en la co-construction d'un espace libertin plus sain et plus attractif. Les clubs partenaires bénéficient d'une visibilité accrue et d'outils pour gérer leur communauté de manière professionnelle.</p>
         </div>
       </section>
       <section className="py-12 px-4 bg-background">
