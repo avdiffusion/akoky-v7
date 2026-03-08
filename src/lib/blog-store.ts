@@ -5,6 +5,11 @@ const STORAGE_KEY = "akoky_blog_articles";
 const SEED_KEY = "akoky_blog_seeded";
 const AUTH_KEY = "akoky_blog_auth";
 const ADMIN_PASSWORD = "@Akoky2026";
+const ADMIN_DOB = "12/05/1977";
+const LOCKOUT_KEY = "akoky_admin_lockout";
+const ATTEMPTS_KEY = "akoky_admin_attempts";
+const MAX_ATTEMPTS = 5;
+const LOCKOUT_DURATION_MS = 15 * 60 * 1000; // 15 minutes
 
 // ── Auto-seed on first load ──────────────────────────────────────────────────
 function ensureSeeded(): void {
@@ -17,7 +22,61 @@ function ensureSeeded(): void {
   }
 }
 
-// ── Auth ──────────────────────────────────────────────────────────────────────
+// ── Rate limiting ────────────────────────────────────────────────────────────
+function isLockedOut(): boolean {
+  const lockout = sessionStorage.getItem(LOCKOUT_KEY);
+  if (!lockout) return false;
+  if (Date.now() < parseInt(lockout, 10)) return true;
+  sessionStorage.removeItem(LOCKOUT_KEY);
+  sessionStorage.removeItem(ATTEMPTS_KEY);
+  return false;
+}
+
+function recordFailedAttempt(): number {
+  const attempts = parseInt(sessionStorage.getItem(ATTEMPTS_KEY) || "0", 10) + 1;
+  sessionStorage.setItem(ATTEMPTS_KEY, String(attempts));
+  if (attempts >= MAX_ATTEMPTS) {
+    sessionStorage.setItem(LOCKOUT_KEY, String(Date.now() + LOCKOUT_DURATION_MS));
+  }
+  return MAX_ATTEMPTS - attempts;
+}
+
+function resetAttempts(): void {
+  sessionStorage.removeItem(ATTEMPTS_KEY);
+  sessionStorage.removeItem(LOCKOUT_KEY);
+}
+
+// ── Auth (step 1: password, step 2: DOB) ─────────────────────────────────────
+export function adminCheckLockout(): { locked: boolean; remainingMinutes: number } {
+  const lockout = sessionStorage.getItem(LOCKOUT_KEY);
+  if (!lockout) return { locked: false, remainingMinutes: 0 };
+  const remaining = parseInt(lockout, 10) - Date.now();
+  if (remaining <= 0) {
+    sessionStorage.removeItem(LOCKOUT_KEY);
+    sessionStorage.removeItem(ATTEMPTS_KEY);
+    return { locked: false, remainingMinutes: 0 };
+  }
+  return { locked: true, remainingMinutes: Math.ceil(remaining / 60000) };
+}
+
+export function adminValidatePassword(password: string): { success: boolean; attemptsLeft: number } {
+  if (isLockedOut()) return { success: false, attemptsLeft: 0 };
+  if (password === ADMIN_PASSWORD) {
+    return { success: true, attemptsLeft: MAX_ATTEMPTS };
+  }
+  return { success: false, attemptsLeft: recordFailedAttempt() };
+}
+
+export function adminValidateDob(dob: string): { success: boolean; attemptsLeft: number } {
+  if (isLockedOut()) return { success: false, attemptsLeft: 0 };
+  if (dob === ADMIN_DOB) {
+    resetAttempts();
+    sessionStorage.setItem(AUTH_KEY, "authenticated");
+    return { success: true, attemptsLeft: MAX_ATTEMPTS };
+  }
+  return { success: false, attemptsLeft: recordFailedAttempt() };
+}
+
 export function blogAdminLogin(password: string): boolean {
   if (password === ADMIN_PASSWORD) {
     sessionStorage.setItem(AUTH_KEY, "authenticated");
