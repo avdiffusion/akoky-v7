@@ -233,6 +233,9 @@ import RecensioniIt from "./pages/it/RecensioniIt";
 import ReferralIt from "./pages/it/ReferralIt";
 import LessicoLibertino from "./pages/it/LessicoLibertino";
 import ConcorsoIt from "./pages/it/ConcorsoIt";
+import ClubLibertiniMilano from "./pages/it/ClubLibertiniMilano";
+import ClubLibertiniRoma from "./pages/it/ClubLibertiniRoma";
+import ClubLibertiniTorino from "./pages/it/ClubLibertiniTorino";
 
 
 // ─── Pages IT livraison 6 ─────────────────────────────────────────────────────
