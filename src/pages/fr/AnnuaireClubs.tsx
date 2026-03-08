@@ -147,7 +147,7 @@ const AnnuaireClubs = () => {
         description={`${stats.total} clubs libertins vérifiés en France, Belgique, Suisse et Europe. Saunas, clubs élégants, gîtes privés. Avis membres, fiches détaillées, réservation facile.`}
         canonical="https://akoky.com/fr/clubs"
         lang="fr"
-        ogImage="https://akoky.com/images/club.webp"
+        ogImage="/images/club.webp"
       />
       <HreflangTags slug="clubs" />
       <SchemaOrg schema={[pageSchema, breadcrumbSchema, ...clubsSchema]} />
