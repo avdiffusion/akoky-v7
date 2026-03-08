@@ -12,7 +12,7 @@ const Live = () => (
       description="Rejoignez les lives libertins AKOKY : streams en direct, échanges authentiques et contenu exclusif dans un espace privé et sécurisé."
       canonical="https://akoky.com/fr/live"
       lang="fr"
-      ogImage="https://akoky.com/images/live-akoky.webp"
+      ogImage="/images/live-akoky.webp"
     />
     <HreflangTags slug="live" />
     <ContentPageLayout
