@@ -428,6 +428,12 @@ const App = () => (
             <Route path="/annuaire-clubs-libertins" element={<Navigate to="/fr/annuaire-clubs-libertins" replace />} />
             <Route path="/meilleur-site-libertin" element={<Navigate to="/fr/meilleur-site-libertin" replace />} />
             <Route path="/clubbing" element={<Navigate to="/fr/clubbing" replace />} />
+            <Route path="/clubbing-france-europe" element={<RedirectToFrPath />} />
+            <Route path="/clubbing-belgique" element={<RedirectToFrPath />} />
+            <Route path="/clubbing-suisse" element={<RedirectToFrPath />} />
+            <Route path="/clubbing-luxembourg" element={<RedirectToFrPath />} />
+            <Route path="/clubs-echangistes-france" element={<RedirectToFrPath />} />
+            <Route path="/clubs-libertins-*" element={<RedirectToFrPath />} />
             <Route path="/akoky-vs-wyylde" element={<Navigate to="/fr/akoky-vs-wyylde" replace />} />
             <Route path="/blogs" element={<Navigate to="/fr/blog" replace />} />
             <Route path="/blog" element={<Navigate to="/fr/blog" replace />} />
