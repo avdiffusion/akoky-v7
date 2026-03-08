@@ -57,7 +57,7 @@ const Akoky = () => {
       canonical="https://akoky.com/fr/akoky"
       heroTitle="Notre mission AKOKY"
       heroSubtitle="Découvrez les valeurs, la vision et les engagements de la communauté Akoky"
-      heroImage="https://akoky.com/fr/images/akoky.webp"
+      heroImage="/images/akoky.webp"
       faq={faqAkoky}
       schema={jsonSchema}
     >
