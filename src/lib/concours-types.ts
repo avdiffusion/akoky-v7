@@ -2,11 +2,10 @@ export type ConcoursLang = "fr" | "es" | "it" | "pt" | "de";
 
 export type ConcoursStatus = "active" | "upcoming" | "past";
 
-export const CONCOURS_LANGS: ConcoursLang[] = ["fr", "en", "es", "it", "pt", "de"];
+export const CONCOURS_LANGS: ConcoursLang[] = ["fr", "es", "it", "pt", "de"];
 
 export const LANG_LABELS: Record<ConcoursLang, string> = {
   fr: "Français",
-  en: "English",
   es: "Español",
   it: "Italiano",
   pt: "Português",
