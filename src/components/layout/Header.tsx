@@ -25,13 +25,6 @@ const NAV_LINKS: Record<Lang, NavLink[]> = {
     { href: "/fr/blog", label: "Blog", icon: "🎭" },
     { href: "/faq", label: "FAQ", icon: "❓" },
   ],
-  en: [
-    { href: "/en", label: "Home", icon: "🏠" },
-    { href: "/en/akoky", label: "About", icon: "ℹ️" },
-    { href: "/en/start-swinging", label: "Getting Started", icon: "📝" },
-    { href: "/en/blog", label: "Blog", icon: "🎭" },
-    { href: "/en/faq", label: "FAQ", icon: "❓" },
-  ],
   es: [
     { href: "/es", label: "Inicio", icon: "🏠" },
     { href: "/es/akoky", label: "Acerca de", icon: "ℹ️" },
