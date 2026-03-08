@@ -6,6 +6,7 @@ import HreflangTags from "@/components/seo/HreflangTags";
 import SchemaOrg from "@/components/seo/SchemaOrg";
 import ClubCard from "@/components/clubs/ClubCard";
 import ClubDetailModal from "@/components/clubs/ClubDetailModal";
+import BannerCarousel from "@/components/clubs/BannerCarousel";
 import {
   parseEtablissements,
   getByLang,
