@@ -6,6 +6,7 @@ import HreflangTags from "@/components/seo/HreflangTags";
 import SchemaOrg from "@/components/seo/SchemaOrg";
 import ClubCard from "@/components/clubs/ClubCard";
 import ClubDetailModal from "@/components/clubs/ClubDetailModal";
+import BannerCarousel from "@/components/clubs/BannerCarousel";
 import {
   parseEtablissements,
   getByLang,
@@ -168,6 +169,9 @@ const AnnuaireClubs = () => {
           { question: "Y a-t-il des clubs pour les couples débutants ?", answer: "Oui, de nombreux clubs accueillent les débutants avec des soirées spéciales et un accompagnement. Consultez notre guide pour bien débuter en club libertin." },
         ]}
       >
+        {/* ═══════════ BANNER CAROUSEL ═══════════ */}
+        <BannerCarousel />
+
         {/* ═══════════ STATS ═══════════ */}
         <section className="py-8 px-4 bg-background">
           <div className="container max-w-6xl mx-auto">
