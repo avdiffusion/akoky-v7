@@ -307,7 +307,7 @@ const LEGAL_QUICK_LABELS: Record<Lang, { legal: string; terms: string; privacy: 
 
 const COOKIE_LABELS: Record<Lang, { manage: string; info: string }> = {
   fr: { manage: "⚙️ Gérer les cookies", info: "🍪 Informations cookies" },
-  en: { manage: "⚙️ Manage cookies", info: "🍪 Cookie information" },
+  
   es: { manage: "⚙️ Gestionar cookies", info: "🍪 Información de cookies" },
   de: { manage: "⚙️ Cookies verwalten", info: "🍪 Cookie-Informationen" },
   it: { manage: "⚙️ Gestisci cookie", info: "🍪 Informazioni cookie" },
