@@ -1,6 +1,7 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
+import { Link } from "react-router-dom";
 
 const FAQ = [
   { question: "¿Cómo prepararse para mi primera velada en un club libertino?", answer: "Reserva con antelación, informa del dress code, llega en horario temprano, explora los espacios habituados primero y recuerda que tienes derecho absoluto a decir no en cualquier momento." },
