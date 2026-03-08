@@ -341,7 +341,7 @@ const App = () => (
             <Route path="/fr/premier-rendez-vous-libertin" element={<PremierRendezVousLibertin />} />
             <Route path="/fr/questions-debutants-libertinage" element={<QuestionsDebutantsLibertinage />} />
             <Route path="/fr/contact" element={<Contact />} />
-            <Route path="/fr/concours" element={<ConcoursListing lang="fr" />} />
+            <Route path="/fr/concours" element={<Concours />} />
             <Route path="/fr/clubbing" element={<Clubbing />} />
             <Route path="/fr/clubbing-france-europe" element={<ClubbingFranceEurope />} />
             <Route path="/fr/clubbing-belgique" element={<ClubbingBelgique />} />
