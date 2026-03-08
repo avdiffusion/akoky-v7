@@ -22,7 +22,7 @@ const QuestionsGuideEs = () => (
   <>
     <MetaTags title="Preguntas de Principiantes sobre el Libertinaje | AKOKY" description="Las preguntas más frecuentes de principiantes, con respuestas completas y benevolentes." canonical="https://akoky.com/es/preguntas-principiantes" lang="es" ogImage="/images/questions-debutants-cover.webp" />
     <HreflangTags slug="preguntas-principiantes" />
-    <ContentPageLayout lang="es" title="Preguntas Frecuentes de Principiantes" description="Las preguntas más frecuentes sobre el libertinaje." canonical="https://akoky.com/es/preguntas-principiantes" heroTitle="Preguntas de Principiantes" heroSubtitle="Todas las respuestas a tus dudas, explicadas sin juicio." <ContentPageLayout lang="es" title="Preguntas Frecuentes de Principiantes" description="Las preguntas más frecuentes sobre el libertinaje." canonical="https://akoky.com/es/preguntas-principiantes" heroTitle="Preguntas de Principiantes" heroSubtitle="Todas las respuestas a tus dudas, explicadas sin juicio." heroImage="/images/es-preguntas-cover.webp" breadcrumb={[{ label: "Preguntas Principiantes" }]} faq={FAQ}>
+    <ContentPageLayout lang="es" title="Preguntas Frecuentes de Principiantes" description="Las preguntas más frecuentes sobre el libertinaje." canonical="https://akoky.com/es/preguntas-principiantes" heroTitle="Preguntas de Principiantes" heroSubtitle="Todas las respuestas a tus dudas, explicadas sin juicio." heroImage="/images/es-preguntas-cover.webp" breadcrumb={[{ label: "Preguntas Principiantes" }]} faq={FAQ}>
       <section className="py-8 px-4 bg-card/50">
         <div className="container max-w-4xl mx-auto">
           <div className="flex flex-wrap gap-3">
