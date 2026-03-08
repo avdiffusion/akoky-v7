@@ -76,7 +76,7 @@ const SaunasLibertins = () => (
       description="Découvrez les meilleurs saunas libertins en France. Guide complet, espaces, équipements et conseils. AKOKY, référence du libertinage premium."
       canonical="https://akoky.com/fr/saunas-libertins"
       lang="fr"
-      ogImage="https://akoky.com/images/sauna-cover.webp"
+      ogImage="/images/sauna-cover.webp"
     />
     <HreflangTags slug="saunas-libertins" />
     <ContentPageLayout
