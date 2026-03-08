@@ -35,9 +35,9 @@ const CONFIANCE_CARDS = [
 ];
 
 const EVENT_CARDS = [
-  { title: "Soirées Exclusives", desc: "Des événements privés dans les lieux les plus prestigieux.", location: "Paris", count: "120+", img: "https://akoky.com/images/event/event1.webp", alt: "Soirées libertines exclusives Akoky" },
-  { title: "Weekends Thématiques", desc: "Des escapades inoubliables avec la communauté.", location: "Côte d'Azur", count: "80+", img: "https://akoky.com/images/event/event2.webp", alt: "Week-ends libertins et escapades Akoky" },
-  { title: "Rencontres Intimes", desc: "Des soirées plus intimistes pour mieux se connaître.", location: "Lyon", count: "40+", img: "https://akoky.com/images/event/event3.webp", alt: "Rencontres intimistes et soirées privées Akoky" },
+  { title: "Soirées Exclusives", desc: "Des événements privés dans les lieux les plus prestigieux.", location: "Paris", count: "120+", img: "/images/event/event1.webp", alt: "Soirées libertines exclusives Akoky" },
+  { title: "Weekends Thématiques", desc: "Des escapades inoubliables avec la communauté.", location: "Côte d'Azur", count: "80+", img: "/images/event/event2.webp", alt: "Week-ends libertins et escapades Akoky" },
+  { title: "Rencontres Intimes", desc: "Des soirées plus intimistes pour mieux se connaître.", location: "Lyon", count: "40+", img: "/images/event/event3.webp", alt: "Rencontres intimistes et soirées privées Akoky" },
 ];
 
 const QUICK_ACCESS = [

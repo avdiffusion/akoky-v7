@@ -159,7 +159,7 @@ const AnnuaireClubs = () => {
         canonical="https://akoky.com/fr/clubs"
         heroTitle="Annuaire des Clubs Libertins"
         heroSubtitle={`${stats.total} établissements vérifiés en France, Belgique, Suisse et Europe — clubs, saunas, gîtes, cinémas. Fiches détaillées et liens directs.`}
-        heroImage="https://akoky.com/images/club.webp"
+        heroImage="/images/club.webp"
         breadcrumb={[{ label: "Annuaire Clubs" }]}
         faq={[
           { question: "Comment trouver un club libertin près de chez moi ?", answer: "Utilisez les filtres par pays, région et type d'établissement ci-dessus. Chaque fiche club contient l'adresse, les horaires et un lien direct vers la page AKOKY du club." },

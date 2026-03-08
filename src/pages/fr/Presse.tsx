@@ -5,10 +5,10 @@ import HreflangTags from "@/components/seo/HreflangTags";
 const FAQ = [];
 
 const BRANDING = [
-  { img: "https://akoky.com/images/branding/tshirts-akoky-premium.webp", alt: "T-shirts et vêtements Akoky premium avec logo AK" },
-  { img: "https://akoky.com/images/branding/casquette-akoky-premium.webp", alt: "Casquettes et accessoires Akoky premium avec logo AK" },
-  { img: "https://akoky.com/images/branding/goodies-akoky-premium.webp", alt: "Goodies Akoky premium avec logo AK" },
-  { img: "https://akoky.com/images/branding/affiche-akoky-premium.webp", alt: "Supports de communication Akoky avec logo AK" },
+  { img: "/images/branding/tshirts-akoky-premium.webp", alt: "T-shirts et vêtements Akoky premium avec logo AK" },
+  { img: "/images/branding/casquette-akoky-premium.webp", alt: "Casquettes et accessoires Akoky premium avec logo AK" },
+  { img: "/images/branding/goodies-akoky-premium.webp", alt: "Goodies Akoky premium avec logo AK" },
+  { img: "/images/branding/affiche-akoky-premium.webp", alt: "Supports de communication Akoky avec logo AK" },
 ];
 
 const Presse = () => (

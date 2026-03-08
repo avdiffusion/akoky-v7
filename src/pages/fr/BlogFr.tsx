@@ -221,7 +221,7 @@ const BlogFr = () => {
         description="Articles, guides pratiques et conseils pour vivre le libertinage en toute confiance en France. Contenu authentique, sans tabou, pour curieux et initiés."
         canonical="https://akoky.com/fr/blogs"
         lang="fr"
-        ogImage="https://akoky.com/images/panorama-paris-nuit.webp"
+        ogImage="/images/panorama-paris-nuit.webp"
       />
       <HreflangTags slug="blogs" />
       <SchemaOrg schema={blogSchema} />
