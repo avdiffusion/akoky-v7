@@ -36,6 +36,7 @@ export function isBlogAdminAuthenticated(): boolean {
 
 // ── CRUD ──────────────────────────────────────────────────────────────────────
 export function getAllArticles(): BlogArticle[] {
+  ensureSeeded();
   try {
     const data = localStorage.getItem(STORAGE_KEY);
     return data ? JSON.parse(data) : [];
