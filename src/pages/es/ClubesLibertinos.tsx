@@ -127,7 +127,7 @@ const ClubesLibertinos = () => {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: "Directorio de Clubes Libertinos en Europa — AKOKY",
-    description: `${stats.total} clubes libertinos verificados en España, Francia, Bélgica, Suiza: saunas, clubes elegantes, locales privados.`,
+    description: `${stats.total} clubes libertinos verificados en España y Europa: saunas, clubes elegantes, locales privados.`,
     url: "https://akoky.com/es/clubes-libertinos",
     numberOfItems: stats.total,
     itemListElement: data.slice(0, 100).map((e, i) => ({
@@ -152,7 +152,7 @@ const ClubesLibertinos = () => {
       <Helmet>
         <html lang="es" />
         <title>{`${stats.total} Clubes Libertinos en Europa — Directorio Verificado | AKOKY`}</title>
-        <meta name="description" content={`${stats.total} clubes libertinos verificados en España, Francia, Bélgica, Suiza y Europa. Saunas, clubes elegantes, locales privados. Opiniones de miembros, fichas detalladas.`} />
+        <meta name="description" content={`${stats.total} clubes libertinos verificados en España y Europa. Saunas, clubes elegantes, locales privados. Opiniones de miembros, fichas detalladas.`} />
         <link rel="canonical" href="https://akoky.com/es/clubes-libertinos" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
         <meta property="og:type" content="website" />
@@ -174,7 +174,7 @@ const ClubesLibertinos = () => {
         description={`${stats.total} clubes libertinos verificados en Europa.`}
         canonical="https://akoky.com/es/clubes-libertinos"
         heroTitle="Directorio de Clubes Libertinos"
-        heroSubtitle={`${stats.total} establecimientos verificados en España, Francia, Bélgica, Suiza y Europa — clubes, saunas, locales privados. Fichas detalladas y enlaces directos.`}
+        heroSubtitle={`${stats.total} establecimientos verificados en España y toda Europa — clubes, saunas, locales privados. Fichas detalladas y enlaces directos.`}
         heroImage="/images/club.webp"
         breadcrumb={[{ label: "Clubes Libertinos" }]}
         faq={[
@@ -363,10 +363,10 @@ const ClubesLibertinos = () => {
                 { label: "Sevilla", href: "/es/clubbing" },
                 { label: "Bilbao", href: "/es/clubbing" },
                 { label: "Málaga", href: "/es/clubbing" },
-                { label: "París", href: "/es/clubbing" },
-                { label: "Lyon", href: "/es/clubbing" },
-                { label: "Bruselas", href: "/es/clubbing" },
-                { label: "Ginebra", href: "/es/clubbing" },
+                { label: "Zaragoza", href: "/es/clubbing" },
+                { label: "Marbella", href: "/es/clubbing" },
+                { label: "Ibiza", href: "/es/clubbing" },
+                { label: "Alicante", href: "/es/clubbing" },
               ].map((link) => (
                 <Link
                   key={link.label}
