@@ -34,7 +34,7 @@ const DISCOVER_LINKS: Record<Lang, FooterLink[]> = {
     { href: "/es/eventos", icon: "📅", label: "Eventos" },
     { href: "/es/juegos", icon: "🎮", label: "Juegos" },
     { href: "/es/avis", icon: "⭐", label: "Opiniones" },
-    { href: "/es/aplicacion", icon: "📱", label: "App móvil" },
+    { href: "/es/app", icon: "📱", label: "App móvil" },
   ],
   de: [
     { href: "/de", icon: "🏠", label: "Startseite" },

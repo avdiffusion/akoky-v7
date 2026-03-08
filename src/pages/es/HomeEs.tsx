@@ -168,7 +168,7 @@ const HomeEs = () => {
                 directorio de los <Link to="/es/clubbing" className="text-primary hover:underline">mejores clubes libertinos</Link> de Europa,{" "}
                 <Link to="/es/eventos" className="text-primary hover:underline">eventos exclusivos</Link> mensuales,{" "}
                 <Link to="/es/live" className="text-primary hover:underline">lives libertinos</Link> en directo y{" "}
-                <Link to="/es/aplicacion" className="text-primary hover:underline">aplicación móvil</Link> con geolocalización.
+                <Link to="/es/app" className="text-primary hover:underline">aplicación móvil</Link> con geolocalización.
               </p>
               <p className="text-base md:text-lg leading-8 text-muted-foreground mt-4">
                 Tanto si eres <Link to="/es/empezar-libertinaje" className="text-primary hover:underline">principiante en el libertinaje</Link>{" "}
@@ -209,7 +209,7 @@ const HomeEs = () => {
               <div>
                 <h2 className="text-3xl md:text-4xl font-black mb-6">LA APLICACIÓN AKOKY</h2>
                 <p className="text-lg text-muted-foreground mb-8">
-                  Descarga <Link to="/es/aplicacion" className="text-primary">la aplicación AKOKY</Link>, disponible en iOS y Android.
+                  Descarga <Link to="/es/app" className="text-primary">la aplicación AKOKY</Link>, disponible en iOS y Android.
                   Disfruta de una mensajería segura, geolocalización de{" "}
                   <Link to="/es/clubbing" className="text-primary">clubes asociados</Link>, notificaciones para{" "}
                   <Link to="/es/eventos" className="text-primary">eventos privados</Link> y un espacio de intercambio reservado a miembros.
@@ -226,7 +226,7 @@ const HomeEs = () => {
                     </li>
                   ))}
                 </ul>
-                <Link to="/es/aplicacion" className="inline-block px-8 py-4 rounded-full font-bold btn-gradient-primary text-primary-foreground hover:-translate-y-0.5 transition-all hover:shadow-xl hover:shadow-primary/30">
+                <Link to="/es/app" className="inline-block px-8 py-4 rounded-full font-bold btn-gradient-primary text-primary-foreground hover:-translate-y-0.5 transition-all hover:shadow-xl hover:shadow-primary/30">
                   DESCARGAR LA APP
                 </Link>
               </div>
