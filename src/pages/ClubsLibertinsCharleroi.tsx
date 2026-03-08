@@ -94,10 +94,10 @@ const ClubsLibertinsCharleroi = () => {
               <div className="mt-6">
                 <p className="mb-4">Pour découvrir les clubs libertins dans les autres villes wallonnes, consultez nos guides dédiés :</p>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose">
-                  <li><Link to="/clubbing-belgique" className="text-primary hover:underline">Clubs en Wallonie</Link></li>
-                  <li><Link to="/clubbing-belgique" className="text-primary hover:underline">Clubs à Liège</Link></li>
-                  <li><Link to="/clubbing-belgique" className="text-primary hover:underline">Clubs à Namur</Link></li>
-                  <li><Link to="/clubbing-belgique" className="text-primary hover:underline">Clubs à Mons</Link></li>
+                  <li><Link to="/fr/clubs-libertins-wallonie" className="text-primary hover:underline">Clubs en Wallonie</Link></li>
+                  <li><Link to="/fr/clubs-libertins-liege" className="text-primary hover:underline">Clubs à Liège</Link></li>
+                  <li><Link to="/fr/clubbing-belgique" className="text-primary hover:underline">Clubs à Namur</Link></li>
+                  <li><Link to="/fr/clubbing-belgique" className="text-primary hover:underline">Clubs à Mons</Link></li>
                 </ul>
               </div>
             </div>
