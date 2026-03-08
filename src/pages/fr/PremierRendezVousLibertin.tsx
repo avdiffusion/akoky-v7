@@ -18,7 +18,7 @@ const PremierRendezVousLibertin = () => (
     <ContentPageLayout
       lang="fr"
       title="Votre Premier Rendez-vous Libertin – Guide & Conseils"
-      description="Tout savoir pour votre premier rendez-vous libertin : préparation, dress code, règles et conseils pr"
+      description="Tout savoir pour votre premier rendez-vous libertin : préparation, dress code, règles et conseils pratiques. AKOKY."
       canonical="https://akoky.com/fr/premier-rendez-vous-libertin"
       heroTitle="Votre Premier Rendez-vous Libertin"
       heroSubtitle="Guide pratique pour bien préparer et vivre votre premier rendez-vous libertin."

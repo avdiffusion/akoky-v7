@@ -24,7 +24,7 @@ const DebuterLibertinage = () => (
     <ContentPageLayout
       lang="fr"
       title="Débuter dans le Libertinage 2026 – Guide Complet"
-      description="Guide complet pour débuter dans le libertinage : premiers pas, conseils, définitions et ressources. "
+      description="Guide complet pour débuter dans le libertinage : premiers pas, conseils, définitions et ressources. AKOKY accompagne les débutants."
       canonical="https://akoky.com/fr/debuter-libertinage"
       heroTitle="Guide du Libertinage en France"
       heroSubtitle="Tout ce qu'il faut savoir pour débuter dans le libertinage en toute sérénité."

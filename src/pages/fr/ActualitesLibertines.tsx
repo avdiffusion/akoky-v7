@@ -18,7 +18,7 @@ const ActualitesLibertines = () => (
     <ContentPageLayout
       lang="fr"
       title="Actualités & Tendances Libertines 2026"
-      description="Suivez les actualités et tendances de la communauté libertine francophone. Nouveautés, événements et"
+      description="Suivez les actualités et tendances de la communauté libertine francophone. Nouveautés, événements et lifestyle libertin sur AKOKY."
       canonical="https://akoky.com/fr/actualites-libertines"
       heroTitle="Actualités & Tendances Libertines"
       heroSubtitle="Toutes les nouveautés de la communauté libertine : événements, tendances et vie libertine."

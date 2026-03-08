@@ -28,7 +28,7 @@ const Vip = () => (
     <ContentPageLayout
       lang="fr"
       title="Statut VIP Akoky 2026 – Avantages & Fonctionnalités Premium"
-      description="Découvrez le statut VIP Akoky : fonctionnalités exclusives, avantages premium et accès prioritaire. "
+      description="Découvrez le statut VIP Akoky : fonctionnalités exclusives, avantages premium et accès prioritaire. Rejoignez l'élite libertine."
       canonical="https://akoky.com/fr/vip"
       heroTitle="Statut VIP Akoky"
       heroSubtitle="Accédez aux fonctionnalités premium et rejoignez l'élite de la communauté libertine."
