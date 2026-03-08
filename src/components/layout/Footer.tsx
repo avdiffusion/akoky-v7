@@ -515,7 +515,7 @@ const Footer = ({ lang = "fr" }: FooterProps) => {
 
           {/* SEO Links */}
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 max-w-[1200px] mx-auto my-8 text-xs text-muted-foreground">
-            {SEO_LINKS.map((l) => (
+            {SEO_LINKS[lang].map((l) => (
               <a key={l.href} href={l.href} target="_blank" className="hover:text-primary hover:underline transition-colors">
                 {l.label}
               </a>
