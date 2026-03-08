@@ -1,7 +1,6 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import HreflangTags from "@/components/seo/HreflangTags";
 import { Link } from "react-router-dom";
-import MetaTags from "@/components/seo/MetaTags";
 
 const FAQ = [
   { question: "¿Cómo participar en los concursos Akoky?", answer: "Para participar, debes ser miembro registrado en Akoky. Cada concurso tiene sus propias reglas de participación detalladas en su página dedicada. La mayoría son gratuitos y abiertos a todos los miembros activos." },
