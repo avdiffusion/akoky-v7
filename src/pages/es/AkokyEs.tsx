@@ -1,6 +1,6 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
 
 const faqAkoky = [
