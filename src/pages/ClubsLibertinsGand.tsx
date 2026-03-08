@@ -10,7 +10,7 @@ const ClubsLibertinsGand = () => {
       heroTitle="Clubs libertins à Gand"
       heroSubtitle="Le guide complet des clubs, soirées et événements libertins à Gand"
       heroImage="/images/clubs-libertins-belgique.webp"
-      breadcrumb={[{ label: "Clubbing", href: "/clubbing" }, { label: "Gand" }]}
+      breadcrumb={[{ label: "Clubbing", href: "/fr/clubbing" }, { label: "Gand" }]}
       faq={[
         {
           question: "Où rencontrer des libertins à Gand ?",
