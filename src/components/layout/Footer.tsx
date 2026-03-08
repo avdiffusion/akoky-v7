@@ -68,8 +68,8 @@ const COMMUNITY_LINKS: Record<Lang, FooterLink[]> = {
   es: [
     { href: "/es/clubbing", icon: "🏢", label: "Clubbing" },
     { href: "/es/vip", icon: "💎", label: "Membresía VIP" },
-    { href: "/es/lexico", icon: "📚", label: "Léxico libertino" },
-    { href: "/es/prensa", icon: "📰", label: "Sala de prensa" },
+    { href: "/es/lexico-libertino-guia", icon: "📚", label: "Léxico libertino" },
+    { href: "/es/sala-de-prensa", icon: "📰", label: "Sala de prensa" },
     { href: "/es/faq", icon: "❓", label: "FAQ" },
     { href: "/es/contacto", icon: "✉️", label: "Contacto" },
   ],

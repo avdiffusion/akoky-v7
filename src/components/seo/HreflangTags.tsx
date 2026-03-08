@@ -16,10 +16,10 @@ const HreflangTags = ({ slug = "" }: HreflangTagsProps) => {
           key={lang}
           rel="alternate"
           hrefLang={lang}
-          href={lang === "fr" ? `${BASE}${path}` : `${BASE}/${lang}${path}`}
+          href={`${BASE}/${lang}${path}`}
         />
       ))}
-      <link rel="alternate" hrefLang="x-default" href={`${BASE}${path}`} />
+      <link rel="alternate" hrefLang="x-default" href={`${BASE}/fr${path}`} />
       <link rel="alternate" hrefLang="fr-BE" href={`https://akoky.be${path}`} />
     </Helmet>
   );
