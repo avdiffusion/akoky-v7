@@ -10,7 +10,7 @@ const ClubsLibertinsFlandre = () => {
       heroTitle="Clubs libertins en Flandre"
       heroSubtitle="Le guide complet des clubs, villes et événements libertins en Flandre"
       heroImage="/images/region-clubbing-belgique.webp"
-      breadcrumb={[{ label: "Clubbing", href: "/clubbing" }, { label: "Flandre" }]}
+      breadcrumb={[{ label: "Clubbing", href: "/fr/clubbing" }, { label: "Flandre" }]}
       faq={[
         {
           question: "Où trouver des clubs libertins en Flandre ?",
