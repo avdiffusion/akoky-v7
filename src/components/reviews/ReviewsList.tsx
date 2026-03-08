@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { loadReviews, getReviewsByLang, computeStats, type Review } from "@/lib/reviews";
 import { Star, CheckCircle, ThumbsUp } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 type Lang = "fr" | "en" | "es" | "de" | "it" | "pt";
 
@@ -8,13 +9,13 @@ interface ReviewsListProps {
   lang: Lang;
 }
 
-const LABELS: Record<Lang, { verified: string; helpful: string; title: string }> = {
-  fr: { verified: "Vérifié", helpful: "utile", title: "Témoignages vérifiés" },
-  en: { verified: "Verified", helpful: "helpful", title: "Verified testimonials" },
-  es: { verified: "Verificado", helpful: "útil", title: "Testimonios verificados" },
-  de: { verified: "Verifiziert", helpful: "hilfreich", title: "Verifizierte Erfahrungsberichte" },
-  it: { verified: "Verificato", helpful: "utile", title: "Testimonianze verificate" },
-  pt: { verified: "Verificado", helpful: "útil", title: "Testemunhos verificados" },
+const LABELS: Record<Lang, { verified: string; helpful: string; title: string; reviews: string }> = {
+  fr: { verified: "Vérifié", helpful: "utile", title: "Témoignages vérifiés", reviews: "avis" },
+  en: { verified: "Verified", helpful: "helpful", title: "Verified testimonials", reviews: "reviews" },
+  es: { verified: "Verificado", helpful: "útil", title: "Testimonios verificados", reviews: "reseñas" },
+  de: { verified: "Verifiziert", helpful: "hilfreich", title: "Verifizierte Erfahrungsberichte", reviews: "Bewertungen" },
+  it: { verified: "Verificato", helpful: "utile", title: "Testimonianze verificate", reviews: "recensioni" },
+  pt: { verified: "Verificado", helpful: "útil", title: "Testemunhos verificados", reviews: "avaliações" },
 };
 
 const ReviewCard = ({ review, lang }: { review: Review; lang: Lang }) => {
@@ -26,8 +27,8 @@ const ReviewCard = ({ review, lang }: { review: Review; lang: Lang }) => {
       itemType="https://schema.org/Review"
     >
       <div className="flex items-start justify-between mb-3">
-        <div>
-          <p className="font-bold text-foreground" itemProp="author">{review.author}</p>
+        <div itemProp="author" itemScope itemType="https://schema.org/Person">
+          <p className="font-bold text-foreground" itemProp="name">{review.author}</p>
           <time className="text-xs text-muted-foreground" dateTime={review.date} itemProp="datePublished">
             {new Date(review.date).toLocaleDateString(
               lang === "fr" ? "fr-FR" : lang === "de" ? "de-DE" : lang === "es" ? "es-ES" : lang === "it" ? "it-IT" : lang === "pt" ? "pt-PT" : "en-US"
@@ -37,6 +38,7 @@ const ReviewCard = ({ review, lang }: { review: Review; lang: Lang }) => {
         <div className="flex items-center gap-0.5" itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
           <meta itemProp="ratingValue" content={String(review.rating)} />
           <meta itemProp="bestRating" content="5" />
+          <meta itemProp="worstRating" content="1" />
           {Array.from({ length: 5 }).map((_, i) => (
             <Star
               key={i}
@@ -61,7 +63,10 @@ const ReviewCard = ({ review, lang }: { review: Review; lang: Lang }) => {
         </span>
       </div>
 
-      <meta itemProp="itemReviewed" content="AKOKY" />
+      <div itemProp="itemReviewed" itemScope itemType="https://schema.org/SoftwareApplication" className="hidden">
+        <meta itemProp="name" content="AKOKY" />
+        <meta itemProp="applicationCategory" content="SocialNetworkingApplication" />
+      </div>
     </article>
   );
 };
@@ -78,6 +83,32 @@ const ReviewsList = ({ lang }: ReviewsListProps) => {
   }, [lang]);
 
   const stats = computeStats(reviews);
+  const labels = LABELS[lang];
+
+  // JSON-LD AggregateRating schema for better Google indexation
+  const aggregateRatingSchema = reviews.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "AKOKY",
+    "applicationCategory": "SocialNetworkingApplication",
+    "operatingSystem": "Web, iOS, Android",
+    "url": "https://akoky.com",
+    "image": "https://akoky.com/images/logo-akoky.webp",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": stats.avg,
+      "reviewCount": stats.count,
+      "bestRating": "5",
+      "worstRating": "1",
+    },
+    "review": reviews.slice(0, 10).map((r) => ({
+      "@type": "Review",
+      "author": { "@type": "Person", "name": r.author },
+      "datePublished": r.date,
+      "reviewRating": { "@type": "Rating", "ratingValue": r.rating, "bestRating": 5 },
+      "reviewBody": r.text,
+    })),
+  } : null;
 
   if (loading) {
     return (
@@ -90,53 +121,51 @@ const ReviewsList = ({ lang }: ReviewsListProps) => {
   if (reviews.length === 0) return null;
 
   return (
-    <section className="py-16 px-4">
-      <div className="container max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold text-foreground mb-2 text-center font-display">
-          {LABELS[lang].title}
-        </h2>
+    <>
+      {aggregateRatingSchema && (
+        <Helmet>
+          <script type="application/ld+json">{JSON.stringify(aggregateRatingSchema)}</script>
+        </Helmet>
+      )}
 
-        {/* Stats bar */}
-        <div className="flex flex-wrap items-center justify-center gap-6 mb-10 text-center">
-          <div>
-            <span className="text-4xl font-black text-primary">{stats.avg}</span>
-            <span className="text-lg text-muted-foreground">/5</span>
-            <div className="flex items-center justify-center gap-0.5 mt-1">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <Star key={i} className={`h-4 w-4 ${i < Math.round(parseFloat(stats.avg)) ? "fill-primary text-primary" : "text-muted-foreground/30"}`} />
-              ))}
+      <section className="py-16 px-4">
+        <div className="container max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold text-foreground mb-2 text-center font-display">
+            {labels.title}
+          </h2>
+
+          {/* Stats bar */}
+          <div className="flex flex-wrap items-center justify-center gap-6 mb-10 text-center">
+            <div>
+              <span className="text-4xl font-black text-primary">{stats.avg}</span>
+              <span className="text-lg text-muted-foreground">/5</span>
+              <div className="flex items-center justify-center gap-0.5 mt-1">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <Star key={i} className={`h-4 w-4 ${i < Math.round(parseFloat(stats.avg)) ? "fill-primary text-primary" : "text-muted-foreground/30"}`} />
+                ))}
+              </div>
+            </div>
+            <div className="h-10 w-px bg-border hidden sm:block" />
+            <div>
+              <span className="text-2xl font-black text-foreground">{stats.count}</span>
+              <p className="text-xs text-muted-foreground uppercase tracking-wider">{labels.reviews}</p>
+            </div>
+            <div className="h-10 w-px bg-border hidden sm:block" />
+            <div>
+              <span className="text-2xl font-black text-foreground">{stats.five}%</span>
+              <p className="text-xs text-muted-foreground uppercase tracking-wider">5★</p>
             </div>
           </div>
-          <div className="h-10 w-px bg-border hidden sm:block" />
-          <div>
-            <span className="text-2xl font-black text-foreground">{stats.count}</span>
-            <p className="text-xs text-muted-foreground uppercase tracking-wider">avis</p>
-          </div>
-          <div className="h-10 w-px bg-border hidden sm:block" />
-          <div>
-            <span className="text-2xl font-black text-foreground">{stats.five}%</span>
-            <p className="text-xs text-muted-foreground uppercase tracking-wider">5★</p>
-          </div>
-        </div>
 
-        {/* Reviews grid — all rendered for SEO */}
-        <div
-          className="grid grid-cols-1 md:grid-cols-2 gap-6"
-          itemScope
-          itemType="https://schema.org/Product"
-        >
-          <meta itemProp="name" content="AKOKY" />
-          <div itemProp="aggregateRating" itemScope itemType="https://schema.org/AggregateRating" className="hidden">
-            <meta itemProp="ratingValue" content={stats.avg} />
-            <meta itemProp="reviewCount" content={String(stats.count)} />
-            <meta itemProp="bestRating" content="5" />
+          {/* Reviews grid — all rendered for SEO */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {reviews.map((review) => (
+              <ReviewCard key={review.id} review={review} lang={lang} />
+            ))}
           </div>
-          {reviews.map((review) => (
-            <ReviewCard key={review.id} review={review} lang={lang} />
-          ))}
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 
