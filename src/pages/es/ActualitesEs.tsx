@@ -12,7 +12,7 @@ const ActualitesEs = () => (
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">Noticias de la Comunidad</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">Las últimas noticias del mundo libertino en España y Europa: aperturas de clubs, eventos exclusivos, entrevistas con actores del sector.</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">Eventos Destacados del Mes</h2>
-          <p className="text-muted-foreground leading-relaxed mb-4">AKOKY destaca cada mes los eventos más esperados: veladas temáticas, fines de semana en el Cap d&#39;Agde, soirées privadas exclusivas.</p>
+          <p className="text-muted-foreground leading-relaxed mb-4">AKOKY destaca cada mes los eventos más esperados: veladas temáticas, fines de semana en Ibiza y la Costa del Sol, veladas privadas exclusivas.</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">Tendencias 2026</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">Mejora de los establecimientos, digitalización, wellness libertino, diversificación de los formatos de eventos.</p>
         </div>

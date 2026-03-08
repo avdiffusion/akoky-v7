@@ -4,14 +4,14 @@ import HreflangTags from "@/components/seo/HreflangTags";
 import { Link } from "react-router-dom";
 
 const FAQ = [
-  { question: "¿Cómo participar en mi primer evento AKOKY?", answer: "Crea tu perfil gratuito en Akoky.com, explora los eventos próximos en tu región, lee atentamente las descripciones y requisitos, y reserva online. ¡Los principiantes son siempre bienvenidos! Te recomendamos empezar por un apéro libertino para familiarizarte con la comunidad en un ambiente relajado. Consulta nuestra guía completa para empezar en el libertinaje." },
+  { question: "¿Cómo participar en mi primer evento AKOKY?", answer: "Crea tu perfil gratuito en Akoky.com, explora los eventos próximos en tu región, lee atentamente las descripciones y requisitos, y reserva online. ¡Los principiantes son siempre bienvenidos! Te recomendamos empezar por un afterwork libertino para familiarizarte con la comunidad en un ambiente relajado. Consulta nuestra guía completa para empezar en el libertinaje." },
   { question: "¿Los eventos están reservados a parejas?", answer: "No, AKOKY organiza eventos para todos los perfiles: parejas (hetero, homo, bi), mujeres solteras, hombres solteros (según cuotas para mantener el equilibrio), y grupos de amigos. Cada ficha de evento precisa claramente los perfiles aceptados. Las mujeres solas son generalmente bienvenidas sin restricción, mientras que los hombres solos pasan por una selección para garantizar la calidad de la experiencia para todos." },
-  { question: "¿Cuál es la tarifa media de un evento?", answer: "Las tarifas varían según el tipo de evento: 20-40€ para veladas en club, 15-25€ para apéros libertinos, 80-150€ para veladas privadas temáticas, y 200-500€ para fines de semana exclusivos en villa o resort. Los miembros VIP se benefician de descuentos de hasta el 30% en todos los eventos. Consulta cada ficha de evento para conocer los precios detallados y las posibles promociones en curso." },
+  { question: "¿Cuál es la tarifa media de un evento?", answer: "Las tarifas varían según el tipo de evento: 20-40€ para veladas en club, 15-25€ para afterworks libertinos, 80-150€ para veladas privadas temáticas, y 200-500€ para fines de semana exclusivos en villa o resort. Los miembros VIP se benefician de descuentos de hasta el 30% en todos los eventos. Consulta cada ficha de evento para conocer los precios detallados y las posibles promociones en curso." },
   { question: "¿Cómo cancelar una reserva?", answer: "La cancelación es gratuita hasta 48h antes del inicio del evento. Puedes cancelar directamente desde tu espacio de miembro en el sitio web o a través de la aplicación móvil Akoky. Más allá de 48h, pueden aplicarse gastos de cancelación según la política específica del organizador (generalmente el 50% del importe). En caso de fuerza mayor (enfermedad, urgencia), contacta con nuestro servicio de atención al cliente que estudiará tu situación." },
   { question: "¿Los eventos AKOKY respetan el consentimiento?", answer: "Absolutamente. El consentimiento es el pilar de nuestra carta ética. Todos nuestros eventos siguen protocolos estrictos: personal formado específicamente en el respeto de los límites, sistema de safe words reconocido, espacios de retiro disponibles, presencia de un equipo de moderación atento. Todo comportamiento inapropiado, presión o falta de respeto al consentimiento conlleva una exclusión inmediata y definitiva de la plataforma Akoky." },
   { question: "¿Dónde se celebran los eventos Akoky?", answer: "Nuestros eventos tienen lugar en los clubes libertinos más reputados y establecimientos cuidadosamente seleccionados de España y Europa. Para garantizar la discreción de todos, las direcciones exactas se comunican únicamente a los participantes inscritos y validados, generalmente 48h antes del evento. Todos nuestros lugares asociados cumplen estándares elevados de higiene, seguridad y confidencialidad." },
-  { question: "¿Con qué frecuencia se organizan eventos Akoky?", answer: "Akoky organiza más de 300 eventos al mes en toda Europa. Esto incluye: veladas en club varias veces por semana en las grandes ciudades, apéros libertinos regulares (2-3 veces por semana en las metrópolis), eventos temáticos mensuales y fines de semana exclusivos. Nuestro calendario se actualiza constantemente para ofrecerte el máximo de opciones y flexibilidad." },
-  { question: "¿Hay dress code para los eventos?", answer: "Sí, cada evento tiene exigencias de vestimenta específicas indicadas en su descripción. En general: traje elegante para las veladas en club (traje/vestido de cóctel), traje sexy-chic para los apéros (business casual con un toque sensual), código específico para eventos temáticos (lencería, látex, mascarada, etc.). El respeto del dress code es obligatorio y se verifica en la entrada." },
+  { question: "¿Con qué frecuencia se organizan eventos Akoky?", answer: "Akoky organiza más de 300 eventos al mes en toda Europa. Esto incluye: veladas en club varias veces por semana en las grandes ciudades, afterworks libertinos regulares (2-3 veces por semana en las metrópolis), eventos temáticos mensuales y fines de semana exclusivos. Nuestro calendario se actualiza constantemente para ofrecerte el máximo de opciones y flexibilidad." },
+  { question: "¿Hay dress code para los eventos?", answer: "Sí, cada evento tiene exigencias de vestimenta específicas indicadas en su descripción. En general: traje elegante para las veladas en club (traje/vestido de cóctel), traje sexy-chic para los afterworks (business casual con un toque sensual), código específico para eventos temáticos (lencería, látex, mascarada, etc.). El respeto del dress code es obligatorio y se verifica en la entrada." },
   { question: "¿Se puede ir solo/a a un evento Akoky?", answer: "Sí, los solteros son bienvenidos según las cuotas establecidas para cada evento. Las mujeres solas son generalmente aceptadas sin restricción y a menudo se benefician de tarifas preferenciales. Los hombres solos pueden participar en ciertos eventos específicos con una selección previa basada en su perfil, fotos validadas y referencias comunitarias, para mantener un equilibrio armonioso y una experiencia agradable para todos." },
   { question: "¿Cómo garantizáis la discreción de los participantes?", answer: "La discreción es nuestra prioridad absoluta. Nuestras medidas incluyen: verificación de identidad estricta al registrarse, validación manual de todas las fotos de perfil, prohibición formal de tomar fotos o vídeos durante los eventos (smartphones recogidos o sellados a la entrada según los lugares), personal formado en el respeto del anonimato, uso de pseudónimos recomendado, y política de confidencialidad reforzada con sanciones severas en caso de violación." },
 ];
@@ -25,9 +25,9 @@ const ES_CARDS = [
   },
   {
     img: "/images/soirreeparis.webp",
-    alt: "Apéro libertino Akoky afterwork en Madrid",
-    title: "Apéros Libertinos Afterwork en Madrid",
-    text: "Los apéros libertinos Akoky en Madrid son la ocasión perfecta para descubrir la comunidad en un ambiente relajado. Estos eventos afterwork en las mejores terrazas y locales privados de la capital permiten conocerse antes de participar en las veladas libertinas más íntimas."
+    alt: "Afterwork libertino Akoky en Madrid",
+    title: "Afterworks Libertinos en Madrid",
+    text: "Los afterworks libertinos Akoky en Madrid son la ocasión perfecta para descubrir la comunidad en un ambiente relajado. Estos eventos en las mejores terrazas y locales privados de la capital permiten conocerse antes de participar en las veladas libertinas más íntimas."
   },
   {
     img: "/images/evenement-libertin-europe.webp",
@@ -46,9 +46,9 @@ const MADRID_CARDS = [
   },
   {
     img: "/images/apero-bruxelle.webp",
-    alt: "Apéro libertino Akoky en Madrid",
-    title: "Apéros Libertinos Internacionales",
-    text: "Los apéros libertinos Akoky en Madrid reúnen una comunidad multicultural y abierta. Estos eventos son la ocasión de conocer miembros venidos de toda Europa, en el espíritu de apertura que caracteriza la escena libertina madrileña."
+    alt: "Afterwork libertino Akoky en Madrid",
+    title: "Afterworks Libertinos Internacionales",
+    text: "Los afterworks libertinos Akoky en Madrid reúnen una comunidad multicultural y abierta. Estos eventos son la ocasión de conocer miembros venidos de toda Europa, en el espíritu de apertura que caracteriza la escena libertina madrileña."
   },
 ];
 
@@ -56,8 +56,8 @@ const COSTA_CARDS = [
   {
     img: "/images/soiree-libertine-plage.webp",
     alt: "Velada libertina Akoky en la Costa del Sol",
-    title: "Eventos Bord de Mar",
-    text: "Las veladas libertinas Akoky en la costa española celebran la belleza del Mediterráneo. De los apéros al atardecer a las veladas en playas privatizadas, estos eventos ofrecen una experiencia única donde naturaleza y libertinaje se encuentran."
+    title: "Eventos Frente al Mar",
+    text: "Las veladas libertinas Akoky en la costa española celebran la belleza del Mediterráneo. De los encuentros al atardecer a las veladas en playas privatizadas, estos eventos ofrecen una experiencia única donde naturaleza y libertinaje se encuentran."
   },
   {
     img: "/images/evenement-libertin-espagne.webp",
@@ -71,15 +71,15 @@ const BENEFITS = [
   { icon: "✨", title: "Ambiente Premium", text: "Cada evento libertino Akoky se organiza en lugares de excepción. Nuestras veladas libertinas se celebran en los clubes más reputados y los espacios más elegantes de España. El ambiente refinado de nuestros eventos garantiza una experiencia memorable en cada participación." },
   { icon: "🛡️", title: "Seguridad y Respeto", text: "La seguridad de nuestros miembros es nuestra prioridad absoluta. Nuestros eventos libertinos aplican protocolos estrictos de respeto y consentimiento. Cada velada Akoky está supervisada por un equipo atento que vela por el bienestar de todos los participantes." },
   { icon: "🎭", title: "Libertad Asumida", text: "Las veladas libertinas Akoky celebran la libertad de ser uno mismo. Nuestros eventos ofrecen un espacio donde cada persona puede explorar sus deseos con total serenidad. La filosofía Akoky fomenta la autenticidad y el respeto de las elecciones de cada uno en una atmósfera benevolente." },
-  { icon: "🌍", title: "Comunidad Internacional", text: "Unirse a los eventos libertinos Akoky es integrarse en la mayor comunidad libertina de Europa. Nuestras veladas reúnen miembros de España, Francia, Alemania, Italia y más allá. El espíritu comunitario que reina en nuestros apéros libertinos y veladas exclusivas crea vínculos auténticos y duraderos." },
+  { icon: "🌍", title: "Comunidad Internacional", text: "Unirse a los eventos libertinos Akoky es integrarse en la mayor comunidad libertina de Europa. Nuestras veladas reúnen miembros de España, Francia, Alemania, Italia y más allá. El espíritu comunitario que reina en nuestros afterworks libertinos y veladas exclusivas crea vínculos auténticos y duraderos." },
 ];
 
 const GALLERY = [
-  { img: "/images/apero-libertin.webp", label: "Apéro libertino Akoky en Madrid" },
+  { img: "/images/apero-libertin.webp", label: "Encuentro libertino Akoky en Madrid" },
   { img: "/images/soiree-libertine-plage.webp", label: "Velada libertina Akoky playa" },
   { img: "/images/cap-agde-libertin.webp", label: "Evento libertino Akoky Costa Brava" },
   { img: "/images/soiree-couple-libertin.webp", label: "Velada libertina parejas España" },
-  { img: "/images/apero-libertin-akoky.webp", label: "Apéro libertino Akoky en Barcelona" },
+  { img: "/images/apero-libertin-akoky.webp", label: "Encuentro libertino Akoky en Barcelona" },
   { img: "/images/jeux-libertin.webp", label: "Juegos libertinos exclusivos Akoky" },
   { img: "/images/soiree-club-libertin.webp", label: "Velada Akoky en club libertino España" },
   { img: "/images/evenement-libertin-espagne.webp", label: "Evento libertino Akoky en España" },
@@ -101,8 +101,8 @@ const CTA_LINKS = [
 const EventosEs = () => (
   <>
     <MetaTags
-      title="Eventos Libertinos AKOKY 2026 – Veladas y Apéros Libertinos España"
-      description="Veladas libertinas, apéros afterwork y fines de semana exclusivos con AKOKY. Únete a la comunidad libertina premium en España: Madrid, Barcelona, Ibiza y más."
+      title="Eventos Libertinos AKOKY 2026 – Veladas y Afterworks Libertinos España"
+      description="Veladas libertinas, afterworks y fines de semana exclusivos con AKOKY. Únete a la comunidad libertina premium en España: Madrid, Barcelona, Ibiza y más."
       canonical="https://akoky.com/es/eventos"
       lang="es"
       ogImage="/images/es-eventos-cover.webp"
@@ -111,10 +111,10 @@ const EventosEs = () => (
     <ContentPageLayout
       lang="es"
       title="Eventos Libertinos AKOKY España"
-      description="Veladas, apéros y fines de semana libertinos en España"
+      description="Veladas, afterworks y fines de semana libertinos en España"
       canonical="https://akoky.com/es/eventos"
-      heroTitle="Eventos Libertinos Akoky – Veladas y Apéros Libertinos en España"
-      heroSubtitle="Vive la experiencia libertina premium: veladas en club, apéros exclusivos y encuentros auténticos en toda España"
+      heroTitle="Eventos Libertinos Akoky – Veladas y Encuentros Libertinos en España"
+      heroSubtitle="Vive la experiencia libertina premium: veladas en club, afterworks exclusivos y encuentros auténticos en toda España"
       heroImage="/images/es-eventos-cover.webp"
       breadcrumb={[{ label: "Eventos libertinos" }]}
       faq={FAQ}
@@ -143,8 +143,8 @@ const EventosEs = () => (
             ))}
           </div>
           <div className="max-w-3xl mx-auto space-y-3">
-            <p className="text-muted-foreground leading-relaxed mb-3">Nuestros apéros libertinos en España se han convertido en citas imprescindibles para la comunidad libertina hispanohablante. Estas veladas Akoky se distinguen por su ambiente cálido y su selección rigurosa de los lugares. Ya seas habitual de las <Link to="/es/clubbing" className="text-primary hover:underline">veladas libertinas</Link> o curioso por descubrir este mundo, los eventos Akoky en España te acogen en un marco seguro y respetuoso.</p>
-            <p className="text-muted-foreground leading-relaxed mb-3">Los <Link to="/es/clubes-libertinos" className="text-primary hover:underline">clubes libertinos</Link> socios de Akoky en España proponen espacios privatizados para nuestros eventos exclusivos. De las veladas temáticas a los apéros afterwork libertinos, cada evento libertino es una celebración del lifestyle con total discreción. Barcelona y Madrid, capitales europeas de la vida libertina, acogen regularmente nuestras veladas libertinas más codiciadas, atrayendo miembros de toda Europa.</p>
+            <p className="text-muted-foreground leading-relaxed mb-3">Nuestros afterworks libertinos en España se han convertido en citas imprescindibles para la comunidad libertina hispanohablante. Estas veladas Akoky se distinguen por su ambiente cálido y su selección rigurosa de los lugares. Ya seas habitual de las <Link to="/es/clubbing" className="text-primary hover:underline">veladas libertinas</Link> o curioso por descubrir este mundo, los eventos Akoky en España te acogen en un marco seguro y respetuoso.</p>
+            <p className="text-muted-foreground leading-relaxed mb-3">Los <Link to="/es/clubes-libertinos" className="text-primary hover:underline">clubes libertinos</Link> socios de Akoky en España proponen espacios privatizados para nuestros eventos exclusivos. De las veladas temáticas a los afterworks libertinos, cada evento libertino es una celebración del lifestyle con total discreción. Barcelona y Madrid, capitales europeas de la vida libertina, acogen regularmente nuestras veladas libertinas más codiciadas, atrayendo miembros de toda Europa.</p>
             <p className="text-muted-foreground leading-relaxed mb-3">La experiencia de los eventos libertinos Akoky en España va más allá de la simple velada. Es una comunidad vibrante que se reúne para compartir momentos auténticos, con el respeto de los valores que hacen la reputación de Akoky: elegancia, benevolencia y libertad asumida.</p>
           </div>
         </div>
@@ -174,7 +174,7 @@ const EventosEs = () => (
             ))}
           </div>
           <div className="max-w-3xl mx-auto space-y-3">
-            <p className="text-muted-foreground leading-relaxed">Las veladas libertinas Akoky en Madrid atraen una comunidad internacional y refinada. Los clubes libertinos madrileños, entre los más reputados de Europa, ofrecen un marco ideal para nuestros eventos exclusivos. Cada apéro libertino en Madrid es una celebración de la diversidad cultural y la libertad de ser uno mismo.</p>
+            <p className="text-muted-foreground leading-relaxed">Las veladas libertinas Akoky en Madrid atraen una comunidad internacional y refinada. Los clubes libertinos madrileños, entre los más reputados de Europa, ofrecen un marco ideal para nuestros eventos exclusivos. Cada afterwork libertino en Madrid es una celebración de la diversidad cultural y la libertad de ser uno mismo.</p>
             <p className="text-muted-foreground leading-relaxed">Los eventos Akoky en Madrid se distinguen por su atmósfera cálida y su calidad de organización. De las veladas íntimas a los grandes eventos internacionales, Madrid se ha convertido en un destino privilegiado para los amantes del lifestyle libertino en busca de autenticidad y elegancia.</p>
           </div>
         </div>
@@ -204,7 +204,7 @@ const EventosEs = () => (
             ))}
           </div>
           <div className="max-w-3xl mx-auto space-y-3">
-            <p className="text-muted-foreground leading-relaxed">Los eventos libertinos Akoky en la costa española atraen una comunidad europea en busca de sol y libertad. Barcelona, con su espíritu vanguardista, acoge veladas libertinas que empujan los límites de la creatividad. Los apéros libertinos en las terrazas barcelonesas ofrecen una experiencia única que combina lifestyle libertino y arte de vivir mediterráneo.</p>
+            <p className="text-muted-foreground leading-relaxed">Los eventos libertinos Akoky en la costa española atraen una comunidad europea en busca de sol y libertad. Barcelona, con su espíritu vanguardista, acoge veladas libertinas que empujan los límites de la creatividad. Los afterworks libertinos en las terrazas barcelonesas ofrecen una experiencia única que combina lifestyle libertino y arte de vivir mediterráneo.</p>
             <p className="text-muted-foreground leading-relaxed">El verano español ve florecer eventos Akoky de excepción a lo largo de las costas. De las veladas frente al mar a los fines de semana en villas privadas, España se convierte en el terreno de juego privilegiado de la comunidad libertina Akoky. Si eres nuevo, consulta nuestra guía para <Link to="/es/empezar-libertinaje" className="text-primary hover:underline">empezar en el libertinaje</Link>.</p>
           </div>
         </div>

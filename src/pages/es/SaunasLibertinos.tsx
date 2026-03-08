@@ -181,7 +181,7 @@ const SaunasLibertinos = () => (
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img src="/images/carte-saunas-france.webp" alt="Mapa saunas libertinos España" className="w-full h-auto" loading="lazy" />
+              <img src="/images/es-saunas-cover.webp" alt="Mapa saunas libertinos España" className="w-full h-auto" loading="lazy" />
             </div>
             <div className="grid grid-cols-2 gap-3">
               {CIUDADES.map((l, i) => (
