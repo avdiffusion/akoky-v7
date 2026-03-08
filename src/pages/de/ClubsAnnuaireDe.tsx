@@ -1,6 +1,5 @@
 import { useState, useMemo, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import HreflangTags from "@/components/seo/HreflangTags";
 import SchemaOrg from "@/components/seo/SchemaOrg";

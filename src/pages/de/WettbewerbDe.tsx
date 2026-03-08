@@ -1,7 +1,6 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import HreflangTags from "@/components/seo/HreflangTags";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 
 const FAQ = [
   { question: "Wie kann ich an AKOKY-Gewinnspielen teilnehmen?", answer: "Um teilzunehmen, musst du registriertes Mitglied bei AKOKY sein. Jedes Gewinnspiel hat eigene Teilnahmeregeln, die auf der jeweiligen Seite beschrieben sind. Die meisten sind kostenlos und für alle aktiven Mitglieder offen." },
