@@ -22,7 +22,7 @@ const Vip = () => (
       description="Découvrez le statut VIP Akoky : fonctionnalités exclusives, avantages premium et accès prioritaire. Rejoignez l'élite libertine."
       canonical="https://akoky.com/fr/vip"
       lang="fr"
-      ogImage="https://legal.akoky.com/UPLOAD-AKOKY/AKOKY.COM/images/images-cover-pages/vip-cover.webp"
+      ogImage="/images/vip-cover.webp"
     />
     <HreflangTags slug="vip" />
     <ContentPageLayout
