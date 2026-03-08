@@ -5,6 +5,7 @@ import Footer from "@/components/layout/Footer";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
 import SchemaOrg from "@/components/seo/SchemaOrg";
+import LatestBlogSection from "@/components/blog/LatestBlogSection";
 
 const EXPLORE_CARDS = [
   { href: "/pt/clubbing", icon: "🏛️", title: "Clubes parceiros", desc: "Descobre estabelecimentos selecionados em Portugal e na Europa, com fichas detalhadas, avaliações verificadas e informações práticas.", cta: "Ver os clubes →" },
@@ -502,77 +503,7 @@ const HomePt = () => {
           </div>
         </section>
 
-        {/* ═══════════ ÚLTIMOS ARTIGOS DO BLOG ═══════════ */}
-        <section className="py-20">
-          <div className="container">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-black mb-4">📖 Últimos Artigos do Blog</h2>
-              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                Guias, conselhos e atualidade para viver o libertinismo com toda a confiança.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                {
-                  title: "Clubes Libertinos em Lisboa 2026 — Guia Completo",
-                  desc: "Descobre os melhores clubes libertinos de Lisboa em 2026: ambiente, preços, dress code e conselhos para uma primeira visita bem-sucedida.",
-                  image: "/images/hero-pt-desktop.webp",
-                  href: "/pt/blog",
-                  tag: "Guia",
-                },
-                {
-                  title: "A Cena Libertina no Porto — Clubes e Eventos 2026",
-                  desc: "Explora a cena libertina do Porto: melhores clubes, noites temáticas e comunidade swinger na Invicta.",
-                  image: "/images/clubs-libertins-villes.webp",
-                  href: "/pt/blog",
-                  tag: "Guia",
-                },
-                {
-                  title: "Começar no Libertinismo — Conselhos Práticos",
-                  desc: "Guia completo para principiantes: como preparar a tua primeira experiência libertina e respeitar os códigos.",
-                  image: "/images/debuter-libertinage-cover.webp",
-                  href: "/pt/blog",
-                  tag: "Principiantes",
-                },
-              ].map((article, i) => (
-                <Link
-                  key={i}
-                  to={article.href}
-                  className="group bg-card border border-border rounded-2xl overflow-hidden card-hover-glow"
-                >
-                  <div className="aspect-[16/9] overflow-hidden">
-                    <img
-                      src={article.image}
-                      alt={article.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <span className="text-xs font-bold text-primary bg-primary/10 px-2.5 py-0.5 rounded-full">
-                      {article.tag}
-                    </span>
-                    <h3 className="font-bold text-lg mt-3 mb-2 group-hover:text-primary transition-colors leading-snug">
-                      {article.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed line-clamp-3">{article.desc}</p>
-                    <span className="inline-flex items-center gap-1 text-primary text-sm font-semibold mt-4 group-hover:gap-2 transition-all">
-                      Ler o artigo →
-                    </span>
-                  </div>
-                </Link>
-              ))}
-            </div>
-            <div className="text-center mt-10">
-              <Link
-                to="/pt/blog"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-full btn-gradient-primary text-primary-foreground font-bold text-lg hover:opacity-90 transition-opacity"
-              >
-                📚 Ver todos os artigos do blog
-              </Link>
-            </div>
-          </div>
-        </section>
+        <LatestBlogSection lang="pt" />
 
         {/* ═══════════ FAQ ═══════════ */}
         <section className="py-20">
