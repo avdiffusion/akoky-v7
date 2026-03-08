@@ -150,7 +150,66 @@ const Evenements = () => (
         </div>
       </section>
 
-      {/* Pourquoi participer */}
+      {/* Événements libertins Akoky en Belgique */}
+      <section className="py-14 px-4 bg-card/50">
+        <div className="container max-w-6xl mx-auto">
+          <div className="text-center mb-10">
+            <div className="text-3xl mb-3">🇧🇪</div>
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Événements libertins Akoky en Belgique</h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              La Belgique est un territoire d'excellence pour les événements libertins Akoky. Bruxelles et les grandes villes belges accueillent des soirées libertines qui rayonnent dans toute l'Europe francophone. L'esprit libertin belge, reconnu pour son ouverture et sa convivialité, se marie parfaitement avec la philosophie Akoky.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            {BE_CARDS.map((c, i) => (
+              <div key={i} className="bg-background border border-border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <div className="aspect-[16/9] overflow-hidden">
+                  <img src={c.img} alt={c.alt} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy" />
+                </div>
+                <div className="p-5">
+                  <h3 className="text-lg font-bold text-foreground mb-2">{c.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{c.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="max-w-3xl mx-auto space-y-3">
+            <p className="text-muted-foreground leading-relaxed">Les soirées libertines Akoky en Belgique attirent une communauté internationale et raffinée. Les clubs libertins belges, parmi les plus réputés d'Europe, offrent un cadre idéal pour nos événements exclusifs. Chaque apéro libertin à Bruxelles est une célébration de la diversité culturelle et de la liberté d'être soi-même.</p>
+            <p className="text-muted-foreground leading-relaxed">Les événements Akoky en Belgique se distinguent par leur atmosphère chaleureuse et leur qualité d'organisation. Des soirées intimistes aux grands événements internationaux, la Belgique est devenue une destination privilégiée pour les amateurs du lifestyle libertin en quête d'authenticité et d'élégance.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Soirées libertines Akoky en Espagne */}
+      <section className="py-14 px-4 bg-background">
+        <div className="container max-w-6xl mx-auto">
+          <div className="text-center mb-10">
+            <div className="text-3xl mb-3">🇪🇸</div>
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Soirées libertines Akoky en Espagne</h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              L'Espagne apporte une dimension solaire et festive aux événements libertins Akoky. De Barcelone à Madrid, en passant par la Costa Brava, nos soirées libertines espagnoles conjuguent la chaleur méditerranéenne avec l'élégance qui fait la signature Akoky. Chaque événement en Espagne est une invitation à la célébration de la vie et des plaisirs.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            {ES_CARDS.map((c, i) => (
+              <div key={i} className="bg-card border border-border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <div className="aspect-[16/9] overflow-hidden">
+                  <img src={c.img} alt={c.alt} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy" />
+                </div>
+                <div className="p-5">
+                  <h3 className="text-lg font-bold text-foreground mb-2">{c.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{c.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="max-w-3xl mx-auto space-y-3">
+            <p className="text-muted-foreground leading-relaxed">Les événements libertins Akoky en Espagne attirent une communauté européenne en quête de soleil et de liberté. Barcelone, avec son esprit avant-gardiste, accueille des soirées libertines qui repoussent les frontières de la créativité. Les apéros libertins sur les terrasses barcelonaises offrent une expérience unique alliant lifestyle libertin et art de vivre méditerranéen.</p>
+            <p className="text-muted-foreground leading-relaxed">L'été espagnol voit éclore des événements Akoky d'exception le long des côtes. Des soirées en bord de mer aux weekends dans des villas privées, l'Espagne devient le terrain de jeu privilégié de la communauté libertine Akoky.</p>
+          </div>
+        </div>
+      </section>
+
       <section className="py-14 px-4 bg-card/50">
         <div className="container max-w-5xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-10">Pourquoi Participer aux Événements Libertins Akoky</h2>
