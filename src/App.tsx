@@ -236,6 +236,9 @@ import ConcorsoIt from "./pages/it/ConcorsoIt";
 import ClubLibertiniMilano from "./pages/it/ClubLibertiniMilano";
 import ClubLibertiniRoma from "./pages/it/ClubLibertiniRoma";
 import ClubLibertiniTorino from "./pages/it/ClubLibertiniTorino";
+import ClubLibertiniBologna from "./pages/it/ClubLibertiniBologna";
+import ClubLibertiniNapoli from "./pages/it/ClubLibertiniNapoli";
+import ClubLibertiniFirenze from "./pages/it/ClubLibertiniFirenze";
 
 
 // ─── Pages IT livraison 6 ─────────────────────────────────────────────────────
@@ -625,6 +628,9 @@ const App = () => (
             <Route path="/it/club-libertini-milano" element={<ClubLibertiniMilano />} />
             <Route path="/it/club-libertini-roma" element={<ClubLibertiniRoma />} />
             <Route path="/it/club-libertini-torino" element={<ClubLibertiniTorino />} />
+            <Route path="/it/club-libertini-bologna" element={<ClubLibertiniBologna />} />
+            <Route path="/it/club-libertini-napoli" element={<ClubLibertiniNapoli />} />
+            <Route path="/it/club-libertini-firenze" element={<ClubLibertiniFirenze />} />
 
             {/* ══════════════════════════════════════════════════════════════
                 ROUTES PT
