@@ -239,9 +239,6 @@ import ClubLibertiniTorino from "./pages/it/ClubLibertiniTorino";
 
 
 // ─── Pages IT livraison 6 ─────────────────────────────────────────────────────
-import ActualitesIt from "./pages/it/ActualitesIt";
-import BlogRedirectIt from "./pages/it/BlogRedirectIt";
-import FaqRedirectIt from "./pages/it/FaqRedirectIt";
 import DebuterGuideIt from "./pages/it/DebuterGuideIt";
 import LibertinageGuideIt from "./pages/it/LibertinageGuideIt";
 import SaunasGuideIt from "./pages/it/SaunasGuideIt";
