@@ -14,10 +14,8 @@ const LOCKOUT_DURATION_MS = 15 * 60 * 1000; // 15 minutes
 // ── Auto-seed on first load ──────────────────────────────────────────────────
 function ensureSeeded(): void {
   if (!localStorage.getItem(SEED_KEY)) {
-    const existing = localStorage.getItem(STORAGE_KEY);
-    if (!existing || JSON.parse(existing).length === 0) {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(SEED_ARTICLES));
-    }
+    // Force re-seed with latest articles (FR + ES)
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(SEED_ARTICLES));
     localStorage.setItem(SEED_KEY, "true");
   }
 }
