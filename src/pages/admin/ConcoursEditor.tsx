@@ -14,13 +14,14 @@ import {
   type ConcoursTranslation,
 } from "@/lib/concours-types";
 import RichTextEditor from "@/components/blog/RichTextEditor";
+import ImageUploader from "@/components/admin/ImageUploader";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
-  ArrowLeft, Save, Eye, Globe, Image as ImageIcon, CheckCircle, XCircle, Calendar,
+  ArrowLeft, Save, Eye, Globe, CheckCircle, XCircle, Calendar,
 } from "lucide-react";
 import { toast } from "sonner";
 

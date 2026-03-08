@@ -17,6 +17,7 @@ import {
   type BlogTranslation,
 } from "@/lib/blog-types";
 import RichTextEditor from "@/components/blog/RichTextEditor";
+import ImageUploader from "@/components/admin/ImageUploader";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -27,7 +28,6 @@ import {
   Save,
   Eye,
   Globe,
-  Image as ImageIcon,
   CheckCircle,
   XCircle,
 } from "lucide-react";
