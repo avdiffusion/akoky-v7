@@ -17,7 +17,6 @@ const LOCALE_MAP: Record<BlogLang, string> = { fr: "fr_FR", es: "es_ES", de: "de
 
 const LABELS: Record<BlogLang, { home: string; blog: string; back: string; alsoIn: string }> = {
   fr: { home: "Accueil", blog: "Blog", back: "Retour au blog", alsoIn: "Cet article est aussi disponible en :" },
-  en: { home: "Home", blog: "Blog", back: "Back to blog", alsoIn: "This article is also available in:" },
   es: { home: "Inicio", blog: "Blog", back: "Volver al blog", alsoIn: "Este artículo también está disponible en:" },
   de: { home: "Startseite", blog: "Blog", back: "Zurück zum Blog", alsoIn: "Dieser Artikel ist auch verfügbar in:" },
   it: { home: "Home", blog: "Blog", back: "Torna al blog", alsoIn: "Questo articolo è disponibile anche in:" },

@@ -39,7 +39,6 @@ export interface BlogArticle {
 
 export const LANG_LABELS: Record<BlogLang, string> = {
   fr: "Français",
-  en: "English",
   es: "Español",
   it: "Italiano",
   pt: "Português",

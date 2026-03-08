@@ -63,10 +63,10 @@ const META: Record<ConcoursLang, { title: string; description: string; heroTitle
 };
 
 const FILTER_LABELS: Record<string, Record<ConcoursLang, string>> = {
-  "": { fr: "Tous", en: "All", es: "Todos", it: "Tutti", pt: "Todos", de: "Alle" },
-  active: { fr: "🔥 En cours", en: "🔥 Active", es: "🔥 Activos", it: "🔥 In corso", pt: "🔥 Ativos", de: "🔥 Aktiv" },
-  upcoming: { fr: "⏳ À venir", en: "⏳ Upcoming", es: "⏳ Próximos", it: "⏳ In arrivo", pt: "⏳ Em breve", de: "⏳ Bevorstehend" },
-  past: { fr: "✅ Terminés", en: "✅ Ended", es: "✅ Finalizados", it: "✅ Terminati", pt: "✅ Encerrados", de: "✅ Beendet" },
+  "": { fr: "Tous", es: "Todos", it: "Tutti", pt: "Todos", de: "Alle" },
+  active: { fr: "🔥 En cours", es: "🔥 Activos", it: "🔥 In corso", pt: "🔥 Ativos", de: "🔥 Aktiv" },
+  upcoming: { fr: "⏳ À venir", es: "⏳ Próximos", it: "⏳ In arrivo", pt: "⏳ Em breve", de: "⏳ Bevorstehend" },
+  past: { fr: "✅ Terminés", es: "✅ Finalizados", it: "✅ Terminati", pt: "✅ Encerrados", de: "✅ Beendet" },
 };
 
 const ConcoursListing = ({ lang }: ConcoursListingProps) => {

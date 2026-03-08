@@ -11,7 +11,6 @@ interface ReviewsListProps {
 
 const LABELS: Record<Lang, { verified: string; helpful: string; title: string; reviews: string }> = {
   fr: { verified: "Vérifié", helpful: "utile", title: "Témoignages vérifiés", reviews: "avis" },
-  en: { verified: "Verified", helpful: "helpful", title: "Verified testimonials", reviews: "reviews" },
   es: { verified: "Verificado", helpful: "útil", title: "Testimonios verificados", reviews: "reseñas" },
   de: { verified: "Verifiziert", helpful: "hilfreich", title: "Verifizierte Erfahrungsberichte", reviews: "Bewertungen" },
   it: { verified: "Verificato", helpful: "utile", title: "Testimonianze verificate", reviews: "recensioni" },
