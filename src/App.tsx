@@ -670,7 +670,13 @@ const App = () => (
             <Route path="/admin/blog/new" element={<BlogEditor />} />
             <Route path="/admin/blog/edit/:id" element={<BlogEditor />} />
 
-            {/* ── CATCH-ALL ─────────────────────────────────────────────── */}
+            {/* ── Admin Concours ──────────────────────────────────────────── */}
+            <Route path="/admin/concours/login" element={<ConcoursLogin />} />
+            <Route path="/admin/concours" element={<ConcoursAdmin />} />
+            <Route path="/admin/concours/new" element={<ConcoursEditor />} />
+            <Route path="/admin/concours/edit/:id" element={<ConcoursEditor />} />
+
+
             <Route path="*" element={<NotFound />} />
 
           </Routes>
