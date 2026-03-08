@@ -18,7 +18,7 @@ const ClubsLibertinsBretagne = () => {
       heroTitle="Meilleurs clubs libertins en Bretagne"
       heroSubtitle="La Bretagne, avec son ambiance chaleureuse et discrète, est une région libertine dynamique."
       faq={faq}
-      breadcrumb={[{ label: "Clubbing France", href: "/clubbing-france-europe" }, { label: "Bretagne" }]}
+      breadcrumb={[{ label: "Clubbing France", href: "/fr/clubbing-france-europe" }, { label: "Bretagne" }]}
     >
       <section className="py-16 px-4">
         <div className="container max-w-4xl mx-auto prose prose-invert prose-lg">
