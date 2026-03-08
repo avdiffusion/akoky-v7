@@ -13,7 +13,7 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Calendar, Globe } from "lucide-react";
 import { useEffect } from "react";
 
-const LOCALE_MAP: Record<BlogLang, string> = { fr: "fr_FR", en: "en_US", es: "es_ES", de: "de_DE", it: "it_IT", pt: "pt_PT" };
+const LOCALE_MAP: Record<BlogLang, string> = { fr: "fr_FR", es: "es_ES", de: "de_DE", it: "it_IT", pt: "pt_PT" };
 
 const LABELS: Record<BlogLang, { home: string; blog: string; back: string; alsoIn: string }> = {
   fr: { home: "Accueil", blog: "Blog", back: "Retour au blog", alsoIn: "Cet article est aussi disponible en :" },
