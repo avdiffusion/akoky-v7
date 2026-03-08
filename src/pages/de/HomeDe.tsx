@@ -502,77 +502,7 @@ const HomeDe = () => {
           </div>
         </section>
 
-        {/* ═══════════ NEUESTE BLOG-ARTIKEL ═══════════ */}
-        <section className="py-20">
-          <div className="container">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-black mb-4">📖 Neueste Blog-Artikel</h2>
-              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                Leitfäden, Tipps und Neuigkeiten, um den Libertinismus mit vollem Vertrauen zu erleben.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                {
-                  title: "Libertine Clubs in Berlin 2026 — Der komplette Guide",
-                  desc: "Entdecke die besten libertinen Clubs in Berlin 2026: Atmosphäre, Preise, Dresscode und Tipps für einen ersten gelungenen Besuch.",
-                  image: "/images/clubs-libertins-villes.webp",
-                  href: "/de/blog",
-                  tag: "Guide",
-                },
-                {
-                  title: "Die Libertine Szene in München — Clubs und Events 2026",
-                  desc: "Erkunde die Münchner libertine Szene: beste Clubs, Themenabende und Swinger-Community in der bayerischen Hauptstadt.",
-                  image: "/images/panorama-paris-nuit.webp",
-                  href: "/de/blog",
-                  tag: "Guide",
-                },
-                {
-                  title: "Mit dem Libertinismus anfangen — Praktische Tipps",
-                  desc: "Kompletter Leitfaden für Anfänger: Wie du deine erste libertine Erfahrung vorbereitest und die Codes respektierst.",
-                  image: "/images/debuter-libertinage-cover.webp",
-                  href: "/de/blog",
-                  tag: "Anfänger",
-                },
-              ].map((article, i) => (
-                <Link
-                  key={i}
-                  to={article.href}
-                  className="group bg-card border border-border rounded-2xl overflow-hidden card-hover-glow"
-                >
-                  <div className="aspect-[16/9] overflow-hidden">
-                    <img
-                      src={article.image}
-                      alt={article.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <span className="text-xs font-bold text-primary bg-primary/10 px-2.5 py-0.5 rounded-full">
-                      {article.tag}
-                    </span>
-                    <h3 className="font-bold text-lg mt-3 mb-2 group-hover:text-primary transition-colors leading-snug">
-                      {article.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed line-clamp-3">{article.desc}</p>
-                    <span className="inline-flex items-center gap-1 text-primary text-sm font-semibold mt-4 group-hover:gap-2 transition-all">
-                      Artikel lesen →
-                    </span>
-                  </div>
-                </Link>
-              ))}
-            </div>
-            <div className="text-center mt-10">
-              <Link
-                to="/de/blog"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-full btn-gradient-primary text-primary-foreground font-bold text-lg hover:opacity-90 transition-opacity"
-              >
-                📚 Alle Blog-Artikel ansehen
-              </Link>
-            </div>
-          </div>
-        </section>
+        <LatestBlogSection lang="de" />
 
         {/* ═══════════ FAQ ═══════════ */}
         <section className="py-20">

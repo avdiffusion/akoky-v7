@@ -502,77 +502,7 @@ const HomeIt = () => {
           </div>
         </section>
 
-        {/* ═══════════ ULTIMI ARTICOLI DEL BLOG ═══════════ */}
-        <section className="py-20">
-          <div className="container">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-black mb-4">📖 Ultimi Articoli del Blog</h2>
-              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                Guide, consigli e attualità per vivere il libertinismo con totale fiducia.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                {
-                  title: "Club Libertini a Roma 2026 — La Guida Completa",
-                  desc: "Scopri i migliori club libertini di Roma nel 2026: atmosfera, prezzi, dress code e consigli per una prima visita di successo.",
-                  image: "/images/hero-it-desktop.webp",
-                  href: "/it/blog",
-                  tag: "Guida",
-                },
-                {
-                  title: "La Scena Libertina a Milano — Club ed Eventi 2026",
-                  desc: "Esplora la scena libertina milanese: migliori club, serate a tema e community swinger nella capitale della moda.",
-                  image: "/images/clubs-libertins-villes.webp",
-                  href: "/it/blog",
-                  tag: "Guida",
-                },
-                {
-                  title: "Iniziare nel Libertinismo — Consigli Pratici",
-                  desc: "Guida completa per principianti: come preparare la tua prima esperienza libertina e rispettare i codici.",
-                  image: "/images/debuter-libertinage-cover.webp",
-                  href: "/it/blog",
-                  tag: "Principianti",
-                },
-              ].map((article, i) => (
-                <Link
-                  key={i}
-                  to={article.href}
-                  className="group bg-card border border-border rounded-2xl overflow-hidden card-hover-glow"
-                >
-                  <div className="aspect-[16/9] overflow-hidden">
-                    <img
-                      src={article.image}
-                      alt={article.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <span className="text-xs font-bold text-primary bg-primary/10 px-2.5 py-0.5 rounded-full">
-                      {article.tag}
-                    </span>
-                    <h3 className="font-bold text-lg mt-3 mb-2 group-hover:text-primary transition-colors leading-snug">
-                      {article.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed line-clamp-3">{article.desc}</p>
-                    <span className="inline-flex items-center gap-1 text-primary text-sm font-semibold mt-4 group-hover:gap-2 transition-all">
-                      Leggi l'articolo →
-                    </span>
-                  </div>
-                </Link>
-              ))}
-            </div>
-            <div className="text-center mt-10">
-              <Link
-                to="/it/blog"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-full btn-gradient-primary text-primary-foreground font-bold text-lg hover:opacity-90 transition-opacity"
-              >
-                📚 Vedi tutti gli articoli del blog
-              </Link>
-            </div>
-          </div>
-        </section>
+        <LatestBlogSection lang="it" />
 
         {/* ═══════════ FAQ ═══════════ */}
         <section className="py-20">
