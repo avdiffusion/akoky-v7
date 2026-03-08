@@ -236,6 +236,9 @@ import ConcorsoIt from "./pages/it/ConcorsoIt";
 import ClubLibertiniMilano from "./pages/it/ClubLibertiniMilano";
 import ClubLibertiniRoma from "./pages/it/ClubLibertiniRoma";
 import ClubLibertiniTorino from "./pages/it/ClubLibertiniTorino";
+import ClubLibertiniBologna from "./pages/it/ClubLibertiniBologna";
+import ClubLibertiniNapoli from "./pages/it/ClubLibertiniNapoli";
+import ClubLibertiniFirenze from "./pages/it/ClubLibertiniFirenze";
 
 
 // ─── Pages IT livraison 6 ─────────────────────────────────────────────────────
