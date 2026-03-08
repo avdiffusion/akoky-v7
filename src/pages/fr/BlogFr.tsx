@@ -49,7 +49,7 @@ const FEATURED_ARTICLES = [
   {
     title: "Clubs Libertins à Marseille et sur la Côte d'Azur — Guide AKOKY",
     description: "Guide des clubs libertins à Marseille, Nice, Toulon et sur la Côte d'Azur : les meilleurs spots pour le libertinage en PACA.",
-    image: "https://akoky.com/images/panorama-PACA-COTEAZUR.webp",
+    image: "/images/panorama-PACA-COTEAZUR.webp",
     href: "https://akoky.com/fr/blogs/clubs-libertins-marseille-cote-azur",
     category: "Guide",
     readTime: "9 min",
