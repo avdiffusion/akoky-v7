@@ -25,9 +25,9 @@ const ES_CARDS = [
   },
   {
     img: "/images/soirreeparis.webp",
-    alt: "Apéro libertino Akoky afterwork en Madrid",
-    title: "Apéros Libertinos Afterwork en Madrid",
-    text: "Los apéros libertinos Akoky en Madrid son la ocasión perfecta para descubrir la comunidad en un ambiente relajado. Estos eventos afterwork en las mejores terrazas y locales privados de la capital permiten conocerse antes de participar en las veladas libertinas más íntimas."
+    alt: "Afterwork libertino Akoky en Madrid",
+    title: "Afterworks Libertinos en Madrid",
+    text: "Los afterworks libertinos Akoky en Madrid son la ocasión perfecta para descubrir la comunidad en un ambiente relajado. Estos eventos en las mejores terrazas y locales privados de la capital permiten conocerse antes de participar en las veladas libertinas más íntimas."
   },
   {
     img: "/images/evenement-libertin-europe.webp",
