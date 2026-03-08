@@ -389,6 +389,7 @@ const App = () => (
             <Route path="/fr/guide-ultime-libertinage-france" element={<GuideUltimeLibertin />} />
             <Route path="/fr/concours-six-cles" element={<ConcoursSixCles />} />
             <Route path="/fr/annuaire-clubs-libertins" element={<AnnuaireClubs />} />
+            <Route path="/fr/clubs" element={<AnnuaireClubs />} />
 
             {/* ══════════════════════════════════════════════════════════════
                 REDIRECTIONS 301 — Toutes les URLs sans /fr/ vers /fr/
