@@ -45,7 +45,7 @@ const AkokyVsLovooEs = () => {
         { title: "Multiperfil único", description: "Gestiona un perfil de pareja y uno individual con una sola cuenta. Primera mundial.", icon: "👥" },
         { title: "Clubes y eventos reales", description: "Directorio de clubes libertinos y agenda de eventos en Madrid, Barcelona, Ibiza y toda España.", icon: "🏛️" },
         { title: "Comunidad auténtica", description: "Todos los miembros comparten la cultura swinger. Sin curiosos ni perfiles generalistas.", icon: "🤝" },
-        { title: "Viajes organizados", description: "Escapadas libertinas entre miembros en Ibiza, Cap d'Agde, y destinos exclusivos.", icon: "✈️" },
+        { title: "Viajes organizados", description: "Escapadas libertinas entre miembros en Ibiza, Costa Brava y destinos exclusivos.", icon: "✈️" },
         { title: "Seguridad premium", description: "Moderación humana 7/7, RGPD estricto y anonimato garantizado.", icon: "🔒" },
       ]}
       faq={[
