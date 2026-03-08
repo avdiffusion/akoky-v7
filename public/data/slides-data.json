@@ -2,6 +2,7 @@
   "slides": [
     {
       "id": 1,
+      "lang": "fr",
       "title": "Le Glamour Beach",
       "description": "Faites des rencontres uniques au Village Naturiste cap d'Agde !",
       "image": "/images/slides/glamour-beach.webp",
@@ -10,6 +11,7 @@
     },
     {
       "id": 2,
+      "lang": "fr",
       "title": "Les Chandelles Paris",
       "description": "Le club libertin le plus prestigieux de Paris depuis 1993",
       "image": "/images/slides/les-chandelles.webp",
@@ -18,6 +20,7 @@
     },
     {
       "id": 3,
+      "lang": "fr",
       "title": "Sauna Oléron",
       "description": "Détente et libertinage sur l'île d'Oléron",
       "image": "/images/slides/sauna-oleron.webp",
@@ -26,6 +29,7 @@
     },
     {
       "id": 4,
+      "lang": "fr",
       "title": "Le Privé",
       "description": "Club privé élégant au cœur de Bruxelles",
       "image": "/images/slides/le-prive.webp",
@@ -34,11 +38,138 @@
     },
     {
       "id": 5,
+      "lang": "fr",
       "title": "Villa Paradis",
       "description": "Villa exclusive avec piscine chauffée près de Barcelone",
       "image": "/images/slides/villa-paradis.webp",
       "url": "https://akoky.com/club/villa-paradis",
       "alt": "Villa Paradis Barcelone - Club libertin avec piscine"
+    },
+    {
+      "id": 10,
+      "lang": "es",
+      "title": "Villa Paradis Barcelona",
+      "description": "Villa exclusiva con piscina climatizada cerca de Barcelona",
+      "image": "/images/slides/villa-paradis.webp",
+      "url": "https://akoky.com/club/villa-paradis",
+      "alt": "Villa Paradis Barcelona - Club libertino con piscina"
+    },
+    {
+      "id": 11,
+      "lang": "es",
+      "title": "Oops! Barcelona",
+      "description": "El club libertino más famoso de Barcelona, noches temáticas cada fin de semana",
+      "image": "/images/slides/glamour-beach.webp",
+      "url": "https://akoky.com/es/clubbing",
+      "alt": "Oops Barcelona - Club libertino de referencia"
+    },
+    {
+      "id": 12,
+      "lang": "es",
+      "title": "Swinger Club Madrid",
+      "description": "Ambiente íntimo y elegante en el corazón de la capital española",
+      "image": "/images/slides/les-chandelles.webp",
+      "url": "https://akoky.com/es/clubbing",
+      "alt": "Club libertino en Madrid - Ambiente premium"
+    },
+    {
+      "id": 13,
+      "lang": "es",
+      "title": "Desire Riviera Maya",
+      "description": "Resort libertino exclusivo para parejas, sol y encuentros de lujo",
+      "image": "/images/slides/sauna-oleron.webp",
+      "url": "https://akoky.com/es/clubbing",
+      "alt": "Desire Riviera Maya - Resort libertino de lujo"
+    },
+    {
+      "id": 14,
+      "lang": "es",
+      "title": "Noche Ibiza",
+      "description": "Las mejores fiestas libertinas bajo las estrellas de Ibiza",
+      "image": "/images/slides/le-prive.webp",
+      "url": "https://akoky.com/es/clubbing",
+      "alt": "Fiesta libertina Ibiza - Noches exclusivas"
+    },
+    {
+      "id": 20,
+      "lang": "en",
+      "title": "Le Glamour Beach",
+      "description": "Unique encounters at the Cap d'Agde Naturist Village!",
+      "image": "/images/slides/glamour-beach.webp",
+      "url": "https://akoky.com/club/le-glamour-beach",
+      "alt": "Le Glamour Beach - Libertine club in Cap d'Agde"
+    },
+    {
+      "id": 21,
+      "lang": "en",
+      "title": "Les Chandelles Paris",
+      "description": "The most prestigious libertine club in Paris since 1993",
+      "image": "/images/slides/les-chandelles.webp",
+      "url": "https://akoky.com/club/les-chandelles",
+      "alt": "Les Chandelles Paris - Luxury swinger club"
+    },
+    {
+      "id": 22,
+      "lang": "en",
+      "title": "Villa Paradis Barcelona",
+      "description": "Exclusive villa with heated pool near Barcelona",
+      "image": "/images/slides/villa-paradis.webp",
+      "url": "https://akoky.com/club/villa-paradis",
+      "alt": "Villa Paradis Barcelona - Libertine club with pool"
+    },
+    {
+      "id": 30,
+      "lang": "de",
+      "title": "Le Glamour Beach",
+      "description": "Einzigartige Begegnungen im Naturistendorf Cap d'Agde!",
+      "image": "/images/slides/glamour-beach.webp",
+      "url": "https://akoky.com/club/le-glamour-beach",
+      "alt": "Le Glamour Beach - Libertiner Club in Cap d'Agde"
+    },
+    {
+      "id": 31,
+      "lang": "de",
+      "title": "Villa Paradis Barcelona",
+      "description": "Exklusive Villa mit beheiztem Pool bei Barcelona",
+      "image": "/images/slides/villa-paradis.webp",
+      "url": "https://akoky.com/club/villa-paradis",
+      "alt": "Villa Paradis Barcelona - Libertiner Club mit Pool"
+    },
+    {
+      "id": 40,
+      "lang": "it",
+      "title": "Le Glamour Beach",
+      "description": "Incontri unici al Villaggio Naturista di Cap d'Agde!",
+      "image": "/images/slides/glamour-beach.webp",
+      "url": "https://akoky.com/club/le-glamour-beach",
+      "alt": "Le Glamour Beach - Club libertino a Cap d'Agde"
+    },
+    {
+      "id": 41,
+      "lang": "it",
+      "title": "Villa Paradis Barcelona",
+      "description": "Villa esclusiva con piscina riscaldata vicino a Barcellona",
+      "image": "/images/slides/villa-paradis.webp",
+      "url": "https://akoky.com/club/villa-paradis",
+      "alt": "Villa Paradis Barcelona - Club libertino con piscina"
+    },
+    {
+      "id": 50,
+      "lang": "pt",
+      "title": "Le Glamour Beach",
+      "description": "Encontros únicos na Aldeia Naturista de Cap d'Agde!",
+      "image": "/images/slides/glamour-beach.webp",
+      "url": "https://akoky.com/club/le-glamour-beach",
+      "alt": "Le Glamour Beach - Clube libertino em Cap d'Agde"
+    },
+    {
+      "id": 51,
+      "lang": "pt",
+      "title": "Villa Paradis Barcelona",
+      "description": "Villa exclusiva com piscina aquecida perto de Barcelona",
+      "image": "/images/slides/villa-paradis.webp",
+      "url": "https://akoky.com/club/villa-paradis",
+      "alt": "Villa Paradis Barcelona - Clube libertino com piscina"
     }
   ],
   "settings": {
