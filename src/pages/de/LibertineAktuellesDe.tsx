@@ -23,6 +23,7 @@ const LibertineAktuellesDe = () => (
       canonical="https://akoky.com/de/libertine-aktuelles"
       heroTitle="Libertine Aktuelles und Trends"
       heroSubtitle="Redaktionelle Übersicht der libertinen Szene in Deutschland: Trends, Analysen und Neuigkeiten aktuell."
+      heroImage="/images/es-actualidad-cover.webp"
       breadcrumb={[{ label: "Libertine Aktuelles und Trends" }]}
       faq={FAQ}
     >

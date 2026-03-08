@@ -24,6 +24,7 @@ const KontaktDe = () => (
       canonical="https://akoky.com/de/kontakt"
       heroTitle="AKOKY Kontaktieren"
       heroSubtitle="Unser Team steht 24h zur Verfügung. Finde den richtigen Kontaktkanal für deine Anfrage."
+      heroImage="/images/es-contacto-cover.webp"
       breadcrumb={[{ label: "AKOKY Kontaktieren" }]}
       faq={FAQ}
     >

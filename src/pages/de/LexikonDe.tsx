@@ -24,6 +24,7 @@ const LexikonDe = () => (
       canonical="https://akoky.com/de/lexikon"
       heroTitle="Libertines Lexikon"
       heroSubtitle="Das vollständige Wörterbuch der libertinen Community: 200+ Begriffe verständlich erklärt."
+      heroImage="/images/es-lexico-cover.webp"
       breadcrumb={[{ label: "Libertines Lexikon" }]}
       faq={FAQ}
     >

@@ -24,6 +24,7 @@ const BewertungenDe = () => (
       canonical="https://akoky.com/de/bewertungen"
       heroTitle="Bewertungen und Rezensionen AKOKY"
       heroSubtitle="Echte und verifizierte Erfahrungsberichte der europäischen libertinen Community."
+      heroImage="/images/es-preguntas-cover.webp"
       breadcrumb={[{ label: "Bewertungen und Rezensionen AKOKY" }]}
       faq={FAQ}
     >

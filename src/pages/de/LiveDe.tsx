@@ -24,6 +24,7 @@ const LiveDe = () => (
       canonical="https://akoky.com/de/live"
       heroTitle="AKOKY Lives — Videos und Begegnungen Live"
       heroSubtitle="20+ Lives pro Woche: Clubs live, exklusive Abende, VIP-Inhalte. Sicher und diskret."
+      heroImage="/images/es-live-cover.webp"
       breadcrumb={[{ label: "AKOKY Lives — Videos und Begegnungen Live" }]}
       faq={FAQ}
     >

@@ -24,6 +24,7 @@ const VisionDe = () => (
       canonical="https://akoky.com/de/vision"
       heroTitle="Unsere Vision"
       heroSubtitle="AKOKY wurde aus einer Überzeugung geboren: Moderner Libertinismus verdient eine Plattform auf seinem Niveau."
+      heroImage="/images/es-vision-cover.webp"
       breadcrumb={[{ label: "Unsere Vision" }]}
       faq={FAQ}
     >

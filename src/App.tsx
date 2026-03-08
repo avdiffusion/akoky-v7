@@ -189,17 +189,7 @@ import DatenschutzDe from "./pages/de/DatenschutzDe";
 
 
 // ─── Pages DE livraison 6 ─────────────────────────────────────────────────────
-import ActualitesDe from "./pages/de/ActualitesDe";
-import BlogRedirectDe from "./pages/de/BlogRedirectDe";
-import FaqRedirectDe from "./pages/de/FaqRedirectDe";
-import DebuterGuideDe from "./pages/de/DebuterGuideDe";
 import LibertinageGuideDe from "./pages/de/LibertinageGuideDe";
-import SaunasGuideDe from "./pages/de/SaunasGuideDe";
-import LexiqueGuideDe from "./pages/de/LexiqueGuideDe";
-import JeuxGuideDe from "./pages/de/JeuxGuideDe";
-import EvenementsGuideDe from "./pages/de/EvenementsGuideDe";
-import VipGuideDe from "./pages/de/VipGuideDe";
-import VisionGuideDe from "./pages/de/VisionGuideDe";
 import PremierClubGuideDe from "./pages/de/PremierClubGuideDe";
 import PremierRdvGuideDe from "./pages/de/PremierRdvGuideDe";
 import QuestionsGuideDe from "./pages/de/QuestionsGuideDe";
@@ -207,8 +197,6 @@ import GuideGuideDe from "./pages/de/GuideGuideDe";
 import GuideUltimeGuideDe from "./pages/de/GuideUltimeGuideDe";
 import ConcoursGuideDe from "./pages/de/ConcoursGuideDe";
 import ConcoursClesGuideDe from "./pages/de/ConcoursClesGuideDe";
-import ContactGuideDe from "./pages/de/ContactGuideDe";
-import CookiesGuideDe from "./pages/de/CookiesGuideDe";
 import PresseGuideDe from "./pages/de/PresseGuideDe";
 
 // ─── Pages IT livraison 4 ─────────────────────────────────────────────────────
@@ -548,16 +536,19 @@ const App = () => (
             <Route path="/de/lexikon" element={<LexikonDe />} />
             <Route path="/de/datenschutz" element={<DatenschutzDe />} />
             
-            {/* ── Pages DE livraison 6 ───────────────────────────────────── */}
-            <Route path="/de/libertine-neuigkeiten" element={<ActualitesDe />} />
-            <Route path="/de/libertinismus-beginnen" element={<DebuterGuideDe />} />
+            {/* ── Pages DE livraison 6 — redirects doublons ─────────── */}
+            <Route path="/de/libertine-neuigkeiten" element={<Navigate to="/de/libertine-aktuelles" replace />} />
+            <Route path="/de/libertinismus-beginnen" element={<Navigate to="/de/libertinismus-anfangen" replace />} />
+            <Route path="/de/libertine-saunas-guide" element={<Navigate to="/de/saunas" replace />} />
+            <Route path="/de/libertines-lexikon-guide" element={<Navigate to="/de/lexikon" replace />} />
+            <Route path="/de/libertine-spiele-guide" element={<Navigate to="/de/spiele" replace />} />
+            <Route path="/de/libertine-veranstaltungen" element={<Navigate to="/de/events" replace />} />
+            <Route path="/de/vip-premium-guide" element={<Navigate to="/de/vip" replace />} />
+            <Route path="/de/vision-akoky-guide" element={<Navigate to="/de/vision" replace />} />
+            <Route path="/de/kontakt-akoky" element={<Navigate to="/de/kontakt" replace />} />
+            <Route path="/de/cookie-richtlinie" element={<Navigate to="/de/datenschutz" replace />} />
+            {/* ── Pages DE uniques ────────────────────────────────────── */}
             <Route path="/de/libertinismus-guide" element={<LibertinageGuideDe />} />
-            <Route path="/de/libertine-saunas-guide" element={<SaunasGuideDe />} />
-            <Route path="/de/libertines-lexikon-guide" element={<LexiqueGuideDe />} />
-            <Route path="/de/libertine-spiele-guide" element={<JeuxGuideDe />} />
-            <Route path="/de/libertine-veranstaltungen" element={<EvenementsGuideDe />} />
-            <Route path="/de/vip-premium-guide" element={<VipGuideDe />} />
-            <Route path="/de/vision-akoky-guide" element={<VisionGuideDe />} />
             <Route path="/de/erster-libertiner-club" element={<PremierClubGuideDe />} />
             <Route path="/de/erste-libertine-erfahrung" element={<PremierRdvGuideDe />} />
             <Route path="/de/fragen-anfaenger-guide" element={<QuestionsGuideDe />} />
@@ -565,8 +556,6 @@ const App = () => (
             <Route path="/de/ultimativer-libertinismus-ratgeber" element={<GuideUltimeGuideDe />} />
             <Route path="/de/gewinnspiel-akoky-2026" element={<ConcoursGuideDe />} />
             <Route path="/de/sechs-schluessel-spiel" element={<ConcoursClesGuideDe />} />
-            <Route path="/de/kontakt-akoky" element={<ContactGuideDe />} />
-            <Route path="/de/cookie-richtlinie" element={<CookiesGuideDe />} />
             <Route path="/de/pressestelle" element={<PresseGuideDe />} />
             <Route path="/de/faq" element={<Navigate to="https://ask.akoky.com" replace />} />
             <Route path="/de/blog" element={<BlogListing lang="de" />} />

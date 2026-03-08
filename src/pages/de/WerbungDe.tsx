@@ -24,6 +24,7 @@ const WerbungDe = () => (
       canonical="https://akoky.com/de/empfehlung"
       heroTitle="AKOKY Empfehlungsprogramm"
       heroSubtitle="Freunde einladen, exklusive Vorteile gewinnen und deine Community wachsen lassen."
+      heroImage="/images/es-parrainage-cover.webp"
       breadcrumb={[{ label: "AKOKY Empfehlungsprogramm" }]}
       faq={FAQ}
     >

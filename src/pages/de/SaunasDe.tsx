@@ -23,6 +23,7 @@ const SaunasDe = () => (
       canonical="https://akoky.com/de/saunas"
       heroTitle="Libertine Saunas in Deutschland"
       heroSubtitle="Vollständiger Leitfaden zu libertinen Saunas: Was sind sie, wie verläuft ein Besuch und wie wählt man den besten."
+      heroImage="/images/es-saunas-cover.webp"
       breadcrumb={[{ label: "Libertine Saunas in Deutschland" }]}
       faq={FAQ}
     >

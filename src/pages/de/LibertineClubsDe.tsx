@@ -24,6 +24,7 @@ const LibertineClubsDe = () => (
       canonical="https://akoky.com/de/libertine-clubs"
       heroTitle="Libertine Clubs in Deutschland"
       heroSubtitle="Vollständiges Verzeichnis verifizierter libertiner Clubs in Deutschland und Europa. Detaillierte Profile, Fotos und echte Bewertungen."
+      heroImage="/images/es-club-card.webp"
       breadcrumb={[{ label: "Libertine Clubs in Deutschland" }]}
       faq={FAQ}
     >
