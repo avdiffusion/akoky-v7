@@ -200,7 +200,7 @@ const blogSchema = {
   publisher: {
     "@type": "Organization",
     name: "AKOKY",
-    logo: { "@type": "ImageObject", url: "https://akoky.com/images/logo-akoky.webp" },
+    logo: { "@type": "ImageObject", url: "/images/logo-akoky.webp" },
   },
   blogPost: FEATURED_ARTICLES.map((a) => ({
     "@type": "BlogPosting",
