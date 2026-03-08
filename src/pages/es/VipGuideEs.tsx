@@ -61,6 +61,25 @@ const VipGuideEs = () => (
           </div>
         </div>
       </section>
+      <section className="py-10 px-4 bg-card/50">
+        <div className="container max-w-4xl mx-auto">
+          <h2 className="text-xl font-bold text-foreground mb-5">Explorar más</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {[
+              { to: "/es/clubes-libertinos", label: "Clubes" },
+              { to: "/es/saunas-libertinos", label: "Saunas" },
+              { to: "/es/eventos", label: "Eventos" },
+              { to: "/es/live", label: "Lives" },
+              { to: "/es/app", label: "App AKOKY" },
+              { to: "/es/parrainage", label: "Afiliación" },
+              { to: "/es/empezar-libertinaje", label: "Empezar" },
+              { to: "/es/libertinaje", label: "El Libertinaje" },
+            ].map((l) => (
+              <Link key={l.to} to={l.to} className="px-4 py-2 bg-card border border-border rounded-lg text-sm font-medium text-muted-foreground hover:border-primary hover:text-primary transition-colors text-center">{l.label}</Link>
+            ))}
+          </div>
+        </div>
+      </section>
     </ContentPageLayout>
   </>
 );

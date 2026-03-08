@@ -1,8 +1,13 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
+import { Link } from "react-router-dom";
 
-const FAQ: { question: string; answer: string }[] = [];
+const FAQ = [
+  { question: "¿Cómo contactar con el servicio de prensa?", answer: "Envía tu solicitud a presse@akoky.com. Nuestro equipo responde en 48h laborables." },
+  { question: "¿AKOKY ofrece un programa de afiliación para clubes?", answer: "Sí. Los clubes libertinos pueden unirse al ecosistema AKOKY para ganar visibilidad ante 1,5M de miembros activos." },
+  { question: "¿En qué idiomas está disponible el dossier de prensa?", answer: "El dossier de prensa está disponible en español, francés, inglés, alemán, italiano y portugués." },
+];
 
 const BRANDING = [
   { img: "/images/branding/tshirts-akoky-premium.webp", alt: "Camisetas y ropa Akoky premium con logo AK" },
@@ -100,6 +105,26 @@ const PresseGuideEs = () => (
           <div className="flex flex-wrap gap-4 justify-center mt-6">
             <a href="mailto:presse@akoky.com" className="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">📩 presse@akoky.com</a>
             <a href="mailto:partenariats@akoky.com" className="border border-border px-6 py-3 rounded-lg font-semibold hover:border-primary hover:text-primary transition-colors">🤝 colaboraciones@akoky.com</a>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-10 px-4 bg-background">
+        <div className="container max-w-4xl mx-auto">
+          <h2 className="text-xl font-bold text-foreground mb-5">Explorar AKOKY</h2>
+          <div className="flex flex-wrap gap-3 justify-center">
+            {[
+              { to: "/es/clubes-libertinos", label: "Clubes" },
+              { to: "/es/saunas-libertinos", label: "Saunas" },
+              { to: "/es/eventos", label: "Eventos" },
+              { to: "/es/app", label: "Aplicación" },
+              { to: "/es/vip", label: "VIP" },
+              { to: "/es/vision", label: "Visión" },
+              { to: "/es/libertinaje", label: "El Libertinaje" },
+              { to: "/es/contacto", label: "Contacto" },
+            ].map((l) => (
+              <Link key={l.to} to={l.to} className="px-4 py-2 bg-card border border-border rounded-lg text-sm font-medium text-muted-foreground hover:border-primary hover:text-primary transition-colors">{l.label}</Link>
+            ))}
           </div>
         </div>
       </section>
