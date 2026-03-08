@@ -41,7 +41,7 @@ const FEATURED_ARTICLES = [
   {
     title: "Le Lifestyle Swinger en France — Communauté et Valeurs",
     description: "Tout comprendre sur le lifestyle swinger en France : valeurs, communauté, éthique et pourquoi AKOKY est la plateforme de référence.",
-    image: "https://akoky.com/images/libertinage.webp",
+    image: "/images/libertinage.webp",
     href: "https://akoky.com/fr/blogs/lifestyle-swinger-france-communaute",
     category: "Lifestyle",
     readTime: "11 min",
