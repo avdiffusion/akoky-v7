@@ -18,7 +18,7 @@ const ClubsLibertinsOccitanie = () => {
       heroTitle="Meilleurs clubs libertins en Occitanie"
       heroSubtitle="L'Occitanie est l'une des régions libertines les plus dynamiques de France, avec Toulouse et Montpellier comme pôles majeurs."
       faq={faq}
-      breadcrumb={[{ label: "Clubbing France", href: "/clubbing-france-europe" }, { label: "Occitanie" }]}
+      breadcrumb={[{ label: "Clubbing France", href: "/fr/clubbing-france-europe" }, { label: "Occitanie" }]}
     >
       <section className="py-16 px-4">
         <div className="container max-w-4xl mx-auto prose prose-invert prose-lg">
