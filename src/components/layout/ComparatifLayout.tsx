@@ -22,7 +22,10 @@ interface ComparisonTableProps {
   competitorName: string;
 }
 
+type Lang = "fr" | "en" | "es" | "de" | "it" | "pt";
+
 interface ComparatifLayoutProps {
+  lang?: Lang;
   title: string;
   description: string;
   canonical: string;
