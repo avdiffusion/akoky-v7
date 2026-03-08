@@ -18,15 +18,6 @@ const DISCOVER_LINKS: Record<Lang, FooterLink[]> = {
     { href: "/fr/avis", icon: "⭐", label: "Avis" },
     { href: "/fr/application", icon: "📱", label: "App mobile" },
   ],
-  en: [
-    { href: "/en", icon: "🏠", label: "Home" },
-    { href: "/en/akoky", icon: "ℹ️", label: "About" },
-    { href: "/en/blog", icon: "📖", label: "Blog" },
-    { href: "/en/events", icon: "📅", label: "Events" },
-    { href: "/en/games", icon: "🎮", label: "Games" },
-    { href: "/en/reviews", icon: "⭐", label: "Reviews" },
-    { href: "/en/app", icon: "📱", label: "Mobile App" },
-  ],
   es: [
     { href: "/es", icon: "🏠", label: "Inicio" },
     { href: "/es/akoky", icon: "ℹ️", label: "Acerca de" },
