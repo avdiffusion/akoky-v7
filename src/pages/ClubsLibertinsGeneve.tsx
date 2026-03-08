@@ -10,7 +10,7 @@ const ClubsLibertinsGeneve = () => {
       heroTitle="Clubs libertins à Genève"
       heroSubtitle="Soirées privées, saunas haut de gamme et rencontres discrètes dans la capitale libertine suisse"
       heroImage="/images/clubbing-suisse.webp"
-      breadcrumb={[{ label: "Clubbing", href: "/clubbing" }, { label: "Genève" }]}
+      breadcrumb={[{ label: "Clubbing", href: "/fr/clubbing" }, { label: "Genève" }]}
       faq={[
         {
           question: "Où rencontrer des libertins à Genève ?",
@@ -78,7 +78,7 @@ const ClubsLibertinsGeneve = () => {
               <p>Les saunas libertins genevois offrent des espaces de détente et de rencontre, avec des services haut de gamme. Les soirées sélectives sont réservées à une clientèle exigeante, avec des protocoles d'accès stricts. Les couples peuvent profiter d'espaces privatisables et de services personnalisés pour des rencontres discrètes et sophistiquées.</p>
               <div className="mt-6">
                 <p className="mb-4">Pour découvrir l'ensemble des clubs libertins en Suisse, consultez notre guide complet :</p>
-                <Link to="/clubbing-suisse" className="inline-block px-6 py-3 rounded-full bg-primary text-black font-bold hover:bg-primary-dark transition-colors">
+                <Link to="/fr/clubbing-suisse" className="inline-block px-6 py-3 rounded-full bg-primary text-black font-bold hover:bg-primary-dark transition-colors">
                   Découvrir les clubs en Suisse
                 </Link>
               </div>
@@ -99,10 +99,10 @@ const ClubsLibertinsGeneve = () => {
               <p>Genève joue un rôle central dans la scène libertine suisse. La ville, avec son offre haut de gamme, attire une clientèle internationale et nationale. La complémentarité avec d'autres villes suisses comme Lausanne, Zurich et Bâle est évidente, avec des déplacements nationaux facilités par un réseau de transports efficace.</p>
               <p>Les couples genevois profitent de cette proximité pour varier leurs expériences. Les week-ends libertins transfrontaliers sont particulièrement prisés, avec des déplacements faciles vers les autres grandes villes suisses. Pour découvrir les clubs libertins dans ces villes, consultez nos guides dédiés :</p>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose">
-                <li><Link to="/clubbing-suisse" className="text-primary hover:underline">Clubbing en Suisse</Link></li>
-                <li><Link to="/clubbing-suisse" className="text-primary hover:underline">Clubs à Lausanne</Link></li>
-                <li><Link to="/clubbing-suisse" className="text-primary hover:underline">Clubs à Zurich</Link></li>
-                <li><Link to="/clubbing-suisse" className="text-primary hover:underline">Clubs à Bâle</Link></li>
+                <li><Link to="/fr/clubbing-suisse" className="text-primary hover:underline">Clubbing en Suisse</Link></li>
+                <li><Link to="/fr/clubs-libertins-lausanne" className="text-primary hover:underline">Clubs à Lausanne</Link></li>
+                <li><Link to="/fr/clubs-libertins-zurich" className="text-primary hover:underline">Clubs à Zurich</Link></li>
+                <li><Link to="/fr/clubs-libertins-bale" className="text-primary hover:underline">Clubs à Bâle</Link></li>
               </ul>
             </div>
           </div>
@@ -113,8 +113,8 @@ const ClubsLibertinsGeneve = () => {
               <p>Genève, avec sa proximité immédiate avec la France, bénéficie d'une scène libertine transfrontalière dynamique. La ville attire une clientèle française, notamment de Haute-Savoie et de Rhône-Alpes, pour des week-ends libertins et des soirées privées. Les déplacements sont facilités par des liaisons fréquentes et rapides entre les deux pays.</p>
               <p>Les couples français apprécient particulièrement les clubs genevois pour leur discrétion et leur excellence. La fréquentation depuis la France est importante, avec des couples venant régulièrement profiter de l'offre libertine genevoise. Pour découvrir les clubs libertins en France, consultez nos guides dédiés :</p>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose">
-                <li><Link to="/clubs-echangistes-france" className="text-primary hover:underline">Clubs en Auvergne-Rhône-Alpes</Link></li>
-                <li><Link to="/clubbing-france-europe" className="text-primary hover:underline">Clubbing en France et en Europe</Link></li>
+                <li><Link to="/fr/clubs-libertins-auvergne-rhone-alpes" className="text-primary hover:underline">Clubs en Auvergne-Rhône-Alpes</Link></li>
+                <li><Link to="/fr/clubbing-france-europe" className="text-primary hover:underline">Clubbing en France et en Europe</Link></li>
               </ul>
             </div>
           </div>
@@ -145,9 +145,9 @@ const ClubsLibertinsGeneve = () => {
             <div className="prose prose-invert prose-lg max-w-none">
               <p>Genève fait partie d'une scène libertine suisse dynamique, avec d'autres villes qui offrent également des expériences uniques. Pour découvrir les clubs libertins dans ces villes, consultez nos guides dédiés :</p>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose">
-                <li><Link to="/clubbing-suisse" className="text-primary hover:underline">Clubs à Lausanne</Link></li>
-                <li><Link to="/clubbing-suisse" className="text-primary hover:underline">Clubs à Zurich</Link></li>
-                <li><Link to="/clubbing-suisse" className="text-primary hover:underline">Clubs à Bâle</Link></li>
+                <li><Link to="/fr/clubs-libertins-lausanne" className="text-primary hover:underline">Clubs à Lausanne</Link></li>
+                <li><Link to="/fr/clubs-libertins-zurich" className="text-primary hover:underline">Clubs à Zurich</Link></li>
+                <li><Link to="/fr/clubs-libertins-bale" className="text-primary hover:underline">Clubs à Bâle</Link></li>
               </ul>
             </div>
           </div>

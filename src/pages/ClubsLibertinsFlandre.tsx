@@ -10,7 +10,7 @@ const ClubsLibertinsFlandre = () => {
       heroTitle="Clubs libertins en Flandre"
       heroSubtitle="Le guide complet des clubs, villes et événements libertins en Flandre"
       heroImage="/images/region-clubbing-belgique.webp"
-      breadcrumb={[{ label: "Clubbing", href: "/clubbing" }, { label: "Flandre" }]}
+      breadcrumb={[{ label: "Clubbing", href: "/fr/clubbing" }, { label: "Flandre" }]}
       faq={[
         {
           question: "Où trouver des clubs libertins en Flandre ?",
@@ -52,17 +52,17 @@ const ClubsLibertinsFlandre = () => {
               <div className="bg-card/50 p-6 rounded-xl border border-white/10">
                 <h3 className="text-xl font-bold text-white mb-3">Anvers</h3>
                 <p className="text-gray-300 mb-4 text-sm">Anvers, capitale économique et culturelle de la Flandre, est le cœur battant du libertinage dans la région. Ses clubs, réputés pour leur élégance et leur modernité, attirent une clientèle internationale. L'ambiance est dynamique, avec des soirées à thème et des événements réguliers.</p>
-                <Link to="/clubs-libertins-anvers" className="text-primary hover:underline text-sm font-medium">Découvrir Anvers →</Link>
+                <Link to="/fr/clubs-libertins-anvers" className="text-primary hover:underline text-sm font-medium">Découvrir Anvers →</Link>
               </div>
               <div className="bg-card/50 p-6 rounded-xl border border-white/10">
                 <h3 className="text-xl font-bold text-white mb-3">Gand</h3>
                 <p className="text-gray-300 mb-4 text-sm">Gand, ville historique et universitaire, offre une scène libertine plus intimiste. Ses clubs sont appréciés pour leur ambiance chaleureuse et leur clientèle locale. La ville attire également de nombreux visiteurs néerlandais, grâce à sa proximité géographique.</p>
-                <Link to="/clubs-libertins-gand" className="text-primary hover:underline text-sm font-medium">Découvrir Gand →</Link>
+                <Link to="/fr/clubs-libertins-gand" className="text-primary hover:underline text-sm font-medium">Découvrir Gand →</Link>
               </div>
               <div className="bg-card/50 p-6 rounded-xl border border-white/10">
                 <h3 className="text-xl font-bold text-white mb-3">Bruges</h3>
                 <p className="text-gray-300 mb-4 text-sm">Bruges, ville médiévale romantique, propose une expérience libertine unique. Ses clubs, souvent situés dans des bâtiments historiques, offrent une ambiance feutrée et raffinée. La ville attire des couples en quête d'une expérience libertine plus discrète et intimiste.</p>
-                <Link to="/clubs-libertins-bruges" className="text-primary hover:underline text-sm font-medium">Découvrir Bruges →</Link>
+                <Link to="/fr/clubs-libertins-bruges" className="text-primary hover:underline text-sm font-medium">Découvrir Bruges →</Link>
               </div>
             </div>
           </div>
@@ -74,7 +74,7 @@ const ClubsLibertinsFlandre = () => {
               <p>Les clubs échangistes flamands sont particulièrement prisés pour leur ambiance moderne et leur organisation impeccable. Les saunas libertins, quant à eux, offrent une expérience plus détendue et intimiste, avec des espaces dédiés aux rencontres.</p>
               <div className="mt-6">
                 <p className="mb-4">Pour découvrir l'ensemble des clubs libertins en Flandre, consultez notre guide complet :</p>
-                <Link to="/clubbing-belgique" className="inline-block px-6 py-3 rounded-full bg-primary text-black font-bold hover:bg-primary-dark transition-colors">
+                <Link to="/fr/clubbing-belgique" className="inline-block px-6 py-3 rounded-full bg-primary text-black font-bold hover:bg-primary-dark transition-colors">
                   Découvrir les clubs
                 </Link>
               </div>
@@ -98,8 +98,8 @@ const ClubsLibertinsFlandre = () => {
               <div className="mt-6">
                 <p className="mb-4">Pour en savoir plus sur le clubbing libertin en Belgique et en France, consultez nos guides dédiés :</p>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose">
-                  <li><Link to="/clubbing-belgique" className="text-primary hover:underline">Clubbing en Belgique</Link></li>
-                  <li><Link to="/clubs-echangistes-france" className="text-primary hover:underline">Clubs dans les Hauts-de-France</Link></li>
+                  <li><Link to="/fr/clubbing-belgique" className="text-primary hover:underline">Clubbing en Belgique</Link></li>
+                  <li><Link to="/fr/clubs-libertins-hauts-de-france" className="text-primary hover:underline">Clubs dans les Hauts-de-France</Link></li>
                 </ul>
               </div>
             </div>
@@ -133,10 +133,10 @@ const ClubsLibertinsFlandre = () => {
               <div className="mt-6">
                 <p className="mb-4">Pour découvrir le clubbing libertin dans ces régions et pays, consultez nos guides dédiés :</p>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose">
-                  <li><Link to="/clubbing-belgique" className="text-primary hover:underline">Clubs en Wallonie</Link></li>
-                  <li><Link to="/clubs-libertins-bruxelles" className="text-primary hover:underline">Clubs en région bruxelloise</Link></li>
-                  <li><Link to="/clubbing-belgique" className="text-primary hover:underline">Clubbing en Belgique</Link></li>
-                  <li><Link to="/clubbing-france-europe" className="text-primary hover:underline">Clubbing en France et en Europe</Link></li>
+                  <li><Link to="/fr/clubs-libertins-wallonie" className="text-primary hover:underline">Clubs en Wallonie</Link></li>
+                  <li><Link to="/fr/clubs-libertins-bruxelles" className="text-primary hover:underline">Clubs en région bruxelloise</Link></li>
+                  <li><Link to="/fr/clubbing-belgique" className="text-primary hover:underline">Clubbing en Belgique</Link></li>
+                  <li><Link to="/fr/clubbing-france-europe" className="text-primary hover:underline">Clubbing en France et en Europe</Link></li>
                 </ul>
               </div>
             </div>

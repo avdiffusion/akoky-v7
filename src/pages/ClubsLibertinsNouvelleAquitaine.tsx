@@ -18,7 +18,7 @@ const ClubsLibertinsNouvelleAquitaine = () => {
       heroTitle="Meilleurs clubs libertins en Nouvelle-Aquitaine"
       heroSubtitle="La Nouvelle-Aquitaine est l'une des régions libertines les plus vastes et les plus actives de France."
       faq={faq}
-      breadcrumb={[{ label: "Clubbing France", href: "/clubbing-france-europe" }, { label: "Nouvelle-Aquitaine" }]}
+      breadcrumb={[{ label: "Clubbing France", href: "/fr/clubbing-france-europe" }, { label: "Nouvelle-Aquitaine" }]}
     >
       <section className="py-16 px-4">
         <div className="container max-w-4xl mx-auto prose prose-invert prose-lg">
@@ -29,16 +29,16 @@ const ClubsLibertinsNouvelleAquitaine = () => {
           <h2 className="text-3xl font-bold text-foreground font-display">Les grandes villes libertines</h2>
           <h3>Bordeaux</h3>
           <p>Bordeaux, avec son ambiance élégante et sa vie nocturne animée, attire une clientèle variée.</p>
-          <Link to="/clubs-libertins-bordeaux" className="text-primary hover:underline">Clubs libertins à Bordeaux →</Link>
+          <Link to="/fr/clubs-libertins-bordeaux" className="text-primary hover:underline">Clubs libertins à Bordeaux →</Link>
           <h3>Poitiers</h3><p>Poitiers offre des soirées intimistes.</p>
           <h3>Limoges</h3><p>Limoges attire une clientèle sophistiquée.</p>
           <h3>Pau</h3><p>Pau offre un cadre de vie agréable pour des rencontres libertines.</p>
           <h3>Bayonne</h3><p>Bayonne, avec son ambiance basque, attire une clientèle internationale.</p>
 
           <div className="flex flex-wrap gap-3 not-prose my-6">
-            <Link to="/clubs-libertins-bordeaux" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Bordeaux</Link>
-            <Link to="/clubs-libertins-occitanie" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Occitanie</Link>
-            <Link to="/clubbing-france-europe" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Clubbing France</Link>
+            <Link to="/fr/clubs-libertins-bordeaux" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Bordeaux</Link>
+            <Link to="/fr/clubs-libertins-occitanie" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Occitanie</Link>
+            <Link to="/fr/clubbing-france-europe" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Clubbing France</Link>
           </div>
         </div>
       </section>

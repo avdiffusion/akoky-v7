@@ -10,7 +10,7 @@ const ClubsLibertinsCharleroi = () => {
       heroTitle="Clubs libertins à Charleroi"
       heroSubtitle="Le guide complet des clubs, soirées et événements libertins à Charleroi"
       heroImage="/images/clubs-libertins-belgique.webp"
-      breadcrumb={[{ label: "Clubbing", href: "/clubbing" }, { label: "Charleroi" }]}
+      breadcrumb={[{ label: "Clubbing", href: "/fr/clubbing" }, { label: "Charleroi" }]}
       faq={[
         {
           question: "Où rencontrer des libertins à Charleroi ?",
@@ -70,7 +70,7 @@ const ClubsLibertinsCharleroi = () => {
               <p>Les clubs charlerois offrent des espaces modernes et bien équipés, avec des ambiances variées pour répondre à tous les goûts. Les saunas libertins, quant à eux, proposent une expérience plus détendue et intimiste, avec des espaces dédiés aux rencontres et à la détente.</p>
               <div className="mt-6">
                 <p className="mb-4">Pour découvrir l'ensemble des clubs libertins en Belgique, consultez notre guide dédié :</p>
-                <Link to="/clubbing-belgique" className="inline-block px-6 py-3 rounded-full bg-primary text-black font-bold hover:bg-primary-dark transition-colors">
+                <Link to="/fr/clubbing-belgique" className="inline-block px-6 py-3 rounded-full bg-primary text-black font-bold hover:bg-primary-dark transition-colors">
                   Découvrir les clubs en Belgique
                 </Link>
               </div>
@@ -94,10 +94,10 @@ const ClubsLibertinsCharleroi = () => {
               <div className="mt-6">
                 <p className="mb-4">Pour découvrir les clubs libertins dans les autres villes wallonnes, consultez nos guides dédiés :</p>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose">
-                  <li><Link to="/clubbing-belgique" className="text-primary hover:underline">Clubs en Wallonie</Link></li>
-                  <li><Link to="/clubbing-belgique" className="text-primary hover:underline">Clubs à Liège</Link></li>
-                  <li><Link to="/clubbing-belgique" className="text-primary hover:underline">Clubs à Namur</Link></li>
-                  <li><Link to="/clubbing-belgique" className="text-primary hover:underline">Clubs à Mons</Link></li>
+                  <li><Link to="/fr/clubs-libertins-wallonie" className="text-primary hover:underline">Clubs en Wallonie</Link></li>
+                  <li><Link to="/fr/clubs-libertins-liege" className="text-primary hover:underline">Clubs à Liège</Link></li>
+                  <li><Link to="/fr/clubbing-belgique" className="text-primary hover:underline">Clubs à Namur</Link></li>
+                  <li><Link to="/fr/clubbing-belgique" className="text-primary hover:underline">Clubs à Mons</Link></li>
                 </ul>
               </div>
             </div>
@@ -111,8 +111,8 @@ const ClubsLibertinsCharleroi = () => {
               <div className="mt-6">
                 <p className="mb-4">Pour découvrir les clubs libertins dans les Hauts-de-France et en France, consultez nos guides dédiés :</p>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose">
-                  <li><Link to="/clubs-echangistes-france" className="text-primary hover:underline">Clubs dans les Hauts-de-France</Link></li>
-                  <li><Link to="/clubbing-france-europe" className="text-primary hover:underline">Clubbing en France et en Europe</Link></li>
+                  <li><Link to="/fr/clubs-libertins-hauts-de-france" className="text-primary hover:underline">Clubs dans les Hauts-de-France</Link></li>
+                  <li><Link to="/fr/clubbing-france-europe" className="text-primary hover:underline">Clubbing en France et en Europe</Link></li>
                 </ul>
               </div>
             </div>

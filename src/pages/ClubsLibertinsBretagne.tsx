@@ -18,7 +18,7 @@ const ClubsLibertinsBretagne = () => {
       heroTitle="Meilleurs clubs libertins en Bretagne"
       heroSubtitle="La Bretagne, avec son ambiance chaleureuse et discrète, est une région libertine dynamique."
       faq={faq}
-      breadcrumb={[{ label: "Clubbing France", href: "/clubbing-france-europe" }, { label: "Bretagne" }]}
+      breadcrumb={[{ label: "Clubbing France", href: "/fr/clubbing-france-europe" }, { label: "Bretagne" }]}
     >
       <section className="py-16 px-4">
         <div className="container max-w-4xl mx-auto prose prose-invert prose-lg">
@@ -29,17 +29,17 @@ const ClubsLibertinsBretagne = () => {
           <h2 className="text-3xl font-bold text-foreground font-display">Les grandes villes libertines</h2>
           <h3>Rennes</h3>
           <p>Rennes, avec son ambiance chaleureuse et sa vie nocturne animée, est le cœur de la scène libertine bretonne.</p>
-          <Link to="/clubs-libertins-rennes" className="text-primary hover:underline">Clubs libertins à Rennes →</Link>
+          <Link to="/fr/clubs-libertins-rennes" className="text-primary hover:underline">Clubs libertins à Rennes →</Link>
           <h3>Brest</h3><p>Brest offre une ambiance maritime avec des soirées intimistes.</p>
           <h3>Quimper</h3><p>Quimper propose une ambiance conviviale.</p>
           <h3>Vannes</h3><p>Vannes offre une ambiance festive.</p>
           <h3>Lorient</h3><p>Lorient propose un cadre agréable pour des rencontres libertines.</p>
 
           <div className="flex flex-wrap gap-3 not-prose my-6">
-            <Link to="/clubs-libertins-rennes" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Rennes</Link>
-            <Link to="/clubs-libertins-nantes" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Nantes</Link>
-            <Link to="/clubs-libertins-normandie" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Normandie</Link>
-            <Link to="/clubbing-france-europe" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Clubbing France</Link>
+            <Link to="/fr/clubs-libertins-rennes" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Rennes</Link>
+            <Link to="/fr/clubs-libertins-nantes" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Nantes</Link>
+            <Link to="/fr/clubs-libertins-normandie" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Normandie</Link>
+            <Link to="/fr/clubbing-france-europe" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Clubbing France</Link>
           </div>
         </div>
       </section>

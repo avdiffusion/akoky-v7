@@ -18,7 +18,7 @@ const ClubsLibertinsNormandie = () => {
       heroTitle="Meilleurs clubs libertins en Normandie"
       heroSubtitle="La Normandie, avec son charme discret et son attractivité week-end, est une région libertine dynamique."
       faq={faq}
-      breadcrumb={[{ label: "Clubbing France", href: "/clubbing-france-europe" }, { label: "Clubs libertins en Normandie" }]}
+      breadcrumb={[{ label: "Clubbing France", href: "/fr/clubbing-france-europe" }, { label: "Clubs libertins en Normandie" }]}
     >
       <section className="py-16 px-4">
         <div className="container max-w-4xl mx-auto prose prose-invert prose-lg">
@@ -38,9 +38,9 @@ const ClubsLibertinsNormandie = () => {
           <p>Avant même d'aller en club en Normandie, la majorité des couples passent par un site comme AKOKY pour échanger et organiser leurs sorties.</p>
 
           <div className="flex flex-wrap gap-3 not-prose my-6">
-            <Link to="/clubs-libertins-ile-de-france" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Île-de-France</Link>
-            <Link to="/clubs-libertins-bretagne" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Bretagne</Link>
-            <Link to="/clubbing-france-europe" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Clubbing France</Link>
+            <Link to="/fr/clubs-libertins-ile-de-france" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Île-de-France</Link>
+            <Link to="/fr/clubs-libertins-bretagne" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Bretagne</Link>
+            <Link to="/fr/clubbing-france-europe" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Clubbing France</Link>
           </div>
         </div>
       </section>
