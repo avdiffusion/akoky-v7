@@ -292,7 +292,7 @@ const getSocialLinks = (lang: Lang) => [
 ];
 
 const LANGUAGES = [
-  { code: "fr" as Lang, flag: "🇫🇷", label: "Français", href: "/" },
+  { code: "fr" as Lang, flag: "🇫🇷", label: "Français", href: "/fr" },
   { code: "es" as Lang, flag: "🇪🇸", label: "Español", href: "/es" },
   { code: "de" as Lang, flag: "🇩🇪", label: "Deutsch", href: "/de" },
   { code: "it" as Lang, flag: "🇮🇹", label: "Italiano", href: "/it" },
