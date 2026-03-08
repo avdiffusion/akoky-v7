@@ -1,6 +1,7 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
+import { Link } from "react-router-dom";
 
 const FAQ = [
   { question: "¿Con qué frecuencia se actualiza la sección de actualidad?", answer: "La sección de actualidad de AKOKY se actualiza cada semana con nuevas tendencias, análisis y noticias del sector libertino." },
