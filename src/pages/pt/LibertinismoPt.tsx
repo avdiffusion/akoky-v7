@@ -76,6 +76,7 @@ const LibertinismoPt = () => (
       canonical="https://akoky.com/pt/libertinismo"
       heroTitle="O Libertinismo Moderno: Definição, Práticas e Consentimento"
       heroSubtitle="Descobre este universo em 2026: práticas respeitosas, evolução cultural e chaves para uma exploração consciente."
+      heroImage="/images/pt-libertinismo-cover.webp"
       breadcrumb={[{ label: "O Libertinismo Moderno" }]}
       faq={FAQ}
     >

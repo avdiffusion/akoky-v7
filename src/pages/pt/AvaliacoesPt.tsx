@@ -45,7 +45,7 @@ const AvaliacoesPt = () => {
         canonical="https://akoky.com/pt/avaliacoes"
         heroTitle="Avaliações Membros AKOKY – Testemunhos verificados"
         heroSubtitle="Descobre mais de 60 testemunhos autênticos da comunidade libertina AKOKY, plataforma comunitária de encontros libertinos na Europa"
-        heroImage="/images/jeux-cover.webp"
+        heroImage="/images/pt-avaliacoes-cover.webp"
         breadcrumb={[{ label: "Avaliações" }]}
         faq={[
           { question: "As avaliações AKOKY são autênticas e verificadas?", answer: "Sim, 100% das nossas avaliações são autênticas e verificadas. Cada testemunho provém de um membro ativo da nossa comunidade e é controlado pela nossa equipa de moderação antes da publicação. Ao contrário de certas plataformas concorrentes, nunca publicamos avaliações falsas ou testemunhos patrocinados. O nosso compromisso: transparência total para construir uma comunidade libertina de confiança." },

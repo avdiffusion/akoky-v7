@@ -65,7 +65,7 @@ const AkokyPt = () => (
       canonical="https://akoky.com/pt/akoky"
       heroTitle="A Nossa Missão AKOKY"
       heroSubtitle="Descobre os valores, a visão e os compromissos da comunidade Akoky"
-      heroImage="/images/akoky.webp"
+      heroImage="/images/pt-visao-cover.webp"
       breadcrumb={[{ label: "A Nossa Missão AKOKY" }]}
       faq={FAQ}
     >

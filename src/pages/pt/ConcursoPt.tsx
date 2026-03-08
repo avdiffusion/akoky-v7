@@ -50,7 +50,7 @@ const ConcursoPt = () => (
       canonical="https://akoky.com/pt/concurso"
       heroTitle="Concursos AKOKY"
       heroSubtitle="Participa gratuitamente e ganha estadias, subscrições VIP e experiências libertinas exclusivas em Portugal e em toda a Europa."
-      heroImage="/images/concours/six-cles.webp"
+      heroImage="/images/pt-concurso-cover.webp"
       breadcrumb={[{ label: "Concursos" }]}
       faq={FAQ}
       schema={[PAGE_SCHEMA, BREADCRUMB_SCHEMA]}

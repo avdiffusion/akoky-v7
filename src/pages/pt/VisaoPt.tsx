@@ -66,7 +66,7 @@ const VisaoPt = () => (
       canonical="https://akoky.com/pt/visao"
       heroTitle="A Nossa Visão"
       heroSubtitle="O AKOKY nasceu de uma convicção: o libertinismo moderno merece uma plataforma à sua altura."
-      heroImage="/images/vision-cover.webp"
+      heroImage="/images/pt-visao-cover.webp"
       breadcrumb={[{ label: "A Nossa Visão" }]}
       faq={FAQ}
     >

@@ -90,7 +90,7 @@ const SaunasLibertinoPt = () => (
       canonical="https://akoky.com/pt/saunas-libertinos"
       heroTitle="Saunas Libertinos em Portugal"
       heroSubtitle="Bem-estar e encontros: descobre os melhores saunas libertinos verificados em Lisboa, Porto, Algarve e Funchal. Guia completo com fichas, preços e avaliações."
-      heroImage="/images/sauna-cover.webp"
+      heroImage="/images/pt-saunas-cover.webp"
       breadcrumb={[{ label: "Saunas Libertinos" }]}
       faq={FAQ}
     >

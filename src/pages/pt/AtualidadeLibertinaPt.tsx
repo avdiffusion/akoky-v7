@@ -56,7 +56,7 @@ const AtualidadeLibertinaPt = () => (
       canonical="https://akoky.com/pt/atualidade-libertina"
       heroTitle="Atualidade e Tendências Libertinas"
       heroSubtitle="A revista editorial do mundo libertino em Portugal: tendências, análises e notícias atualizadas."
-      heroImage="/images/actualites-libertines-cover.webp"
+      heroImage="/images/pt-atualidade-cover.webp"
       breadcrumb={[{ label: "Atualidade Libertina" }]}
       faq={FAQ}
     >

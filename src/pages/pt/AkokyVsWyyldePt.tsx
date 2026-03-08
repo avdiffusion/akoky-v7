@@ -73,6 +73,7 @@ const AkokyVsWyyldePt = () => (
       canonical="https://akoky.com/pt/akoky-vs-wyylde"
       heroTitle="AKOKY vs Wyylde 2026: Comparação Completa"
       heroSubtitle="O Wyylde é a referência histórica. O AKOKY é o desafiante que reinventa as regras com funcionalidades inéditas."
+      heroImage="/images/pt-akoky-vs-wyylde-cover.webp"
       breadcrumb={[{ label: "AKOKY vs Wyylde 2026" }]}
       faq={FAQ}
     >
