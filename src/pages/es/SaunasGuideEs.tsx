@@ -4,16 +4,16 @@ import HreflangTags from "@/components/seo/HreflangTags";
 import { Link } from "react-router-dom";
 
 const FAQ = [
-  { question: "¿Qué es exactamente un sauna libertino?", answer: "Un sauna libertino es un establecimiento que combina relax spa (hammam, jacuzzi, sauna) y encuentros sensuales entre adultos consintientes. El ambiente es acogedor y relajante, lejos de la agitación de los clubes tradicionales." },
-  { question: "¿Los saunas libertinos aceptan solteros?", answer: "Depende del establecimiento. Las mujeres solas son generalmente bienvenidas sin restricción. Los hombres solos pueden acceder a algunos saunas bajo condiciones: cuotas, horarios específicos. Verifica siempre la política en la ficha AKOKY." },
-  { question: "¿Qué ropa llevar en un sauna libertino?", answer: "La mayoría proporcionan albornoz y toalla en la entrada. Puedes circular en albornoz, toalla, bañador o completamente desnudo según los espacios y tu nivel de comodidad." },
-  { question: "¿Cuánto cuesta la entrada a un sauna libertino?", answer: "En promedio: 40-70€ para pareja, 25-50€ para mujer sola, 70-100€ para hombre solo (cuando aceptado). Los precios exactos están en cada ficha del directorio AKOKY." },
-  { question: "¿Se puede solo disfrutar del spa sin participar?", answer: "Sí, absolutamente. Eres totalmente libre de disfrutar de las instalaciones (hammam, jacuzzi, sauna) sin participar en los juegos sensuales. Nadie puede obligarte a nada." },
-  { question: "¿Los saunas libertinos son limpios y seguros?", answer: "Los establecimientos serios aplican normas estrictas de higiene: limpieza diaria, desinfección regular, puesta a disposición de toallas limpias, preservativos y geles. Consulta las opiniones en AKOKY." },
-  { question: "¿Cuál es el mejor momento para ir?", answer: "Las tardes entre semana son más tranquilas e ideales para una primera visita. Los viernes y sábados por la noche atraen más gente. Algunos organizan veladas temáticas." },
-  { question: "¿Cómo es la primera visita?", answer: "En recepción te explican el funcionamiento, te dan albornoz y toalla. Pasas a vestuarios para cambiarte. Luego eres libre de circular entre los espacios: relax, spa, cabinas privadas. Todo a tu ritmo." },
-  { question: "¿Se puede fotografiar en un sauna libertino?", answer: "No, está estrictamente prohibido. La discreción y el respeto de la vida privada son valores fundamentales. Los teléfonos están generalmente prohibidos o sellados en la entrada." },
-  { question: "¿Dónde encontrar la lista completa de saunas libertinos?", answer: "El directorio más completo está disponible en AKOKY, con fichas detalladas, fotos, opiniones verificadas, tarifas y calendario de eventos. Acceso gratuito en el sitio y la aplicación." },
+  { question: "Qué es exactamente un sauna libertino?", answer: "Un sauna libertino es un establecimiento que combina relax spa (hammam, jacuzzi, sauna) y encuentros sensuales entre adultos consintientes. El ambiente es acogedor y relajante, lejos de la agitación de los clubes tradicionales." },
+  { question: "Los saunas libertinos aceptan solteros?", answer: "Depende del establecimiento. Las mujeres solas son generalmente bienvenidas sin restricción. Los hombres solos pueden acceder a algunos saunas bajo condiciones: cuotas, horarios específicos. Verifica siempre la política en la ficha AKOKY." },
+  { question: "Qué ropa llevar en un sauna libertino?", answer: "La mayoría proporcionan albornoz y toalla en la entrada. Puedes circular en albornoz, toalla, bañador o completamente desnudo según los espacios y tu nivel de comodidad." },
+  { question: "Cuánto cuesta la entrada a un sauna libertino?", answer: "En promedio: 40-70€ para pareja, 25-50€ para mujer sola, 70-100€ para hombre solo (cuando aceptado). Los precios exactos están en cada ficha del directorio AKOKY." },
+  { question: "Se puede solo disfrutar del spa sin participar?", answer: "Sí, absolutamente. Eres totalmente libre de disfrutar de las instalaciones (hammam, jacuzzi, sauna) sin participar en los juegos sensuales. Nadie puede obligarte a nada." },
+  { question: "Los saunas libertinos son limpios y seguros?", answer: "Los establecimientos serios aplican normas estrictas de higiene: limpieza diaria, desinfección regular, puesta a disposición de toallas limpias, preservativos y geles. Consulta las opiniones en AKOKY." },
+  { question: "Cuál es el mejor momento para ir?", answer: "Las tardes entre semana son más tranquilas e ideales para una primera visita. Los viernes y sábados por la noche atraen más gente. Algunos organizan veladas temáticas." },
+  { question: "Cómo es la primera visita?", answer: "En recepción te explican el funcionamiento, te dan albornoz y toalla. Pasas a vestuarios para cambiarte. Luego eres libre de circular entre los espacios: relax, spa, cabinas privadas. Todo a tu ritmo." },
+  { question: "Se puede fotografiar en un sauna libertino?", answer: "No, está estrictamente prohibido. La discreción y el respeto de la vida privada son valores fundamentales. Los teléfonos están generalmente prohibidos o sellados en la entrada." },
+  { question: "Dónde encontrar la lista completa de saunas libertinos?", answer: "El directorio más completo está disponible en AKOKY, con fichas detalladas, fotos, opiniones verificadas, tarifas y calendario de eventos. Acceso gratuito en el sitio y la aplicación." },
 ];
 
 const EQUIPEMENTS = [
@@ -26,14 +26,13 @@ const EQUIPEMENTS = [
 
 const SaunasGuideEs = () => (
   <>
-    <MetaTags title="Saunas Libertinos 2026 | Guía Completa y Directorio — AKOKY España" description="Descubre los mejores saunas libertinos: qué esperar, cómo elegir, equipamientos, precios. Guía completa con directorio verificado AKOKY." canonical="https://akoky.com/es/saunas-libertinos-guia" lang="es" ogImage="/images/sauna-cover.webp" />
+    <MetaTags title="Saunas Libertinos 2026 | Guía Completa y Directorio — AKOKY España" description="Descubre los mejores saunas libertinos: qué esperar, cómo elegir, equipamientos, precios. Guía completa con directorio verificado AKOKY." canonical="https://akoky.com/es/saunas-libertinos-guia" lang="es" ogImage="/images/es-saunas-cover.webp" />
     <HreflangTags slug="saunas-libertinos-guia" />
-    <ContentPageLayout lang="es" title="Saunas Libertinos 2026 | Guía Completa — AKOKY España" description="Descubre los mejores saunas libertinos: qué esperar, cómo elegir." canonical="https://akoky.com/es/saunas-libertinos-guia" heroTitle="Saunas Libertinos" heroSubtitle="Todo sobre los saunas libertinos: ambiente, precios, equipamientos, cómo elegir en 2026" heroImage="/images/es-saunas-cover.webp" breadcrumb={[{ label: "Saunas Libertinos" }]} faq={FAQ}> lang="es" title="Saunas Libertinos 2026 | Guía Completa — AKOKY España" description="Descubre los mejores saunas libertinos: qué esperar, cómo elegir." canonical="https://akoky.com/es/saunas-libertinos-guia" heroTitle="Saunas Libertinos" heroSubtitle="Todo sobre los saunas libertinos: ambiente, precios, equipamientos, cómo elegir en 2026" <ContentPageLayout lang="es" title="Saunas Libertinos 2026 | Guía Completa — AKOKY España" description="Descubre los mejores saunas libertinos: qué esperar, cómo elegir." canonical="https://akoky.com/es/saunas-libertinos-guia" heroTitle="Saunas Libertinos" heroSubtitle="Todo sobre los saunas libertinos: ambiente, precios, equipamientos, cómo elegir en 2026" heroImage="/images/es-saunas-cover.webp" breadcrumb={[{ label: "Saunas Libertinos" }]} faq={FAQ}>
+    <ContentPageLayout lang="es" title="Saunas Libertinos 2026 | Guía Completa — AKOKY España" description="Descubre los mejores saunas libertinos: qué esperar, cómo elegir." canonical="https://akoky.com/es/saunas-libertinos-guia" heroTitle="Saunas Libertinos" heroSubtitle="Todo sobre los saunas libertinos: ambiente, precios, equipamientos, cómo elegir en 2026" heroImage="/images/es-saunas-cover.webp" breadcrumb={[{ label: "Saunas Libertinos" }]} faq={FAQ}>
 
-      {/* ¿Qué es? */}
       <section className="py-12 px-4 bg-background">
         <div className="container max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">¿Qué es un Sauna Libertino?</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">Qué es un Sauna Libertino?</h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>Un sauna libertino combina instalaciones de <strong className="text-foreground">bienestar</strong> (sauna seco, hammam, jacuzzi, piscina) con espacios íntimos para encuentros entre adultos consintientes. La atmósfera es generalmente más luminosa y relajada que en un club libertino, con un enfoque en la <strong className="text-foreground">relajación y el bienestar</strong> como puerta de entrada a la sensualidad.</p>
             <p>Estos establecimientos atraen a un público variado: parejas curiosas que buscan un primer contacto suave con el mundo libertino, libertinos experimentados que aprecian el confort spa, y personas solas (especialmente mujeres) que valoran el ambiente acogedor y seguro.</p>
@@ -41,7 +40,6 @@ const SaunasGuideEs = () => (
         </div>
       </section>
 
-      {/* Sauna vs Club */}
       <section className="py-12 px-4 bg-card/50">
         <div className="container max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">Sauna vs Club Libertino</h2>
@@ -72,7 +70,6 @@ const SaunasGuideEs = () => (
         </div>
       </section>
 
-      {/* Equipamientos */}
       <section className="py-12 px-4 bg-background">
         <div className="container max-w-5xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">Equipamientos Típicos</h2>
@@ -92,10 +89,9 @@ const SaunasGuideEs = () => (
         </div>
       </section>
 
-      {/* Cómo elegir */}
       <section className="py-12 px-4 bg-card/50">
         <div className="container max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">¿Cómo Elegir tu Sauna?</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">Cómo Elegir tu Sauna?</h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>AKOKY referencia los mejores saunas libertinos verificados en España y Europa con fichas completas, fotos y reseñas auténticas de la comunidad. Aquí tienes los criterios esenciales:</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
@@ -115,7 +111,6 @@ const SaunasGuideEs = () => (
         </div>
       </section>
 
-      {/* Maillage */}
       <section className="py-12 px-4 bg-background">
         <div className="container max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">Explorar más</h2>
