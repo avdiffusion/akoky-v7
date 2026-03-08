@@ -510,6 +510,8 @@ const App = () => (
             <Route path="/es/contacto-akoky" element={<ContactGuideEs />} />
             <Route path="/es/politica-cookies" element={<CookiesGuideEs />} />
             <Route path="/es/sala-de-prensa" element={<PresseGuideEs />} />
+            <Route path="/es/prensa" element={<Navigate to="/es/sala-de-prensa" replace />} />
+            <Route path="/es/lexico" element={<Navigate to="/es/lexico-libertino-guia" replace />} />
             <Route path="/es/faq" element={<Navigate to="https://ask.akoky.com" replace />} />
             <Route path="/es/blog" element={<BlogListing lang="es" />} />
             <Route path="/es/blog/:slug" element={<BlogArticlePage lang="es" />} />
