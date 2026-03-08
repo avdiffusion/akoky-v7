@@ -17,7 +17,7 @@ const FEATURED_ARTICLES = [
   {
     title: "La Scène Libertine à Lyon — Clubs et Événements 2026",
     description: "Explorez la scène libertine lyonnaise : meilleurs clubs, soirées et communauté swinger dans la capitale des Gaules en 2026.",
-    image: "https://akoky.com/images/clubs-libertins-villes.webp",
+    image: "/images/clubs-libertins-villes.webp",
     href: "https://akoky.com/fr/blogs/scene-libertine-lyon-2026",
     category: "Guide",
     readTime: "10 min",
