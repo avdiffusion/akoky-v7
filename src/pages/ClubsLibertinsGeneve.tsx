@@ -10,7 +10,7 @@ const ClubsLibertinsGeneve = () => {
       heroTitle="Clubs libertins à Genève"
       heroSubtitle="Soirées privées, saunas haut de gamme et rencontres discrètes dans la capitale libertine suisse"
       heroImage="/images/clubbing-suisse.webp"
-      breadcrumb={[{ label: "Clubbing", href: "/clubbing" }, { label: "Genève" }]}
+      breadcrumb={[{ label: "Clubbing", href: "/fr/clubbing" }, { label: "Genève" }]}
       faq={[
         {
           question: "Où rencontrer des libertins à Genève ?",
