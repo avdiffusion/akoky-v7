@@ -1,6 +1,7 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
+import { Link } from "react-router-dom";
 
 const FAQ = [
   { question: "¿Qué es el libertinaje?", answer: "El libertinaje es una práctica sexual y relacional que consiste en explorar la sexualidad fuera del marco monógamo tradicional, siempre con el consentimiento libre e informado de todos los implicados." },
