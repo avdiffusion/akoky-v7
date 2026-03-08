@@ -199,6 +199,7 @@ import ConcoursGuideDe from "./pages/de/ConcoursGuideDe";
 import ConcoursClesGuideDe from "./pages/de/ConcoursClesGuideDe";
 import WettbewerbDe from "./pages/de/WettbewerbDe";
 import PresseGuideDe from "./pages/de/PresseGuideDe";
+import ClubsAnnuaireDe from "./pages/de/ClubsAnnuaireDe";
 
 // ─── Pages IT livraison 4 ─────────────────────────────────────────────────────
 import HomeIt from "./pages/it/HomeIt";
@@ -519,7 +520,7 @@ const App = () => (
             <Route path="/de/akoky" element={<AkokyDe />} />
             <Route path="/de/libertinismus-anfangen" element={<LibertinismusAnfangenDe />} />
             <Route path="/de/libertine-clubs" element={<LibertineClubsDe />} />
-            <Route path="/de/clubs" element={<Navigate to="/de/libertine-clubs" replace />} />
+            <Route path="/de/clubs" element={<ClubsAnnuaireDe />} />
             <Route path="/de/events" element={<EventsDe />} />
             <Route path="/de/app" element={<AppDe />} />
             <Route path="/de/vision" element={<VisionDe />} />
