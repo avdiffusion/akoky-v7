@@ -161,15 +161,166 @@ const COPYRIGHT_LABELS: Record<Lang, { rights: string; adults: string; lang: str
   pt: { rights: "Todos os direitos reservados.", adults: "O conteúdo deste site é apenas para adultos.", lang: "Idioma", available: "Akoky está disponível em 6 idiomas", secure: "🔒 Conexão segura", gdpr: "✅ Conforme com o RGPD", update: "🕒 Atualização: jan. 2026" },
 };
 
-const RESOURCE_LINKS: FooterLink[] = [
-  { href: "https://legal.akoky.com/mentions-legales", icon: "📄", label: "Mentions légales" },
-  { href: "https://legal.akoky.com/conditions-utilisation", icon: "🤝", label: "Conditions d'utilisation" },
-  { href: "https://legal.akoky.com/conditions-vente", icon: "🛒", label: "Conditions de vente" },
-  { href: "https://legal.akoky.com/confidentialite", icon: "🔒", label: "Confidentialité" },
-  { href: "https://legal.akoky.com/cookies", icon: "🍪", label: "Cookies" },
-  { href: "https://legal.akoky.com/securite", icon: "🛡️", label: "Sécurité" },
-  { href: "https://legal.akoky.com/charte", icon: "📜", label: "Charte AKOKY" },
-];
+const RESOURCE_LINKS: Record<Lang, FooterLink[]> = {
+  fr: [
+    { href: "https://legal.akoky.com/mentions-legales", icon: "📄", label: "Mentions légales" },
+    { href: "https://legal.akoky.com/conditions-utilisation", icon: "🤝", label: "Conditions d'utilisation" },
+    { href: "https://legal.akoky.com/conditions-vente", icon: "🛒", label: "Conditions de vente" },
+    { href: "https://legal.akoky.com/confidentialite", icon: "🔒", label: "Confidentialité" },
+    { href: "https://legal.akoky.com/cookies", icon: "🍪", label: "Cookies" },
+    { href: "https://legal.akoky.com/securite", icon: "🛡️", label: "Sécurité" },
+    { href: "https://legal.akoky.com/charte", icon: "📜", label: "Charte AKOKY" },
+  ],
+  en: [
+    { href: "https://legal.akoky.com/mentions-legales", icon: "📄", label: "Legal notices" },
+    { href: "https://legal.akoky.com/conditions-utilisation", icon: "🤝", label: "Terms of use" },
+    { href: "https://legal.akoky.com/conditions-vente", icon: "🛒", label: "Terms of sale" },
+    { href: "https://legal.akoky.com/confidentialite", icon: "🔒", label: "Privacy policy" },
+    { href: "https://legal.akoky.com/cookies", icon: "🍪", label: "Cookies" },
+    { href: "https://legal.akoky.com/securite", icon: "🛡️", label: "Security" },
+    { href: "https://legal.akoky.com/charte", icon: "📜", label: "AKOKY Charter" },
+  ],
+  es: [
+    { href: "https://legal.akoky.com/mentions-legales", icon: "📄", label: "Aviso legal" },
+    { href: "https://legal.akoky.com/conditions-utilisation", icon: "🤝", label: "Condiciones de uso" },
+    { href: "https://legal.akoky.com/conditions-vente", icon: "🛒", label: "Condiciones de venta" },
+    { href: "https://legal.akoky.com/confidentialite", icon: "🔒", label: "Privacidad" },
+    { href: "https://legal.akoky.com/cookies", icon: "🍪", label: "Cookies" },
+    { href: "https://legal.akoky.com/securite", icon: "🛡️", label: "Seguridad" },
+    { href: "https://legal.akoky.com/charte", icon: "📜", label: "Carta AKOKY" },
+  ],
+  de: [
+    { href: "https://legal.akoky.com/mentions-legales", icon: "📄", label: "Impressum" },
+    { href: "https://legal.akoky.com/conditions-utilisation", icon: "🤝", label: "Nutzungsbedingungen" },
+    { href: "https://legal.akoky.com/conditions-vente", icon: "🛒", label: "Verkaufsbedingungen" },
+    { href: "https://legal.akoky.com/confidentialite", icon: "🔒", label: "Datenschutz" },
+    { href: "https://legal.akoky.com/cookies", icon: "🍪", label: "Cookies" },
+    { href: "https://legal.akoky.com/securite", icon: "🛡️", label: "Sicherheit" },
+    { href: "https://legal.akoky.com/charte", icon: "📜", label: "AKOKY Charta" },
+  ],
+  it: [
+    { href: "https://legal.akoky.com/mentions-legales", icon: "📄", label: "Note legali" },
+    { href: "https://legal.akoky.com/conditions-utilisation", icon: "🤝", label: "Condizioni d'uso" },
+    { href: "https://legal.akoky.com/conditions-vente", icon: "🛒", label: "Condizioni di vendita" },
+    { href: "https://legal.akoky.com/confidentialite", icon: "🔒", label: "Privacy" },
+    { href: "https://legal.akoky.com/cookies", icon: "🍪", label: "Cookies" },
+    { href: "https://legal.akoky.com/securite", icon: "🛡️", label: "Sicurezza" },
+    { href: "https://legal.akoky.com/charte", icon: "📜", label: "Carta AKOKY" },
+  ],
+  pt: [
+    { href: "https://legal.akoky.com/mentions-legales", icon: "📄", label: "Avisos legais" },
+    { href: "https://legal.akoky.com/conditions-utilisation", icon: "🤝", label: "Termos de uso" },
+    { href: "https://legal.akoky.com/conditions-vente", icon: "🛒", label: "Termos de venda" },
+    { href: "https://legal.akoky.com/confidentialite", icon: "🔒", label: "Privacidade" },
+    { href: "https://legal.akoky.com/cookies", icon: "🍪", label: "Cookies" },
+    { href: "https://legal.akoky.com/securite", icon: "🛡️", label: "Segurança" },
+    { href: "https://legal.akoky.com/charte", icon: "📜", label: "Carta AKOKY" },
+  ],
+};
+
+const SEO_LINKS: Record<Lang, { href: string; label: string }[]> = {
+  fr: [
+    { href: "https://Akoky.es", label: "Akoky Spain – plataforma libertina" },
+    { href: "https://Akoky.it", label: "Akoky Italie – piattaforma libertina" },
+    { href: "https://Akoky.pt", label: "Akoky Portugal – plataforma libertina" },
+    { href: "https://Akoky.de", label: "Akoky Allemagne – freizügige Plattform" },
+    { href: "https://Akoky.com", label: "Akoky Europe – libertine platform" },
+    { href: "https://Akoky.be", label: "Libertins Belgique" },
+    { href: "https://Akoky.biz", label: "GangBang" },
+    { href: "https://Akoky.eu", label: "Rencontres libertines" },
+    { href: "https://Akoky.fr", label: "Libertins français" },
+    { href: "https://Akoky.info", label: "Sauna libertin" },
+    { href: "https://Akoky.net", label: "Cap d'Agde libertin" },
+    { href: "https://akoky.click", label: "Échangisme" },
+    { href: "https://Akoky.org", label: "BDSM & fétichisme" },
+    { href: "https://Akoky.shop", label: "Boutique érotique" },
+    { href: "https://Akoky.space", label: "Jeux libertins" },
+    { href: "https://libertinecoquine.fr", label: "Libertine & coquine" },
+    { href: "https://akokyclubinfo.website", label: "Annuaire clubs & saunas" },
+    { href: "https://comparatif-libertin.com", label: "Comparatif libertin" },
+    { href: "https://meilleur-site-libertin.com", label: "Meilleur site libertin" },
+    { href: "https://sites-libertins-fiables.com", label: "Sites libertins fiables" },
+    { href: "https://Kokyland.com", label: "Événements Kokyland" },
+  ],
+  en: [
+    { href: "https://Akoky.com", label: "Akoky Europe – libertine platform" },
+    { href: "https://Akoky.es", label: "Akoky Spain – swinger platform" },
+    { href: "https://Akoky.it", label: "Akoky Italy – libertine platform" },
+    { href: "https://Akoky.de", label: "Akoky Germany – swinger platform" },
+    { href: "https://Akoky.pt", label: "Akoky Portugal – libertine platform" },
+    { href: "https://Akoky.be", label: "Libertines Belgium" },
+    { href: "https://Akoky.eu", label: "Libertine dating" },
+    { href: "https://akoky.click", label: "Swingers" },
+    { href: "https://Akoky.info", label: "Libertine sauna" },
+    { href: "https://Akoky.org", label: "BDSM & fetish" },
+    { href: "https://Akoky.space", label: "Libertine games" },
+    { href: "https://akokyclubinfo.website", label: "Club & sauna listings" },
+    { href: "https://comparatif-libertin.com", label: "Libertine comparison" },
+    { href: "https://meilleur-site-libertin.com", label: "Best libertine site" },
+    { href: "https://sites-libertins-fiables.com", label: "Reliable libertine sites" },
+    { href: "https://Kokyland.com", label: "Kokyland events" },
+  ],
+  es: [
+    { href: "https://Akoky.es", label: "Akoky España – plataforma libertina" },
+    { href: "https://Akoky.com", label: "Akoky Europa – red social libertina" },
+    { href: "https://Akoky.it", label: "Akoky Italia – piattaforma libertina" },
+    { href: "https://Akoky.de", label: "Akoky Alemania – Plattform" },
+    { href: "https://Akoky.pt", label: "Akoky Portugal – plataforma libertina" },
+    { href: "https://Akoky.eu", label: "Citas libertinas" },
+    { href: "https://akoky.click", label: "Intercambio de parejas" },
+    { href: "https://Akoky.info", label: "Sauna libertino" },
+    { href: "https://Akoky.org", label: "BDSM & fetichismo" },
+    { href: "https://Akoky.shop", label: "Tienda erótica" },
+    { href: "https://Akoky.space", label: "Juegos libertinos" },
+    { href: "https://akokyclubinfo.website", label: "Directorio clubes y saunas" },
+    { href: "https://comparatif-libertin.com", label: "Comparador libertino" },
+    { href: "https://meilleur-site-libertin.com", label: "Mejor sitio libertino" },
+    { href: "https://sites-libertins-fiables.com", label: "Sitios libertinos fiables" },
+    { href: "https://Kokyland.com", label: "Eventos Kokyland" },
+  ],
+  de: [
+    { href: "https://Akoky.de", label: "Akoky Deutschland – Swinger-Plattform" },
+    { href: "https://Akoky.com", label: "Akoky Europa – libertine Plattform" },
+    { href: "https://Akoky.es", label: "Akoky Spanien – plataforma libertina" },
+    { href: "https://Akoky.it", label: "Akoky Italien – piattaforma libertina" },
+    { href: "https://Akoky.pt", label: "Akoky Portugal – plataforma libertina" },
+    { href: "https://Akoky.eu", label: "Libertine Dating" },
+    { href: "https://akoky.click", label: "Swingers" },
+    { href: "https://Akoky.info", label: "Libertine Sauna" },
+    { href: "https://Akoky.org", label: "BDSM & Fetisch" },
+    { href: "https://Akoky.space", label: "Libertine Spiele" },
+    { href: "https://akokyclubinfo.website", label: "Club- & Saunaverzeichnis" },
+    { href: "https://Kokyland.com", label: "Kokyland Events" },
+  ],
+  it: [
+    { href: "https://Akoky.it", label: "Akoky Italia – piattaforma libertina" },
+    { href: "https://Akoky.com", label: "Akoky Europa – piattaforma libertina" },
+    { href: "https://Akoky.es", label: "Akoky Spagna – plataforma libertina" },
+    { href: "https://Akoky.de", label: "Akoky Germania – Plattform" },
+    { href: "https://Akoky.pt", label: "Akoky Portogallo – plataforma libertina" },
+    { href: "https://Akoky.eu", label: "Incontri libertini" },
+    { href: "https://akoky.click", label: "Scambisti" },
+    { href: "https://Akoky.info", label: "Sauna libertina" },
+    { href: "https://Akoky.org", label: "BDSM & fetish" },
+    { href: "https://Akoky.space", label: "Giochi libertini" },
+    { href: "https://akokyclubinfo.website", label: "Annuario club e saune" },
+    { href: "https://Kokyland.com", label: "Eventi Kokyland" },
+  ],
+  pt: [
+    { href: "https://Akoky.pt", label: "Akoky Portugal – plataforma libertina" },
+    { href: "https://Akoky.com", label: "Akoky Europa – plataforma libertina" },
+    { href: "https://Akoky.es", label: "Akoky Espanha – plataforma libertina" },
+    { href: "https://Akoky.it", label: "Akoky Itália – piattaforma libertina" },
+    { href: "https://Akoky.de", label: "Akoky Alemanha – Plattform" },
+    { href: "https://Akoky.eu", label: "Encontros libertinos" },
+    { href: "https://akoky.click", label: "Swingers" },
+    { href: "https://Akoky.info", label: "Sauna libertina" },
+    { href: "https://Akoky.org", label: "BDSM & fetiche" },
+    { href: "https://Akoky.space", label: "Jogos libertinos" },
+    { href: "https://akokyclubinfo.website", label: "Diretório clubes e saunas" },
+    { href: "https://Kokyland.com", label: "Eventos Kokyland" },
+  ],
+};
 
 const SOCIAL_LINKS = [
   { href: "https://www.facebook.com/groups/1732578494300828/", icon: "📘", label: "Facebook" },
@@ -189,29 +340,32 @@ const LANGUAGES = [
   { code: "pt" as Lang, flag: "🇵🇹", label: "Português", href: "/pt" },
 ];
 
-const SEO_LINKS = [
-  { href: "https://Akoky.es", label: "Akoky Spain – plataforma libertina" },
-  { href: "https://Akoky.it", label: "Akoky Italie – piattaforma libertina" },
-  { href: "https://Akoky.pt", label: "Akoky Portugal – plataforma libertina" },
-  { href: "https://Akoky.de", label: "Akoky Allemand – freizügige Plattform" },
-  { href: "https://Akoky.com", label: "Akoky Europe – libertine platform" },
-  { href: "https://Akoky.be", label: "Libertines Belgium" },
-  { href: "https://Akoky.biz", label: "GangBang" },
-  { href: "https://Akoky.eu", label: "Libertine dating" },
-  { href: "https://Akoky.fr", label: "French libertines" },
-  { href: "https://Akoky.info", label: "Libertine sauna" },
-  { href: "https://Akoky.net", label: "Cap d'Agde libertine" },
-  { href: "https://akoky.click", label: "Swingers" },
-  { href: "https://Akoky.org", label: "BDSM & fetish" },
-  { href: "https://Akoky.shop", label: "Erotic shop" },
-  { href: "https://Akoky.space", label: "Libertine games" },
-  { href: "https://libertinecoquine.fr", label: "Libertine & coquine" },
-  { href: "https://akokyclubinfo.website", label: "Club & sauna listings" },
-  { href: "https://comparatif-libertin.com", label: "Libertine comparison" },
-  { href: "https://meilleur-site-libertin.com", label: "Best libertine site" },
-  { href: "https://sites-libertins-fiables.com", label: "Reliable libertine sites" },
-  { href: "https://Kokyland.com", label: "Kokyland events" },
-];
+const LEGAL_QUICK_LABELS: Record<Lang, { legal: string; terms: string; privacy: string; cookies: string; security: string; charter: string }> = {
+  fr: { legal: "Mentions légales", terms: "Conditions", privacy: "Confidentialité", cookies: "Cookies", security: "Sécurité", charter: "Charte AKOKY" },
+  en: { legal: "Legal notices", terms: "Terms", privacy: "Privacy", cookies: "Cookies", security: "Security", charter: "AKOKY Charter" },
+  es: { legal: "Aviso legal", terms: "Condiciones", privacy: "Privacidad", cookies: "Cookies", security: "Seguridad", charter: "Carta AKOKY" },
+  de: { legal: "Impressum", terms: "AGB", privacy: "Datenschutz", cookies: "Cookies", security: "Sicherheit", charter: "AKOKY Charta" },
+  it: { legal: "Note legali", terms: "Condizioni", privacy: "Privacy", cookies: "Cookies", security: "Sicurezza", charter: "Carta AKOKY" },
+  pt: { legal: "Avisos legais", terms: "Termos", privacy: "Privacidade", cookies: "Cookies", security: "Segurança", charter: "Carta AKOKY" },
+};
+
+const COOKIE_LABELS: Record<Lang, { manage: string; info: string }> = {
+  fr: { manage: "⚙️ Gérer les cookies", info: "🍪 Informations cookies" },
+  en: { manage: "⚙️ Manage cookies", info: "🍪 Cookie information" },
+  es: { manage: "⚙️ Gestionar cookies", info: "🍪 Información de cookies" },
+  de: { manage: "⚙️ Cookies verwalten", info: "🍪 Cookie-Informationen" },
+  it: { manage: "⚙️ Gestisci cookie", info: "🍪 Informazioni cookie" },
+  pt: { manage: "⚙️ Gerir cookies", info: "🍪 Informações sobre cookies" },
+};
+
+const TRADEMARK_LABELS: Record<Lang, string> = {
+  fr: "AKOKY est une marque déposée.",
+  en: "AKOKY is a registered trademark.",
+  es: "AKOKY es una marca registrada.",
+  de: "AKOKY ist eine eingetragene Marke.",
+  it: "AKOKY è un marchio registrato.",
+  pt: "AKOKY é uma marca registrada.",
+};
 
 const FooterLinkItem = ({ href, icon, label, external }: { href: string; icon: string; label: string; external?: boolean }) => {
   if (external || href.startsWith("http")) {
@@ -290,7 +444,7 @@ const Footer = ({ lang = "fr" }: FooterProps) => {
                 {titles.resources}
               </h3>
               <ul className="flex flex-col gap-3">
-                {RESOURCE_LINKS.map((l) => <FooterLinkItem key={l.href} {...l} external />)}
+                {RESOURCE_LINKS[lang].map((l) => <FooterLinkItem key={l.href} {...l} external />)}
               </ul>
             </div>
           </div>
@@ -317,19 +471,24 @@ const Footer = ({ lang = "fr" }: FooterProps) => {
           </div>
 
           {/* Legal quick links */}
-          <div className="flex justify-center flex-wrap gap-4 my-8 text-sm text-[#9ca3af]">
-            <a href="https://legal.akoky.com/mentions-legales" target="_blank" className="hover:text-primary transition-colors">Mentions légales</a>
-            <span className="text-border">•</span>
-            <a href="https://legal.akoky.com/conditions-utilisation" target="_blank" className="hover:text-primary transition-colors">Conditions</a>
-            <span className="text-border">•</span>
-            <a href="https://legal.akoky.com/confidentialite" target="_blank" className="hover:text-primary transition-colors">Confidentialité</a>
-            <span className="text-border">•</span>
-            <a href="https://legal.akoky.com/cookies" target="_blank" className="hover:text-primary transition-colors">Cookies</a>
-            <span className="text-border">•</span>
-            <a href="https://legal.akoky.com/securite" target="_blank" className="hover:text-primary transition-colors">Sécurité</a>
-            <span className="text-border">•</span>
-            <a href="https://legal.akoky.com/charte" target="_blank" className="hover:text-primary transition-colors">Charte AKOKY</a>
-          </div>
+          {(() => {
+            const lq = LEGAL_QUICK_LABELS[lang];
+            return (
+              <div className="flex justify-center flex-wrap gap-4 my-8 text-sm text-[#9ca3af]">
+                <a href="https://legal.akoky.com/mentions-legales" target="_blank" className="hover:text-primary transition-colors">{lq.legal}</a>
+                <span className="text-border">•</span>
+                <a href="https://legal.akoky.com/conditions-utilisation" target="_blank" className="hover:text-primary transition-colors">{lq.terms}</a>
+                <span className="text-border">•</span>
+                <a href="https://legal.akoky.com/confidentialite" target="_blank" className="hover:text-primary transition-colors">{lq.privacy}</a>
+                <span className="text-border">•</span>
+                <a href="https://legal.akoky.com/cookies" target="_blank" className="hover:text-primary transition-colors">{lq.cookies}</a>
+                <span className="text-border">•</span>
+                <a href="https://legal.akoky.com/securite" target="_blank" className="hover:text-primary transition-colors">{lq.security}</a>
+                <span className="text-border">•</span>
+                <a href="https://legal.akoky.com/charte" target="_blank" className="hover:text-primary transition-colors">{lq.charter}</a>
+              </div>
+            );
+          })()}
 
           {/* Divider */}
           <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent my-10" />
@@ -361,7 +520,7 @@ const Footer = ({ lang = "fr" }: FooterProps) => {
 
           {/* SEO Links */}
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 max-w-[1200px] mx-auto my-8 text-xs text-muted-foreground">
-            {SEO_LINKS.map((l) => (
+            {SEO_LINKS[lang].map((l) => (
               <a key={l.href} href={l.href} target="_blank" className="hover:text-primary hover:underline transition-colors">
                 {l.label}
               </a>
@@ -375,13 +534,13 @@ const Footer = ({ lang = "fr" }: FooterProps) => {
           <div className="text-center my-8">
             <p className="text-sm text-[#9ca3af]">© {currentYear} AKOKY. {copy.rights}</p>
             <p className="text-xs text-muted-foreground mt-2">
-              AKOKY est une marque déposée. {copy.adults}
+              {TRADEMARK_LABELS[lang]} {copy.adults}
             </p>
             <div className="flex justify-center items-center gap-4 mt-4 flex-wrap">
-              <span className="text-sm text-[#9ca3af]">⚙️ Gérer les cookies</span>
+              <span className="text-sm text-[#9ca3af]">{COOKIE_LABELS[lang].manage}</span>
               <span className="text-border">•</span>
               <a href="https://legal.akoky.com/cookies" target="_blank" rel="noopener noreferrer" className="text-sm text-[#9ca3af] hover:text-primary transition-colors">
-                🍪 Informations cookies
+                {COOKIE_LABELS[lang].info}
               </a>
             </div>
           </div>

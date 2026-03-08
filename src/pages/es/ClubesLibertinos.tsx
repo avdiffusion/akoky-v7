@@ -186,7 +186,7 @@ const ClubesLibertinos = () => {
         ]}
       >
         {/* ═══════════ BANNER CAROUSEL ═══════════ */}
-        <BannerCarousel />
+        <BannerCarousel lang="es" />
 
         {/* ═══════════ STATS ═══════════ */}
         <section className="py-8 px-4 bg-background">
