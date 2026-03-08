@@ -1,6 +1,7 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
+import { Link } from "react-router-dom";
 
 const FAQ = [
   { question: "¿Cómo contactar con el soporte AKOKY?", answer: "A través de nuestro formulario online, por email a support@akoky.com o desde tu espacio de miembro. Nuestro equipo responde en menos de 24 horas laborables." },
