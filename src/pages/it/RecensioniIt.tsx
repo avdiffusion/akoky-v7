@@ -1,6 +1,7 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
+import ReviewsList from "@/components/reviews/ReviewsList";
 
 const FAQ = [
   { question: "Le recensioni su AKOKY sono autentiche?", answer: "Sì. Tutte le recensioni sono collegate a profili verificati. Questo garantisce la loro autenticità e previene le manipolazioni." },
@@ -43,6 +44,7 @@ const RecensioniIt = () => (
           <p className="text-muted-foreground leading-relaxed mb-4">Hai avuto un&#39;esperienza positiva in un club, un evento o con un membro della community? Condividi la tua testimonianza su AKOKY. La tua opinione aiuta tutta la community a prendere decisioni migliori.</p>
         </div>
       </section>
+      <ReviewsList lang="it" />
     </ContentPageLayout>
   </>
 );

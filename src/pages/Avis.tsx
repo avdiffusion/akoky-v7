@@ -1,4 +1,5 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
+import ReviewsList from "@/components/reviews/ReviewsList";
 import { Link } from "react-router-dom";
 
 const Avis = () => {
@@ -55,6 +56,9 @@ const Avis = () => {
           </div>
         </div>
       </section>
+
+      {/* Reviews from CSV */}
+      <ReviewsList lang="fr" />
 
       {/* CTA Témoignage */}
       <section className="py-16 px-4 bg-card/30 border-y border-border">
