@@ -658,6 +658,7 @@ const App = () => (
             <Route path="/pt/visao-akoky-guia" element={<VisionGuidePt />} />
             <Route path="/pt/primeiro-clube-libertino" element={<PremierClubGuidePt />} />
             <Route path="/pt/primeira-experiencia-libertina" element={<PremierRdvGuidePt />} />
+            <Route path="/pt/primeiro-encontro-libertino" element={<PrimeiroEncontroLibertinoPt />} />
             <Route path="/pt/perguntas-principiantes-guia" element={<QuestionsGuidePt />} />
             <Route path="/pt/guia-libertinismo-completo" element={<GuideGuidePt />} />
             <Route path="/pt/guia-definitivo-libertinismo" element={<GuideUltimeGuidePt />} />
