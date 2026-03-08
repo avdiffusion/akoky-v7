@@ -65,7 +65,6 @@ const AVIS_LABELS: Record<Lang, { href: string; label: string }> = {
 
 const CONCOURS_LABELS: Record<Lang, { href: string; label: string }> = {
   fr: { href: "/concours", label: "Concours" },
-  en: { href: "/en/concours", label: "Contest" },
   es: { href: "/es/concurso", label: "Concurso" },
   de: { href: "/de/wettbewerb", label: "Wettbewerb" },
   it: { href: "/it/concorso", label: "Concorso" },
