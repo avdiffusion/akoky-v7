@@ -51,7 +51,7 @@ const guides = [
   { title: "Premier club libertin", desc: "Tout ce qu'il faut savoir avant votre première visite.", href: "/fr/premier-club-libertin", emoji: "🚪" },
   { title: "Premier rendez-vous libertin", desc: "Préparez votre première rencontre libertine en toute sérénité.", href: "/fr/premier-rendez-vous-libertin", emoji: "💑" },
   { title: "Débuter le libertinage", desc: "Le guide ultime pour les couples qui veulent se lancer.", href: "/fr/debuter-libertinage", emoji: "🌱" },
-  { title: "Questions de débutants", desc: "Les réponses aux interrogations les plus fréquentes.", href: "/fr/questions-debutants", emoji: "❓" },
+  { title: "Questions de débutants", desc: "Les réponses aux interrogations les plus fréquentes.", href: "/fr/questions-debutants-libertinage", emoji: "❓" },
   { title: "Guide ultime du libertinage", desc: "L'encyclopédie complète du libertinage moderne.", href: "/fr/guide-libertin", emoji: "📖" },
   { title: "Lexique libertin", desc: "Tous les termes et codes du milieu expliqués.", href: "/fr/lexique", emoji: "🔤" },
 ];
