@@ -5,6 +5,7 @@ import Footer from "@/components/layout/Footer";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
 import SchemaOrg from "@/components/seo/SchemaOrg";
+import LatestBlogSection from "@/components/blog/LatestBlogSection";
 
 const EXPLORE_CARDS = [
   { href: "/es/clubbing", icon: "🏛️", title: "Clubes asociados", desc: "Descubre establecimientos seleccionados en España y Europa, con fichas detalladas, opiniones verificadas e información práctica.", cta: "Ver los clubes →" },

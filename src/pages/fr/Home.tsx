@@ -5,6 +5,7 @@ import Footer from "@/components/layout/Footer";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
 import SchemaOrg from "@/components/seo/SchemaOrg";
+import LatestBlogSection from "@/components/blog/LatestBlogSection";
 
 const EXPLORE_CARDS = [
   { href: "/fr/clubbing", icon: "🏛️", title: "Clubs partenaires", desc: "Découvrez des établissements sélectionnés en France et en Europe, avec fiches détaillées, avis vérifiés et informations pratiques.", cta: "Voir les clubs →" },

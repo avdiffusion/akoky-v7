@@ -5,6 +5,7 @@ import Footer from "@/components/layout/Footer";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
 import SchemaOrg from "@/components/seo/SchemaOrg";
+import LatestBlogSection from "@/components/blog/LatestBlogSection";
 
 const EXPLORE_CARDS = [
   { href: "/de/libertine-clubs", icon: "🏛️", title: "Partner-Clubs", desc: "Entdecke ausgewählte Einrichtungen in Deutschland und Europa mit detaillierten Profilen, verifizierten Bewertungen und praktischen Informationen.", cta: "Clubs entdecken →" },
