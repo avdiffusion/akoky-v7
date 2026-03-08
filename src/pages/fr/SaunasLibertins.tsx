@@ -95,7 +95,7 @@ const SaunasLibertins = () => (
         <div className="container max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div>
-            <p className="text-muted-foreground leading-relaxed mb-3">En France, les saunas libertins attirent aussi bien les couples débutants que les habitués en quête d'une expérience plus zen. Ils proposent généralement des espaces spa (hammam, jacuzzi, piscine chauffée), des cabines privées, des salons de relaxation et parfois des zones de massage. L'objectif : c</p>
+            <p className="text-muted-foreground leading-relaxed mb-3">En France, les saunas libertins attirent aussi bien les couples débutants que les habitués en quête d'une expérience plus zen. Ils proposent généralement des espaces spa (hammam, jacuzzi, piscine chauffée), des cabines privées, des salons de relaxation et parfois des zones de massage. L'objectif : créer une atmosphère où la sensualité émerge naturellement, sans pression ni agitation.</p>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <img src="/images/ambiance-sauna-libertin.webp" alt="Ambiance sauna libertin" className="w-full h-80 object-cover" loading="lazy" />
