@@ -10,7 +10,7 @@ import HomeFr from "./pages/fr/Home";
 import Akoky from "./pages/Akoky";
 import Application from "./pages/Application";
 import Avis from "./pages/Avis";
-import ReviewsEn from "./pages/en/ReviewsEn";
+
 import Parrainage from "./pages/Parrainage";
 import Clubbing from "./pages/Clubbing";
 import ClubbingBelgique from "./pages/ClubbingBelgique";
