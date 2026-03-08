@@ -18,7 +18,7 @@ const ClubsLibertinsPaysDelaLoire = () => {
       heroTitle="Meilleurs clubs libertins dans les Pays de la Loire"
       heroSubtitle="Les Pays de la Loire, avec leur ambiance chaleureuse et leur dynamisme, sont une région libertine incontournable."
       faq={faq}
-      breadcrumb={[{ label: "Clubbing France", href: "/clubbing-france-europe" }, { label: "Pays de la Loire" }]}
+      breadcrumb={[{ label: "Clubbing France", href: "/fr/clubbing-france-europe" }, { label: "Pays de la Loire" }]}
     >
       <section className="py-16 px-4">
         <div className="container max-w-4xl mx-auto prose prose-invert prose-lg">
