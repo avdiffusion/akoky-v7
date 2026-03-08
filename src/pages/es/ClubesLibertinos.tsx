@@ -152,7 +152,7 @@ const ClubesLibertinos = () => {
       <Helmet>
         <html lang="es" />
         <title>{`${stats.total} Clubes Libertinos en Europa — Directorio Verificado | AKOKY`}</title>
-        <meta name="description" content={`${stats.total} clubes libertinos verificados en España, Francia, Bélgica, Suiza y Europa. Saunas, clubes elegantes, locales privados. Opiniones de miembros, fichas detalladas.`} />
+        <meta name="description" content={`${stats.total} clubes libertinos verificados en España y Europa. Saunas, clubes elegantes, locales privados. Opiniones de miembros, fichas detalladas.`} />
         <link rel="canonical" href="https://akoky.com/es/clubes-libertinos" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
         <meta property="og:type" content="website" />
