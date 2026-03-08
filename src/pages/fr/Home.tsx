@@ -524,7 +524,7 @@ const Home = () => {
                 {
                   title: "La Scène Libertine à Lyon — Clubs et Événements 2026",
                   desc: "Explorez la scène libertine lyonnaise : meilleurs clubs, soirées et communauté swinger dans la capitale des Gaules.",
-                  image: "https://akoky.com/images/clubs-libertins-villes.webp",
+                  image: "/images/clubs-libertins-villes.webp",
                   href: "https://akoky.com/fr/blogs/scene-libertine-lyon-2026",
                   tag: "Guide",
                 },
