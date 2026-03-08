@@ -197,6 +197,7 @@ import GuideGuideDe from "./pages/de/GuideGuideDe";
 import GuideUltimeGuideDe from "./pages/de/GuideUltimeGuideDe";
 import ConcoursGuideDe from "./pages/de/ConcoursGuideDe";
 import ConcoursClesGuideDe from "./pages/de/ConcoursClesGuideDe";
+import WettbewerbDe from "./pages/de/WettbewerbDe";
 import PresseGuideDe from "./pages/de/PresseGuideDe";
 
 // ─── Pages IT livraison 4 ─────────────────────────────────────────────────────
