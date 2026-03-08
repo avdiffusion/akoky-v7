@@ -1,6 +1,7 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
+import { Link } from "react-router-dom";
 
 const FAQ = [
   { question: "¿Cuál es la misión de AKOKY?", answer: "Ofrecer a la comunidad libertina europea una plataforma premium, segura y ética, que ponga el consentimiento, la seguridad y la autenticidad en el centro de cada interacción." },
