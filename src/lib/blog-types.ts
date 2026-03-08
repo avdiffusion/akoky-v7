@@ -8,7 +8,7 @@ export type BlogCategory =
   | "evenements"
   | "conseils";
 
-export const BLOG_LANGS: BlogLang[] = ["fr", "en", "es", "it", "pt", "de"];
+export const BLOG_LANGS: BlogLang[] = ["fr", "es", "it", "pt", "de"];
 
 export const BLOG_CATEGORIES: { value: BlogCategory; label: Record<BlogLang, string> }[] = [
   { value: "guides", label: { fr: "Guides libertins", en: "Libertine Guides", es: "Guías libertinas", it: "Guide libertine", pt: "Guias libertinos", de: "Libertine Ratgeber" } },
