@@ -316,7 +316,7 @@ const COOKIE_LABELS: Record<Lang, { manage: string; info: string }> = {
 
 const TRADEMARK_LABELS: Record<Lang, string> = {
   fr: "AKOKY est une marque déposée.",
-  en: "AKOKY is a registered trademark.",
+  
   es: "AKOKY es una marca registrada.",
   de: "AKOKY ist eine eingetragene Marke.",
   it: "AKOKY è un marchio registrato.",
