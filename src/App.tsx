@@ -200,6 +200,7 @@ import ConcoursClesGuideDe from "./pages/de/ConcoursClesGuideDe";
 import WettbewerbDe from "./pages/de/WettbewerbDe";
 import PresseGuideDe from "./pages/de/PresseGuideDe";
 import ClubsAnnuaireDe from "./pages/de/ClubsAnnuaireDe";
+import LibertinismusDe from "./pages/de/LibertinismusDe";
 
 // ─── Pages IT livraison 4 ─────────────────────────────────────────────────────
 import HomeIt from "./pages/it/HomeIt";
