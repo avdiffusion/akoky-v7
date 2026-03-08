@@ -19,11 +19,11 @@ interface NavLink { href: string; label: string; icon: string }
 
 const NAV_LINKS: Record<Lang, NavLink[]> = {
   fr: [
-    { href: "/", label: "Accueil", icon: "🏠" },
-    { href: "/akoky", label: "À propos", icon: "ℹ️" },
-    { href: "/debuter-libertinage", label: "Débuter", icon: "📝" },
+    { href: "/fr", label: "Accueil", icon: "🏠" },
+    { href: "/fr/akoky", label: "À propos", icon: "ℹ️" },
+    { href: "/fr/debuter-libertinage", label: "Débuter", icon: "📝" },
     { href: "/fr/blog", label: "Blog", icon: "🎭" },
-    { href: "/faq", label: "FAQ", icon: "❓" },
+    { href: "/fr/faq", label: "FAQ", icon: "❓" },
   ],
   es: [
     { href: "/es", label: "Inicio", icon: "🏠" },
@@ -64,7 +64,7 @@ const AVIS_LABELS: Record<Lang, { href: string; label: string }> = {
 };
 
 const CONCOURS_LABELS: Record<Lang, { href: string; label: string }> = {
-  fr: { href: "/concours", label: "Concours" },
+  fr: { href: "/fr/concours", label: "Concours" },
   es: { href: "/es/concurso", label: "Concurso" },
   de: { href: "/de/wettbewerb", label: "Wettbewerb" },
   it: { href: "/it/concorso", label: "Concorso" },
@@ -132,7 +132,7 @@ const Header = ({ lang = "fr" }: HeaderProps) => {
       >
         <div className="container flex items-center justify-between h-[70px] gap-8">
           {/* Logo */}
-          <Link to={lang === "fr" ? "/" : `/${lang}`} className="flex-shrink-0 z-[1001]">
+          <Link to={`/${lang}`} className="flex-shrink-0 z-[1001]">
             <span className="text-2xl font-black tracking-wider text-gradient-gold">AKOKY</span>
           </Link>
 
@@ -191,7 +191,7 @@ const Header = ({ lang = "fr" }: HeaderProps) => {
                   {LANGUAGES.map((l) => (
                     <Link
                       key={l.code}
-                      to={l.code === "fr" ? "/" : `/${l.code}`}
+                      to={`/${l.code}`}
                       onClick={() => setLangOpen(false)}
                       className={`flex items-center gap-3 px-4 py-3 text-sm transition-all hover:bg-primary/10 hover:text-primary border-b border-border last:border-0 ${
                         l.code === lang ? "bg-primary/15 text-primary font-semibold" : "text-foreground"
@@ -254,7 +254,7 @@ const Header = ({ lang = "fr" }: HeaderProps) => {
         >
           {/* Mobile Header */}
           <div className="flex justify-between items-center pb-4 border-b border-border">
-            <Link to={lang === "fr" ? "/" : `/${lang}`} className="text-xl font-black text-gradient-gold">AKOKY</Link>
+            <Link to={`/${lang}`} className="text-xl font-black text-gradient-gold">AKOKY</Link>
             <button
               onClick={() => setMobileOpen(false)}
               className="p-2 min-w-[44px] min-h-[44px] flex items-center justify-center hover:text-primary transition-all"
@@ -312,7 +312,7 @@ const Header = ({ lang = "fr" }: HeaderProps) => {
                 {LANGUAGES.map((l) => (
                   <Link
                     key={l.code}
-                    to={l.code === "fr" ? "/" : `/${l.code}`}
+                    to={`/${l.code}`}
                     className={`flex flex-col items-center justify-center gap-1 p-3 rounded-lg border text-sm font-semibold transition-all ${
                       l.code === lang
                         ? "bg-primary/10 border-primary text-primary"

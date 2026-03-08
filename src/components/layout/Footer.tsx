@@ -10,8 +10,8 @@ interface FooterLink { href: string; icon: string; label: string }
 
 const DISCOVER_LINKS: Record<Lang, FooterLink[]> = {
   fr: [
-    { href: "/", icon: "🏠", label: "Accueil" },
-    { href: "/akoky", icon: "ℹ️", label: "À propos" },
+    { href: "/fr", icon: "🏠", label: "Accueil" },
+    { href: "/fr/akoky", icon: "ℹ️", label: "À propos" },
     { href: "/fr/blog", icon: "📖", label: "Blog" },
     { href: "/fr/evenements", icon: "📅", label: "Événements" },
     { href: "/fr/jeux", icon: "🎮", label: "Jeux" },
@@ -58,12 +58,12 @@ const DISCOVER_LINKS: Record<Lang, FooterLink[]> = {
 
 const COMMUNITY_LINKS: Record<Lang, FooterLink[]> = {
   fr: [
-    { href: "/clubbing", icon: "🏢", label: "Clubbing" },
-    { href: "/vip", icon: "💎", label: "Adhésion VIP" },
-    { href: "/lexique", icon: "📚", label: "Lexique libertin" },
-    { href: "/presse", icon: "📰", label: "Espace presse" },
-    { href: "/faq", icon: "❓", label: "FAQ" },
-    { href: "/contact", icon: "✉️", label: "Contact" },
+    { href: "/fr/clubbing", icon: "🏢", label: "Clubbing" },
+    { href: "/fr/vip", icon: "💎", label: "Adhésion VIP" },
+    { href: "/fr/lexique", icon: "📚", label: "Lexique libertin" },
+    { href: "/fr/presse", icon: "📰", label: "Espace presse" },
+    { href: "/fr/faq", icon: "❓", label: "FAQ" },
+    { href: "/fr/contact", icon: "✉️", label: "Contact" },
   ],
   es: [
     { href: "/es/clubbing", icon: "🏢", label: "Clubbing" },
@@ -279,7 +279,7 @@ const SEO_LINKS: Record<Lang, { href: string; label: string }[]> = {
 };
 
 const CONTACT_HREFS: Record<Lang, string> = {
-  fr: "/contact", es: "/es/contacto", de: "/de/kontakt", it: "/it/contatto", pt: "/pt/contacto-akoky",
+  fr: "/fr/contact", es: "/es/contacto", de: "/de/kontakt", it: "/it/contatto", pt: "/pt/contacto-akoky",
 };
 
 const getSocialLinks = (lang: Lang) => [
@@ -292,7 +292,7 @@ const getSocialLinks = (lang: Lang) => [
 ];
 
 const LANGUAGES = [
-  { code: "fr" as Lang, flag: "🇫🇷", label: "Français", href: "/" },
+  { code: "fr" as Lang, flag: "🇫🇷", label: "Français", href: "/fr" },
   { code: "es" as Lang, flag: "🇪🇸", label: "Español", href: "/es" },
   { code: "de" as Lang, flag: "🇩🇪", label: "Deutsch", href: "/de" },
   { code: "it" as Lang, flag: "🇮🇹", label: "Italiano", href: "/it" },

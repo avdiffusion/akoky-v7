@@ -91,33 +91,6 @@
       "alt": "Fiesta libertina Ibiza - Noches exclusivas"
     },
     {
-      "id": 20,
-      "lang": "en",
-      "title": "Le Glamour Beach",
-      "description": "Unique encounters at the Cap d'Agde Naturist Village!",
-      "image": "/images/slides/glamour-beach.webp",
-      "url": "https://akoky.com/club/le-glamour-beach",
-      "alt": "Le Glamour Beach - Libertine club in Cap d'Agde"
-    },
-    {
-      "id": 21,
-      "lang": "en",
-      "title": "Les Chandelles Paris",
-      "description": "The most prestigious libertine club in Paris since 1993",
-      "image": "/images/slides/les-chandelles.webp",
-      "url": "https://akoky.com/club/les-chandelles",
-      "alt": "Les Chandelles Paris - Luxury swinger club"
-    },
-    {
-      "id": 22,
-      "lang": "en",
-      "title": "Villa Paradis Barcelona",
-      "description": "Exclusive villa with heated pool near Barcelona",
-      "image": "/images/slides/villa-paradis.webp",
-      "url": "https://akoky.com/club/villa-paradis",
-      "alt": "Villa Paradis Barcelona - Libertine club with pool"
-    },
-    {
       "id": 30,
       "lang": "de",
       "title": "Le Glamour Beach",
@@ -134,6 +107,33 @@
       "image": "/images/slides/villa-paradis.webp",
       "url": "https://akoky.com/club/villa-paradis",
       "alt": "Villa Paradis Barcelona - Libertiner Club mit Pool"
+    },
+    {
+      "id": 32,
+      "lang": "de",
+      "title": "Les Chandelles Paris",
+      "description": "Der renommierteste Libertiner-Club in Paris seit 1993",
+      "image": "/images/slides/les-chandelles.webp",
+      "url": "https://akoky.com/club/les-chandelles",
+      "alt": "Les Chandelles Paris - Luxuriöser Swinger-Club"
+    },
+    {
+      "id": 33,
+      "lang": "de",
+      "title": "Sauna Oléron",
+      "description": "Entspannung und libertine Begegnungen auf der Île d'Oléron",
+      "image": "/images/slides/sauna-oleron.webp",
+      "url": "https://akoky.com/club/sauna-oleron",
+      "alt": "Sauna libertin Oléron - Wellness und Begegnungen"
+    },
+    {
+      "id": 34,
+      "lang": "de",
+      "title": "Le Privé Brüssel",
+      "description": "Eleganter Privatclub im Herzen von Brüssel",
+      "image": "/images/slides/le-prive.webp",
+      "url": "https://akoky.com/club/le-prive",
+      "alt": "Le Privé Brüssel - Privater Libertiner-Club"
     },
     {
       "id": 40,
@@ -154,6 +154,33 @@
       "alt": "Villa Paradis Barcelona - Club libertino con piscina"
     },
     {
+      "id": 42,
+      "lang": "it",
+      "title": "Les Chandelles Parigi",
+      "description": "Il club libertino più prestigioso di Parigi dal 1993",
+      "image": "/images/slides/les-chandelles.webp",
+      "url": "https://akoky.com/club/les-chandelles",
+      "alt": "Les Chandelles Parigi - Club scambista di lusso"
+    },
+    {
+      "id": 43,
+      "lang": "it",
+      "title": "Sauna Oléron",
+      "description": "Relax e incontri libertini sull'Île d'Oléron",
+      "image": "/images/slides/sauna-oleron.webp",
+      "url": "https://akoky.com/club/sauna-oleron",
+      "alt": "Sauna libertina Oléron - Benessere e incontri"
+    },
+    {
+      "id": 44,
+      "lang": "it",
+      "title": "Le Privé Bruxelles",
+      "description": "Club privato elegante nel cuore di Bruxelles",
+      "image": "/images/slides/le-prive.webp",
+      "url": "https://akoky.com/club/le-prive",
+      "alt": "Le Privé Bruxelles - Club libertino privato"
+    },
+    {
       "id": 50,
       "lang": "pt",
       "title": "Le Glamour Beach",
@@ -170,6 +197,33 @@
       "image": "/images/slides/villa-paradis.webp",
       "url": "https://akoky.com/club/villa-paradis",
       "alt": "Villa Paradis Barcelona - Clube libertino com piscina"
+    },
+    {
+      "id": 52,
+      "lang": "pt",
+      "title": "Les Chandelles Paris",
+      "description": "O clube libertino mais prestigiado de Paris desde 1993",
+      "image": "/images/slides/les-chandelles.webp",
+      "url": "https://akoky.com/club/les-chandelles",
+      "alt": "Les Chandelles Paris - Clube swinger de luxo"
+    },
+    {
+      "id": 53,
+      "lang": "pt",
+      "title": "Sauna Oléron",
+      "description": "Relaxamento e encontros libertinos na Île d'Oléron",
+      "image": "/images/slides/sauna-oleron.webp",
+      "url": "https://akoky.com/club/sauna-oleron",
+      "alt": "Sauna libertina Oléron - Bem-estar e encontros"
+    },
+    {
+      "id": 54,
+      "lang": "pt",
+      "title": "Le Privé Bruxelas",
+      "description": "Clube privado elegante no coração de Bruxelas",
+      "image": "/images/slides/le-prive.webp",
+      "url": "https://akoky.com/club/le-prive",
+      "alt": "Le Privé Bruxelas - Clube libertino privado"
     }
   ],
   "settings": {
