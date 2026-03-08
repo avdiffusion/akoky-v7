@@ -285,8 +285,6 @@ import NotFound from "./pages/NotFound";
 
 // ─── Pages PT livraison 6 ─────────────────────────────────────────────────────
 import ActualitesPt from "./pages/pt/ActualitesPt";
-import BlogRedirectPt from "./pages/pt/BlogRedirectPt";
-import FaqRedirectPt from "./pages/pt/FaqRedirectPt";
 import DebuterGuidePt from "./pages/pt/DebuterGuidePt";
 import LibertinageGuidePt from "./pages/pt/LibertinageGuidePt";
 import SaunasGuidePt from "./pages/pt/SaunasGuidePt";
