@@ -1,8 +1,21 @@
 import { BlogArticle, BlogLang, BlogCategory } from "./blog-types";
+import { SEED_ARTICLES } from "./blog-seed";
 
 const STORAGE_KEY = "akoky_blog_articles";
+const SEED_KEY = "akoky_blog_seeded";
 const AUTH_KEY = "akoky_blog_auth";
 const ADMIN_PASSWORD = "@Akoky2026";
+
+// ── Auto-seed on first load ──────────────────────────────────────────────────
+function ensureSeeded(): void {
+  if (!localStorage.getItem(SEED_KEY)) {
+    const existing = localStorage.getItem(STORAGE_KEY);
+    if (!existing || JSON.parse(existing).length === 0) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(SEED_ARTICLES));
+    }
+    localStorage.setItem(SEED_KEY, "true");
+  }
+}
 
 // ── Auth ──────────────────────────────────────────────────────────────────────
 export function blogAdminLogin(password: string): boolean {
