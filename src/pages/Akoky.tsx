@@ -84,7 +84,7 @@ const Akoky = () => {
             </div>
             <div className="relative">
               <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full opacity-20"></div>
-              <img src="https://akoky.com/fr/images/3tel.webp" alt="AKOKY App Screenshot" className="relative z-10 rounded-2xl shadow-2xl border border-border mx-auto max-w-sm" loading="lazy" />
+              <img src="/images/3tel.webp" alt="AKOKY App Screenshot" className="relative z-10 rounded-2xl shadow-2xl border border-border mx-auto max-w-sm" loading="lazy" />
             </div>
           </div>
         </div>
