@@ -197,6 +197,7 @@ import GuideGuideDe from "./pages/de/GuideGuideDe";
 import GuideUltimeGuideDe from "./pages/de/GuideUltimeGuideDe";
 import ConcoursGuideDe from "./pages/de/ConcoursGuideDe";
 import ConcoursClesGuideDe from "./pages/de/ConcoursClesGuideDe";
+import WettbewerbDe from "./pages/de/WettbewerbDe";
 import PresseGuideDe from "./pages/de/PresseGuideDe";
 
 // ─── Pages IT livraison 4 ─────────────────────────────────────────────────────
@@ -554,6 +555,7 @@ const App = () => (
             <Route path="/de/fragen-anfaenger-guide" element={<QuestionsGuideDe />} />
             <Route path="/de/libertinismus-ratgeber" element={<GuideGuideDe />} />
             <Route path="/de/ultimativer-libertinismus-ratgeber" element={<GuideUltimeGuideDe />} />
+            <Route path="/de/wettbewerb" element={<WettbewerbDe />} />
             <Route path="/de/gewinnspiel-akoky-2026" element={<ConcoursGuideDe />} />
             <Route path="/de/sechs-schluessel-spiel" element={<ConcoursClesGuideDe />} />
             <Route path="/de/pressestelle" element={<PresseGuideDe />} />
