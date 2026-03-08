@@ -423,8 +423,8 @@ const App = () => (
             <Route path="/meilleur-site-libertin" element={<Navigate to="/fr/meilleur-site-libertin" replace />} />
             <Route path="/clubbing" element={<Navigate to="/fr/clubbing" replace />} />
             <Route path="/akoky-vs-wyylde" element={<Navigate to="/fr/akoky-vs-wyylde" replace />} />
-            <Route path="/blogs" element={<Navigate to="https://blog.akoky.com" replace />} />
-            <Route path="/blog" element={<Navigate to="https://blog.akoky.com" replace />} />
+            <Route path="/blogs" element={<Navigate to="/fr/blog" replace />} />
+            <Route path="/blog" element={<Navigate to="/fr/blog" replace />} />
             <Route path="/faq" element={<Navigate to="https://ask.akoky.com" replace />} />
 
             {/* ══════════════════════════════════════════════════════════════
