@@ -18,7 +18,7 @@ const DebuterLibertinage = () => (
       description="Guide complet pour débuter dans le libertinage : premiers pas, conseils, définitions et ressources. AKOKY accompagne les débutants."
       canonical="https://akoky.com/fr/debuter-libertinage"
       lang="fr"
-      ogImage="https://akoky.com/images/debuter-libertinage-cover.webp"
+      ogImage="/images/debuter-libertinage-cover.webp"
     />
     <HreflangTags slug="debuter-libertinage" />
     <ContentPageLayout
