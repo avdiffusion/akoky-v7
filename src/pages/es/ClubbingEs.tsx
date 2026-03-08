@@ -11,12 +11,6 @@ const FAQ = [
 
 const ClubbingEs = () => (
   <>
-    <MetaTags
-      title="Clubbing Libertino en España 2026 | Guía de Veladas — AKOKY"
-      description="Guía completa del clubbing libertino en España: qué esperar, cómo prepararse, los mejores clubes en Madrid, Barcelona y toda España."
-      canonical="https://akoky.com/es/clubbing"
-      lang="es"
-    />
     <HreflangTags slug="clubbing" />
     <ContentPageLayout
       lang="es"
