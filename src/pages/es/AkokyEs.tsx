@@ -1,7 +1,6 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import { Link } from "react-router-dom";
 import HreflangTags from "@/components/seo/HreflangTags";
-import HreflangTags from "@/components/seo/HreflangTags";
 
 const faqAkoky = [
   {
