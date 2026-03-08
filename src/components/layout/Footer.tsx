@@ -298,7 +298,7 @@ const LANGUAGES = [
 
 const LEGAL_QUICK_LABELS: Record<Lang, { legal: string; terms: string; privacy: string; cookies: string; security: string; charter: string }> = {
   fr: { legal: "Mentions légales", terms: "Conditions", privacy: "Confidentialité", cookies: "Cookies", security: "Sécurité", charter: "Charte AKOKY" },
-  en: { legal: "Legal notices", terms: "Terms", privacy: "Privacy", cookies: "Cookies", security: "Security", charter: "AKOKY Charter" },
+  
   es: { legal: "Aviso legal", terms: "Condiciones", privacy: "Privacidad", cookies: "Cookies", security: "Seguridad", charter: "Carta AKOKY" },
   de: { legal: "Impressum", terms: "AGB", privacy: "Datenschutz", cookies: "Cookies", security: "Sicherheit", charter: "AKOKY Charta" },
   it: { legal: "Note legali", terms: "Condizioni", privacy: "Privacy", cookies: "Cookies", security: "Sicurezza", charter: "Carta AKOKY" },
