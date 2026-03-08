@@ -1,25 +1,167 @@
 import { Link } from "react-router-dom";
 
-const DISCOVER_LINKS = [
-  { href: "/", icon: "🏠", label: "Accueil" },
-  { href: "/akoky", icon: "ℹ️", label: "À propos" },
-  { href: "/blog", icon: "📖", label: "Blog" },
-  { href: "/evenements", icon: "📅", label: "Événements" },
-  { href: "/jeux", icon: "🎮", label: "Jeux" },
-  { href: "/avis", icon: "⭐", label: "Avis" },
-  { href: "/application", icon: "📱", label: "App mobile" },
-];
+type Lang = "fr" | "en" | "es" | "de" | "it" | "pt";
 
-const COMMUNITY_LINKS = [
-  { href: "/clubbing", icon: "🏢", label: "Clubbing" },
-  { href: "/vip", icon: "💎", label: "Adhésion VIP" },
-  { href: "/lexique", icon: "📚", label: "Lexique libertin" },
-  { href: "/presse", icon: "📰", label: "Espace presse" },
-  { href: "/faq", icon: "❓", label: "FAQ" },
-  { href: "/contact", icon: "✉️", label: "Contact" },
-];
+interface FooterProps {
+  lang?: Lang;
+}
 
-const RESOURCE_LINKS = [
+interface FooterLink { href: string; icon: string; label: string }
+
+const DISCOVER_LINKS: Record<Lang, FooterLink[]> = {
+  fr: [
+    { href: "/", icon: "🏠", label: "Accueil" },
+    { href: "/akoky", icon: "ℹ️", label: "À propos" },
+    { href: "/fr/blog", icon: "📖", label: "Blog" },
+    { href: "/fr/evenements", icon: "📅", label: "Événements" },
+    { href: "/fr/jeux", icon: "🎮", label: "Jeux" },
+    { href: "/fr/avis", icon: "⭐", label: "Avis" },
+    { href: "/fr/application", icon: "📱", label: "App mobile" },
+  ],
+  en: [
+    { href: "/en", icon: "🏠", label: "Home" },
+    { href: "/en/akoky", icon: "ℹ️", label: "About" },
+    { href: "/en/blog", icon: "📖", label: "Blog" },
+    { href: "/en/events", icon: "📅", label: "Events" },
+    { href: "/en/games", icon: "🎮", label: "Games" },
+    { href: "/en/reviews", icon: "⭐", label: "Reviews" },
+    { href: "/en/app", icon: "📱", label: "Mobile App" },
+  ],
+  es: [
+    { href: "/es", icon: "🏠", label: "Inicio" },
+    { href: "/es/akoky", icon: "ℹ️", label: "Acerca de" },
+    { href: "/es/blog", icon: "📖", label: "Blog" },
+    { href: "/es/eventos", icon: "📅", label: "Eventos" },
+    { href: "/es/juegos", icon: "🎮", label: "Juegos" },
+    { href: "/es/avis", icon: "⭐", label: "Opiniones" },
+    { href: "/es/aplicacion", icon: "📱", label: "App móvil" },
+  ],
+  de: [
+    { href: "/de", icon: "🏠", label: "Startseite" },
+    { href: "/de/akoky", icon: "ℹ️", label: "Über uns" },
+    { href: "/de/blog", icon: "📖", label: "Blog" },
+    { href: "/de/veranstaltungen", icon: "📅", label: "Events" },
+    { href: "/de/spiele", icon: "🎮", label: "Spiele" },
+    { href: "/de/bewertungen", icon: "⭐", label: "Bewertungen" },
+    { href: "/de/app", icon: "📱", label: "Mobile App" },
+  ],
+  it: [
+    { href: "/it", icon: "🏠", label: "Home" },
+    { href: "/it/akoky", icon: "ℹ️", label: "Chi siamo" },
+    { href: "/it/blog", icon: "📖", label: "Blog" },
+    { href: "/it/eventi", icon: "📅", label: "Eventi" },
+    { href: "/it/giochi", icon: "🎮", label: "Giochi" },
+    { href: "/it/recensioni", icon: "⭐", label: "Recensioni" },
+    { href: "/it/app", icon: "📱", label: "App mobile" },
+  ],
+  pt: [
+    { href: "/pt", icon: "🏠", label: "Início" },
+    { href: "/pt/akoky", icon: "ℹ️", label: "Sobre" },
+    { href: "/pt/blog", icon: "📖", label: "Blog" },
+    { href: "/pt/eventos", icon: "📅", label: "Eventos" },
+    { href: "/pt/jogos", icon: "🎮", label: "Jogos" },
+    { href: "/pt/avaliacoes", icon: "⭐", label: "Avaliações" },
+    { href: "/pt/app", icon: "📱", label: "App mobile" },
+  ],
+};
+
+const COMMUNITY_LINKS: Record<Lang, FooterLink[]> = {
+  fr: [
+    { href: "/clubbing", icon: "🏢", label: "Clubbing" },
+    { href: "/vip", icon: "💎", label: "Adhésion VIP" },
+    { href: "/lexique", icon: "📚", label: "Lexique libertin" },
+    { href: "/presse", icon: "📰", label: "Espace presse" },
+    { href: "/faq", icon: "❓", label: "FAQ" },
+    { href: "/contact", icon: "✉️", label: "Contact" },
+  ],
+  en: [
+    { href: "/en/clubbing", icon: "🏢", label: "Clubbing" },
+    { href: "/en/vip", icon: "💎", label: "VIP Membership" },
+    { href: "/en/lexicon", icon: "📚", label: "Libertine Lexicon" },
+    { href: "/en/press", icon: "📰", label: "Press Room" },
+    { href: "/en/faq", icon: "❓", label: "FAQ" },
+    { href: "/en/contact", icon: "✉️", label: "Contact" },
+  ],
+  es: [
+    { href: "/es/clubbing", icon: "🏢", label: "Clubbing" },
+    { href: "/es/vip", icon: "💎", label: "Membresía VIP" },
+    { href: "/es/lexico", icon: "📚", label: "Léxico libertino" },
+    { href: "/es/prensa", icon: "📰", label: "Sala de prensa" },
+    { href: "/es/faq", icon: "❓", label: "FAQ" },
+    { href: "/es/contacto", icon: "✉️", label: "Contacto" },
+  ],
+  de: [
+    { href: "/de/clubbing", icon: "🏢", label: "Clubbing" },
+    { href: "/de/vip", icon: "💎", label: "VIP-Mitgliedschaft" },
+    { href: "/de/lexikon", icon: "📚", label: "Libertines Lexikon" },
+    { href: "/de/presse", icon: "📰", label: "Pressebereich" },
+    { href: "/de/faq", icon: "❓", label: "FAQ" },
+    { href: "/de/kontakt", icon: "✉️", label: "Kontakt" },
+  ],
+  it: [
+    { href: "/it/clubbing", icon: "🏢", label: "Clubbing" },
+    { href: "/it/vip", icon: "💎", label: "Abbonamento VIP" },
+    { href: "/it/lessico", icon: "📚", label: "Lessico libertino" },
+    { href: "/it/stampa", icon: "📰", label: "Sala stampa" },
+    { href: "/it/faq", icon: "❓", label: "FAQ" },
+    { href: "/it/contatto", icon: "✉️", label: "Contatto" },
+  ],
+  pt: [
+    { href: "/pt/clubbing", icon: "🏢", label: "Clubbing" },
+    { href: "/pt/vip", icon: "💎", label: "Adesão VIP" },
+    { href: "/pt/lexico", icon: "📚", label: "Léxico libertino" },
+    { href: "/pt/imprensa", icon: "📰", label: "Sala de imprensa" },
+    { href: "/pt/faq", icon: "❓", label: "FAQ" },
+    { href: "/pt/contacto", icon: "✉️", label: "Contacto" },
+  ],
+};
+
+const SECTION_TITLES: Record<Lang, { discover: string; community: string; resources: string }> = {
+  fr: { discover: "Découvrir", community: "Communauté", resources: "Ressources" },
+  en: { discover: "Discover", community: "Community", resources: "Resources" },
+  es: { discover: "Descubrir", community: "Comunidad", resources: "Recursos" },
+  de: { discover: "Entdecken", community: "Community", resources: "Ressourcen" },
+  it: { discover: "Scopri", community: "Comunità", resources: "Risorse" },
+  pt: { discover: "Descobrir", community: "Comunidade", resources: "Recursos" },
+};
+
+const BRAND_DESC: Record<Lang, string> = {
+  fr: "La plus grande communauté libertine d'Europe. Un espace élégant, sécurisé et authentique.",
+  en: "Europe's largest libertine community. An elegant, secure and authentic space.",
+  es: "La mayor comunidad libertina de Europa. Un espacio elegante, seguro y auténtico.",
+  de: "Europas größte libertine Community. Ein eleganter, sicherer und authentischer Raum.",
+  it: "La più grande comunità libertina d'Europa. Uno spazio elegante, sicuro e autentico.",
+  pt: "A maior comunidade libertina da Europa. Um espaço elegante, seguro e autêntico.",
+};
+
+const CTA_LABELS: Record<Lang, { join: string; clubs: string; joinDesc: string }> = {
+  fr: { join: "Rejoignez la communauté AKOKY", clubs: "Voir les clubs", joinDesc: "1,5 million de membres sur le premier réseau social libertin complet. Inscription gratuite, sans carte bancaire." },
+  en: { join: "Join the AKOKY community", clubs: "View clubs", joinDesc: "1.5 million members on the leading complete libertine social network. Free sign-up, no credit card required." },
+  es: { join: "Únete a la comunidad AKOKY", clubs: "Ver clubes", joinDesc: "1,5 millones de miembros en la primera red social libertina completa. Registro gratuito, sin tarjeta de crédito." },
+  de: { join: "Treten Sie der AKOKY-Community bei", clubs: "Clubs anzeigen", joinDesc: "1,5 Millionen Mitglieder im führenden libertinen sozialen Netzwerk. Kostenlose Anmeldung, keine Kreditkarte erforderlich." },
+  it: { join: "Unisciti alla comunità AKOKY", clubs: "Vedi i club", joinDesc: "1,5 milioni di membri sulla prima rete sociale libertina completa. Iscrizione gratuita, senza carta di credito." },
+  pt: { join: "Junte-se à comunidade AKOKY", clubs: "Ver clubes", joinDesc: "1,5 milhão de membros na principal rede social libertina completa. Registo gratuito, sem cartão de crédito." },
+};
+
+const REGISTER_LABELS: Record<Lang, string> = {
+  fr: "Créer mon compte gratuit",
+  en: "Create my free account",
+  es: "Crear mi cuenta gratis",
+  de: "Kostenloses Konto erstellen",
+  it: "Crea il mio account gratuito",
+  pt: "Criar minha conta grátis",
+};
+
+const COPYRIGHT_LABELS: Record<Lang, { rights: string; adults: string; lang: string; available: string; secure: string; gdpr: string; update: string }> = {
+  fr: { rights: "Tous droits réservés.", adults: "Le contenu de ce site est réservé aux adultes.", lang: "Langue", available: "Akoky est disponible en 6 langues", secure: "🔒 Connexion sécurisée", gdpr: "✅ RGPD conforme", update: "🕒 Mise à jour : janv. 2026" },
+  en: { rights: "All rights reserved.", adults: "This website's content is for adults only.", lang: "Language", available: "Akoky is available in 6 languages", secure: "🔒 Secure connection", gdpr: "✅ GDPR compliant", update: "🕒 Updated: Jan. 2026" },
+  es: { rights: "Todos los derechos reservados.", adults: "El contenido de este sitio es solo para adultos.", lang: "Idioma", available: "Akoky está disponible en 6 idiomas", secure: "🔒 Conexión segura", gdpr: "✅ Cumple con el RGPD", update: "🕒 Actualización: ene. 2026" },
+  de: { rights: "Alle Rechte vorbehalten.", adults: "Der Inhalt dieser Website ist nur für Erwachsene.", lang: "Sprache", available: "Akoky ist in 6 Sprachen verfügbar", secure: "🔒 Sichere Verbindung", gdpr: "✅ DSGVO-konform", update: "🕒 Aktualisierung: Jan. 2026" },
+  it: { rights: "Tutti i diritti riservati.", adults: "Il contenuto di questo sito è riservato agli adulti.", lang: "Lingua", available: "Akoky è disponibile in 6 lingue", secure: "🔒 Connessione sicura", gdpr: "✅ Conforme al GDPR", update: "🕒 Aggiornamento: gen. 2026" },
+  pt: { rights: "Todos os direitos reservados.", adults: "O conteúdo deste site é apenas para adultos.", lang: "Idioma", available: "Akoky está disponível em 6 idiomas", secure: "🔒 Conexão segura", gdpr: "✅ Conforme com o RGPD", update: "🕒 Atualização: jan. 2026" },
+};
+
+const RESOURCE_LINKS: FooterLink[] = [
   { href: "https://legal.akoky.com/mentions-legales", icon: "📄", label: "Mentions légales" },
   { href: "https://legal.akoky.com/conditions-utilisation", icon: "🤝", label: "Conditions d'utilisation" },
   { href: "https://legal.akoky.com/conditions-vente", icon: "🛒", label: "Conditions de vente" },
@@ -39,12 +181,12 @@ const SOCIAL_LINKS = [
 ];
 
 const LANGUAGES = [
-  { code: "fr", flag: "🇫🇷", label: "Français", href: "/" },
-  { code: "en", flag: "🇬🇧", label: "English", href: "/en" },
-  { code: "es", flag: "🇪🇸", label: "Español", href: "/es" },
-  { code: "de", flag: "🇩🇪", label: "Deutsch", href: "/de" },
-  { code: "it", flag: "🇮🇹", label: "Italiano", href: "/it" },
-  { code: "pt", flag: "🇵🇹", label: "Português", href: "/pt" },
+  { code: "fr" as Lang, flag: "🇫🇷", label: "Français", href: "/" },
+  { code: "en" as Lang, flag: "🇬🇧", label: "English", href: "/en" },
+  { code: "es" as Lang, flag: "🇪🇸", label: "Español", href: "/es" },
+  { code: "de" as Lang, flag: "🇩🇪", label: "Deutsch", href: "/de" },
+  { code: "it" as Lang, flag: "🇮🇹", label: "Italiano", href: "/it" },
+  { code: "pt" as Lang, flag: "🇵🇹", label: "Português", href: "/pt" },
 ];
 
 const SEO_LINKS = [
@@ -92,8 +234,11 @@ const FooterLinkItem = ({ href, icon, label, external }: { href: string; icon: s
   );
 };
 
-const Footer = () => {
+const Footer = ({ lang = "fr" }: FooterProps) => {
   const currentYear = new Date().getFullYear();
+  const titles = SECTION_TITLES[lang];
+  const copy = COPYRIGHT_LABELS[lang];
+  const currentLang = LANGUAGES.find((l) => l.code === lang) || LANGUAGES[0];
 
   return (
     <footer className="footer-gradient text-foreground" role="contentinfo">
@@ -105,13 +250,13 @@ const Footer = () => {
             <div className="flex flex-col gap-6">
               <span className="text-3xl font-black text-gradient-gold">AKOKY</span>
               <p className="text-[#9ca3af] text-sm leading-relaxed">
-                La plus grande communauté libertine d'Europe. Un espace élégant, sécurisé et authentique.
+                {BRAND_DESC[lang]}
               </p>
               <div className="pt-4">
-                <p className="text-sm text-[#9ca3af] mb-2">Langue</p>
-                <Link to="/" className="inline-flex items-center gap-2 px-4 py-2 btn-gradient-primary rounded-full text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/30">
-                  <span>🇫🇷</span>
-                  <span>FR</span>
+                <p className="text-sm text-[#9ca3af] mb-2">{copy.lang}</p>
+                <Link to={currentLang.href} className="inline-flex items-center gap-2 px-4 py-2 btn-gradient-primary rounded-full text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/30">
+                  <span>{currentLang.flag}</span>
+                  <span>{lang.toUpperCase()}</span>
                 </Link>
               </div>
             </div>
@@ -120,10 +265,10 @@ const Footer = () => {
             <div>
               <h3 className="flex items-center gap-2 text-lg font-bold mb-6">
                 <span className="text-primary">✨</span>
-                Découvrir
+                {titles.discover}
               </h3>
               <ul className="flex flex-col gap-3">
-                {DISCOVER_LINKS.map((l) => <FooterLinkItem key={l.href} {...l} />)}
+                {DISCOVER_LINKS[lang].map((l) => <FooterLinkItem key={l.href} {...l} />)}
               </ul>
             </div>
 
@@ -131,10 +276,10 @@ const Footer = () => {
             <div>
               <h3 className="flex items-center gap-2 text-lg font-bold mb-6">
                 <span className="text-primary">👥</span>
-                Communauté
+                {titles.community}
               </h3>
               <ul className="flex flex-col gap-3">
-                {COMMUNITY_LINKS.map((l) => <FooterLinkItem key={l.href} {...l} />)}
+                {COMMUNITY_LINKS[lang].map((l) => <FooterLinkItem key={l.href} {...l} />)}
               </ul>
             </div>
 
@@ -142,7 +287,7 @@ const Footer = () => {
             <div>
               <h3 className="flex items-center gap-2 text-lg font-bold mb-6">
                 <span className="text-primary">📚</span>
-                Ressources
+                {titles.resources}
               </h3>
               <ul className="flex flex-col gap-3">
                 {RESOURCE_LINKS.map((l) => <FooterLinkItem key={l.href} {...l} external />)}
@@ -193,25 +338,25 @@ const Footer = () => {
           <div className="text-center my-8">
             <h3 className="flex items-center justify-center gap-2 text-sm font-bold uppercase tracking-wider text-[#9ca3af] mb-6">
               <span>🌍</span>
-              Langue / Languages
+              {copy.lang} / Languages
             </h3>
             <div className="flex flex-wrap justify-center gap-4 mb-6">
-              {LANGUAGES.map((lang) => (
+              {LANGUAGES.map((l) => (
                 <Link
-                  key={lang.code}
-                  to={lang.href}
+                  key={l.code}
+                  to={l.href}
                   className={`inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold transition-all ${
-                    lang.code === "fr"
+                    l.code === lang
                       ? "btn-gradient-primary text-primary-foreground shadow-lg shadow-primary/30"
                       : "text-[#d1d5db] hover:bg-secondary hover:text-primary"
                   }`}
                 >
-                  <span>{lang.flag}</span>
-                  <span>{lang.label}</span>
+                  <span>{l.flag}</span>
+                  <span>{l.label}</span>
                 </Link>
               ))}
             </div>
-            <p className="text-xs text-muted-foreground">🌍 Akoky est disponible en 6 langues</p>
+            <p className="text-xs text-muted-foreground">🌍 {copy.available}</p>
           </div>
 
           {/* SEO Links */}
@@ -228,9 +373,9 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="text-center my-8">
-            <p className="text-sm text-[#9ca3af]">© {currentYear} AKOKY. Tous droits réservés.</p>
+            <p className="text-sm text-[#9ca3af]">© {currentYear} AKOKY. {copy.rights}</p>
             <p className="text-xs text-muted-foreground mt-2">
-              AKOKY est une marque déposée. Le contenu de ce site est réservé aux adultes.
+              AKOKY est une marque déposée. {copy.adults}
             </p>
             <div className="flex justify-center items-center gap-4 mt-4 flex-wrap">
               <span className="text-sm text-[#9ca3af]">⚙️ Gérer les cookies</span>
@@ -269,9 +414,9 @@ const Footer = () => {
 
           {/* Trust Labels */}
           <div className="flex justify-center items-center flex-wrap gap-6 mt-8 pb-8">
-            <span className="text-sm text-[#9ca3af]">🔒 Connexion sécurisée</span>
-            <span className="text-sm text-[#9ca3af]">✅ RGPD conforme</span>
-            <span className="text-sm text-[#9ca3af]">🕒 Mise à jour : janv. 2026</span>
+            <span className="text-sm text-[#9ca3af]">{copy.secure}</span>
+            <span className="text-sm text-[#9ca3af]">{copy.gdpr}</span>
+            <span className="text-sm text-[#9ca3af]">{copy.update}</span>
           </div>
         </div>
       </div>

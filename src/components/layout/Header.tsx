@@ -1,28 +1,123 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
+type Lang = "fr" | "en" | "es" | "de" | "it" | "pt";
+
+interface HeaderProps {
+  lang?: Lang;
+}
+
 const LANGUAGES = [
-  { code: "fr", flag: "🇫🇷", label: "Français" },
-  { code: "en", flag: "🇬🇧", label: "English" },
-  { code: "es", flag: "🇪🇸", label: "Español" },
-  { code: "de", flag: "🇩🇪", label: "Deutsch" },
-  { code: "it", flag: "🇮🇹", label: "Italiano" },
-  { code: "pt", flag: "🇵🇹", label: "Português" },
+  { code: "fr" as Lang, flag: "🇫🇷", label: "Français" },
+  { code: "en" as Lang, flag: "🇬🇧", label: "English" },
+  { code: "es" as Lang, flag: "🇪🇸", label: "Español" },
+  { code: "de" as Lang, flag: "🇩🇪", label: "Deutsch" },
+  { code: "it" as Lang, flag: "🇮🇹", label: "Italiano" },
+  { code: "pt" as Lang, flag: "🇵🇹", label: "Português" },
 ];
 
-const NAV_LINKS = [
-  { href: "/", label: "Accueil", icon: "🏠" },
-  { href: "/akoky", label: "À propos", icon: "ℹ️" },
-  { href: "/debuter-libertinage", label: "Débuter", icon: "📝" },
-  { href: "/fr/blog", label: "Blog", icon: "🎭" },
-  { href: "/faq", label: "FAQ", icon: "❓" },
-];
+interface NavLink { href: string; label: string; icon: string }
 
-const Header = () => {
+const NAV_LINKS: Record<Lang, NavLink[]> = {
+  fr: [
+    { href: "/", label: "Accueil", icon: "🏠" },
+    { href: "/akoky", label: "À propos", icon: "ℹ️" },
+    { href: "/debuter-libertinage", label: "Débuter", icon: "📝" },
+    { href: "/fr/blog", label: "Blog", icon: "🎭" },
+    { href: "/faq", label: "FAQ", icon: "❓" },
+  ],
+  en: [
+    { href: "/en", label: "Home", icon: "🏠" },
+    { href: "/en/akoky", label: "About", icon: "ℹ️" },
+    { href: "/en/start-swinging", label: "Getting Started", icon: "📝" },
+    { href: "/en/blog", label: "Blog", icon: "🎭" },
+    { href: "/en/faq", label: "FAQ", icon: "❓" },
+  ],
+  es: [
+    { href: "/es", label: "Inicio", icon: "🏠" },
+    { href: "/es/akoky", label: "Acerca de", icon: "ℹ️" },
+    { href: "/es/empezar-libertinaje", label: "Empezar", icon: "📝" },
+    { href: "/es/blog", label: "Blog", icon: "🎭" },
+    { href: "/es/faq", label: "FAQ", icon: "❓" },
+  ],
+  de: [
+    { href: "/de", label: "Startseite", icon: "🏠" },
+    { href: "/de/akoky", label: "Über uns", icon: "ℹ️" },
+    { href: "/de/libertinismus-anfangen", label: "Anfangen", icon: "📝" },
+    { href: "/de/blog", label: "Blog", icon: "🎭" },
+    { href: "/de/faq", label: "FAQ", icon: "❓" },
+  ],
+  it: [
+    { href: "/it", label: "Home", icon: "🏠" },
+    { href: "/it/akoky", label: "Chi siamo", icon: "ℹ️" },
+    { href: "/it/iniziare-libertinismo", label: "Iniziare", icon: "📝" },
+    { href: "/it/blog", label: "Blog", icon: "🎭" },
+    { href: "/it/faq", label: "FAQ", icon: "❓" },
+  ],
+  pt: [
+    { href: "/pt", label: "Início", icon: "🏠" },
+    { href: "/pt/akoky", label: "Sobre", icon: "ℹ️" },
+    { href: "/pt/comecar-libertinagem", label: "Começar", icon: "📝" },
+    { href: "/pt/blog", label: "Blog", icon: "🎭" },
+    { href: "/pt/faq", label: "FAQ", icon: "❓" },
+  ],
+};
+
+const AVIS_LABELS: Record<Lang, { href: string; label: string }> = {
+  fr: { href: "/fr/avis", label: "AVIS" },
+  en: { href: "/en/reviews", label: "REVIEWS" },
+  es: { href: "/es/avis", label: "OPINIONES" },
+  de: { href: "/de/bewertungen", label: "BEWERTUNGEN" },
+  it: { href: "/it/recensioni", label: "RECENSIONI" },
+  pt: { href: "/pt/avaliacoes", label: "AVALIAÇÕES" },
+};
+
+const CONCOURS_LABELS: Record<Lang, { href: string; label: string }> = {
+  fr: { href: "/concours", label: "Concours" },
+  en: { href: "/en/concours", label: "Contest" },
+  es: { href: "/es/concurso", label: "Concurso" },
+  de: { href: "/de/wettbewerb", label: "Wettbewerb" },
+  it: { href: "/it/concorso", label: "Concorso" },
+  pt: { href: "/pt/concurso", label: "Concurso" },
+};
+
+const LOGIN_LABELS: Record<Lang, string> = {
+  fr: "Connexion",
+  en: "Login",
+  es: "Iniciar sesión",
+  de: "Anmelden",
+  it: "Accedi",
+  pt: "Entrar",
+};
+
+const LANG_LABEL: Record<Lang, string> = {
+  fr: "Langue",
+  en: "Language",
+  es: "Idioma",
+  de: "Sprache",
+  it: "Lingua",
+  pt: "Idioma",
+};
+
+const CLOSE_LABEL: Record<Lang, string> = {
+  fr: "Fermer le menu",
+  en: "Close menu",
+  es: "Cerrar menú",
+  de: "Menü schließen",
+  it: "Chiudi menu",
+  pt: "Fechar menu",
+};
+
+const Header = ({ lang = "fr" }: HeaderProps) => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
   const location = useLocation();
+
+  const navLinks = NAV_LINKS[lang];
+  const avis = AVIS_LABELS[lang];
+  const concours = CONCOURS_LABELS[lang];
+  const currentLang = LANGUAGES.find((l) => l.code === lang) || LANGUAGES[0];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -50,13 +145,13 @@ const Header = () => {
       >
         <div className="container flex items-center justify-between h-[70px] gap-8">
           {/* Logo */}
-          <Link to="/" className="flex-shrink-0 z-[1001]">
+          <Link to={lang === "fr" ? "/" : `/${lang}`} className="flex-shrink-0 z-[1001]">
             <span className="text-2xl font-black tracking-wider text-gradient-gold">AKOKY</span>
           </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-8 flex-1 justify-center">
-            {NAV_LINKS.map((link) => (
+            {navLinks.map((link) => (
               <Link
                 key={link.href}
                 to={link.href}
@@ -66,11 +161,11 @@ const Header = () => {
               </Link>
             ))}
             <Link
-              to="/avis"
+              to={avis.href}
               className="text-sm font-semibold text-foreground hover:text-primary transition-colors flex items-center gap-1.5"
             >
               <span>⭐</span>
-              <span>AVIS</span>
+              <span>{avis.label}</span>
             </Link>
             <a
               href="https://safe.akoky.com"
@@ -81,7 +176,7 @@ const Header = () => {
               <span>🛡️</span>
               <span>SAFE</span>
             </a>
-            <Link to="/concours" className="text-sm relative group" title="Concours">
+            <Link to={concours.href} className="text-sm relative group" title={concours.label}>
               🏆
             </Link>
           </nav>
@@ -94,8 +189,8 @@ const Header = () => {
                 onClick={() => setLangOpen(!langOpen)}
                 className="flex items-center gap-2 border border-border rounded-lg px-3 py-2 text-sm hover:bg-primary/10 hover:border-primary transition-all"
               >
-                <span className="text-lg">🇫🇷</span>
-                <span className="font-semibold text-xs">FR</span>
+                <span className="text-lg">{currentLang.flag}</span>
+                <span className="font-semibold text-xs">{lang.toUpperCase()}</span>
                 <svg
                   className={`w-3 h-3 transition-transform ${langOpen ? "rotate-180" : ""}`}
                   viewBox="0 0 12 12"
@@ -106,17 +201,17 @@ const Header = () => {
               </button>
               {langOpen && (
                 <div className="absolute top-full right-0 mt-2 bg-card border border-border rounded-xl shadow-xl min-w-[180px] overflow-hidden z-50">
-                  {LANGUAGES.map((lang) => (
+                  {LANGUAGES.map((l) => (
                     <Link
-                      key={lang.code}
-                      to={lang.code === "fr" ? "/" : `/${lang.code}`}
+                      key={l.code}
+                      to={l.code === "fr" ? "/" : `/${l.code}`}
                       onClick={() => setLangOpen(false)}
                       className={`flex items-center gap-3 px-4 py-3 text-sm transition-all hover:bg-primary/10 hover:text-primary border-b border-border last:border-0 ${
-                        lang.code === "fr" ? "bg-primary/15 text-primary font-semibold" : "text-foreground"
+                        l.code === lang ? "bg-primary/15 text-primary font-semibold" : "text-foreground"
                       }`}
                     >
-                      <span className="text-xl">{lang.flag}</span>
-                      <span>{lang.label}</span>
+                      <span className="text-xl">{l.flag}</span>
+                      <span>{l.label}</span>
                     </Link>
                   ))}
                 </div>
@@ -128,7 +223,7 @@ const Header = () => {
               href="https://app.akoky.com/login"
               className="px-5 py-2.5 rounded-full text-sm font-bold btn-gradient-primary text-primary-foreground hover:-translate-y-0.5 transition-all hover:shadow-lg hover:shadow-primary/30"
             >
-              Connexion
+              {LOGIN_LABELS[lang]}
             </a>
           </div>
 
@@ -172,11 +267,11 @@ const Header = () => {
         >
           {/* Mobile Header */}
           <div className="flex justify-between items-center pb-4 border-b border-border">
-            <Link to="/" className="text-xl font-black text-gradient-gold">AKOKY</Link>
+            <Link to={lang === "fr" ? "/" : `/${lang}`} className="text-xl font-black text-gradient-gold">AKOKY</Link>
             <button
               onClick={() => setMobileOpen(false)}
               className="p-2 min-w-[44px] min-h-[44px] flex items-center justify-center hover:text-primary transition-all"
-              aria-label="Fermer le menu"
+              aria-label={CLOSE_LABEL[lang]}
             >
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
@@ -186,7 +281,7 @@ const Header = () => {
 
           {/* Mobile Nav */}
           <nav className="flex flex-col gap-2">
-            {NAV_LINKS.map((link) => (
+            {navLinks.map((link) => (
               <Link
                 key={link.href}
                 to={link.href}
@@ -197,11 +292,11 @@ const Header = () => {
               </Link>
             ))}
             <Link
-              to="/avis"
+              to={avis.href}
               className="flex items-center gap-4 px-4 py-3 rounded-xl text-foreground font-medium hover:bg-primary/10 transition-all"
             >
               <span className="text-xl w-[30px] text-center">🌟</span>
-              <span>AVIS</span>
+              <span>{avis.label}</span>
             </Link>
             <a
               href="https://safe.akoky.com"
@@ -213,11 +308,11 @@ const Header = () => {
               <span>SAFE</span>
             </a>
             <Link
-              to="/concours"
+              to={concours.href}
               className="flex items-center gap-4 px-4 py-3 rounded-xl text-foreground font-medium hover:bg-primary/10 transition-all"
             >
               <span className="text-xl w-[30px] text-center">🏆</span>
-              <span>Concours</span>
+              <span>{concours.label}</span>
             </Link>
           </nav>
 
@@ -225,20 +320,20 @@ const Header = () => {
           <div className="flex flex-col gap-6 pt-4 border-t border-border">
             {/* Language */}
             <div>
-              <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-wide mb-3">🌍 Langue</h4>
+              <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-wide mb-3">🌍 {LANG_LABEL[lang]}</h4>
               <div className="grid grid-cols-3 gap-3">
-                {LANGUAGES.map((lang) => (
+                {LANGUAGES.map((l) => (
                   <Link
-                    key={lang.code}
-                    to={lang.code === "fr" ? "/" : `/${lang.code}`}
+                    key={l.code}
+                    to={l.code === "fr" ? "/" : `/${l.code}`}
                     className={`flex flex-col items-center justify-center gap-1 p-3 rounded-lg border text-sm font-semibold transition-all ${
-                      lang.code === "fr"
+                      l.code === lang
                         ? "bg-primary/10 border-primary text-primary"
                         : "bg-card border-border hover:bg-primary/10 hover:border-primary"
                     }`}
                   >
-                    <span className="text-3xl">{lang.flag}</span>
-                    <span>{lang.code.toUpperCase()}</span>
+                    <span className="text-3xl">{l.flag}</span>
+                    <span>{l.code.toUpperCase()}</span>
                   </Link>
                 ))}
               </div>
@@ -249,7 +344,7 @@ const Header = () => {
               href="https://app.akoky.com/login"
               className="w-full py-4 rounded-full text-center font-bold btn-gradient-primary text-primary-foreground text-base"
             >
-              Connexion
+              {LOGIN_LABELS[lang]}
             </a>
           </div>
         </div>
