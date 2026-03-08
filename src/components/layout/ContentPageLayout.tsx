@@ -10,7 +10,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-type Lang = "fr" | "en" | "es" | "de" | "it" | "pt";
+type Lang = "fr" | "es" | "de" | "it" | "pt";
 
 interface ContentPageLayoutProps {
   lang?: Lang;

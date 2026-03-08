@@ -3,7 +3,7 @@ import { loadReviews, getReviewsByLang, computeStats, type Review } from "@/lib/
 import { Star, CheckCircle, ThumbsUp } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 
-type Lang = "fr" | "en" | "es" | "de" | "it" | "pt";
+type Lang = "fr" | "es" | "de" | "it" | "pt";
 
 interface ReviewsListProps {
   lang: Lang;

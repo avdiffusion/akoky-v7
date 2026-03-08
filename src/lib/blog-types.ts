@@ -1,4 +1,4 @@
-export type BlogLang = "fr" | "en" | "es" | "it" | "pt" | "de";
+export type BlogLang = "fr" | "es" | "it" | "pt" | "de";
 
 export type BlogCategory =
   | "guides"

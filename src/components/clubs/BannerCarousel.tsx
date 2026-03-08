@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-type Lang = "fr" | "en" | "es" | "de" | "it" | "pt";
+type Lang = "fr" | "es" | "de" | "it" | "pt";
 
 interface Slide {
   id: number;

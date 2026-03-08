@@ -1,4 +1,4 @@
-export type ConcoursLang = "fr" | "en" | "es" | "it" | "pt" | "de";
+export type ConcoursLang = "fr" | "es" | "it" | "pt" | "de";
 
 export type ConcoursStatus = "active" | "upcoming" | "past";
 

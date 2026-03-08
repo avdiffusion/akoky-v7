@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-type Lang = "fr" | "en" | "es" | "de" | "it" | "pt";
+type Lang = "fr" | "es" | "de" | "it" | "pt";
 
 interface FooterProps {
   lang?: Lang;
