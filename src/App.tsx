@@ -657,7 +657,8 @@ const App = () => (
             <Route path="/pt/concours" element={<ConcoursListing lang="pt" />} />
             <Route path="/pt/concours/:slug" element={<ConcoursArticlePage lang="pt" />} />
 
-            {/* ── EN Blog + Concours ──────────────────────────────────── */}
+            {/* ── EN Pages ──────────────────────────────────────────── */}
+            <Route path="/en/reviews" element={<ReviewsEn />} />
             <Route path="/en/blog" element={<BlogListing lang="en" />} />
             <Route path="/en/blog/:slug" element={<BlogArticlePage lang="en" />} />
             <Route path="/en/concours" element={<ConcoursListing lang="en" />} />
