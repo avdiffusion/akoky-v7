@@ -33,7 +33,7 @@ const Clubbing = () => {
             <p className="text-gray-400 leading-relaxed mb-6">
               Cette page constitue le point d'entrée central du clubbing libertin en France et en Europe. Elle structure l'ensemble des pays, régions et grandes villes afin de vous guider facilement vers les clubs, saunas et établissements libertins vérifiés par AKOKY.
             </p>
-            <Link to="/clubbing-france-europe" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-primary to-primary-dark text-black font-bold hover:scale-105 transition-all">
+            <Link to="/fr/clubbing-france-europe" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-primary to-primary-dark text-black font-bold hover:scale-105 transition-all">
               Découvrir le guide géographique complet →
             </Link>
             <div className="flex gap-4 mt-8">

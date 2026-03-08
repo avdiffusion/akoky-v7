@@ -36,10 +36,10 @@ const ClubsLibertinsBretagne = () => {
           <h3>Lorient</h3><p>Lorient propose un cadre agréable pour des rencontres libertines.</p>
 
           <div className="flex flex-wrap gap-3 not-prose my-6">
-            <Link to="/clubs-libertins-rennes" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Rennes</Link>
-            <Link to="/clubs-libertins-nantes" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Nantes</Link>
-            <Link to="/clubs-libertins-normandie" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Normandie</Link>
-            <Link to="/clubbing-france-europe" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Clubbing France</Link>
+            <Link to="/fr/clubs-libertins-rennes" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Rennes</Link>
+            <Link to="/fr/clubs-libertins-nantes" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Nantes</Link>
+            <Link to="/fr/clubs-libertins-normandie" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Normandie</Link>
+            <Link to="/fr/clubbing-france-europe" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Clubbing France</Link>
           </div>
         </div>
       </section>

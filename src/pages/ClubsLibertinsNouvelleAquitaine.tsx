@@ -36,9 +36,9 @@ const ClubsLibertinsNouvelleAquitaine = () => {
           <h3>Bayonne</h3><p>Bayonne, avec son ambiance basque, attire une clientèle internationale.</p>
 
           <div className="flex flex-wrap gap-3 not-prose my-6">
-            <Link to="/clubs-libertins-bordeaux" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Bordeaux</Link>
-            <Link to="/clubs-libertins-occitanie" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Occitanie</Link>
-            <Link to="/clubbing-france-europe" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Clubbing France</Link>
+            <Link to="/fr/clubs-libertins-bordeaux" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Bordeaux</Link>
+            <Link to="/fr/clubs-libertins-occitanie" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Occitanie</Link>
+            <Link to="/fr/clubbing-france-europe" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Clubbing France</Link>
           </div>
         </div>
       </section>

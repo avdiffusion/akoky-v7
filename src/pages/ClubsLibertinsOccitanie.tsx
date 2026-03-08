@@ -38,10 +38,10 @@ const ClubsLibertinsOccitanie = () => {
           <h3>Carcassonne</h3><p>Carcassonne attire une clientèle internationale.</p>
 
           <div className="flex flex-wrap gap-3 not-prose my-6">
-            <Link to="/clubs-libertins-toulouse" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Toulouse</Link>
-            <Link to="/clubs-libertins-montpellier" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Montpellier</Link>
-            <Link to="/clubs-libertins-cap-dagde" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Cap d'Agde</Link>
-            <Link to="/clubbing-france-europe" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Clubbing France</Link>
+            <Link to="/fr/clubs-libertins-toulouse" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Toulouse</Link>
+            <Link to="/fr/clubs-libertins-montpellier" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Montpellier</Link>
+            <Link to="/fr/clubs-libertins-cap-dagde" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Cap d'Agde</Link>
+            <Link to="/fr/clubbing-france-europe" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Clubbing France</Link>
           </div>
         </div>
       </section>

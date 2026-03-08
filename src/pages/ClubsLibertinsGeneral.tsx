@@ -45,29 +45,29 @@ const ClubsLibertinsGeneral = () => {
           <p>Le plus courant. Lieu complet avec bar, piste de danse, salons privés, espaces de jeux. Idéal pour les couples qui aiment l'ambiance nocturne.</p>
           <h3>Club Échangiste</h3>
           <p>Spécifiquement dédié aux couples qui pratiquent l'échange de partenaires. Ambiance plus intime, moins festive.</p>
-          <Link to="/clubs-echangistes-france" className="text-primary hover:underline">En savoir plus sur les clubs échangistes →</Link>
+          <Link to="/fr/clubs-echangistes-france" className="text-primary hover:underline">En savoir plus sur les clubs échangistes →</Link>
           <h3>Sauna Libertin</h3>
           <p>Mise sur la relaxation et le bien-être : hammam, jacuzzi, cabines privées. Parfait pour les débutants.</p>
 
           <h2 className="text-3xl font-bold text-foreground font-display">Trouver un club libertin près de chez vous</h2>
           <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
-            <Link to="/clubs-libertins-paris" className="p-4 rounded-xl bg-card border border-border hover:border-primary/50 transition-colors">
+            <Link to="/fr/clubs-libertins-paris" className="p-4 rounded-xl bg-card border border-border hover:border-primary/50 transition-colors">
               <p className="font-bold text-foreground">🗼 Paris & Île-de-France</p>
               <p className="text-sm text-muted-foreground">25+ établissements</p>
             </Link>
-            <Link to="/clubs-libertins-paca" className="p-4 rounded-xl bg-card border border-border hover:border-primary/50 transition-colors">
+            <Link to="/fr/clubs-libertins-paca" className="p-4 rounded-xl bg-card border border-border hover:border-primary/50 transition-colors">
               <p className="font-bold text-foreground">🌴 PACA & Côte d'Azur</p>
               <p className="text-sm text-muted-foreground">18+ établissements</p>
             </Link>
-            <Link to="/clubs-libertins-cap-dagde" className="p-4 rounded-xl bg-card border border-border hover:border-primary/50 transition-colors">
+            <Link to="/fr/clubs-libertins-cap-dagde" className="p-4 rounded-xl bg-card border border-border hover:border-primary/50 transition-colors">
               <p className="font-bold text-foreground">☀️ Cap d'Agde</p>
               <p className="text-sm text-muted-foreground">12+ établissements</p>
             </Link>
-            <Link to="/clubs-libertins-lyon" className="p-4 rounded-xl bg-card border border-border hover:border-primary/50 transition-colors">
+            <Link to="/fr/clubs-libertins-lyon" className="p-4 rounded-xl bg-card border border-border hover:border-primary/50 transition-colors">
               <p className="font-bold text-foreground">🦁 Lyon & Auvergne-Rhône-Alpes</p>
               <p className="text-sm text-muted-foreground">15+ établissements</p>
             </Link>
-            <Link to="/clubs-libertins-marseille" className="p-4 rounded-xl bg-card border border-border hover:border-primary/50 transition-colors">
+            <Link to="/fr/clubs-libertins-marseille" className="p-4 rounded-xl bg-card border border-border hover:border-primary/50 transition-colors">
               <p className="font-bold text-foreground">⚓ Marseille</p>
               <p className="text-sm text-muted-foreground">8+ établissements</p>
             </Link>
@@ -76,14 +76,14 @@ const ClubsLibertinsGeneral = () => {
           <h3>Toutes les régions</h3>
           <p>Bordeaux, Toulouse, Nantes, Lille, Strasbourg... Découvrez tous les clubs de France dans l'annuaire.</p>
           <div className="flex flex-wrap gap-3 not-prose my-6">
-            <Link to="/clubs-libertins-bordeaux" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Bordeaux</Link>
-            <Link to="/clubs-libertins-toulouse" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Toulouse</Link>
-            <Link to="/clubs-libertins-nantes" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Nantes</Link>
-            <Link to="/clubs-libertins-lille" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Lille</Link>
-            <Link to="/clubs-libertins-strasbourg" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Strasbourg</Link>
-            <Link to="/clubs-libertins-nice" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Nice</Link>
-            <Link to="/clubs-libertins-rennes" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Rennes</Link>
-            <Link to="/clubs-libertins-montpellier" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Montpellier</Link>
+            <Link to="/fr/clubs-libertins-bordeaux" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Bordeaux</Link>
+            <Link to="/fr/clubs-libertins-toulouse" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Toulouse</Link>
+            <Link to="/fr/clubs-libertins-nantes" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Nantes</Link>
+            <Link to="/fr/clubs-libertins-lille" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Lille</Link>
+            <Link to="/fr/clubs-libertins-strasbourg" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Strasbourg</Link>
+            <Link to="/fr/clubs-libertins-nice" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Nice</Link>
+            <Link to="/fr/clubs-libertins-rennes" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Rennes</Link>
+            <Link to="/fr/clubs-libertins-montpellier" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Montpellier</Link>
           </div>
         </div>
       </section>
