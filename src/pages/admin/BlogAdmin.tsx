@@ -38,6 +38,7 @@ const BlogAdmin = () => {
   const [articles, setArticles] = useState<BlogArticle[]>([]);
   const [search, setSearch] = useState("");
   const [filterCat, setFilterCat] = useState<BlogCategory | "">("");
+  const [filterLang, setFilterLang] = useState<string>("");
 
   useEffect(() => {
     if (!isBlogAdminAuthenticated()) {
@@ -91,8 +92,38 @@ const BlogAdmin = () => {
     input.click();
   };
 
+  // Get the best title for an article based on language filter or first available
+  const getArticleTitle = (a: BlogArticle): string => {
+    if (filterLang && a.translations[filterLang as keyof typeof a.translations]?.title) {
+      return a.translations[filterLang as keyof typeof a.translations]!.title;
+    }
+    // Try each lang in order
+    for (const l of BLOG_LANGS) {
+      if (a.translations[l]?.title) return a.translations[l]!.title;
+    }
+    return "Sans titre";
+  };
+
+  // Get first published lang for "View" button
+  const getViewLang = (a: BlogArticle): string | null => {
+    if (filterLang && a.translations[filterLang as keyof typeof a.translations]?.published) {
+      return filterLang;
+    }
+    for (const l of BLOG_LANGS) {
+      if (a.translations[l]?.published) return l;
+    }
+    return null;
+  };
+
+  // Count articles per language
+  const langCounts = BLOG_LANGS.reduce((acc, l) => {
+    acc[l] = articles.filter((a) => a.translations[l]?.published).length;
+    return acc;
+  }, {} as Record<string, number>);
+
   const filtered = articles
     .filter((a) => !filterCat || a.category === filterCat)
+    .filter((a) => !filterLang || a.translations[filterLang as keyof typeof a.translations]?.published)
     .filter((a) => {
       if (!search) return true;
       const s = search.toLowerCase();
@@ -133,6 +164,33 @@ const BlogAdmin = () => {
       </header>
 
       <div className="container max-w-7xl mx-auto px-4 py-8">
+        {/* Language filter tabs */}
+        <div className="flex items-center gap-2 mb-6 flex-wrap">
+          <button
+            onClick={() => setFilterLang("")}
+            className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
+              !filterLang
+                ? "bg-primary text-primary-foreground"
+                : "bg-muted text-muted-foreground hover:bg-muted/80"
+            }`}
+          >
+            🌍 Toutes ({articles.length})
+          </button>
+          {BLOG_LANGS.map((l) => (
+            <button
+              key={l}
+              onClick={() => setFilterLang(filterLang === l ? "" : l)}
+              className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                filterLang === l
+                  ? "bg-primary text-primary-foreground"
+                  : "bg-muted text-muted-foreground hover:bg-muted/80"
+              }`}
+            >
+              {LANG_LABELS[l]} ({langCounts[l] || 0})
+            </button>
+          ))}
+        </div>
+
         {/* Toolbar */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8">
           <div className="flex items-center gap-3 flex-wrap">
@@ -169,12 +227,17 @@ const BlogAdmin = () => {
           <div className="text-center py-20 bg-card/50 rounded-2xl border border-border">
             <FileText className="h-12 w-12 text-muted-foreground/30 mx-auto mb-4" />
             <p className="text-muted-foreground text-lg">Aucun article</p>
-            <p className="text-muted-foreground/60 text-sm mt-1">Créez votre premier article pour commencer</p>
+            <p className="text-muted-foreground/60 text-sm mt-1">
+              {filterLang
+                ? `Aucun article publié en ${LANG_LABELS[filterLang as keyof typeof LANG_LABELS]}`
+                : "Créez votre premier article pour commencer"}
+            </p>
           </div>
         ) : (
           <div className="space-y-3">
             {filtered.map((article) => {
-              const frTitle = article.translations.fr?.title || article.translations.en?.title || "Sans titre";
+              const displayTitle = getArticleTitle(article);
+              const viewLang = getViewLang(article);
               return (
                 <div
                   key={article.id}
@@ -193,7 +256,7 @@ const BlogAdmin = () => {
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 mb-1">
                       <span className="text-sm">{CATEGORY_ICONS[article.category]}</span>
-                      <h3 className="font-semibold text-foreground truncate">{frTitle}</h3>
+                      <h3 className="font-semibold text-foreground truncate">{displayTitle}</h3>
                     </div>
                     <div className="flex items-center gap-2 flex-wrap">
                       <span className="text-xs text-muted-foreground">
@@ -207,7 +270,11 @@ const BlogAdmin = () => {
                       </div>
                       {BLOG_LANGS.map((l) =>
                         article.translations[l]?.published ? (
-                          <Badge key={l} variant="secondary" className="text-[10px] px-1.5 py-0">
+                          <Badge
+                            key={l}
+                            variant={filterLang === l ? "default" : "secondary"}
+                            className="text-[10px] px-1.5 py-0"
+                          >
                             {l.toUpperCase()}
                           </Badge>
                         ) : null
@@ -217,9 +284,9 @@ const BlogAdmin = () => {
 
                   {/* Actions */}
                   <div className="flex items-center gap-1 shrink-0">
-                    {article.translations.fr?.published && (
-                      <Link to={`/fr/blog/${article.translations.fr.slug}`}>
-                        <Button variant="ghost" size="sm" title="Voir">
+                    {viewLang && article.translations[viewLang as keyof typeof article.translations]?.slug && (
+                      <Link to={`/${viewLang}/blog/${article.translations[viewLang as keyof typeof article.translations]!.slug}`}>
+                        <Button variant="ghost" size="sm" title={`Voir (${viewLang.toUpperCase()})`}>
                           <Eye className="h-4 w-4" />
                         </Button>
                       </Link>
@@ -235,7 +302,7 @@ const BlogAdmin = () => {
                     <Button
                       variant="ghost"
                       size="sm"
-                      onClick={() => handleDelete(article.id, frTitle)}
+                      onClick={() => handleDelete(article.id, displayTitle)}
                       title="Supprimer"
                       className="text-destructive hover:text-destructive"
                     >
