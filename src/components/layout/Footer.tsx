@@ -101,7 +101,7 @@ const COMMUNITY_LINKS: Record<Lang, FooterLink[]> = {
 
 const SECTION_TITLES: Record<Lang, { discover: string; community: string; resources: string }> = {
   fr: { discover: "Découvrir", community: "Communauté", resources: "Ressources" },
-  en: { discover: "Discover", community: "Community", resources: "Resources" },
+  
   es: { discover: "Descubrir", community: "Comunidad", resources: "Recursos" },
   de: { discover: "Entdecken", community: "Community", resources: "Ressourcen" },
   it: { discover: "Scopri", community: "Comunità", resources: "Risorse" },
