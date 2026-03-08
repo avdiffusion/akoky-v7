@@ -471,19 +471,24 @@ const Footer = ({ lang = "fr" }: FooterProps) => {
           </div>
 
           {/* Legal quick links */}
-          <div className="flex justify-center flex-wrap gap-4 my-8 text-sm text-[#9ca3af]">
-            <a href="https://legal.akoky.com/mentions-legales" target="_blank" className="hover:text-primary transition-colors">Mentions légales</a>
-            <span className="text-border">•</span>
-            <a href="https://legal.akoky.com/conditions-utilisation" target="_blank" className="hover:text-primary transition-colors">Conditions</a>
-            <span className="text-border">•</span>
-            <a href="https://legal.akoky.com/confidentialite" target="_blank" className="hover:text-primary transition-colors">Confidentialité</a>
-            <span className="text-border">•</span>
-            <a href="https://legal.akoky.com/cookies" target="_blank" className="hover:text-primary transition-colors">Cookies</a>
-            <span className="text-border">•</span>
-            <a href="https://legal.akoky.com/securite" target="_blank" className="hover:text-primary transition-colors">Sécurité</a>
-            <span className="text-border">•</span>
-            <a href="https://legal.akoky.com/charte" target="_blank" className="hover:text-primary transition-colors">Charte AKOKY</a>
-          </div>
+          {(() => {
+            const lq = LEGAL_QUICK_LABELS[lang];
+            return (
+              <div className="flex justify-center flex-wrap gap-4 my-8 text-sm text-[#9ca3af]">
+                <a href="https://legal.akoky.com/mentions-legales" target="_blank" className="hover:text-primary transition-colors">{lq.legal}</a>
+                <span className="text-border">•</span>
+                <a href="https://legal.akoky.com/conditions-utilisation" target="_blank" className="hover:text-primary transition-colors">{lq.terms}</a>
+                <span className="text-border">•</span>
+                <a href="https://legal.akoky.com/confidentialite" target="_blank" className="hover:text-primary transition-colors">{lq.privacy}</a>
+                <span className="text-border">•</span>
+                <a href="https://legal.akoky.com/cookies" target="_blank" className="hover:text-primary transition-colors">{lq.cookies}</a>
+                <span className="text-border">•</span>
+                <a href="https://legal.akoky.com/securite" target="_blank" className="hover:text-primary transition-colors">{lq.security}</a>
+                <span className="text-border">•</span>
+                <a href="https://legal.akoky.com/charte" target="_blank" className="hover:text-primary transition-colors">{lq.charter}</a>
+              </div>
+            );
+          })()}
 
           {/* Divider */}
           <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent my-10" />
