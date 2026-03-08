@@ -12,7 +12,7 @@ const Vision = () => (
       description="Découvrez la vision d'AKOKY : révolutionner le libertinage numérique avec éthique, innovation et bienveillance."
       canonical="https://akoky.com/fr/vision"
       lang="fr"
-      ogImage="https://legal.akoky.com/UPLOAD-AKOKY/AKOKY.COM/images/images-cover-pages/vision-cover.webp"
+      ogImage="/images/vision-cover.webp"
     />
     <HreflangTags slug="vision" />
     <ContentPageLayout
