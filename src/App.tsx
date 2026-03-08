@@ -288,6 +288,11 @@ import PresseGuidePt from "./pages/pt/PresseGuidePt";
 
 const queryClient = new QueryClient();
 
+const RedirectToFrPath = () => {
+  const location = useLocation();
+  return <Navigate to={`/fr${location.pathname}${location.search}${location.hash}`} replace />;
+};
+
 const App = () => (
   <HelmetProvider>
     <QueryClientProvider client={queryClient}>
