@@ -232,7 +232,7 @@ const Home = () => {
                 </Link>
               </div>
               <div className="text-center">
-                <img loading="lazy" src="https://akoky.com/images/tel.webp" alt="App Akoky" width="380" height="760" className="w-[380px] mx-auto rounded-3xl shadow-2xl" />
+                <img loading="lazy" src="/images/tel.webp" alt="App Akoky" width="380" height="760" className="w-[380px] mx-auto rounded-3xl shadow-2xl" />
               </div>
             </div>
           </div>
