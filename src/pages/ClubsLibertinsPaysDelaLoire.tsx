@@ -29,7 +29,7 @@ const ClubsLibertinsPaysDelaLoire = () => {
           <h2 className="text-3xl font-bold text-foreground font-display">Les grandes villes libertines</h2>
           <h3>Nantes</h3>
           <p>Nantes est le cœur de la vie nocturne libertine dans les Pays de la Loire.</p>
-          <Link to="/clubs-libertins-nantes" className="text-primary hover:underline">Clubs libertins à Nantes →</Link>
+          <Link to="/fr/clubs-libertins-nantes" className="text-primary hover:underline">Clubs libertins à Nantes →</Link>
           <h3>Angers</h3><p>Angers offre une expérience libertine intimiste avec son charme historique.</p>
           <h3>Le Mans</h3><p>Le Mans propose des soirées dynamiques.</p>
           <h3>La Rochelle</h3><p>La Rochelle offre une ambiance chaleureuse et week-end.</p>
