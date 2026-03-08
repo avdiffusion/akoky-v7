@@ -189,17 +189,7 @@ import DatenschutzDe from "./pages/de/DatenschutzDe";
 
 
 // ─── Pages DE livraison 6 ─────────────────────────────────────────────────────
-import ActualitesDe from "./pages/de/ActualitesDe";
-import BlogRedirectDe from "./pages/de/BlogRedirectDe";
-import FaqRedirectDe from "./pages/de/FaqRedirectDe";
-import DebuterGuideDe from "./pages/de/DebuterGuideDe";
 import LibertinageGuideDe from "./pages/de/LibertinageGuideDe";
-import SaunasGuideDe from "./pages/de/SaunasGuideDe";
-import LexiqueGuideDe from "./pages/de/LexiqueGuideDe";
-import JeuxGuideDe from "./pages/de/JeuxGuideDe";
-import EvenementsGuideDe from "./pages/de/EvenementsGuideDe";
-import VipGuideDe from "./pages/de/VipGuideDe";
-import VisionGuideDe from "./pages/de/VisionGuideDe";
 import PremierClubGuideDe from "./pages/de/PremierClubGuideDe";
 import PremierRdvGuideDe from "./pages/de/PremierRdvGuideDe";
 import QuestionsGuideDe from "./pages/de/QuestionsGuideDe";
@@ -207,8 +197,6 @@ import GuideGuideDe from "./pages/de/GuideGuideDe";
 import GuideUltimeGuideDe from "./pages/de/GuideUltimeGuideDe";
 import ConcoursGuideDe from "./pages/de/ConcoursGuideDe";
 import ConcoursClesGuideDe from "./pages/de/ConcoursClesGuideDe";
-import ContactGuideDe from "./pages/de/ContactGuideDe";
-import CookiesGuideDe from "./pages/de/CookiesGuideDe";
 import PresseGuideDe from "./pages/de/PresseGuideDe";
 
 // ─── Pages IT livraison 4 ─────────────────────────────────────────────────────
