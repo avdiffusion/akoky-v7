@@ -38,7 +38,7 @@ const HOME_LABELS: Record<Lang, string> = {
 
 const FAQ_TITLES: Record<Lang, string> = {
   fr: "Questions fréquentes",
-  en: "Frequently Asked Questions",
+  fr: "Questions fréquentes",
   es: "Preguntas frecuentes",
   de: "Häufig gestellte Fragen",
   it: "Domande frequenti",
