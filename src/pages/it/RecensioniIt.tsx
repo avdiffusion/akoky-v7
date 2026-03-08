@@ -52,7 +52,7 @@ const RecensioniIt = () => (
       canonical="https://akoky.com/it/recensioni"
       heroTitle="Recensioni e Valutazioni AKOKY – Testimonianze Verificate"
       heroSubtitle="Scopri oltre 60 testimonianze autentiche della community AKOKY, il social network libertino leader in Europa"
-      heroImage="/images/jeux-cover.webp"
+      heroImage="/images/es-preguntas-cover.webp"
       breadcrumb={[{ label: "Recensioni" }]}
       faq={FAQ}
       schema={PAGE_SCHEMA}

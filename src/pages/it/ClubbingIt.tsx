@@ -84,7 +84,7 @@ const ClubbingIt = () => {
         canonical="https://akoky.com/it/clubbing"
         heroTitle="Clubbing Libertino in Italia"
         heroSubtitle="La guida di riferimento per scoprire, comprendere e scegliere il vostro club libertino ideale in Italia e in Europa"
-        heroImage="/images/club.webp"
+        heroImage="/images/es-eventos-cover.webp"
         breadcrumb={[{ label: "Clubbing" }]}
         faq={[
           { question: "Come scegliere il primo club libertino in Italia?", answer: "Consultate la nostra guida per principianti e le recensioni verificate su AKOKY. Privilegiate un club con buona reputazione, clientela rispettosa e serate adatte ai novizi." },
