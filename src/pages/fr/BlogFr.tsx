@@ -33,7 +33,7 @@ const FEATURED_ARTICLES = [
   {
     title: "Cap d'Agde Libertin — Les Meilleurs Événements de l'Été 2026",
     description: "Guide complet du Cap d'Agde libertin : village naturiste, clubs, plages et événements incontournables de l'été 2026.",
-    image: "https://akoky.com/images/cap-agde-libertin.webp",
+    image: "/images/cap-agde-libertin.webp",
     href: "https://akoky.com/fr/blogs/cap-agde-libertinage-ete-2026",
     category: "Événements",
     readTime: "8 min",
