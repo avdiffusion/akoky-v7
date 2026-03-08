@@ -393,7 +393,8 @@ const App = () => (
 
             
             {/* ── Pages FR livraison 6 ───────────────────────────────────── */}
-            <Route path="/fr/blog" element={<BlogFr />} />
+            <Route path="/fr/blog" element={<BlogListing lang="fr" />} />
+            <Route path="/fr/blog/:slug" element={<BlogArticlePage lang="fr" />} />
             <Route path="/fr/faq" element={<FaqFr />} />
             <Route path="/fr/cookies" element={<CookiesFr />} />
             <Route path="/fr/guide-libertin-france" element={<GuideLibertin />} />
