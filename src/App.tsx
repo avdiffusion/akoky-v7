@@ -199,6 +199,7 @@ import ConcoursGuideDe from "./pages/de/ConcoursGuideDe";
 import ConcoursClesGuideDe from "./pages/de/ConcoursClesGuideDe";
 import WettbewerbDe from "./pages/de/WettbewerbDe";
 import PresseGuideDe from "./pages/de/PresseGuideDe";
+import ClubsAnnuaireDe from "./pages/de/ClubsAnnuaireDe";
 
 // ─── Pages IT livraison 4 ─────────────────────────────────────────────────────
 import HomeIt from "./pages/it/HomeIt";
