@@ -154,15 +154,6 @@ const RESOURCE_LINKS: Record<Lang, FooterLink[]> = {
     { href: "https://legal.akoky.com/securite", icon: "🛡️", label: "Sécurité" },
     { href: "https://legal.akoky.com/charte", icon: "📜", label: "Charte AKOKY" },
   ],
-  en: [
-    { href: "https://legal.akoky.com/mentions-legales", icon: "📄", label: "Legal notices" },
-    { href: "https://legal.akoky.com/conditions-utilisation", icon: "🤝", label: "Terms of use" },
-    { href: "https://legal.akoky.com/conditions-vente", icon: "🛒", label: "Terms of sale" },
-    { href: "https://legal.akoky.com/confidentialite", icon: "🔒", label: "Privacy policy" },
-    { href: "https://legal.akoky.com/cookies", icon: "🍪", label: "Cookies" },
-    { href: "https://legal.akoky.com/securite", icon: "🛡️", label: "Security" },
-    { href: "https://legal.akoky.com/charte", icon: "📜", label: "AKOKY Charter" },
-  ],
   es: [
     { href: "https://legal.akoky.com/mentions-legales", icon: "📄", label: "Aviso legal" },
     { href: "https://legal.akoky.com/conditions-utilisation", icon: "🤝", label: "Condiciones de uso" },
