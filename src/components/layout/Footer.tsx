@@ -137,7 +137,7 @@ const REGISTER_LABELS: Record<Lang, string> = {
 
 const COPYRIGHT_LABELS: Record<Lang, { rights: string; adults: string; lang: string; available: string; secure: string; gdpr: string; update: string }> = {
   fr: { rights: "Tous droits réservés.", adults: "Le contenu de ce site est réservé aux adultes.", lang: "Langue", available: "Akoky est disponible en 6 langues", secure: "🔒 Connexion sécurisée", gdpr: "✅ RGPD conforme", update: "🕒 Mise à jour : janv. 2026" },
-  en: { rights: "All rights reserved.", adults: "This website's content is for adults only.", lang: "Language", available: "Akoky is available in 6 languages", secure: "🔒 Secure connection", gdpr: "✅ GDPR compliant", update: "🕒 Updated: Jan. 2026" },
+  
   es: { rights: "Todos los derechos reservados.", adults: "El contenido de este sitio es solo para adultos.", lang: "Idioma", available: "Akoky está disponible en 6 idiomas", secure: "🔒 Conexión segura", gdpr: "✅ Cumple con el RGPD", update: "🕒 Actualización: ene. 2026" },
   de: { rights: "Alle Rechte vorbehalten.", adults: "Der Inhalt dieser Website ist nur für Erwachsene.", lang: "Sprache", available: "Akoky ist in 6 Sprachen verfügbar", secure: "🔒 Sichere Verbindung", gdpr: "✅ DSGVO-konform", update: "🕒 Aktualisierung: Jan. 2026" },
   it: { rights: "Tutti i diritti riservati.", adults: "Il contenuto di questo sito è riservato agli adulti.", lang: "Lingua", available: "Akoky è disponibile in 6 lingue", secure: "🔒 Connessione sicura", gdpr: "✅ Conforme al GDPR", update: "🕒 Aggiornamento: gen. 2026" },
