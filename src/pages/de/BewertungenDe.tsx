@@ -11,12 +11,6 @@ const FAQ = [
 
 const BewertungenDe = () => (
   <>
-    <MetaTags
-      title="AKOKY Bewertungen | Community-Bewertungen der Libertinen Community"
-      description="Lies die Bewertungen der AKOKY-Community: echte Erfahrungen, verifizierte Erfahrungsberichte und Clubs- und Event-Bewertungen."
-      canonical="https://akoky.com/de/bewertungen"
-      lang="de"
-    />
     <HreflangTags slug="bewertungen" />
     <ContentPageLayout
       lang="de"
