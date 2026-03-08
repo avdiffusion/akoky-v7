@@ -26,7 +26,7 @@ const Contact = () => (
       heroSubtitle="Une question ? Notre équipe est à votre écoute"
       heroImage="https://akoky.com/images/logo-akoky.webp"
       breadcrumb={[{ label: "Contact" }]}
-      faq={{FAQ}}
+      faq={FAQ}
     >
       <section className="py-12 md:py-20 px-4">
         <div className="container max-w-4xl mx-auto prose-custom">

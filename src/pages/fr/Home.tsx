@@ -157,7 +157,7 @@ const Home = () => {
                 REJOINDRE LA COMMUNAUTÉ
               </a>
               <Link
-                to="/fr/clubs-libertins"
+                to="/clubs"
                 className="w-full sm:w-auto px-8 py-4 rounded-full font-bold bg-secondary text-foreground border border-border hover:bg-secondary/80 hover:-translate-y-0.5 transition-all"
               >
                 EXPLORER LES CLUBS
@@ -174,17 +174,17 @@ const Home = () => {
               <p className="text-base md:text-lg leading-8 text-muted-foreground">
                 AKOKY s'impose comme <strong className="text-foreground">le réseau social libertin premium</strong> avec plus de 1.5 million de membres actifs.
                 Contrairement aux plateformes généralistes, AKOKY offre une expérience complète dédiée au{" "}
-                <Link to="/fr/libertinage" className="text-primary hover:underline">libertinage moderne</Link> :
-                annuaire des <Link to="/fr/clubs-libertins" className="text-primary hover:underline">meilleurs clubs libertins</Link> d'Europe,{" "}
-                <Link to="/fr/evenements" className="text-primary hover:underline">événements exclusifs</Link> mensuels,{" "}
-                <Link to="/fr/live" className="text-primary hover:underline">lives libertins</Link> en direct et{" "}
-                <Link to="/fr/application" className="text-primary hover:underline">application mobile</Link> avec géolocalisation.
+                <Link to="/libertinage" className="text-primary hover:underline">libertinage moderne</Link> :
+                annuaire des <Link to="/clubs" className="text-primary hover:underline">meilleurs clubs libertins</Link> d'Europe,{" "}
+                <Link to="/evenements" className="text-primary hover:underline">événements exclusifs</Link> mensuels,{" "}
+                <Link to="/live" className="text-primary hover:underline">lives libertins</Link> en direct et{" "}
+                <Link to="/application" className="text-primary hover:underline">application mobile</Link> avec géolocalisation.
               </p>
               <p className="text-base md:text-lg leading-8 text-muted-foreground mt-4">
-                Que vous soyez <Link to="/fr/debuter-libertinage" className="text-primary hover:underline">débutant dans le libertinage</Link>{" "}
-                ou membre confirmé, AKOKY vous accompagne avec <a href="https://ask.akoky.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">des ressources complètes</a>,
-                un <Link to="/fr/lexique" className="text-primary hover:underline">lexique libertin</Link> détaillé et une{" "}
-                <Link to="/fr/vision" className="text-primary hover:underline">charte éthique</Link> qui place le consentement au cœur de chaque interaction.
+                Que vous soyez <Link to="/debuter-libertinage" className="text-primary hover:underline">débutant dans le libertinage</Link>{" "}
+                ou membre confirmé, AKOKY vous accompagne avec <Link to="/faq" className="text-primary hover:underline">des ressources complètes</Link>,
+                un <Link to="/lexique" className="text-primary hover:underline">lexique libertin</Link> détaillé et une{" "}
+                <Link to="/vision" className="text-primary hover:underline">charte éthique</Link> qui place le consentement au cœur de chaque interaction.
               </p>
             </div>
           </div>
@@ -222,7 +222,7 @@ const Home = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {EVENT_CARDS.map((event, i) => (
-                <Link key={i} to="/fr/evenements" className="group bg-card border border-border rounded-2xl overflow-hidden card-hover-glow">
+                <Link key={i} to="/evenements" className="group bg-card border border-border rounded-2xl overflow-hidden card-hover-glow">
                   <div className="h-[200px] bg-gradient-to-br from-primary/20 to-primary-dark/20 flex items-center justify-center">
                     <span className="text-6xl opacity-50">{["🎭", "🌊", "🕯️"][i]}</span>
                   </div>
@@ -249,9 +249,9 @@ const Home = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
-                { step: "1", title: "Inscription", desc: <>Créez votre profil gratuitement en 2 minutes. Ajoutez vos préférences, photos et découvrez <Link to="/fr/debuter-libertinage" className="text-primary hover:underline">les premiers pas</Link> dans cet univers.</> },
-                { step: "2", title: "Exploration", desc: <>Parcourez les profils vérifiés, consultez notre <Link to="/fr/clubs-libertins" className="text-primary hover:underline">annuaire des clubs</Link> et explorez les <Link to="/fr/evenements" className="text-primary hover:underline">300 événements mensuels</Link>.</> },
-                { step: "3", title: "Rencontre", desc: <>Réservez vos places pour les <Link to="/fr/evenements" className="text-primary hover:underline">soirées exclusives</Link>, échangez via la messagerie et vivez des expériences respectueuses du <Link to="/fr/vision" className="text-primary hover:underline">consentement</Link>.</> },
+                { step: "1", title: "Inscription", desc: <>Créez votre profil gratuitement en 2 minutes. Ajoutez vos préférences, photos et découvrez <Link to="/debuter-libertinage" className="text-primary hover:underline">les premiers pas</Link> dans cet univers.</> },
+                { step: "2", title: "Exploration", desc: <>Parcourez les profils vérifiés, consultez notre <Link to="/clubs" className="text-primary hover:underline">annuaire des clubs</Link> et explorez les <Link to="/evenements" className="text-primary hover:underline">300 événements mensuels</Link>.</> },
+                { step: "3", title: "Rencontre", desc: <>Réservez vos places pour les <Link to="/evenements" className="text-primary hover:underline">soirées exclusives</Link>, échangez via la messagerie et vivez des expériences respectueuses du <Link to="/vision" className="text-primary hover:underline">consentement</Link>.</> },
               ].map((item) => (
                 <div key={item.step} className="text-center">
                   <div className="w-16 h-16 rounded-full icon-box-primary flex items-center justify-center text-xl font-bold mx-auto mb-6 text-primary-foreground">{item.step}</div>
@@ -356,7 +356,7 @@ const Home = () => {
         <section className="py-12 text-center">
           <p className="text-muted-foreground max-w-[700px] mx-auto mb-8">
             Vous comparez AKOKY à d'autres plateformes ?{" "}
-            <Link to="/fr/comparatifs/akoky-vs-wyylde" className="text-primary font-semibold hover:underline">
+            <Link to="/akoky-vs-wyylde" className="text-primary font-semibold hover:underline">
               Découvrez notre comparatif AKOKY vs Wyylde
             </Link>.
           </p>
@@ -368,7 +368,7 @@ const Home = () => {
               Wyylde, NousLib, Gleese, JM&nbsp;Libertins, EntreCoquins, SexyLib — tous les sites libertins analysés et comparés dans un seul guide : fonctionnalités, tarifs, avis réels et faux profils.
             </p>
             <Link
-              to="/fr/comparatifs/meilleur-site-libertin"
+              to="/meilleur-site-libertin"
               className="inline-flex items-center gap-2 px-7 py-3 rounded-full btn-gradient-primary text-primary-foreground font-extrabold text-sm hover:opacity-85 transition-opacity"
             >
               🏆 Voir le classement complet 2026

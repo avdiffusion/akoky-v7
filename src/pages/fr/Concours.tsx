@@ -26,7 +26,7 @@ const Concours = () => (
       heroSubtitle="Transformez votre réseau en opportunités de victoire"
       heroImage="https://akoky.com/images/concours/six-cles.webp"
       breadcrumb={[{ label: "Concours Akoky - Gagnez des séjours libertins en Europe | Jeux communauté adulte" }]}
-      faq={{FAQ}}
+      faq={FAQ}
     >
       <section className="py-12 md:py-20 px-4">
         <div className="container max-w-4xl mx-auto prose-custom">
