@@ -4,6 +4,8 @@ import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
 import SchemaOrg from "@/components/seo/SchemaOrg";
+import ClubCard from "@/components/clubs/ClubCard";
+import ClubDetailModal from "@/components/clubs/ClubDetailModal";
 import {
   parseEtablissements,
   getByLang,
@@ -11,7 +13,6 @@ import {
   getCountries,
   getTypes,
   getClubUrl,
-  getTypeBadgeColor,
   type Etablissement,
 } from "@/lib/etablissements";
 
@@ -22,6 +23,7 @@ const AnnuaireClubs = () => {
   const [selectedCountry, setSelectedCountry] = useState<string>("");
   const [selectedRegion, setSelectedRegion] = useState<string>("");
   const [selectedType, setSelectedType] = useState<string>("");
+  const [selectedClub, setSelectedClub] = useState<Etablissement | null>(null);
 
   useEffect(() => {
     fetch("/data/etablissement.csv")
