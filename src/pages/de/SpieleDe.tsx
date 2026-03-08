@@ -10,12 +10,6 @@ const FAQ = [
 
 const SpieleDe = () => (
   <>
-    <MetaTags
-      title="Libertine Spiele AKOKY | Animationen und Aktivitäten für Abende"
-      description="Entdecke unsere libertinen Spiele für unvergessliche Abende: erotische Karten, Herausforderungen, interaktive Animationen. Spielerisch, gesellig und respektvoll."
-      canonical="https://akoky.com/de/spiele"
-      lang="de"
-    />
     <HreflangTags slug="spiele" />
     <ContentPageLayout
       lang="de"
