@@ -9,7 +9,6 @@ interface HeaderProps {
 
 const LANGUAGES = [
   { code: "fr" as Lang, flag: "🇫🇷", label: "Français" },
-  { code: "en" as Lang, flag: "🇬🇧", label: "English" },
   { code: "es" as Lang, flag: "🇪🇸", label: "Español" },
   { code: "de" as Lang, flag: "🇩🇪", label: "Deutsch" },
   { code: "it" as Lang, flag: "🇮🇹", label: "Italiano" },
