@@ -73,7 +73,6 @@ const CONCOURS_LABELS: Record<Lang, { href: string; label: string }> = {
 
 const LOGIN_LABELS: Record<Lang, string> = {
   fr: "Connexion",
-  en: "Login",
   es: "Iniciar sesión",
   de: "Anmelden",
   it: "Accedi",
