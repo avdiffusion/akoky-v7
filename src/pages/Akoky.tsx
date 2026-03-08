@@ -53,7 +53,17 @@ const jsonSchema = {
 
 const Akoky = () => {
   return (
+    <>
+    <MetaTags
+      title="Notre Mission AKOKY – Communauté adulte premium & événements"
+      description="Découvrez les valeurs, la vision et les engagements de la communauté Akoky. Plateforme communautaire adulte premium en Europe."
+      canonical="https://akoky.com/fr/akoky"
+      lang="fr"
+      ogImage="/images/akoky.webp"
+    />
+    <HreflangTags slug="akoky" />
     <ContentPageLayout
+      lang="fr"
       title="Notre Mission AKOKY – Communauté adulte premium & événements"
       description="Découvrez les valeurs, la vision et les engagements de la communauté Akoky. Plateforme communautaire adulte premium en Europe."
       canonical="https://akoky.com/fr/akoky"
