@@ -1,6 +1,7 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
+import ReviewsList from "@/components/reviews/ReviewsList";
 
 const FAQ = [
   { question: "Le recensioni su AKOKY sono autentiche?", answer: "Sì. Tutte le recensioni sono collegate a profili verificati. Questo garantisce la loro autenticità e previene le manipolazioni." },
