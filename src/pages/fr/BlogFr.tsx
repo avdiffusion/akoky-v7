@@ -25,7 +25,7 @@ const FEATURED_ARTICLES = [
   {
     title: "Débuter dans le Libertinage en France — Conseils Pratiques 2026",
     description: "Guide complet pour les débutants : comment préparer votre première expérience libertine, choisir un club et respecter les codes.",
-    image: "https://akoky.com/images/debuter-libertinage-cover.webp",
+    image: "/images/debuter-libertinage-cover.webp",
     href: "https://akoky.com/fr/blogs/debuter-libertinage-france-conseils",
     category: "Débutants",
     readTime: "15 min",
