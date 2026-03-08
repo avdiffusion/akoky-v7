@@ -7,7 +7,7 @@ const GuideUltimeLibertin = () => (
     <MetaTags title="Guide Ultime du Libertinage en France 2026 – Plus de 500 Clubs | AKOKY" description="Le guide de référence du libertinage en France : 500+ clubs vérifiés, conseils experts, codes à connaître, débuter sereinement. Tout savoir sur le libertinage français." canonical="https://akoky.com/fr/guide-ultime-libertinage-france" lang="fr" />
     <HreflangTags slug="guide-ultime-libertinage-france" />
     <ContentPageLayout lang="fr" title="Guide Ultime du Libertinage en France 2026 – Plus de 500 Clubs | AKOKY" description="Le guide de référence du libertinage en France : 500+ clubs vérifiés, conseils experts, codes à connaître, débuter sereinement. Tout savoir sur le libertinage français." canonical="https://akoky.com/fr/guide-ultime-libertinage-france" heroTitle="Guide Ultime du Libertinage en France" heroSubtitle="Le guide de référence complet : 500+ clubs vérifiés, conseils experts, codes à connaître"
-      heroImage="https://akoky.com/images/app-cover.webp" breadcrumb={[{ label: "Guide Ultime du Libertinage en France" }]}>
+      heroImage="/images/app-cover.webp" breadcrumb={[{ label: "Guide Ultime du Libertinage en France" }]}>
       <section className="py-12 md:py-20 px-4">
         <div className="container max-w-4xl mx-auto">
           <p className="text-muted-foreground leading-relaxed mb-4">Le guide de référence pour découvrir l&#39;univers du libertinage français : 500+ clubs vérifiés, événements exclusifs, codes à connaître, conseils d&#39;experts. Tout ce que vous devez savoir pour débuter sereinement.</p>

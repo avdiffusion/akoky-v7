@@ -246,7 +246,7 @@ const Home = () => {
                 <div className="bg-card border border-border rounded-2xl overflow-hidden">
                   <div className="relative">
                     <div className="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full z-10 animate-pulse">LIVE</div>
-                    <img loading="lazy" src="https://akoky.com/images/live.webp" alt="Live Preview" width="600" height="400" className="w-full aspect-video object-cover" />
+                    <img loading="lazy" src="/images/live-akoky.webp" alt="Live Preview" width="600" height="400" className="w-full aspect-video object-cover" />
                   </div>
                   <div className="p-4 flex justify-between items-center">
                     <div>
@@ -517,21 +517,21 @@ const Home = () => {
                 {
                   title: "Clubs Libertins à Paris 2026 — Le Guide Complet",
                   desc: "Découvrez les meilleurs clubs libertins de Paris en 2026 : ambiance, tarifs, dress code et conseils pour une première visite réussie.",
-                  image: "https://akoky.com/images/panorama-paris-nuit.webp",
+                  image: "/images/panorama-paris-nuit.webp",
                   href: "https://akoky.com/fr/blogs/clubs-libertins-paris-guide-2026",
                   tag: "Guide",
                 },
                 {
                   title: "La Scène Libertine à Lyon — Clubs et Événements 2026",
                   desc: "Explorez la scène libertine lyonnaise : meilleurs clubs, soirées et communauté swinger dans la capitale des Gaules.",
-                  image: "https://akoky.com/images/clubs-libertins-villes.webp",
+                  image: "/images/clubs-libertins-villes.webp",
                   href: "https://akoky.com/fr/blogs/scene-libertine-lyon-2026",
                   tag: "Guide",
                 },
                 {
                   title: "Débuter dans le Libertinage — Conseils Pratiques",
                   desc: "Guide complet pour les débutants : comment préparer votre première expérience libertine et respecter les codes.",
-                  image: "https://akoky.com/images/debuter-libertinage-cover.webp",
+                  image: "/images/debuter-libertinage-cover.webp",
                   href: "https://akoky.com/fr/blogs/debuter-libertinage-france-conseils",
                   tag: "Débutants",
                 },

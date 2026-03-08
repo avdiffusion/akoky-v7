@@ -95,7 +95,7 @@ const SaunasLibertins = () => (
         <div className="container max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div>
-            <p className="text-muted-foreground leading-relaxed mb-3">En France, les saunas libertins attirent aussi bien les couples débutants que les habitués en quête d'une expérience plus zen. Ils proposent généralement des espaces spa (hammam, jacuzzi, piscine chauffée), des cabines privées, des salons de relaxation et parfois des zones de massage. L'objectif : c</p>
+            <p className="text-muted-foreground leading-relaxed mb-3">En France, les saunas libertins attirent aussi bien les couples débutants que les habitués en quête d'une expérience plus zen. Ils proposent généralement des espaces spa (hammam, jacuzzi, piscine chauffée), des cabines privées, des salons de relaxation et parfois des zones de massage. L'objectif : créer une atmosphère où la sensualité émerge naturellement, sans pression ni agitation.</p>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <img src="/images/ambiance-sauna-libertin.webp" alt="Ambiance sauna libertin" className="w-full h-80 object-cover" loading="lazy" />
@@ -108,8 +108,8 @@ const SaunasLibertins = () => (
         <div className="container max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">Qu'est-ce qu'un sauna libertin ?</h2>
             <p className="text-muted-foreground leading-relaxed mb-3">Un sauna libertin est un établissement qui combine les codes du spa traditionnel avec la liberté des rencontres libertines. Vous y trouvez des équipements de détente (sauna sec, hammam, jacuzzi, douches sensorielles) associés à des espaces privés conçus pour l'intimité et les jeux sensuels.</p>
-            <p className="text-muted-foreground leading-relaxed mb-3">L'accueil se fait généralement en toute discrétion. On vous remet une serviette, un peignoir et un bracelet (parfois de couleur différente selon votre statut : couple, femme seule, homme seul). Vous circulez librement entre les différents espaces : certains sont collectifs et propices aux échanges, </p>
-            <p className="text-muted-foreground leading-relaxed mb-3">Les saunas libertins attirent principalement des couples, souvent trentenaires à quinquagénaires, à la recherche d'une expérience élégante et respectueuse. Les femmes seules y sont généralement les bienvenues. Les hommes seuls sont acceptés selon les établissements et les créneaux horaires, avec par</p>
+            <p className="text-muted-foreground leading-relaxed mb-3">L'accueil se fait généralement en toute discrétion. On vous remet une serviette, un peignoir et un bracelet (parfois de couleur différente selon votre statut : couple, femme seule, homme seul). Vous circulez librement entre les différents espaces : certains sont collectifs et propices aux échanges, d'autres privés pour plus d'intimité.</p>
+            <p className="text-muted-foreground leading-relaxed mb-3">Les saunas libertins attirent principalement des couples, souvent trentenaires à quinquagénaires, à la recherche d'une expérience élégante et respectueuse. Les femmes seules y sont généralement les bienvenues. Les hommes seuls sont acceptés selon les établissements et les créneaux horaires, avec parfois des quotas pour garantir un équilibre.</p>
         </div>
       </section>
 

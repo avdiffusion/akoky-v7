@@ -18,7 +18,7 @@ const DebuterLibertinage = () => (
       description="Guide complet pour débuter dans le libertinage : premiers pas, conseils, définitions et ressources. AKOKY accompagne les débutants."
       canonical="https://akoky.com/fr/debuter-libertinage"
       lang="fr"
-      ogImage="https://akoky.com/images/debuter-libertinage-cover.webp"
+      ogImage="/images/debuter-libertinage-cover.webp"
     />
     <HreflangTags slug="debuter-libertinage" />
     <ContentPageLayout
@@ -28,7 +28,7 @@ const DebuterLibertinage = () => (
       canonical="https://akoky.com/fr/debuter-libertinage"
       heroTitle="Guide du Libertinage en France"
       heroSubtitle="Tout ce qu'il faut savoir pour débuter dans le libertinage en toute sérénité."
-      heroImage="https://akoky.com/images/debuter-libertinage-cover.webp"
+      heroImage="/images/debuter-libertinage-cover.webp"
       breadcrumb={[{ label: "Débuter dans le Libertinage" }]}
       faq={FAQ}
     >

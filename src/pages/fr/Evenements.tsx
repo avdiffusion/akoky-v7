@@ -75,16 +75,16 @@ const BENEFITS = [
 ];
 
 const GALLERY = [
-  { img: "https://akoky.com/images/apéro-libertin-paris.webp", label: "Apéro libertin Akoky à Paris" },
-  { img: "https://akoky.com/images/soiree-libertine-plage.webp", label: "Soirée libertine Akoky plage" },
-  { img: "https://akoky.com/images/cap-agde-libertin.webp", label: "Événement libertin Akoky au Cap d'Agde" },
-  { img: "https://akoky.com/images/soiree-couple-libertin.webp", label: "Soirée libertine couples" },
-  { img: "https://akoky.com/images/apero-libertin-akoky.webp", label: "Apéro libertin Akoky en France" },
-  { img: "https://akoky.com/images/jeux-libertin.webp", label: "Jeux libertin exclusif Akoky" },
-  { img: "https://akoky.com/images/soiree-club-libertin.webp", label: "Soirée Akoky en club libertin" },
-  { img: "https://akoky.com/images/apero-libertin.webp", label: "Apéro libertin afterwork Akoky" },
-  { img: "https://akoky.com/images/evenement-libertin-europe.webp", label: "Événement libertin Akoky en Europe" },
-  { img: "https://akoky.com/images/evenement-libertin-espagne.webp", label: "Événement libertin Akoky en Espagne" },
+  { img: "/images/apero-libertin.webp", label: "Apéro libertin Akoky à Paris" },
+  { img: "/images/soiree-libertine-plage.webp", label: "Soirée libertine Akoky plage" },
+  { img: "/images/cap-agde-libertin.webp", label: "Événement libertin Akoky au Cap d'Agde" },
+  { img: "/images/soiree-couple-libertin.webp", label: "Soirée libertine couples" },
+  { img: "/images/apero-libertin-akoky.webp", label: "Apéro libertin Akoky en France" },
+  { img: "/images/jeux-libertin.webp", label: "Jeux libertin exclusif Akoky" },
+  { img: "/images/soiree-club-libertin.webp", label: "Soirée Akoky en club libertin" },
+  { img: "/images/apero-libertin.webp", label: "Apéro libertin afterwork Akoky" },
+  { img: "/images/evenement-libertin-europe.webp", label: "Événement libertin Akoky en Europe" },
+  { img: "/images/evenement-libertin-espagne.webp", label: "Événement libertin Akoky en Espagne" },
 ];
 
 const CTA_LINKS = [

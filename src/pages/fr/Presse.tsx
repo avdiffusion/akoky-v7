@@ -18,7 +18,7 @@ const Presse = () => (
       description="Espace presse AKOKY : dossier média, ressources graphiques, statistiques et contact partenariats. Rejoignez l'écosystème libertin premium européen."
       canonical="https://akoky.com/fr/presse"
       lang="fr"
-      ogImage="https://akoky.com/images/presse-libertine.webp"
+      ogImage="/images/presse-libertine.webp"
     />
     <HreflangTags slug="presse" />
     <ContentPageLayout
@@ -28,7 +28,7 @@ const Presse = () => (
       canonical="https://akoky.com/fr/presse"
       heroTitle="Presse & Partenariats"
       heroSubtitle="Espace presse AKOKY : dossier média, statistiques et contact relations médias."
-      heroImage="https://akoky.com/images/presse-libertine.webp"
+      heroImage="/images/presse-libertine.webp"
       breadcrumb={[{ label: "Presse & Partenariats" }]}
       faq={FAQ}
     >
@@ -36,9 +36,9 @@ const Presse = () => (
       <section className="py-12 px-4 bg-background">
         <div className="container max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-foreground mb-5">Akoky, la plateforme libertine premium européenne</h2>
-            <p className="text-muted-foreground leading-relaxed mb-3">Akoky est bien plus qu'un simple site libertin : c'est une plateforme libertine premium pensée pour structurer et moderniser l'écosystème libertin européen. Née de la volonté de ses fondateurs de proposer une alternative chic, sécurisée et respectueuse aux plateformes libertines traditionnelles, Akoky s'impose aujourd'hui comme un acteur incontourn</p>
-            <p className="text-muted-foreground leading-relaxed mb-3">Akoky fédère une communauté de couples, femmes et hommes libertins exigeants, qui recherchent des rencontres authentiques dans un cadre premium. La plateforme propose un annuaire complet des clubs libertins d'Europe, un agenda d'événements privés, des lives exclusifs, ainsi qu'un système de profils certifiés et de messagerie sécurisée via AKOKY Saf</p>
-            <p className="text-muted-foreground leading-relaxed mb-3">Au-delà de la plateforme, Akoky développe un véritable écosystème : merchandising, partenariats avec les clubs européens, programme d'affiliation pour les professionnels du milieu, et contenus éditoriaux destinés à valoriser une sexualité libre, décomplexée et respectueuse. C'est cette vision globale qui fait d'Akoky un projet sérieux, structuré et</p>
+            <p className="text-muted-foreground leading-relaxed mb-3">Akoky est bien plus qu'un simple site libertin : c'est une plateforme libertine premium pensée pour structurer et moderniser l'écosystème libertin européen. Née de la volonté de ses fondateurs de proposer une alternative chic, sécurisée et respectueuse aux plateformes libertines traditionnelles, Akoky s'impose aujourd'hui comme un acteur incontournable du libertinage en ligne en France, en Belgique, en Espagne et dans toute l'Europe.</p>
+            <p className="text-muted-foreground leading-relaxed mb-3">Akoky fédère une communauté de couples, femmes et hommes libertins exigeants, qui recherchent des rencontres authentiques dans un cadre premium. La plateforme propose un annuaire complet des clubs libertins d'Europe, un agenda d'événements privés, des lives exclusifs, ainsi qu'un système de profils certifiés et de messagerie sécurisée via AKOKY Safe.</p>
+            <p className="text-muted-foreground leading-relaxed mb-3">Au-delà de la plateforme, Akoky développe un véritable écosystème : merchandising, partenariats avec les clubs européens, programme d'affiliation pour les professionnels du milieu, et contenus éditoriaux destinés à valoriser une sexualité libre, décomplexée et respectueuse. C'est cette vision globale qui fait d'Akoky un projet sérieux, structuré et pérenne.</p>
         </div>
       </section>
       <section className="py-12 px-4 bg-card/50">
@@ -53,7 +53,7 @@ const Presse = () => (
         <div className="container max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-foreground mb-5">Affiliation & Partenariats by Akoky</h2>
             <p className="text-muted-foreground leading-relaxed mb-3">Rejoignez le programme d'affiliation libertine le plus performant d'Europe</p>
-            <p className="text-muted-foreground leading-relaxed mb-3">Le programme d'affiliation Akoky s'adresse aux clubs libertins, organisateurs d'événements privés, médias spécialisés, influenceurs et professionnels du secteur adulte qui souhaitent monétiser leur audience tout en offrant un service de qualité à leur communauté. En devenant partenaire affilié Akoky, vous intégrez un écosystème premium où qualité, </p>
+            <p className="text-muted-foreground leading-relaxed mb-3">Le programme d'affiliation Akoky s'adresse aux clubs libertins, organisateurs d'événements privés, médias spécialisés, influenceurs et professionnels du secteur adulte qui souhaitent monétiser leur audience tout en offrant un service de qualité à leur communauté. En devenant partenaire affilié Akoky, vous intégrez un écosystème premium où qualité, éthique et performance vont de pair.</p>
             <p className="text-muted-foreground leading-relaxed mb-3">Vous gérez un club libertin en Europe ? Akoky vous offre une visibilité maximale auprès de milliers de membres VIP actifs. En intégrant notre annuaire premium et notre programme d'affiliation, vous bénéficiez d'un trafic qualifié, de réservations en ligne et de commissions attractives sur chaque abonnement généré.</p>
         </div>
       </section>
@@ -61,7 +61,7 @@ const Presse = () => (
         <div className="container max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-foreground mb-5">Écosystème & Données Akoky</h2>
             <p className="text-muted-foreground leading-relaxed mb-3">Une plateforme construite sur des fondations solides et structurées</p>
-            <p className="text-muted-foreground leading-relaxed mb-3">Akoky ne s'est pas construit en quelques semaines. Derrière la plateforme se cache un travail de fond colossal réalisé par les fondateurs et l'équipe technique : collecte, structuration et mise à jour permanente d'une base de données exhaustive sur l'univers libertin européen. Ce socle de données fiables et vérifiées constitue la colonne vertébrale</p>
+            <p className="text-muted-foreground leading-relaxed mb-3">Akoky ne s'est pas construit en quelques semaines. Derrière la plateforme se cache un travail de fond colossal réalisé par les fondateurs et l'équipe technique : collecte, structuration et mise à jour permanente d'une base de données exhaustive sur l'univers libertin européen. Ce socle de données fiables et vérifiées constitue la colonne vertébrale de l'ensemble de nos services.</p>
             <p className="text-muted-foreground leading-relaxed mb-3">Base de données structurée recensant les clubs libertins d'Europe avec coordonnées vérifiées, horaires d'ouverture, tarifs, photos, avis certifiés et géolocalisation précise. Mise à jour hebdomadaire par notre équipe.</p>
         </div>
       </section>

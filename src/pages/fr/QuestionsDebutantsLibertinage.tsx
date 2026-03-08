@@ -37,7 +37,7 @@ const QuestionsDebutantsLibertinage = () => (
       description="Les 24 questions les plus fréquentes des débutants sur le libertinage. Réponses complètes et bienveillantes par AKOKY."
       canonical="https://akoky.com/fr/questions-debutants-libertinage"
       lang="fr"
-      ogImage="https://akoky.com/images/questions-debutants-cover.webp"
+      ogImage="/images/questions-debutants-cover.webp"
     />
     <HreflangTags slug="questions-debutants-libertinage" />
     <ContentPageLayout
@@ -47,7 +47,7 @@ const QuestionsDebutantsLibertinage = () => (
       canonical="https://akoky.com/fr/questions-debutants-libertinage"
       heroTitle="Questions de Débutants sur le Libertinage"
       heroSubtitle="Les réponses aux questions que tout débutant se pose sur le libertinage."
-      heroImage="https://akoky.com/images/questions-debutants-cover.webp"
+      heroImage="/images/questions-debutants-cover.webp"
       breadcrumb={[{ label: "Questions de Débutants" }]}
       faq={FAQ}
     >
