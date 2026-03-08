@@ -127,7 +127,7 @@ const Home = () => {
         <section
           className="relative min-h-[90vh] md:min-h-[75vh] flex items-center justify-center text-center overflow-hidden pt-[70px]"
           style={{
-            backgroundImage: "url('https://legal.akoky.com/UPLOAD-AKOKY/AKOKY.COM/images/hero-home/home2-desktop.webp')",
+            backgroundImage: "url('/images/home2-desktop.webp')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
