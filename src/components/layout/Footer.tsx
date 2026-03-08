@@ -119,7 +119,7 @@ const BRAND_DESC: Record<Lang, string> = {
 
 const CTA_LABELS: Record<Lang, { join: string; clubs: string; joinDesc: string }> = {
   fr: { join: "Rejoignez la communauté AKOKY", clubs: "Voir les clubs", joinDesc: "1,5 million de membres sur le premier réseau social libertin complet. Inscription gratuite, sans carte bancaire." },
-  en: { join: "Join the AKOKY community", clubs: "View clubs", joinDesc: "1.5 million members on the leading complete libertine social network. Free sign-up, no credit card required." },
+  
   es: { join: "Únete a la comunidad AKOKY", clubs: "Ver clubes", joinDesc: "1,5 millones de miembros en la primera red social libertina completa. Registro gratuito, sin tarjeta de crédito." },
   de: { join: "Treten Sie der AKOKY-Community bei", clubs: "Clubs anzeigen", joinDesc: "1,5 Millionen Mitglieder im führenden libertinen sozialen Netzwerk. Kostenlose Anmeldung, keine Kreditkarte erforderlich." },
   it: { join: "Unisciti alla comunità AKOKY", clubs: "Vedi i club", joinDesc: "1,5 milioni di membri sulla prima rete sociale libertina completa. Iscrizione gratuita, senza carta di credito." },
