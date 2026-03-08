@@ -18,7 +18,7 @@ const Presse = () => (
       description="Espace presse AKOKY : dossier média, ressources graphiques, statistiques et contact partenariats. Rejoignez l'écosystème libertin premium européen."
       canonical="https://akoky.com/fr/presse"
       lang="fr"
-      ogImage="https://akoky.com/images/presse-libertine.webp"
+      ogImage="/images/presse-libertine.webp"
     />
     <HreflangTags slug="presse" />
     <ContentPageLayout
