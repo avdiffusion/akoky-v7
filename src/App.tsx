@@ -10,6 +10,7 @@ import HomeFr from "./pages/fr/Home";
 import Akoky from "./pages/Akoky";
 import Application from "./pages/Application";
 import Avis from "./pages/Avis";
+import ReviewsEn from "./pages/en/ReviewsEn";
 import Parrainage from "./pages/Parrainage";
 import Clubbing from "./pages/Clubbing";
 import ClubbingBelgique from "./pages/ClubbingBelgique";
@@ -657,7 +658,8 @@ const App = () => (
             <Route path="/pt/concours" element={<ConcoursListing lang="pt" />} />
             <Route path="/pt/concours/:slug" element={<ConcoursArticlePage lang="pt" />} />
 
-            {/* ── EN Blog + Concours ──────────────────────────────────── */}
+            {/* ── EN Pages ──────────────────────────────────────────── */}
+            <Route path="/en/reviews" element={<ReviewsEn />} />
             <Route path="/en/blog" element={<BlogListing lang="en" />} />
             <Route path="/en/blog/:slug" element={<BlogArticlePage lang="en" />} />
             <Route path="/en/concours" element={<ConcoursListing lang="en" />} />
