@@ -124,6 +124,11 @@ import AppEs from "./pages/es/AppEs";
 import VisionEs from "./pages/es/VisionEs";
 import VipEs from "./pages/es/VipEs";
 import AkokyVsWyyldeEs from "./pages/es/AkokyVsWyyldeEs";
+import AkokyVsNousLibEs from "./pages/es/AkokyVsNousLibEs";
+import AkokyVsJmDateEs from "./pages/es/AkokyVsJmDateEs";
+import AkokyVsSexyLibEs from "./pages/es/AkokyVsSexyLibEs";
+import AkokyVsCasualClubEs from "./pages/es/AkokyVsCasualClubEs";
+import AkokyVsLovooEs from "./pages/es/AkokyVsLovooEs";
 import MejorSitioLibertino from "./pages/es/MejorSitioLibertino";
 import SaunasLibertinos from "./pages/es/SaunasLibertinos";
 import ActualidadLibertina from "./pages/es/ActualidadLibertina";
@@ -469,6 +474,11 @@ const App = () => (
             <Route path="/es/vision" element={<VisionEs />} />
             <Route path="/es/vip" element={<VipEs />} />
             <Route path="/es/akoky-vs-wyylde" element={<AkokyVsWyyldeEs />} />
+            <Route path="/es/akoky-vs-nouslib" element={<AkokyVsNousLibEs />} />
+            <Route path="/es/akoky-vs-jmdate" element={<AkokyVsJmDateEs />} />
+            <Route path="/es/akoky-vs-sexylib" element={<AkokyVsSexyLibEs />} />
+            <Route path="/es/akoky-vs-casualclub" element={<AkokyVsCasualClubEs />} />
+            <Route path="/es/akoky-vs-lovoo" element={<AkokyVsLovooEs />} />
             <Route path="/es/mejor-sitio-libertino" element={<MejorSitioLibertino />} />
             <Route path="/es/saunas-libertinos" element={<SaunasLibertinos />} />
             <Route path="/es/actualidad-libertina" element={<ActualidadLibertina />} />
