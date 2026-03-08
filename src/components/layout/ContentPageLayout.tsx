@@ -10,8 +10,10 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+type Lang = "fr" | "en" | "es" | "de" | "it" | "pt";
+
 interface ContentPageLayoutProps {
-  lang?: string;
+  lang?: Lang;
   title: string;
   description: string;
   canonical: string;
@@ -25,7 +27,35 @@ interface ContentPageLayoutProps {
   schema?: any;
 }
 
+const HOME_LABELS: Record<Lang, string> = {
+  fr: "Accueil",
+  en: "Home",
+  es: "Inicio",
+  de: "Startseite",
+  it: "Home",
+  pt: "Início",
+};
+
+const FAQ_TITLES: Record<Lang, string> = {
+  fr: "Questions fréquentes",
+  en: "Frequently Asked Questions",
+  es: "Preguntas frecuentes",
+  de: "Häufig gestellte Fragen",
+  it: "Domande frequenti",
+  pt: "Perguntas frequentes",
+};
+
+const CTA_DATA: Record<Lang, { title: string; desc: string; register: string; clubs: string; clubsHref: string }> = {
+  fr: { title: "Rejoignez la communauté AKOKY", desc: "1,5 million de membres sur le premier réseau social libertin complet. Inscription gratuite, sans carte bancaire.", register: "Créer mon compte gratuit", clubs: "Voir les clubs", clubsHref: "/clubbing" },
+  en: { title: "Join the AKOKY community", desc: "1.5 million members on the leading complete libertine social network. Free sign-up, no credit card required.", register: "Create my free account", clubs: "View clubs", clubsHref: "/en/clubbing" },
+  es: { title: "Únete a la comunidad AKOKY", desc: "1,5 millones de miembros en la primera red social libertina completa. Registro gratuito, sin tarjeta de crédito.", register: "Crear mi cuenta gratis", clubs: "Ver clubes", clubsHref: "/es/clubbing" },
+  de: { title: "Treten Sie der AKOKY-Community bei", desc: "1,5 Millionen Mitglieder im führenden libertinen sozialen Netzwerk. Kostenlose Anmeldung, keine Kreditkarte erforderlich.", register: "Kostenloses Konto erstellen", clubs: "Clubs anzeigen", clubsHref: "/de/clubbing" },
+  it: { title: "Unisciti alla comunità AKOKY", desc: "1,5 milioni di membri sulla prima rete sociale libertina completa. Iscrizione gratuita, senza carta di credito.", register: "Crea il mio account gratuito", clubs: "Vedi i club", clubsHref: "/it/clubbing" },
+  pt: { title: "Junte-se à comunidade AKOKY", desc: "1,5 milhão de membros na principal rede social libertina completa. Registo gratuito, sem cartão de crédito.", register: "Criar minha conta grátis", clubs: "Ver clubes", clubsHref: "/pt/clubbing" },
+};
+
 const ContentPageLayout = ({
+  lang = "fr" as Lang,
   title,
   description,
   canonical,
@@ -38,6 +68,12 @@ const ContentPageLayout = ({
   children,
   schema,
 }: ContentPageLayoutProps) => {
+  const safeLang = (lang || "fr") as Lang;
+  const homeLabel = HOME_LABELS[safeLang];
+  const homeHref = safeLang === "fr" ? "/" : `/${safeLang}`;
+  const faqTitle = FAQ_TITLES[safeLang];
+  const cta = CTA_DATA[safeLang];
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -70,7 +106,7 @@ const ContentPageLayout = ({
         <meta name="twitter:card" content="summary_large_image" />
         {schema && (
           <script type="application/ld+json">
-            {JSON.stringify(schema)}
+            {JSON.stringify(Array.isArray(schema) ? schema : [schema])}
           </script>
         )}
         {faqSchema && (
@@ -80,7 +116,7 @@ const ContentPageLayout = ({
         )}
       </Helmet>
 
-      <Header />
+      <Header lang={safeLang} />
 
       <main className="min-h-screen bg-background">
         {/* HERO */}
@@ -98,7 +134,7 @@ const ContentPageLayout = ({
             <div className="container relative z-20 max-w-4xl mx-auto text-center">
               {breadcrumb && (
                 <nav className="flex items-center justify-center gap-2 text-sm text-white/60 mb-6 flex-wrap">
-                  <Link to="/" className="hover:text-primary transition-colors">Accueil</Link>
+                  <Link to={homeHref} className="hover:text-primary transition-colors">{homeLabel}</Link>
                   {breadcrumb.map((item, idx) => (
                     <span key={idx} className="flex items-center gap-2">
                       <span>›</span>
@@ -122,6 +158,21 @@ const ContentPageLayout = ({
         ) : (
           <section className="relative min-h-[60vh] flex items-center justify-center pt-24 pb-16 px-4 overflow-hidden bg-gradient-to-b from-black via-card to-background">
             <div className="container relative z-20 max-w-4xl mx-auto text-center">
+              {breadcrumb && (
+                <nav className="flex items-center justify-center gap-2 text-sm text-white/60 mb-6 flex-wrap">
+                  <Link to={homeHref} className="hover:text-primary transition-colors">{homeLabel}</Link>
+                  {breadcrumb.map((item, idx) => (
+                    <span key={idx} className="flex items-center gap-2">
+                      <span>›</span>
+                      {item.href ? (
+                        <Link to={item.href} className="hover:text-primary transition-colors">{item.label}</Link>
+                      ) : (
+                        <span className="text-white">{item.label}</span>
+                      )}
+                    </span>
+                  ))}
+                </nav>
+              )}
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight font-display">
                 {heroTitle}
               </h1>
@@ -140,7 +191,7 @@ const ContentPageLayout = ({
           <section className="py-16 md:py-24 px-4">
             <div className="container max-w-3xl mx-auto">
               <h2 className="text-3xl font-bold text-foreground mb-10 text-center font-display">
-                Questions fréquentes
+                {faqTitle}
               </h2>
               <Accordion type="single" collapsible className="w-full space-y-4">
                 {faq.map((item, idx) => (
@@ -163,31 +214,30 @@ const ContentPageLayout = ({
           <div className="absolute inset-0 bg-gradient-to-t from-black via-primary/5 to-black z-0" />
           <div className="container relative z-10 max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-black text-white mb-8 font-display">
-              Rejoignez la communauté AKOKY
+              {cta.title}
             </h2>
             <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-              1,5 million de membres sur le premier réseau social libertin complet.
-              Inscription gratuite, sans carte bancaire.
+              {cta.desc}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
                 href="https://app.akoky.com/register"
                 className="px-8 py-4 rounded-full bg-gradient-to-r from-primary to-primary-dark text-black font-black text-lg hover:scale-105 hover:shadow-xl hover:shadow-primary/20 transition-all w-full sm:w-auto"
               >
-                Créer mon compte gratuit
+                {cta.register}
               </a>
               <Link
-                to="/clubbing"
+                to={cta.clubsHref}
                 className="px-8 py-4 rounded-full bg-white/5 border border-white/10 text-white font-bold text-lg hover:bg-white/10 transition-all w-full sm:w-auto"
               >
-                Voir les clubs
+                {cta.clubs}
               </Link>
             </div>
           </div>
         </section>
       </main>
 
-      <Footer />
+      <Footer lang={safeLang} />
     </>
   );
 };
