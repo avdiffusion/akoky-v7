@@ -49,6 +49,7 @@ interface ComparatifLayoutProps {
 }
 
 const ComparatifLayout = ({
+  lang = "fr",
   title,
   description,
   canonical,
