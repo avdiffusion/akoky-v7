@@ -1,8 +1,11 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
-import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
 
-const FAQ = [];
+const FAQ = [
+  { question: "Qu'est-ce qu'Akoky ?", answer: "Akoky est une plateforme libertine premium européenne dédiée aux rencontres adultes, aux clubs libertins, aux événements privés et aux contenus éditoriaux spécialisés." },
+  { question: "À qui s'adresse l'espace presse Akoky ?", answer: "L'espace presse est destiné aux journalistes, médias spécialisés, blogueurs, influenceurs, clubs libertins et partenaires professionnels." },
+  { question: "Comment contacter l'équipe presse ?", answer: "Pour toute demande presse, interview ou partenariat média, contactez presse@akoky.com." },
+];
 
 const BRANDING = [
   { img: "/images/branding/tshirts-akoky-premium.webp", alt: "T-shirts et vêtements Akoky premium avec logo AK" },
@@ -13,18 +16,11 @@ const BRANDING = [
 
 const Presse = () => (
   <>
-    <MetaTags
-      title="Presse & Partenariats AKOKY – Kit Média & Contact | AKOKY"
-      description="Espace presse AKOKY : dossier média, ressources graphiques, statistiques et contact partenariats. Rejoignez l'écosystème libertin premium européen."
-      canonical="https://akoky.com/fr/presse"
-      lang="fr"
-      ogImage="/images/presse-libertine.webp"
-    />
     <HreflangTags slug="presse" />
     <ContentPageLayout
       lang="fr"
-      title="Presse & Partenariats AKOKY"
-      description="Kit presse, ressources médias et partenariats AKOKY"
+      title="Presse & Partenariats AKOKY – Kit Média & Contact | AKOKY"
+      description="Espace presse AKOKY : dossier média, ressources graphiques, statistiques et contact partenariats. Rejoignez l'écosystème libertin premium européen."
       canonical="https://akoky.com/fr/presse"
       heroTitle="Presse & Partenariats"
       heroSubtitle="Espace presse AKOKY : dossier média, statistiques et contact relations médias."

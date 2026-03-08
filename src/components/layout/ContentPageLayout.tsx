@@ -44,7 +44,7 @@ const FAQ_TITLES: Record<Lang, string> = {
 };
 
 const CTA_DATA: Record<Lang, { title: string; desc: string; register: string; clubs: string; clubsHref: string }> = {
-  fr: { title: "Rejoignez la communauté AKOKY", desc: "1,5 million de membres sur le premier réseau social libertin complet. Inscription gratuite, sans carte bancaire.", register: "Créer mon compte gratuit", clubs: "Voir les clubs", clubsHref: "/clubbing" },
+  fr: { title: "Rejoignez la communauté AKOKY", desc: "1,5 million de membres sur le premier réseau social libertin complet. Inscription gratuite, sans carte bancaire.", register: "Créer mon compte gratuit", clubs: "Voir les clubs", clubsHref: "/fr/clubbing" },
   es: { title: "Únete a la comunidad AKOKY", desc: "1,5 millones de miembros en la primera red social libertina completa. Registro gratuito, sin tarjeta de crédito.", register: "Crear mi cuenta gratis", clubs: "Ver clubes", clubsHref: "/es/clubbing" },
   de: { title: "Treten Sie der AKOKY-Community bei", desc: "1,5 Millionen Mitglieder im führenden libertinen sozialen Netzwerk. Kostenlose Anmeldung, keine Kreditkarte erforderlich.", register: "Kostenloses Konto erstellen", clubs: "Clubs anzeigen", clubsHref: "/de/clubbing" },
   it: { title: "Unisciti alla comunità AKOKY", desc: "1,5 milioni di membri sulla prima rete sociale libertina completa. Iscrizione gratuita, senza carta di credito.", register: "Crea il mio account gratuito", clubs: "Vedi i club", clubsHref: "/it/clubbing" },
@@ -67,7 +67,7 @@ const ContentPageLayout = ({
 }: ContentPageLayoutProps) => {
   const safeLang = (lang || "fr") as Lang;
   const homeLabel = HOME_LABELS[safeLang];
-  const homeHref = safeLang === "fr" ? "/" : `/${safeLang}`;
+  const homeHref = `/${safeLang}`;
   const faqTitle = FAQ_TITLES[safeLang];
   const cta = CTA_DATA[safeLang];
 

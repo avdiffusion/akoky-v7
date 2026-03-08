@@ -2,7 +2,6 @@ import { Helmet } from "react-helmet-async";
 
 const LOCALE_MAP: Record<string, string> = {
   fr: "fr_FR",
-  en: "en_US",
   es: "es_ES",
   de: "de_DE",
   it: "it_IT",

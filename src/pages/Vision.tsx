@@ -3,14 +3,15 @@ import { Link } from "react-router-dom";
 
 const Vision = () => (
   <ContentPageLayout
+    lang="fr"
     title="Notre Vision – L'évolution du libertinage moderne | AKOKY"
     description="Découvrez la vision d'Akoky : liberté assumée, consentement clair, sécurité renforcée, technologie au service de l'humain et élégance."
-    canonical="https://akoky.com/vision"
+    canonical="https://akoky.com/fr/vision"
     heroTitle="Notre Vision"
     heroSubtitle="L'évolution du libertinage moderne"
-    heroImage="https://legal.akoky.com/UPLOAD-AKOKY/AKOKY.COM/images/images-cover-pages/vision-cover.webp"
+    heroImage="/images/vision-cover.webp"
     breadcrumb={[{ label: "Vision" }]}
-    schema={{ "@context": "https://schema.org", "@type": "AboutPage", name: "Vision AKOKY", url: "https://akoky.com/vision" }}
+    schema={{ "@context": "https://schema.org", "@type": "AboutPage", name: "Vision AKOKY", url: "https://akoky.com/fr/vision" }}
   >
     <section className="py-16 px-4">
       <div className="container max-w-4xl mx-auto space-y-16">
@@ -68,7 +69,7 @@ const Vision = () => (
         </div>
 
         <div className="text-center">
-          <Link to="/akoky" className="px-8 py-4 rounded-full bg-gradient-to-r from-primary to-primary-dark text-black font-bold text-lg hover:scale-105 transition-all inline-block">Découvrir Akoky</Link>
+          <Link to="/fr/akoky" className="px-8 py-4 rounded-full bg-gradient-to-r from-primary to-primary-dark text-black font-bold text-lg hover:scale-105 transition-all inline-block">Découvrir Akoky</Link>
         </div>
       </div>
     </section>

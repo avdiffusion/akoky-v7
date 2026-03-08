@@ -1,4 +1,6 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
+import MetaTags from "@/components/seo/MetaTags";
+import HreflangTags from "@/components/seo/HreflangTags";
 import { Link } from "react-router-dom";
 
 const faqAkoky = [
@@ -40,7 +42,7 @@ const jsonSchema = {
     "@type": "ContactPoint",
     "contactType": "Customer Service",
     "email": "contact@akoky.com",
-    "availableLanguage": ["fr", "en", "es", "de", "it", "pt"]
+    "availableLanguage": ["fr", "es", "de", "it", "pt"]
   },
   "sameAs": [
     "https://www.facebook.com/akokyofficial",
@@ -51,7 +53,17 @@ const jsonSchema = {
 
 const Akoky = () => {
   return (
+    <>
+    <MetaTags
+      title="Notre Mission AKOKY – Communauté adulte premium & événements"
+      description="Découvrez les valeurs, la vision et les engagements de la communauté Akoky. Plateforme communautaire adulte premium en Europe."
+      canonical="https://akoky.com/fr/akoky"
+      lang="fr"
+      ogImage="/images/akoky.webp"
+    />
+    <HreflangTags slug="akoky" />
     <ContentPageLayout
+      lang="fr"
       title="Notre Mission AKOKY – Communauté adulte premium & événements"
       description="Découvrez les valeurs, la vision et les engagements de la communauté Akoky. Plateforme communautaire adulte premium en Europe."
       canonical="https://akoky.com/fr/akoky"
@@ -225,6 +237,7 @@ const Akoky = () => {
         </div>
       </section>
     </ContentPageLayout>
+    </>
   );
 };
 

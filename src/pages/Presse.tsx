@@ -2,12 +2,13 @@ import ContentPageLayout from "@/components/layout/ContentPageLayout";
 
 const Presse = () => (
   <ContentPageLayout
+    lang="fr"
     title="Presse & Partenariats – Médias, Clubs & Affiliation | AKOKY"
     description="Médias, clubs libertins et partenaires : rejoignez l'écosystème Akoky. Espace presse, programme d'affiliation et partenariats."
-    canonical="https://akoky.com/presse"
+    canonical="https://akoky.com/fr/presse"
     heroTitle="Presse & Partenariats"
     heroSubtitle="Médias, clubs libertins et partenaires : rejoignez l'écosystème Akoky"
-    heroImage="https://akoky.com/images/presse-libertine.webp"
+    heroImage="/images/presse-libertine.webp"
     breadcrumb={[{ label: "Presse" }]}
     faq={[
       { question: "Qu'est-ce qu'Akoky ?", answer: "Akoky est une plateforme libertine premium européenne dédiée aux rencontres adultes, aux clubs libertins, aux événements privés et aux contenus éditoriaux spécialisés." },
@@ -15,7 +16,7 @@ const Presse = () => (
       { question: "Akoky propose-t-elle des partenariats ou un programme d'affiliation ?", answer: "Oui. Akoky propose un programme d'affiliation et des partenariats dédiés aux clubs libertins, organisateurs d'événements, médias et professionnels du secteur adulte." },
       { question: "Comment contacter l'équipe presse Akoky ?", answer: "Pour toute demande presse, interview ou partenariat média, l'équipe Akoky est joignable par email à l'adresse presse@akoky.com." },
     ]}
-    schema={{ "@context": "https://schema.org", "@type": "WebPage", name: "Presse & Partenariats AKOKY", url: "https://akoky.com/presse" }}
+    schema={{ "@context": "https://schema.org", "@type": "WebPage", name: "Presse & Partenariats AKOKY", url: "https://akoky.com/fr/presse" }}
   >
     <section className="py-16 px-4">
       <div className="container max-w-4xl mx-auto space-y-16">

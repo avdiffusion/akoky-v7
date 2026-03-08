@@ -1,23 +1,19 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
-import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
 import { Link } from "react-router-dom";
 
-const FAQ = [];
+const FAQ = [
+  { question: "Quelle est la vision d'AKOKY ?", answer: "AKOKY souhaite révolutionner le libertinage numérique avec une approche éthique, sécurisée et bienveillante, en plaçant le consentement et la confiance au cœur de chaque interaction." },
+  { question: "D'où vient AKOKY ?", answer: "AKOKY est né de l'expérience AcoquinementVotre, un projet communautaire initié en 2014, qui a évolué vers une plateforme professionnelle et pérenne en conservant ses valeurs d'authenticité." },
+  { question: "Quels sont les piliers de la vision AKOKY ?", answer: "Les cinq piliers sont : liberté assumée, consentement clair, sécurité renforcée, technologie au service de l'humain, et élégance et discrétion." },
+];
 
 const Vision = () => (
   <>
-    <MetaTags
-      title="Notre Vision AKOKY – La Plateforme Libertine Premium | AKOKY"
-      description="Découvrez la vision d'AKOKY : révolutionner le libertinage numérique avec éthique, innovation et bienveillance."
-      canonical="https://akoky.com/fr/vision"
-      lang="fr"
-      ogImage="/images/vision-cover.webp"
-    />
     <HreflangTags slug="vision" />
     <ContentPageLayout
       lang="fr"
-      title="Notre Vision AKOKY – La Plateforme Libertine Premium"
+      title="Notre Vision AKOKY – La Plateforme Libertine Premium | AKOKY"
       description="Découvrez la vision d'AKOKY : révolutionner le libertinage numérique avec éthique, innovation et bienveillance."
       canonical="https://akoky.com/fr/vision"
       heroTitle="Notre Vision"

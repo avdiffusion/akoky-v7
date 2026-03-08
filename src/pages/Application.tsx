@@ -1,4 +1,6 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
+import MetaTags from "@/components/seo/MetaTags";
+import HreflangTags from "@/components/seo/HreflangTags";
 import { Link } from "react-router-dom";
 
 const Application = () => {
@@ -45,7 +47,17 @@ const Application = () => {
   };
 
   return (
+    <>
+    <MetaTags
+      title="App AKOKY iOS/Android | Messagerie & Géolocalisation Clubs"
+      description="Téléchargez l'app AKOKY : messagerie sécurisée, géolocalisation des 120 clubs libertins, notifications événements. Disponible iOS & Android. Gratuit."
+      canonical="https://akoky.com/fr/application"
+      lang="fr"
+      ogImage="/images/app-cover.webp"
+    />
+    <HreflangTags slug="application" />
     <ContentPageLayout
+      lang="fr"
       title="App AKOKY iOS/Android | Messagerie & Géolocalisation Clubs"
       description="Téléchargez l'app AKOKY : messagerie sécurisée, géolocalisation des 120 clubs libertins, notifications événements. Disponible iOS & Android. Gratuit."
       canonical="https://akoky.com/fr/application"
@@ -342,6 +354,7 @@ const Application = () => {
         </div>
       </section>
     </ContentPageLayout>
+    </>
   );
 };
 

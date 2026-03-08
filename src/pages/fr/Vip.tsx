@@ -1,5 +1,4 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
-import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
 import { Link } from "react-router-dom";
 
@@ -17,17 +16,10 @@ const FAQ = [
 
 const Vip = () => (
   <>
-    <MetaTags
-      title="Statut VIP Akoky 2026 – Avantages & Fonctionnalités Premium | AKOKY"
-      description="Découvrez le statut VIP Akoky : fonctionnalités exclusives, avantages premium et accès prioritaire. Rejoignez l'élite libertine."
-      canonical="https://akoky.com/fr/vip"
-      lang="fr"
-      ogImage="/images/vip-cover.webp"
-    />
     <HreflangTags slug="vip" />
     <ContentPageLayout
       lang="fr"
-      title="Statut VIP Akoky 2026 – Avantages & Fonctionnalités Premium"
+      title="Statut VIP Akoky 2026 – Avantages & Fonctionnalités Premium | AKOKY"
       description="Découvrez le statut VIP Akoky : fonctionnalités exclusives, avantages premium et accès prioritaire. Rejoignez l'élite libertine."
       canonical="https://akoky.com/fr/vip"
       heroTitle="Statut VIP Akoky"
