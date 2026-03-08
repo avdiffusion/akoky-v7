@@ -105,7 +105,14 @@ import BlogAdmin from "./pages/admin/BlogAdmin";
 import BlogEditor from "./pages/admin/BlogEditor";
 import BlogLogin from "./pages/admin/BlogLogin";
 
-// ─── Pages ES livraison 3 ─────────────────────────────────────────────────────
+// ─── Concours system ─────────────────────────────────────────────────────────
+import ConcoursListing from "./pages/concours/ConcoursListing";
+import ConcoursArticlePage from "./pages/concours/ConcoursArticle";
+import ConcoursAdmin from "./pages/admin/ConcoursAdmin";
+import ConcoursEditor from "./pages/admin/ConcoursEditor";
+import ConcoursLogin from "./pages/admin/ConcoursLogin";
+
+
 import HomeEs from "./pages/es/HomeEs";
 import AkokyEs from "./pages/es/AkokyEs";
 import LibertingajeEs from "./pages/es/LibertingajeEs";
@@ -334,7 +341,7 @@ const App = () => (
             <Route path="/fr/premier-rendez-vous-libertin" element={<PremierRendezVousLibertin />} />
             <Route path="/fr/questions-debutants-libertinage" element={<QuestionsDebutantsLibertinage />} />
             <Route path="/fr/contact" element={<Contact />} />
-            <Route path="/fr/concours" element={<Concours />} />
+            <Route path="/fr/concours" element={<ConcoursListing lang="fr" />} />
             <Route path="/fr/clubbing" element={<Clubbing />} />
             <Route path="/fr/clubbing-france-europe" element={<ClubbingFranceEurope />} />
             <Route path="/fr/clubbing-belgique" element={<ClubbingBelgique />} />
@@ -400,7 +407,7 @@ const App = () => (
             <Route path="/fr/guide-libertin-france" element={<GuideLibertin />} />
             <Route path="/fr/guide-ultime-libertinage-france" element={<GuideUltimeLibertin />} />
             <Route path="/fr/concours-six-cles" element={<ConcoursSixCles />} />
-            <Route path="/fr/annuaire-clubs-libertins" element={<AnnuaireClubs />} />
+            <Route path="/fr/concours/:slug" element={<ConcoursArticlePage lang="fr" />} />
             <Route path="/fr/clubs" element={<AnnuaireClubs />} />
 
             {/* ══════════════════════════════════════════════════════════════
@@ -494,6 +501,8 @@ const App = () => (
             <Route path="/es/faq" element={<Navigate to="https://ask.akoky.com" replace />} />
             <Route path="/es/blog" element={<BlogListing lang="es" />} />
             <Route path="/es/blog/:slug" element={<BlogArticlePage lang="es" />} />
+            <Route path="/es/concours" element={<ConcoursListing lang="es" />} />
+            <Route path="/es/concours/:slug" element={<ConcoursArticlePage lang="es" />} />
 
             {/* ══════════════════════════════════════════════════════════════
                 ROUTES DE
@@ -543,6 +552,8 @@ const App = () => (
             <Route path="/de/faq" element={<Navigate to="https://ask.akoky.com" replace />} />
             <Route path="/de/blog" element={<BlogListing lang="de" />} />
             <Route path="/de/blog/:slug" element={<BlogArticlePage lang="de" />} />
+            <Route path="/de/concours" element={<ConcoursListing lang="de" />} />
+            <Route path="/de/concours/:slug" element={<ConcoursArticlePage lang="de" />} />
 
             {/* ══════════════════════════════════════════════════════════════
                 ROUTES IT
@@ -592,6 +603,8 @@ const App = () => (
             <Route path="/it/faq" element={<Navigate to="https://ask.akoky.com" replace />} />
             <Route path="/it/blog" element={<BlogListing lang="it" />} />
             <Route path="/it/blog/:slug" element={<BlogArticlePage lang="it" />} />
+            <Route path="/it/concours" element={<ConcoursListing lang="it" />} />
+            <Route path="/it/concours/:slug" element={<ConcoursArticlePage lang="it" />} />
 
             {/* ══════════════════════════════════════════════════════════════
                 ROUTES PT
@@ -641,10 +654,14 @@ const App = () => (
             <Route path="/pt/faq" element={<Navigate to="https://ask.akoky.com" replace />} />
             <Route path="/pt/blog" element={<BlogListing lang="pt" />} />
             <Route path="/pt/blog/:slug" element={<BlogArticlePage lang="pt" />} />
+            <Route path="/pt/concours" element={<ConcoursListing lang="pt" />} />
+            <Route path="/pt/concours/:slug" element={<ConcoursArticlePage lang="pt" />} />
 
-            {/* ── EN Blog ─────────────────────────────────────────────── */}
+            {/* ── EN Blog + Concours ──────────────────────────────────── */}
             <Route path="/en/blog" element={<BlogListing lang="en" />} />
             <Route path="/en/blog/:slug" element={<BlogArticlePage lang="en" />} />
+            <Route path="/en/concours" element={<ConcoursListing lang="en" />} />
+            <Route path="/en/concours/:slug" element={<ConcoursArticlePage lang="en" />} />
 
             {/* ── Admin Blog ─────────────────────────────────────────────── */}
             <Route path="/admin/blog/login" element={<BlogLogin />} />
@@ -653,7 +670,13 @@ const App = () => (
             <Route path="/admin/blog/new" element={<BlogEditor />} />
             <Route path="/admin/blog/edit/:id" element={<BlogEditor />} />
 
-            {/* ── CATCH-ALL ─────────────────────────────────────────────── */}
+            {/* ── Admin Concours ──────────────────────────────────────────── */}
+            <Route path="/admin/concours/login" element={<ConcoursLogin />} />
+            <Route path="/admin/concours" element={<ConcoursAdmin />} />
+            <Route path="/admin/concours/new" element={<ConcoursEditor />} />
+            <Route path="/admin/concours/edit/:id" element={<ConcoursEditor />} />
+
+
             <Route path="*" element={<NotFound />} />
 
           </Routes>
