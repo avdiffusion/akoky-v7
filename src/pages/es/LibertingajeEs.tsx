@@ -12,12 +12,6 @@ const FAQ = [
 
 const LibertingajeEs = () => (
   <>
-    <MetaTags
-      title="Libertinaje Moderno 2026 | Guía Completa, Prácticas y Ética — AKOKY"
-      description="Descubre el libertinaje hoy: definición, prácticas (soft, hard, intercambio), consentimiento y evolución. Guía completa para parejas y solteros."
-      canonical="https://akoky.com/es/libertinaje"
-      lang="es"
-    />
     <HreflangTags slug="libertinaje" />
     <ContentPageLayout
       lang="es"
