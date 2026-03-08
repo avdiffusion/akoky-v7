@@ -85,7 +85,7 @@ const SaunasGuidePt = () => (
       canonical="https://akoky.com/pt/saunas-libertinos-guia"
       heroTitle="Saunas Libertinos em Portugal"
       heroSubtitle="O guia completo: instalações, etiqueta, preços e os melhores saunas verificados pelo AKOKY."
-      heroImage="/images/sauna-cover-fr.webp"
+      heroImage="/images/pt-saunas-cover.webp"
       breadcrumb={[{ label: "Saunas Libertinos — Guia" }]}
       faq={FAQ}
     >

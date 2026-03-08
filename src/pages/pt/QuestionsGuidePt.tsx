@@ -130,7 +130,7 @@ const QuestionsGuidePt = () => (
       canonical="https://akoky.com/pt/perguntas-principiantes-guia"
       heroTitle="Perguntas para Principiantes"
       heroSubtitle="As respostas a todas as perguntas que fazes ao descobrir o libertinismo. 50+ questões, 6 categorias, 0 tabus."
-      heroImage="/images/questions-debutants-cover.webp"
+      heroImage="/images/pt-perguntas-cover.webp"
       breadcrumb={[{ label: "Perguntas para Principiantes" }]}
       faq={FAQ}
     >

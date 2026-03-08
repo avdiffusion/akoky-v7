@@ -126,7 +126,7 @@ const LexiqueGuidePt = () => {
         canonical="https://akoky.com/pt/lexico-libertino-guia"
         heroTitle="Léxico Libertino"
         heroSubtitle={`${totalTerms}+ termos do mundo libertino definidos e explicados em 6 categorias temáticas.`}
-        heroImage="/images/lexique-libertine-cover.webp"
+        heroImage="/images/pt-lexico-cover.webp"
         breadcrumb={[{ label: "Léxico Libertino" }]}
         faq={FAQ}
       >
