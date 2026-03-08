@@ -233,6 +233,7 @@ const BlogFr = () => {
         canonical="https://akoky.com/fr/blogs"
         heroTitle="Le Blog Libertin AKOKY"
         heroSubtitle="Articles, guides pratiques et conseils pour vivre le libertinage en toute confiance en France. Contenu authentique, sans tabou, pour curieux et initiés."
+        heroImage="/images/blog-cover-ak.webp"
         breadcrumb={[{ label: "Blog" }]}
         faq={[]}
       >
