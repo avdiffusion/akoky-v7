@@ -10,7 +10,7 @@ const ClubsLibertinsCharleroi = () => {
       heroTitle="Clubs libertins à Charleroi"
       heroSubtitle="Le guide complet des clubs, soirées et événements libertins à Charleroi"
       heroImage="/images/clubs-libertins-belgique.webp"
-      breadcrumb={[{ label: "Clubbing", href: "/clubbing" }, { label: "Charleroi" }]}
+      breadcrumb={[{ label: "Clubbing", href: "/fr/clubbing" }, { label: "Charleroi" }]}
       faq={[
         {
           question: "Où rencontrer des libertins à Charleroi ?",
