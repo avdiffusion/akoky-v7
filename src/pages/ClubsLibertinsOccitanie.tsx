@@ -29,10 +29,10 @@ const ClubsLibertinsOccitanie = () => {
           <h2 className="text-3xl font-bold text-foreground font-display">Les grandes villes libertines</h2>
           <h3>Toulouse</h3>
           <p>Toulouse, avec son ambiance étudiante et sa vie nocturne animée, est un pôle majeur.</p>
-          <Link to="/clubs-libertins-toulouse" className="text-primary hover:underline">Clubs libertins à Toulouse →</Link>
+          <Link to="/fr/clubs-libertins-toulouse" className="text-primary hover:underline">Clubs libertins à Toulouse →</Link>
           <h3>Montpellier</h3>
           <p>Montpellier offre une ambiance méditerranéenne attractive.</p>
-          <Link to="/clubs-libertins-montpellier" className="text-primary hover:underline">Clubs libertins à Montpellier →</Link>
+          <Link to="/fr/clubs-libertins-montpellier" className="text-primary hover:underline">Clubs libertins à Montpellier →</Link>
           <h3>Narbonne</h3><p>Narbonne propose des lieux intimistes.</p>
           <h3>Perpignan</h3><p>Perpignan offre une ambiance catalane.</p>
           <h3>Carcassonne</h3><p>Carcassonne attire une clientèle internationale.</p>
