@@ -139,8 +139,17 @@ const BlogListing = ({ lang }: BlogListingProps) => {
       <Header />
 
       <main className="min-h-screen bg-background">
-        {/* Hero */}
-        <section className="relative min-h-[50vh] flex items-center justify-center pt-24 pb-16 px-4 overflow-hidden bg-gradient-to-b from-black via-card to-background">
+        {/* Hero with cover image */}
+        <section className="relative min-h-[50vh] flex items-center justify-center pt-24 pb-16 px-4 overflow-hidden">
+          <div className="absolute inset-0 z-0">
+            <img
+              src="/images/libertinage.webp"
+              alt={meta.heroTitle}
+              className="w-full h-full object-cover"
+              loading="eager"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-background" />
+          </div>
           <div className="container relative z-20 max-w-4xl mx-auto text-center">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight font-display">
               {meta.heroTitle}
@@ -182,49 +191,72 @@ const BlogListing = ({ lang }: BlogListingProps) => {
             {articles.length === 0 ? (
               <p className="text-center text-muted-foreground text-lg py-20">{meta.noArticles}</p>
             ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {articles.map((article) => {
-                  const t = article.translations[lang]!;
-                  const slug = `/${lang}/blog/${t.slug}`;
-                  return (
-                    <Link
-                      key={article.id}
-                      to={slug}
-                      className="group bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/30 transition-all hover:-translate-y-1"
-                    >
-                      {article.image && (
-                        <div className="aspect-video overflow-hidden">
-                          <img
-                            src={article.image}
-                            alt={t.title}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                            loading="lazy"
-                          />
-                        </div>
-                      )}
-                      <div className="p-5">
-                        <Badge variant="secondary" className="text-xs mb-3">
-                          {CATEGORY_ICONS[article.category]}{" "}
-                          {BLOG_CATEGORIES.find((c) => c.value === article.category)?.label[lang]}
-                        </Badge>
-                        <h2 className="text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors line-clamp-2">
-                          {t.title}
-                        </h2>
-                        {t.metaDescription && (
-                          <p className="text-sm text-muted-foreground line-clamp-2">
-                            {t.metaDescription}
-                          </p>
+              <>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {visibleArticles.map((article) => {
+                    const t = article.translations[lang]!;
+                    const slug = `/${lang}/blog/${t.slug}`;
+                    return (
+                      <Link
+                        key={article.id}
+                        to={slug}
+                        className="group bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/30 transition-all hover:-translate-y-1"
+                      >
+                        {article.image && (
+                          <div className="aspect-video overflow-hidden">
+                            <img
+                              src={article.image}
+                              alt={t.title}
+                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                              loading="lazy"
+                            />
+                          </div>
                         )}
-                        <p className="text-xs text-muted-foreground/50 mt-3">
-                          {new Date(article.updatedAt).toLocaleDateString(
-                            lang === "fr" ? "fr-FR" : lang === "de" ? "de-DE" : lang === "es" ? "es-ES" : lang === "it" ? "it-IT" : lang === "pt" ? "pt-PT" : "en-US"
+                        <div className="p-5">
+                          <Badge variant="secondary" className="text-xs mb-3">
+                            {CATEGORY_ICONS[article.category]}{" "}
+                            {BLOG_CATEGORIES.find((c) => c.value === article.category)?.label[lang]}
+                          </Badge>
+                          <h2 className="text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors line-clamp-2">
+                            {t.title}
+                          </h2>
+                          {t.metaDescription && (
+                            <p className="text-sm text-muted-foreground line-clamp-2">
+                              {t.metaDescription}
+                            </p>
                           )}
-                        </p>
-                      </div>
-                    </Link>
-                  );
-                })}
-              </div>
+                          <p className="text-xs text-muted-foreground/50 mt-3">
+                            {new Date(article.updatedAt).toLocaleDateString(
+                              lang === "fr" ? "fr-FR" : lang === "de" ? "de-DE" : lang === "es" ? "es-ES" : lang === "it" ? "it-IT" : lang === "pt" ? "pt-PT" : "en-US"
+                            )}
+                          </p>
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
+
+                {/* Infinite scroll sentinel */}
+                {visibleCount < articles.length && (
+                  <div ref={loaderRef} className="flex justify-center py-10">
+                    <div className="h-8 w-8 border-2 border-primary border-t-transparent rounded-full animate-spin" />
+                  </div>
+                )}
+
+                {/* SEO: Hidden links for all articles so Google can crawl them */}
+                {articles.length > visibleCount && (
+                  <nav aria-label="All articles" className="sr-only">
+                    {articles.slice(visibleCount).map((article) => {
+                      const t = article.translations[lang]!;
+                      return (
+                        <Link key={article.id} to={`/${lang}/blog/${t.slug}`}>
+                          {t.title}
+                        </Link>
+                      );
+                    })}
+                  </nav>
+                )}
+              </>
             )}
           </div>
         </section>
