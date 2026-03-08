@@ -19,7 +19,7 @@ const Libertinage = () => (
       description="Qu'est-ce que le libertinage ? Guide complet sur les pratiques, valeurs et formes du libertinage moderne. Consentement, couples, numérique. AKOKY."
       canonical="https://akoky.com/fr/libertinage"
       lang="fr"
-      ogImage="https://akoky.com/images/libertinage-cover.webp"
+      ogImage="/images/libertinage-cover.webp"
     />
     <HreflangTags slug="libertinage" />
     <ContentPageLayout
