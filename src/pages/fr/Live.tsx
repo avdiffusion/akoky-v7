@@ -31,7 +31,7 @@ const Live = () => (
         <div className="container max-w-5xl mx-auto">
           <h2 className="text-2xl font-bold text-foreground mb-5">Bienvenue dans l'Expérience AKOKY Live</h2>
             <p className="text-muted-foreground leading-relaxed mb-3">AKOKY Live n'est pas une énième plateforme de streaming adulte. C'est un club privé digital où l'expérience libertine en direct rencontre l'élégance, la sécurité et le respect mutuel. Ici, chaque live est pensé comme un moment de partage authentique, loin des codes vulgaires et opportunistes des plateformes grand public.</p>
-            <p className="text-muted-foreground leading-relaxed mb-3">Contrairement aux sites de streaming non modérés où tout est permis sans cadre, AKOKY Live instaure un environnement contrôlé et bienveillant . Chaque diffuseur est vérifié, chaque live est supervisé par une modération humaine, et chaque spectateur est invité à respecter une charte de bonne conduite stricte. Le consentement n'est pas une option, c'</p>
+            <p className="text-muted-foreground leading-relaxed mb-3">Contrairement aux sites de streaming non modérés où tout est permis sans cadre, AKOKY Live instaure un environnement contrôlé et bienveillant. Chaque diffuseur est vérifié, chaque live est supervisé par une modération humaine, et chaque spectateur est invité à respecter une charte de bonne conduite stricte. Le consentement n'est pas une option, c'est le fondement de chaque interaction sur notre plateforme.</p>
         </div>
       </section>
       <section className="py-12 px-4 bg-card/50">
