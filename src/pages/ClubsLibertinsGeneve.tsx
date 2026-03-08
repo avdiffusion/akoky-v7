@@ -78,7 +78,7 @@ const ClubsLibertinsGeneve = () => {
               <p>Les saunas libertins genevois offrent des espaces de détente et de rencontre, avec des services haut de gamme. Les soirées sélectives sont réservées à une clientèle exigeante, avec des protocoles d'accès stricts. Les couples peuvent profiter d'espaces privatisables et de services personnalisés pour des rencontres discrètes et sophistiquées.</p>
               <div className="mt-6">
                 <p className="mb-4">Pour découvrir l'ensemble des clubs libertins en Suisse, consultez notre guide complet :</p>
-                <Link to="/clubbing-suisse" className="inline-block px-6 py-3 rounded-full bg-primary text-black font-bold hover:bg-primary-dark transition-colors">
+                <Link to="/fr/clubbing-suisse" className="inline-block px-6 py-3 rounded-full bg-primary text-black font-bold hover:bg-primary-dark transition-colors">
                   Découvrir les clubs en Suisse
                 </Link>
               </div>
