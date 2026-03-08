@@ -5,12 +5,6 @@ import HreflangTags from "@/components/seo/HreflangTags";
 
 const CookiesEs = () => (
   <>
-    <MetaTags
-      title="Política de Cookies | AKOKY España"
-      description="Política de cookies de AKOKY: tipos de cookies utilizadas, finalidades y cómo gestionarlas. Cumplimiento RGPD."
-      canonical="https://akoky.com/es/cookies"
-      lang="es"
-    />
     <HreflangTags slug="cookies" />
     <ContentPageLayout
       lang="es"

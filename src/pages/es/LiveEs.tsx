@@ -20,7 +20,7 @@ const LiveEs = () => (
       heroTitle="Lives AKOKY — Vídeos y Encuentros en Directo"
       heroSubtitle="20+ lives por semana: clubs en directo, veladas exclusivas, contenidos VIP. Seguro y discreto."
       heroImage="/images/es-live-cover.webp"
-      breadcrumb={[{ label: "Lives AKOKY — Vídeos y Encuentros en Directo" }]}
+      breadcrumb={[{ label: "Lives AKOKY" }]}
       faq={FAQ}
     >
       <section className="py-12 md:py-20 px-4">

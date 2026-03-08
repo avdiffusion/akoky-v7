@@ -20,7 +20,7 @@ const ClubbingEs = () => (
       heroTitle="Clubbing Libertino en España"
       heroSubtitle="Descubre la escena del clubbing libertino: preparación, códigos, los mejores clubs y cómo vivir la experiencia al máximo."
       heroImage="/images/es-eventos-cover.webp"
-      breadcrumb={[{ label: "Clubbing Libertino en España" }]}
+      breadcrumb={[{ label: "Clubbing" }]}
       faq={FAQ}
     >
       <section className="py-12 md:py-20 px-4">

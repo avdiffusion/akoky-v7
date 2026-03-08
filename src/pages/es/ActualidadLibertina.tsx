@@ -19,7 +19,7 @@ const ActualidadLibertina = () => (
       heroTitle="Actualidad y Tendencias Libertinas"
       heroSubtitle="La veille editorial del mundo libertino en España: tendencias, análisis y novedades actualizadas."
       heroImage="/images/es-actualidad-cover.webp"
-      breadcrumb={[{ label: "Actualidad y Tendencias Libertinas" }]}
+      breadcrumb={[{ label: "Actualidad" }]}
       faq={FAQ}
     >
       <section className="py-12 md:py-20 px-4">

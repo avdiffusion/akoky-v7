@@ -71,18 +71,11 @@ const RELATED = [
 
 const SaunasLibertinos = () => (
   <>
-    <MetaTags
-      title="Saunas Libertinos España 2026 – Guía Completa y Directorio | AKOKY"
-      description="Descubre los mejores saunas libertinos en España. Guía completa, espacios, equipamientos y consejos. AKOKY, referencia del libertinaje premium."
-      canonical="https://akoky.com/es/saunas-libertinos"
-      lang="es"
-      ogImage="/images/es-saunas-cover.webp"
-    />
     <HreflangTags slug="saunas-libertinos" />
     <ContentPageLayout
       lang="es"
-      title="Saunas Libertinos en España"
-      description="Guía y directorio de saunas libertinos en España"
+      title="Saunas Libertinos España 2026 – Guía Completa y Directorio | AKOKY"
+      description="Descubre los mejores saunas libertinos en España. Guía completa, espacios, equipamientos y consejos. AKOKY, referencia del libertinaje premium."
       canonical="https://akoky.com/es/saunas-libertinos"
       heroTitle="Saunas Libertinos en España"
       heroSubtitle="Descubre el universo intimista de los saunas libertinos: guía completa, espacios típicos y directorio por región para encontrar el establecimiento ideal."

@@ -20,7 +20,7 @@ const ParrainageEs = () => (
       heroTitle="Programa de Afiliación AKOKY"
       heroSubtitle="Invita a tus amigos, gana ventajas exclusivas y haz crecer tu comunidad."
       heroImage="/images/es-parrainage-cover.webp"
-      breadcrumb={[{ label: "Programa de Afiliación AKOKY" }]}
+      breadcrumb={[{ label: "Afiliación" }]}
       faq={FAQ}
     >
       <section className="py-12 md:py-20 px-4">

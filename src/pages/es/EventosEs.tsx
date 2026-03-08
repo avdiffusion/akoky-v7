@@ -24,7 +24,7 @@ const ES_CARDS = [
     text: "Barcelona acoge los eventos libertinos Akoky más creativos y vanguardistas. La capital catalana, conocida por su apertura de miras, ofrece un marco excepcional para nuestras veladas libertinas donde se mezclan arte, cultura y sensualidad. Cada velada en Barcelona es una experiencia única en uno de los epicentros del libertinaje europeo."
   },
   {
-    img: "/images/soirreeparis.webp",
+    img: "/images/es-madrid-rooftop.webp",
     alt: "Afterwork libertino Akoky en Madrid",
     title: "Afterworks Libertinos en Madrid",
     text: "Los afterworks libertinos Akoky en Madrid son la ocasión perfecta para descubrir la comunidad en un ambiente relajado. Estos eventos en las mejores terrazas y locales privados de la capital permiten conocerse antes de participar en las veladas libertinas más íntimas."

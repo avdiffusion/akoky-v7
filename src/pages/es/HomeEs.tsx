@@ -83,7 +83,7 @@ const schemas = [
     logo: "/images/logo-akoky.webp",
     description: "Plataforma comunitaria libertina premium en Europa",
     foundingDate: "2014",
-    contactPoint: { "@type": "ContactPoint", contactType: "Customer Service", email: "contact@akoky.com", availableLanguage: ["fr", "en", "es", "de", "it", "pt"] },
+    contactPoint: { "@type": "ContactPoint", contactType: "Customer Service", email: "contact@akoky.com", availableLanguage: ["fr", "es", "de", "it", "pt"] },
     sameAs: ["https://www.facebook.com/akokyofficial", "https://www.instagram.com/akoky_official", "https://twitter.com/akoky_official"],
   },
   {

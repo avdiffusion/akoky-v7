@@ -36,13 +36,12 @@ const FAQ = [
 
 const AvisEs = () => (
   <>
-    <Helmet>
-      <html lang="es" />
-      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
-      <meta property="og:locale" content="es_ES" />
-      <meta property="og:site_name" content="AKOKY" />
-      <meta name="twitter:site" content="@akoky_official" />
-    </Helmet>
+    <MetaTags
+      title="Opiniones AKOKY – Testimonios Verificados de la Comunidad Libertina"
+      description="Lee las opiniones auténticas y verificadas de los miembros de AKOKY. Testimonios reales sobre la experiencia, eventos, clubs asociados y suscripción premium."
+      canonical="https://akoky.com/es/avis"
+      lang="es"
+    />
     <HreflangTags slug="avis" />
 
     <ContentPageLayout

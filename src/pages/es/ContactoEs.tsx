@@ -11,12 +11,6 @@ const FAQ = [
 
 const ContactoEs = () => (
   <>
-    <MetaTags
-      title="AKOKY España | Contacto — Soporte y Asistencia Premium"
-      description="Contacta con AKOKY: soporte para miembros, solicitudes de socios, prensa y afiliación. Equipo disponible 24h para acompañarte."
-      canonical="https://akoky.com/es/contacto"
-      lang="es"
-    />
     <HreflangTags slug="contacto" />
     <ContentPageLayout
       lang="es"

@@ -34,13 +34,12 @@ const PAGE_SCHEMA = {
 
 const ConcursoEs = () => (
   <>
-    <Helmet>
-      <html lang="es" />
-      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
-      <meta property="og:locale" content="es_ES" />
-      <meta property="og:site_name" content="AKOKY" />
-      <meta name="twitter:site" content="@akoky_official" />
-    </Helmet>
+    <MetaTags
+      title="Concursos AKOKY – Gana Experiencias Libertinas Exclusivas"
+      description="Participa gratuitamente en los concursos Akoky y gana estancias en los mejores clubes libertinos de España y Europa, suscripciones VIP y experiencias únicas."
+      canonical="https://akoky.com/es/concurso"
+      lang="es"
+    />
     <HreflangTags slug="concurso" />
 
     <ContentPageLayout

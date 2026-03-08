@@ -11,12 +11,6 @@ const FAQ = [
 
 const JuegosEs = () => (
   <>
-    <MetaTags
-      title="Juegos Libertinos AKOKY | Animaciones y Actividades para Veladas"
-      description="Descubre nuestros juegos libertinos para animar tus veladas: cartas picantes, desafíos, animaciones interactivas. Lúdico, convivial y respetuoso."
-      canonical="https://akoky.com/es/juegos"
-      lang="es"
-    />
     <HreflangTags slug="juegos" />
     <ContentPageLayout
       lang="es"

@@ -21,7 +21,7 @@ const LibertingajeEs = () => (
       heroTitle="El Libertinaje Moderno: Definición, Prácticas y Consentimiento"
       heroSubtitle="Descubre este universo en 2026: prácticas respetuosas, evolución cultural y claves para una exploración consciente."
       heroImage="/images/es-libertinaje-cover.webp"
-      breadcrumb={[{ label: "El Libertinaje Moderno: Definición, Prácticas y Consentimiento" }]}
+      breadcrumb={[{ label: "Libertinaje" }]}
       faq={FAQ}
     >
       <section className="py-12 md:py-20 px-4">

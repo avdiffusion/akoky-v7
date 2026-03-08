@@ -20,7 +20,7 @@ const AppEs = () => (
       heroTitle="La Aplicación Libertina más Completa de Europa"
       heroSubtitle="Geolocalización, chat tipo WhatsApp, alertas de eventos y multiperfil. Todo en tu smartphone."
       heroImage="/images/es-app-cover.webp"
-      breadcrumb={[{ label: "La Aplicación Libertina más Completa de Europa" }]}
+      breadcrumb={[{ label: "App AKOKY" }]}
       faq={FAQ}
     >
       <section className="py-12 md:py-20 px-4">

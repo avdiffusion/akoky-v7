@@ -21,7 +21,7 @@ const EmpezarLibertingajeEs = () => (
       heroTitle="Empezar en el Libertinaje, a Tu Ritmo"
       heroSubtitle="Una guía práctica y respetuosa para descubrir este universo paso a paso, en pareja o solo/a."
       heroImage="/images/debuter-libertinage-cover.webp"
-      breadcrumb={[{ label: "Empezar en el Libertinaje, a Tu Ritmo" }]}
+      breadcrumb={[{ label: "Empezar" }]}
       faq={FAQ}
     >
       <section className="py-12 md:py-20 px-4">
