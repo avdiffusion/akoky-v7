@@ -18,7 +18,7 @@ const ClubsLibertinsNouvelleAquitaine = () => {
       heroTitle="Meilleurs clubs libertins en Nouvelle-Aquitaine"
       heroSubtitle="La Nouvelle-Aquitaine est l'une des régions libertines les plus vastes et les plus actives de France."
       faq={faq}
-      breadcrumb={[{ label: "Clubbing France", href: "/clubbing-france-europe" }, { label: "Nouvelle-Aquitaine" }]}
+      breadcrumb={[{ label: "Clubbing France", href: "/fr/clubbing-france-europe" }, { label: "Nouvelle-Aquitaine" }]}
     >
       <section className="py-16 px-4">
         <div className="container max-w-4xl mx-auto prose prose-invert prose-lg">
