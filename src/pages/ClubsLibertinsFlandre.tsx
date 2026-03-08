@@ -52,7 +52,7 @@ const ClubsLibertinsFlandre = () => {
               <div className="bg-card/50 p-6 rounded-xl border border-white/10">
                 <h3 className="text-xl font-bold text-white mb-3">Anvers</h3>
                 <p className="text-gray-300 mb-4 text-sm">Anvers, capitale économique et culturelle de la Flandre, est le cœur battant du libertinage dans la région. Ses clubs, réputés pour leur élégance et leur modernité, attirent une clientèle internationale. L'ambiance est dynamique, avec des soirées à thème et des événements réguliers.</p>
-                <Link to="/clubs-libertins-anvers" className="text-primary hover:underline text-sm font-medium">Découvrir Anvers →</Link>
+                <Link to="/fr/clubs-libertins-anvers" className="text-primary hover:underline text-sm font-medium">Découvrir Anvers →</Link>
               </div>
               <div className="bg-card/50 p-6 rounded-xl border border-white/10">
                 <h3 className="text-xl font-bold text-white mb-3">Gand</h3>
