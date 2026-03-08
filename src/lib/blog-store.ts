@@ -2,7 +2,7 @@ import { BlogArticle, BlogLang, BlogCategory } from "./blog-types";
 import { SEED_ARTICLES } from "./blog-seed";
 
 const STORAGE_KEY = "akoky_blog_articles";
-const SEED_KEY = "akoky_blog_seeded";
+const SEED_KEY = "akoky_blog_seeded_v2";
 const AUTH_KEY = "akoky_blog_auth";
 const ADMIN_PASSWORD = "@Akoky2026";
 const ADMIN_DOB = "12/05/1977";

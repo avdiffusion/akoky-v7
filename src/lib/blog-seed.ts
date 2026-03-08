@@ -423,4 +423,148 @@ export const SEED_ARTICLES: BlogArticle[] = [
       fr: { slug: "inscription-akoky-offre-6-mois", metaTitle: "Inscription AKOKY — Offre 6 mois", metaDescription: "Profitez de l'offre spéciale 6 mois d'abonnement AKOKY à prix réduit.", title: "Inscription AKOKY — Offre 6 mois", content: "<h2>Offre spéciale AKOKY</h2><p>Profitez de notre offre exclusive : 6 mois d'abonnement premium à prix réduit pour découvrir toutes les fonctionnalités AKOKY.</p>", published: true },
     },
   },
+
+  // ═══════════════════════════════════════════════════════════════════
+  // ARTÍCULOS EN ESPAÑOL — 100% contenido español
+  // ═══════════════════════════════════════════════════════════════════
+  {
+    id: mkId(), category: "clubs", image: "/images/blog-es-madrid-clubes.webp",
+    createdAt: now, updatedAt: now,
+    translations: {
+      es: { slug: "clubes-libertinos-madrid-guia-2026", metaTitle: "Clubes Libertinos en Madrid 2026 — Guía Completa AKOKY", metaDescription: "Descubre los mejores clubes libertinos de Madrid en 2026: ambiente, precios, dress code y consejos para tu primera visita.", title: "Clubes Libertinos en Madrid 2026 — La Guía Completa", content: "<h2>Los mejores clubes libertinos de Madrid en 2026</h2><p>Madrid se ha consolidado como la capital del libertinaje en España. Con una oferta que no deja de crecer, la ciudad ofrece opciones para todos los gustos y niveles de experiencia.</p><h3>El dress code en los clubes madrileños</h3><p>La mayoría de los clubes libertinos de Madrid exigen una vestimenta elegante y sexy. Para las mujeres, vestidos de cóctel, lencería fina o conjuntos atrevidos son habituales. Los hombres deben optar por un look cuidado: camisa, pantalón de vestir y zapatos cerrados.</p><h3>Los precios</h3><p>Los precios varían según el establecimiento y la noche. Por lo general, las parejas pagan entre 30€ y 80€ por entrada, que suele incluir una consumición. Los hombres solos pagan un suplemento y no todos los clubes los aceptan.</p><h3>Nuestros consejos para tu primera visita</h3><ul><li>Llegad temprano para familiarizaros con el espacio</li><li>Respetad siempre los códigos y los límites de los demás</li><li>Comunicaos con vuestra pareja antes, durante y después</li><li>No dudéis en pedir consejo al personal del club</li><li>Recordad: un « no » siempre se respeta</li></ul><h3>Los barrios libertinos de Madrid</h3><p>La zona de Chueca, Malasaña y el centro histórico concentran la mayor parte de los establecimientos libertinos de la capital. Algunos clubes se encuentran también en zonas industriales de la periferia, ofreciendo espacios más amplios y discretos.</p>", published: true },
+    },
+  },
+  {
+    id: mkId(), category: "clubs", image: "/images/blog-es-barcelona-libertina.webp",
+    createdAt: now, updatedAt: now,
+    translations: {
+      es: { slug: "escena-libertina-barcelona-2026", metaTitle: "La Escena Libertina en Barcelona — Clubes y Eventos 2026", metaDescription: "Explora la escena libertina barcelonesa: mejores clubes, noches temáticas y comunidad swinger en la Ciudad Condal en 2026.", title: "La Escena Libertina en Barcelona — Clubes y Eventos 2026", content: "<h2>Barcelona, capital mediterránea del libertinaje</h2><p>Barcelona se posiciona como una de las ciudades más dinámicas para el libertinaje en España. Entre clubes históricos, fiestas privadas y una comunidad internacional, la escena libertina barcelonesa no para de reinventarse.</p><h3>Los clubes imprescindibles</h3><p>La Ciudad Condal cuenta con varios establecimientos de renombre que organizan noches temáticas variadas durante todo el año: noches de parejas, noches fetish, pool parties y mucho más.</p><h3>La comunidad barcelonesa</h3><p>Los libertinos de Barcelona son conocidos por su apertura mental y su espíritu cosmopolita. AKOKY te ayuda a conocerlos y a vivir experiencias inolvidables.</p><h3>Barrio Gótico y más allá</h3><p>El casco antiguo de Barcelona alberga algunos de los locales más exclusivos, mientras que la zona del Eixample y Poble Nou ofrecen alternativas modernas y con estilo propio.</p>", published: true },
+    },
+  },
+  {
+    id: mkId(), category: "conseils", image: "/images/es-libertinaje-cover.webp",
+    createdAt: now, updatedAt: now,
+    translations: {
+      es: { slug: "empezar-libertinaje-espana-consejos", metaTitle: "Empezar en el Libertinaje en España — Consejos Prácticos 2026", metaDescription: "Guía completa para principiantes: cómo preparar tu primera experiencia libertina, elegir un club y respetar los códigos en España.", title: "Empezar en el Libertinaje en España — Consejos Prácticos 2026", content: "<h2>Tu primera experiencia libertina</h2><p>Empezar en el mundo del libertinaje es una aventura emocionante que merece ser bien preparada. Esta guía te acompaña paso a paso para que tu inicio sea positivo y respetuoso.</p><h3>Antes de empezar</h3><ul><li>Habla abiertamente con tu pareja sobre deseos y límites</li><li>Definid juntos una « palabra de seguridad »</li><li>Informaos sobre las diferentes prácticas</li><li>Investigad los clubes de vuestra zona</li></ul><h3>Elegir tu primer club</h3><p>Opta por un establecimiento acogedor para principiantes. Muchos clubes en España organizan noches especiales de « descubrimiento » pensadas para quienes dan sus primeros pasos.</p><h3>Los códigos a respetar</h3><p>El consentimiento es la regla de oro del libertinaje. Un « no » siempre se respeta, sin insistencia ni juicio. La higiene, la discreción y el respeto mutuo son pilares fundamentales.</p>", published: true },
+    },
+  },
+  {
+    id: mkId(), category: "evenements", image: "/images/blog-es-ibiza-libertina.webp",
+    createdAt: now, updatedAt: now,
+    translations: {
+      es: { slug: "ibiza-libertina-verano-2026", metaTitle: "Ibiza Libertina — Los Mejores Eventos del Verano 2026", metaDescription: "Guía completa de la Ibiza libertina: beach clubs, fiestas exclusivas y eventos imprescindibles del verano 2026.", title: "Ibiza Libertina — Los Mejores Eventos del Verano 2026", content: "<h2>Ibiza, meca del libertinaje estival</h2><p>Cada verano, Ibiza se convierte en el destino predilecto de miles de libertinos procedentes de toda Europa. La isla combina fiesta, sol y una oferta libertina sin igual.</p><h3>Los beach clubs libertinos</h3><p>Ibiza cuenta con beach clubs exclusivos que organizan eventos privados para la comunidad swinger, con acceso reservado y ambientes de lujo frente al mar Mediterráneo.</p><h3>Los eventos estrella del verano 2026</h3><p>Pool parties, sunset sessions, fiestas temáticas en villas privadas… el verano promete ser intenso. AKOKY te informa de cada evento para que no te pierdas nada.</p><h3>Alojamiento y consejos</h3><p>Reserva con antelación en las zonas de Playa d'en Bossa, San Antonio o Santa Eulalia para estar cerca de la acción. Muchos hoteles boutique ofrecen paquetes especiales para parejas libertinas.</p>", published: true },
+    },
+  },
+  {
+    id: mkId(), category: "conseils", image: "/images/es-libertinaje-cover.webp",
+    createdAt: now, updatedAt: now,
+    translations: {
+      es: { slug: "comunidad-swinger-espana-valores", metaTitle: "La Comunidad Swinger en España — Valores y Estilo de Vida", metaDescription: "Todo sobre la comunidad swinger en España: valores, ética, comunicación y por qué AKOKY es la plataforma de referencia.", title: "La Comunidad Swinger en España — Valores y Estilo de Vida", content: "<h2>El lifestyle swinger, mucho más que una práctica</h2><p>El swinging en España se basa en valores sólidos: respeto, consentimiento, comunicación y placer compartido. Lejos de los tópicos, la comunidad libertina española es una de las más activas y respetuosas de Europa.</p><h3>Los valores de la comunidad</h3><ul><li>El respeto mutuo ante todo</li><li>La comunicación dentro de la pareja</li><li>El consentimiento informado y revocable</li><li>La discreción y la confidencialidad</li></ul><h3>AKOKY, plataforma de referencia</h3><p>Con una comunidad en constante crecimiento en España, AKOKY se ha convertido en la red social libertina de referencia para los hispanohablantes en Europa.</p>", published: true },
+    },
+  },
+  {
+    id: mkId(), category: "clubs", image: "/images/blog-es-valencia-noche.webp",
+    createdAt: now, updatedAt: now,
+    translations: {
+      es: { slug: "clubes-libertinos-valencia-guia", metaTitle: "Clubes Libertinos en Valencia — Guía Completa AKOKY 2026", metaDescription: "Descubre los clubes libertinos de Valencia: locales, ambiente, precios y consejos para disfrutar de la escena swinger valenciana.", title: "Clubes Libertinos en Valencia — Guía Completa 2026", content: "<h2>Valencia, la joya libertina del Mediterráneo</h2><p>Valencia se ha posicionado como uno de los destinos libertinos más atractivos de España. Con su clima cálido, su carácter mediterráneo y una oferta creciente de clubes, la ciudad del Turia tiene mucho que ofrecer.</p><h3>Los clubes más destacados</h3><p>Valencia cuenta con establecimientos que van desde lo íntimo y sofisticado hasta lo más atrevido y festivo. Las noches de parejas son especialmente populares.</p><h3>La Ciudad de las Artes como telón de fondo</h3><p>Muchos libertinos aprovechan para combinar cultura y placer, visitando la impresionante Ciudad de las Artes y las Ciencias antes de disfrutar de la noche libertina valenciana.</p>", published: true },
+    },
+  },
+  {
+    id: mkId(), category: "saunas", image: "/images/es-saunas-cover.webp",
+    createdAt: now, updatedAt: now,
+    translations: {
+      es: { slug: "saunas-libertinas-espana-guia-completa", metaTitle: "Saunas Libertinas en España — Guía Completa 2026", metaDescription: "Descubre las mejores saunas libertinas de España: equipamientos, reglas, precios y consejos para una experiencia relajante y sensual.", title: "Saunas Libertinas en España — Guía Completa 2026", content: "<h2>Las saunas libertinas en España</h2><p>Las saunas libertinas combinan bienestar y sensualidad en un ambiente relajado. España cuenta con una oferta creciente de establecimientos que ofrecen jacuzzis, hammams, cabinas privadas y zonas de relax para parejas y singles.</p><h3>¿Qué encontrarás en una sauna libertina?</h3><ul><li>Jacuzzi y piscinas climatizadas</li><li>Sauna seca y hammam</li><li>Cabinas privadas y semiprivadas</li><li>Zonas de relax con tumbonas</li><li>Bar y zona lounge</li></ul><h3>Reglas de oro</h3><p>La higiene es primordial. Ducha obligatoria antes de acceder a las instalaciones. El consentimiento se aplica en todo momento y la toalla es obligatoria en las zonas comunes.</p><h3>Precios orientativos</h3><p>Las parejas pagan generalmente entre 25€ y 60€ por entrada, con acceso a todas las instalaciones. Muchas saunas ofrecen tarifas reducidas en horario de mañana.</p>", published: true },
+    },
+  },
+  {
+    id: mkId(), category: "evenements", image: "/images/blog-es-costa-del-sol.webp",
+    createdAt: now, updatedAt: now,
+    translations: {
+      es: { slug: "eventos-libertinos-costa-del-sol-2026", metaTitle: "Eventos Libertinos en la Costa del Sol — Verano 2026", metaDescription: "Los mejores eventos libertinos de la Costa del Sol para el verano 2026: fiestas en Marbella, Málaga y Torremolinos.", title: "Eventos Libertinos en la Costa del Sol — Verano 2026", content: "<h2>La Costa del Sol, paraíso libertino estival</h2><p>Cada verano, la Costa del Sol se convierte en un hervidero de actividad libertina. Desde Marbella hasta Torremolinos, los eventos se suceden sin parar.</p><h3>Marbella y Puerto Banús</h3><p>Las fiestas en villas privadas de Marbella son legendarias. Eventos exclusivos con vistas al mar, piscinas infinity y ambientes de lujo configuran una oferta premium inigualable.</p><h3>Málaga capital</h3><p>La capital de la Costa del Sol ofrece clubes con historia y carácter andaluz. Las noches temáticas son un clásico que atrae a parejas de toda España.</p><h3>Torremolinos</h3><p>Conocida por su espíritu libre y su vida nocturna vibrante, Torremolinos cuenta con locales abiertos todo el año que se llenan especialmente en verano.</p>", published: true },
+    },
+  },
+  {
+    id: mkId(), category: "conseils", image: "/images/blog-es-sevilla-noche.webp",
+    createdAt: now, updatedAt: now,
+    translations: {
+      es: { slug: "libertinaje-pareja-comunicacion-limites", metaTitle: "Libertinaje en Pareja — Comunicación y Límites", metaDescription: "Cómo gestionar la comunicación y los límites en el libertinaje en pareja: guía práctica para una experiencia positiva.", title: "Libertinaje en Pareja — Comunicación y Límites", content: "<h2>La comunicación, pilar del libertinaje en pareja</h2><p>El libertinaje en pareja puede fortalecer vuestra relación si se gestiona con madurez y transparencia. La comunicación es la clave.</p><h3>Antes de dar el paso</h3><ul><li>Hablad abiertamente de vuestras fantasías</li><li>Definid límites claros que ambos respetéis</li><li>Estableced una palabra de seguridad</li><li>Aceptad que los límites pueden evolucionar</li></ul><h3>Durante la experiencia</h3><p>Mantened el contacto visual y emocional. Si algo os incomoda, comunicadlo de inmediato. El libertinaje es para disfrutar, no para sufrir.</p><h3>Después</h3><p>Hablar de la experiencia después es fundamental. Compartid lo que os gustó, lo que no, y cómo os sentís. Este diálogo refuerza la confianza y la complicidad.</p>", published: true },
+    },
+  },
+  {
+    id: mkId(), category: "conseils", image: "/images/es-libertinaje-cover.webp",
+    createdAt: now, updatedAt: now,
+    translations: {
+      es: { slug: "seguridad-discrecion-libertinaje-espana", metaTitle: "Seguridad y Discreción en el Libertinaje — Guía España 2026", metaDescription: "Consejos de seguridad y discreción para vivir el libertinaje en España con tranquilidad: protección de datos, higiene y privacidad.", title: "Seguridad y Discreción en el Libertinaje en España", content: "<h2>La seguridad ante todo</h2><p>El libertinaje se vive mejor cuando te sientes seguro. En España, los clubes y plataformas de referencia como AKOKY aplican medidas estrictas para proteger tu privacidad.</p><h3>Protección de datos</h3><p>AKOKY cumple con el RGPD europeo y garantiza que tus datos personales nunca serán compartidos sin tu consentimiento.</p><h3>En los clubes</h3><ul><li>Las fotos están estrictamente prohibidas en la mayoría de establecimientos</li><li>Los teléfonos móviles deben guardarse en taquillas</li><li>El personal de seguridad vela por el respeto de las normas</li></ul><h3>Salud e higiene</h3><p>Los preservativos están siempre disponibles. La higiene personal es obligatoria y la mayoría de clubes exigen ducha antes de acceder a ciertas zonas.</p>", published: true },
+    },
+  },
+  {
+    id: mkId(), category: "guides", image: "/images/es-app-cover.webp",
+    createdAt: now, updatedAt: now,
+    translations: {
+      es: { slug: "mejores-apps-libertinas-espana-2026", metaTitle: "Las Mejores Apps Libertinas en España 2026 — Comparativa", metaDescription: "Comparativa de las mejores aplicaciones libertinas disponibles en España en 2026: funcionalidades, precios y seguridad.", title: "Las Mejores Apps Libertinas en España 2026", content: "<h2>¿Qué app elegir para el libertinaje en España?</h2><p>El mercado de las aplicaciones libertinas ha crecido enormemente en España. Pero no todas ofrecen la misma calidad de servicio, seguridad y comunidad.</p><h3>AKOKY — La referencia</h3><p>Con verificación de perfiles, geolocalización, eventos integrados y una comunidad activa, AKOKY se posiciona como la app líder para el libertinaje en España.</p><h3>Otras opciones</h3><p>Wyylde, Casual Club y otras plataformas tienen presencia en España, pero ninguna ofrece la combinación de funcionalidades sociales, seguridad y comunidad hispanohablante de AKOKY.</p><h3>Criterios de elección</h3><ul><li>Verificación de perfiles</li><li>Tamaño de la comunidad en tu zona</li><li>Funcionalidades de búsqueda y chat</li><li>Política de privacidad y seguridad</li><li>Relación calidad-precio</li></ul>", published: true },
+    },
+  },
+  {
+    id: mkId(), category: "clubs", image: "/images/blog-es-madrid-clubes.webp",
+    createdAt: now, updatedAt: now,
+    translations: {
+      es: { slug: "dress-code-clubes-libertinos-espana", metaTitle: "Dress Code en Clubes Libertinos de España — Guía Completa", metaDescription: "Todo sobre el dress code en los clubes libertinos españoles: qué ponerse, qué evitar y cómo ir con estilo.", title: "Dress Code en Clubes Libertinos de España — Guía Completa", content: "<h2>¿Cómo vestir para ir a un club libertino?</h2><p>El dress code es uno de los aspectos más consultados por quienes se inician en el libertinaje. Cada club tiene sus propias normas, pero existen pautas generales que te ayudarán a acertar.</p><h3>Para las mujeres</h3><p>Vestidos de cóctel, lencería elegante, conjuntos de encaje, tacones… La clave es sentirse sexy y cómoda. Muchos clubes disponen de vestuarios para cambiarse.</p><h3>Para los hombres</h3><p>Camisa, pantalón de vestir y zapatos cerrados son el estándar. Evitad las zapatillas deportivas, los vaqueros rotos y las camisetas informales.</p><h3>Noches temáticas</h3><p>Muchos clubes organizan noches con dress code específico: fetish, lencería, blanco y negro, uniformes… Consultad siempre la web del club antes de acudir.</p>", published: true },
+    },
+  },
+  {
+    id: mkId(), category: "villes", image: "/images/blog-es-sevilla-noche.webp",
+    createdAt: now, updatedAt: now,
+    translations: {
+      es: { slug: "vida-libertina-sevilla-guia", metaTitle: "Vida Libertina en Sevilla — Clubes, Eventos y Comunidad 2026", metaDescription: "Descubre la escena libertina de Sevilla: clubes, eventos, afterworks y una comunidad con el calor del sur de España.", title: "Vida Libertina en Sevilla — Clubes, Eventos y Comunidad", content: "<h2>Sevilla, libertinaje con sabor andaluz</h2><p>Sevilla combina su pasión flamenca con una escena libertina vibrante y en pleno auge. La capital andaluza ofrece clubes con personalidad, eventos al aire libre y una comunidad acogedora.</p><h3>Los clubes sevillanos</h3><p>Sevilla cuenta con locales que mezclan la elegancia andaluza con la modernidad. Patios interiores, azulejos y ambientes íntimos caracterizan la oferta local.</p><h3>Eventos y afterworks</h3><p>Los afterworks libertinos en Sevilla son una tradición. Encuentros informales en bares y terrazas antes de las noches más intensas.</p><h3>La Feria y más allá</h3><p>Durante la Feria de Abril y las fiestas locales, la actividad libertina se intensifica con eventos especiales y fiestas temáticas.</p>", published: true },
+    },
+  },
+  {
+    id: mkId(), category: "evenements", image: "/images/blog-es-ibiza-libertina.webp",
+    createdAt: now, updatedAt: now,
+    translations: {
+      es: { slug: "fiestas-tematicas-libertinas-espana", metaTitle: "Fiestas Temáticas Libertinas en España — Las Más Populares 2026", metaDescription: "Las fiestas temáticas libertinas más populares de España: fetish, lencería, pool party, noches de parejas y más.", title: "Fiestas Temáticas Libertinas en España — Las Más Populares", content: "<h2>Las fiestas temáticas, motor del libertinaje español</h2><p>Las noches temáticas son el corazón de la vida libertina en España. Cada tema crea un ambiente único que invita a la exploración y al juego.</p><h3>Las más populares</h3><ul><li><strong>Noche de parejas:</strong> Solo parejas, ambiente íntimo y sensual</li><li><strong>Fetish & BDSM:</strong> Cuero, látex y juegos de poder</li><li><strong>Pool party:</strong> Piscina, bañadores y diversión bajo el sol</li><li><strong>Lencería:</strong> Encaje, seda y seducción</li><li><strong>Blanco y negro:</strong> Elegancia extrema</li></ul><h3>¿Dónde encontrarlas?</h3><p>AKOKY publica un calendario actualizado de eventos temáticos en toda España. Filtra por ciudad, fecha y tipo de fiesta para encontrar la que mejor se adapte a tus gustos.</p>", published: true },
+    },
+  },
+  {
+    id: mkId(), category: "guides", image: "/images/es-contacto-cover.webp",
+    createdAt: now, updatedAt: now,
+    translations: {
+      es: { slug: "consentimiento-libertinaje-guia-espana", metaTitle: "El Consentimiento en el Libertinaje — Guía Esencial España", metaDescription: "Guía sobre el consentimiento en el libertinaje en España: reglas, comunicación y buenas prácticas para una experiencia respetuosa.", title: "El Consentimiento en el Libertinaje — Guía Esencial", content: "<h2>El consentimiento: base fundamental</h2><p>En el mundo libertino español, el consentimiento no es negociable. Es la piedra angular sobre la que se construye toda experiencia positiva.</p><h3>¿Qué significa el consentimiento?</h3><ul><li>Es libre: nadie debe sentirse presionado</li><li>Es informado: ambas partes saben lo que implica</li><li>Es revocable: se puede retirar en cualquier momento</li><li>Es entusiasta: un « sí » claro y genuino</li></ul><h3>En la práctica</h3><p>Pregunta siempre antes de tocar. Acepta un « no » con naturalidad y sin insistir. Comunica tus propios límites con claridad.</p><h3>El papel de los clubes</h3><p>Los buenos clubes libertinos en España tienen personal formado para intervenir si alguien no respeta las normas de consentimiento. AKOKY colabora con establecimientos que priorizan la seguridad.</p>", published: true },
+    },
+  },
+  {
+    id: mkId(), category: "villes", image: "/images/blog-es-costa-del-sol.webp",
+    createdAt: now, updatedAt: now,
+    translations: {
+      es: { slug: "playas-libertinas-espana-guia", metaTitle: "Playas Libertinas en España — Las Mejores en 2026", metaDescription: "Descubre las playas libertinas y naturistas más populares de España: ubicación, ambiente y consejos prácticos.", title: "Playas Libertinas en España — Las Mejores en 2026", content: "<h2>Las playas libertinas de España</h2><p>España es un paraíso para los amantes del nudismo y el libertinaje al aire libre. Con miles de kilómetros de costa, las opciones son infinitas.</p><h3>Playas emblemáticas</h3><ul><li><strong>Vera Playa (Almería):</strong> La mayor urbanización naturista de Europa, con ambiente libertino reconocido</li><li><strong>Es Cavallet (Ibiza):</strong> Playa icónica con secciones libertinas</li><li><strong>Playa de la Mar Bella (Barcelona):</strong> Playa urbana con zona nudista</li><li><strong>Playa de Cantarriján (Granada):</strong> Cala paradisíaca entre acantilados</li></ul><h3>Consejos prácticos</h3><p>Respeta siempre las normas de cada playa. El nudismo y el libertinaje están permitidos solo en zonas señalizadas. Lleva protección solar, agua y preservativos.</p>", published: true },
+    },
+  },
+  {
+    id: mkId(), category: "clubs", image: "/images/blog-es-barcelona-libertina.webp",
+    createdAt: now, updatedAt: now,
+    translations: {
+      es: { slug: "clubes-libertinos-malaga-guia", metaTitle: "Clubes Libertinos en Málaga — Guía AKOKY 2026", metaDescription: "Los mejores clubes libertinos de Málaga y la Costa del Sol: locales, ambiente y noches temáticas para parejas y singles.", title: "Clubes Libertinos en Málaga — Guía 2026", content: "<h2>Málaga, puerta libertina de Andalucía</h2><p>Málaga ha experimentado un boom en la oferta libertina durante los últimos años. La capital de la Costa del Sol atrae tanto a residentes como a turistas libertinos.</p><h3>Los clubes más destacados</h3><p>Desde locales íntimos en el centro hasta clubs más amplios en las afueras, Málaga ofrece variedad para todos los gustos. Las noches de verano son especialmente populares.</p><h3>Turismo libertino</h3><p>Muchas parejas combinan vacaciones en la Costa del Sol con experiencias libertinas. Los clubes malagueños están acostumbrados a recibir visitantes internacionales y ofrecen un trato excelente.</p>", published: true },
+    },
+  },
+  {
+    id: mkId(), category: "conseils", image: "/images/es-live-cover.webp",
+    createdAt: now, updatedAt: now,
+    translations: {
+      es: { slug: "libertinaje-principiantes-errores-evitar", metaTitle: "Libertinaje para Principiantes — 10 Errores a Evitar", metaDescription: "Los 10 errores más comunes al empezar en el libertinaje y cómo evitarlos. Guía práctica para una experiencia positiva.", title: "Libertinaje para Principiantes — 10 Errores a Evitar", content: "<h2>Los errores más comunes al empezar</h2><p>Todos los libertinos experimentados cometieron errores al principio. Aquí te ayudamos a evitar los más frecuentes para que tu experiencia sea positiva desde el primer momento.</p><h3>Los 10 errores a evitar</h3><ol><li><strong>No hablar con tu pareja:</strong> La comunicación es la base de todo</li><li><strong>Ir con expectativas irreales:</strong> La primera vez no tiene que ser perfecta</li><li><strong>Beber demasiado:</strong> El alcohol en exceso dificulta la comunicación y el consentimiento</li><li><strong>No respetar los límites:</strong> Los tuyos ni los de los demás</li><li><strong>Comparar a tu pareja:</strong> El libertinaje no es una competición</li><li><strong>Forzar la situación:</strong> Si algo no fluye, no pasa nada</li><li><strong>Olvidar la higiene:</strong> Es fundamental y obligatoria</li><li><strong>No investigar el club:</strong> Cada local tiene sus reglas y ambiente</li><li><strong>Ignorar las emociones posteriores:</strong> Hablar después es esencial</li><li><strong>Presionar a tu pareja:</strong> El libertinaje debe ser consensuado al 100%</li></ol>", published: true },
+    },
+  },
+  {
+    id: mkId(), category: "evenements", image: "/images/blog-es-valencia-noche.webp",
+    createdAt: now, updatedAt: now,
+    translations: {
+      es: { slug: "eventos-verano-libertinos-espana-2026", metaTitle: "Eventos de Verano Libertinos en España 2026 — Calendario", metaDescription: "Calendario de eventos libertinos en España para el verano 2026: Ibiza, Costa del Sol, Barcelona, Madrid y más.", title: "Eventos de Verano Libertinos en España 2026 — Calendario", content: "<h2>El verano libertino español</h2><p>España se convierte en el epicentro del libertinaje europeo durante los meses de verano. De junio a septiembre, los eventos se multiplican por toda la geografía.</p><h3>Junio</h3><p>Apertura de temporada en Ibiza con las primeras pool parties. Madrid y Barcelona lanzan sus programaciones de verano con noches especiales.</p><h3>Julio — Agosto</h3><p>La Costa del Sol alcanza su punto álgido con fiestas en villas de Marbella. Ibiza vive su momento cumbre con sunset sessions y eventos en beach clubs exclusivos. Valencia organiza noches en terrazas con vistas al mar.</p><h3>Septiembre</h3><p>El verano se despide con eventos de cierre de temporada en las principales ciudades. Las temperaturas agradables permiten seguir disfrutando de fiestas al aire libre.</p>", published: true },
+    },
+  },
+  {
+    id: mkId(), category: "guides", image: "/images/es-vip-cover.webp",
+    createdAt: now, updatedAt: now,
+    translations: {
+      es: { slug: "akoky-vs-otras-plataformas-espana", metaTitle: "AKOKY vs Otras Plataformas Libertinas en España — Comparativa 2026", metaDescription: "¿Por qué elegir AKOKY? Comparativa con las principales plataformas libertinas disponibles en España en 2026.", title: "AKOKY vs Otras Plataformas Libertinas en España", content: "<h2>¿Por qué AKOKY es la mejor opción en España?</h2><p>El mercado de plataformas libertinas en España es competitivo, pero AKOKY se distingue por su enfoque integral y su compromiso con la comunidad hispanohablante.</p><h3>Verificación de perfiles</h3><p>AKOKY cuenta con un sistema de verificación riguroso que garantiza que los perfiles son reales. Esto reduce drásticamente los fake profiles y las experiencias negativas.</p><h3>Comunidad activa</h3><p>A diferencia de otras plataformas donde la mayoría de perfiles están inactivos, AKOKY tiene una comunidad genuinamente activa en todas las grandes ciudades españolas.</p><h3>Funcionalidades sociales</h3><ul><li>Muro social tipo red social</li><li>Eventos con geolocalización</li><li>Chat en tiempo real</li><li>Filtros avanzados de búsqueda</li><li>Sistema de verificación con badge</li></ul>", published: true },
+    },
+  },
 ];
