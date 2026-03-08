@@ -558,7 +558,8 @@ const App = () => (
             <Route path="/de/wettbewerb" element={<WettbewerbDe />} />
             <Route path="/de/gewinnspiel-akoky-2026" element={<ConcoursGuideDe />} />
             <Route path="/de/sechs-schluessel-spiel" element={<ConcoursClesGuideDe />} />
-            <Route path="/de/pressestelle" element={<PresseGuideDe />} />
+            <Route path="/de/presse" element={<PresseGuideDe />} />
+            <Route path="/de/pressestelle" element={<Navigate to="/de/presse" replace />} />
             <Route path="/de/faq" element={<Navigate to="https://ask.akoky.com" replace />} />
             <Route path="/de/blog" element={<BlogListing lang="de" />} />
             <Route path="/de/blog/:slug" element={<BlogArticlePage lang="de" />} />
