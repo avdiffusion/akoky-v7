@@ -322,6 +322,51 @@ const SEO_LINKS: Record<Lang, { href: string; label: string }[]> = {
   ],
 };
 
+const SOCIAL_LINKS = [
+  { href: "https://www.facebook.com/groups/1732578494300828/", icon: "📘", label: "Facebook" },
+  { href: "https://x.com/AcoquiVotre", icon: "✖️", label: "X/Twitter" },
+  { href: "https://www.instagram.com/akoky_libertin", icon: "📷", label: "Instagram" },
+  { href: "https://www.tiktok.com/@akoky69", icon: "🎵", label: "TikTok" },
+  { href: "https://www.youtube.com/@AKOKY-COM-Libertin", icon: "📹", label: "YouTube" },
+  { href: "/contact", icon: "✉️", label: "Email" },
+];
+
+const LANGUAGES = [
+  { code: "fr" as Lang, flag: "🇫🇷", label: "Français", href: "/" },
+  { code: "en" as Lang, flag: "🇬🇧", label: "English", href: "/en" },
+  { code: "es" as Lang, flag: "🇪🇸", label: "Español", href: "/es" },
+  { code: "de" as Lang, flag: "🇩🇪", label: "Deutsch", href: "/de" },
+  { code: "it" as Lang, flag: "🇮🇹", label: "Italiano", href: "/it" },
+  { code: "pt" as Lang, flag: "🇵🇹", label: "Português", href: "/pt" },
+];
+
+const LEGAL_QUICK_LABELS: Record<Lang, { legal: string; terms: string; privacy: string; cookies: string; security: string; charter: string }> = {
+  fr: { legal: "Mentions légales", terms: "Conditions", privacy: "Confidentialité", cookies: "Cookies", security: "Sécurité", charter: "Charte AKOKY" },
+  en: { legal: "Legal notices", terms: "Terms", privacy: "Privacy", cookies: "Cookies", security: "Security", charter: "AKOKY Charter" },
+  es: { legal: "Aviso legal", terms: "Condiciones", privacy: "Privacidad", cookies: "Cookies", security: "Seguridad", charter: "Carta AKOKY" },
+  de: { legal: "Impressum", terms: "AGB", privacy: "Datenschutz", cookies: "Cookies", security: "Sicherheit", charter: "AKOKY Charta" },
+  it: { legal: "Note legali", terms: "Condizioni", privacy: "Privacy", cookies: "Cookies", security: "Sicurezza", charter: "Carta AKOKY" },
+  pt: { legal: "Avisos legais", terms: "Termos", privacy: "Privacidade", cookies: "Cookies", security: "Segurança", charter: "Carta AKOKY" },
+};
+
+const COOKIE_LABELS: Record<Lang, { manage: string; info: string }> = {
+  fr: { manage: "⚙️ Gérer les cookies", info: "🍪 Informations cookies" },
+  en: { manage: "⚙️ Manage cookies", info: "🍪 Cookie information" },
+  es: { manage: "⚙️ Gestionar cookies", info: "🍪 Información de cookies" },
+  de: { manage: "⚙️ Cookies verwalten", info: "🍪 Cookie-Informationen" },
+  it: { manage: "⚙️ Gestisci cookie", info: "🍪 Informazioni cookie" },
+  pt: { manage: "⚙️ Gerir cookies", info: "🍪 Informações sobre cookies" },
+};
+
+const TRADEMARK_LABELS: Record<Lang, string> = {
+  fr: "AKOKY est une marque déposée.",
+  en: "AKOKY is a registered trademark.",
+  es: "AKOKY es una marca registrada.",
+  de: "AKOKY ist eine eingetragene Marke.",
+  it: "AKOKY è un marchio registrato.",
+  pt: "AKOKY é uma marca registrada.",
+};
+
 const FooterLinkItem = ({ href, icon, label, external }: { href: string; icon: string; label: string; external?: boolean }) => {
   if (external || href.startsWith("http")) {
     return (
