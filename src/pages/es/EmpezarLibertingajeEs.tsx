@@ -12,12 +12,6 @@ const FAQ = [
 
 const EmpezarLibertingajeEs = () => (
   <>
-    <MetaTags
-      title="Empezar en el Libertinaje | Guía Completa Parejas y Solteros — AKOKY"
-      description="Guía completa para empezar en el libertinaje: primeros pasos, consentimiento, elegir tu club, gestionar los celos. Consejos para parejas y solteros."
-      canonical="https://akoky.com/es/empezar-libertinaje"
-      lang="es"
-    />
     <HreflangTags slug="empezar-libertinaje" />
     <ContentPageLayout
       lang="es"
