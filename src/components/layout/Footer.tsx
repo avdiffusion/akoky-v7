@@ -504,27 +504,32 @@ const Footer = ({ lang = "fr" }: FooterProps) => {
           <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent my-10" />
 
           {/* Legal Seal */}
-          <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 my-8 pt-10 border-t border-border">
-            <div className="flex-shrink-0">
-              <img
-                loading="lazy"
-                src="https://akoky.com/legal-akoky.webp"
-                alt="Tampon légal Akoky – Conformité & Protection Légale"
-                className="max-w-[180px] sm:max-w-[220px] md:max-w-[260px] lg:max-w-[300px] opacity-90"
-              />
-            </div>
-            <div className="max-w-[768px] text-center md:text-left text-[#9ca3af] text-sm leading-7">
-              <p className="mb-3">
-                Akoky est une plateforme opérée par <strong className="text-foreground">Liberty-Interactive-Ltd</strong>, société enregistrée sous le numéro <strong className="text-foreground">932607310</strong>. Liberty-Interactive-Ltd assure la gouvernance légale, la conformité internationale et la protection des données de l'écosystème Akoky, conformément au Data Protection Act (DPA 2018), au RGPD, ainsi qu'aux réglementations applicables aux plateformes pour adultes.
-              </p>
-              <p>
-                Informations institutionnelles :{" "}
-                <a href="https://liberty-interactive-ltd.online/" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary-dark transition-colors">
-                  liberty-interactive-ltd.online
-                </a>
-              </p>
-            </div>
-          </div>
+          {(() => {
+            const LEGAL_TEXTS: Record<Lang, { desc: string; info: string; alt: string }> = {
+              fr: { desc: "Akoky est une plateforme opérée par Liberty-Interactive-Ltd, société enregistrée sous le numéro 932607310. Liberty-Interactive-Ltd assure la gouvernance légale, la conformité internationale et la protection des données de l'écosystème Akoky, conformément au Data Protection Act (DPA 2018), au RGPD, ainsi qu'aux réglementations applicables aux plateformes pour adultes.", info: "Informations institutionnelles :", alt: "Tampon légal Akoky – Conformité & Protection Légale" },
+              es: { desc: "Akoky es una plataforma operada por Liberty-Interactive-Ltd, sociedad registrada con el número 932607310. Liberty-Interactive-Ltd garantiza la gobernanza legal, el cumplimiento internacional y la protección de datos del ecosistema Akoky, conforme al Data Protection Act (DPA 2018), al RGPD y a las regulaciones aplicables a plataformas para adultos.", info: "Información institucional:", alt: "Sello legal Akoky – Conformidad y protección legal" },
+              de: { desc: "Akoky ist eine Plattform, die von Liberty-Interactive-Ltd betrieben wird, einer unter der Nummer 932607310 registrierten Gesellschaft. Liberty-Interactive-Ltd gewährleistet die rechtliche Governance, die internationale Compliance und den Datenschutz des Akoky-Ökosystems gemäß dem Data Protection Act (DPA 2018), der DSGVO sowie den für Erwachsenenplattformen geltenden Vorschriften.", info: "Institutionelle Informationen:", alt: "Rechtliches Siegel Akoky – Konformität & Datenschutz" },
+              it: { desc: "Akoky è una piattaforma gestita da Liberty-Interactive-Ltd, società registrata con il numero 932607310. Liberty-Interactive-Ltd garantisce la governance legale, la conformità internazionale e la protezione dei dati dell'ecosistema Akoky, in conformità con il Data Protection Act (DPA 2018), il GDPR e le normative applicabili alle piattaforme per adulti.", info: "Informazioni istituzionali:", alt: "Sigillo legale Akoky – Conformità e protezione legale" },
+              pt: { desc: "Akoky é uma plataforma operada pela Liberty-Interactive-Ltd, sociedade registada com o número 932607310. A Liberty-Interactive-Ltd assegura a governança legal, a conformidade internacional e a proteção de dados do ecossistema Akoky, em conformidade com o Data Protection Act (DPA 2018), o RGPD e as regulamentações aplicáveis a plataformas para adultos.", info: "Informações institucionais:", alt: "Selo legal Akoky – Conformidade e proteção legal" },
+            };
+            const lt = LEGAL_TEXTS[lang];
+            return (
+              <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 my-8 pt-10 border-t border-border">
+                <div className="flex-shrink-0">
+                  <img loading="lazy" src="https://akoky.com/legal-akoky.webp" alt={lt.alt} className="max-w-[180px] sm:max-w-[220px] md:max-w-[260px] lg:max-w-[300px] opacity-90" />
+                </div>
+                <div className="max-w-[768px] text-center md:text-left text-[#9ca3af] text-sm leading-7">
+                  <p className="mb-3">{lt.desc}</p>
+                  <p>
+                    {lt.info}{" "}
+                    <a href="https://liberty-interactive-ltd.online/" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary-dark transition-colors">
+                      liberty-interactive-ltd.online
+                    </a>
+                  </p>
+                </div>
+              </div>
+            );
+          })()}
 
           {/* Trust Labels */}
           <div className="flex justify-center items-center flex-wrap gap-6 mt-8 pb-8">
