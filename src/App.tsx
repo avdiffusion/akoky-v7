@@ -284,9 +284,7 @@ import NotFound from "./pages/NotFound";
 
 
 // ─── Pages PT livraison 6 ─────────────────────────────────────────────────────
-import ActualitesPt from "./pages/pt/ActualitesPt";
-import BlogRedirectPt from "./pages/pt/BlogRedirectPt";
-import FaqRedirectPt from "./pages/pt/FaqRedirectPt";
+
 import DebuterGuidePt from "./pages/pt/DebuterGuidePt";
 import LibertinageGuidePt from "./pages/pt/LibertinageGuidePt";
 import SaunasGuidePt from "./pages/pt/SaunasGuidePt";
@@ -647,7 +645,7 @@ const App = () => (
             <Route path="/pt/lexico-libertino" element={<LexicoPt />} />
             
             {/* ── Pages PT livraison 6 ───────────────────────────────────── */}
-            <Route path="/pt/atualidade-libertina-2026" element={<ActualitesPt />} />
+            <Route path="/pt/atualidade-libertina-2026" element={<Navigate to="/pt/atualidade-libertina" replace />} />
             <Route path="/pt/comecar-libertinismo-guia" element={<DebuterGuidePt />} />
             <Route path="/pt/libertinismo-guia" element={<LibertinageGuidePt />} />
             <Route path="/pt/saunas-libertinos-guia" element={<SaunasGuidePt />} />
