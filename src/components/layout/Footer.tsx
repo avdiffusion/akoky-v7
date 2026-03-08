@@ -65,14 +65,6 @@ const COMMUNITY_LINKS: Record<Lang, FooterLink[]> = {
     { href: "/faq", icon: "❓", label: "FAQ" },
     { href: "/contact", icon: "✉️", label: "Contact" },
   ],
-  en: [
-    { href: "/en/clubbing", icon: "🏢", label: "Clubbing" },
-    { href: "/en/vip", icon: "💎", label: "VIP Membership" },
-    { href: "/en/lexicon", icon: "📚", label: "Libertine Lexicon" },
-    { href: "/en/press", icon: "📰", label: "Press Room" },
-    { href: "/en/faq", icon: "❓", label: "FAQ" },
-    { href: "/en/contact", icon: "✉️", label: "Contact" },
-  ],
   es: [
     { href: "/es/clubbing", icon: "🏢", label: "Clubbing" },
     { href: "/es/vip", icon: "💎", label: "Membresía VIP" },
