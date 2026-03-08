@@ -178,7 +178,7 @@ const SaunasLibertins = () => (
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img src="https://akoky.com/images/carte-saunas-france.webp" alt="Carte saunas libertins France" className="w-full h-auto" loading="lazy" />
+              <img src="/images/carte-saunas-france.webp" alt="Carte saunas libertins France" className="w-full h-auto" loading="lazy" />
             </div>
             <div className="grid grid-cols-2 gap-3">
               {REGIONS.map((l, i) => (

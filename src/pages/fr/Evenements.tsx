@@ -115,7 +115,7 @@ const Evenements = () => (
       canonical="https://akoky.com/fr/evenements"
       heroTitle="Événements libertins Akoky – Soirées & Apéros Libertins en France"
       heroSubtitle="Vivez l'expérience libertine premium : soirées en club, apéros exclusifs et rencontres authentiques"
-      heroImage="https://akoky.com/images/events-akoky-cover.webp"
+      heroImage="/images/events-akoky-cover.webp"
       breadcrumb={[{ label: "Événements libertins" }]}
       faq={FAQ}
     >

@@ -29,7 +29,7 @@ const Jeux = () => (
       canonical="https://akoky.com/fr/jeux"
       heroTitle="AKOKY Space – Jeux Libertins & Exploration"
       heroSubtitle="Quiz sensuels, défis et jeux libertins pour explorer et partager avec bienveillance."
-      heroImage="https://akoky.com/images/cover-jeux.webp"
+      heroImage="/images/cover-jeux.webp"
       breadcrumb={[{ label: "Jeux AKOKY Space" }]}
       faq={FAQ}
     >
