@@ -655,7 +655,7 @@ const App = () => (
             <Route path="/pt/jogos-libertinos-guia" element={<JeuxGuidePt />} />
             <Route path="/pt/eventos-libertinos-guia" element={<EvenementsGuidePt />} />
             <Route path="/pt/vip-premium-guia" element={<VipGuidePt />} />
-            <Route path="/pt/visao-akoky-guide" element={<VisionGuidePt />} />
+            <Route path="/pt/visao-akoky-guia" element={<VisionGuidePt />} />
             <Route path="/pt/primeiro-clube-libertino" element={<PremierClubGuidePt />} />
             <Route path="/pt/primeira-experiencia-libertina" element={<PremierRdvGuidePt />} />
             <Route path="/pt/perguntas-principiantes-guia" element={<QuestionsGuidePt />} />
