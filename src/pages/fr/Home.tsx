@@ -246,7 +246,7 @@ const Home = () => {
                 <div className="bg-card border border-border rounded-2xl overflow-hidden">
                   <div className="relative">
                     <div className="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full z-10 animate-pulse">LIVE</div>
-                    <img loading="lazy" src="https://akoky.com/images/live.webp" alt="Live Preview" width="600" height="400" className="w-full aspect-video object-cover" />
+                    <img loading="lazy" src="/images/live-akoky.webp" alt="Live Preview" width="600" height="400" className="w-full aspect-video object-cover" />
                   </div>
                   <div className="p-4 flex justify-between items-center">
                     <div>
