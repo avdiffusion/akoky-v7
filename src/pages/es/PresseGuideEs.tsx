@@ -28,7 +28,7 @@ const PresseGuideEs = () => (
       canonical="https://akoky.com/es/sala-de-prensa"
       heroTitle="Prensa y Colaboraciones"
       heroSubtitle="Espacio de prensa AKOKY: dossier de medios, estadísticas y contacto para relaciones con los medios."
-      heroImage="/images/presse-libertine.webp"
+      heroImage="/images/es-prensa-cover.webp"
       breadcrumb={[{ label: "Prensa y Colaboraciones" }]}
       faq={FAQ}
     >

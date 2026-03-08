@@ -14,7 +14,7 @@ const PremierClubGuideEs = () => (
   <>
     <MetaTags title="Tu Primer Club Libertino 2026 – Guía Completa | AKOKY" description="Guía completa para tu primer club libertino en España." canonical="https://akoky.com/es/primer-club-libertino" lang="es" ogImage="/images/premier-club-cover.webp" />
     <HreflangTags slug="primer-club-libertino" />
-    <ContentPageLayout lang="es" title="Tu Primer Club Libertino 2026" description="Guía completa para tu primer club libertino." canonical="https://akoky.com/es/primer-club-libertino" heroTitle="Tu Primer Club Libertino" heroSubtitle="Todo lo que necesitas saber para vivir esta primera experiencia con confianza" heroImage="/images/premier-club-cover.webp" breadcrumb={[{ label: "Primer Club Libertino" }]} faq={FAQ}>
+    <ContentPageLayout lang="es" title="Tu Primer Club Libertino 2026" description="Guía completa para tu primer club libertino." canonical="https://akoky.com/es/primer-club-libertino" heroTitle="Tu Primer Club Libertino" heroSubtitle="Todo lo que necesitas saber para vivir esta primera experiencia con confianza" <ContentPageLayout lang="es" title="Tu Primer Club Libertino 2026" description="Guía completa para tu primer club libertino." canonical="https://akoky.com/es/primer-club-libertino" heroTitle="Tu Primer Club Libertino" heroSubtitle="Todo lo que necesitas saber para vivir esta primera experiencia con confianza" heroImage="/images/es-primer-club-cover.webp" breadcrumb={[{ label: "Primer Club Libertino" }]} faq={FAQ}>
       <section className="py-8 px-4 bg-card/50">
         <div className="container max-w-4xl mx-auto">
           <div className="flex flex-wrap gap-3">
