@@ -145,9 +145,9 @@ const ClubsLibertinsGeneve = () => {
             <div className="prose prose-invert prose-lg max-w-none">
               <p>Genève fait partie d'une scène libertine suisse dynamique, avec d'autres villes qui offrent également des expériences uniques. Pour découvrir les clubs libertins dans ces villes, consultez nos guides dédiés :</p>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose">
-                <li><Link to="/clubbing-suisse" className="text-primary hover:underline">Clubs à Lausanne</Link></li>
-                <li><Link to="/clubbing-suisse" className="text-primary hover:underline">Clubs à Zurich</Link></li>
-                <li><Link to="/clubbing-suisse" className="text-primary hover:underline">Clubs à Bâle</Link></li>
+                <li><Link to="/fr/clubs-libertins-lausanne" className="text-primary hover:underline">Clubs à Lausanne</Link></li>
+                <li><Link to="/fr/clubs-libertins-zurich" className="text-primary hover:underline">Clubs à Zurich</Link></li>
+                <li><Link to="/fr/clubs-libertins-bale" className="text-primary hover:underline">Clubs à Bâle</Link></li>
               </ul>
             </div>
           </div>
