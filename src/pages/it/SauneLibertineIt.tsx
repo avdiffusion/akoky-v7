@@ -12,9 +12,9 @@ const CITIES = [
   { name: "Milano", icon: "🏙️", desc: "Lusso e design nella capitale della moda", href: "/it/club-libertini-milano" },
   { name: "Roma", icon: "🏛️", desc: "Terme romane e atmosfera eterna", href: "/it/club-libertini-roma" },
   { name: "Torino", icon: "⛰️", desc: "Eleganza sabauda e relax piemontese", href: "/it/club-libertini-torino" },
-  { name: "Bologna", icon: "🍝", desc: "Convivialità emiliana e benessere", href: "/it/club-libertini" },
-  { name: "Firenze", icon: "🎨", desc: "Arte rinascimentale e sensualità", href: "/it/club-libertini" },
-  { name: "Napoli", icon: "🌋", desc: "Passione partenopea e terme vulcaniche", href: "/it/club-libertini" },
+  { name: "Bologna", icon: "🍝", desc: "Convivialità emiliana e benessere", href: "/it/club-libertini-bologna" },
+  { name: "Firenze", icon: "🎨", desc: "Arte rinascimentale e sensualità", href: "/it/club-libertini-firenze" },
+  { name: "Napoli", icon: "🌋", desc: "Passione partenopea e terme vulcaniche", href: "/it/club-libertini-napoli" },
 ];
 
 const FEATURES = [
