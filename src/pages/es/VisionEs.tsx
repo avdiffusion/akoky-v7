@@ -1,5 +1,4 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
-import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
 import { Link } from "react-router-dom";
 
@@ -11,12 +10,6 @@ const FAQ = [
 
 const VisionEs = () => (
   <>
-    <MetaTags
-      title="AKOKY | Nuestra Visión — La Evolución del Libertinaje Moderno"
-      description="Descubre la visión de AKOKY: una plataforma libertina moderna, segura y responsable. De AcoquinementVotre a AKOKY, la historia de una evolución."
-      canonical="https://akoky.com/es/vision"
-      lang="es"
-    />
     <HreflangTags slug="vision" />
     <ContentPageLayout
       lang="es"

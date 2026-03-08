@@ -1,5 +1,4 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
-import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
 import { Link } from "react-router-dom";
 
@@ -11,12 +10,6 @@ const FAQ = [
 
 const ContactoEs = () => (
   <>
-    <MetaTags
-      title="AKOKY España | Contacto — Soporte y Asistencia Premium"
-      description="Contacta con AKOKY: soporte para miembros, solicitudes de socios, prensa y afiliación. Equipo disponible 24h para acompañarte."
-      canonical="https://akoky.com/es/contacto"
-      lang="es"
-    />
     <HreflangTags slug="contacto" />
     <ContentPageLayout
       lang="es"

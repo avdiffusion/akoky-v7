@@ -1,5 +1,4 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
-import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
 import { Link } from "react-router-dom";
 
@@ -12,12 +11,6 @@ const FAQ = [
 
 const VipEs = () => (
   <>
-    <MetaTags
-      title="AKOKY VIP | Suscripción Premium — Acceso Exclusivo Comunidad Libertina"
-      description="Descubre la suscripción VIP AKOKY: acceso exclusivo a eventos libertinos privados, multiperfiles certificados y comunidad premium segura."
-      canonical="https://akoky.com/es/vip"
-      lang="es"
-    />
     <HreflangTags slug="vip" />
     <ContentPageLayout
       lang="es"

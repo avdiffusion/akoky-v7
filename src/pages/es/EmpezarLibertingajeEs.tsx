@@ -1,5 +1,4 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
-import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
 import { Link } from "react-router-dom";
 
@@ -12,12 +11,6 @@ const FAQ = [
 
 const EmpezarLibertingajeEs = () => (
   <>
-    <MetaTags
-      title="Empezar en el Libertinaje | Guía Completa Parejas y Solteros — AKOKY"
-      description="Guía completa para empezar en el libertinaje: primeros pasos, consentimiento, elegir tu club, gestionar los celos. Consejos para parejas y solteros."
-      canonical="https://akoky.com/es/empezar-libertinaje"
-      lang="es"
-    />
     <HreflangTags slug="empezar-libertinaje" />
     <ContentPageLayout
       lang="es"
@@ -27,7 +20,7 @@ const EmpezarLibertingajeEs = () => (
       heroTitle="Empezar en el Libertinaje, a Tu Ritmo"
       heroSubtitle="Una guía práctica y respetuosa para descubrir este universo paso a paso, en pareja o solo/a."
       heroImage="/images/debuter-libertinage-cover.webp"
-      breadcrumb={[{ label: "Empezar en el Libertinaje, a Tu Ritmo" }]}
+      breadcrumb={[{ label: "Empezar" }]}
       faq={FAQ}
     >
       <section className="py-12 md:py-20 px-4">

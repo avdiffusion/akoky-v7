@@ -1,5 +1,4 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
-import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
 import { Link } from "react-router-dom";
 
@@ -11,12 +10,6 @@ const FAQ = [
 
 const LiveEs = () => (
   <>
-    <MetaTags
-      title="Lives Libertinos Exclusivos | Streaming Premium AKOKY España"
-      description="Descubre 20+ lives libertinos por semana: ambiente de clubs en directo, veladas exclusivas, contenidos VIP. Streaming seguro y discreto."
-      canonical="https://akoky.com/es/live"
-      lang="es"
-    />
     <HreflangTags slug="live" />
     <ContentPageLayout
       lang="es"
@@ -26,7 +19,7 @@ const LiveEs = () => (
       heroTitle="Lives AKOKY — Vídeos y Encuentros en Directo"
       heroSubtitle="20+ lives por semana: clubs en directo, veladas exclusivas, contenidos VIP. Seguro y discreto."
       heroImage="/images/es-live-cover.webp"
-      breadcrumb={[{ label: "Lives AKOKY — Vídeos y Encuentros en Directo" }]}
+      breadcrumb={[{ label: "Lives AKOKY" }]}
       faq={FAQ}
     >
       <section className="py-12 md:py-20 px-4">

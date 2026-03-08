@@ -1,7 +1,7 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import HreflangTags from "@/components/seo/HreflangTags";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import MetaTags from "@/components/seo/MetaTags";
 
 const FAQ = [
   { question: "¿Cómo participar en los concursos Akoky?", answer: "Para participar, debes ser miembro registrado en Akoky. Cada concurso tiene sus propias reglas de participación detalladas en su página dedicada. La mayoría son gratuitos y abiertos a todos los miembros activos." },
@@ -34,13 +34,12 @@ const PAGE_SCHEMA = {
 
 const ConcursoEs = () => (
   <>
-    <Helmet>
-      <html lang="es" />
-      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
-      <meta property="og:locale" content="es_ES" />
-      <meta property="og:site_name" content="AKOKY" />
-      <meta name="twitter:site" content="@akoky_official" />
-    </Helmet>
+    <MetaTags
+      title="Concursos AKOKY – Gana Experiencias Libertinas Exclusivas"
+      description="Participa gratuitamente en los concursos Akoky y gana estancias en los mejores clubes libertinos de España y Europa, suscripciones VIP y experiencias únicas."
+      canonical="https://akoky.com/es/concurso"
+      lang="es"
+    />
     <HreflangTags slug="concurso" />
 
     <ContentPageLayout

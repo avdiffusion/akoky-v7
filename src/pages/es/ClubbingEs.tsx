@@ -1,5 +1,4 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
-import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
 import { Link } from "react-router-dom";
 
@@ -11,12 +10,6 @@ const FAQ = [
 
 const ClubbingEs = () => (
   <>
-    <MetaTags
-      title="Clubbing Libertino en España 2026 | Guía de Veladas — AKOKY"
-      description="Guía completa del clubbing libertino en España: qué esperar, cómo prepararse, los mejores clubes en Madrid, Barcelona y toda España."
-      canonical="https://akoky.com/es/clubbing"
-      lang="es"
-    />
     <HreflangTags slug="clubbing" />
     <ContentPageLayout
       lang="es"
@@ -26,7 +19,7 @@ const ClubbingEs = () => (
       heroTitle="Clubbing Libertino en España"
       heroSubtitle="Descubre la escena del clubbing libertino: preparación, códigos, los mejores clubs y cómo vivir la experiencia al máximo."
       heroImage="/images/es-eventos-cover.webp"
-      breadcrumb={[{ label: "Clubbing Libertino en España" }]}
+      breadcrumb={[{ label: "Clubbing" }]}
       faq={FAQ}
     >
       <section className="py-12 md:py-20 px-4">

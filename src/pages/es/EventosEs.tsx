@@ -1,5 +1,4 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
-import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
 import { Link } from "react-router-dom";
 
@@ -24,7 +23,7 @@ const ES_CARDS = [
     text: "Barcelona acoge los eventos libertinos Akoky más creativos y vanguardistas. La capital catalana, conocida por su apertura de miras, ofrece un marco excepcional para nuestras veladas libertinas donde se mezclan arte, cultura y sensualidad. Cada velada en Barcelona es una experiencia única en uno de los epicentros del libertinaje europeo."
   },
   {
-    img: "/images/soirreeparis.webp",
+    img: "/images/es-madrid-rooftop.webp",
     alt: "Afterwork libertino Akoky en Madrid",
     title: "Afterworks Libertinos en Madrid",
     text: "Los afterworks libertinos Akoky en Madrid son la ocasión perfecta para descubrir la comunidad en un ambiente relajado. Estos eventos en las mejores terrazas y locales privados de la capital permiten conocerse antes de participar en las veladas libertinas más íntimas."
@@ -100,18 +99,11 @@ const CTA_LINKS = [
 
 const EventosEs = () => (
   <>
-    <MetaTags
-      title="Eventos Libertinos AKOKY 2026 – Veladas y Afterworks Libertinos España"
-      description="Veladas libertinas, afterworks y fines de semana exclusivos con AKOKY. Únete a la comunidad libertina premium en España: Madrid, Barcelona, Ibiza y más."
-      canonical="https://akoky.com/es/eventos"
-      lang="es"
-      ogImage="/images/es-eventos-cover.webp"
-    />
     <HreflangTags slug="eventos" />
     <ContentPageLayout
       lang="es"
-      title="Eventos Libertinos AKOKY España"
-      description="Veladas, afterworks y fines de semana libertinos en España"
+      title="Eventos Libertinos AKOKY 2026 – Veladas y Afterworks España"
+      description="Veladas libertinas, afterworks y fines de semana exclusivos con AKOKY. Únete a la comunidad libertina premium en España: Madrid, Barcelona, Ibiza y más."
       canonical="https://akoky.com/es/eventos"
       heroTitle="Eventos Libertinos Akoky – Veladas y Encuentros Libertinos en España"
       heroSubtitle="Vive la experiencia libertina premium: veladas en club, afterworks exclusivos y encuentros auténticos en toda España"

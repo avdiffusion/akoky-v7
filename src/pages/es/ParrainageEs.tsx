@@ -1,5 +1,4 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
-import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
 import { Link } from "react-router-dom";
 
@@ -11,12 +10,6 @@ const FAQ = [
 
 const ParrainageEs = () => (
   <>
-    <MetaTags
-      title="Programa de Afiliación AKOKY | Invita y Gana Ventajas"
-      description="Invita a tus amigos a AKOKY y gana ventajas exclusivas: acceso VIP, eventos gratuitos y más. El programa de afiliación de la comunidad libertina."
-      canonical="https://akoky.com/es/parrainage"
-      lang="es"
-    />
     <HreflangTags slug="parrainage" />
     <ContentPageLayout
       lang="es"
@@ -26,7 +19,7 @@ const ParrainageEs = () => (
       heroTitle="Programa de Afiliación AKOKY"
       heroSubtitle="Invita a tus amigos, gana ventajas exclusivas y haz crecer tu comunidad."
       heroImage="/images/es-parrainage-cover.webp"
-      breadcrumb={[{ label: "Programa de Afiliación AKOKY" }]}
+      breadcrumb={[{ label: "Afiliación" }]}
       faq={FAQ}
     >
       <section className="py-12 md:py-20 px-4">

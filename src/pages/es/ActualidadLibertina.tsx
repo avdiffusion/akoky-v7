@@ -1,5 +1,4 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
-import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
 import { Link } from "react-router-dom";
 
@@ -10,12 +9,6 @@ const FAQ = [
 
 const ActualidadLibertina = () => (
   <>
-    <MetaTags
-      title="Actualidad Libertina 2026 | Tendencias y Noticias — AKOKY España"
-      description="Sigue las últimas tendencias del mundo libertino en España y Europa: nuevos clubes, eventos destacados, evoluciones del sector. Análisis independiente por AKOKY."
-      canonical="https://akoky.com/es/actualidad-libertina"
-      lang="es"
-    />
     <HreflangTags slug="actualidad-libertina" />
     <ContentPageLayout
       lang="es"
@@ -25,7 +18,7 @@ const ActualidadLibertina = () => (
       heroTitle="Actualidad y Tendencias Libertinas"
       heroSubtitle="La veille editorial del mundo libertino en España: tendencias, análisis y novedades actualizadas."
       heroImage="/images/es-actualidad-cover.webp"
-      breadcrumb={[{ label: "Actualidad y Tendencias Libertinas" }]}
+      breadcrumb={[{ label: "Actualidad" }]}
       faq={FAQ}
     >
       <section className="py-12 md:py-20 px-4">

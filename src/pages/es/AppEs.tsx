@@ -1,5 +1,4 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
-import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
 import { Link } from "react-router-dom";
 
@@ -11,12 +10,6 @@ const FAQ = [
 
 const AppEs = () => (
   <>
-    <MetaTags
-      title="AKOKY App | Aplicación Libertina Premium iOS y Android"
-      description="Descarga la app AKOKY: geolocalización, mensajería instantánea, alertas de eventos y gestión de perfil. La app libertina más completa de Europa."
-      canonical="https://akoky.com/es/app"
-      lang="es"
-    />
     <HreflangTags slug="app" />
     <ContentPageLayout
       lang="es"
@@ -26,7 +19,7 @@ const AppEs = () => (
       heroTitle="La Aplicación Libertina más Completa de Europa"
       heroSubtitle="Geolocalización, chat tipo WhatsApp, alertas de eventos y multiperfil. Todo en tu smartphone."
       heroImage="/images/es-app-cover.webp"
-      breadcrumb={[{ label: "La Aplicación Libertina más Completa de Europa" }]}
+      breadcrumb={[{ label: "App AKOKY" }]}
       faq={FAQ}
     >
       <section className="py-12 md:py-20 px-4">
