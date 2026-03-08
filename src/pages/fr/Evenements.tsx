@@ -105,7 +105,7 @@ const Evenements = () => (
       description="Soirées libertines, apéros afterwork et weekends exclusifs avec AKOKY. Rejoignez la communauté libertine premium en France."
       canonical="https://akoky.com/fr/evenements"
       lang="fr"
-      ogImage="https://akoky.com/images/events-akoky-cover.webp"
+      ogImage="/images/events-akoky-cover.webp"
     />
     <HreflangTags slug="evenements" />
     <ContentPageLayout
