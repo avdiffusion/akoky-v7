@@ -29,7 +29,7 @@ const Libertinage = () => (
       canonical="https://akoky.com/fr/libertinage"
       heroTitle="Le Libertinage Moderne : Définition, Pratiques & Éthique"
       heroSubtitle="Tout comprendre sur le libertinage aujourd'hui : définitions, formes de pratiques, consentement et vie en couple."
-      heroImage="https://akoky.com/images/libertinage-cover.webp"
+      heroImage="/images/libertinage-cover.webp"
       breadcrumb={[{ label: "Le Libertinage" }]}
       faq={FAQ}
     >
