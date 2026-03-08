@@ -105,7 +105,14 @@ import BlogAdmin from "./pages/admin/BlogAdmin";
 import BlogEditor from "./pages/admin/BlogEditor";
 import BlogLogin from "./pages/admin/BlogLogin";
 
-// ─── Pages ES livraison 3 ─────────────────────────────────────────────────────
+// ─── Concours system ─────────────────────────────────────────────────────────
+import ConcoursListing from "./pages/concours/ConcoursListing";
+import ConcoursArticlePage from "./pages/concours/ConcoursArticle";
+import ConcoursAdmin from "./pages/admin/ConcoursAdmin";
+import ConcoursEditor from "./pages/admin/ConcoursEditor";
+import ConcoursLogin from "./pages/admin/ConcoursLogin";
+
+
 import HomeEs from "./pages/es/HomeEs";
 import AkokyEs from "./pages/es/AkokyEs";
 import LibertingajeEs from "./pages/es/LibertingajeEs";
