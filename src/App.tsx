@@ -625,6 +625,9 @@ const App = () => (
             <Route path="/it/blog/:slug" element={<BlogArticlePage lang="it" />} />
             <Route path="/it/concours" element={<ConcoursListing lang="it" />} />
             <Route path="/it/concours/:slug" element={<ConcoursArticlePage lang="it" />} />
+            <Route path="/it/club-libertini-milano" element={<ClubLibertiniMilano />} />
+            <Route path="/it/club-libertini-roma" element={<ClubLibertiniRoma />} />
+            <Route path="/it/club-libertini-torino" element={<ClubLibertiniTorino />} />
 
             {/* ══════════════════════════════════════════════════════════════
                 ROUTES PT
