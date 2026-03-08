@@ -103,6 +103,27 @@ const RecensioniIt = () => (
           </a>
         </div>
       </section>
+
+      {/* Scopri Anche */}
+      <section className="py-16 px-4">
+        <div className="container max-w-5xl mx-auto">
+          <h2 className="text-2xl font-bold text-foreground text-center mb-10">Scopri Anche</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {[
+              { href: "/it/club-libertini", icon: "🏛️", title: "Club Libertini", desc: "Annuario completo dei club verificati." },
+              { href: "/it/saune-libertine", icon: "♨️", title: "Saune Libertine", desc: "Wellness e piacere in Italia." },
+              { href: "/it/vip", icon: "💎", title: "AKOKY VIP", desc: "Vantaggi esclusivi per i membri premium." },
+              { href: "/it/iniziare-libertinismo", icon: "🧭", title: "Come Iniziare", desc: "Guida per i primi passi." },
+            ].map((l) => (
+              <Link key={l.href} to={l.href} className="group block rounded-2xl border border-border bg-card p-5 hover:border-primary/40 hover:shadow-lg transition-all">
+                <span className="text-3xl mb-2 block">{l.icon}</span>
+                <h3 className="text-sm font-bold text-foreground group-hover:text-primary transition-colors mb-1">{l.title}</h3>
+                <p className="text-xs text-muted-foreground">{l.desc}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
     </ContentPageLayout>
   </>
 );

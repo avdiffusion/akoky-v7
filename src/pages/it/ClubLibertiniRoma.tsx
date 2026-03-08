@@ -11,9 +11,9 @@ import { parseEtablissements, getByLang, type Etablissement } from "@/lib/etabli
 const otherCities = [
   { name: "Milano", href: "/it/club-libertini-milano" },
   { name: "Torino", href: "/it/club-libertini-torino" },
-  { name: "Bologna", href: "/it/club-libertini" },
-  { name: "Firenze", href: "/it/club-libertini" },
-  { name: "Napoli", href: "/it/club-libertini" },
+  { name: "Bologna", href: "/it/club-libertini-bologna" },
+  { name: "Firenze", href: "/it/club-libertini-firenze" },
+  { name: "Napoli", href: "/it/club-libertini-napoli" },
 ];
 
 const ClubLibertiniRoma = () => {

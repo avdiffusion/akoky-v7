@@ -338,7 +338,22 @@ const ClubLibertiniIt = () => {
             <h2 className="text-xl font-bold text-foreground mb-6 text-center">Esplora per città</h2>
             <div className="flex flex-wrap justify-center gap-2">
               {[
-                "Milano", "Roma", "Torino", "Bologna", "Firenze", "Napoli",
+                { city: "Milano", href: "/it/club-libertini-milano" },
+                { city: "Roma", href: "/it/club-libertini-roma" },
+                { city: "Torino", href: "/it/club-libertini-torino" },
+                { city: "Bologna", href: "/it/club-libertini-bologna" },
+                { city: "Firenze", href: "/it/club-libertini-firenze" },
+                { city: "Napoli", href: "/it/club-libertini-napoli" },
+              ].map((c) => (
+                <Link
+                  key={c.city}
+                  to={c.href}
+                  className="text-sm px-4 py-2 border border-border rounded-full text-muted-foreground hover:border-primary hover:text-primary transition-all font-semibold"
+                >
+                  🏛️ {c.city}
+                </Link>
+              ))}
+              {[
                 "Venezia", "Verona", "Genova", "Palermo", "Catania", "Bari",
                 "Cagliari", "Rimini", "Lecce", "Taormina", "Padova", "Perugia", "Trieste",
               ].map((city) => (

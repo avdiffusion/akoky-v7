@@ -221,6 +221,27 @@ const AkokyIt = () => {
             <a href="https://app.akoky.com/register" className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground rounded-full font-bold text-lg hover:opacity-90 transition-opacity">Crea il mio account gratuito</a>
           </div>
         </section>
+
+        {/* Scopri Anche */}
+        <section className="py-16 px-4">
+          <div className="container max-w-5xl mx-auto">
+            <h2 className="text-2xl font-bold text-foreground text-center mb-10">Scopri Anche</h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+              {[
+                { href: "/it/club-libertini", icon: "🏛️", title: "Club Libertini", desc: "120+ club verificati in Europa." },
+                { href: "/it/eventi", icon: "📅", title: "Eventi", desc: "300+ eventi esclusivi al mese." },
+                { href: "/it/akoky-vs-wyylde", icon: "⚔️", title: "AKOKY vs Wyylde", desc: "Confronto dettagliato 2026." },
+                { href: "/it/miglior-sito-libertino", icon: "🏆", title: "Miglior Sito", desc: "Classifica completa Italia." },
+              ].map((l) => (
+                <Link key={l.href} to={l.href} className="group block rounded-2xl border border-border bg-card p-5 hover:border-primary/40 hover:shadow-lg transition-all">
+                  <span className="text-3xl mb-2 block">{l.icon}</span>
+                  <h3 className="text-sm font-bold text-foreground group-hover:text-primary transition-colors mb-1">{l.title}</h3>
+                  <p className="text-xs text-muted-foreground">{l.desc}</p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
       </ContentPageLayout>
     </>
   );

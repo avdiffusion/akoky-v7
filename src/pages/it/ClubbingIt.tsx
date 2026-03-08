@@ -14,18 +14,18 @@ const glowCardClass =
   "relative overflow-hidden bg-card border border-border rounded-2xl p-8 hover:border-primary/60 transition-all duration-500 group before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/5 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500";
 
 const cities = [
-  { label: "Milano", emoji: "🏙️", desc: "Capitale del glamour libertino" },
-  { label: "Roma", emoji: "🏛️", desc: "Club esclusivi nella Città Eterna" },
-  { label: "Torino", emoji: "👑", desc: "Eleganza sabauda e serate raffinate" },
-  { label: "Bologna", emoji: "🍝", desc: "Convivialità e cene-club emiliane" },
-  { label: "Firenze", emoji: "🎨", desc: "Atmosfere rinascimentali sensuali" },
-  { label: "Napoli", emoji: "🌋", desc: "Passione e panorami mozzafiato" },
-  { label: "Venezia", emoji: "🎭", desc: "Balli in maschera e palazzi" },
-  { label: "Verona", emoji: "💕", desc: "Club romantici nella città dell'amore" },
-  { label: "Palermo", emoji: "🌺", desc: "Nuova frontiera libertina siciliana" },
-  { label: "Catania", emoji: "🔥", desc: "Vita notturna ai piedi dell'Etna" },
-  { label: "Rimini", emoji: "🏖️", desc: "Beach party sulla Riviera" },
-  { label: "Genova", emoji: "⚓", desc: "Atmosfera portuale unica" },
+  { label: "Milano", emoji: "🏙️", desc: "Capitale del glamour libertino", href: "/it/club-libertini-milano" },
+  { label: "Roma", emoji: "🏛️", desc: "Club esclusivi nella Città Eterna", href: "/it/club-libertini-roma" },
+  { label: "Torino", emoji: "👑", desc: "Eleganza sabauda e serate raffinate", href: "/it/club-libertini-torino" },
+  { label: "Bologna", emoji: "🍝", desc: "Convivialità e cene-club emiliane", href: "/it/club-libertini-bologna" },
+  { label: "Firenze", emoji: "🎨", desc: "Atmosfere rinascimentali sensuali", href: "/it/club-libertini-firenze" },
+  { label: "Napoli", emoji: "🌋", desc: "Passione e panorami mozzafiato", href: "/it/club-libertini-napoli" },
+  { label: "Venezia", emoji: "🎭", desc: "Balli in maschera e palazzi", href: "/it/club-libertini" },
+  { label: "Verona", emoji: "💕", desc: "Club romantici nella città dell'amore", href: "/it/club-libertini" },
+  { label: "Palermo", emoji: "🌺", desc: "Nuova frontiera libertina siciliana", href: "/it/club-libertini" },
+  { label: "Catania", emoji: "🔥", desc: "Vita notturna ai piedi dell'Etna", href: "/it/club-libertini" },
+  { label: "Rimini", emoji: "🏖️", desc: "Beach party sulla Riviera", href: "/it/club-libertini" },
+  { label: "Genova", emoji: "⚓", desc: "Atmosfera portuale unica", href: "/it/club-libertini" },
 ];
 
 const regions = [
@@ -161,7 +161,7 @@ const ClubbingIt = () => {
               {cities.map((c, i) => (
                 <Link
                   key={c.label}
-                  to={`/it/club-libertini`}
+                  to={c.href}
                   className="relative overflow-hidden bg-card border border-border rounded-2xl p-5 hover:border-primary/60 hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 group hover:-translate-y-1"
                   style={{ animationDelay: `${i * 50}ms` }}
                 >

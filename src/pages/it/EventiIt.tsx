@@ -94,8 +94,16 @@ const CTA_LINKS = [
   { to: "/it/saune-libertine", label: "Saune Libertine" },
   { to: "/it/vip", label: "Status VIP" },
   { to: "/it/live", label: "Live Akoky" },
-  { to: "/it/iniziare-libertinismo", label: "Iniziare nel Libertinismo" },
+  { to: "/it/iniziare-libertinismo", label: "Iniziare" },
   { to: "/it/app", label: "App Mobile" },
+  { to: "/it/club-libertini-milano", label: "Club Milano" },
+  { to: "/it/club-libertini-roma", label: "Club Roma" },
+  { to: "/it/club-libertini-torino", label: "Club Torino" },
+  { to: "/it/club-libertini-bologna", label: "Club Bologna" },
+  { to: "/it/club-libertini-firenze", label: "Club Firenze" },
+  { to: "/it/club-libertini-napoli", label: "Club Napoli" },
+  { to: "/it/attualita-libertine", label: "Attualità" },
+  { to: "/it/lessico-libertino", label: "Lessico" },
 ];
 
 const EventiIt = () => (

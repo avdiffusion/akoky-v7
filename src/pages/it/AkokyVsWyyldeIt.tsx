@@ -23,7 +23,7 @@ const AkokyVsWyyldeIt = () => (
             <strong>AKOKY</strong> porta una ventata di aria fresca posizionandosi come un vero <strong>social network libertino</strong>. Con innovazioni come il <strong>multi-profilo</strong> (prima mondiale), la chat tipo WhatsApp con gruppi, le testimonianze verificate e un'interfaccia nativa in italiano, AKOKY risponde alle aspettative dei libertini moderni che cercano più di un semplice sito di incontri.
           </p>
           <p>
-            Per gli utenti italiani, la scelta è chiara: AKOKY offre una copertura della scena libertina italiana (club a <Link to="/it/club-libertini-milano" className="text-primary hover:underline">Milano</Link>, <Link to="/it/club-libertini-roma" className="text-primary hover:underline">Roma</Link>, <Link to="/it/club-libertini-torino" className="text-primary hover:underline">Torino</Link>) che Wyylde non può eguagliare.
+            Per gli utenti italiani, la scelta è chiara: AKOKY offre una copertura della scena libertina italiana (club a <Link to="/it/club-libertini-milano" className="text-primary hover:underline">Milano</Link>, <Link to="/it/club-libertini-roma" className="text-primary hover:underline">Roma</Link>, <Link to="/it/club-libertini-torino" className="text-primary hover:underline">Torino</Link>, <Link to="/it/club-libertini-bologna" className="text-primary hover:underline">Bologna</Link>, <Link to="/it/club-libertini-firenze" className="text-primary hover:underline">Firenze</Link> e <Link to="/it/club-libertini-napoli" className="text-primary hover:underline">Napoli</Link>) che Wyylde non può eguagliare.
           </p>
         </>
       }
