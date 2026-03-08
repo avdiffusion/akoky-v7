@@ -2,7 +2,7 @@ import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import HreflangTags from "@/components/seo/HreflangTags";
 import ReviewsList from "@/components/reviews/ReviewsList";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import MetaTags from "@/components/seo/MetaTags";
 
 const BREADCRUMB_SCHEMA = {
   "@context": "https://schema.org",
