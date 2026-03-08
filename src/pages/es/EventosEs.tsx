@@ -46,9 +46,9 @@ const MADRID_CARDS = [
   },
   {
     img: "/images/apero-bruxelle.webp",
-    alt: "Apéro libertino Akoky en Madrid",
-    title: "Apéros Libertinos Internacionales",
-    text: "Los apéros libertinos Akoky en Madrid reúnen una comunidad multicultural y abierta. Estos eventos son la ocasión de conocer miembros venidos de toda Europa, en el espíritu de apertura que caracteriza la escena libertina madrileña."
+    alt: "Afterwork libertino Akoky en Madrid",
+    title: "Afterworks Libertinos Internacionales",
+    text: "Los afterworks libertinos Akoky en Madrid reúnen una comunidad multicultural y abierta. Estos eventos son la ocasión de conocer miembros venidos de toda Europa, en el espíritu de apertura que caracteriza la escena libertina madrileña."
   },
 ];
 
