@@ -11,12 +11,6 @@ const FAQ = [
 
 const AppEs = () => (
   <>
-    <MetaTags
-      title="AKOKY App | Aplicación Libertina Premium iOS y Android"
-      description="Descarga la app AKOKY: geolocalización, mensajería instantánea, alertas de eventos y gestión de perfil. La app libertina más completa de Europa."
-      canonical="https://akoky.com/es/app"
-      lang="es"
-    />
     <HreflangTags slug="app" />
     <ContentPageLayout
       lang="es"
