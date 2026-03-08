@@ -74,7 +74,7 @@ const ClubsLibertinsFlandre = () => {
               <p>Les clubs échangistes flamands sont particulièrement prisés pour leur ambiance moderne et leur organisation impeccable. Les saunas libertins, quant à eux, offrent une expérience plus détendue et intimiste, avec des espaces dédiés aux rencontres.</p>
               <div className="mt-6">
                 <p className="mb-4">Pour découvrir l'ensemble des clubs libertins en Flandre, consultez notre guide complet :</p>
-                <Link to="/clubbing-belgique" className="inline-block px-6 py-3 rounded-full bg-primary text-black font-bold hover:bg-primary-dark transition-colors">
+                <Link to="/fr/clubbing-belgique" className="inline-block px-6 py-3 rounded-full bg-primary text-black font-bold hover:bg-primary-dark transition-colors">
                   Découvrir les clubs
                 </Link>
               </div>
