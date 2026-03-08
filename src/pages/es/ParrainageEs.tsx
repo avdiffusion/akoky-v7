@@ -1,6 +1,7 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
+import { Link } from "react-router-dom";
 
 const FAQ = [
   { question: "¿El programa de afiliación es gratuito?", answer: "Sí. La participación en el programa de afiliación es completamente gratuita para todos los miembros AKOKY." },
