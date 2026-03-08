@@ -143,9 +143,9 @@ const HomeEs = () => {
             <h1 className="text-gradient-gold text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-wider leading-tight mb-4">
               Encuentros adultos &amp; experiencias exclusivas en España
             </h1>
-            <h2 className="text-lg md:text-xl font-normal text-white/95 mb-8 max-w-[800px] mx-auto">
+            <p className="text-lg md:text-xl font-normal text-white/95 mb-8 max-w-[800px] mx-auto">
               La comunidad premium para conocer personas abiertas de mente, descubrir clubes y participar en eventos para adultos en toda España — de Barcelona a Madrid, de Ibiza a Sevilla.
-            </h2>
+            </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a href="https://app.akoky.com/register" className="w-full sm:w-auto px-8 py-4 rounded-full font-bold btn-gradient-primary text-primary-foreground hover:-translate-y-0.5 transition-all hover:shadow-xl hover:shadow-primary/30">
                 UNIRSE A LA COMUNIDAD
