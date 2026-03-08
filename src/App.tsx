@@ -501,6 +501,8 @@ const App = () => (
             <Route path="/es/faq" element={<Navigate to="https://ask.akoky.com" replace />} />
             <Route path="/es/blog" element={<BlogListing lang="es" />} />
             <Route path="/es/blog/:slug" element={<BlogArticlePage lang="es" />} />
+            <Route path="/es/concours" element={<ConcoursListing lang="es" />} />
+            <Route path="/es/concours/:slug" element={<ConcoursArticlePage lang="es" />} />
 
             {/* ══════════════════════════════════════════════════════════════
                 ROUTES DE
