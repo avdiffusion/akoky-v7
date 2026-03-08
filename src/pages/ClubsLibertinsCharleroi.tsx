@@ -70,7 +70,7 @@ const ClubsLibertinsCharleroi = () => {
               <p>Les clubs charlerois offrent des espaces modernes et bien équipés, avec des ambiances variées pour répondre à tous les goûts. Les saunas libertins, quant à eux, proposent une expérience plus détendue et intimiste, avec des espaces dédiés aux rencontres et à la détente.</p>
               <div className="mt-6">
                 <p className="mb-4">Pour découvrir l'ensemble des clubs libertins en Belgique, consultez notre guide dédié :</p>
-                <Link to="/clubbing-belgique" className="inline-block px-6 py-3 rounded-full bg-primary text-black font-bold hover:bg-primary-dark transition-colors">
+                <Link to="/fr/clubbing-belgique" className="inline-block px-6 py-3 rounded-full bg-primary text-black font-bold hover:bg-primary-dark transition-colors">
                   Découvrir les clubs en Belgique
                 </Link>
               </div>
