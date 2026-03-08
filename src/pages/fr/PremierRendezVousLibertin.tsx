@@ -12,7 +12,7 @@ const PremierRendezVousLibertin = () => (
       description="Tout savoir pour votre premier rendez-vous libertin : préparation, dress code, règles et conseils pratiques. AKOKY."
       canonical="https://akoky.com/fr/premier-rendez-vous-libertin"
       lang="fr"
-      ogImage="https://akoky.com/images/premier-rendez-vous-libertin-cover.webp"
+      ogImage="/images/premier-rendez-vous-libertin-cover.webp"
     />
     <HreflangTags slug="premier-rendez-vous-libertin" />
     <ContentPageLayout
