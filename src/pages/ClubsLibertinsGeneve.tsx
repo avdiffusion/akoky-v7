@@ -113,8 +113,8 @@ const ClubsLibertinsGeneve = () => {
               <p>Genève, avec sa proximité immédiate avec la France, bénéficie d'une scène libertine transfrontalière dynamique. La ville attire une clientèle française, notamment de Haute-Savoie et de Rhône-Alpes, pour des week-ends libertins et des soirées privées. Les déplacements sont facilités par des liaisons fréquentes et rapides entre les deux pays.</p>
               <p>Les couples français apprécient particulièrement les clubs genevois pour leur discrétion et leur excellence. La fréquentation depuis la France est importante, avec des couples venant régulièrement profiter de l'offre libertine genevoise. Pour découvrir les clubs libertins en France, consultez nos guides dédiés :</p>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose">
-                <li><Link to="/clubs-echangistes-france" className="text-primary hover:underline">Clubs en Auvergne-Rhône-Alpes</Link></li>
-                <li><Link to="/clubbing-france-europe" className="text-primary hover:underline">Clubbing en France et en Europe</Link></li>
+                <li><Link to="/fr/clubs-libertins-auvergne-rhone-alpes" className="text-primary hover:underline">Clubs en Auvergne-Rhône-Alpes</Link></li>
+                <li><Link to="/fr/clubbing-france-europe" className="text-primary hover:underline">Clubbing en France et en Europe</Link></li>
               </ul>
             </div>
           </div>
