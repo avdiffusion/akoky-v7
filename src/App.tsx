@@ -232,6 +232,7 @@ import ClubbingIt from "./pages/it/ClubbingIt";
 import RecensioniIt from "./pages/it/RecensioniIt";
 import ReferralIt from "./pages/it/ReferralIt";
 import LessicoLibertino from "./pages/it/LessicoLibertino";
+import ConcorsoIt from "./pages/it/ConcorsoIt";
 
 
 // ─── Pages IT livraison 6 ─────────────────────────────────────────────────────
