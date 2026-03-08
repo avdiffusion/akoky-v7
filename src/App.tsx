@@ -690,12 +690,8 @@ const App = () => (
             <Route path="/pt/concours/:slug" element={<ConcoursArticlePage lang="pt" />} />
             <Route path="/pt/*" element={<Navigate to="/pt" replace />} />
 
-            {/* ── EN Pages ──────────────────────────────────────────── */}
-            <Route path="/en/reviews" element={<ReviewsEn />} />
-            <Route path="/en/blog" element={<BlogListing lang="en" />} />
-            <Route path="/en/blog/:slug" element={<BlogArticlePage lang="en" />} />
-            <Route path="/en/concours" element={<ConcoursListing lang="en" />} />
-            <Route path="/en/concours/:slug" element={<ConcoursArticlePage lang="en" />} />
+            {/* EN removed – redirect to FR */}
+            <Route path="/en/*" element={<Navigate to="/" replace />} />
 
             {/* ── Admin Blog ─────────────────────────────────────────────── */}
             <Route path="/admin/blog/login" element={<BlogLogin />} />
