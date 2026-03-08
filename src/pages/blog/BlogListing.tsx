@@ -74,6 +74,8 @@ const META: Record<BlogLang, { title: string; description: string; heroTitle: st
 const BlogListing = ({ lang }: BlogListingProps) => {
   const [search, setSearch] = useState("");
   const [filterCat, setFilterCat] = useState<BlogCategory | "">("");
+  const [visibleCount, setVisibleCount] = useState(ARTICLES_PER_PAGE);
+  const loaderRef = useRef<HTMLDivElement>(null);
   const meta = META[lang];
 
   const articles = useMemo(() => {
@@ -85,6 +87,29 @@ const BlogListing = ({ lang }: BlogListingProps) => {
       return t?.title.toLowerCase().includes(s) || t?.metaDescription.toLowerCase().includes(s);
     });
   }, [lang, filterCat, search]);
+
+  // Reset visible count when filters change
+  useEffect(() => {
+    setVisibleCount(ARTICLES_PER_PAGE);
+  }, [search, filterCat]);
+
+  // Infinite scroll observer
+  useEffect(() => {
+    if (visibleCount >= articles.length) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setVisibleCount((prev) => Math.min(prev + ARTICLES_PER_PAGE, articles.length));
+        }
+      },
+      { rootMargin: "200px" }
+    );
+    const el = loaderRef.current;
+    if (el) observer.observe(el);
+    return () => { if (el) observer.unobserve(el); };
+  }, [visibleCount, articles.length]);
+
+  const visibleArticles = articles.slice(0, visibleCount);
 
   const canonical = lang === "fr" ? "https://akoky.com/fr/blog" : `https://akoky.com/${lang}/blog`;
 
