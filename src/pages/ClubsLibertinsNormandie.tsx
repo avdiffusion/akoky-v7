@@ -18,7 +18,7 @@ const ClubsLibertinsNormandie = () => {
       heroTitle="Meilleurs clubs libertins en Normandie"
       heroSubtitle="La Normandie, avec son charme discret et son attractivité week-end, est une région libertine dynamique."
       faq={faq}
-      breadcrumb={[{ label: "Clubbing France", href: "/clubbing-france-europe" }, { label: "Clubs libertins en Normandie" }]}
+      breadcrumb={[{ label: "Clubbing France", href: "/fr/clubbing-france-europe" }, { label: "Clubs libertins en Normandie" }]}
     >
       <section className="py-16 px-4">
         <div className="container max-w-4xl mx-auto prose prose-invert prose-lg">
