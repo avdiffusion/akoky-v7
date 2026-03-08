@@ -444,7 +444,7 @@ const Footer = ({ lang = "fr" }: FooterProps) => {
                 {titles.resources}
               </h3>
               <ul className="flex flex-col gap-3">
-                {RESOURCE_LINKS.map((l) => <FooterLinkItem key={l.href} {...l} external />)}
+                {RESOURCE_LINKS[lang].map((l) => <FooterLinkItem key={l.href} {...l} external />)}
               </ul>
             </div>
           </div>
