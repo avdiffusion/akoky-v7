@@ -188,7 +188,7 @@ const ComparatifLayout = ({
         </script>
       </Helmet>
 
-      <Header />
+      <Header lang={lang} />
 
       <main className="min-h-screen bg-background">
         {/* HERO */}
