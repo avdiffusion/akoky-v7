@@ -110,7 +110,7 @@ const SECTION_TITLES: Record<Lang, { discover: string; community: string; resour
 
 const BRAND_DESC: Record<Lang, string> = {
   fr: "La plus grande communauté libertine d'Europe. Un espace élégant, sécurisé et authentique.",
-  en: "Europe's largest libertine community. An elegant, secure and authentic space.",
+  
   es: "La mayor comunidad libertina de Europa. Un espacio elegante, seguro y auténtico.",
   de: "Europas größte libertine Community. Ein eleganter, sicherer und authentischer Raum.",
   it: "La più grande comunità libertina d'Europa. Uno spazio elegante, sicuro e autentico.",
