@@ -86,7 +86,7 @@ const Vision = () => (
           <h2 className="text-2xl font-bold text-foreground mb-5">Une plateforme pensée pour tous les profils</h2>
             <p className="text-muted-foreground leading-relaxed mb-3">Le libertinage est pluriel. Akoky aussi.</p>
             <p className="text-muted-foreground leading-relaxed mb-3">Il n'existe pas un seul libertinage, mais des libertinages. Chaque parcours est unique, chaque couple ou individu a ses propres motivations, ses propres limites, ses propres envies. Akoky a été conçue pour accueillir cette diversité sans hiérarchie ni jugement.</p>
-            <p className="text-muted-foreground leading-relaxed mb-3">Que vous soyez un couple cherchant à explorer de nouvelles expériences, une femme seule souhaitant évoluer dans un cadre respectueux, un homme célibataire désireux de rencontres authentiques, ou encore des débutants curieux d'un univers qu'ils découvrent, Akoky propose un espace adapté. Nous avons pensé chaque fonctionnalité pour que personne ne se</p>
+            <p className="text-muted-foreground leading-relaxed mb-3">Que vous soyez un couple cherchant à explorer de nouvelles expériences, une femme seule souhaitant évoluer dans un cadre respectueux, un homme célibataire désireux de rencontres authentiques, ou encore des débutants curieux d'un univers qu'ils découvrent, Akoky propose un espace adapté. Nous avons pensé chaque fonctionnalité pour que personne ne se sente exclu ni jugé.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6">
             <div className="bg-background border border-border rounded-xl p-5">
               <h3 className="font-semibold text-foreground mb-2">Couples</h3>
