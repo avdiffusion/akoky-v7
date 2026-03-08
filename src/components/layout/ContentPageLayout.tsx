@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/accordion";
 
 interface ContentPageLayoutProps {
+  lang?: string;
   title: string;
   description: string;
   canonical: string;
