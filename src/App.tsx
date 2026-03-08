@@ -628,6 +628,9 @@ const App = () => (
             <Route path="/it/club-libertini-milano" element={<ClubLibertiniMilano />} />
             <Route path="/it/club-libertini-roma" element={<ClubLibertiniRoma />} />
             <Route path="/it/club-libertini-torino" element={<ClubLibertiniTorino />} />
+            <Route path="/it/club-libertini-bologna" element={<ClubLibertiniBologna />} />
+            <Route path="/it/club-libertini-napoli" element={<ClubLibertiniNapoli />} />
+            <Route path="/it/club-libertini-firenze" element={<ClubLibertiniFirenze />} />
 
             {/* ══════════════════════════════════════════════════════════════
                 ROUTES PT
