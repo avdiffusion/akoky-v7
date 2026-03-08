@@ -9,7 +9,7 @@ const FEATURED_ARTICLES = [
   {
     title: "Clubs Libertins à Paris 2026 — Le Guide Complet AKOKY",
     description: "Découvrez les meilleurs clubs libertins de Paris en 2026 : ambiance, tarifs, dress code et conseils pour une première visite réussie.",
-    image: "https://akoky.com/images/panorama-paris-nuit.webp",
+    image: "/images/panorama-paris-nuit.webp",
     href: "https://akoky.com/fr/blogs/clubs-libertins-paris-guide-2026",
     category: "Guide",
     readTime: "12 min",
