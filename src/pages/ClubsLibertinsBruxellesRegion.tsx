@@ -41,9 +41,9 @@ const ClubsLibertinsBruxellesRegion = () => {
           <h2 className="text-3xl font-bold text-foreground font-display">Bruxelles, Wallonie et Flandre : une scène connectée</h2>
           <p>Bruxelles joue un rôle central dans la scène libertine belge, servant de point de rencontre entre la Wallonie et la Flandre.</p>
           <div className="flex flex-wrap gap-3 not-prose my-6">
-            <Link to="/clubs-libertins-wallonie" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Clubs en Wallonie</Link>
-            <Link to="/clubs-libertins-flandre" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Clubs en Flandre</Link>
-            <Link to="/clubbing-belgique" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Clubbing en Belgique</Link>
+            <Link to="/fr/clubs-libertins-wallonie" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Clubs en Wallonie</Link>
+            <Link to="/fr/clubs-libertins-flandre" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Clubs en Flandre</Link>
+            <Link to="/fr/clubbing-belgique" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Clubbing en Belgique</Link>
           </div>
 
           <h2 className="text-3xl font-bold text-foreground font-display">Bruxelles et la France : une relation libertine privilégiée</h2>
