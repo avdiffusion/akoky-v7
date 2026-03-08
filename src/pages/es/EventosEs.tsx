@@ -1,6 +1,7 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
+import { Link } from "react-router-dom";
 
 const FAQ = [
   { question: "¿Cómo participar en los eventos AKOKY?", answer: "Regístrate en AKOKY, navega por el calendario de eventos y reserva tu plaza directamente online. Algunos eventos requieren estatus VIP." },
