@@ -98,8 +98,8 @@ const ClubsLibertinsFlandre = () => {
               <div className="mt-6">
                 <p className="mb-4">Pour en savoir plus sur le clubbing libertin en Belgique et en France, consultez nos guides dédiés :</p>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose">
-                  <li><Link to="/clubbing-belgique" className="text-primary hover:underline">Clubbing en Belgique</Link></li>
-                  <li><Link to="/clubs-echangistes-france" className="text-primary hover:underline">Clubs dans les Hauts-de-France</Link></li>
+                  <li><Link to="/fr/clubbing-belgique" className="text-primary hover:underline">Clubbing en Belgique</Link></li>
+                  <li><Link to="/fr/clubs-libertins-hauts-de-france" className="text-primary hover:underline">Clubs dans les Hauts-de-France</Link></li>
                 </ul>
               </div>
             </div>
