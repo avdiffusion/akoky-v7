@@ -1,6 +1,7 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
+import { Link } from "react-router-dom";
 
 const FAQ = [
   { question: "¿Hay que estar en pareja para empezar?", answer: "No. Solteros y parejas son bienvenidos. Las mujeres solteras tienen acceso privilegiado a muchos clubes y eventos." },
