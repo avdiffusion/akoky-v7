@@ -407,7 +407,7 @@ const App = () => (
             <Route path="/fr/guide-libertin-france" element={<GuideLibertin />} />
             <Route path="/fr/guide-ultime-libertinage-france" element={<GuideUltimeLibertin />} />
             <Route path="/fr/concours-six-cles" element={<ConcoursSixCles />} />
-            <Route path="/fr/annuaire-clubs-libertins" element={<AnnuaireClubs />} />
+            <Route path="/fr/concours/:slug" element={<ConcoursArticlePage lang="fr" />} />
             <Route path="/fr/clubs" element={<AnnuaireClubs />} />
 
             {/* ══════════════════════════════════════════════════════════════
