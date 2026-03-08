@@ -17,6 +17,7 @@ import {
   type BlogTranslation,
 } from "@/lib/blog-types";
 import RichTextEditor from "@/components/blog/RichTextEditor";
+import ImageUploader from "@/components/admin/ImageUploader";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -27,7 +28,6 @@ import {
   Save,
   Eye,
   Globe,
-  Image as ImageIcon,
   CheckCircle,
   XCircle,
 } from "lucide-react";
@@ -188,26 +188,11 @@ const BlogEditor = () => {
             </div>
 
             {/* Image */}
-            <div className="bg-card border border-border rounded-xl p-4 space-y-3">
-              <label className="text-sm font-medium text-foreground flex items-center gap-2">
-                <ImageIcon className="h-4 w-4" /> Image principale
-              </label>
-              <Input
-                value={article.image}
-                onChange={(e) =>
-                  setArticle((prev) => ({ ...prev, image: e.target.value }))
-                }
-                placeholder="/blog-images/mon-image.jpg"
-              />
-              {article.image && (
-                <img
-                  src={article.image}
-                  alt="Preview"
-                  className="w-full rounded-lg object-cover aspect-video bg-muted"
-                  onError={(e) => ((e.target as HTMLImageElement).style.display = "none")}
-                />
-              )}
-            </div>
+            <ImageUploader
+              value={article.image}
+              onChange={(dataUrl) => setArticle((prev) => ({ ...prev, image: dataUrl }))}
+              label="Image de couverture"
+            />
 
             {/* Languages Status */}
             <div className="bg-card border border-border rounded-xl p-4 space-y-3">
