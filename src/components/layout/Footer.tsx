@@ -456,7 +456,7 @@ const Footer = ({ lang = "fr" }: FooterProps) => {
           <div className="text-center my-8">
             <h3 className="flex items-center justify-center gap-2 text-sm font-bold uppercase tracking-wider text-[#9ca3af] mb-6">
               <span>🌍</span>
-              {copy.lang} / Languages
+              {copy.lang}
             </h3>
             <div className="flex flex-wrap justify-center gap-4 mb-6">
               {LANGUAGES.map((l) => (
