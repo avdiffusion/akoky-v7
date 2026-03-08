@@ -1,4 +1,5 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
+import ReviewsList from "@/components/reviews/ReviewsList";
 import { Link } from "react-router-dom";
 
 const Avis = () => {
