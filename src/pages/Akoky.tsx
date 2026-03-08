@@ -57,7 +57,7 @@ const Akoky = () => {
       canonical="https://akoky.com/fr/akoky"
       heroTitle="Notre mission AKOKY"
       heroSubtitle="Découvrez les valeurs, la vision et les engagements de la communauté Akoky"
-      heroImage="https://akoky.com/fr/images/akoky.webp"
+      heroImage="/images/akoky.webp"
       faq={faqAkoky}
       schema={jsonSchema}
     >
@@ -84,7 +84,7 @@ const Akoky = () => {
             </div>
             <div className="relative">
               <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full opacity-20"></div>
-              <img src="https://akoky.com/fr/images/3tel.webp" alt="AKOKY App Screenshot" className="relative z-10 rounded-2xl shadow-2xl border border-border mx-auto max-w-sm" loading="lazy" />
+              <img src="/images/3tel.webp" alt="AKOKY App Screenshot" className="relative z-10 rounded-2xl shadow-2xl border border-border mx-auto max-w-sm" loading="lazy" />
             </div>
           </div>
         </div>
@@ -164,7 +164,7 @@ const Akoky = () => {
               <p className="text-xs text-muted-foreground mt-4">📺 Compatible TV · Chromecast · Smart TV</p>
             </div>
             <div>
-              <img src="https://akoky.com/fr/images/app-tv.webp" alt="Jeux Akoky sur télévision et grand écran" className="rounded-2xl shadow-2xl border border-border mx-auto" loading="lazy" />
+              <img src="/images/app-tv.webp" alt="Jeux Akoky sur télévision et grand écran" className="rounded-2xl shadow-2xl border border-border mx-auto" loading="lazy" />
             </div>
           </div>
         </div>
@@ -192,7 +192,7 @@ const Akoky = () => {
               <Link to="/fr/presse" className="text-primary font-bold hover:underline">Accéder au dossier de presse →</Link>
             </div>
             <div>
-              <img src="https://akoky.com/fr/images/akoky-presse.webp" alt="AKOKY Press Kit" className="rounded-2xl shadow-xl border border-border" loading="lazy" />
+              <img src="/images/akoky-presse.webp" alt="AKOKY Press Kit" className="rounded-2xl shadow-xl border border-border" loading="lazy" />
             </div>
           </div>
         </div>

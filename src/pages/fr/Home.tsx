@@ -35,9 +35,9 @@ const CONFIANCE_CARDS = [
 ];
 
 const EVENT_CARDS = [
-  { title: "Soirées Exclusives", desc: "Des événements privés dans les lieux les plus prestigieux.", location: "Paris", count: "120+", img: "https://akoky.com/images/event/event1.webp", alt: "Soirées libertines exclusives Akoky" },
-  { title: "Weekends Thématiques", desc: "Des escapades inoubliables avec la communauté.", location: "Côte d'Azur", count: "80+", img: "https://akoky.com/images/event/event2.webp", alt: "Week-ends libertins et escapades Akoky" },
-  { title: "Rencontres Intimes", desc: "Des soirées plus intimistes pour mieux se connaître.", location: "Lyon", count: "40+", img: "https://akoky.com/images/event/event3.webp", alt: "Rencontres intimistes et soirées privées Akoky" },
+  { title: "Soirées Exclusives", desc: "Des événements privés dans les lieux les plus prestigieux.", location: "Paris", count: "120+", img: "/images/event/event1.webp", alt: "Soirées libertines exclusives Akoky" },
+  { title: "Weekends Thématiques", desc: "Des escapades inoubliables avec la communauté.", location: "Côte d'Azur", count: "80+", img: "/images/event/event2.webp", alt: "Week-ends libertins et escapades Akoky" },
+  { title: "Rencontres Intimes", desc: "Des soirées plus intimistes pour mieux se connaître.", location: "Lyon", count: "40+", img: "/images/event/event3.webp", alt: "Rencontres intimistes et soirées privées Akoky" },
 ];
 
 const QUICK_ACCESS = [
@@ -83,7 +83,7 @@ const schemas = [
     "@type": "Organization",
     name: "AKOKY",
     url: "https://akoky.com",
-    logo: "https://akoky.com/images/logo-akoky.webp",
+    logo: "/images/logo-akoky.webp",
     description: "Plateforme communautaire libertine premium en Europe",
     foundingDate: "2014",
     contactPoint: { "@type": "ContactPoint", contactType: "Customer Service", email: "contact@akoky.com", availableLanguage: ["fr", "en", "es", "de", "it", "pt"] },
@@ -127,7 +127,7 @@ const Home = () => {
         <section
           className="relative min-h-[90vh] md:min-h-[75vh] flex items-center justify-center text-center overflow-hidden pt-[70px]"
           style={{
-            backgroundImage: "url('https://legal.akoky.com/UPLOAD-AKOKY/AKOKY.COM/images/hero-home/home2-desktop.webp')",
+            backgroundImage: "url('/images/home2-desktop.webp')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
@@ -232,7 +232,7 @@ const Home = () => {
                 </Link>
               </div>
               <div className="text-center">
-                <img loading="lazy" src="https://akoky.com/images/tel.webp" alt="App Akoky" width="380" height="760" className="w-[380px] mx-auto rounded-3xl shadow-2xl" />
+                <img loading="lazy" src="/images/tel.webp" alt="App Akoky" width="380" height="760" className="w-[380px] mx-auto rounded-3xl shadow-2xl" />
               </div>
             </div>
           </div>

@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="fr">
+
+<!--
+    █████╗ ██╗  ██╗ ██████╗ ██╗  ██╗ ██╗   ██╗
+   ██╔══██╗██║ ██╔╝██╔═══██╗██║ ██╔╝ ╚██╗ ██╔╝
+   ███████║█████╔╝ ██║   ██║█████╔╝   ╚████╔╝
+   ██╔══██║██╔═██╗ ██║   ██║██╔═██╗    ╚██╔╝
+   ██║  ██║██║  ██╗╚██████╔╝██║  ██╗    ██║
+   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝    ╚═╝
+        ===============================
+        AKOKY — OFFICIAL PLATFORM
+        © Akoky — Tous droits réservés
+        ===============================
+
+        🔒 PROTECTED BY INTELLECTUAL PROPERTY LAW
+        Unauthorized copying, modification or extraction
+        is prohibited and punishable by law.
+
+        📧 Legal contact: legal@akoky.com
+        🏢 Liberty Interactive Ltd
+-->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=5, viewport-fit=cover" />
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- CACHE & COMPAT                                                  -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-language" content="fr" />
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- SÉCURITÉ HTTP                                                   -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="
+      default-src 'self';
+      script-src 'self' 'unsafe-inline' 'unsafe-eval'
+        https://fonts.googleapis.com
+        https://fonts.gstatic.com
+        https://www.googletagmanager.com
+        https://www.google-analytics.com;
+      style-src 'self' 'unsafe-inline'
+        https://fonts.googleapis.com
+        https://fonts.gstatic.com;
+      font-src 'self' https://fonts.gstatic.com;
+      img-src 'self' data: https:;
+      connect-src 'self'
+        https://akoky.com
+        https://www.akoky.com
+        https://legal.akoky.com
+        https://app.akoky.com
+        https://www.google-analytics.com;
+      frame-ancestors 'self';
+    "
+  />
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- IDENTITÉ & SIGNATURE                                            -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <title>💫AKOKY – Plateforme Libertine Premium | France & Europe</title>
+  <meta name="description" content="AKOKY : 1,5M de membres, clubs libertins premium, événements exclusifs. La plateforme libertine de référence en France et Europe." />
+  <meta name="application-name" content="Akoky Global" />
+  <meta name="author" content="AKOKY" />
+  <meta name="owner" content="Akoky Official Platform" />
+  <meta name="copyright" content="© Akoky — Tous droits réservés" />
+  <meta name="generator" content="AKOKY CORE — Protected Build" />
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- THEME / PWA                                                     -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="manifest" href="/manifest.json" />
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- FAVICONS                                                        -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <link rel="icon" href="https://www.akoky.com/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+  <meta name="msapplication-TileImage" content="/mstile-150x150.png" />
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- PRECONNECT / PERFORMANCE                                        -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://legal.akoky.com" />
+  <link rel="preconnect" href="https://app.akoky.com" />
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- HREFLANG MULTILINGUE                                            -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <link rel="alternate" hreflang="fr" href="https://akoky.com/fr/" />
+  <link rel="alternate" hreflang="es" href="https://akoky.com/es/" />
+  <link rel="alternate" hreflang="pt" href="https://akoky.com/pt/" />
+  <link rel="alternate" hreflang="it" href="https://akoky.com/it/" />
+  <link rel="alternate" hreflang="de" href="https://akoky.com/de/" />
+  <link rel="alternate" hreflang="x-default" href="https://akoky.com/fr/" />
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- OPEN GRAPH                                                      -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="AKOKY" />
+  <meta property="og:title" content="AKOKY – Plateforme Libertine Premium | France & Europe" />
+  <meta property="og:description" content="AKOKY : 1,5M de membres, clubs libertins premium, événements exclusifs. La plateforme libertine de référence en France et Europe." />
+  <meta property="og:url" content="https://akoky.com" />
+  <meta property="og:image" content="https://akoky.com/images/logo-akoky.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="fr_FR" />
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- TWITTER                                                         -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@akoky_official" />
+  <meta name="twitter:title" content="AKOKY – Plateforme Libertine Premium | France & Europe" />
+  <meta name="twitter:description" content="AKOKY : 1,5M de membres, clubs libertins premium, événements exclusifs." />
+  <meta name="twitter:image" content="https://akoky.com/images/logo-akoky.webp" />
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- GOOGLE ANALYTICS 4                                              -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G2M7CCGRD3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-G2M7CCGRD3', {
+      'anonymize_ip': true,
+      'send_page_view': true,
+      'cookie_flags': 'SameSite=None;Secure'
+    });
+  </script>
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- PROTECTION CSS                                                  -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <style>
+    body {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+      -webkit-touch-callout: none;
+    }
+    img {
+      pointer-events: none;
+      -webkit-user-drag: none;
+      user-drag: none;
+    }
+    a, button, input, textarea, select {
+      pointer-events: auto;
+    }
+  </style>
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- SCHEMA ORGANISATION                                             -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AKOKY",
+    "url": "https://akoky.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://akoky.com/images/logo-akoky.webp",
+      "width": 200,
+      "height": 200
+    },
+    "description": "Plateforme communautaire libertine premium en Europe",
+    "foundingDate": "2014",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Service",
+      "email": "contact@akoky.com",
+      "availableLanguage": ["fr", "es", "de", "it", "pt"]
+    },
+    "sameAs": [
+      "https://www.facebook.com/akokyofficial",
+      "https://www.instagram.com/akoky_official",
+      "https://twitter.com/akoky_official",
+      "https://apps.apple.com/app/akoky/id6738318538",
+      "https://play.google.com/store/apps/details?id=com.akoky.app"
+    ],
+    "areaServed": ["FR", "ES", "PT", "IT", "DE", "BE", "CH", "LU"]
+  }
+  </script>
+
+  <script type="module" crossorigin src="/assets/index-BN6N9tPM.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Can68Daw.css">
+</head>
+
+<body>
+
+  <div id="root"></div>
+
+  <!-- 🚀 VITE ENTRY — NE PAS TOUCHER -->
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- 🔐 PROTECTION JS RENFORCÉE                                      -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <script>
+  (function() {
+
+    // =============================================
+    // ENVIRONMENT DETECTION
+    // =============================================
+    const isLocalEnvironment =
+      window.location.hostname === "localhost" ||
+      window.location.hostname === "127.0.0.1" ||
+      window.location.protocol === "file:" ||
+      window.location.hostname.includes("lovable.app") ||
+      window.location.hostname.includes("lovable.dev");
+
+    if (isLocalEnvironment) return;
+
+    // =============================================
+    // RIGHT CLICK PROTECTION
+    // =============================================
+    document.addEventListener("contextmenu", e => {
+      e.preventDefault();
+    });
+
+    // =============================================
+    // DRAG & DROP PROTECTION
+    // =============================================
+    document.addEventListener("dragstart", e => {
+      e.preventDefault();
+    });
+
+    // =============================================
+    // KEYBOARD PROTECTION
+    // =============================================
+    document.addEventListener("keydown", function(e) {
+
+      if (e.key === "F12") {
+        e.preventDefault();
+        return false;
+      }
+
+      if (e.ctrlKey || e.metaKey) {
+        const k = e.key.toLowerCase();
+
+        if (["u", "s", "p", "x"].includes(k)) {
+          e.preventDefault();
+          return false;
+        }
+
+        if (k === "c") {
+          const selection = window.getSelection().toString();
+          if (selection.length > 100) {
+            e.preventDefault();
+            return false;
+          }
+        }
+
+        if (k === "a") {
+          const target = e.target;
+          if (target.tagName !== "INPUT" && target.tagName !== "TEXTAREA") {
+            e.preventDefault();
+            return false;
+          }
+        }
+
+        if (e.shiftKey && ["i", "j"].includes(k)) {
+          e.preventDefault();
+          return false;
+        }
+      }
+    });
+
+    // =============================================
+    // COPY / CUT PROTECTION
+    // =============================================
+    document.addEventListener("copy", e => {
+      const selection = window.getSelection().toString();
+      if (selection.length > 100) {
+        e.preventDefault();
+        if (e.clipboardData) {
+          e.clipboardData.setData(
+            "text/plain",
+            "© AKOKY — Contenu protégé\nReproduction non autorisée — Tous droits réservés\nContact légal : legal@akoky.com\nLiberty Interactive Ltd"
+          );
+        }
+      }
+    });
+
+    document.addEventListener("cut", e => {
+      e.preventDefault();
+    });
+
+    // =============================================
+    // MASS SELECTION PROTECTION
+    // =============================================
+    document.addEventListener("selectstart", e => {
+      const selection = window.getSelection().toString();
+      if (selection.length > 100) {
+        e.preventDefault();
+      }
+    });
+
+    // =============================================
+    // IFRAME PROTECTION
+    // =============================================
+    if (window.top !== window.self) {
+      window.top.location = window.self.location;
+    }
+
+    // =============================================
+    // DEVTOOLS DETECTION — FLOUTAGE + AVERTISSEMENT
+    // =============================================
+    let devtoolsOpen = false;
+    const threshold = 160;
+
+    const detectDevTools = () => {
+      const widthDiff  = window.outerWidth  - window.innerWidth;
+      const heightDiff = window.outerHeight - window.innerHeight;
+
+      if (widthDiff > threshold || heightDiff > threshold) {
+        if (!devtoolsOpen) {
+          devtoolsOpen = true;
+          document.body.style.filter = "blur(8px)";
+          document.body.style.pointerEvents = "none";
+
+          if (!document.getElementById("akoky-devtools-warning")) {
+            const warning = document.createElement("div");
+            warning.id = "akoky-devtools-warning";
+            warning.style.cssText = `
+              position: fixed;
+              top: 0; left: 0; right: 0; bottom: 0;
+              z-index: 999999;
+              background: rgba(0,0,0,0.92);
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+              font-family: 'Inter', sans-serif;
+              color: #fff;
+              padding: 2rem;
+              pointer-events: auto;
+            `;
+            warning.innerHTML = `
+              <div style="font-size:4rem;margin-bottom:1rem;">🔒</div>
+              <h2 style="font-size:1.8rem;font-weight:900;color:#d7a86e;margin-bottom:1rem;">
+                Accès non autorisé
+              </h2>
+              <p style="font-size:1rem;color:#ccc;max-width:500px;line-height:1.7;margin-bottom:1.5rem;">
+                Ce contenu est protégé par le droit de la propriété intellectuelle.<br/>
+                Toute reproduction, extraction ou modification est strictement interdite<br/>
+                et passible de poursuites judiciaires.
+              </p>
+              <p style="font-size:0.85rem;color:#888;margin-bottom:2rem;">
+                © AKOKY — Tous droits réservés<br/>
+                Protégé par <strong style="color:#d7a86e;">Liberty Interactive Ltd</strong>
+              </p>
+              <a href="https://liberty-interactive-ltd.online"
+                 target="_blank"
+                 rel="noopener"
+                 style="
+                   color:#d7a86e;
+                   text-decoration:underline;
+                   font-size:0.9rem;
+                   margin-bottom:2rem;
+                 ">
+                liberty-interactive-ltd.online
+              </a>
+              <button onclick="location.reload()" style="
+                padding:0.8rem 2rem;
+                background:linear-gradient(135deg,#d7a86e,#a86a3e);
+                color:#fff;
+                border:none;
+                border-radius:9999px;
+                font-size:1rem;
+                font-weight:700;
+                cursor:pointer;
+              ">
+                Fermer les outils de développement
+              </button>
+            `;
+            document.body.appendChild(warning);
+          }
+        }
+      } else {
+        if (devtoolsOpen) {
+          devtoolsOpen = false;
+          document.body.style.filter = "";
+          document.body.style.pointerEvents = "";
+          const warning = document.getElementById("akoky-devtools-warning");
+          if (warning) warning.remove();
+        }
+      }
+    };
+
+    // DevTools detection disabled - causes black screen on iOS Safari
+
+    // =============================================
+    // CONSOLE WARNING
+    // =============================================
+    console.clear();
+    console.log(
+      "%c🔒 AKOKY — CONTENU PROTÉGÉ",
+      "color:#d7a86e;font-size:20px;font-weight:900;"
+    );
+    console.log(
+      "%cCe site est protégé par le droit de la propriété intellectuelle.\nToute reproduction non autorisée est interdite et passible de poursuites.\n\n© AKOKY — Liberty Interactive Ltd\nlegal@akoky.com",
+      "color:#ccc;font-size:13px;"
+    );
+
+    // =============================================
+    // VISIBILITY MONITOR
+    // =============================================
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) {
+        console.clear();
+      }
+    });
+
+  })();
+  </script>
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- 🏷️ WATERMARK SIGNATURE                                          -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- watermark moved to meta tags in <head> -->
+
+
+
+
+
+
+    
+    
+     <!-- 👇 COLLE LA POPUP ICI JUSTE AVANT </body> -->
+  
+  <!-- POPUP -->
+
+
+    <!-- POPUP -->
+<div id="luxPopup" class="lux-overlay" style="display:none;">
+  <div class="lux-popup">
+    
+    <div class="lux-close" onclick="closeLuxPopup()">✕</div>
+
+    <div class="lux-logo">
+  <img src="https://akoky.fr/images/logos/logo-akoky.webp" alt="AKOKY Logo">
+</div>
+
+    <h1>Quelque chose a changé,<br>mais la plaisir continue !</h1>
+
+    <p>
+      Avant, c’était <strong>Acoquinemenvotre</strong>.<br>
+      Créé en 2014, nous avons partagé de nombreux moments excitants ensemble.
+    </p>
+
+    <h2>Maintenant, c’est AKOKY.</h2>
+
+    <p>
+      Bienvenue dans une expérience encore plus palpitante ...<br>
+      La même communauté fidèle, avec encore plus de plaisir.
+    </p>
+
+    <button class="lux-btn">Découvrir AKOKY !</button>
+
+  </div>
+</div>
+
+<style>
+/* FOND NOIR LEGER (PAS FLOU) */
+.lux-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55); /* noir léger */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* POPUP BLANCHE */
+.lux-popup {
+  width: 600px;
+  max-width: 90%;
+  padding: 45px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.90);
+  text-align: center;
+  position: relative;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+  animation: popUp 0.35s ease;
+}
+
+/* CROIX */
+.lux-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #999;
+}
+
+.lux-close:hover {
+  color: #000;
+}
+
+/* LOGO */
+.lux-logo {
+  display: flex;
+  justify-content: center;  /* centre horizontalement */
+  align-items: center;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.lux-logo img {
+  width: 200px;   /* ajuste si besoin */
+  height: auto;
+}
+
+/* TITRES */
+.lux-popup h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.lux-popup h2 {
+  font-size: 20px;
+  margin: 20px 0;
+  color: #c28b4e;
+}
+
+/* TEXTE */
+.lux-popup p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* BOUTON */
+.lux-btn {
+  margin-top: 30px;
+  padding: 14px 36px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  background: #d1903c;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.lux-btn:hover {
+  background: #b9772f;
+}
+
+/* ANIMATION */
+@keyframes popUp {
+  from { transform: scale(0.92); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+</style>
+
+<script>
+function closeLuxPopup() {
+  document.getElementById("luxPopup").style.display = "none";
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  const btn = document.querySelector(".lux-btn");
+  btn.addEventListener("click", function() {
+    closeLuxPopup();
+  });
+
+  if (!localStorage.getItem("luxPopupShown")) {
+
+    setTimeout(function() {
+      document.getElementById("luxPopup").style.display = "flex";
+    }, 5000); // 5 secondes
+
+    localStorage.setItem("luxPopupShown", "true");
+  }
+});
+</script>
+    
+    
+    
+    
+    
+    
+    
+    
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"fba41e2350eb4d89baaab1447cc91303","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

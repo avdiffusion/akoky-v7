@@ -9,7 +9,7 @@ const FEATURED_ARTICLES = [
   {
     title: "Clubs Libertins à Paris 2026 — Le Guide Complet AKOKY",
     description: "Découvrez les meilleurs clubs libertins de Paris en 2026 : ambiance, tarifs, dress code et conseils pour une première visite réussie.",
-    image: "https://akoky.com/images/panorama-paris-nuit.webp",
+    image: "/images/panorama-paris-nuit.webp",
     href: "https://akoky.com/fr/blogs/clubs-libertins-paris-guide-2026",
     category: "Guide",
     readTime: "12 min",
@@ -17,7 +17,7 @@ const FEATURED_ARTICLES = [
   {
     title: "La Scène Libertine à Lyon — Clubs et Événements 2026",
     description: "Explorez la scène libertine lyonnaise : meilleurs clubs, soirées et communauté swinger dans la capitale des Gaules en 2026.",
-    image: "https://akoky.com/images/clubs-libertins-villes.webp",
+    image: "/images/clubs-libertins-villes.webp",
     href: "https://akoky.com/fr/blogs/scene-libertine-lyon-2026",
     category: "Guide",
     readTime: "10 min",
@@ -25,7 +25,7 @@ const FEATURED_ARTICLES = [
   {
     title: "Débuter dans le Libertinage en France — Conseils Pratiques 2026",
     description: "Guide complet pour les débutants : comment préparer votre première expérience libertine, choisir un club et respecter les codes.",
-    image: "https://akoky.com/images/debuter-libertinage-cover.webp",
+    image: "/images/debuter-libertinage-cover.webp",
     href: "https://akoky.com/fr/blogs/debuter-libertinage-france-conseils",
     category: "Débutants",
     readTime: "15 min",
@@ -33,7 +33,7 @@ const FEATURED_ARTICLES = [
   {
     title: "Cap d'Agde Libertin — Les Meilleurs Événements de l'Été 2026",
     description: "Guide complet du Cap d'Agde libertin : village naturiste, clubs, plages et événements incontournables de l'été 2026.",
-    image: "https://akoky.com/images/cap-agde-libertin.webp",
+    image: "/images/cap-agde-libertin.webp",
     href: "https://akoky.com/fr/blogs/cap-agde-libertinage-ete-2026",
     category: "Événements",
     readTime: "8 min",
@@ -41,7 +41,7 @@ const FEATURED_ARTICLES = [
   {
     title: "Le Lifestyle Swinger en France — Communauté et Valeurs",
     description: "Tout comprendre sur le lifestyle swinger en France : valeurs, communauté, éthique et pourquoi AKOKY est la plateforme de référence.",
-    image: "https://akoky.com/images/libertinage.webp",
+    image: "/images/libertinage.webp",
     href: "https://akoky.com/fr/blogs/lifestyle-swinger-france-communaute",
     category: "Lifestyle",
     readTime: "11 min",
@@ -49,7 +49,7 @@ const FEATURED_ARTICLES = [
   {
     title: "Clubs Libertins à Marseille et sur la Côte d'Azur — Guide AKOKY",
     description: "Guide des clubs libertins à Marseille, Nice, Toulon et sur la Côte d'Azur : les meilleurs spots pour le libertinage en PACA.",
-    image: "https://akoky.com/images/panorama-PACA-COTEAZUR.webp",
+    image: "/images/panorama-PACA-COTEAZUR.webp",
     href: "https://akoky.com/fr/blogs/clubs-libertins-marseille-cote-azur",
     category: "Guide",
     readTime: "9 min",
@@ -200,7 +200,7 @@ const blogSchema = {
   publisher: {
     "@type": "Organization",
     name: "AKOKY",
-    logo: { "@type": "ImageObject", url: "https://akoky.com/images/logo-akoky.webp" },
+    logo: { "@type": "ImageObject", url: "/images/logo-akoky.webp" },
   },
   blogPost: FEATURED_ARTICLES.map((a) => ({
     "@type": "BlogPosting",
@@ -221,7 +221,7 @@ const BlogFr = () => {
         description="Articles, guides pratiques et conseils pour vivre le libertinage en toute confiance en France. Contenu authentique, sans tabou, pour curieux et initiés."
         canonical="https://akoky.com/fr/blogs"
         lang="fr"
-        ogImage="https://akoky.com/images/panorama-paris-nuit.webp"
+        ogImage="/images/panorama-paris-nuit.webp"
       />
       <HreflangTags slug="blogs" />
       <SchemaOrg schema={blogSchema} />

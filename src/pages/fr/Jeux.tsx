@@ -19,7 +19,7 @@ const Jeux = () => (
       description="Découvrez AKOKY Space : jeux libertins, quiz et défis pour explorer votre sexualité avec complicité. Gratuit, privé, pour couples et célibataires."
       canonical="https://akoky.com/fr/jeux"
       lang="fr"
-      ogImage="https://akoky.com/images/cover-jeux.webp"
+      ogImage="/images/cover-jeux.webp"
     />
     <HreflangTags slug="jeux" />
     <ContentPageLayout
@@ -29,7 +29,7 @@ const Jeux = () => (
       canonical="https://akoky.com/fr/jeux"
       heroTitle="AKOKY Space – Jeux Libertins & Exploration"
       heroSubtitle="Quiz sensuels, défis et jeux libertins pour explorer et partager avec bienveillance."
-      heroImage="https://akoky.com/images/cover-jeux.webp"
+      heroImage="/images/cover-jeux.webp"
       breadcrumb={[{ label: "Jeux AKOKY Space" }]}
       faq={FAQ}
     >

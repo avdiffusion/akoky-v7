@@ -18,19 +18,19 @@ const FAQ = [
 
 const FR_CARDS = [
   {
-    img: "https://akoky.com/fr/images/soirreeparis.webp",
+    img: "/images/soirreeparis.webp",
     alt: "Soirée libertine Akoky en club à Paris",
     title: "Soirées Libertines en Club Parisien",
     text: "Paris accueille les événements libertins Akoky les plus exclusifs. Nos soirées dans les clubs parisiens réputés combinent raffinement et sensualité. Chaque soirée libertine à Paris est une expérience unique dans l'un des lieux les plus emblématiques de la vie libertine européenne."
   },
   {
-    img: "https://akoky.com/fr/images/apero-libertin.webp",
+    img: "/images/apero-libertin.webp",
     alt: "Apéro libertin Akoky afterwork à Paris",
     title: "Apéros Libertins Afterwork",
     text: "Les apéros libertins Akoky sont l'occasion parfaite de découvrir la communauté dans une ambiance décontractée. Ces événements afterwork à Paris et dans les grandes villes françaises permettent de faire connaissance avant de participer aux soirées libertines plus intimistes."
   },
   {
-    img: "https://akoky.com/fr/images/evenement-libertin-europe.webp",
+    img: "/images/evenement-libertin-europe.webp",
     alt: "Weekend libertin Akoky en château",
     title: "Weekends Libertins Exclusifs",
     text: "Les weekends libertins Akoky dans des châteaux privatisés offrent une immersion totale dans l'art de vivre libertin. Ces événements d'exception en France réunissent les membres dans des cadres somptueux pour des moments inoubliables loin du quotidien."
@@ -39,13 +39,13 @@ const FR_CARDS = [
 
 const BE_CARDS = [
   {
-    img: "https://akoky.com/fr/images/soiree-belgique.webp",
+    img: "/images/soiree-belgique.webp",
     alt: "Soirée libertine Akoky en club à Bruxelles",
     title: "Soirées Club Bruxelles",
     text: "Bruxelles, carrefour européen du libertinage, accueille nos soirées libertines les plus cosmopolites. Les clubs partenaires d'Akoky à Bruxelles proposent des espaces élégants où se mêlent traditions libertines belges et innovation Akoky."
   },
   {
-    img: "https://akoky.com/fr/images/apero-bruxelle.webp",
+    img: "/images/apero-bruxelle.webp",
     alt: "Apéro libertin Akoky en Belgique",
     title: "Apéros Libertins Internationaux",
     text: "Les apéros libertins Akoky en Belgique rassemblent une communauté multilingue et ouverte. Ces événements sont l'occasion de rencontrer des membres venus de France, des Pays-Bas, d'Allemagne et au-delà, dans l'esprit d'ouverture qui caractérise la Belgique."
@@ -54,13 +54,13 @@ const BE_CARDS = [
 
 const ES_CARDS = [
   {
-    img: "https://akoky.com/fr/images/barcelone.webp",
+    img: "/images/barcelone.webp",
     alt: "Soirée libertine Akoky à Barcelone",
     title: "Soirées Barcelone Exclusives",
     text: "Barcelone accueille les événements libertins Akoky les plus créatifs et avant-gardistes. La capitale catalane, connue pour son ouverture d'esprit, offre un cadre exceptionnel pour nos soirées libertines où se mêlent art, culture et sensualité."
   },
   {
-    img: "https://akoky.com/fr/images/soiree-libertine-plage.webp",
+    img: "/images/soiree-libertine-plage.webp",
     alt: "Événement libertin Akoky en bord de mer",
     title: "Événements Bord de Mer",
     text: "Les soirées libertines Akoky en bord de mer espagnol célèbrent la beauté de la Méditerranée. Des apéros au coucher du soleil aux soirées sur des plages privatisées, ces événements offrent une expérience unique où nature et libertinage se rencontrent."
@@ -105,7 +105,7 @@ const Evenements = () => (
       description="Soirées libertines, apéros afterwork et weekends exclusifs avec AKOKY. Rejoignez la communauté libertine premium en France."
       canonical="https://akoky.com/fr/evenements"
       lang="fr"
-      ogImage="https://akoky.com/images/events-akoky-cover.webp"
+      ogImage="/images/events-akoky-cover.webp"
     />
     <HreflangTags slug="evenements" />
     <ContentPageLayout
@@ -115,7 +115,7 @@ const Evenements = () => (
       canonical="https://akoky.com/fr/evenements"
       heroTitle="Événements libertins Akoky – Soirées & Apéros Libertins en France"
       heroSubtitle="Vivez l'expérience libertine premium : soirées en club, apéros exclusifs et rencontres authentiques"
-      heroImage="https://akoky.com/images/events-akoky-cover.webp"
+      heroImage="/images/events-akoky-cover.webp"
       breadcrumb={[{ label: "Événements libertins" }]}
       faq={FAQ}
     >

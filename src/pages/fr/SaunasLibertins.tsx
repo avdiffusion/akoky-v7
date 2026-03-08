@@ -18,31 +18,31 @@ const FAQ = [
 
 const EQUIPEMENTS = [
   {
-    img: "https://akoky.com/images/sauna-jacuzzi.webp",
+    img: "/images/sauna-jacuzzi.webp",
     alt: "Jacuzzi dans un sauna libertin",
     title: "Piscine & Jacuzzi",
     text: "Bassins chauffés et espaces aquatiques pour une détente totale"
   },
   {
-    img: "https://akoky.com/images/sauna-vestiaires.webp",
+    img: "/images/sauna-vestiaires.webp",
     alt: "Vestiaires élégants d'un sauna libertin",
     title: "Vestiaires & Douches",
     text: "Espaces privatifs et équipements modernes pour votre confort"
   },
   {
-    img: "https://akoky.com/images/sauna-lounge.webp",
+    img: "/images/sauna-lounge.webp",
     alt: "Espace détente lounge dans un sauna libertin",
     title: "Salons Lounge",
     text: "Zones de relaxation feutrées, idéales pour faire connaissance"
   },
   {
-    img: "https://akoky.com/images/sauna-cabines.webp",
+    img: "/images/sauna-cabines.webp",
     alt: "Cabines privées d'un sauna libertin",
     title: "Cabines Privées",
     text: "Espaces intimes pour des moments en toute discrétion"
   },
   {
-    img: "https://akoky.com/images/sauna-hammam.webp",
+    img: "/images/sauna-hammam.webp",
     alt: "Hammam dans un établissement libertin",
     title: "Hammam & Sauna",
     text: "Espaces vapeur et chaleur sèche pour une détente profonde"
@@ -76,7 +76,7 @@ const SaunasLibertins = () => (
       description="Découvrez les meilleurs saunas libertins en France. Guide complet, espaces, équipements et conseils. AKOKY, référence du libertinage premium."
       canonical="https://akoky.com/fr/saunas-libertins"
       lang="fr"
-      ogImage="https://akoky.com/images/sauna-cover.webp"
+      ogImage="/images/sauna-cover.webp"
     />
     <HreflangTags slug="saunas-libertins" />
     <ContentPageLayout
@@ -86,7 +86,7 @@ const SaunasLibertins = () => (
       canonical="https://akoky.com/fr/saunas-libertins"
       heroTitle="Saunas Libertins en France"
       heroSubtitle="Découvrez l'univers intimiste des saunas libertins : guide complet, espaces typiques et annuaire par région pour trouver l'établissement idéal."
-      heroImage="https://akoky.com/images/sauna-cover.webp"
+      heroImage="/images/sauna-cover.webp"
       breadcrumb={[{ label: "Saunas Libertins" }]}
       faq={FAQ}
     >
@@ -98,7 +98,7 @@ const SaunasLibertins = () => (
             <p className="text-muted-foreground leading-relaxed mb-3">En France, les saunas libertins attirent aussi bien les couples débutants que les habitués en quête d'une expérience plus zen. Ils proposent généralement des espaces spa (hammam, jacuzzi, piscine chauffée), des cabines privées, des salons de relaxation et parfois des zones de massage. L'objectif : c</p>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img src="https://akoky.com/images/ambiance-sauna-libertin.webp" alt="Ambiance sauna libertin" className="w-full h-80 object-cover" loading="lazy" />
+              <img src="/images/ambiance-sauna-libertin.webp" alt="Ambiance sauna libertin" className="w-full h-80 object-cover" loading="lazy" />
             </div>
           </div>
         </div>
@@ -178,7 +178,7 @@ const SaunasLibertins = () => (
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img src="https://akoky.com/images/carte-saunas-france.webp" alt="Carte saunas libertins France" className="w-full h-auto" loading="lazy" />
+              <img src="/images/carte-saunas-france.webp" alt="Carte saunas libertins France" className="w-full h-auto" loading="lazy" />
             </div>
             <div className="grid grid-cols-2 gap-3">
               {REGIONS.map((l, i) => (

@@ -27,7 +27,7 @@ const PremierClubLibertin = () => (
       canonical="https://akoky.com/fr/premier-club-libertin"
       heroTitle="Votre Premier Club Libertin : Le Guide Complet"
       heroSubtitle="Tout ce qu'il faut savoir pour vivre cette première expérience sereinement et avec confiance"
-      heroImage="https://akoky.com/fr/images/premier-club-cover.webp"
+      heroImage="/images/premier-club-cover.webp"
       breadcrumb={[{ label: "Premier Club Libertin" }]}
       faq={FAQ}
     >

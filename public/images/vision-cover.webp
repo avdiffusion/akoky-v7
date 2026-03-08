@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="fr" prefix="og: https://ogp.me/ns#">
+  <head>
+    <!-- META LÉGALES -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="copyright" content="© 2024-2026 LITTLE DREAMS - Tous droits réservés (L.111-1, L.122-4, L.335-2 à L.335-10 du CPI)">
+    <title>AKOKY - Document Protégé</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileImage" content="/mstile-150x150.png">
+    <meta name="theme-color" content="#d4a574" />
+    <script type="module" crossorigin src="/assets/index-D5RXhpQ5.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DiRR0oQt.css">
+  </head>
+
+  <body>
+    <!-- ========================= -->
+    <!-- BANNIÈRE DE COPYRIGHT EN HAUT -->
+    <!-- ========================= -->
+    <div style="
+      width: 100%;
+      background: linear-gradient(90deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0) 100%);
+      padding: 8px 0;
+      text-align: center;
+      font-size: 11px;
+      color: #666;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    ">
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <span style="margin-right: 10px; color: #d4af37;">⚖️</span>
+        <strong>Liberty Interactive Ltd</strong> |
+        Document juridique protégé © 2024-2026 |
+        <a href="/cgu" style="color: #d4af37; text-decoration: none; margin-left: 5px;">Conditions Générales</a>
+      </div>
+    </div>
+
+    <br><div style="height:30px;"></div>
+
+    <!-- ========================= -->
+    <!-- SIGNATURE EN HAUT DE CONTENU -->
+    <!-- ========================= -->
+    <div style="
+      max-width: 1200px;
+      margin: 0 auto 30px auto;
+      padding: 0 20px;
+      text-align: left;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      color: #444;
+      border-left: 3px solid #d4af37;
+      padding-left: 15px;
+      line-height: 1.4;
+    ">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+        <div>
+          <strong>Éditeur :</strong> Liberty Interactive Ltd <br>
+          <strong>Siège social :</strong> BP 86 17100 Saintes<br>
+          <strong>SIRET :</strong> 932 607 310 | <strong>RCS :</strong> Saintes
+        </div>
+        <div style="text-align: right;">
+          <strong>Document officiel</strong><br>
+          Version 3.1.4 | 12/01/2026<br>
+          <span style="color: #d4af37;">✓ Certifié conforme</span>
+        </div>
+      </div>
+      <div style="margin-top: 10px; font-size: 10px; color: #666;">
+        Ce document est un original numérique protégé par le Code de la Propriété Intellectuelle français.
+      </div>
+    </div>
+
+    <!-- Contenu principal -->
+    <div id="root"></div>
+
+    <!-- ========================= -->
+    <!-- PIED DE PAGE AVEC SIGNATURE COMPLÈTE -->
+    <!-- ========================= -->
+    <footer style="text-align: center; font-size: 12px; color: #8a8a8a; margin-top: 40px; padding: 20px 10px; border-top: 1px solid #1a1a1a; background: rgba(0,0,0,0.02);">
+      <!-- Informations société -->
+      <div style="max-width: 1200px; margin: 0 auto; padding-bottom: 20px; border-bottom: 1px dashed #ccc;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+          <div style="text-align: left; flex: 1;">
+            <p style="margin: 0 0 5px 0;"><strong>LEGAL AKOKY</strong></p>
+            <p style="margin: 0 0 5px 0;">Portail juridique officiel de la plateforme AKOKY</p>
+            <p style="margin: 0 0 5px 0;">Exploité par <strong>LITTLE DREAMS</strong></p>
+            <p style="margin: 0;">Nom commercial: <strong>liberty-interactive-ltd</strong></p>
+          </div>
+          <div style="text-align: left; flex: 1;">
+            <p style="margin: 0 0 5px 0;"><strong>Siège social:</strong></p>
+            <p style="margin: 0 0 5px 0;">BP 86 17100 Saintes</p>
+            <p style="margin: 0 0 5px 0;"><strong>SIRET:</strong> 932 607 310</p>
+            <p style="margin: 0;"><strong>RCS:</strong> Saintes</p>
+          </div>
+          <div style="text-align: left; flex: 1;">
+            <p style="margin: 0 0 5px 0;"><strong>Contact juridique:</strong></p>
+            <p style="margin: 0 0 5px 0;">Email: <a href="/cdn-cgi/l/email-protection#d1bdb4b6b0bd91bdb8a5a5bdb4fcb5a3b4b0bca2ffb2bebc" style="color: #d4af37;"><span class="__cf_email__" data-cfemail="8ae9e5e4feebe9fecae6e3fefee6efa7eef8efebe7f9a4e9e5e7">[email&#160;protected]</span></a></p>
+            <p style="margin: 0;"><strong>Juridiction:</strong> Tribunal Judiciaire de Saintes</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Liens juridiques -->
+      <div style="margin-top: 15px; font-size: 10px;">
+        <a href="/mentions-legales" style="color: #d4af37; margin: 0 10px; text-decoration: none;">Mentions Légales</a> |
+        <a href="/politique-confidentialite" style="color: #d4af37; margin: 0 10px; text-decoration: none;">Confidentialité</a> |
+        <a href="/cgu" style="color: #d4af37; margin: 0 10px; text-decoration: none;">CGU</a> |
+        <a href="/cookies" style="color: #d4af37; margin: 0 10px; text-decoration: none;">Gestion des Cookies</a> |
+        <a href="/signalement" style="color: #d4af37; margin: 0 10px; text-decoration: none;">Signalement</a>
+      </div>
+
+      <!-- COPYRIGHT BLINDÉ -->
+      <div style="margin-top: 20px; padding-top: 15px; border-top: 1px dashed #333; font-size: 10px;">
+        <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+          <!-- Sceau de protection -->
+          <div style="display: flex; align-items: center; margin-bottom: 10px; font-size: 8px; color: #555;">
+            <div style="
+              border: 1px solid #666;
+              border-radius: 50%;
+              width: 60px;
+              height: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-right: 10px;
+              background: #f8f8f8;
+            ">
+              <span style="font-size: 9px;">✓ PROTÉGÉ</span>
+            </div>
+            <span>DOCUMENT OFFICIEL CERTIFIÉ | Liberty Interactive Ltd</span>
+          </div>
+
+          <!-- Copyright complet -->
+          <div style="text-align: center; max-width: 800px;">
+            <p style="margin: 0; font-weight: bold; font-size: 11px;">
+              © 2024-2026 <span style="color: #d4af37;">Liberty Interactive Ltd - Société de droit international - Activité depuis 2014</span>
+            </p>
+            <p style="margin: 5px 0 0 0; font-size: 9px; line-height: 1.2;">
+              <strong>PROPRIÉTÉ EXCLUSIVE</strong> - Ce document et son contenu sont protégés par le <strong>Code de la Propriété Intellectuelle français</strong>
+              (L.111-1, L.122-4, L.335-2 à L.335-10) et les conventions internationales (Berne, OMPI).
+              <strong>Toute utilisation non autorisée est strictement interdite</strong> et constitutive du délit de contrefaçon
+              (Art. L.335-2 à L.335-4 CPI - 3 ans d'emprisonnement et 300 000€ d'amende).
+            </p>
+            <p style="margin: 8px 0 0 0; font-size: 8px;">
+              <strong>Éditeur:</strong> Liberty Interactive Ltd | <strong>SIRET:</strong> 932 607 310 |
+              <strong>RCS:</strong> Saintes | <strong>Juridiction:</strong> Tribunal Judiciaire de Saintes
+            </p>
+            <p style="margin: 8px 0 0 0; font-size: 8px;">
+              Dernière mise à jour: <span id="last-update">12/01/2026</span> |
+              Version: <span id="doc-version">3.1.4</span> |
+              <a href="/cdn-cgi/l/email-protection#1c7f7372687d7f685c70757e796e686531757268796e7d7f68756a793170687832737270757279" style="color: #d4af37; font-size: 8px;">Contact juridique</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ✅ Entrée Vite (dev + build) -->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"fba41e2350eb4d89baaab1447cc91303","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
