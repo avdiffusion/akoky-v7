@@ -56,8 +56,8 @@ const COSTA_CARDS = [
   {
     img: "/images/soiree-libertine-plage.webp",
     alt: "Velada libertina Akoky en la Costa del Sol",
-    title: "Eventos Bord de Mar",
-    text: "Las veladas libertinas Akoky en la costa española celebran la belleza del Mediterráneo. De los apéros al atardecer a las veladas en playas privatizadas, estos eventos ofrecen una experiencia única donde naturaleza y libertinaje se encuentran."
+    title: "Eventos Frente al Mar",
+    text: "Las veladas libertinas Akoky en la costa española celebran la belleza del Mediterráneo. De los encuentros al atardecer a las veladas en playas privatizadas, estos eventos ofrecen una experiencia única donde naturaleza y libertinaje se encuentran."
   },
   {
     img: "/images/evenement-libertin-espagne.webp",
