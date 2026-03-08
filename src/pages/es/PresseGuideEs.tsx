@@ -109,6 +109,26 @@ const PresseGuideEs = () => (
         </div>
       </section>
 
+      <section className="py-10 px-4 bg-background">
+        <div className="container max-w-4xl mx-auto">
+          <h2 className="text-xl font-bold text-foreground mb-5">Explorar AKOKY</h2>
+          <div className="flex flex-wrap gap-3 justify-center">
+            {[
+              { to: "/es/clubes-libertinos", label: "Clubes" },
+              { to: "/es/saunas-libertinos", label: "Saunas" },
+              { to: "/es/eventos", label: "Eventos" },
+              { to: "/es/app", label: "Aplicación" },
+              { to: "/es/vip", label: "VIP" },
+              { to: "/es/vision", label: "Visión" },
+              { to: "/es/libertinaje", label: "El Libertinaje" },
+              { to: "/es/contacto", label: "Contacto" },
+            ].map((l) => (
+              <Link key={l.to} to={l.to} className="px-4 py-2 bg-card border border-border rounded-lg text-sm font-medium text-muted-foreground hover:border-primary hover:text-primary transition-colors">{l.label}</Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
     </ContentPageLayout>
   </>
 );
