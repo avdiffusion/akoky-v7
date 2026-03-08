@@ -174,7 +174,7 @@ const ClubesLibertinos = () => {
         description={`${stats.total} clubes libertinos verificados en Europa.`}
         canonical="https://akoky.com/es/clubes-libertinos"
         heroTitle="Directorio de Clubes Libertinos"
-        heroSubtitle={`${stats.total} establecimientos verificados en España, Francia, Bélgica, Suiza y Europa — clubes, saunas, locales privados. Fichas detalladas y enlaces directos.`}
+        heroSubtitle={`${stats.total} establecimientos verificados en España y toda Europa — clubes, saunas, locales privados. Fichas detalladas y enlaces directos.`}
         heroImage="/images/club.webp"
         breadcrumb={[{ label: "Clubes Libertinos" }]}
         faq={[
