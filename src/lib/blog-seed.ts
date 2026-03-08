@@ -18,409 +18,205 @@ const slugFromUrl = (url: string): string => {
 
 export const SEED_ARTICLES: BlogArticle[] = [
   // ═══════════════════════════════════════════════════════════════════
-  // FEATURED ARTICLES (from akoky.com/fr/blogs)
+  // FEATURED ARTICLES — FR (enriched SEO content)
   // ═══════════════════════════════════════════════════════════════════
   {
     id: mkId(), category: "clubs", image: "/images/panorama-paris-nuit.webp",
     createdAt: now, updatedAt: now,
     translations: {
-      fr: { slug: "clubs-libertins-paris-guide-2026", metaTitle: "Clubs Libertins à Paris 2026 — Le Guide Complet AKOKY", metaDescription: "Découvrez les meilleurs clubs libertins de Paris en 2026 : ambiance, tarifs, dress code et conseils pour une première visite réussie.", title: "Clubs Libertins à Paris 2026 — Le Guide Complet AKOKY", content: "<h2>Les meilleurs clubs libertins de Paris en 2026</h2><p>Paris reste la capitale incontestée du libertinage en Europe. Découvrez notre sélection complète des clubs qui font vibrer la nuit parisienne.</p><h3>Le dress code</h3><p>Chaque club a ses propres exigences vestimentaires. En règle générale, la tenue sexy et élégante est de mise pour les femmes, tandis que les hommes doivent opter pour une tenue soignée.</p><h3>Les tarifs</h3><p>Les prix varient considérablement d'un club à l'autre. Comptez entre 30€ et 120€ par couple selon l'établissement et la soirée.</p><h3>Nos conseils pour une première visite</h3><ul><li>Arrivez tôt pour vous familiariser avec les lieux</li><li>Respectez les codes et les limites de chacun</li><li>Communiquez avec votre partenaire avant, pendant et après</li><li>N'hésitez pas à demander conseil au staff</li></ul>", published: true },
+      fr: { slug: "clubs-libertins-paris-guide-2026", metaTitle: "Clubs Libertins à Paris 2026 — Le Guide Complet AKOKY", metaDescription: "Découvrez les meilleurs clubs libertins de Paris en 2026 : ambiance, tarifs, dress code et conseils pour une première visite réussie.", title: "Clubs Libertins à Paris 2026 — Le Guide Complet AKOKY", content: "<h2>Les meilleurs clubs libertins de Paris en 2026</h2><p>Paris reste la capitale incontestée du libertinage en Europe. Avec plus d'une trentaine de clubs et saunas libertins, la Ville Lumière offre une diversité inégalée : du club élégant du 8e arrondissement au loft industriel du 11e, chaque établissement a sa personnalité, sa clientèle et son ambiance. Ce guide AKOKY vous dévoile tout ce qu'il faut savoir pour choisir le club qui vous correspond et vivre une nuit parisienne inoubliable.</p><h3>Les quartiers libertins de Paris</h3><p>Le Marais et Bastille concentrent une offre historique avec des clubs intimistes au charme baroque. Le 8e arrondissement et les Champs-Élysées accueillent des établissements haut de gamme fréquentés par une clientèle internationale. Pigalle et Montmartre conservent leur ADN canaille avec des clubs plus underground. Enfin, le 13e et le 15e arrondissement proposent des espaces plus vastes, souvent dotés de saunas et jacuzzis.</p><h3>Le dress code : l'art de s'habiller pour un club libertin</h3><p>Chaque club a ses propres exigences vestimentaires, mais les règles générales sont claires. Pour les femmes : robe de cocktail, lingerie fine, talons hauts — l'élégance sensuelle est de mise. Pour les hommes : chemise, pantalon habillé et chaussures de ville sont le minimum. Les baskets, jeans troués et tenues décontractées sont systématiquement refusés à l'entrée. Beaucoup de clubs disposent de vestiaires pour se changer sur place.</p><h3>Les tarifs en 2026</h3><p>Les prix varient considérablement d'un club à l'autre. Comptez entre 30€ et 60€ par couple pour un club classique en semaine, et entre 60€ et 120€ le week-end pour les établissements premium. L'entrée inclut généralement une ou deux consommations. Les hommes seuls paient un supplément significatif (souvent le double) et ne sont pas acceptés partout. Les femmes seules bénéficient souvent de tarifs réduits, voire de la gratuité.</p><h3>Les soirées thématiques</h3><p>Les clubs parisiens rivalisent d'imagination avec des soirées thématiques : nuit blanche, soirée fetish, bal masqué, nuit lingerie, soirée jacuzzi, nuit couples only… Chaque thème crée une atmosphère différente et attire une clientèle spécifique. Consultez l'agenda AKOKY pour ne rien manquer.</p><h3>Nos 10 conseils pour une première visite</h3><ol><li>Arrivez tôt (entre 22h et 23h30) pour vous familiariser avec les lieux dans le calme</li><li>Respectez les codes et les limites de chacun sans exception</li><li>Communiquez avec votre partenaire avant, pendant et après la soirée</li><li>N'hésitez pas à demander conseil au staff — ils sont là pour ça</li><li>Ne consommez pas d'alcool avec excès : la lucidité est votre meilleure alliée</li><li>Prenez le temps d'observer avant de participer</li><li>Un « non » est toujours un « non », sans insistance ni reproche</li><li>Prévoyez des protections (préservatifs) même si le club en fournit</li><li>Respectez l'hygiène : une douche avant la soirée est indispensable</li><li>Profitez de l'ambiance sans pression : votre première soirée n'a pas besoin d'être parfaite</li></ol>", published: true },
     },
   },
   {
     id: mkId(), category: "clubs", image: "/images/clubs-libertins-villes.webp",
     createdAt: now, updatedAt: now,
     translations: {
-      fr: { slug: "scene-libertine-lyon-2026", metaTitle: "La Scène Libertine à Lyon — Clubs et Événements 2026", metaDescription: "Explorez la scène libertine lyonnaise : meilleurs clubs, soirées et communauté swinger dans la capitale des Gaules en 2026.", title: "La Scène Libertine à Lyon — Clubs et Événements 2026", content: "<h2>Lyon, capitale libertine du Sud-Est</h2><p>Lyon s'impose comme l'une des villes les plus dynamiques pour le libertinage en France. Entre clubs historiques et soirées privées, la scène libertine lyonnaise ne cesse de se renouveler.</p><h3>Les clubs incontournables</h3><p>La ville compte plusieurs établissements de renom qui proposent des soirées thématiques variées tout au long de l'année.</p><h3>La communauté lyonnaise</h3><p>Les libertins lyonnais sont réputés pour leur convivialité et leur ouverture d'esprit. AKOKY vous aide à les rencontrer.</p>", published: true },
+      fr: { slug: "scene-libertine-lyon-2026", metaTitle: "La Scène Libertine à Lyon — Clubs et Événements 2026", metaDescription: "Explorez la scène libertine lyonnaise : meilleurs clubs, soirées et communauté swinger dans la capitale des Gaules en 2026.", title: "La Scène Libertine à Lyon — Clubs et Événements 2026", content: "<h2>Lyon, capitale libertine du Sud-Est</h2><p>Lyon s'impose comme l'une des villes les plus dynamiques pour le libertinage en France. Entre clubs historiques, saunas haut de gamme et soirées privées dans des appartements de la Presqu'île, la scène libertine lyonnaise ne cesse de se renouveler. La capitale des Gaules attire aussi bien les locaux que les visiteurs de passage, séduits par une communauté réputée pour sa convivialité.</p><h3>Les clubs incontournables de Lyon</h3><p>La ville compte une dizaine d'établissements de renom répartis entre la Presqu'île, la Part-Dieu et les banlieues proches. Certains misent sur l'élégance avec des espaces lounge et des soirées champagne, d'autres privilégient la convivialité avec des ambiances plus décontractées. Les saunas libertins lyonnais sont particulièrement réputés pour la qualité de leurs installations : jacuzzi, hammam, cabines privées et espaces de détente.</p><h3>Les soirées privées lyonnaises</h3><p>Lyon est aussi connue pour ses soirées privées organisées dans des appartements haussmanniens ou des lofts industriels du quartier de la Confluence. Ces événements sur invitation, souvent relayés sur AKOKY, offrent une intimité et une sélectivité que les clubs ne peuvent pas toujours garantir.</p><h3>La communauté lyonnaise</h3><p>Les libertins lyonnais sont réputés pour leur convivialité, leur ouverture d'esprit et leur sens de l'accueil. Beaucoup d'entre eux organisent des apéros libertins informels avant les soirées en club, créant des liens de confiance et d'amitié au sein de la communauté. AKOKY vous aide à les rencontrer et à intégrer ce réseau chaleureux.</p><h3>Les événements saisonniers</h3><p>La Fête des Lumières en décembre, le Festival de Jazz à Vienne en été et les week-ends gastronomiques sont autant d'occasions pour la communauté libertine lyonnaise d'organiser des événements spéciaux. Les clubs préparent des soirées exceptionnelles pendant ces périodes.</p>", published: true },
     },
   },
   {
     id: mkId(), category: "conseils", image: "/images/debuter-libertinage-cover.webp",
     createdAt: now, updatedAt: now,
     translations: {
-      fr: { slug: "debuter-libertinage-france-conseils", metaTitle: "Débuter dans le Libertinage en France — Conseils Pratiques 2026", metaDescription: "Guide complet pour les débutants : comment préparer votre première expérience libertine, choisir un club et respecter les codes.", title: "Débuter dans le Libertinage en France — Conseils Pratiques 2026", content: "<h2>Votre première expérience libertine</h2><p>Débuter dans le libertinage est une aventure excitante qui mérite d'être bien préparée. Ce guide vous accompagne pas à pas.</p><h3>Avant de commencer</h3><ul><li>Discutez ouvertement avec votre partenaire de vos envies et limites</li><li>Définissez ensemble un « safe word »</li><li>Renseignez-vous sur les différentes pratiques</li></ul><h3>Choisir son premier club</h3><p>Optez pour un établissement accueillant pour les débutants. Certains clubs proposent des soirées spéciales « découverte ».</p><h3>Les codes à respecter</h3><p>Le consentement est la règle d'or. Un « non » est toujours respecté, sans insistance ni jugement.</p>", published: true },
+      fr: { slug: "debuter-libertinage-france-conseils", metaTitle: "Débuter dans le Libertinage en France — Conseils Pratiques 2026", metaDescription: "Guide complet pour les débutants : comment préparer votre première expérience libertine, choisir un club et respecter les codes.", title: "Débuter dans le Libertinage en France — Conseils Pratiques 2026", content: "<h2>Votre première expérience libertine</h2><p>Débuter dans le libertinage est une aventure excitante qui mérite d'être bien préparée. Ce guide AKOKY vous accompagne pas à pas, de la discussion initiale en couple jusqu'à votre première soirée en club, en passant par le choix de l'établissement et la compréhension des codes du milieu.</p><h3>Avant de commencer : la conversation fondatrice</h3><p>Tout commence par un dialogue honnête et ouvert entre partenaires. Il ne s'agit pas simplement de poser la question « on essaie ? », mais d'explorer ensemble vos motivations profondes, vos fantasmes, vos craintes et surtout vos limites. Cette conversation peut prendre du temps — des semaines, parfois des mois — et c'est tout à fait normal.</p><ul><li>Discutez ouvertement de vos envies et de vos limites respectives</li><li>Définissez ensemble un « safe word » que chacun peut utiliser à tout moment</li><li>Renseignez-vous ensemble sur les différentes pratiques (échangisme, mélangisme, voyeurisme…)</li><li>Établissez des règles claires : ce qui est OK, ce qui ne l'est pas, ce qui est à explorer</li><li>Convenez que chacun peut mettre fin à l'expérience à tout moment, sans reproche</li></ul><h3>Choisir son premier club</h3><p>Le choix du premier établissement est crucial. Optez pour un club accueillant les débutants — beaucoup proposent des soirées spéciales « découverte » ou « initiation » avec un encadrement bienveillant. Consultez les avis sur AKOKY, renseignez-vous sur l'ambiance et n'hésitez pas à contacter le club en amont pour poser vos questions.</p><h3>Les codes à respecter</h3><p>Le consentement est la règle d'or absolue du libertinage. Un « non » est toujours respecté, sans insistance ni jugement. L'hygiène est fondamentale : douche avant la soirée, tenue soignée, protection systématique. La discrétion est de mise : pas de photos, pas de discussions sur les personnes croisées en club à l'extérieur.</p><h3>Gérer l'après</h3><p>La discussion post-soirée est aussi importante que la préparation. Parlez de ce que vous avez aimé, de ce qui vous a surpris, de ce qui vous a mis mal à l'aise. Ces échanges renforcent la confiance et améliorent les expériences futures. N'ayez pas peur des émotions contradictoires : elles font partie du processus.</p>", published: true },
     },
   },
   {
     id: mkId(), category: "evenements", image: "/images/cap-agde-libertin.webp",
     createdAt: now, updatedAt: now,
     translations: {
-      fr: { slug: "cap-agde-libertinage-ete-2026", metaTitle: "Cap d'Agde Libertin — Les Meilleurs Événements de l'Été 2026", metaDescription: "Guide complet du Cap d'Agde libertin : village naturiste, clubs, plages et événements incontournables de l'été 2026.", title: "Cap d'Agde Libertin — Les Meilleurs Événements de l'Été 2026", content: "<h2>Le Cap d'Agde, Mecque du libertinage estival</h2><p>Chaque été, le village naturiste du Cap d'Agde accueille des milliers de libertins venus du monde entier. Découvrez les événements à ne pas manquer.</p><h3>Le village naturiste</h3><p>Le quartier Port Nature est le cœur battant du libertinage au Cap d'Agde, avec ses clubs, bars et plages dédiés.</p><h3>Les événements phares de l'été 2026</h3><p>Soirées mousse, pool parties, événements thématiques… l'été promet d'être intense.</p>", published: true },
+      fr: { slug: "cap-agde-libertinage-ete-2026", metaTitle: "Cap d'Agde Libertin — Les Meilleurs Événements de l'Été 2026", metaDescription: "Guide complet du Cap d'Agde libertin : village naturiste, clubs, plages et événements incontournables de l'été 2026.", title: "Cap d'Agde Libertin — Les Meilleurs Événements de l'Été 2026", content: "<h2>Le Cap d'Agde, Mecque du libertinage estival</h2><p>Chaque été, le village naturiste du Cap d'Agde accueille des dizaines de milliers de libertins venus du monde entier. Ce quartier unique en son genre, Port Nature, est devenu au fil des décennies la destination libertine la plus célèbre de la planète, mêlant naturisme, libertinage et hédonisme dans un cadre balnéaire méditerranéen.</p><h3>Le village naturiste : Port Nature</h3><p>Port Nature est le cœur battant du libertinage au Cap d'Agde. Sur quelques hectares, on trouve une concentration unique de clubs libertins (Le Glamour, Le Tantra, L'Absolue…), de bars à ambiance, de plages semi-privées et de commerces spécialisés. L'ambiance est décontractée en journée (plage, bronzage, rencontres informelles) et monte en intensité à la tombée de la nuit.</p><h3>Les événements phares de l'été 2026</h3><ul><li><strong>Juin :</strong> Ouverture de saison avec des soirées de lancement dans les principaux clubs</li><li><strong>Juillet :</strong> Pool parties quotidiennes, soirées mousse, foam parties sur la plage</li><li><strong>Août :</strong> Le pic de la saison — événements thématiques chaque soir, DJ sets internationaux, soirées VIP</li><li><strong>Septembre :</strong> Clôture de saison avec des événements de fermeture mémorables</li></ul><h3>Conseils pratiques</h3><p>Réservez votre hébergement très tôt (dès mars/avril) car les résidences de Port Nature affichent complet rapidement. Apportez crème solaire, protections et une tenue de soirée. Respectez les règles du village : le naturisme est obligatoire en journée dans certaines zones, et les photos sont strictement interdites partout.</p><h3>Au-delà du Cap : les alternatives</h3><p>Si le Cap d'Agde est trop intense pour une première fois, explorez les alternatives : Leucate, Montalivet ou les plages libertines de la Côte d'Azur offrent des expériences plus douces.</p>", published: true },
     },
   },
   {
     id: mkId(), category: "conseils", image: "/images/libertinage.webp",
     createdAt: now, updatedAt: now,
     translations: {
-      fr: { slug: "lifestyle-swinger-france-communaute", metaTitle: "Le Lifestyle Swinger en France — Communauté et Valeurs", metaDescription: "Tout comprendre sur le lifestyle swinger en France : valeurs, communauté, éthique et pourquoi AKOKY est la plateforme de référence.", title: "Le Lifestyle Swinger en France — Communauté et Valeurs", content: "<h2>Le lifestyle swinger, bien plus qu'une pratique</h2><p>Le swinging en France repose sur des valeurs fortes : respect, consentement, communication et plaisir partagé.</p><h3>Les valeurs de la communauté</h3><ul><li>Le respect mutuel avant tout</li><li>La communication au sein du couple</li><li>Le consentement éclairé et révocable</li><li>La discrétion et la confidentialité</li></ul><h3>AKOKY, plateforme de référence</h3><p>Avec plus de 1,5 million de membres, AKOKY est devenu le premier réseau social libertin d'Europe francophone.</p>", published: true },
+      fr: { slug: "lifestyle-swinger-france-communaute", metaTitle: "Le Lifestyle Swinger en France — Communauté et Valeurs", metaDescription: "Tout comprendre sur le lifestyle swinger en France : valeurs, communauté, éthique et pourquoi AKOKY est la plateforme de référence.", title: "Le Lifestyle Swinger en France — Communauté et Valeurs", content: "<h2>Le lifestyle swinger, bien plus qu'une pratique</h2><p>Le swinging en France ne se résume pas à un acte sexuel entre partenaires consentants. C'est un véritable mode de vie fondé sur des valeurs profondes : le respect absolu de l'autre, une communication transparente au sein du couple, un consentement éclairé et révocable à tout moment, et un plaisir partagé sans culpabilité ni jugement.</p><h3>Les valeurs fondatrices de la communauté</h3><ul><li><strong>Le respect mutuel :</strong> La base de tout. Chaque personne est libre de ses choix, et chaque limite est sacrée</li><li><strong>La communication :</strong> Un couple swinger communique plus et mieux que la moyenne. Le libertinage exige un dialogue constant</li><li><strong>Le consentement :</strong> Éclairé, enthousiaste et révocable à tout moment. C'est la règle d'or non négociable</li><li><strong>La discrétion :</strong> Ce qui se passe en club reste en club. La confidentialité protège chaque membre</li><li><strong>L'inclusivité :</strong> La communauté accueille toutes les orientations, identités et modes de vie</li></ul><h3>Une communauté en pleine croissance</h3><p>Le libertinage en France connaît un essor sans précédent. Les générations Y et Z, plus ouvertes sur les questions de sexualité, arrivent dans le milieu avec des attentes nouvelles : transparence, sécurité numérique, inclusivité. Les plateformes comme AKOKY répondent à ces attentes en offrant un environnement vérifié et moderne.</p><h3>AKOKY, plateforme de référence</h3><p>Avec plus de 1,5 million de membres en Europe francophone, AKOKY est devenu le premier réseau social libertin du continent. Profils vérifiés, messagerie chiffrée, événements géolocalisés, lives exclusifs et un système multi-profils unique font d'AKOKY bien plus qu'un site de rencontres : c'est l'écosystème complet du libertinage moderne.</p>", published: true },
     },
   },
   {
     id: mkId(), category: "clubs", image: "/images/panorama-PACA-COTEAZUR.webp",
     createdAt: now, updatedAt: now,
     translations: {
-      fr: { slug: "clubs-libertins-marseille-cote-azur", metaTitle: "Clubs Libertins à Marseille et sur la Côte d'Azur — Guide AKOKY", metaDescription: "Guide des clubs libertins à Marseille, Nice, Toulon et sur la Côte d'Azur : les meilleurs spots pour le libertinage en PACA.", title: "Clubs Libertins à Marseille et sur la Côte d'Azur — Guide AKOKY", content: "<h2>Le libertinage sur la Côte d'Azur</h2><p>La région PACA offre un cadre idyllique pour le libertinage, entre mer et montagne. Découvrez les meilleurs clubs de Marseille à Nice.</p><h3>Marseille</h3><p>La cité phocéenne compte plusieurs clubs libertins réputés pour leur ambiance chaleureuse et leur clientèle variée.</p><h3>Nice et la Côte d'Azur</h3><p>De Nice à Cannes, les clubs de la Côte d'Azur attirent une clientèle internationale et proposent des soirées haut de gamme.</p>", published: true },
+      fr: { slug: "clubs-libertins-marseille-cote-azur", metaTitle: "Clubs Libertins à Marseille et sur la Côte d'Azur — Guide AKOKY", metaDescription: "Guide des clubs libertins à Marseille, Nice, Toulon et sur la Côte d'Azur : les meilleurs spots pour le libertinage en PACA.", title: "Clubs Libertins à Marseille et sur la Côte d'Azur — Guide AKOKY", content: "<h2>Le libertinage sur la Côte d'Azur</h2><p>La région PACA offre un cadre idyllique pour le libertinage, entre mer azur et arrière-pays provençal. De Marseille à Menton en passant par Nice, Cannes et Saint-Tropez, la Côte d'Azur concentre certains des clubs les plus prestigieux de France, fréquentés par une clientèle internationale et exigeante.</p><h3>Marseille : le charme phocéen</h3><p>La cité phocéenne compte plusieurs clubs libertins réputés pour leur ambiance chaleureuse et leur clientèle variée. L'atmosphère y est plus détendue qu'à Paris, avec un mélange de convivialité méditerranéenne et d'élégance. Les clubs marseillais proposent souvent des soirées à thème avec buffet et musique live, créant une ambiance festive et sensuelle.</p><h3>Nice et la Riviera</h3><p>De Nice à Cannes, les clubs de la Côte d'Azur attirent une clientèle internationale — russes, italiens, britanniques se mêlent aux locaux dans des établissements souvent luxueux. Les soirées d'été en terrasse avec vue sur la Méditerranée sont un moment unique. Certains clubs proposent des boat parties en collaboration avec des sociétés de location de yachts.</p><h3>Toulon et le Var</h3><p>Le Var offre des clubs plus intimistes, souvent situés dans des mas provençaux reconvertis. L'ambiance y est familiale et accueillante, idéale pour les débutants qui cherchent un cadre moins intimidant que les grands clubs urbains.</p><h3>La saison estivale</h3><p>L'été est la haute saison libertine en PACA. Les clubs étendent leurs horaires, organisent des pool parties et accueillent une clientèle de vacanciers qui dynamise l'ambiance. Réservez vos soirées premium en avance via AKOKY.</p>", published: true },
     },
   },
 
   // ═══════════════════════════════════════════════════════════════════
-  // COMPARATIFS
+  // COMPARATIFS (enriched)
   // ═══════════════════════════════════════════════════════════════════
   {
     id: mkId(), category: "conseils", image: "/images/blog-securite-discretion.webp",
     createdAt: now, updatedAt: now,
     translations: {
-      fr: { slug: "jacquie-et-michel-contact-vs-akoky", metaTitle: "Jacquie et Michel Contact vs AKOKY — Comparatif 2026", metaDescription: "Comparaison honnête entre Jacquie et Michel Contact et AKOKY : fonctionnalités, prix, communauté et sécurité.", title: "Jacquie et Michel Contact vs AKOKY", content: "<h2>Comparatif complet : JM Contact vs AKOKY</h2><p>Deux plateformes majeures du libertinage francophone face à face. Découvrez leurs forces et faiblesses respectives.</p><h3>Fonctionnalités</h3><p>AKOKY se distingue par son réseau social complet intégrant messagerie, événements et géolocalisation.</p><h3>Sécurité</h3><p>La vérification des profils et la modération 24/7 font d'AKOKY la plateforme la plus sûre du marché.</p>", published: true },
+      fr: { slug: "jacquie-et-michel-contact-vs-akoky", metaTitle: "Jacquie et Michel Contact vs AKOKY — Comparatif 2026", metaDescription: "Comparaison honnête entre Jacquie et Michel Contact et AKOKY : fonctionnalités, prix, communauté et sécurité.", title: "Jacquie et Michel Contact vs AKOKY — Comparatif 2026", content: "<h2>Comparatif complet : JM Contact vs AKOKY</h2><p>Deux plateformes majeures du libertinage francophone s'affrontent dans ce comparatif détaillé. Jacquie et Michel Contact, adossé à la marque de contenus adultes la plus connue de France, et AKOKY, la plateforme premium nouvelle génération. Découvrez leurs forces, faiblesses et différences clés.</p><h3>Fonctionnalités</h3><p>AKOKY se distingue par son réseau social complet intégrant messagerie chiffrée, agenda d'événements géolocalisés, lives exclusifs, jeux interactifs et un système multi-profils unique (couple, femme seule, homme seul sous une même suscription). JM Contact propose une approche plus classique centrée sur les annonces et la messagerie.</p><h3>Sécurité et vérification</h3><p>C'est le point fort majeur d'AKOKY : vérification des profils par photo et document, modération 24/7, protocole AKOKY Safe avec chiffrement de bout en bout et anti-screenshot. JM Contact propose une vérification basique par email, ce qui laisse passer davantage de faux profils.</p><h3>Communauté</h3><p>JM Contact bénéficie de la notoriété de la marque Jacquie et Michel, ce qui lui assure un flux constant de nouveaux inscrits. AKOKY mise sur la qualité plutôt que la quantité, avec une communauté plus engagée et des profils plus actifs. Le taux de réponse aux messages est significativement plus élevé sur AKOKY.</p><h3>Tarifs comparés</h3><p>AKOKY propose un modèle freemium avec des fonctionnalités de base gratuites et un abonnement VIP complet. JM Contact fonctionne sur un modèle similaire mais avec des fonctionnalités premium plus limitées. Le rapport qualité-prix penche en faveur d'AKOKY grâce à ses fonctionnalités sociales incluses.</p><h3>Notre verdict</h3><p>Pour les libertins qui cherchent une plateforme complète, sécurisée et moderne, AKOKY est le choix évident. JM Contact reste une option valable pour ceux qui sont déjà intégrés dans l'écosystème Jacquie et Michel.</p>", published: true },
     },
   },
   {
     id: mkId(), category: "conseils", image: "/images/blog-securite-discretion.webp",
     createdAt: now, updatedAt: now,
     translations: {
-      fr: { slug: "libertic-vs-akoky", metaTitle: "Libertic vs AKOKY — Comparatif Sites Libertins 2026", metaDescription: "Libertic vs AKOKY : quel site libertin choisir ? Comparaison fonctionnalités, prix et communauté.", title: "Libertic vs AKOKY", content: "<h2>Libertic face à AKOKY</h2><p>Libertic, plateforme historique du libertinage, face au nouveau géant AKOKY. Qui remporte la comparaison ?</p><h3>Interface et modernité</h3><p>AKOKY propose une interface moderne et responsive, là où Libertic accuse un certain retard technologique.</p>", published: true },
+      fr: { slug: "wyylde-vs-akoky", metaTitle: "Wyylde vs AKOKY — Comparatif Sites Libertins 2026", metaDescription: "Wyylde vs AKOKY : comparaison détaillée des deux leaders du libertinage en ligne.", title: "Wyylde vs AKOKY — Comparatif 2026", content: "<h2>Le match : Wyylde vs AKOKY</h2><p>Wyylde (ex-Netechangisme) est le leader historique du libertinage en ligne en France. AKOKY, plus récent, bouscule les codes avec une approche premium et technologique. Qui l'emporte en 2026 ?</p><h3>Interface et modernité</h3><p>AKOKY propose une interface moderne, responsive et intuitive inspirée des meilleures apps sociales. Wyylde, malgré des mises à jour récentes, conserve une ergonomie qui montre son âge. La différence se ressent particulièrement sur mobile.</p><h3>Tarifs</h3><p>AKOKY propose un modèle freemium généreux avec inscription gratuite et fonctionnalités de base accessibles. L'abonnement VIP AKOKY inclut multi-profils, lives, événements et messagerie illimitée. Wyylde fonctionne sur un abonnement mensuel classique avec moins de fonctionnalités incluses.</p><h3>Fonctionnalités exclusives AKOKY</h3><ul><li>Multi-profils sous une seule suscription</li><li>Lives et streaming exclusifs</li><li>Jeux libertins interactifs</li><li>Annuaire de clubs avec avis vérifiés</li><li>AKOKY Safe : protocole de sécurité avancé</li></ul><h3>Communauté</h3><p>Wyylde domine encore en termes de nombre total de profils en France. Mais AKOKY rattrape rapidement son retard grâce à une communauté plus jeune, plus active et plus diversifiée géographiquement (France, Belgique, Suisse, Espagne, Italie).</p><h3>Verdict</h3><p>AKOKY est le choix de l'avenir pour sa technologie, sa sécurité et son écosystème complet. Wyylde reste un acteur solide pour ceux qui privilégient la taille de la base de données française.</p>", published: true },
     },
   },
   {
     id: mkId(), category: "conseils", image: "/images/blog-securite-discretion.webp",
     createdAt: now, updatedAt: now,
     translations: {
-      fr: { slug: "nouslibertins-vs-akoky", metaTitle: "NousLibertins vs AKOKY — Comparatif 2026", metaDescription: "NousLibertins vs AKOKY : fonctionnalités, prix, communauté. Quel site libertin choisir ?", title: "NousLibertins vs AKOKY", content: "<h2>NousLibertins vs AKOKY</h2><p>Deux visions du libertinage en ligne. Découvrez notre comparatif détaillé.</p><h3>Communauté</h3><p>AKOKY dépasse les 1,5 million de membres quand NousLibertins reste sur un modèle plus confidentiel.</p>", published: true },
+      fr: { slug: "nouslibertins-vs-akoky", metaTitle: "NousLibertins vs AKOKY — Comparatif 2026", metaDescription: "NousLibertins vs AKOKY : fonctionnalités, prix, communauté. Quel site libertin choisir ?", title: "NousLibertins vs AKOKY — Comparatif 2026", content: "<h2>NousLibertins vs AKOKY</h2><p>NousLibertins est une plateforme historique du paysage libertin francophone, connue pour son modèle d'accès libre et gratuit. AKOKY, avec son approche premium, offre une vision différente. Comparons ces deux philosophies.</p><h3>Le modèle économique</h3><p>NousLibertins fonctionne sur un modèle gratuit financé par la publicité, ce qui le rend accessible mais avec des contreparties : publicités intrusives, faux profils plus nombreux et fonctionnalités limitées. AKOKY propose un freemium équilibré : base gratuite et premium sans publicité.</p><h3>La qualité des profils</h3><p>L'absence de barrière d'entrée sur NousLibertins attire un grand volume de profils, mais aussi davantage de faux comptes et de profils inactifs. AKOKY, avec sa vérification systématique, garantit une communauté plus authentique.</p><h3>Fonctionnalités</h3><p>NousLibertins se limite essentiellement aux annonces et à la messagerie. AKOKY offre un écosystème complet : réseau social, événements, lives, jeux, annuaire de clubs, multi-profils et outils de sécurité avancés.</p><h3>Verdict</h3><p>NousLibertins convient aux curieux qui veulent découvrir le libertinage sans engagement financier. AKOKY est la plateforme de choix pour ceux qui cherchent qualité, sécurité et une expérience complète.</p>", published: true },
     },
   },
   {
     id: mkId(), category: "conseils", image: "/images/blog-securite-discretion.webp",
     createdAt: now, updatedAt: now,
     translations: {
-      fr: { slug: "place-libertine-vs-akoky", metaTitle: "Place Libertine vs AKOKY — Comparatif 2026", metaDescription: "Place Libertine vs AKOKY : quel site libertin choisir ? Comparaison complète.", title: "Place Libertine vs AKOKY", content: "<h2>Place Libertine vs AKOKY</h2><p>Deux plateformes, deux approches du libertinage en ligne.</p>", published: true },
-    },
-  },
-  {
-    id: mkId(), category: "conseils", image: "/images/blog-securite-discretion.webp",
-    createdAt: now, updatedAt: now,
-    translations: {
-      fr: { slug: "wyylde-vs-akoky", metaTitle: "Wyylde vs AKOKY — Comparatif Sites Libertins 2026", metaDescription: "Wyylde vs AKOKY : comparaison détaillée des deux leaders du libertinage en ligne.", title: "Wyylde vs AKOKY", content: "<h2>Le match : Wyylde vs AKOKY</h2><p>Wyylde (ex-Netechangisme) et AKOKY sont les deux principales plateformes libertines francophones.</p><h3>Tarifs</h3><p>AKOKY propose un modèle freemium généreux avec inscription gratuite.</p><h3>Fonctionnalités</h3><p>AKOKY intègre un véritable réseau social avec live, événements et jeux interactifs.</p>", published: true },
-    },
-  },
-  {
-    id: mkId(), category: "conseils", image: "/images/blog-securite-discretion.webp",
-    createdAt: now, updatedAt: now,
-    translations: {
-      fr: { slug: "comparatif-sites-libertins", metaTitle: "Comparatif Complet des Sites Libertins 2026", metaDescription: "Comparatif de tous les sites libertins : AKOKY, Wyylde, NousLibertins, Place Libertine et plus. Le guide ultime.", title: "Comparatif complet des sites libertins", content: "<h2>Quel site libertin choisir en 2026 ?</h2><p>Notre comparatif exhaustif de toutes les plateformes libertines du marché francophone.</p><h3>Le classement AKOKY</h3><ol><li>AKOKY — Le plus complet</li><li>Wyylde — Le challenger</li><li>NousLibertins — L'historique</li><li>Place Libertine — L'alternatif</li></ol>", published: true },
+      fr: { slug: "comparatif-sites-libertins", metaTitle: "Comparatif Complet des Sites Libertins 2026", metaDescription: "Comparatif de tous les sites libertins : AKOKY, Wyylde, NousLibertins, Place Libertine et plus. Le guide ultime.", title: "Comparatif complet des sites libertins 2026", content: "<h2>Quel site libertin choisir en 2026 ?</h2><p>Le marché des sites libertins en France n'a jamais été aussi dense. Entre les acteurs historiques et les nouveaux entrants, il est difficile de s'y retrouver. Ce comparatif exhaustif analyse les principales plateformes sur des critères objectifs : fonctionnalités, sécurité, communauté, prix et innovation.</p><h3>Le classement AKOKY 2026</h3><ol><li><strong>AKOKY</strong> — Le plus complet : multi-profils, lives, événements, sécurité AKOKY Safe, communauté européenne</li><li><strong>Wyylde</strong> — Le challenger historique : grande base de données française, soirées partenaires</li><li><strong>NousLibertins</strong> — L'accès libre : gratuit mais avec publicité et moins de vérification</li><li><strong>Place Libertine</strong> — L'alternatif : interface sobre, communauté fidèle mais vieillissante</li><li><strong>JM Contact</strong> — La notoriété : adossé à Jacquie et Michel mais fonctionnalités limitées</li></ol><h3>Critères d'évaluation</h3><ul><li><strong>Sécurité :</strong> Vérification des profils, chiffrement, modération</li><li><strong>Communauté :</strong> Nombre de membres actifs, taux de réponse, diversité</li><li><strong>Fonctionnalités :</strong> Messagerie, événements, lives, jeux, recherche avancée</li><li><strong>Prix :</strong> Rapport qualité/fonctionnalités du premium</li><li><strong>Innovation :</strong> App mobile, IA, nouvelles fonctionnalités</li></ul><h3>Conclusion</h3><p>En 2026, AKOKY se démarque par son approche globale qui va bien au-delà de la simple mise en relation. C'est un véritable écosystème social dédié au libertinage, avec une vision européenne et une technologie de pointe.</p>", published: true },
     },
   },
 
   // ═══════════════════════════════════════════════════════════════════
-  // CLUBS & SOIRÉES
+  // CLUBS & SOIRÉES (enriched)
   // ═══════════════════════════════════════════════════════════════════
   {
     id: mkId(), category: "clubs", image: "/images/blog-clubs-libertins.webp",
     createdAt: now, updatedAt: now,
     translations: {
-      fr: { slug: "clubs-libertins-soirees-privees-evenements-partenaires-akoky", metaTitle: "Clubs libertins et soirées privées — Événements partenaires AKOKY", metaDescription: "Découvrez les clubs libertins partenaires AKOKY et les soirées privées exclusives organisées pour notre communauté.", title: "Clubs libertins, soirées privées : les événements partenaires d'AKOKY", content: "<h2>Nos partenariats avec les meilleurs clubs</h2><p>AKOKY collabore avec les clubs libertins les plus prestigieux de France et d'Europe pour vous offrir des soirées exclusives.</p>", published: true },
+      fr: { slug: "clubs-libertins-soirees-privees-evenements-partenaires-akoky", metaTitle: "Clubs libertins et soirées privées — Événements partenaires AKOKY", metaDescription: "Découvrez les clubs libertins partenaires AKOKY et les soirées privées exclusives organisées pour notre communauté.", title: "Clubs libertins, soirées privées : les événements partenaires d'AKOKY", content: "<h2>Nos partenariats avec les meilleurs clubs</h2><p>AKOKY collabore avec les clubs libertins les plus prestigieux de France et d'Europe pour vous offrir des soirées exclusives réservées à notre communauté. Ces partenariats garantissent des événements de qualité supérieure avec un accès prioritaire pour les membres VIP.</p><h3>Comment fonctionnent les soirées partenaires ?</h3><p>Les clubs partenaires d'AKOKY organisent régulièrement des soirées dédiées à notre communauté. L'inscription se fait directement depuis l'application AKOKY, avec un nombre de places limité pour garantir une ambiance optimale. Les membres VIP bénéficient d'un accès prioritaire et de tarifs préférentiels.</p><h3>Les avantages pour les membres</h3><ul><li>Tarifs réduits (jusqu'à -30% sur l'entrée)</li><li>Accès prioritaire et réservation garantie</li><li>Soirées thématiques exclusives non ouvertes au public</li><li>Meet & greet avec la communauté AKOKY</li><li>Ambiance sélectionnée et encadrée</li></ul><h3>Devenir club partenaire</h3><p>Si vous gérez un club libertin et souhaitez rejoindre le réseau AKOKY, contactez notre équipe partenariats pour découvrir les avantages de notre programme d'affiliation.</p>", published: true },
     },
   },
   {
     id: mkId(), category: "evenements", image: "/images/blog-clubs-libertins.webp",
     createdAt: now, updatedAt: now,
     translations: {
-      fr: { slug: "evenements-libertins-exclusifs-akoky", metaTitle: "Événements libertins exclusifs AKOKY 2026", metaDescription: "Les événements libertins exclusifs organisés par AKOKY : soirées privées, weekends et rencontres.", title: "Événements libertins exclusifs AKOKY", content: "<h2>Les événements AKOKY</h2><p>AKOKY organise régulièrement des événements exclusifs pour sa communauté : soirées thématiques, weekends libertins et rencontres conviviales.</p>", published: true },
-    },
-  },
-  {
-    id: mkId(), category: "clubs", image: "/images/blog-clubs-libertins.webp",
-    createdAt: now, updatedAt: now,
-    translations: {
-      fr: { slug: "club-echangiste-fougeres", metaTitle: "Club échangiste à Fougères — Guide AKOKY", metaDescription: "Découvrez le club échangiste de Fougères : ambiance, soirées et conseils pratiques.", title: "Club échangiste Fougères", content: "<h2>Le club échangiste de Fougères</h2><p>À la découverte d'un club échangiste convivial en Bretagne.</p>", published: true },
-    },
-  },
-  {
-    id: mkId(), category: "clubs", image: "/images/blog-clubs-libertins.webp",
-    createdAt: now, updatedAt: now,
-    translations: {
-      fr: { slug: "clubs-libertins", metaTitle: "Tous les clubs libertins — Annuaire AKOKY", metaDescription: "Annuaire complet des clubs libertins en France et en Europe. Trouvez le club idéal près de chez vous.", title: "Tous les clubs libertins", content: "<h2>L'annuaire des clubs libertins AKOKY</h2><p>Retrouvez tous les clubs libertins de France et d'Europe dans notre annuaire complet et mis à jour régulièrement.</p>", published: true },
+      fr: { slug: "evenements-libertins-exclusifs-akoky", metaTitle: "Événements libertins exclusifs AKOKY 2026", metaDescription: "Les événements libertins exclusifs organisés par AKOKY : soirées privées, weekends et rencontres.", title: "Événements libertins exclusifs AKOKY 2026", content: "<h2>Les événements AKOKY : bien plus que des soirées</h2><p>AKOKY ne se contente pas de mettre en relation des libertins en ligne. La plateforme organise et co-organise régulièrement des événements exclusifs dans toute l'Europe francophone : soirées thématiques dans les meilleurs clubs, weekends libertins dans des domaines privés, apéros de rencontre en terrasse et voyages organisés vers les destinations libertines emblématiques.</p><h3>Les formats d'événements</h3><ul><li><strong>Soirées club :</strong> Événements dans des clubs partenaires avec accès réservé AKOKY</li><li><strong>Weekends libertins :</strong> 2-3 jours dans un domaine privé avec piscine, spa et animations</li><li><strong>Apéros AKOKY :</strong> Rencontres informelles en terrasse pour briser la glace</li><li><strong>Voyages :</strong> Séjours organisés au Cap d'Agde, à Ibiza ou dans des resorts européens</li></ul><h3>Comment participer ?</h3><p>Tous les événements AKOKY sont annoncés dans l'application, section « Événements ». L'inscription est ouverte aux membres vérifiés, avec priorité aux VIP. Les places sont limitées pour garantir la qualité de l'expérience.</p>", published: true },
     },
   },
 
   // ═══════════════════════════════════════════════════════════════════
-  // COUPLES & RENCONTRES
+  // COUPLES & RENCONTRES (enriched)
   // ═══════════════════════════════════════════════════════════════════
   {
     id: mkId(), category: "conseils", image: "/images/blog-couples-libertins.webp",
     createdAt: now, updatedAt: now,
     translations: {
-      fr: { slug: "couples-libertins", metaTitle: "Couples libertins : guide complet AKOKY", metaDescription: "Guide complet pour les couples libertins : conseils, expériences et communauté.", title: "Couples libertins : guide complet", content: "<h2>Le libertinage en couple</h2><p>Le libertinage à deux est une aventure qui renforce la complicité du couple quand elle est vécue dans le respect mutuel.</p><h3>Communiquer avec son partenaire</h3><p>La communication est la clé d'une expérience réussie. Parlez de vos envies, de vos limites et de vos fantasmes en toute transparence.</p>", published: true },
+      fr: { slug: "couples-libertins", metaTitle: "Couples libertins : guide complet AKOKY 2026", metaDescription: "Guide complet pour les couples libertins : conseils, communication, gestion des émotions et communauté bienveillante.", title: "Couples libertins : guide complet 2026", content: "<h2>Le libertinage en couple : une aventure qui renforce le lien</h2><p>Le libertinage à deux est bien plus qu'une simple exploration sexuelle. C'est une démarche qui, vécue dans le respect mutuel et la communication, peut considérablement renforcer la complicité, la confiance et la passion au sein du couple. Des études montrent que les couples libertins communiquent en moyenne 3 fois plus sur leur sexualité que les couples non-libertins.</p><h3>Communiquer avec son partenaire</h3><p>La communication est la clé d'une expérience réussie. Parlez de vos envies, de vos limites et de vos fantasmes en toute transparence. Utilisez la technique du « feu tricolore » : vert (j'adore), orange (je suis curieux mais prudent), rouge (non, jamais). Cet outil simple permet de cartographier vos zones de confort respectives.</p><h3>Gérer la jalousie</h3><p>La jalousie est une émotion naturelle qui peut surgir même chez les couples les plus solides. L'astuce n'est pas de la nier mais de la reconnaître, l'exprimer et la traverser ensemble. Un sentiment de jalousie communiqué tôt est un sentiment qui se transforme en renforcement du lien.</p><h3>Les différentes approches</h3><ul><li><strong>Le côte-à-côtisme :</strong> Faire l'amour à côté d'un autre couple, sans échange — parfait pour débuter</li><li><strong>Le mélangisme :</strong> Caresses et jeux sensuels sans pénétration avec d'autres</li><li><strong>L'échangisme soft :</strong> Tout sauf la pénétration</li><li><strong>L'échangisme full :</strong> L'échange complet, avec l'accord explicite de tous</li></ul><h3>AKOKY pour les couples</h3><p>AKOKY a été conçu pour les couples libertins : profil couple dédié, recherche de couples compatibles, événements « couples only » et outils de communication sécurisés.</p>", published: true },
     },
   },
   {
     id: mkId(), category: "conseils", image: "/images/blog-couples-libertins.webp",
     createdAt: now, updatedAt: now,
     translations: {
-      fr: { slug: "premiere-fois-echangiste-guide-akoky", metaTitle: "Première fois échangiste — Guide AKOKY pour couples", metaDescription: "Guide complet pour votre première fois échangiste : conseils, préparation et accompagnement par AKOKY.", title: "Première fois échangiste : le guide AKOKY pour couples curieux", content: "<h2>Votre première soirée échangiste</h2><p>La première fois dans un club échangiste est toujours un moment fort. Voici nos conseils pour que tout se passe bien.</p><h3>Avant la soirée</h3><ul><li>Définissez vos limites en couple</li><li>Choisissez un club adapté aux débutants</li><li>Préparez-vous mentalement et physiquement</li></ul>", published: true },
-    },
-  },
-  {
-    id: mkId(), category: "conseils", image: "/images/blog-rencontres.webp",
-    createdAt: now, updatedAt: now,
-    translations: {
-      fr: { slug: "rencontres-libertines-authentiques", metaTitle: "Rencontres libertines authentiques sur AKOKY", metaDescription: "Faites des rencontres libertines authentiques et respectueuses sur AKOKY.", title: "Rencontres libertines authentiques", content: "<h2>Des rencontres authentiques</h2><p>Sur AKOKY, chaque rencontre est authentique grâce à nos profils vérifiés et notre communauté bienveillante.</p>", published: true },
+      fr: { slug: "premiere-fois-echangiste-guide-akoky", metaTitle: "Première fois échangiste — Guide AKOKY pour couples", metaDescription: "Guide complet pour votre première fois échangiste : préparation, choix du club, gestion des émotions et conseils de la communauté.", title: "Première fois échangiste : le guide AKOKY pour couples curieux", content: "<h2>Votre première soirée échangiste : tout ce qu'il faut savoir</h2><p>La première fois dans un club échangiste est un moment fort, mélange d'excitation et d'appréhension. C'est normal. Ce guide vous prépare étape par étape pour que cette première expérience soit positive, quel qu'en soit le déroulement.</p><h3>Avant la soirée : la préparation</h3><ul><li>Définissez vos limites en couple avec la technique du « feu tricolore »</li><li>Choisissez un club adapté aux débutants (beaucoup proposent des soirées d'initiation)</li><li>Préparez-vous physiquement : douche, tenue soignée, parfum discret</li><li>Mangez léger et limitez l'alcool avant d'arriver</li><li>Convenez d'un « safe word » et d'un signal de retrait</li></ul><h3>Pendant la soirée</h3><p>Arrivez tôt (autour de 22h) pour visiter les lieux dans le calme. Prenez un verre au bar pour vous détendre. Observez l'ambiance, parlez avec d'autres couples. Ne vous mettez aucune pression : regarder est une activité parfaitement valide et respectée.</p><h3>Les erreurs à éviter</h3><ol><li>Se séparer physiquement de son partenaire sans en avoir convenu</li><li>Accepter une situation par politesse ou pression sociale</li><li>Comparer l'expérience à ses fantasmes — la réalité est différente et c'est OK</li><li>Oublier de se protéger</li><li>Ne pas débriefer après la soirée</li></ol><h3>L'après : le debriefing</h3><p>La discussion post-soirée est fondamentale. Partagez ce qui vous a plu, surpris ou dérangé. Aucune émotion n'est « mauvaise ». Ce débriefing renforce la confiance et prépare les expériences futures.</p>", published: true },
     },
   },
   {
     id: mkId(), category: "conseils", image: "/images/blog-couples-libertins.webp",
     createdAt: now, updatedAt: now,
     translations: {
-      fr: { slug: "femme-seule-libertine", metaTitle: "Femme seule libertine — Guide AKOKY", metaDescription: "Guide pour les femmes seules dans le libertinage : sécurité, rencontres et communauté.", title: "Femme seule libertine", content: "<h2>Le libertinage au féminin</h2><p>Les femmes seules sont les bienvenues dans l'univers libertin. AKOKY offre un cadre sécurisé et respectueux pour explorer vos envies.</p>", published: true },
-    },
-  },
-  {
-    id: mkId(), category: "conseils", image: "/images/blog-rencontres.webp",
-    createdAt: now, updatedAt: now,
-    translations: {
-      fr: { slug: "annonces-libertines", metaTitle: "Annonces libertines sur AKOKY", metaDescription: "Publiez et consultez des annonces libertines sur AKOKY : rencontres, soirées et événements.", title: "Annonces libertines", content: "<h2>Les annonces libertines AKOKY</h2><p>Publiez vos annonces et trouvez des partenaires compatibles pour vos soirées et rencontres libertines.</p>", published: true },
-    },
-  },
-  {
-    id: mkId(), category: "conseils", image: "/images/blog-rencontres.webp",
-    createdAt: now, updatedAt: now,
-    translations: {
-      fr: { slug: "rencontres-libertines", metaTitle: "Rencontres libertines — Tout explorer sur AKOKY", metaDescription: "Explorez toutes les possibilités de rencontres libertines sur AKOKY.", title: "Toutes les rencontres libertines", content: "<h2>Explorer les rencontres libertines</h2><p>AKOKY vous offre une multitude de façons de faire des rencontres libertines : messagerie, événements, géolocalisation et plus encore.</p>", published: true },
+      fr: { slug: "femme-seule-libertine", metaTitle: "Femme seule libertine — Guide complet AKOKY 2026", metaDescription: "Guide pour les femmes seules dans le libertinage : sécurité, accueil privilégié, conseils et communauté bienveillante sur AKOKY.", title: "Femme seule libertine — Guide complet 2026", content: "<h2>Le libertinage au féminin : liberté, plaisir et sécurité</h2><p>Les femmes seules, souvent appelées « licornes » dans le milieu, sont particulièrement bienvenues et recherchées dans l'univers libertin. Leur présence enrichit les soirées et les rencontres. AKOKY offre un cadre sécurisé et respectueux pour les femmes qui souhaitent explorer leurs envies en toute liberté.</p><h3>Pourquoi les femmes seules sont-elles privilégiées ?</h3><p>Les clubs libertins réservent un accueil VIP aux femmes seules : entrée gratuite ou à tarif réduit, accès prioritaire et attention particulière du staff. Cette politique vise à maintenir un équilibre et une ambiance de qualité dans les établissements.</p><h3>La sécurité avant tout</h3><ul><li>Profils vérifiés sur AKOKY pour éviter les mauvaises rencontres</li><li>Possibilité de partager votre position avec une personne de confiance</li><li>Staff formé dans les clubs partenaires pour intervenir en cas de besoin</li><li>Communauté bienveillante qui veille au respect de chacune</li></ul><h3>Conseils pour débuter</h3><p>Commencez par un apéro AKOKY ou une soirée d'initiation pour rencontrer la communauté dans un cadre détendu. N'hésitez pas à poser vos conditions clairement et à prendre le temps qu'il vous faut. Votre rythme est le bon rythme.</p>", published: true },
     },
   },
 
   // ═══════════════════════════════════════════════════════════════════
-  // PRATIQUES & LIFESTYLE
+  // PRATIQUES & LIFESTYLE (enriched)
   // ═══════════════════════════════════════════════════════════════════
   {
     id: mkId(), category: "guides", image: "/images/blog-rencontres.webp",
     createdAt: now, updatedAt: now,
     translations: {
-      fr: { slug: "echangisme-en-couple", metaTitle: "Échangisme en couple — Osez l'expérience à deux avec AKOKY", metaDescription: "Tout savoir sur l'échangisme en couple : conseils, codes et retours d'expérience.", title: "Échangisme en couple : osez l'expérience à deux avec AKOKY", content: "<h2>L'échangisme, une aventure à deux</h2><p>L'échangisme est la pratique libertine la plus répandue. Elle consiste à échanger de partenaires avec un autre couple, dans un cadre consenti et respectueux.</p><h3>Les règles d'or</h3><ul><li>Le consentement mutuel est non négociable</li><li>Chacun peut dire stop à tout moment</li><li>La communication entre partenaires est essentielle</li></ul>", published: true },
+      fr: { slug: "echangisme-en-couple", metaTitle: "Échangisme en couple — Guide complet AKOKY 2026", metaDescription: "Tout savoir sur l'échangisme en couple : définition, variantes, règles d'or, préparation et retours d'expérience.", title: "Échangisme en couple : osez l'expérience à deux avec AKOKY", content: "<h2>L'échangisme, la pratique phare du libertinage</h2><p>L'échangisme est la pratique libertine la plus répandue et la plus ancienne. Elle consiste à échanger de partenaires avec un autre couple dans un cadre consenti, respectueux et défini à l'avance. Loin des clichés véhiculés par les médias, l'échangisme moderne est une démarche de couple qui se prépare, se communique et se vit à deux.</p><h3>Les variantes de l'échangisme</h3><ul><li><strong>Soft swap :</strong> Échange sans pénétration — caresses, baisers, jeux sensuels entre les quatre partenaires</li><li><strong>Full swap :</strong> Échange complet incluant la pénétration, avec accord explicite de tous</li><li><strong>Same room :</strong> Échange dans la même pièce, pour garder un contact visuel avec son partenaire</li><li><strong>Separate room :</strong> Échange dans des pièces séparées, pour plus d'intimité (réservé aux couples expérimentés)</li></ul><h3>Les règles d'or de l'échangisme</h3><ol><li>Le consentement mutuel est absolument non négociable</li><li>Chacun peut dire stop à tout moment, sans explication ni reproche</li><li>La communication entre partenaires est essentielle avant, pendant et après</li><li>Le préservatif est obligatoire et non négociable</li><li>Ce qui se passe en soirée reste confidentiel</li></ol><h3>Comment trouver le bon couple ?</h3><p>AKOKY facilite la recherche de couples compatibles grâce à des filtres avancés : localisation, pratiques recherchées, expérience, disponibilités. Le chat sécurisé permet de faire connaissance en toute discrétion avant de se rencontrer.</p>", published: true },
     },
   },
   {
     id: mkId(), category: "guides", image: "/images/blog-rencontres.webp",
     createdAt: now, updatedAt: now,
     translations: {
-      fr: { slug: "echangisme-couples", metaTitle: "Échangisme couples — Guide pratique", metaDescription: "Guide pratique de l'échangisme pour couples : tout ce qu'il faut savoir.", title: "Échangisme couples", content: "<h2>L'échangisme pour les couples</h2><p>Un guide complet sur cette pratique qui séduit de plus en plus de couples en France.</p>", published: true },
+      fr: { slug: "triolisme-libertin-sur-akoky", metaTitle: "Triolisme libertin — Guide complet AKOKY 2026", metaDescription: "Le triolisme expliqué : variantes, préparation, communication en couple et rencontres sur AKOKY.", title: "Triolisme libertin — Le guide complet AKOKY", content: "<h2>Le triolisme : une expérience à trois</h2><p>Le triolisme, ou plan à trois, est l'une des pratiques les plus fantasmées et les plus recherchées dans l'univers libertin. Qu'il s'agisse de deux femmes et un homme (FFH), de deux hommes et une femme (HHF) ou d'une configuration non-binaire, le triolisme offre une expérience sensorielle unique quand il est vécu dans le respect et la communication.</p><h3>Les différentes configurations</h3><ul><li><strong>FFH :</strong> La configuration la plus demandée — deux femmes et un homme</li><li><strong>HHF :</strong> Deux hommes et une femme — en forte croissance ces dernières années</li><li><strong>Configurations non-binaires :</strong> AKOKY accueille toutes les identités et orientations</li></ul><h3>Préparer un plan à trois en couple</h3><p>La préparation est la clé du succès. Discutez longuement avec votre partenaire des scénarios, des limites et des attentes. Rencontrez la troisième personne dans un cadre neutre (café, apéro) avant de passer à l'intime. Définissez clairement les règles et assurez-vous que chacun est à l'aise.</p><h3>Trouver la bonne personne</h3><p>AKOKY permet de filtrer les profils par pratique recherchée, orientation et localisation. Les profils vérifiés garantissent des rencontres authentiques et sécurisées.</p>", published: true },
     },
   },
   {
     id: mkId(), category: "guides", image: "/images/blog-rencontres.webp",
     createdAt: now, updatedAt: now,
     translations: {
-      fr: { slug: "triolisme-libertin-sur-akoky", metaTitle: "Triolisme libertin sur AKOKY", metaDescription: "Découvrez le triolisme sur AKOKY : conseils, rencontres et expériences à trois.", title: "Triolisme libertin sur AKOKY", content: "<h2>Le triolisme, une expérience unique</h2><p>Le triolisme, ou plan à trois, est l'une des pratiques les plus recherchées dans l'univers libertin.</p>", published: true },
+      fr: { slug: "melangisme-libertin", metaTitle: "Mélangisme libertin — La pratique douce du libertinage expliquée", metaDescription: "Le mélangisme : définition, variantes et conseils. La porte d'entrée idéale vers le libertinage pour les couples curieux.", title: "Mélangisme libertin — La pratique douce expliquée", content: "<h2>Le mélangisme : la douceur libertine</h2><p>Le mélangisme est souvent considéré comme la porte d'entrée idéale vers le libertinage. Cette pratique consiste à partager des moments sensuels avec d'autres personnes (caresses, baisers, jeux érotiques) sans aller jusqu'à la pénétration avec un autre partenaire. Le couple reste le noyau central de l'expérience.</p><h3>Pourquoi le mélangisme séduit les débutants</h3><p>Le mélangisme permet de découvrir les sensations du libertinage en gardant un cadre rassurant. Pas de « full swap », pas de pénétration avec un tiers : on explore la sensualité partagée tout en conservant l'exclusivité sexuelle au sein du couple. C'est un excellent moyen de tester ses réactions et celles de son partenaire.</p><h3>En pratique</h3><ul><li>Définissez précisément vos limites en couple avant la soirée</li><li>Communiquez en temps réel avec votre partenaire pendant l'expérience</li><li>N'hésitez pas à vous retirer si l'un de vous n'est pas à l'aise</li><li>Débriefez ensemble après chaque expérience</li></ul><h3>Où pratiquer le mélangisme ?</h3><p>La plupart des clubs libertins accueillent les mélangistes. Certains proposent des soirées dédiées « soft » ou « mélangisme only ». Consultez l'agenda AKOKY pour trouver les soirées adaptées à votre niveau.</p>", published: true },
     },
   },
   {
-    id: mkId(), category: "guides", image: "/images/blog-rencontres.webp",
+    id: mkId(), category: "guides", image: "/images/blog-lgbt-libertinage.webp",
     createdAt: now, updatedAt: now,
     translations: {
-      fr: { slug: "triolisme-candaulisme", metaTitle: "Triolisme & Candaulisme — Guide libertin", metaDescription: "Tout comprendre sur le triolisme et le candaulisme dans le libertinage.", title: "Triolisme & Candaulisme", content: "<h2>Triolisme et candaulisme</h2><p>Deux pratiques complémentaires qui enrichissent l'expérience libertine du couple.</p>", published: true },
-    },
-  },
-  {
-    id: mkId(), category: "guides", image: "/images/blog-rencontres.webp",
-    createdAt: now, updatedAt: now,
-    translations: {
-      fr: { slug: "melangisme-libertin", metaTitle: "Mélangisme libertin — Pratique douce du libertinage", metaDescription: "Le mélangisme : la pratique douce du libertinage expliquée en détail.", title: "Mélangisme libertin", content: "<h2>Le mélangisme, la douceur libertine</h2><p>Le mélangisme est une forme douce du libertinage où les couples se mélangent sans aller jusqu'à la pénétration avec un autre partenaire.</p>", published: true },
-    },
-  },
-  {
-    id: mkId(), category: "guides", image: "/images/blog-rencontres.webp",
-    createdAt: now, updatedAt: now,
-    translations: {
-      fr: { slug: "cote-a-cotisme", metaTitle: "Côte-à-côtisme — Découverte libertine en douceur", metaDescription: "Le côte-à-côtisme : faire l'amour à côté d'un autre couple, une découverte libertine en douceur.", title: "Côte-à-côtisme", content: "<h2>Le côte-à-côtisme</h2><p>Le côte-à-côtisme consiste à faire l'amour avec son partenaire à côté d'un autre couple, sans échange. C'est souvent la première étape vers le libertinage.</p>", published: true },
-    },
-  },
-  {
-    id: mkId(), category: "guides", image: "/images/blog-rencontres.webp",
-    createdAt: now, updatedAt: now,
-    translations: {
-      fr: { slug: "orgie-douce-fluide-naturelle-akoky", metaTitle: "Une orgie douce, fluide, naturelle sur AKOKY", metaDescription: "L'orgie libertine revisitée : douce, fluide et naturelle sur AKOKY.", title: "Une orgie douce, fluide, naturelle sur AKOKY", content: "<h2>L'orgie revisitée</h2><p>Loin des clichés, l'orgie libertine sur AKOKY est une expérience douce, respectueuse et consensuelle.</p>", published: true },
-    },
-  },
-  {
-    id: mkId(), category: "guides", image: "/images/blog-rencontres.webp",
-    createdAt: now, updatedAt: now,
-    translations: {
-      fr: { slug: "libertinage-pluralite", metaTitle: "Libertinage & pluralité — Diversité des pratiques", metaDescription: "La pluralité dans le libertinage : toutes les pratiques et orientations sont les bienvenues.", title: "Libertinage & pluralité", content: "<h2>La pluralité du libertinage</h2><p>Le libertinage embrasse une grande diversité de pratiques et d'orientations. Chacun y trouve son bonheur à son rythme.</p>", published: true },
-    },
-  },
-  {
-    id: mkId(), category: "guides", image: "/images/blog-rencontres.webp",
-    createdAt: now, updatedAt: now,
-    translations: {
-      fr: { slug: "sexe-sans-tabou", metaTitle: "Sexe sans tabou — Le libertinage décomplexé", metaDescription: "Le sexe sans tabou sur AKOKY : un espace de liberté pour explorer ses désirs.", title: "Sexe sans tabou", content: "<h2>Le sexe sans tabou</h2><p>AKOKY est un espace où chacun peut explorer ses désirs sans jugement, dans le respect de l'autre.</p>", published: true },
+      fr: { slug: "libertinage-lgbt", metaTitle: "Libertinage LGBT+ — Inclusivité et diversité sur AKOKY", metaDescription: "Le libertinage LGBT+ sur AKOKY : un espace inclusif pour toutes les orientations, identités et modes de vie.", title: "Libertinage LGBT+ — Inclusivité et diversité", content: "<h2>Le libertinage pour tous</h2><p>AKOKY est une plateforme fondamentalement inclusive qui accueille toutes les orientations sexuelles et identités de genre dans le libertinage. Que vous soyez bisexuel(le), pansexuel(le), gay, lesbienne, non-binaire ou queer, vous avez votre place dans la communauté AKOKY.</p><h3>Une communauté ouverte</h3><p>Le libertinage n'est pas réservé aux couples hétérosexuels. De plus en plus de clubs et d'événements accueillent une clientèle diversifiée. Les soirées « bi-friendly », les événements « queer libertins » et les clubs inclusifs se multiplient en France et en Europe.</p><h3>AKOKY et l'inclusivité</h3><ul><li>Profils personnalisables avec orientation sexuelle et identité de genre</li><li>Filtres de recherche adaptés à toutes les configurations</li><li>Événements dédiés à la communauté LGBT+ libertine</li><li>Modération active contre la discrimination et le harcèlement</li></ul><h3>Ressources et communauté</h3><p>AKOKY collabore avec des associations LGBT+ pour sensibiliser la communauté libertine à l'inclusivité et lutter contre les discriminations. Chaque membre, quelle que soit son identité, mérite respect et bienveillance.</p>", published: true },
     },
   },
 
   // ═══════════════════════════════════════════════════════════════════
-  // RÉGIONS
+  // RÉGIONS (enriched)
   // ═══════════════════════════════════════════════════════════════════
   {
     id: mkId(), category: "villes", image: "/images/blog-libertinage-regions.webp",
     createdAt: now, updatedAt: now,
     translations: {
-      fr: { slug: "libertinage-en-france", metaTitle: "Libertinage en France — Le guide complet", metaDescription: "Le libertinage en France : clubs, événements, communauté et guide par région.", title: "Libertinage en France", content: "<h2>Le libertinage en France</h2><p>La France est le berceau du libertinage moderne. Découvrez la scène libertine française région par région.</p>", published: true },
+      fr: { slug: "libertinage-en-france", metaTitle: "Libertinage en France — Le guide complet par région 2026", metaDescription: "Le libertinage en France : clubs, événements, communauté et guide détaillé par région. Plus de 200 clubs référencés.", title: "Libertinage en France — Le guide complet 2026", content: "<h2>La France, berceau du libertinage moderne</h2><p>La France est le berceau historique du libertinage — le mot lui-même est d'origine française. Aujourd'hui, le pays compte plus de 400 clubs et saunas libertins répartis sur tout le territoire, une communauté estimée à plus de 3 millions de pratiquants et une scène événementielle parmi les plus dynamiques d'Europe.</p><h3>Paris et Île-de-France</h3><p>Avec plus de 30 clubs et saunas, Paris est la première place forte du libertinage français. Du Marais au 15e, chaque arrondissement a ses adresses. La banlieue parisienne complète l'offre avec des établissements souvent plus spacieux.</p><h3>Lyon et Rhône-Alpes</h3><p>Deuxième scène libertine de France, Lyon offre un mélange de clubs élégants et de soirées conviviales. Grenoble, Annecy et Saint-Étienne complètent l'offre régionale.</p><h3>Marseille et la Côte d'Azur</h3><p>Le soleil méditerranéen favorise une scène libertine particulièrement active en été, avec des pool parties, des soirées en terrasse et des boat parties.</p><h3>Le Sud-Ouest</h3><p>Toulouse, Bordeaux et Montpellier forment un triangle libertine dynamique avec des clubs de qualité et une communauté en forte croissance.</p><h3>Le Nord et la Belgique</h3><p>Lille, la métropole la plus libertine du Nord, bénéficie aussi de la proximité avec la Belgique, pays réputé pour la qualité de ses clubs.</p>", published: true },
     },
   },
   {
     id: mkId(), category: "villes", image: "/images/blog-libertinage-regions.webp",
     createdAt: now, updatedAt: now,
     translations: {
-      fr: { slug: "libertinage-en-belgique", metaTitle: "Libertinage en Belgique — Guide AKOKY", metaDescription: "Le libertinage en Belgique : clubs, saunas et communauté libertine belge.", title: "Libertinage en Belgique", content: "<h2>La scène libertine belge</h2><p>La Belgique possède une scène libertine dynamique, avec des clubs renommés à Bruxelles, Anvers et Liège.</p>", published: true },
-    },
-  },
-  {
-    id: mkId(), category: "villes", image: "/images/blog-libertinage-regions.webp",
-    createdAt: now, updatedAt: now,
-    translations: {
-      fr: { slug: "libertinage-en-suisse", metaTitle: "Libertinage en Suisse — Guide AKOKY", metaDescription: "Le libertinage en Suisse : clubs à Genève, Lausanne, Zurich et Bâle.", title: "Libertinage en Suisse", content: "<h2>Le libertinage en Suisse</h2><p>La Suisse offre une scène libertine discrète mais de grande qualité, avec des clubs à Genève, Lausanne et Zurich.</p>", published: true },
+      fr: { slug: "libertinage-en-belgique", metaTitle: "Libertinage en Belgique — Guide AKOKY 2026", metaDescription: "Le libertinage en Belgique : clubs de Bruxelles, Anvers, Liège et Gand. La scène belge décryptée.", title: "Libertinage en Belgique — Guide 2026", content: "<h2>La Belgique, paradis discret du libertinage</h2><p>La Belgique est réputée dans toute l'Europe pour la qualité exceptionnelle de ses clubs libertins. Avec une législation plus souple qu'en France et une mentalité ouverte, le pays offre des établissements spacieux, luxueux et bien équipés qui attirent des libertins de toute l'Europe.</p><h3>Bruxelles</h3><p>La capitale européenne abrite plusieurs clubs de référence dans le quartier des Marolles et du Sablon. L'atmosphère cosmopolite de Bruxelles se retrouve dans la diversité de la clientèle : Belges, Français, Néerlandais, expatriés internationaux.</p><h3>Anvers et la Flandre</h3><p>La Flandre est la région la plus riche en clubs libertins de Belgique. Anvers, Gand et Bruges proposent des établissements de grande qualité, souvent installés dans d'anciens entrepôts ou maisons de maître reconvertis.</p><h3>Liège et la Wallonie</h3><p>Liège, Namur et Charleroi complètent l'offre avec des clubs francophones accueillants et une communauté fidèle. La proximité avec la France attire de nombreux Lillois et Parisiens le week-end.</p><h3>Pourquoi les clubs belges sont-ils si réputés ?</h3><ul><li>Des espaces plus grands et mieux aménagés qu'en France</li><li>Des installations de qualité : sauna, jacuzzi, piscine, buffet</li><li>Une ambiance détendue et conviviale</li><li>Des prix souvent plus doux que les clubs parisiens</li></ul>", published: true },
     },
   },
   {
     id: mkId(), category: "villes", image: "/images/blog-cap-agde.webp",
     createdAt: now, updatedAt: now,
     translations: {
-      fr: { slug: "cap-d-agde-libertin", metaTitle: "Cap d'Agde libertin — Guide complet AKOKY", metaDescription: "Tout savoir sur le Cap d'Agde libertin : village naturiste, clubs, plages et événements.", title: "Cap d'Agde libertin", content: "<h2>Le Cap d'Agde, capitale du libertinage estival</h2><p>Le village naturiste du Cap d'Agde est la destination libertine la plus célèbre au monde.</p>", published: true },
-    },
-  },
-  {
-    id: mkId(), category: "villes", image: "/images/blog-libertinage-regions.webp",
-    createdAt: now, updatedAt: now,
-    translations: {
-      fr: { slug: "libertinage-par-region", metaTitle: "Libertinage par région — Guide AKOKY", metaDescription: "Découvrez le libertinage région par région en France : clubs, événements et communauté.", title: "Libertinage par région", content: "<h2>Le libertinage en France, région par région</h2><p>Chaque région de France a ses spécificités libertines. Découvrez notre guide complet.</p>", published: true },
+      fr: { slug: "cap-d-agde-libertin", metaTitle: "Cap d'Agde libertin — Guide complet AKOKY 2026", metaDescription: "Tout savoir sur le Cap d'Agde libertin : village naturiste, clubs, plages, hébergement et événements estivaux.", title: "Cap d'Agde libertin — Guide complet 2026", content: "<h2>Le Cap d'Agde, capitale mondiale du libertinage estival</h2><p>Le village naturiste du Cap d'Agde est la destination libertine la plus célèbre au monde. Chaque été, de juin à septembre, des dizaines de milliers de libertins venus de toute l'Europe convergent vers Port Nature, ce quartier unique qui mêle naturisme, libertinage et hédonisme au bord de la Méditerranée.</p><h3>Port Nature : le cœur battant</h3><p>Sur quelques hectares, Port Nature concentre une quinzaine de clubs et bars libertins, des plages semi-privées, des commerces spécialisés et des résidences de vacances. En journée, l'ambiance est décontractée : plage, bronzage, rencontres informelles. À la nuit tombée, la fête commence dans les clubs.</p><h3>Les clubs emblématiques</h3><ul><li>Le Glamour, Le Tantra, L'Absolue — les trois incontournables</li><li>Le Melrose — pool party et ambiance festive</li><li>Le Jardin des Oliviers — cadre champêtre et intimiste</li></ul><h3>Hébergement et budget</h3><p>Réservez dès mars/avril car les résidences affichent complet rapidement. Budget moyen pour un couple : 800-1500€ la semaine tout compris (logement, entrées club, alimentation). Les campings naturistes autour de Marseillan offrent des alternatives économiques.</p><h3>Les règles à respecter</h3><p>Le naturisme est obligatoire dans certaines zones en journée. Les photos sont strictement interdites partout dans le village. Le consentement reste la règle absolue, même dans l'atmosphère permissive du Cap.</p>", published: true },
     },
   },
 
   // ═══════════════════════════════════════════════════════════════════
-  // JEUX & FUN
+  // SÉCURITÉ & CONFIANCE (enriched)
   // ═══════════════════════════════════════════════════════════════════
   {
-    id: mkId(), category: "conseils", image: "/images/blog-jeux-libertins.webp",
+    id: mkId(), category: "conseils", image: "/images/blog-securite-discretion.webp",
     createdAt: now, updatedAt: now,
     translations: {
-      fr: { slug: "jeux-libertins-akoky", metaTitle: "Jeux libertins AKOKY — Pimentez vos soirées", metaDescription: "Découvrez les jeux libertins AKOKY pour pimenter vos soirées et vos rencontres.", title: "Jeux libertins AKOKY", content: "<h2>Les jeux libertins AKOKY</h2><p>Pimentez vos soirées avec nos jeux libertins exclusifs : défis, cartes coquines et animations pour tous les niveaux.</p>", published: true },
+      fr: { slug: "securite-confidentialite-akoky", metaTitle: "Sécurité & confidentialité sur AKOKY — Votre protection en 2026", metaDescription: "La sécurité et la confidentialité sur AKOKY : vérification des profils, chiffrement, modération 24/7 et protocole AKOKY Safe.", title: "Sécurité & confidentialité sur AKOKY", content: "<h2>Votre sécurité, notre obsession</h2><p>Dans un domaine aussi intime que le libertinage, la sécurité et la confidentialité ne sont pas des options : ce sont des impératifs absolus. AKOKY a été conçu dès le premier jour avec la sécurité au cœur de son architecture.</p><h3>Le protocole AKOKY Safe</h3><ul><li><strong>Vérification des profils :</strong> Photo + document d'identité pour chaque compte</li><li><strong>Chiffrement de bout en bout :</strong> Vos messages ne sont lisibles que par vous et votre interlocuteur</li><li><strong>Anti-screenshot :</strong> Protection des photos privées contre les captures d'écran</li><li><strong>Navigation privée :</strong> Mode incognito qui masque votre activité en ligne</li><li><strong>Modération 24/7 :</strong> Une équipe dédiée surveille la plateforme en permanence</li></ul><h3>Protection des données</h3><p>AKOKY est conforme au RGPD et stocke vos données sur des serveurs européens sécurisés. Vos informations personnelles ne sont jamais partagées avec des tiers. La suppression de compte entraîne l'effacement complet et irréversible de toutes vos données.</p><h3>Signalement et blocage</h3><p>Tout membre peut signaler un comportement inapproprié en un clic. Les signalements sont traités en moins de 2 heures par notre équipe de modération. Les membres VIP bénéficient d'un support prioritaire avec réponse garantie en moins d'une heure.</p>", published: true },
     },
   },
   {
-    id: mkId(), category: "conseils", image: "/images/blog-jeux-libertins.webp",
+    id: mkId(), category: "conseils", image: "/images/blog-securite-discretion.webp",
     createdAt: now, updatedAt: now,
     translations: {
-      fr: { slug: "jeux-sex-erotique", metaTitle: "Jeux sexe érotique — AKOKY", metaDescription: "Jeux sexe et érotiques pour couples et libertins sur AKOKY.", title: "Jeux sexe érotique", content: "<h2>Jeux érotiques pour couples</h2><p>Des jeux sensuels et érotiques pour pimenter votre vie de couple et vos soirées libertines.</p>", published: true },
-    },
-  },
-  {
-    id: mkId(), category: "conseils", image: "/images/blog-jeux-libertins.webp",
-    createdAt: now, updatedAt: now,
-    translations: {
-      fr: { slug: "astro-sexo-akoky", metaTitle: "Astro Sexo AKOKY — Votre horoscope coquin", metaDescription: "Découvrez votre horoscope sexo et libertin sur AKOKY.", title: "Astro Sexo AKOKY", content: "<h2>Votre horoscope sexo</h2><p>Découvrez ce que les étoiles réservent à votre vie sexuelle et libertine avec l'Astro Sexo AKOKY.</p>", published: true },
+      fr: { slug: "pourquoi-choisir-akoky", metaTitle: "Pourquoi choisir AKOKY ? — Le meilleur site libertin 2026", metaDescription: "Toutes les raisons de choisir AKOKY : sécurité, communauté vérifiée, fonctionnalités uniques et écosystème libertin complet.", title: "Pourquoi choisir AKOKY en 2026 ?", content: "<h2>Les 10 raisons de choisir AKOKY</h2><p>Dans un marché saturé de sites libertins, AKOKY se distingue par une approche globale qui va bien au-delà de la simple mise en relation. Voici les 10 raisons qui font d'AKOKY le choix numéro 1 des libertins exigeants.</p><ol><li><strong>Profils 100% vérifiés :</strong> Chaque membre passe par un processus de vérification rigoureux</li><li><strong>Multi-profils :</strong> Un seul abonnement pour vos profils couple, femme seule et homme seul</li><li><strong>AKOKY Safe :</strong> Le protocole de sécurité le plus avancé du marché</li><li><strong>Lives exclusifs :</strong> Contenus en streaming réservés aux membres VIP</li><li><strong>Annuaire de clubs :</strong> La base de données la plus complète d'Europe avec avis vérifiés</li><li><strong>Événements géolocalisés :</strong> Trouvez les soirées près de chez vous en temps réel</li><li><strong>Jeux interactifs :</strong> Des jeux libertins pour pimenter vos soirées</li><li><strong>Communauté européenne :</strong> Active en France, Belgique, Suisse, Espagne, Italie et Portugal</li><li><strong>Support réactif :</strong> Équipe disponible 7j/7 avec réponse en moins de 2h pour les VIP</li><li><strong>Vision éthique :</strong> Une plateforme qui valorise le respect, le consentement et l'inclusivité</li></ol>", published: true },
     },
   },
   {
     id: mkId(), category: "conseils", image: "/images/blog-jeux-libertins.webp",
     createdAt: now, updatedAt: now,
     translations: {
-      fr: { slug: "histoire-libertine-sur-akoky", metaTitle: "Histoire libertine sur AKOKY — Récits et témoignages", metaDescription: "Histoires libertines et témoignages authentiques de la communauté AKOKY.", title: "Histoire libertine sur AKOKY", content: "<h2>Histoires libertines</h2><p>Des témoignages authentiques de membres AKOKY qui partagent leurs expériences libertines.</p>", published: true },
-    },
-  },
-
-  // ═══════════════════════════════════════════════════════════════════
-  // POURQUOI AKOKY
-  // ═══════════════════════════════════════════════════════════════════
-  {
-    id: mkId(), category: "conseils", image: "/images/blog-securite-discretion.webp",
-    createdAt: now, updatedAt: now,
-    translations: {
-      fr: { slug: "pourquoi-choisir-akoky", metaTitle: "Pourquoi choisir AKOKY ? — Le meilleur site libertin", metaDescription: "Toutes les raisons de choisir AKOKY pour vos rencontres libertines : sécurité, communauté, fonctionnalités.", title: "Pourquoi choisir AKOKY ?", content: "<h2>Les raisons de choisir AKOKY</h2><p>AKOKY se distingue par sa communauté de 1,5 million de membres, sa sécurité renforcée et ses fonctionnalités sociales uniques.</p>", published: true },
-    },
-  },
-  {
-    id: mkId(), category: "conseils", image: "/images/blog-securite-discretion.webp",
-    createdAt: now, updatedAt: now,
-    translations: {
-      fr: { slug: "communaute-respectueuse-libertine", metaTitle: "Communauté respectueuse libertine — AKOKY", metaDescription: "AKOKY : une communauté libertine respectueuse, bienveillante et inclusive.", title: "Communauté respectueuse libertine", content: "<h2>Le respect au cœur de la communauté</h2><p>Chez AKOKY, le respect est notre valeur fondamentale. Chaque membre s'engage à respecter les limites et les choix de chacun.</p>", published: true },
-    },
-  },
-  {
-    id: mkId(), category: "conseils", image: "/images/blog-securite-discretion.webp",
-    createdAt: now, updatedAt: now,
-    translations: {
-      fr: { slug: "securite-confidentialite-akoky", metaTitle: "Sécurité & confidentialité sur AKOKY", metaDescription: "La sécurité et la confidentialité sur AKOKY : ce qui fait de nous la plateforme la plus sûre.", title: "Sécurité & confidentialité sur AKOKY", content: "<h2>Votre sécurité, notre priorité</h2><p>AKOKY met en œuvre les meilleures pratiques en matière de sécurité et de protection des données personnelles.</p><h3>Vérification des profils</h3><p>Tous les profils sont vérifiés pour garantir l'authenticité de notre communauté.</p><h3>Modération 24/7</h3><p>Notre équipe de modération veille en permanence au respect des règles de la communauté.</p>", published: true },
-    },
-  },
-  {
-    id: mkId(), category: "conseils", image: "/images/blog-securite-discretion.webp",
-    createdAt: now, updatedAt: now,
-    translations: {
-      fr: { slug: "securite-site-libertin-akoky", metaTitle: "Sécurité du site libertin AKOKY", metaDescription: "Comment AKOKY assure la sécurité de ses membres sur la plateforme.", title: "Sécurité du site libertin AKOKY", content: "<h2>Un site sécurisé</h2><p>La sécurité est au cœur de l'expérience AKOKY avec un chiffrement de bout en bout et une authentification renforcée.</p>", published: true },
-    },
-  },
-  {
-    id: mkId(), category: "conseils", image: "/images/blog-securite-discretion.webp",
-    createdAt: now, updatedAt: now,
-    translations: {
-      fr: { slug: "discretion-site-libertin-akoky", metaTitle: "Discrétion sur le site libertin AKOKY", metaDescription: "La discrétion totale sur AKOKY : photos floues, navigation privée et protection des données.", title: "Discrétion sur le site libertin AKOKY", content: "<h2>La discrétion avant tout</h2><p>AKOKY garantit une discrétion totale : photos floues en option, navigation privée et protection maximale de vos données.</p>", published: true },
-    },
-  },
-  {
-    id: mkId(), category: "conseils", image: "/images/blog-securite-discretion.webp",
-    createdAt: now, updatedAt: now,
-    translations: {
-      fr: { slug: "libertinage-en-confiance", metaTitle: "Libertinage en confiance — AKOKY", metaDescription: "Vivre le libertinage en toute confiance grâce à AKOKY.", title: "Libertinage en confiance", content: "<h2>Le libertinage en confiance</h2><p>AKOKY crée un environnement de confiance où chacun peut explorer ses désirs en toute sérénité.</p>", published: true },
-    },
-  },
-  {
-    id: mkId(), category: "conseils", image: "/images/blog-securite-discretion.webp",
-    createdAt: now, updatedAt: now,
-    translations: {
-      fr: { slug: "libertinage-grandeur-nature-akoky", metaTitle: "Libertinage grandeur nature AKOKY", metaDescription: "Le libertinage grandeur nature avec AKOKY : événements, rencontres et communauté.", title: "Libertinage grandeur nature AKOKY", content: "<h2>Le libertinage grandeur nature</h2><p>AKOKY ne se limite pas au digital. Découvrez le libertinage grandeur nature avec nos événements et rencontres en personne.</p>", published: true },
-    },
-  },
-  {
-    id: mkId(), category: "conseils", image: "/images/blog-securite-discretion.webp",
-    createdAt: now, updatedAt: now,
-    translations: {
-      fr: { slug: "support-akoky-assistance-libertine", metaTitle: "Support AKOKY — Assistance libertine", metaDescription: "Le support AKOKY : une assistance dédiée pour la communauté libertine.", title: "Support AKOKY — Assistance libertine", content: "<h2>Notre équipe de support</h2><p>L'équipe support AKOKY est disponible 7j/7 pour répondre à toutes vos questions et vous accompagner.</p>", published: true },
-    },
-  },
-  {
-    id: mkId(), category: "conseils", image: "/images/blog-securite-discretion.webp",
-    createdAt: now, updatedAt: now,
-    translations: {
-      fr: { slug: "faq-libertine-akoky", metaTitle: "FAQ libertine AKOKY — Toutes les réponses", metaDescription: "FAQ libertine AKOKY : toutes les réponses à vos questions sur le libertinage et la plateforme.", title: "FAQ libertine AKOKY", content: "<h2>Questions fréquentes</h2><p>Retrouvez les réponses à toutes vos questions sur le libertinage et l'utilisation de la plateforme AKOKY.</p>", published: true },
-    },
-  },
-
-  // ═══════════════════════════════════════════════════════════════════
-  // INCLUSIVITÉ & DIVERS
-  // ═══════════════════════════════════════════════════════════════════
-  {
-    id: mkId(), category: "guides", image: "/images/blog-lgbt-libertinage.webp",
-    createdAt: now, updatedAt: now,
-    translations: {
-      fr: { slug: "libertinage-lgbt", metaTitle: "Libertinage LGBT — Inclusivité sur AKOKY", metaDescription: "Le libertinage LGBT sur AKOKY : un espace inclusif et bienveillant pour toutes les orientations.", title: "Libertinage LGBT", content: "<h2>Le libertinage LGBT</h2><p>AKOKY est une plateforme inclusive qui accueille toutes les orientations sexuelles et identités de genre dans le libertinage.</p>", published: true },
-    },
-  },
-  {
-    id: mkId(), category: "conseils", image: "/images/blog-lgbt-libertinage.webp",
-    createdAt: now, updatedAt: now,
-    translations: {
-      fr: { slug: "conseils-libertins", metaTitle: "Conseils libertins — Guide pratique AKOKY", metaDescription: "Tous nos conseils libertins pour vivre des expériences épanouissantes.", title: "Conseils libertins", content: "<h2>Nos meilleurs conseils libertins</h2><p>Des conseils pratiques pour profiter pleinement de vos expériences libertines, que vous soyez débutant ou confirmé.</p>", published: true },
-    },
-  },
-  {
-    id: mkId(), category: "conseils", image: "/images/blog-rencontres.webp",
-    createdAt: now, updatedAt: now,
-    translations: {
-      fr: { slug: "amour-sex", metaTitle: "Amour & Sexe — Le blog AKOKY", metaDescription: "Amour et sexe : réflexions et conseils sur la sexualité épanouie.", title: "Amour & Sexe", content: "<h2>Amour & sexe</h2><p>Réflexions sur l'amour, le désir et la sexualité épanouie dans le cadre du libertinage.</p>", published: true },
-    },
-  },
-  {
-    id: mkId(), category: "conseils", image: "/images/blog-rencontres.webp",
-    createdAt: now, updatedAt: now,
-    translations: {
-      fr: { slug: "inscription-akoky-offre-6-mois", metaTitle: "Inscription AKOKY — Offre 6 mois", metaDescription: "Profitez de l'offre spéciale 6 mois d'abonnement AKOKY à prix réduit.", title: "Inscription AKOKY — Offre 6 mois", content: "<h2>Offre spéciale AKOKY</h2><p>Profitez de notre offre exclusive : 6 mois d'abonnement premium à prix réduit pour découvrir toutes les fonctionnalités AKOKY.</p>", published: true },
+      fr: { slug: "jeux-libertins-akoky", metaTitle: "Jeux libertins AKOKY — Pimentez vos soirées en 2026", metaDescription: "Découvrez les jeux libertins AKOKY : défis coquins, cartes érotiques et animations pour couples et soirées. Fun garanti.", title: "Jeux libertins AKOKY — Pimentez vos soirées", content: "<h2>Les jeux libertins AKOKY : du fun et de la sensualité</h2><p>Les jeux libertins sont un excellent moyen de briser la glace, de découvrir de nouvelles sensations et d'ajouter une dimension ludique à vos soirées. AKOKY propose des jeux exclusifs conçus par et pour la communauté libertine.</p><h3>Les jeux disponibles</h3><ul><li><strong>La Roue du Désir :</strong> Faites tourner la roue et découvrez votre prochain défi sensuel</li><li><strong>Cartes Coquines :</strong> Tirez une carte, réalisez le gage. De doux à intense, choisissez votre niveau</li><li><strong>Vérité ou Défi Libertin :</strong> La version adulte du jeu classique, revisitée par AKOKY</li><li><strong>Le Questionnaire de Compatibilité :</strong> Découvrez vos affinités avec d'autres membres de façon ludique</li></ul><h3>Comment jouer ?</h3><p>Les jeux AKOKY sont accessibles directement depuis l'application. Certains se jouent en couple, d'autres en groupe. Ils sont parfaits pour un apéro coquin à la maison ou pour animer le début d'une soirée en club.</p><h3>L'Astro Sexo AKOKY</h3><p>Bonus fun : découvrez votre horoscope sexo et libertin mis à jour chaque semaine. Quel signe est le plus compatible avec le vôtre dans le libertinage ? La réponse pourrait vous surprendre.</p>", published: true },
     },
   },
 
