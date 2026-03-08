@@ -538,8 +538,11 @@ const App = () => (
             <Route path="/de/empfehlung" element={<WerbungDe />} />
             <Route path="/de/lexikon" element={<LexikonDe />} />
             <Route path="/de/datenschutz" element={<DatenschutzDe />} />
+            <Route path="/de/libertinismus" element={<LibertinismusDe />} />
             
-            {/* ── Pages DE livraison 6 — redirects doublons ─────────── */}
+            {/* ── Pages DE — redirects doublons ─────────── */}
+            <Route path="/de/anfangen" element={<Navigate to="/de/libertinismus-anfangen" replace />} />
+            <Route path="/de/aktuelles" element={<Navigate to="/de/libertine-aktuelles" replace />} />
             <Route path="/de/libertine-neuigkeiten" element={<Navigate to="/de/libertine-aktuelles" replace />} />
             <Route path="/de/libertinismus-beginnen" element={<Navigate to="/de/libertinismus-anfangen" replace />} />
             <Route path="/de/libertine-saunas-guide" element={<Navigate to="/de/saunas" replace />} />
