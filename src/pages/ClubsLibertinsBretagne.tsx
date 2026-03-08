@@ -29,7 +29,7 @@ const ClubsLibertinsBretagne = () => {
           <h2 className="text-3xl font-bold text-foreground font-display">Les grandes villes libertines</h2>
           <h3>Rennes</h3>
           <p>Rennes, avec son ambiance chaleureuse et sa vie nocturne animée, est le cœur de la scène libertine bretonne.</p>
-          <Link to="/clubs-libertins-rennes" className="text-primary hover:underline">Clubs libertins à Rennes →</Link>
+          <Link to="/fr/clubs-libertins-rennes" className="text-primary hover:underline">Clubs libertins à Rennes →</Link>
           <h3>Brest</h3><p>Brest offre une ambiance maritime avec des soirées intimistes.</p>
           <h3>Quimper</h3><p>Quimper propose une ambiance conviviale.</p>
           <h3>Vannes</h3><p>Vannes offre une ambiance festive.</p>
