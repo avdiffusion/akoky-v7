@@ -22,7 +22,7 @@ const ClubsLibertinsBruxellesRegion = () => {
       heroTitle="Clubs libertins dans la Région de Bruxelles-Capitale"
       heroSubtitle="Le guide complet des clubs, soirées et événements libertins à Bruxelles"
       faq={faq}
-      breadcrumb={[{ label: "Clubbing Belgique", href: "/clubbing-belgique" }, { label: "Bruxelles-Capitale" }]}
+      breadcrumb={[{ label: "Clubbing Belgique", href: "/fr/clubbing-belgique" }, { label: "Bruxelles-Capitale" }]}
     >
       <section className="py-16 px-4">
         <div className="container max-w-4xl mx-auto prose prose-invert prose-lg">
