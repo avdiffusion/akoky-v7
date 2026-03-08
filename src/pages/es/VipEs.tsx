@@ -38,7 +38,7 @@ const VipEs = () => (
           <h3 className="text-xl font-semibold text-primary mt-8 mb-3">Una Sola Cuenta</h3>
           <p className="text-muted-foreground leading-relaxed mb-4">Con el estatus VIP, puedes crear hasta tres perfiles diferentes (pareja, solo hombre, sola mujer) bajo una única cuenta. Cada perfil tiene su propia galería, descripción y configuración de privacidad.</p>
           <h3 className="text-xl font-semibold text-primary mt-8 mb-3">Cambio en un Solo Clic</h3>
-          <p className="text-muted-foreground leading-relaxed mb-4">Cambia de perfil instantáneamente según el contexto: usa tu perfil de pareja para los eventos en club, tu perfil individual para los apéros, sin necesidad de cerrar sesión ni gestionar múltiples cuentas.</p>
+          <p className="text-muted-foreground leading-relaxed mb-4">Cambia de perfil instantáneamente según el contexto: usa tu perfil de pareja para los eventos en club, tu perfil individual para los afterworks, sin necesidad de cerrar sesión ni gestionar múltiples cuentas.</p>
           <h3 className="text-xl font-semibold text-primary mt-8 mb-3">Certificación Obligatoria</h3>
           <p className="text-muted-foreground leading-relaxed mb-4">Todos los perfiles VIP están certificados mediante verificación de identidad. El badge de confianza es visible por toda la comunidad, aumentando significativamente tu credibilidad y las posibilidades de encuentro.</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">Ventajas Exclusivas VIP</h2>

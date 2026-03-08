@@ -204,7 +204,7 @@ const EventosEs = () => (
             ))}
           </div>
           <div className="max-w-3xl mx-auto space-y-3">
-            <p className="text-muted-foreground leading-relaxed">Los eventos libertinos Akoky en la costa española atraen una comunidad europea en busca de sol y libertad. Barcelona, con su espíritu vanguardista, acoge veladas libertinas que empujan los límites de la creatividad. Los apéros libertinos en las terrazas barcelonesas ofrecen una experiencia única que combina lifestyle libertino y arte de vivir mediterráneo.</p>
+            <p className="text-muted-foreground leading-relaxed">Los eventos libertinos Akoky en la costa española atraen una comunidad europea en busca de sol y libertad. Barcelona, con su espíritu vanguardista, acoge veladas libertinas que empujan los límites de la creatividad. Los afterworks libertinos en las terrazas barcelonesas ofrecen una experiencia única que combina lifestyle libertino y arte de vivir mediterráneo.</p>
             <p className="text-muted-foreground leading-relaxed">El verano español ve florecer eventos Akoky de excepción a lo largo de las costas. De las veladas frente al mar a los fines de semana en villas privadas, España se convierte en el terreno de juego privilegiado de la comunidad libertina Akoky. Si eres nuevo, consulta nuestra guía para <Link to="/es/empezar-libertinaje" className="text-primary hover:underline">empezar en el libertinaje</Link>.</p>
           </div>
         </div>
