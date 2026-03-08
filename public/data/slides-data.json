@@ -1,0 +1,49 @@
+{
+  "slides": [
+    {
+      "id": 1,
+      "title": "Le Glamour Beach",
+      "description": "Faites des rencontres uniques au Village Naturiste cap d'Agde !",
+      "image": "/images/slides/glamour-beach.webp",
+      "url": "https://akoky.com/club/le-glamour-beach",
+      "alt": "Le Glamour Beach - Club libertin au Cap d'Agde"
+    },
+    {
+      "id": 2,
+      "title": "Les Chandelles Paris",
+      "description": "Le club libertin le plus prestigieux de Paris depuis 1993",
+      "image": "/images/slides/les-chandelles.webp",
+      "url": "https://akoky.com/club/les-chandelles",
+      "alt": "Les Chandelles Paris - Club échangiste de luxe"
+    },
+    {
+      "id": 3,
+      "title": "Sauna Oléron",
+      "description": "Détente et libertinage sur l'île d'Oléron",
+      "image": "/images/slides/sauna-oleron.webp",
+      "url": "https://akoky.com/club/sauna-oleron",
+      "alt": "Sauna libertin Oléron - Relaxation et rencontres"
+    },
+    {
+      "id": 4,
+      "title": "Le Privé",
+      "description": "Club privé élégant au cœur de Bruxelles",
+      "image": "/images/slides/le-prive.webp",
+      "url": "https://akoky.com/club/le-prive",
+      "alt": "Le Privé Bruxelles - Club libertin privé"
+    },
+    {
+      "id": 5,
+      "title": "Villa Paradis",
+      "description": "Villa exclusive avec piscine chauffée près de Barcelone",
+      "image": "/images/slides/villa-paradis.webp",
+      "url": "https://akoky.com/club/villa-paradis",
+      "alt": "Villa Paradis Barcelone - Club libertin avec piscine"
+    }
+  ],
+  "settings": {
+    "autoplaySpeed": 5000,
+    "transitionDuration": 600,
+    "pauseOnHover": true
+  }
+}
