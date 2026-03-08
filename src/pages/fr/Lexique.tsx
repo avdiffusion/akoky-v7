@@ -194,7 +194,7 @@ const Lexique = () => {
         description="Le lexique libertin le plus complet : 200+ définitions du vocabulaire libertin de A à Z. Guide AKOKY pour comprendre échangisme, candaulisme, mélangisme et toutes les pratiques."
         canonical="https://akoky.com/fr/lexique"
         lang="fr"
-        ogImage="https://akoky.com/fr/images/lexique-libertine-cover.webp"
+        ogImage="/images/lexique-libertine-cover.webp"
       />
       <HreflangTags slug="lexique" />
       <ContentPageLayout
