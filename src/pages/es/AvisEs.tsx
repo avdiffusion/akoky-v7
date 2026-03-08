@@ -2,7 +2,6 @@ import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import HreflangTags from "@/components/seo/HreflangTags";
 import ReviewsList from "@/components/reviews/ReviewsList";
 import { Link } from "react-router-dom";
-import MetaTags from "@/components/seo/MetaTags";
 
 const BREADCRUMB_SCHEMA = {
   "@context": "https://schema.org",
@@ -36,12 +35,6 @@ const FAQ = [
 
 const AvisEs = () => (
   <>
-    <MetaTags
-      title="Opiniones AKOKY – Testimonios Verificados de la Comunidad Libertina"
-      description="Lee las opiniones auténticas y verificadas de los miembros de AKOKY. Testimonios reales sobre la experiencia, eventos, clubs asociados y suscripción premium."
-      canonical="https://akoky.com/es/avis"
-      lang="es"
-    />
     <HreflangTags slug="avis" />
 
     <ContentPageLayout

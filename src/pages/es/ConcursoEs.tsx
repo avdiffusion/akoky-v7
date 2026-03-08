@@ -1,7 +1,6 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import HreflangTags from "@/components/seo/HreflangTags";
 import { Link } from "react-router-dom";
-import MetaTags from "@/components/seo/MetaTags";
 
 const FAQ = [
   { question: "¿Cómo participar en los concursos Akoky?", answer: "Para participar, debes ser miembro registrado en Akoky. Cada concurso tiene sus propias reglas de participación detalladas en su página dedicada. La mayoría son gratuitos y abiertos a todos los miembros activos." },
@@ -34,12 +33,6 @@ const PAGE_SCHEMA = {
 
 const ConcursoEs = () => (
   <>
-    <MetaTags
-      title="Concursos AKOKY – Gana Experiencias Libertinas Exclusivas"
-      description="Participa gratuitamente en los concursos Akoky y gana estancias en los mejores clubes libertinos de España y Europa, suscripciones VIP y experiencias únicas."
-      canonical="https://akoky.com/es/concurso"
-      lang="es"
-    />
     <HreflangTags slug="concurso" />
 
     <ContentPageLayout

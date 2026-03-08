@@ -1,6 +1,5 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import { Link } from "react-router-dom";
-import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
 
 const faqAkoky = [
@@ -54,12 +53,6 @@ const jsonSchema = {
 const AkokyEs = () => {
   return (
     <>
-      <MetaTags
-        title="Nuestra Misión AKOKY – Comunidad adulta premium y eventos"
-        description="Descubre los valores, la visión y los compromisos de la comunidad Akoky. Plataforma comunitaria adulta premium en Europa."
-        canonical="https://akoky.com/es/akoky"
-        lang="es"
-      />
       <HreflangTags slug="akoky" />
 
       <ContentPageLayout
