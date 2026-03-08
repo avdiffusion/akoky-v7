@@ -191,7 +191,7 @@ const Header = ({ lang = "fr" }: HeaderProps) => {
                   {LANGUAGES.map((l) => (
                     <Link
                       key={l.code}
-                      to={l.code === "fr" ? "/" : `/${l.code}`}
+                      to={`/${l.code}`}
                       onClick={() => setLangOpen(false)}
                       className={`flex items-center gap-3 px-4 py-3 text-sm transition-all hover:bg-primary/10 hover:text-primary border-b border-border last:border-0 ${
                         l.code === lang ? "bg-primary/15 text-primary font-semibold" : "text-foreground"
