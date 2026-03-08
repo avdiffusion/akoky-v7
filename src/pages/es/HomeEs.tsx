@@ -168,7 +168,7 @@ const HomeEs = () => {
                 directorio de los <Link to="/es/clubbing" className="text-primary hover:underline">mejores clubes libertinos</Link> de Europa,{" "}
                 <Link to="/es/eventos" className="text-primary hover:underline">eventos exclusivos</Link> mensuales,{" "}
                 <Link to="/es/live" className="text-primary hover:underline">lives libertinos</Link> en directo y{" "}
-                <Link to="/es/aplicacion" className="text-primary hover:underline">aplicación móvil</Link> con geolocalización.
+                <Link to="/es/app" className="text-primary hover:underline">aplicación móvil</Link> con geolocalización.
               </p>
               <p className="text-base md:text-lg leading-8 text-muted-foreground mt-4">
                 Tanto si eres <Link to="/es/empezar-libertinaje" className="text-primary hover:underline">principiante en el libertinaje</Link>{" "}
