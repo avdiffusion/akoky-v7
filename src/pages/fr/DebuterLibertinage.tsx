@@ -13,17 +13,10 @@ const FAQ = [
 
 const DebuterLibertinage = () => (
   <>
-    <MetaTags
-      title="Débuter dans le Libertinage 2026 – Guide Complet | AKOKY"
-      description="Guide complet pour débuter dans le libertinage : premiers pas, conseils, définitions et ressources. AKOKY accompagne les débutants."
-      canonical="https://akoky.com/fr/debuter-libertinage"
-      lang="fr"
-      ogImage="/images/debuter-libertinage-cover.webp"
-    />
     <HreflangTags slug="debuter-libertinage" />
     <ContentPageLayout
       lang="fr"
-      title="Débuter dans le Libertinage 2026 – Guide Complet"
+      title="Débuter dans le Libertinage 2026 – Guide Complet | AKOKY"
       description="Guide complet pour débuter dans le libertinage : premiers pas, conseils, définitions et ressources. AKOKY accompagne les débutants."
       canonical="https://akoky.com/fr/debuter-libertinage"
       heroTitle="Guide du Libertinage en France"

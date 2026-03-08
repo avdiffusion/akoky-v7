@@ -3,21 +3,18 @@ import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
 import { Link } from "react-router-dom";
 
-const FAQ = [];
+const FAQ = [
+  { question: "Qui peut accéder à AKOKY Live ?", answer: "AKOKY Live est ouvert à tous les membres de la communauté. Les membres standards profitent des lives publics, les VIP accèdent aux lives privés et contenus exclusifs." },
+  { question: "Les lives sont-ils enregistrés ?", answer: "Non. Les lives ne sont ni enregistrés ni sauvegardés, pour garantir votre confidentialité." },
+  { question: "Peut-on interagir en direct ?", answer: "Oui. Un chat en direct permet de discuter pendant le live. Les VIP bénéficient d'interactions privilégiées." },
+];
 
 const Live = () => (
   <>
-    <MetaTags
-      title="Lives AKOKY – Vidéos & Échanges en Direct Sécurisés | AKOKY"
-      description="Rejoignez les lives libertins AKOKY : streams en direct, échanges authentiques et contenu exclusif dans un espace privé et sécurisé."
-      canonical="https://akoky.com/fr/live"
-      lang="fr"
-      ogImage="/images/live-akoky.webp"
-    />
     <HreflangTags slug="live" />
     <ContentPageLayout
       lang="fr"
-      title="Lives AKOKY – Vidéos & Échanges en Direct Sécurisés"
+      title="Lives AKOKY – Vidéos & Échanges en Direct Sécurisés | AKOKY"
       description="Rejoignez les lives libertins AKOKY : streams en direct, échanges authentiques et contenu exclusif dans un espace privé et sécurisé."
       canonical="https://akoky.com/fr/live"
       heroTitle="Lives Akoky – Vidéos & échanges en direct sécurisés"

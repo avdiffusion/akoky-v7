@@ -144,9 +144,9 @@ const Home = () => {
             <h1 className="text-gradient-gold text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-wider leading-tight mb-4">
               Rencontres adultes &amp; expériences exclusives en France
             </h1>
-            <h2 className="text-lg md:text-xl font-normal text-white/95 mb-8 max-w-[800px] mx-auto">
+            <p className="text-lg md:text-xl font-normal text-white/95 mb-8 max-w-[800px] mx-auto">
               Une communauté premium pour rencontrer des personnes ouvertes d'esprit, découvrir des clubs et participer à des événements adultes partout en France.
-            </h2>
+            </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a href="https://app.akoky.com/register" className="w-full sm:w-auto px-8 py-4 rounded-full font-bold btn-gradient-primary text-primary-foreground hover:-translate-y-0.5 transition-all hover:shadow-xl hover:shadow-primary/30">
                 REJOINDRE LA COMMUNAUTÉ
