@@ -1,8 +1,13 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
+import { Link } from "react-router-dom";
 
-const FAQ: { question: string; answer: string }[] = [];
+const FAQ = [
+  { question: "¿Cómo contactar con el servicio de prensa?", answer: "Envía tu solicitud a presse@akoky.com. Nuestro equipo responde en 48h laborables." },
+  { question: "¿AKOKY ofrece un programa de afiliación para clubes?", answer: "Sí. Los clubes libertinos pueden unirse al ecosistema AKOKY para ganar visibilidad ante 1,5M de miembros activos." },
+  { question: "¿En qué idiomas está disponible el dossier de prensa?", answer: "El dossier de prensa está disponible en español, francés, inglés, alemán, italiano y portugués." },
+];
 
 const BRANDING = [
   { img: "/images/branding/tshirts-akoky-premium.webp", alt: "Camisetas y ropa Akoky premium con logo AK" },
