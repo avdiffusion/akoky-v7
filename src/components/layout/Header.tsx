@@ -89,7 +89,6 @@ const LANG_LABEL: Record<Lang, string> = {
 
 const CLOSE_LABEL: Record<Lang, string> = {
   fr: "Fermer le menu",
-  en: "Close menu",
   es: "Cerrar menú",
   de: "Menü schließen",
   it: "Chiudi menu",
