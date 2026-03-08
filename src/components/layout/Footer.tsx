@@ -128,7 +128,7 @@ const CTA_LABELS: Record<Lang, { join: string; clubs: string; joinDesc: string }
 
 const REGISTER_LABELS: Record<Lang, string> = {
   fr: "Créer mon compte gratuit",
-  en: "Create my free account",
+  
   es: "Crear mi cuenta gratis",
   de: "Kostenloses Konto erstellen",
   it: "Crea il mio account gratuito",
