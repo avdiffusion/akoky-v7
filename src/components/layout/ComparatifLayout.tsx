@@ -294,7 +294,7 @@ const ComparatifLayout = ({
         </section>
       </main>
 
-      <Footer />
+      <Footer lang={lang} />
     </>
   );
 };
