@@ -93,9 +93,9 @@ const ClubsLibertinsGand = () => {
               <div className="mt-6">
                 <p className="mb-4">Pour découvrir les clubs libertins dans les autres villes flamandes, consultez nos guides dédiés :</p>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose">
-                  <li><Link to="/clubs-libertins-flandre" className="text-primary hover:underline">Clubs en Flandre</Link></li>
-                  <li><Link to="/clubs-libertins-anvers" className="text-primary hover:underline">Clubs à Anvers</Link></li>
-                  <li><Link to="/clubs-libertins-bruges" className="text-primary hover:underline">Clubs à Bruges</Link></li>
+                  <li><Link to="/fr/clubs-libertins-flandre" className="text-primary hover:underline">Clubs en Flandre</Link></li>
+                  <li><Link to="/fr/clubs-libertins-anvers" className="text-primary hover:underline">Clubs à Anvers</Link></li>
+                  <li><Link to="/fr/clubs-libertins-bruges" className="text-primary hover:underline">Clubs à Bruges</Link></li>
                 </ul>
               </div>
             </div>
