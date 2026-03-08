@@ -239,9 +239,6 @@ import ClubLibertiniTorino from "./pages/it/ClubLibertiniTorino";
 
 
 // ─── Pages IT livraison 6 ─────────────────────────────────────────────────────
-import ActualitesIt from "./pages/it/ActualitesIt";
-import BlogRedirectIt from "./pages/it/BlogRedirectIt";
-import FaqRedirectIt from "./pages/it/FaqRedirectIt";
 import DebuterGuideIt from "./pages/it/DebuterGuideIt";
 import LibertinageGuideIt from "./pages/it/LibertinageGuideIt";
 import SaunasGuideIt from "./pages/it/SaunasGuideIt";
@@ -601,7 +598,7 @@ const App = () => (
             <Route path="/it/concorso" element={<ConcorsoIt />} />
             
             {/* ── Pages IT livraison 6 ───────────────────────────────────── */}
-            <Route path="/it/attualita-libertina-2026" element={<ActualitesIt />} />
+            <Route path="/it/attualita-libertina-2026" element={<Navigate to="/it/attualita-libertine" replace />} />
             <Route path="/it/come-iniziare-libertinismo" element={<DebuterGuideIt />} />
             <Route path="/it/libertinismo-guida" element={<LibertinageGuideIt />} />
             <Route path="/it/saune-libertine-guida" element={<SaunasGuideIt />} />
