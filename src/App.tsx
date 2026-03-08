@@ -154,6 +154,7 @@ import QuestionsGuideEs from "./pages/es/QuestionsGuideEs";
 import GuideGuideEs from "./pages/es/GuideGuideEs";
 import GuideUltimeGuideEs from "./pages/es/GuideUltimeGuideEs";
 import ConcoursGuideEs from "./pages/es/ConcoursGuideEs";
+import ConcursoEs from "./pages/es/ConcursoEs";
 import ConcoursClesGuideEs from "./pages/es/ConcoursClesGuideEs";
 import ContactGuideEs from "./pages/es/ContactGuideEs";
 import CookiesGuideEs from "./pages/es/CookiesGuideEs";
