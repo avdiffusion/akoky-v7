@@ -27,9 +27,9 @@ const AUDIENCE = [
 
 const LibertinismoIt = () => (
   <>
-    <MetaTags title="Libertinismo Moderno 2026 | Guida Completa, Pratiche ed Etica — AKOKY" description="Scopri il libertinismo oggi: definizione, pratiche (soft, hard, scambio), consenso ed evoluzione culturale. Guida completa per coppie e single." canonical="https://akoky.com/it/libertinismo" lang="it" ogImage="/images/libertinage-cover.webp" />
+    <MetaTags title="Libertinismo Moderno 2026 | Guida Completa, Pratiche ed Etica — AKOKY" description="Scopri il libertinismo oggi: definizione, pratiche (soft, hard, scambio), consenso ed evoluzione culturale. Guida completa per coppie e single." canonical="https://akoky.com/it/libertinismo" lang="it" ogImage="/images/es-libertinaje-cover.webp" />
     <HreflangTags slug="libertinismo" />
-    <ContentPageLayout lang="it" title="Libertinismo Moderno 2026 | Guida Completa" description="Scopri il libertinismo oggi." canonical="https://akoky.com/it/libertinismo" heroTitle="Il Libertinismo Moderno: Definizione, Pratiche e Consenso" heroSubtitle="Scopri questo universo nel 2026: pratiche rispettose, evoluzione culturale e chiavi per un'esplorazione consapevole." heroImage="/images/libertinage-cover.webp" breadcrumb={[{ label: "Il Libertinismo Moderno" }]} faq={FAQ}>
+    <ContentPageLayout lang="it" title="Libertinismo Moderno 2026 | Guida Completa" description="Scopri il libertinismo oggi." canonical="https://akoky.com/it/libertinismo" heroTitle="Il Libertinismo Moderno: Definizione, Pratiche e Consenso" heroSubtitle="Scopri questo universo nel 2026: pratiche rispettose, evoluzione culturale e chiavi per un'esplorazione consapevole." heroImage="/images/es-libertinaje-cover.webp" breadcrumb={[{ label: "Il Libertinismo Moderno" }]} faq={FAQ}>
 
       {/* Stats */}
       <section className="py-12 px-4">
