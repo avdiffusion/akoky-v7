@@ -503,6 +503,80 @@ const Home = () => {
           </div>
         </section>
 
+        {/* ═══════════ DERNIERS ARTICLES DU BLOG ═══════════ */}
+        <section className="py-20">
+          <div className="container">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-black mb-4">📖 Derniers Articles du Blog</h2>
+              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+                Guides, conseils et actualités pour vivre le libertinage en toute confiance.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {[
+                {
+                  title: "Clubs Libertins à Paris 2026 — Le Guide Complet",
+                  desc: "Découvrez les meilleurs clubs libertins de Paris en 2026 : ambiance, tarifs, dress code et conseils pour une première visite réussie.",
+                  image: "https://akoky.com/images/panorama-paris-nuit.webp",
+                  href: "https://akoky.com/fr/blogs/clubs-libertins-paris-guide-2026",
+                  tag: "Guide",
+                },
+                {
+                  title: "La Scène Libertine à Lyon — Clubs et Événements 2026",
+                  desc: "Explorez la scène libertine lyonnaise : meilleurs clubs, soirées et communauté swinger dans la capitale des Gaules.",
+                  image: "https://akoky.com/images/clubs-libertins-villes.webp",
+                  href: "https://akoky.com/fr/blogs/scene-libertine-lyon-2026",
+                  tag: "Guide",
+                },
+                {
+                  title: "Débuter dans le Libertinage — Conseils Pratiques",
+                  desc: "Guide complet pour les débutants : comment préparer votre première expérience libertine et respecter les codes.",
+                  image: "https://akoky.com/images/debuter-libertinage-cover.webp",
+                  href: "https://akoky.com/fr/blogs/debuter-libertinage-france-conseils",
+                  tag: "Débutants",
+                },
+              ].map((article, i) => (
+                <a
+                  key={i}
+                  href={article.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group bg-card border border-border rounded-2xl overflow-hidden card-hover-glow"
+                >
+                  <div className="aspect-[16/9] overflow-hidden">
+                    <img
+                      src={article.image}
+                      alt={article.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <span className="text-xs font-bold text-primary bg-primary/10 px-2.5 py-0.5 rounded-full">
+                      {article.tag}
+                    </span>
+                    <h3 className="font-bold text-lg mt-3 mb-2 group-hover:text-primary transition-colors leading-snug">
+                      {article.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed line-clamp-3">{article.desc}</p>
+                    <span className="inline-flex items-center gap-1 text-primary text-sm font-semibold mt-4 group-hover:gap-2 transition-all">
+                      Lire l'article →
+                    </span>
+                  </div>
+                </a>
+              ))}
+            </div>
+            <div className="text-center mt-10">
+              <Link
+                to="/fr/blog"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full btn-gradient-primary text-primary-foreground font-bold text-lg hover:opacity-90 transition-opacity"
+              >
+                📚 Voir tous les articles du blog
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* ═══════════ FAQ ═══════════ */}
         <section className="py-20">
           <div className="container max-w-[900px]">

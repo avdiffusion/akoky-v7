@@ -14,7 +14,7 @@ const NAV_LINKS = [
   { href: "/", label: "Accueil", icon: "🏠" },
   { href: "/akoky", label: "À propos", icon: "ℹ️" },
   { href: "/debuter-libertinage", label: "Débuter", icon: "📝" },
-  { href: "/blog", label: "Blog", icon: "🎭" },
+  { href: "/fr/blog", label: "Blog", icon: "🎭" },
   { href: "/faq", label: "FAQ", icon: "❓" },
 ];
 
