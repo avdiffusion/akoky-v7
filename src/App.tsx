@@ -680,6 +680,7 @@ const App = () => (
             <Route path="/pt/concurso" element={<ConcursoPt />} />
             <Route path="/pt/concours" element={<ConcoursListing lang="pt" />} />
             <Route path="/pt/concours/:slug" element={<ConcoursArticlePage lang="pt" />} />
+            <Route path="/pt/*" element={<Navigate to="/pt" replace />} />
 
             {/* ── EN Pages ──────────────────────────────────────────── */}
             <Route path="/en/reviews" element={<ReviewsEn />} />
