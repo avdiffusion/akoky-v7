@@ -10,12 +10,6 @@ const FAQ = [
 
 const ActualidadLibertina = () => (
   <>
-    <MetaTags
-      title="Actualidad Libertina 2026 | Tendencias y Noticias — AKOKY España"
-      description="Sigue las últimas tendencias del mundo libertino en España y Europa: nuevos clubes, eventos destacados, evoluciones del sector. Análisis independiente por AKOKY."
-      canonical="https://akoky.com/es/actualidad-libertina"
-      lang="es"
-    />
     <HreflangTags slug="actualidad-libertina" />
     <ContentPageLayout
       lang="es"
