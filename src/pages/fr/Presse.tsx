@@ -61,7 +61,7 @@ const Presse = () => (
         <div className="container max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-foreground mb-5">Écosystème & Données Akoky</h2>
             <p className="text-muted-foreground leading-relaxed mb-3">Une plateforme construite sur des fondations solides et structurées</p>
-            <p className="text-muted-foreground leading-relaxed mb-3">Akoky ne s'est pas construit en quelques semaines. Derrière la plateforme se cache un travail de fond colossal réalisé par les fondateurs et l'équipe technique : collecte, structuration et mise à jour permanente d'une base de données exhaustive sur l'univers libertin européen. Ce socle de données fiables et vérifiées constitue la colonne vertébrale</p>
+            <p className="text-muted-foreground leading-relaxed mb-3">Akoky ne s'est pas construit en quelques semaines. Derrière la plateforme se cache un travail de fond colossal réalisé par les fondateurs et l'équipe technique : collecte, structuration et mise à jour permanente d'une base de données exhaustive sur l'univers libertin européen. Ce socle de données fiables et vérifiées constitue la colonne vertébrale de l'ensemble de nos services.</p>
             <p className="text-muted-foreground leading-relaxed mb-3">Base de données structurée recensant les clubs libertins d'Europe avec coordonnées vérifiées, horaires d'ouverture, tarifs, photos, avis certifiés et géolocalisation précise. Mise à jour hebdomadaire par notre équipe.</p>
         </div>
       </section>
