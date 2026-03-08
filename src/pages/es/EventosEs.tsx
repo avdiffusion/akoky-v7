@@ -174,7 +174,7 @@ const EventosEs = () => (
             ))}
           </div>
           <div className="max-w-3xl mx-auto space-y-3">
-            <p className="text-muted-foreground leading-relaxed">Las veladas libertinas Akoky en Madrid atraen una comunidad internacional y refinada. Los clubes libertinos madrileños, entre los más reputados de Europa, ofrecen un marco ideal para nuestros eventos exclusivos. Cada apéro libertino en Madrid es una celebración de la diversidad cultural y la libertad de ser uno mismo.</p>
+            <p className="text-muted-foreground leading-relaxed">Las veladas libertinas Akoky en Madrid atraen una comunidad internacional y refinada. Los clubes libertinos madrileños, entre los más reputados de Europa, ofrecen un marco ideal para nuestros eventos exclusivos. Cada afterwork libertino en Madrid es una celebración de la diversidad cultural y la libertad de ser uno mismo.</p>
             <p className="text-muted-foreground leading-relaxed">Los eventos Akoky en Madrid se distinguen por su atmósfera cálida y su calidad de organización. De las veladas íntimas a los grandes eventos internacionales, Madrid se ha convertido en un destino privilegiado para los amantes del lifestyle libertino en busca de autenticidad y elegancia.</p>
           </div>
         </div>
