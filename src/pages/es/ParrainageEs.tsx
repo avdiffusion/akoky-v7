@@ -11,12 +11,6 @@ const FAQ = [
 
 const ParrainageEs = () => (
   <>
-    <MetaTags
-      title="Programa de Afiliación AKOKY | Invita y Gana Ventajas"
-      description="Invita a tus amigos a AKOKY y gana ventajas exclusivas: acceso VIP, eventos gratuitos y más. El programa de afiliación de la comunidad libertina."
-      canonical="https://akoky.com/es/parrainage"
-      lang="es"
-    />
     <HreflangTags slug="parrainage" />
     <ContentPageLayout
       lang="es"
