@@ -254,7 +254,7 @@ const Header = ({ lang = "fr" }: HeaderProps) => {
         >
           {/* Mobile Header */}
           <div className="flex justify-between items-center pb-4 border-b border-border">
-            <Link to={lang === "fr" ? "/" : `/${lang}`} className="text-xl font-black text-gradient-gold">AKOKY</Link>
+            <Link to={`/${lang}`} className="text-xl font-black text-gradient-gold">AKOKY</Link>
             <button
               onClick={() => setMobileOpen(false)}
               className="p-2 min-w-[44px] min-h-[44px] flex items-center justify-center hover:text-primary transition-all"
