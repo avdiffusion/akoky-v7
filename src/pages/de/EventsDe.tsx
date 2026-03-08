@@ -24,6 +24,7 @@ const EventsDe = () => (
       canonical="https://akoky.com/de/events"
       heroTitle="Libertine Events in Deutschland"
       heroSubtitle="300+ Events pro Monat: exklusive Abende, Themen-Wochenenden, private Treffen. Reserviere deinen Platz auf AKOKY."
+      heroImage="/images/es-eventos-cover.webp"
       breadcrumb={[{ label: "Libertine Events in Deutschland" }]}
       faq={FAQ}
     >

@@ -24,6 +24,7 @@ const AkokyDe = () => (
       canonical="https://akoky.com/de/akoky"
       heroTitle="AKOKY: Das Libertine Premium-Netzwerk"
       heroSubtitle="In Frankreich geboren, in ganz Europa präsent. Die Plattform, die libertines Leben neu erfindet."
+      heroImage="/images/akoky.webp"
       breadcrumb={[{ label: "AKOKY: Das Libertine Premium-Netzwerk" }]}
       faq={FAQ}
     >

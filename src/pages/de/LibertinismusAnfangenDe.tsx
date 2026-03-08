@@ -25,6 +25,7 @@ const LibertinismusAnfangenDe = () => (
       canonical="https://akoky.com/de/libertinismus-anfangen"
       heroTitle="Mit dem Libertinismus anfangen, in deinem eigenen Tempo"
       heroSubtitle="Ein praktischer und respektvoller Leitfaden, um dieses Universum Schritt für Schritt zu entdecken."
+      heroImage="/images/es-debuter-cover.webp"
       breadcrumb={[{ label: "Mit dem Libertinismus anfangen, in deinem eigenen Tempo" }]}
       faq={FAQ}
     >

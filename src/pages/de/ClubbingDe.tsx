@@ -24,6 +24,7 @@ const ClubbingDe = () => (
       canonical="https://akoky.com/de/clubbing"
       heroTitle="Libertines Clubbing in Deutschland"
       heroSubtitle="Entdecke die libertine Clubbing-Szene: Vorbereitung, Verhaltensregeln, die besten Clubs und wie du das Erlebnis maximierst."
+      heroImage="/images/es-eventos-cover.webp"
       breadcrumb={[{ label: "Libertines Clubbing in Deutschland" }]}
       faq={FAQ}
     >
