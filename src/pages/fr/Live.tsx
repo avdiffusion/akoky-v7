@@ -18,11 +18,11 @@ const Live = () => (
     <ContentPageLayout
       lang="fr"
       title="Lives AKOKY – Vidéos & Échanges en Direct Sécurisés"
-      description="Rejoignez les lives libertins AKOKY : streams en direct, échanges authentiques et contenu exclusif d"
+      description="Rejoignez les lives libertins AKOKY : streams en direct, échanges authentiques et contenu exclusif dans un espace privé et sécurisé."
       canonical="https://akoky.com/fr/live"
       heroTitle="Lives Akoky – Vidéos & échanges en direct sécurisés"
       heroSubtitle="Un espace privé pour des lives libertins authentiques, modérés et exclusifs."
-      heroImage="https://akoky.com/images/live-akoky.webp"
+      heroImage="/images/live-akoky.webp"
       breadcrumb={[{ label: "Lives AKOKY" }]}
       faq={FAQ}
     >
