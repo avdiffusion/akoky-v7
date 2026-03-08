@@ -18,31 +18,31 @@ const FAQ = [
 
 const EQUIPEMENTS = [
   {
-    img: "https://akoky.com/images/sauna-jacuzzi.webp",
+    img: "/images/sauna-jacuzzi.webp",
     alt: "Jacuzzi dans un sauna libertin",
     title: "Piscine & Jacuzzi",
     text: "Bassins chauffés et espaces aquatiques pour une détente totale"
   },
   {
-    img: "https://akoky.com/images/sauna-vestiaires.webp",
+    img: "/images/sauna-vestiaires.webp",
     alt: "Vestiaires élégants d'un sauna libertin",
     title: "Vestiaires & Douches",
     text: "Espaces privatifs et équipements modernes pour votre confort"
   },
   {
-    img: "https://akoky.com/images/sauna-lounge.webp",
+    img: "/images/sauna-lounge.webp",
     alt: "Espace détente lounge dans un sauna libertin",
     title: "Salons Lounge",
     text: "Zones de relaxation feutrées, idéales pour faire connaissance"
   },
   {
-    img: "https://akoky.com/images/sauna-cabines.webp",
+    img: "/images/sauna-cabines.webp",
     alt: "Cabines privées d'un sauna libertin",
     title: "Cabines Privées",
     text: "Espaces intimes pour des moments en toute discrétion"
   },
   {
-    img: "https://akoky.com/images/sauna-hammam.webp",
+    img: "/images/sauna-hammam.webp",
     alt: "Hammam dans un établissement libertin",
     title: "Hammam & Sauna",
     text: "Espaces vapeur et chaleur sèche pour une détente profonde"
