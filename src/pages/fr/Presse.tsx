@@ -53,7 +53,7 @@ const Presse = () => (
         <div className="container max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-foreground mb-5">Affiliation & Partenariats by Akoky</h2>
             <p className="text-muted-foreground leading-relaxed mb-3">Rejoignez le programme d'affiliation libertine le plus performant d'Europe</p>
-            <p className="text-muted-foreground leading-relaxed mb-3">Le programme d'affiliation Akoky s'adresse aux clubs libertins, organisateurs d'événements privés, médias spécialisés, influenceurs et professionnels du secteur adulte qui souhaitent monétiser leur audience tout en offrant un service de qualité à leur communauté. En devenant partenaire affilié Akoky, vous intégrez un écosystème premium où qualité, </p>
+            <p className="text-muted-foreground leading-relaxed mb-3">Le programme d'affiliation Akoky s'adresse aux clubs libertins, organisateurs d'événements privés, médias spécialisés, influenceurs et professionnels du secteur adulte qui souhaitent monétiser leur audience tout en offrant un service de qualité à leur communauté. En devenant partenaire affilié Akoky, vous intégrez un écosystème premium où qualité, éthique et performance vont de pair.</p>
             <p className="text-muted-foreground leading-relaxed mb-3">Vous gérez un club libertin en Europe ? Akoky vous offre une visibilité maximale auprès de milliers de membres VIP actifs. En intégrant notre annuaire premium et notre programme d'affiliation, vous bénéficiez d'un trafic qualifié, de réservations en ligne et de commissions attractives sur chaque abonnement généré.</p>
         </div>
       </section>
