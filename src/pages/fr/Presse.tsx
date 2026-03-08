@@ -28,7 +28,7 @@ const Presse = () => (
       canonical="https://akoky.com/fr/presse"
       heroTitle="Presse & Partenariats"
       heroSubtitle="Espace presse AKOKY : dossier média, statistiques et contact relations médias."
-      heroImage="https://akoky.com/images/presse-libertine.webp"
+      heroImage="/images/presse-libertine.webp"
       breadcrumb={[{ label: "Presse & Partenariats" }]}
       faq={FAQ}
     >
