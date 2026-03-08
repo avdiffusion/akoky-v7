@@ -414,7 +414,7 @@ const Footer = ({ lang = "fr" }: FooterProps) => {
           {/* Social */}
           <div className="flex justify-center my-8">
             <div className="flex gap-4 flex-wrap justify-center">
-              {SOCIAL_LINKS.map((s) => (
+              {getSocialLinks(lang).map((s) => (
                 <a
                   key={s.label}
                   href={s.href}
