@@ -34,13 +34,6 @@ const PAGE_SCHEMA = {
 
 const WettbewerbDe = () => (
   <>
-    <Helmet>
-      <html lang="de" />
-      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
-      <meta property="og:locale" content="de_DE" />
-      <meta property="og:site_name" content="AKOKY" />
-      <meta name="twitter:site" content="@akoky_official" />
-    </Helmet>
     <HreflangTags slug="wettbewerb" />
 
     <ContentPageLayout

@@ -18,7 +18,7 @@ const FAQ = [
 
 const DE_CARDS = [
   {
-    img: "/images/soirreeparis.webp",
+    img: "/images/event/event1.webp",
     alt: "Libertiner Abend im AKOKY-Club in Berlin",
     title: "Libertine Abende in Berliner Clubs",
     text: "Berlin beherbergt die kreativsten und avantgardistischsten AKOKY-Events. Die Hauptstadt, bekannt für ihre Offenheit und ihre legendäre Clubszene, bietet einen außergewöhnlichen Rahmen für unsere libertinen Abende, bei denen Kunst, Kultur und Sinnlichkeit verschmelzen."

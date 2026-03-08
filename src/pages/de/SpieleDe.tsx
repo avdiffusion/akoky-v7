@@ -19,7 +19,7 @@ const SpieleDe = () => (
       heroTitle="Libertine Spiele AKOKY"
       heroSubtitle="Belebe deine Abende mit unseren exklusiven Spielen: Roulette, Würfel, Wahrheit oder Pflicht und mehr."
       heroImage="/images/es-juegos-cover.webp"
-      breadcrumb={[{ label: "Libertine Spiele AKOKY" }]}
+      breadcrumb={[{ label: "Spiele" }]}
       faq={FAQ}
     >
       <section className="py-12 md:py-20 px-4">
