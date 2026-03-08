@@ -44,6 +44,7 @@ const AvaliacoesPt = () => (
           <p className="text-muted-foreground leading-relaxed mb-4">Tiveste uma experiência positiva num clube, evento ou com um membro da comunidade? Partilha o teu testemunho no AKOKY. A tua opinião ajuda toda a comunidade a tomar melhores decisões.</p>
         </div>
       </section>
+      <ReviewsList lang="pt" />
     </ContentPageLayout>
   </>
 );

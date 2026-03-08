@@ -57,6 +57,9 @@ const Avis = () => {
         </div>
       </section>
 
+      {/* Reviews from CSV */}
+      <ReviewsList lang="fr" />
+
       {/* CTA Témoignage */}
       <section className="py-16 px-4 bg-card/30 border-y border-border">
         <div className="container max-w-3xl mx-auto text-center">

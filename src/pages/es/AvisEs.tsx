@@ -45,6 +45,7 @@ const AvisEs = () => (
           <p className="text-muted-foreground leading-relaxed mb-4">¿Has tenido una experiencia positiva en un club, un evento o con un miembro de la comunidad? Comparte tu testimonio en AKOKY. Tu opinión ayuda a toda la comunidad a tomar mejores decisiones y a que los mejores establecimientos sean reconocidos.</p>
         </div>
       </section>
+      <ReviewsList lang="es" />
     </ContentPageLayout>
   </>
 );

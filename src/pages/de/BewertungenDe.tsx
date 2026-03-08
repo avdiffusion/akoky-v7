@@ -44,6 +44,7 @@ const BewertungenDe = () => (
           <p className="text-muted-foreground leading-relaxed mb-4">Hattest du eine positive Erfahrung in einem Club, einem Event oder mit einem Community-Mitglied? Teile deinen Erfahrungsbericht auf AKOKY. Deine Meinung hilft der gesamten Community, bessere Entscheidungen zu treffen.</p>
         </div>
       </section>
+      <ReviewsList lang="de" />
     </ContentPageLayout>
   </>
 );
