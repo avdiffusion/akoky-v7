@@ -127,7 +127,7 @@ const ClubesLibertinos = () => {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: "Directorio de Clubes Libertinos en Europa — AKOKY",
-    description: `${stats.total} clubes libertinos verificados en España, Francia, Bélgica, Suiza: saunas, clubes elegantes, locales privados.`,
+    description: `${stats.total} clubes libertinos verificados en España y Europa: saunas, clubes elegantes, locales privados.`,
     url: "https://akoky.com/es/clubes-libertinos",
     numberOfItems: stats.total,
     itemListElement: data.slice(0, 100).map((e, i) => ({
