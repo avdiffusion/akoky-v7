@@ -62,7 +62,7 @@ const ClubsLibertinsFlandre = () => {
               <div className="bg-card/50 p-6 rounded-xl border border-white/10">
                 <h3 className="text-xl font-bold text-white mb-3">Bruges</h3>
                 <p className="text-gray-300 mb-4 text-sm">Bruges, ville médiévale romantique, propose une expérience libertine unique. Ses clubs, souvent situés dans des bâtiments historiques, offrent une ambiance feutrée et raffinée. La ville attire des couples en quête d'une expérience libertine plus discrète et intimiste.</p>
-                <Link to="/clubs-libertins-bruges" className="text-primary hover:underline text-sm font-medium">Découvrir Bruges →</Link>
+                <Link to="/fr/clubs-libertins-bruges" className="text-primary hover:underline text-sm font-medium">Découvrir Bruges →</Link>
               </div>
             </div>
           </div>
