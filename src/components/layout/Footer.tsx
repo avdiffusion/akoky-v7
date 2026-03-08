@@ -278,13 +278,17 @@ const SEO_LINKS: Record<Lang, { href: string; label: string }[]> = {
   ],
 };
 
-const SOCIAL_LINKS = [
+const CONTACT_HREFS: Record<Lang, string> = {
+  fr: "/contact", es: "/es/contacto", de: "/de/kontakt", it: "/it/contatto", pt: "/pt/contacto-akoky",
+};
+
+const getSocialLinks = (lang: Lang) => [
   { href: "https://www.facebook.com/groups/1732578494300828/", icon: "📘", label: "Facebook" },
   { href: "https://x.com/AcoquiVotre", icon: "✖️", label: "X/Twitter" },
   { href: "https://www.instagram.com/akoky_libertin", icon: "📷", label: "Instagram" },
   { href: "https://www.tiktok.com/@akoky69", icon: "🎵", label: "TikTok" },
   { href: "https://www.youtube.com/@AKOKY-COM-Libertin", icon: "📹", label: "YouTube" },
-  { href: "/contact", icon: "✉️", label: "Email" },
+  { href: CONTACT_HREFS[lang], icon: "✉️", label: "Email" },
 ];
 
 const LANGUAGES = [
