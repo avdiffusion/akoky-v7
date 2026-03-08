@@ -1,6 +1,7 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
+import { Link } from "react-router-dom";
 
 const FAQ = [
   { question: "¿Cuál es la diferencia entre un sauna libertino y un club libertino?", answer: "Un sauna libertino tiene un ambiente más relajado con instalaciones de bienestar (jacuzzi, hammam). Un club libertino es más festivo con música y ambiente de noche. La elección depende de tu preferencia de ambiente." },
