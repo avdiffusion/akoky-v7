@@ -49,8 +49,8 @@ const ClubsLibertinsBruxellesRegion = () => {
           <h2 className="text-3xl font-bold text-foreground font-display">Bruxelles et la France : une relation libertine privilégiée</h2>
           <p>Bruxelles entretient une relation privilégiée avec la France, notamment avec les Hauts-de-France. La facilité d'accès fait de Bruxelles une destination prisée des couples français.</p>
           <div className="flex flex-wrap gap-3 not-prose my-6">
-            <Link to="/clubs-libertins-hauts-de-france" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Clubs dans les Hauts-de-France</Link>
-            <Link to="/clubbing-france-europe" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Clubbing en France et en Europe</Link>
+            <Link to="/fr/clubs-libertins-hauts-de-france" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Clubs dans les Hauts-de-France</Link>
+            <Link to="/fr/clubbing-france-europe" className="px-4 py-2 rounded-full bg-card border border-border text-sm hover:border-primary/50 transition-colors">Clubbing en France et en Europe</Link>
           </div>
         </div>
       </section>

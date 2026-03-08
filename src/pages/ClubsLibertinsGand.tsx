@@ -142,11 +142,11 @@ const ClubsLibertinsGand = () => {
             <div className="prose prose-invert prose-lg max-w-none">
               <p>Gand fait partie d'une scène libertine belge dynamique, avec d'autres villes qui offrent également des expériences uniques. Pour découvrir les clubs libertins dans ces villes, consultez nos guides dédiés :</p>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose">
-                <li><Link to="/clubs-libertins-bruxelles" className="text-primary hover:underline">Clubs à Bruxelles</Link></li>
-                <li><Link to="/clubs-libertins-anvers" className="text-primary hover:underline">Clubs à Anvers</Link></li>
-                <li><Link to="/clubs-libertins-liege" className="text-primary hover:underline">Clubs à Liège</Link></li>
-                <li><Link to="/clubs-libertins-charleroi" className="text-primary hover:underline">Clubs à Charleroi</Link></li>
-                <li><Link to="/clubs-libertins-bruges" className="text-primary hover:underline">Clubs à Bruges</Link></li>
+                <li><Link to="/fr/clubs-libertins-bruxelles" className="text-primary hover:underline">Clubs à Bruxelles</Link></li>
+                <li><Link to="/fr/clubs-libertins-anvers" className="text-primary hover:underline">Clubs à Anvers</Link></li>
+                <li><Link to="/fr/clubs-libertins-liege" className="text-primary hover:underline">Clubs à Liège</Link></li>
+                <li><Link to="/fr/clubs-libertins-charleroi" className="text-primary hover:underline">Clubs à Charleroi</Link></li>
+                <li><Link to="/fr/clubs-libertins-bruges" className="text-primary hover:underline">Clubs à Bruges</Link></li>
               </ul>
             </div>
           </div>
