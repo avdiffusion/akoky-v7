@@ -69,7 +69,7 @@ const ClubbingPt = () => (
       canonical="https://akoky.com/pt/clubbing"
       heroTitle="Clubbing Libertino em Portugal"
       heroSubtitle="O teu guia completo para a cena libertina portuguesa: clubes verificados, saunas, regras, dress codes e preparação para uma experiência inesquecível."
-      heroImage="/images/club.webp"
+      heroImage="/images/pt-clubbing-cover.webp"
       breadcrumb={[{ label: "Clubbing Libertino em Portugal" }]}
       faq={FAQ}
     >

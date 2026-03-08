@@ -14,7 +14,7 @@ const PresseGuidePt = () => (
   <>
     <MetaTags title="Sala de Imprensa AKOKY | Recursos para Jornalistas" description="Sala de imprensa oficial AKOKY: comunicados, press kit, contacto para jornalistas. Dados e estatísticas sobre o libertinismo na Europa." canonical="https://akoky.com/pt/sala-de-imprensa" lang="pt" />
     <HreflangTags slug="sala-de-imprensa" />
-    <ContentPageLayout lang="pt" title="Sala de Imprensa AKOKY | Recursos para Jornalistas" description="Sala de imprensa oficial AKOKY." canonical="https://akoky.com/pt/sala-de-imprensa" heroTitle="Sala de Imprensa AKOKY" heroSubtitle="Recursos para jornalistas, bloggers e parceiros de mídia" heroType="cover" heroImage="/images/akoky-presse.webp" breadcrumb={[{ label: "Sala de Imprensa AKOKY" }]} faq={FAQ}>
+    <ContentPageLayout lang="pt" title="Sala de Imprensa AKOKY | Recursos para Jornalistas" description="Sala de imprensa oficial AKOKY." canonical="https://akoky.com/pt/sala-de-imprensa" heroTitle="Sala de Imprensa AKOKY" heroSubtitle="Recursos para jornalistas, bloggers e parceiros de mídia" heroType="cover" heroImage="/images/pt-imprensa-cover.webp" breadcrumb={[{ label: "Sala de Imprensa AKOKY" }]} faq={FAQ}>
       <section className="py-12 md:py-20 px-4">
         <div className="container max-w-4xl mx-auto">
 

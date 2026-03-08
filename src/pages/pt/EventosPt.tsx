@@ -98,7 +98,7 @@ const EventosPt = () => (
       canonical="https://akoky.com/pt/eventos"
       heroTitle="Eventos Libertinos em Portugal"
       heroSubtitle="300+ eventos por mês em todo o país: noitadas exclusivas, aperitivos, fins de semana no Algarve, jantares & swing. Reserva o teu lugar."
-      heroImage="/images/events-akoky-cover.webp"
+      heroImage="/images/pt-eventos-cover.webp"
       breadcrumb={[{ label: "Eventos Libertinos" }]}
       faq={FAQ}
     >

@@ -67,7 +67,7 @@ const ReferralPt = () => (
       canonical="https://akoky.com/pt/referral"
       heroTitle="Convida Amigos, Ganha Recompensas"
       heroSubtitle="10 referrals = 6 meses VIP+ gratuitos. Partilha o teu link, faz crescer a comunidade e desbloqueia vantagens exclusivas."
-      heroImage="/images/soiree-couple-libertin.webp"
+      heroImage="/images/pt-referral-cover.webp"
       breadcrumb={[{ label: "Programa de Referral" }]}
       faq={FAQ}
     >

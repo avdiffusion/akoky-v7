@@ -279,7 +279,7 @@ const ClubesLibertinoPt = () => {
         canonical="https://akoky.com/pt/clubes-libertinos"
         heroTitle="Clubes e Saunas Libertinos em Portugal"
         heroSubtitle={`${stats.total} estabelecimentos verificados em ${stats.regions} regiões — clubes de troca, saunas libertinos, clubes privados. Fichas detalhadas.`}
-        heroImage="/images/club.webp"
+        heroImage="/images/pt-clubes-cover.webp"
         breadcrumb={[{ label: "Clubes Libertinos Portugal" }]}
         faq={[
           { question: "Como encontrar um clube libertino perto de mim em Portugal?", answer: "Usa os filtros por região e tipo de estabelecimento. Cada ficha contém a morada, os horários e os dados de contacto do clube ou sauna." },

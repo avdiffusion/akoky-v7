@@ -16,7 +16,7 @@ const GuideUltimeGuidePt = () => (
   <>
     <MetaTags title="Guia Definitivo do Libertinismo 2026 | 500+ Clubes — AKOKY" description="O guia definitivo do libertinismo: 500+ clubes verificados, conselhos especialistas, tendências 2026. O recurso mais completo da Europa." canonical="https://akoky.com/pt/guia-definitivo-libertinismo" lang="pt" />
     <HreflangTags slug="guia-definitivo-libertinismo" />
-    <ContentPageLayout lang="pt" title="Guia Definitivo do Libertinismo 2026 | 500+ Clubes — AKOKY" description="O guia definitivo: 500+ clubes verificados, conselhos especialistas." canonical="https://akoky.com/pt/guia-definitivo-libertinismo" heroTitle="Guia Definitivo do Libertinismo" heroSubtitle="O recurso definitivo: clubes verificados, conselhos especialistas" heroType="cover" heroImage="/images/es-guia-definitiva-cover.webp" breadcrumb={[{ label: "Guia Definitivo do Libertinismo" }]} faq={FAQ}>
+    <ContentPageLayout lang="pt" title="Guia Definitivo do Libertinismo 2026 | 500+ Clubes — AKOKY" description="O guia definitivo: 500+ clubes verificados, conselhos especialistas." canonical="https://akoky.com/pt/guia-definitivo-libertinismo" heroTitle="Guia Definitivo do Libertinismo" heroSubtitle="O recurso definitivo: clubes verificados, conselhos especialistas" heroType="cover" heroImage="/images/pt-guia-definitivo-cover.webp" breadcrumb={[{ label: "Guia Definitivo do Libertinismo" }]} faq={FAQ}>
       <section className="py-12 md:py-20 px-4">
         <div className="container max-w-4xl mx-auto">
 

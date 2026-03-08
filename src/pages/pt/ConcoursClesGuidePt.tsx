@@ -15,7 +15,7 @@ const ConcoursClesGuidePt = () => (
   <>
     <MetaTags title="O Jogo das Seis Chaves AKOKY 2026 | Ganha uma Semana em Cap d'Agde" description="Encontra 6 chaves escondidas no AKOKY e ganha uma semana no RIAD5 Cap d'Agde (4.500€). Caça ao tesouro digital na maior plataforma libertina." canonical="https://akoky.com/pt/jogo-seis-chaves" lang="pt" />
     <HreflangTags slug="jogo-seis-chaves" />
-    <ContentPageLayout lang="pt" title="O Jogo das Seis Chaves AKOKY 2026 | Ganha uma Semana em Cap d'Agde" description="Encontra 6 chaves escondidas no AKOKY e ganha uma semana no RIAD5 Cap d'Agde." canonical="https://akoky.com/pt/jogo-seis-chaves" heroTitle="O Jogo das Seis Chaves" heroSubtitle="Explora o AKOKY, encontra 6 chaves e ganha uma semana no RIAD5 Cap d'Agde" heroType="cover" heroImage="/images/concours/six-cles.webp" breadcrumb={[{ label: "Concurso AKOKY", href: "/pt/concurso-akoky-2026" }, { label: "O Jogo das Seis Chaves" }]} faq={FAQ}>
+    <ContentPageLayout lang="pt" title="O Jogo das Seis Chaves AKOKY 2026 | Ganha uma Semana em Cap d'Agde" description="Encontra 6 chaves escondidas no AKOKY e ganha uma semana no RIAD5 Cap d'Agde." canonical="https://akoky.com/pt/jogo-seis-chaves" heroTitle="O Jogo das Seis Chaves" heroSubtitle="Explora o AKOKY, encontra 6 chaves e ganha uma semana no RIAD5 Cap d'Agde" heroType="cover" heroImage="/images/pt-concurso-cover.webp" breadcrumb={[{ label: "Concurso AKOKY", href: "/pt/concurso-akoky-2026" }, { label: "O Jogo das Seis Chaves" }]} faq={FAQ}>
       <section className="py-12 md:py-20 px-4">
         <div className="container max-w-4xl mx-auto">
 

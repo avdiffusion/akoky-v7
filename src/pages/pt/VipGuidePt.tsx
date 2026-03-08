@@ -15,7 +15,7 @@ const VipGuidePt = () => (
   <>
     <MetaTags title="AKOKY VIP Premium | Acesso Exclusivo à Comunidade Libertina" description="Desbloqueia o acesso VIP AKOKY: eventos exclusivos, perfis verificados, multi-perfil, lives premium e funcionalidades avançadas." canonical="https://akoky.com/pt/vip-premium-guia" lang="pt" />
     <HreflangTags slug="vip-premium-guia" />
-    <ContentPageLayout lang="pt" title="AKOKY VIP Premium | Acesso Exclusivo à Comunidade Libertina" description="Desbloqueia o acesso VIP AKOKY." canonical="https://akoky.com/pt/vip-premium-guia" heroTitle="AKOKY VIP" heroSubtitle="Desbloqueia todas as funcionalidades premium da plataforma AKOKY" heroType="cover" heroImage="/images/vip-cover.webp" breadcrumb={[{ label: "AKOKY VIP" }]} faq={FAQ}>
+    <ContentPageLayout lang="pt" title="AKOKY VIP Premium | Acesso Exclusivo à Comunidade Libertina" description="Desbloqueia o acesso VIP AKOKY." canonical="https://akoky.com/pt/vip-premium-guia" heroTitle="AKOKY VIP" heroSubtitle="Desbloqueia todas as funcionalidades premium da plataforma AKOKY" heroType="cover" heroImage="/images/pt-vip-cover.webp" breadcrumb={[{ label: "AKOKY VIP" }]} faq={FAQ}>
       <section className="py-12 md:py-20 px-4">
         <div className="container max-w-4xl mx-auto">
 

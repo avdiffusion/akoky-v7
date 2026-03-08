@@ -82,7 +82,7 @@ const AppPt = () => (
       canonical="https://akoky.com/pt/app"
       heroTitle="A App Libertina Mais Completa da Europa"
       heroSubtitle="Geolocalização, chat tipo WhatsApp, notificações de eventos e multi-perfil. Tudo no teu smartphone."
-      heroImage="/images/app-cover.webp"
+      heroImage="/images/pt-app-cover.webp"
       breadcrumb={[{ label: "Aplicação AKOKY" }]}
       faq={FAQ}
     >

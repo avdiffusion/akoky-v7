@@ -57,7 +57,7 @@ const JogosPt = () => (
       canonical="https://akoky.com/pt/jogos"
       heroTitle="Jogos Libertinos AKOKY"
       heroSubtitle="Anima as tuas noitadas com os nossos jogos exclusivos: roleta, dado, verdade ou desafio e mais."
-      heroImage="/images/cover-jeux.webp"
+      heroImage="/images/pt-jogos-cover.webp"
       breadcrumb={[{ label: "Jogos Libertinos" }]}
       faq={FAQ}
     >

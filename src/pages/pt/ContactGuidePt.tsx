@@ -14,7 +14,7 @@ const ContactGuidePt = () => (
   <>
     <MetaTags title="Contacto AKOKY | Suporte e Atendimento ao Cliente" description="Contacta a equipa AKOKY: suporte técnico, consultas comerciais, imprensa. Equipa disponível em português 24h." canonical="https://akoky.com/pt/contacto-akoky" lang="pt" />
     <HreflangTags slug="contacto-akoky" />
-    <ContentPageLayout lang="pt" title="Contacto AKOKY | Suporte e Atendimento ao Cliente" description="Contacta a equipa AKOKY." canonical="https://akoky.com/pt/contacto-akoky" heroTitle="Contactar AKOKY" heroSubtitle="A nossa equipa está aqui para te ajudar" heroType="cover" heroImage="/images/akoky.webp" breadcrumb={[{ label: "Contactar AKOKY" }]} faq={FAQ}>
+    <ContentPageLayout lang="pt" title="Contacto AKOKY | Suporte e Atendimento ao Cliente" description="Contacta a equipa AKOKY." canonical="https://akoky.com/pt/contacto-akoky" heroTitle="Contactar AKOKY" heroSubtitle="A nossa equipa está aqui para te ajudar" heroType="cover" heroImage="/images/pt-contacto-cover.webp" breadcrumb={[{ label: "Contactar AKOKY" }]} faq={FAQ}>
       <section className="py-12 md:py-20 px-4">
         <div className="container max-w-4xl mx-auto">
 

@@ -55,6 +55,7 @@ const ContatoPt = () => (
       canonical="https://akoky.com/pt/contato"
       heroTitle="Contactar o AKOKY"
       heroSubtitle="A nossa equipa está disponível 7/7 para te ajudar. Encontra o canal de contacto adequado para o teu pedido."
+      heroImage="/images/pt-contacto-cover.webp"
       breadcrumb={[{ label: "Contacto" }]}
       faq={FAQ}
     >

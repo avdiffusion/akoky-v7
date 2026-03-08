@@ -16,7 +16,7 @@ const EvenementsGuidePt = () => (
   <>
     <MetaTags title="Eventos Libertinos em Portugal 2026 | Calendário AKOKY" description="300+ eventos libertinos por mês: noitadas exclusivas, fins de semana temáticos, encontros privados em Lisboa, Porto e em toda a Europa." canonical="https://akoky.com/pt/eventos-libertinos-guia" lang="pt" />
     <HreflangTags slug="eventos-libertinos-guia" />
-    <ContentPageLayout lang="pt" title="Eventos Libertinos em Portugal 2026 | Calendário AKOKY" description="300+ eventos libertinos por mês em Portugal e na Europa." canonical="https://akoky.com/pt/eventos-libertinos-guia" heroTitle="Eventos Libertinos" heroSubtitle="300+ eventos libertinos por mês em Portugal e na Europa" heroType="cover" heroImage="/images/events-akoky-cover.webp" breadcrumb={[{ label: "Eventos Libertinos" }]} faq={FAQ}>
+    <ContentPageLayout lang="pt" title="Eventos Libertinos em Portugal 2026 | Calendário AKOKY" description="300+ eventos libertinos por mês em Portugal e na Europa." canonical="https://akoky.com/pt/eventos-libertinos-guia" heroTitle="Eventos Libertinos" heroSubtitle="300+ eventos libertinos por mês em Portugal e na Europa" heroType="cover" heroImage="/images/pt-eventos-cover.webp" breadcrumb={[{ label: "Eventos Libertinos" }]} faq={FAQ}>
       <section className="py-12 md:py-20 px-4">
         <div className="container max-w-4xl mx-auto">
 

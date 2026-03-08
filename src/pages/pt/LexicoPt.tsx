@@ -134,6 +134,7 @@ const LexicoPt = () => (
       canonical="https://akoky.com/pt/lexico-libertino"
       heroTitle="Léxico Libertino"
       heroSubtitle="O dicionário completo da comunidade libertina: 200+ termos explicados de forma acessível."
+      heroImage="/images/pt-lexico-cover.webp"
       breadcrumb={[{ label: "Léxico Libertino" }]}
       faq={FAQ}
     >

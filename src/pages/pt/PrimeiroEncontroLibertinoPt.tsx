@@ -72,7 +72,7 @@ const PrimeiroEncontroLibertinoPt = () => (
       canonical="https://akoky.com/pt/primeiro-encontro-libertino"
       heroTitle="O Teu Primeiro Encontro Libertino"
       heroSubtitle="Guia prático e completo para preparar, viver e aproveitar o teu primeiro encontro libertino com confiança e respeito."
-      heroImage="/images/premier-rendez-vous-libertin-cover.webp"
+      heroImage="/images/pt-primeiro-encontro-cover.webp"
       breadcrumb={[{ label: "Começar", href: "/pt/comecar-libertinagem" }, { label: "Primeiro Encontro Libertino" }]}
       faq={FAQ}
     >

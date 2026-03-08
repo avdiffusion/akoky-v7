@@ -58,6 +58,7 @@ const MelhorSitioLibertino = () => (
       canonical="https://akoky.com/pt/melhor-sitio-libertino"
       heroTitle="O Melhor Site Libertino em Portugal 2026"
       heroSubtitle="Comparação independente das principais plataformas libertinas: 8 critérios, 4 plataformas, 1 vencedor."
+      heroImage="/images/pt-melhor-sitio-cover.webp"
       breadcrumb={[{ label: "Melhor Site Libertino 2026" }]}
       faq={FAQ}
     >

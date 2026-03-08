@@ -58,7 +58,7 @@ const LivePt = () => (
       canonical="https://akoky.com/pt/live"
       heroTitle="Lives AKOKY — Vídeos e Encontros em Direto"
       heroSubtitle="20+ lives por semana: clubes em direto, noitadas exclusivas, conteúdos VIP. Seguro e discreto."
-      heroImage="/images/live-akoky.webp"
+      heroImage="/images/pt-live-cover.webp"
       breadcrumb={[{ label: "Lives AKOKY" }]}
       faq={FAQ}
     >

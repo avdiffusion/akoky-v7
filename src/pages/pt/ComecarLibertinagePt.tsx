@@ -84,7 +84,7 @@ const ComecarLibertinagePt = () => (
       canonical="https://akoky.com/pt/comecar-libertinagem"
       heroTitle="Começar no Libertinismo, ao Teu Ritmo"
       heroSubtitle="O guia mais completo para descobrir o libertinismo passo a passo: preparação, regras, primeira visita, gestão do ciúme. Para casais e solteiros."
-      heroImage="/images/debuter-libertinage-cover.webp"
+      heroImage="/images/pt-comecar-cover.webp"
       breadcrumb={[{ label: "Começar na Libertinagem" }]}
       faq={FAQ}
     >
