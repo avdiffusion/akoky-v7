@@ -363,10 +363,10 @@ const ClubesLibertinos = () => {
                 { label: "Sevilla", href: "/es/clubbing" },
                 { label: "Bilbao", href: "/es/clubbing" },
                 { label: "Málaga", href: "/es/clubbing" },
-                { label: "París", href: "/es/clubbing" },
-                { label: "Lyon", href: "/es/clubbing" },
-                { label: "Bruselas", href: "/es/clubbing" },
-                { label: "Ginebra", href: "/es/clubbing" },
+                { label: "Zaragoza", href: "/es/clubbing" },
+                { label: "Marbella", href: "/es/clubbing" },
+                { label: "Ibiza", href: "/es/clubbing" },
+                { label: "Alicante", href: "/es/clubbing" },
               ].map((link) => (
                 <Link
                   key={link.label}
