@@ -645,7 +645,14 @@ const App = () => (
             <Route path="/pt/avaliacoes" element={<AvaliacoesPt />} />
             <Route path="/pt/referral" element={<ReferralPt />} />
             <Route path="/pt/lexico-libertino" element={<LexicoPt />} />
-            
+
+            {/* ── Aliases PT (anti-404 maillage historique) ─────────────── */}
+            <Route path="/pt/lexico" element={<Navigate to="/pt/lexico-libertino" replace />} />
+            <Route path="/pt/imprensa" element={<Navigate to="/pt/sala-de-imprensa" replace />} />
+            <Route path="/pt/contacto" element={<Navigate to="/pt/contacto-akoky" replace />} />
+            <Route path="/pt/comecar-libertinismo" element={<Navigate to="/pt/comecar-libertinagem" replace />} />
+            <Route path="/pt/perguntas-frequentes" element={<Navigate to="/pt/faq" replace />} />
+
             {/* ── Pages PT livraison 6 ───────────────────────────────────── */}
             <Route path="/pt/atualidade-libertina-2026" element={<Navigate to="/pt/atualidade-libertina" replace />} />
             <Route path="/pt/comecar-libertinismo-guia" element={<DebuterGuidePt />} />
