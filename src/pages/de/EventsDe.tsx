@@ -1,5 +1,4 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
-import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
 import { Link } from "react-router-dom";
 
@@ -18,7 +17,7 @@ const FAQ = [
 
 const DE_CARDS = [
   {
-    img: "/images/soirreeparis.webp",
+    img: "/images/event/event1.webp",
     alt: "Libertiner Abend im AKOKY-Club in Berlin",
     title: "Libertine Abende in Berliner Clubs",
     text: "Berlin beherbergt die kreativsten und avantgardistischsten AKOKY-Events. Die Hauptstadt, bekannt für ihre Offenheit und ihre legendäre Clubszene, bietet einen außergewöhnlichen Rahmen für unsere libertinen Abende, bei denen Kunst, Kultur und Sinnlichkeit verschmelzen."
@@ -100,13 +99,6 @@ const CTA_LINKS = [
 
 const EventsDe = () => (
   <>
-    <MetaTags
-      title="Libertine Events AKOKY 2026 – Abende & Afterworks in Deutschland"
-      description="Libertine Abende, Afterworks und exklusive Wochenenden mit AKOKY. Werde Teil der Premium-Community in Deutschland: Berlin, München, Hamburg und mehr."
-      canonical="https://akoky.com/de/events"
-      lang="de"
-      ogImage="/images/es-eventos-cover.webp"
-    />
     <HreflangTags slug="events" />
     <ContentPageLayout
       lang="de"

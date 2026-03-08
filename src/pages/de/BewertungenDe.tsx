@@ -1,5 +1,4 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
-import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
 import ReviewsList from "@/components/reviews/ReviewsList";
 import { Link } from "react-router-dom";
@@ -11,12 +10,6 @@ const FAQ = [
 
 const BewertungenDe = () => (
   <>
-    <MetaTags
-      title="AKOKY Bewertungen | Community-Bewertungen der Libertinen Community"
-      description="Lies die Bewertungen der AKOKY-Community: echte Erfahrungen, verifizierte Erfahrungsberichte und Clubs- und Event-Bewertungen."
-      canonical="https://akoky.com/de/bewertungen"
-      lang="de"
-    />
     <HreflangTags slug="bewertungen" />
     <ContentPageLayout
       lang="de"
@@ -35,7 +28,7 @@ const BewertungenDe = () => (
           <p className="text-muted-foreground leading-relaxed mb-4">Bei AKOKY sind Bewertungen nicht anonym: Sie sind mit verifizierten Profilen verknüpft. Wenn du eine Bewertung liest, weißt du, dass sie von einer echten Person kommt.</p>
 
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">Club-Bewertungen</h2>
-          <p className="text-muted-foreground leading-relaxed mb-4">Jeder in AKOKY gelistete <Link to="/de/libertine-clubs" className="text-primary hover:underline">Club</Link> sammelt Bewertungen von Mitgliedern. Durchschnittliche Bewertung, Atmosphäre, Sauberkeit, Personal — alles auf einen Blick im <Link to="/de/clubs" className="text-primary hover:underline">Verzeichnis</Link>.</p>
+          <p className="text-muted-foreground leading-relaxed mb-4">Jeder in AKOKY gelistete <Link to="/de/libertine-clubs" className="text-primary hover:underline">Club</Link> sammelt Bewertungen von Mitgliedern. Durchschnittliche Bewertung, Atmosphäre, Sauberkeit, Personal — alles auf einen Blick im <Link to="/de/libertine-clubs" className="text-primary hover:underline">Verzeichnis</Link>.</p>
 
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">Event-Bewertungen</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">Nach jedem <Link to="/de/events" className="text-primary hover:underline">AKOKY-Event</Link> können Teilnehmer ihre Eindrücke hinterlassen. Atmosphäre, Organisation, Qualität, Preis-Leistungs-Verhältnis.</p>

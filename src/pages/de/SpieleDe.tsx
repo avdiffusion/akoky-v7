@@ -1,5 +1,4 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
-import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
 import { Link } from "react-router-dom";
 
@@ -10,12 +9,6 @@ const FAQ = [
 
 const SpieleDe = () => (
   <>
-    <MetaTags
-      title="Libertine Spiele AKOKY | Animationen und Aktivitäten für Abende"
-      description="Entdecke unsere libertinen Spiele für unvergessliche Abende: erotische Karten, Herausforderungen, interaktive Animationen. Spielerisch, gesellig und respektvoll."
-      canonical="https://akoky.com/de/spiele"
-      lang="de"
-    />
     <HreflangTags slug="spiele" />
     <ContentPageLayout
       lang="de"
@@ -25,7 +18,7 @@ const SpieleDe = () => (
       heroTitle="Libertine Spiele AKOKY"
       heroSubtitle="Belebe deine Abende mit unseren exklusiven Spielen: Roulette, Würfel, Wahrheit oder Pflicht und mehr."
       heroImage="/images/es-juegos-cover.webp"
-      breadcrumb={[{ label: "Libertine Spiele AKOKY" }]}
+      breadcrumb={[{ label: "Spiele" }]}
       faq={FAQ}
     >
       <section className="py-12 md:py-20 px-4">

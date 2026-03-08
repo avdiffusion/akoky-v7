@@ -1,7 +1,6 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import HreflangTags from "@/components/seo/HreflangTags";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 
 const FAQ = [
   { question: "Wie kann ich an AKOKY-Gewinnspielen teilnehmen?", answer: "Um teilzunehmen, musst du registriertes Mitglied bei AKOKY sein. Jedes Gewinnspiel hat eigene Teilnahmeregeln, die auf der jeweiligen Seite beschrieben sind. Die meisten sind kostenlos und für alle aktiven Mitglieder offen." },
@@ -34,13 +33,6 @@ const PAGE_SCHEMA = {
 
 const WettbewerbDe = () => (
   <>
-    <Helmet>
-      <html lang="de" />
-      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
-      <meta property="og:locale" content="de_DE" />
-      <meta property="og:site_name" content="AKOKY" />
-      <meta name="twitter:site" content="@akoky_official" />
-    </Helmet>
     <HreflangTags slug="wettbewerb" />
 
     <ContentPageLayout

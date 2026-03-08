@@ -83,7 +83,7 @@ const schemas = [
     logo: "/images/logo-akoky.webp",
     description: "Premium libertine Community-Plattform in Europa",
     foundingDate: "2014",
-    contactPoint: { "@type": "ContactPoint", contactType: "Customer Service", email: "contact@akoky.com", availableLanguage: ["fr", "en", "es", "de", "it", "pt"] },
+    contactPoint: { "@type": "ContactPoint", contactType: "Customer Service", email: "contact@akoky.com", availableLanguage: ["fr", "es", "de", "it", "pt"] },
     sameAs: ["https://www.facebook.com/akokyofficial", "https://www.instagram.com/akoky_official", "https://twitter.com/akoky_official"],
   },
   {
@@ -143,9 +143,9 @@ const HomeDe = () => {
             <h1 className="text-gradient-gold text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-wider leading-tight mb-4">
               Erwachsenenbegegnungen &amp; exklusive Erlebnisse in Deutschland
             </h1>
-            <h2 className="text-lg md:text-xl font-normal text-white/95 mb-8 max-w-[800px] mx-auto">
+            <p className="text-lg md:text-xl font-normal text-white/95 mb-8 max-w-[800px] mx-auto">
               Die Premium-Community für aufgeschlossene Menschen — Clubs entdecken und an exklusiven Events teilnehmen, von Berlin bis München, von Hamburg bis Köln.
-            </h2>
+            </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a href="https://app.akoky.com/register" className="w-full sm:w-auto px-8 py-4 rounded-full font-bold btn-gradient-primary text-primary-foreground hover:-translate-y-0.5 transition-all hover:shadow-xl hover:shadow-primary/30">
                 DER COMMUNITY BEITRETEN

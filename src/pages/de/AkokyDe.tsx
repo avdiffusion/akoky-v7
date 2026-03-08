@@ -1,5 +1,4 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
-import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
 import { Link } from "react-router-dom";
 
@@ -42,7 +41,7 @@ const jsonSchema = {
     "@type": "ContactPoint",
     "contactType": "Customer Service",
     "email": "contact@akoky.com",
-    "availableLanguage": ["fr", "en", "es", "de", "it", "pt"]
+    "availableLanguage": ["fr", "es", "de", "it", "pt"]
   },
   "sameAs": [
     "https://www.facebook.com/akokyofficial",
@@ -54,12 +53,6 @@ const jsonSchema = {
 const AkokyDe = () => {
   return (
     <>
-      <MetaTags
-        title="Unsere Mission AKOKY – Premium-Community & Events für Erwachsene"
-        description="Entdecke die Werte, Vision und Verpflichtungen der AKOKY-Community. Premium-Community-Plattform für Erwachsene in Europa."
-        canonical="https://akoky.com/de/akoky"
-        lang="de"
-      />
       <HreflangTags slug="akoky" />
       <ContentPageLayout
         lang="de"

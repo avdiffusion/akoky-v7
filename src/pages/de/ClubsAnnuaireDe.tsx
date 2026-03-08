@@ -1,6 +1,5 @@
 import { useState, useMemo, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import HreflangTags from "@/components/seo/HreflangTags";
 import SchemaOrg from "@/components/seo/SchemaOrg";
@@ -209,20 +208,6 @@ const ClubsAnnuaireDe = () => {
 
   return (
     <>
-      <Helmet>
-        <html lang="de" />
-        <title>{`${stats.total} Swingerclubs & Saunas in Deutschland — Verzeichnis AKOKY 2026`}</title>
-        <meta name="description" content={`${stats.total} verifizierte libertine Einrichtungen in Deutschland: Swingerclubs, libertine Saunas, private Clubs in Berlin, Hamburg, München, Köln und mehr.`} />
-        <link rel="canonical" href="https://akoky.com/de/clubs" />
-        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="AKOKY" />
-        <meta property="og:title" content={`${stats.total} Swingerclubs & Saunas in Deutschland — AKOKY`} />
-        <meta property="og:description" content={`Verifiziertes Verzeichnis: ${stats.clubs} Clubs und ${stats.saunas} Saunas in ${stats.regions} Bundesländern.`} />
-        <meta property="og:url" content="https://akoky.com/de/clubs" />
-        <meta property="og:image" content="https://akoky.com/images/club.webp" />
-        <meta property="og:locale" content="de_DE" />
-      </Helmet>
       <HreflangTags slug="clubs" />
       <SchemaOrg schema={[pageSchema, breadcrumbSchema]} />
 
