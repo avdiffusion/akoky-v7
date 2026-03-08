@@ -642,7 +642,15 @@ const App = () => (
             <Route path="/pt/blog" element={<BlogListing lang="pt" />} />
             <Route path="/pt/blog/:slug" element={<BlogArticlePage lang="pt" />} />
 
-            {/* ── EN supprimé ────────────────────────────────────────────── */}
+            {/* ── EN Blog ─────────────────────────────────────────────── */}
+            <Route path="/en/blog" element={<BlogListing lang="en" />} />
+            <Route path="/en/blog/:slug" element={<BlogArticlePage lang="en" />} />
+
+            {/* ── Admin Blog ─────────────────────────────────────────────── */}
+            <Route path="/admin/blog/login" element={<BlogLogin />} />
+            <Route path="/admin/blog" element={<BlogAdmin />} />
+            <Route path="/admin/blog/new" element={<BlogEditor />} />
+            <Route path="/admin/blog/edit/:id" element={<BlogEditor />} />
 
             {/* ── CATCH-ALL ─────────────────────────────────────────────── */}
             <Route path="*" element={<NotFound />} />
