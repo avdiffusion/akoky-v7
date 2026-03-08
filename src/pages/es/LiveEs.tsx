@@ -11,12 +11,6 @@ const FAQ = [
 
 const LiveEs = () => (
   <>
-    <MetaTags
-      title="Lives Libertinos Exclusivos | Streaming Premium AKOKY España"
-      description="Descubre 20+ lives libertinos por semana: ambiente de clubs en directo, veladas exclusivas, contenidos VIP. Streaming seguro y discreto."
-      canonical="https://akoky.com/es/live"
-      lang="es"
-    />
     <HreflangTags slug="live" />
     <ContentPageLayout
       lang="es"
