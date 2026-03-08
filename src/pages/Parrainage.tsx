@@ -121,6 +121,7 @@ const Parrainage = () => {
         </div>
       </section>
     </ContentPageLayout>
+    </>
   );
 };
 
