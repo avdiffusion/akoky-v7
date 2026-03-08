@@ -204,7 +204,7 @@ const Lexique = () => {
         canonical="https://akoky.com/fr/lexique"
         heroTitle="Lexique Libertin"
         heroSubtitle="Le vocabulaire du libertinage de A à Z"
-        heroImage="https://akoky.com/fr/images/lexique-libertine-cover.webp"
+        heroImage="/images/lexique-libertine-cover.webp"
         breadcrumb={[{ label: "Lexique Libertin" }]}
         faq={FAQ}
       >

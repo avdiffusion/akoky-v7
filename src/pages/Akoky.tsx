@@ -192,7 +192,7 @@ const Akoky = () => {
               <Link to="/fr/presse" className="text-primary font-bold hover:underline">Accéder au dossier de presse →</Link>
             </div>
             <div>
-              <img src="https://akoky.com/fr/images/akoky-presse.webp" alt="AKOKY Press Kit" className="rounded-2xl shadow-xl border border-border" loading="lazy" />
+              <img src="/images/akoky-presse.webp" alt="AKOKY Press Kit" className="rounded-2xl shadow-xl border border-border" loading="lazy" />
             </div>
           </div>
         </div>

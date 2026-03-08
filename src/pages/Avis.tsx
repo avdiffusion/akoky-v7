@@ -9,7 +9,7 @@ const Avis = () => {
       canonical="https://akoky.com/fr/avis"
       heroTitle="Avis Membres AKOKY – Témoignages vérifiés"
       heroSubtitle="Découvrez plus de 60 témoignages authentiques de la communauté libertine AKOKY, plateforme communautaire de rencontres libertines en Europe"
-      heroImage="https://legal.akoky.com/UPLOAD-AKOKY/AKOKY.COM/images/images-cover-pages/jeux-cover.webp"
+      heroImage="/images/jeux-cover.webp"
       breadcrumb={[{ label: "Avis" }]}
       faq={[
         { question: "Les avis AKOKY sont-ils authentiques et vérifiés ?", answer: "Oui, 100% de nos avis sont authentiques et vérifiés. Chaque témoignage provient d'un membre actif de notre communauté et est contrôlé par notre équipe de modération avant publication. Contrairement à certaines plateformes concurrentes, nous ne publions jamais de faux avis ou de témoignages sponsorisés. Notre engagement : une transparence totale pour construire une communauté libertine de confiance." },

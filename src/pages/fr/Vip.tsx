@@ -32,7 +32,7 @@ const Vip = () => (
       canonical="https://akoky.com/fr/vip"
       heroTitle="Statut VIP Akoky"
       heroSubtitle="Accédez aux fonctionnalités premium et rejoignez l'élite de la communauté libertine."
-      heroImage="https://legal.akoky.com/UPLOAD-AKOKY/AKOKY.COM/images/images-cover-pages/vip-cover.webp"
+      heroImage="/images/vip-cover.webp"
       breadcrumb={[{ label: "Statut VIP" }]}
       faq={FAQ}
     >

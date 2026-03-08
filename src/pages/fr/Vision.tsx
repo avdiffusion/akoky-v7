@@ -22,7 +22,7 @@ const Vision = () => (
       canonical="https://akoky.com/fr/vision"
       heroTitle="Notre Vision"
       heroSubtitle="La vision fondatrice d'AKOKY pour révolutionner le libertinage."
-      heroImage="https://legal.akoky.com/UPLOAD-AKOKY/AKOKY.COM/images/images-cover-pages/vision-cover.webp"
+      heroImage="/images/vision-cover.webp"
       breadcrumb={[{ label: "Notre Vision" }]}
       faq={FAQ}
     >
