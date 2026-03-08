@@ -648,6 +648,7 @@ const App = () => (
 
             {/* ── Admin Blog ─────────────────────────────────────────────── */}
             <Route path="/admin/blog/login" element={<BlogLogin />} />
+            <Route path="/admin/blog/connexion" element={<BlogLogin />} />
             <Route path="/admin/blog" element={<BlogAdmin />} />
             <Route path="/admin/blog/new" element={<BlogEditor />} />
             <Route path="/admin/blog/edit/:id" element={<BlogEditor />} />
