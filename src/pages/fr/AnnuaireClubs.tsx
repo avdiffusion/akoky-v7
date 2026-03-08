@@ -380,6 +380,8 @@ const AnnuaireClubs = () => {
           </div>
         </section>
       </ContentPageLayout>
+
+      <ClubDetailModal club={selectedClub} onClose={() => setSelectedClub(null)} />
     </>
   );
 };
