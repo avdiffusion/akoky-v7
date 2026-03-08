@@ -1,6 +1,7 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
+import { Link } from "react-router-dom";
 
 const FAQ = [
   { question: "¿Cómo contactar con el soporte AKOKY?", answer: "A través de nuestro formulario online, por email a support@akoky.com o desde tu espacio de miembro. Nuestro equipo responde en menos de 24 horas laborables." },
@@ -47,7 +48,7 @@ const ContactoEs = () => (
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">Denunciar un Perfil</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">Si encuentras un perfil o contenido que no respeta la carta AKOKY, utiliza el botón &#39;Denunciar&#39; disponible en cada perfil y publicación. Nuestro equipo de moderación trata cada denuncia en menos de 2 horas.</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">Preguntas Frecuentes</h2>
-          <p className="text-muted-foreground leading-relaxed mb-4">Antes de contactarnos, consulta nuestra base de conocimientos en ask.akoky.com. La mayoría de las preguntas habituales encuentran respuesta allí en menos de 30 segundos.</p>
+          <p className="text-muted-foreground leading-relaxed mb-4">Antes de contactarnos, consulta nuestra <Link to="/es/faq" className="text-primary hover:underline">FAQ</Link>. Descubre también los <Link to="/es/clubes-libertinos" className="text-primary hover:underline">clubes libertinos</Link>, los <Link to="/es/eventos" className="text-primary hover:underline">eventos</Link>, la <Link to="/es/app" className="text-primary hover:underline">aplicación AKOKY</Link> y nuestra <Link to="/es/vision" className="text-primary hover:underline">visión</Link>.</p>
         </div>
       </section>
     </ContentPageLayout>

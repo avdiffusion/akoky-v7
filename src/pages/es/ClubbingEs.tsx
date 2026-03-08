@@ -1,6 +1,7 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
+import { Link } from "react-router-dom";
 
 const FAQ = [
   { question: "¿Cómo prepararse para mi primera velada en un club libertino?", answer: "Reserva con antelación, informa del dress code, llega en horario temprano, explora los espacios habituados primero y recuerda que tienes derecho absoluto a decir no en cualquier momento." },
@@ -31,9 +32,9 @@ const ClubbingEs = () => (
       <section className="py-12 md:py-20 px-4">
         <div className="container max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">¿Qué es el Clubbing Libertino?</h2>
-          <p className="text-muted-foreground leading-relaxed mb-4">El clubbing libertino es la práctica de frecuentar clubs libertinos para veladas sociales y sensuales en un marco organizado y seguro. A diferencia de los encuentros privados, el club ofrece un espacio neutral, con reglas claras y personal formado para garantizar el bienestar de todos los visitantes.</p>
+          <p className="text-muted-foreground leading-relaxed mb-4">El clubbing libertino es la práctica de frecuentar clubs libertinos para veladas sociales y sensuales en un marco organizado y seguro. A diferencia de los encuentros privados, el club ofrece un espacio neutral, con reglas claras y personal formado para garantizar el bienestar de todos los visitantes. Si eres nuevo en este mundo, consulta nuestra guía para <Link to="/es/empezar-libertinaje" className="text-primary hover:underline">empezar en el libertinaje</Link>.</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">La Escena Libertina en España</h2>
-          <p className="text-muted-foreground leading-relaxed mb-4">España tiene una de las escenas libertinas más activas de Europa. Madrid y Barcelona son los dos epicentros, con docenas de clubs de todos los tamaños y estilos. Pero el fenómeno se extiende también a Valencia, Sevilla, Bilbao, Málaga y muchas otras ciudades.</p>
+          <p className="text-muted-foreground leading-relaxed mb-4">España tiene una de las escenas libertinas más activas de Europa. Madrid y Barcelona son los dos epicentros, con docenas de clubs de todos los tamaños y estilos. Consulta nuestro <Link to="/es/clubes-libertinos" className="text-primary hover:underline">directorio de clubes libertinos en España</Link> para encontrar el establecimiento ideal. El fenómeno se extiende también a Valencia, Sevilla, Bilbao, Málaga y muchas otras ciudades.</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">Prepararse para una Velada en Club</h2>
           <h3 className="text-xl font-semibold text-primary mt-8 mb-3">Reserva con Antelación</h3>
           <p className="text-muted-foreground leading-relaxed mb-4">La mayoría de los clubs libertinos de calidad requieren reserva previa, especialmente para las veladas del fin de semana. Reserva a través de AKOKY para acceder a las mejores condiciones y evitar las sorpresas.</p>
@@ -44,7 +45,7 @@ const ClubbingEs = () => (
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">Las Reglas de Oro del Clubbing Libertino</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">Nunca toques sin permiso explícito. Acepta el no sin discutir. Respeta la privacidad de los demás (sin fotos sin consentimiento). Mantén la discreción fuera del club. Cuida tu higiene personal. Respeta las instalaciones y el personal.</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">Encontrar los Mejores Clubs con AKOKY</h2>
-          <p className="text-muted-foreground leading-relaxed mb-4">El directorio AKOKY referencia los mejores clubs libertinos verificados en España, con fichas detalladas, fotos, horarios, precios y valoraciones auténticas de la comunidad. Es la herramienta de referencia para el clubbing libertino en España.</p>
+          <p className="text-muted-foreground leading-relaxed mb-4">El <Link to="/es/clubes-libertinos" className="text-primary hover:underline">directorio AKOKY</Link> referencia los mejores clubs libertinos verificados en España, con fichas detalladas, fotos, horarios, precios y valoraciones auténticas de la comunidad. Si prefieres un ambiente plus relajado, descubre también nuestros <Link to="/es/saunas-libertinos" className="text-primary hover:underline">saunas libertinos</Link>. No te pierdas los próximos <Link to="/es/eventos" className="text-primary hover:underline">eventos libertinos</Link> y descarga la <Link to="/es/app" className="text-primary hover:underline">aplicación AKOKY</Link> para estar al día.</p>
         </div>
       </section>
     </ContentPageLayout>

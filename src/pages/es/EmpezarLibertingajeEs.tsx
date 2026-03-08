@@ -1,6 +1,7 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
+import { Link } from "react-router-dom";
 
 const FAQ = [
   { question: "¿Hay que estar en pareja para empezar?", answer: "No. Solteros y parejas son bienvenidos. Las mujeres solteras tienen acceso privilegiado a muchos clubes y eventos." },
@@ -49,7 +50,7 @@ const EmpezarLibertingajeEs = () => (
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">Gestionar los Celos</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">Los celos son una reacción humana completamente normal. Compartirlos con tu pareja y hablar de ellos antes, durante y después de las experiencias permite gestionarlos de forma sana. No reprimas estas emociones: son información valiosa sobre tus límites reales.</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">Encontrar tu Comunidad con AKOKY</h2>
-          <p className="text-muted-foreground leading-relaxed mb-4">AKOKY ofrece un espacio seguro para los principiantes: guías dedicadas, eventos especialmente diseñados para recién llegados y una comunidad acogedora que recuerda haber sido principiante también.</p>
+          <p className="text-muted-foreground leading-relaxed mb-4">AKOKY ofrece un espacio seguro para los principiantes: guías dedicadas, <Link to="/es/eventos" className="text-primary hover:underline">eventos</Link> especialmente diseñados para recién llegados y una comunidad acogedora. Explora el <Link to="/es/lexico" className="text-primary hover:underline">léxico libertino</Link> para dominar el vocabulario, descubre los <Link to="/es/clubes-libertinos" className="text-primary hover:underline">clubes libertinos en España</Link>, los <Link to="/es/saunas-libertinos" className="text-primary hover:underline">saunas libertinos</Link> y lee nuestra guía sobre el <Link to="/es/libertinaje" className="text-primary hover:underline">libertinaje moderno</Link>.</p>
         </div>
       </section>
     </ContentPageLayout>

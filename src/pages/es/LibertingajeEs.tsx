@@ -1,6 +1,7 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
+import { Link } from "react-router-dom";
 
 const FAQ = [
   { question: "¿Qué es el libertinaje?", answer: "El libertinaje es una práctica sexual y relacional que consiste en explorar la sexualidad fuera del marco monógamo tradicional, siempre con el consentimiento libre e informado de todos los implicados." },
@@ -48,9 +49,9 @@ const LibertingajeEs = () => (
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">El Consentimiento: Piedra Angular</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">El consentimiento es la base de toda exploración en este ámbito. Sin consentimiento libre, informado y entusiasta, no puede haber práctica sana. El consentimiento no es estático: lo que era aceptable ayer puede no serlo hoy, y es perfectamente legítimo cambiar de opinión en cualquier momento.</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">El Libertinaje en la Era Digital</h2>
-          <p className="text-muted-foreground leading-relaxed mb-4">Internet ha transformado profundamente la manera en que las personas descubren y practican el libertinaje. Plataformas como AKOKY ofrecen un espacio accesible y menos intimidante que los clubes físicos, permitiendo a parejas y solteros informarse, intercambiar y conectar de forma segura.</p>
+          <p className="text-muted-foreground leading-relaxed mb-4">Internet ha transformado profundamente la manera en que las personas descubren y practican el libertinaje. Plataformas como AKOKY ofrecen un espacio accesible y menos intimidante que los <Link to="/es/clubes-libertinos" className="text-primary hover:underline">clubes libertinos</Link>, permitiendo a parejas y solteros informarse, intercambiar y conectar de forma segura. Descubre también nuestros <Link to="/es/saunas-libertinos" className="text-primary hover:underline">saunas libertinos</Link> para un ambiente más relajado.</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">¿A Quién Va Dirigido?</h2>
-          <p className="text-muted-foreground leading-relaxed mb-4">El libertinaje es accesible a todos, independientemente de la edad, la orientación sexual o el estado sentimental. Parejas establecidas, solteros y personas de todas las orientaciones tienen su lugar en esta comunidad diversa y acogedora.</p>
+          <p className="text-muted-foreground leading-relaxed mb-4">El libertinaje es accesible a todos, independientemente de la edad, la orientación sexual o el estado sentimental. Si estás empezando, consulta nuestra guía para <Link to="/es/empezar-libertinaje" className="text-primary hover:underline">empezar en el libertinaje</Link>. Explora nuestro <Link to="/es/lexico" className="text-primary hover:underline">léxico libertino</Link> para dominar el vocabulario, consulta los próximos <Link to="/es/eventos" className="text-primary hover:underline">eventos</Link> y descubre el <Link to="/es/clubbing" className="text-primary hover:underline">clubbing libertino</Link> en España.</p>
         </div>
       </section>
     </ContentPageLayout>

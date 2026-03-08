@@ -1,6 +1,7 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
+import { Link } from "react-router-dom";
 
 const FAQ = [
   { question: "¿Con qué frecuencia se actualiza la sección de actualidad?", answer: "La sección de actualidad de AKOKY se actualiza cada semana con nuevas tendencias, análisis y noticias del sector libertino." },
@@ -43,7 +44,7 @@ const ActualidadLibertina = () => (
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">Noticias del Sector</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">Sigue en AKOKY las últimas noticias del sector libertino español y europeo: aperturas, cierres, cambios de legislación y tendencias emergentes. La información, siempre desde una perspectiva respetuosa e informada.</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">Contribuye a la Actualidad</h2>
-          <p className="text-muted-foreground leading-relaxed mb-4">¿Tienes información sobre un nuevo establecimiento, un evento destacado o una tendencia emergente? Compártela con la comunidad AKOKY a través de tu espacio de miembro. La actualidad libertina la construimos juntos.</p>
+          <p className="text-muted-foreground leading-relaxed mb-4">¿Tienes información sobre un nuevo establecimiento, un evento destacado o una tendencia emergente? <Link to="/es/contacto" className="text-primary hover:underline">Contacta con nosotros</Link> a través de tu espacio de miembro. Explora también los <Link to="/es/clubes-libertinos" className="text-primary hover:underline">clubes libertinos</Link>, los <Link to="/es/saunas-libertinos" className="text-primary hover:underline">saunas libertinos</Link>, los <Link to="/es/eventos" className="text-primary hover:underline">eventos</Link> y el <Link to="/es/libertinaje" className="text-primary hover:underline">libertinaje moderno</Link>.</p>
         </div>
       </section>
     </ContentPageLayout>

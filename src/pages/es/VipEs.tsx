@@ -1,6 +1,7 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
+import { Link } from "react-router-dom";
 
 const FAQ = [
   { question: "¿Cuáles son las ventajas del estatus VIP AKOKY?", answer: "Acceso a eventos exclusivos, multiperfiles certificados, álbumes privados, lives VIP, mensajería prioritaria y badge de confianza visible por la comunidad." },
@@ -50,7 +51,7 @@ const VipEs = () => (
           <h3 className="text-xl font-semibold text-primary mt-8 mb-3">Mensajería Prioritaria</h3>
           <p className="text-muted-foreground leading-relaxed mb-4">Tus mensajes llegan destacados en las bandejas de entrada. Más respuestas, más conexiones, más encuentros reales.</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">¿Cómo Suscribirse?</h2>
-          <p className="text-muted-foreground leading-relaxed mb-4">La suscripción VIP se activa directamente desde tu cuenta AKOKY. Varios planes están disponibles: mensual, trimestral y anual. El pago es seguro y discreto en tu extracto bancario.</p>
+          <p className="text-muted-foreground leading-relaxed mb-4">La suscripción VIP se activa directamente desde tu cuenta AKOKY. Varios planes están disponibles: mensual, trimestral y anual. Descubre también los <Link to="/es/eventos" className="text-primary hover:underline">eventos exclusivos</Link>, los <Link to="/es/live" className="text-primary hover:underline">lives en directo</Link>, los <Link to="/es/clubes-libertinos" className="text-primary hover:underline">clubes libertinos</Link> en España y el <Link to="/es/parrainage" className="text-primary hover:underline">programa de afiliación</Link> para ganar ventajas adicionales.</p>
         </div>
       </section>
     </ContentPageLayout>

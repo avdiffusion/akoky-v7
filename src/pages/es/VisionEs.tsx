@@ -1,6 +1,7 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
+import { Link } from "react-router-dom";
 
 const FAQ = [
   { question: "¿Cuál es la misión de AKOKY?", answer: "Ofrecer a la comunidad libertina europea una plataforma premium, segura y ética, que ponga el consentimiento, la seguridad y la autenticidad en el centro de cada interacción." },
@@ -46,7 +47,7 @@ const VisionEs = () => (
           <h3 className="text-xl font-semibold text-primary mt-8 mb-3">Elegancia y Discreción</h3>
           <p className="text-muted-foreground leading-relaxed mb-4">AKOKY rechaza la vulgaridad. Nuestra interfaz, nuestro vocabulario y nuestro contenido editorial reflejan una visión elegante y respetuosa del libertinaje. La sensualidad no necesita ser obscena.</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">Nuestra Hoja de Ruta</h2>
-          <p className="text-muted-foreground leading-relaxed mb-4">AKOKY continúa creciendo: nuevas funcionalidades, expansión a nuevos países, más eventos, más clubes verificados. Cada mes, la plataforma evoluciona escuchando a su comunidad. Porque AKOKY no es un producto: es un proyecto colectivo.</p>
+          <p className="text-muted-foreground leading-relaxed mb-4">AKOKY continúa creciendo: nuevas funcionalidades, expansión a nuevos países, más <Link to="/es/eventos" className="text-primary hover:underline">eventos</Link>, más <Link to="/es/clubes-libertinos" className="text-primary hover:underline">clubes verificados</Link>. Descubre el <Link to="/es/libertinaje" className="text-primary hover:underline">libertinaje moderno</Link>, la <Link to="/es/app" className="text-primary hover:underline">aplicación AKOKY</Link> y accede a la <Link to="/es/vip" className="text-primary hover:underline">experiencia VIP</Link>. Porque AKOKY no es un producto: es un proyecto colectivo.</p>
         </div>
       </section>
     </ContentPageLayout>
