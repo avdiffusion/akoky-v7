@@ -42,7 +42,7 @@ const jsonSchema = {
     "@type": "ContactPoint",
     "contactType": "Customer Service",
     "email": "contact@akoky.com",
-    "availableLanguage": ["fr", "en", "es", "de", "it", "pt"]
+    "availableLanguage": ["fr", "es", "de", "it", "pt"]
   },
   "sameAs": [
     "https://www.facebook.com/akokyofficial",
