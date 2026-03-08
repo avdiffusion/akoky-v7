@@ -14,7 +14,7 @@ const VisionGuidePt = () => (
   <>
     <MetaTags title="A Visão do AKOKY | Plataforma Libertina Moderna e Responsável" description="Descobre a visão do AKOKY: uma plataforma libertina moderna, segura e responsável. De AcoquinementVotre ao AKOKY, a história de uma evolução." canonical="https://akoky.com/pt/visao-akoky-guia" lang="pt" />
     <HreflangTags slug="visao-akoky-guia" />
-    <ContentPageLayout lang="pt" title="A Visão do AKOKY | Plataforma Libertina Moderna e Responsável" description="Descobre a visão do AKOKY." canonical="https://akoky.com/pt/visao-akoky-guia" heroTitle="A Nossa Visão" heroSubtitle="AKOKY: construir a comunidade libertina mais segura e autêntica da Europa" heroType="cover" heroImage="/images/vision-cover.webp" breadcrumb={[{ label: "A Nossa Visão" }]} faq={FAQ}>
+    <ContentPageLayout lang="pt" title="A Visão do AKOKY | Plataforma Libertina Moderna e Responsável" description="Descobre a visão do AKOKY." canonical="https://akoky.com/pt/visao-akoky-guia" heroTitle="A Nossa Visão" heroSubtitle="AKOKY: construir a comunidade libertina mais segura e autêntica da Europa" heroType="cover" heroImage="/images/pt-visao-cover.webp" breadcrumb={[{ label: "A Nossa Visão" }]} faq={FAQ}>
       <section className="py-12 md:py-20 px-4">
         <div className="container max-w-4xl mx-auto">
 

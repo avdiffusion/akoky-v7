@@ -13,7 +13,7 @@ const CookiesGuidePt = () => (
   <>
     <MetaTags title="AKOKY Política de Cookies | Gestão e Privacidade" description="Cookies AKOKY: essenciais, analíticos, de marketing. Gestão das tuas preferências e proteção da tua privacidade conforme o RGPD." canonical="https://akoky.com/pt/politica-cookies-guia" lang="pt" />
     <HreflangTags slug="politica-cookies-guia" />
-    <ContentPageLayout lang="pt" title="AKOKY Política de Cookies | Gestão e Privacidade" description="Cookies AKOKY: essenciais, analíticos, de marketing." canonical="https://akoky.com/pt/politica-cookies-guia" heroTitle="Política de Cookies" heroSubtitle="Transparência total sobre a utilização de cookies no AKOKY" breadcrumb={[{ label: "Política de Cookies" }]} faq={FAQ}>
+    <ContentPageLayout lang="pt" title="AKOKY Política de Cookies | Gestão e Privacidade" description="Cookies AKOKY: essenciais, analíticos, de marketing." canonical="https://akoky.com/pt/politica-cookies-guia" heroTitle="Política de Cookies" heroSubtitle="Transparência total sobre a utilização de cookies no AKOKY" heroImage="/images/logo-akoky.webp" breadcrumb={[{ label: "Política de Cookies" }]} faq={FAQ}>
       <section className="py-12 md:py-20 px-4">
         <div className="container max-w-4xl mx-auto">
 

@@ -15,7 +15,7 @@ const JeuxGuidePt = () => (
   <>
     <MetaTags title="Jogos Libertinos AKOKY | Animações para Noitadas" description="Jogos libertinos para noitadas inesquecíveis: cartas picantes, desafios sensuais, roleta do destino. Disponíveis em português no AKOKY." canonical="https://akoky.com/pt/jogos-libertinos-guia" lang="pt" />
     <HreflangTags slug="jogos-libertinos-guia" />
-    <ContentPageLayout lang="pt" title="Jogos Libertinos AKOKY | Animações para Noitadas" description="Jogos libertinos para noitadas inesquecíveis." canonical="https://akoky.com/pt/jogos-libertinos-guia" heroTitle="Jogos Libertinos" heroSubtitle="Anima as tuas noitadas com os nossos jogos e animações libertinas exclusivas" heroType="cover" heroImage="/images/cover-jeux.webp" breadcrumb={[{ label: "Jogos Libertinos" }]} faq={FAQ}>
+    <ContentPageLayout lang="pt" title="Jogos Libertinos AKOKY | Animações para Noitadas" description="Jogos libertinos para noitadas inesquecíveis." canonical="https://akoky.com/pt/jogos-libertinos-guia" heroTitle="Jogos Libertinos" heroSubtitle="Anima as tuas noitadas com os nossos jogos e animações libertinas exclusivas" heroType="cover" heroImage="/images/pt-jogos-cover.webp" breadcrumb={[{ label: "Jogos Libertinos" }]} faq={FAQ}>
       <section className="py-12 md:py-20 px-4">
         <div className="container max-w-4xl mx-auto">
 

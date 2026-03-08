@@ -15,7 +15,7 @@ const PremierRdvGuidePt = () => (
   <>
     <MetaTags title="A Tua Primeira Experiência Libertina | Dicas e Preparação — AKOKY" description="Guia prático para a tua primeira experiência libertina: preparação, comunicação, segurança. Dicas para casais e solteiros em Portugal." canonical="https://akoky.com/pt/primeira-experiencia-libertina" lang="pt" />
     <HreflangTags slug="primeira-experiencia-libertina" />
-    <ContentPageLayout lang="pt" title="A Tua Primeira Experiência Libertina | Dicas e Preparação — AKOKY" description="Guia prático para a tua primeira experiência libertina." canonical="https://akoky.com/pt/primeira-experiencia-libertina" heroTitle="A Tua Primeira Experiência Libertina" heroSubtitle="Dicas práticas para preparares e viveres o teu primeiro encontro libertino com serenidade" heroType="cover" heroImage="/images/premier-rendez-vous-libertin-cover.webp" breadcrumb={[{ label: "A Tua Primeira Experiência Libertina" }]} faq={FAQ}>
+    <ContentPageLayout lang="pt" title="A Tua Primeira Experiência Libertina | Dicas e Preparação — AKOKY" description="Guia prático para a tua primeira experiência libertina." canonical="https://akoky.com/pt/primeira-experiencia-libertina" heroTitle="A Tua Primeira Experiência Libertina" heroSubtitle="Dicas práticas para preparares e viveres o teu primeiro encontro libertino com serenidade" heroType="cover" heroImage="/images/pt-primeiro-encontro-cover.webp" breadcrumb={[{ label: "A Tua Primeira Experiência Libertina" }]} faq={FAQ}>
       <section className="py-12 md:py-20 px-4">
         <div className="container max-w-4xl mx-auto">
 
