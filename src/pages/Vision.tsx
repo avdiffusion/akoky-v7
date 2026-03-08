@@ -69,7 +69,7 @@ const Vision = () => (
         </div>
 
         <div className="text-center">
-          <Link to="/akoky" className="px-8 py-4 rounded-full bg-gradient-to-r from-primary to-primary-dark text-black font-bold text-lg hover:scale-105 transition-all inline-block">Découvrir Akoky</Link>
+          <Link to="/fr/akoky" className="px-8 py-4 rounded-full bg-gradient-to-r from-primary to-primary-dark text-black font-bold text-lg hover:scale-105 transition-all inline-block">Découvrir Akoky</Link>
         </div>
       </div>
     </section>

@@ -438,6 +438,7 @@ const Clubbing = () => {
         </div>
       </section>
     </ContentPageLayout>
+    </>
   );
 };
 

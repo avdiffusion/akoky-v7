@@ -2,12 +2,13 @@ import ContentPageLayout from "@/components/layout/ContentPageLayout";
 
 const Live = () => (
   <ContentPageLayout
+    lang="fr"
     title="Lives AKOKY – Vidéos & Échanges en Direct Sécurisés | AKOKY"
     description="Lives Akoky : échanges en direct, contenus interactifs et animations communautaires dans un cadre respectueux, sécurisé et réservé aux adultes."
-    canonical="https://akoky.com/live"
+    canonical="https://akoky.com/fr/live"
     heroTitle="Lives Akoky – Vidéos & échanges en direct sécurisés"
     heroSubtitle="Lives Akoky : échanges en direct, contenus interactifs et animations communautaires dans un cadre respectueux, sécurisé et réservé aux adultes."
-    heroImage="https://akoky.com/images/live-akoky.webp"
+    heroImage="/images/live-akoky.webp"
     heroType="cover"
     breadcrumb={[{ label: "Live" }]}
     faq={[
@@ -15,7 +16,7 @@ const Live = () => (
       { question: "Les lives sont-ils enregistrés ?", answer: "Non. Les lives ne sont ni enregistrés ni sauvegardés, pour garantir votre confidentialité." },
       { question: "Peut-on interagir en direct ?", answer: "Oui. Un chat en direct permet de discuter pendant le live." },
     ]}
-    schema={{ "@context": "https://schema.org", "@type": "WebPage", name: "AKOKY Live", url: "https://akoky.com/live" }}
+    schema={{ "@context": "https://schema.org", "@type": "WebPage", name: "AKOKY Live", url: "https://akoky.com/fr/live" }}
   >
     <section className="py-16 px-4">
       <div className="container max-w-4xl mx-auto space-y-16">
