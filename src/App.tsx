@@ -91,13 +91,19 @@ import MeilleurSiteLibertin from "./pages/comparatifs/MeilleurSiteLibertin";
 
 
 // ─── Pages FR livraison 6 ─────────────────────────────────────────────────────
-import BlogFr from "./pages/fr/BlogFr";
 import FaqFr from "./pages/fr/FaqFr";
 import CookiesFr from "./pages/fr/CookiesFr";
 import GuideLibertin from "./pages/fr/GuideLibertin";
 import GuideUltimeLibertin from "./pages/fr/GuideUltimeLibertin";
 import ConcoursSixCles from "./pages/fr/ConcoursSixCles";
 import AnnuaireClubs from "./pages/fr/AnnuaireClubs";
+
+// ─── Blog system ──────────────────────────────────────────────────────────────
+import BlogListing from "./pages/blog/BlogListing";
+import BlogArticlePage from "./pages/blog/BlogArticle";
+import BlogAdmin from "./pages/admin/BlogAdmin";
+import BlogEditor from "./pages/admin/BlogEditor";
+import BlogLogin from "./pages/admin/BlogLogin";
 
 // ─── Pages ES livraison 3 ─────────────────────────────────────────────────────
 import HomeEs from "./pages/es/HomeEs";
@@ -387,7 +393,8 @@ const App = () => (
 
             
             {/* ── Pages FR livraison 6 ───────────────────────────────────── */}
-            <Route path="/fr/blog" element={<BlogFr />} />
+            <Route path="/fr/blog" element={<BlogListing lang="fr" />} />
+            <Route path="/fr/blog/:slug" element={<BlogArticlePage lang="fr" />} />
             <Route path="/fr/faq" element={<FaqFr />} />
             <Route path="/fr/cookies" element={<CookiesFr />} />
             <Route path="/fr/guide-libertin-france" element={<GuideLibertin />} />
@@ -485,7 +492,8 @@ const App = () => (
             <Route path="/es/politica-cookies" element={<CookiesGuideEs />} />
             <Route path="/es/sala-de-prensa" element={<PresseGuideEs />} />
             <Route path="/es/faq" element={<Navigate to="https://ask.akoky.com" replace />} />
-            <Route path="/es/blog" element={<Navigate to="https://blog.akoky.com" replace />} />
+            <Route path="/es/blog" element={<BlogListing lang="es" />} />
+            <Route path="/es/blog/:slug" element={<BlogArticlePage lang="es" />} />
 
             {/* ══════════════════════════════════════════════════════════════
                 ROUTES DE
@@ -533,7 +541,8 @@ const App = () => (
             <Route path="/de/cookie-richtlinie" element={<CookiesGuideDe />} />
             <Route path="/de/pressestelle" element={<PresseGuideDe />} />
             <Route path="/de/faq" element={<Navigate to="https://ask.akoky.com" replace />} />
-            <Route path="/de/blog" element={<Navigate to="https://blog.akoky.com" replace />} />
+            <Route path="/de/blog" element={<BlogListing lang="de" />} />
+            <Route path="/de/blog/:slug" element={<BlogArticlePage lang="de" />} />
 
             {/* ══════════════════════════════════════════════════════════════
                 ROUTES IT
@@ -581,7 +590,8 @@ const App = () => (
             <Route path="/it/politica-cookie-guida" element={<CookiesGuideIt />} />
             <Route path="/it/sala-stampa" element={<PresseGuideIt />} />
             <Route path="/it/faq" element={<Navigate to="https://ask.akoky.com" replace />} />
-            <Route path="/it/blog" element={<Navigate to="https://blog.akoky.com" replace />} />
+            <Route path="/it/blog" element={<BlogListing lang="it" />} />
+            <Route path="/it/blog/:slug" element={<BlogArticlePage lang="it" />} />
 
             {/* ══════════════════════════════════════════════════════════════
                 ROUTES PT
@@ -629,9 +639,18 @@ const App = () => (
             <Route path="/pt/politica-cookies-guia" element={<CookiesGuidePt />} />
             <Route path="/pt/sala-de-imprensa" element={<PresseGuidePt />} />
             <Route path="/pt/faq" element={<Navigate to="https://ask.akoky.com" replace />} />
-            <Route path="/pt/blog" element={<Navigate to="https://blog.akoky.com" replace />} />
+            <Route path="/pt/blog" element={<BlogListing lang="pt" />} />
+            <Route path="/pt/blog/:slug" element={<BlogArticlePage lang="pt" />} />
 
-            {/* ── EN supprimé ────────────────────────────────────────────── */}
+            {/* ── EN Blog ─────────────────────────────────────────────── */}
+            <Route path="/en/blog" element={<BlogListing lang="en" />} />
+            <Route path="/en/blog/:slug" element={<BlogArticlePage lang="en" />} />
+
+            {/* ── Admin Blog ─────────────────────────────────────────────── */}
+            <Route path="/admin/blog/login" element={<BlogLogin />} />
+            <Route path="/admin/blog" element={<BlogAdmin />} />
+            <Route path="/admin/blog/new" element={<BlogEditor />} />
+            <Route path="/admin/blog/edit/:id" element={<BlogEditor />} />
 
             {/* ── CATCH-ALL ─────────────────────────────────────────────── */}
             <Route path="*" element={<NotFound />} />
