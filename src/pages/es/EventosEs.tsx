@@ -25,6 +25,7 @@ const EventosEs = () => (
       canonical="https://akoky.com/es/eventos"
       heroTitle="Eventos Libertinos en España"
       heroSubtitle="300+ eventos al mes: veladas exclusivas, fines de semana temáticos, encuentros privados. Reserva tu plaza en AKOKY."
+      heroImage="/images/es-eventos-cover.webp"
       breadcrumb={[{ label: "Eventos Libertinos en España" }]}
       faq={FAQ}
     >

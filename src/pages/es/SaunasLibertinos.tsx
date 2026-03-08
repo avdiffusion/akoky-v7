@@ -24,6 +24,7 @@ const SaunasLibertinos = () => (
       canonical="https://akoky.com/es/saunas-libertinos"
       heroTitle="Saunas Libertinos en España"
       heroSubtitle="Guía completa sobre los saunas libertinos: qué son, cómo funciona una visita y cómo elegir el mejor."
+      heroImage="/images/es-saunas-cover.webp"
       breadcrumb={[{ label: "Saunas Libertinos en España" }]}
       faq={FAQ}
     >

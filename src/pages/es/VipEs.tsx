@@ -25,6 +25,7 @@ const VipEs = () => (
       canonical="https://akoky.com/es/vip"
       heroTitle="Estatus VIP AKOKY"
       heroSubtitle="Accede a privilegios exclusivos y vive la experiencia libertina en su nivel más alto."
+      heroImage="/images/es-vip-cover.webp"
       breadcrumb={[{ label: "Estatus VIP AKOKY" }]}
       faq={FAQ}
     >

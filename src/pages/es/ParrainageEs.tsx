@@ -24,6 +24,7 @@ const ParrainageEs = () => (
       canonical="https://akoky.com/es/parrainage"
       heroTitle="Programa de Afiliación AKOKY"
       heroSubtitle="Invita a tus amigos, gana ventajas exclusivas y haz crecer tu comunidad."
+      heroImage="/images/es-parrainage-cover.webp"
       breadcrumb={[{ label: "Programa de Afiliación AKOKY" }]}
       faq={FAQ}
     >

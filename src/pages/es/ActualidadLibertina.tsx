@@ -23,6 +23,7 @@ const ActualidadLibertina = () => (
       canonical="https://akoky.com/es/actualidad-libertina"
       heroTitle="Actualidad y Tendencias Libertinas"
       heroSubtitle="La veille editorial del mundo libertino en España: tendencias, análisis y novedades actualizadas."
+      heroImage="/images/es-actualidad-cover.webp"
       breadcrumb={[{ label: "Actualidad y Tendencias Libertinas" }]}
       faq={FAQ}
     >

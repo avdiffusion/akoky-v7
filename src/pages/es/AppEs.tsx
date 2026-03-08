@@ -24,6 +24,7 @@ const AppEs = () => (
       canonical="https://akoky.com/es/app"
       heroTitle="La Aplicación Libertina más Completa de Europa"
       heroSubtitle="Geolocalización, chat tipo WhatsApp, alertas de eventos y multiperfil. Todo en tu smartphone."
+      heroImage="/images/es-app-cover.webp"
       breadcrumb={[{ label: "La Aplicación Libertina más Completa de Europa" }]}
       faq={FAQ}
     >
