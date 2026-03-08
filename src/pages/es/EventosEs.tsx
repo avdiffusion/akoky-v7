@@ -71,7 +71,7 @@ const BENEFITS = [
   { icon: "✨", title: "Ambiente Premium", text: "Cada evento libertino Akoky se organiza en lugares de excepción. Nuestras veladas libertinas se celebran en los clubes más reputados y los espacios más elegantes de España. El ambiente refinado de nuestros eventos garantiza una experiencia memorable en cada participación." },
   { icon: "🛡️", title: "Seguridad y Respeto", text: "La seguridad de nuestros miembros es nuestra prioridad absoluta. Nuestros eventos libertinos aplican protocolos estrictos de respeto y consentimiento. Cada velada Akoky está supervisada por un equipo atento que vela por el bienestar de todos los participantes." },
   { icon: "🎭", title: "Libertad Asumida", text: "Las veladas libertinas Akoky celebran la libertad de ser uno mismo. Nuestros eventos ofrecen un espacio donde cada persona puede explorar sus deseos con total serenidad. La filosofía Akoky fomenta la autenticidad y el respeto de las elecciones de cada uno en una atmósfera benevolente." },
-  { icon: "🌍", title: "Comunidad Internacional", text: "Unirse a los eventos libertinos Akoky es integrarse en la mayor comunidad libertina de Europa. Nuestras veladas reúnen miembros de España, Francia, Alemania, Italia y más allá. El espíritu comunitario que reina en nuestros apéros libertinos y veladas exclusivas crea vínculos auténticos y duraderos." },
+  { icon: "🌍", title: "Comunidad Internacional", text: "Unirse a los eventos libertinos Akoky es integrarse en la mayor comunidad libertina de Europa. Nuestras veladas reúnen miembros de España, Francia, Alemania, Italia y más allá. El espíritu comunitario que reina en nuestros afterworks libertinos y veladas exclusivas crea vínculos auténticos y duraderos." },
 ];
 
 const GALLERY = [
