@@ -10,7 +10,7 @@ const ClubsLibertinsBruxelles = () => {
       heroTitle="Clubs libertins à Bruxelles"
       heroSubtitle="Le guide complet des clubs, soirées et événements libertins à Bruxelles"
       heroImage="/images/region-clubbing-belgique.webp"
-      breadcrumb={[{ label: "Clubbing", href: "/clubbing" }, { label: "Bruxelles" }]}
+      breadcrumb={[{ label: "Clubbing", href: "/fr/clubbing" }, { label: "Bruxelles" }]}
       faq={[
         {
           question: "Où rencontrer des libertins à Bruxelles ?",
