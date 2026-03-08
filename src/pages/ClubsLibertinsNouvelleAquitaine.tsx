@@ -29,7 +29,7 @@ const ClubsLibertinsNouvelleAquitaine = () => {
           <h2 className="text-3xl font-bold text-foreground font-display">Les grandes villes libertines</h2>
           <h3>Bordeaux</h3>
           <p>Bordeaux, avec son ambiance élégante et sa vie nocturne animée, attire une clientèle variée.</p>
-          <Link to="/clubs-libertins-bordeaux" className="text-primary hover:underline">Clubs libertins à Bordeaux →</Link>
+          <Link to="/fr/clubs-libertins-bordeaux" className="text-primary hover:underline">Clubs libertins à Bordeaux →</Link>
           <h3>Poitiers</h3><p>Poitiers offre des soirées intimistes.</p>
           <h3>Limoges</h3><p>Limoges attire une clientèle sophistiquée.</p>
           <h3>Pau</h3><p>Pau offre un cadre de vie agréable pour des rencontres libertines.</p>
