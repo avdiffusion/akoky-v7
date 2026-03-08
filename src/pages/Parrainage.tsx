@@ -1,8 +1,19 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
+import MetaTags from "@/components/seo/MetaTags";
+import HreflangTags from "@/components/seo/HreflangTags";
 
 const Parrainage = () => {
   return (
+    <>
+    <MetaTags
+      title="Programme de Parrainage AKOKY | Gagnez 6 Mois VIP+ Gratuits"
+      description="Parrainez 10 amis et gagnez 6 mois d'abonnement VIP+ offerts sur AKOKY. Programme de parrainage simple, automatique et sans engagement."
+      canonical="https://akoky.com/fr/parrainage"
+      lang="fr"
+    />
+    <HreflangTags slug="parrainage" />
     <ContentPageLayout
+      lang="fr"
       title="Programme de Parrainage AKOKY | Gagnez 6 Mois VIP+ Gratuits"
       description="Parrainez 10 amis et gagnez 6 mois d'abonnement VIP+ offerts sur AKOKY. Programme de parrainage simple, automatique et sans engagement."
       canonical="https://akoky.com/parrainage"
