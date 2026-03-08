@@ -101,8 +101,8 @@ const CTA_LINKS = [
 const EventosEs = () => (
   <>
     <MetaTags
-      title="Eventos Libertinos AKOKY 2026 – Veladas y Apéros Libertinos España"
-      description="Veladas libertinas, apéros afterwork y fines de semana exclusivos con AKOKY. Únete a la comunidad libertina premium en España: Madrid, Barcelona, Ibiza y más."
+      title="Eventos Libertinos AKOKY 2026 – Veladas y Afterworks Libertinos España"
+      description="Veladas libertinas, afterworks y fines de semana exclusivos con AKOKY. Únete a la comunidad libertina premium en España: Madrid, Barcelona, Ibiza y más."
       canonical="https://akoky.com/es/eventos"
       lang="es"
       ogImage="/images/es-eventos-cover.webp"
@@ -111,10 +111,10 @@ const EventosEs = () => (
     <ContentPageLayout
       lang="es"
       title="Eventos Libertinos AKOKY España"
-      description="Veladas, apéros y fines de semana libertinos en España"
+      description="Veladas, afterworks y fines de semana libertinos en España"
       canonical="https://akoky.com/es/eventos"
-      heroTitle="Eventos Libertinos Akoky – Veladas y Apéros Libertinos en España"
-      heroSubtitle="Vive la experiencia libertina premium: veladas en club, apéros exclusivos y encuentros auténticos en toda España"
+      heroTitle="Eventos Libertinos Akoky – Veladas y Encuentros Libertinos en España"
+      heroSubtitle="Vive la experiencia libertina premium: veladas en club, afterworks exclusivos y encuentros auténticos en toda España"
       heroImage="/images/es-eventos-cover.webp"
       breadcrumb={[{ label: "Eventos libertinos" }]}
       faq={FAQ}
