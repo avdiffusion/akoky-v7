@@ -668,6 +668,7 @@ const App = () => (
             <Route path="/pt/faq" element={<Navigate to="https://ask.akoky.com" replace />} />
             <Route path="/pt/blog" element={<BlogListing lang="pt" />} />
             <Route path="/pt/blog/:slug" element={<BlogArticlePage lang="pt" />} />
+            <Route path="/pt/concurso" element={<ConcursoPt />} />
             <Route path="/pt/concours" element={<ConcoursListing lang="pt" />} />
             <Route path="/pt/concours/:slug" element={<ConcoursArticlePage lang="pt" />} />
 
