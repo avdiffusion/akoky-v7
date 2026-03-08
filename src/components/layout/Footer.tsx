@@ -58,12 +58,12 @@ const DISCOVER_LINKS: Record<Lang, FooterLink[]> = {
 
 const COMMUNITY_LINKS: Record<Lang, FooterLink[]> = {
   fr: [
-    { href: "/clubbing", icon: "🏢", label: "Clubbing" },
-    { href: "/vip", icon: "💎", label: "Adhésion VIP" },
-    { href: "/lexique", icon: "📚", label: "Lexique libertin" },
-    { href: "/presse", icon: "📰", label: "Espace presse" },
-    { href: "/faq", icon: "❓", label: "FAQ" },
-    { href: "/contact", icon: "✉️", label: "Contact" },
+    { href: "/fr/clubbing", icon: "🏢", label: "Clubbing" },
+    { href: "/fr/vip", icon: "💎", label: "Adhésion VIP" },
+    { href: "/fr/lexique", icon: "📚", label: "Lexique libertin" },
+    { href: "/fr/presse", icon: "📰", label: "Espace presse" },
+    { href: "/fr/faq", icon: "❓", label: "FAQ" },
+    { href: "/fr/contact", icon: "✉️", label: "Contact" },
   ],
   es: [
     { href: "/es/clubbing", icon: "🏢", label: "Clubbing" },
