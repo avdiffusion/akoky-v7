@@ -45,7 +45,7 @@ const AppEs = () => (
           <h3 className="text-xl font-semibold text-primary mt-8 mb-3">🛡️ AKOKY SAFE en la App</h3>
           <p className="text-muted-foreground leading-relaxed mb-4">Verifica tu identidad directamente desde la app para obtener el badge de confianza. Los perfiles verificados son claramente identificados en la comunidad.</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">Privacidad y Seguridad</h2>
-          <p className="text-muted-foreground leading-relaxed mb-4">La app AKOKY incorpora las mismas protecciones que la versión web: cifrado de extremo a extremo, modo incógnito, desenfoque de fotos y control total sobre tu visibilidad. Tu privacidad, bajo tu control.</p>
+          <p className="text-muted-foreground leading-relaxed mb-4">La app AKOKY incorpora las mismas protecciones que la versión web: cifrado de extremo a extremo, modo incógnito, desenfoque de fotos y control total sobre tu visibilidad. Explora los <Link to="/es/clubes-libertinos" className="text-primary hover:underline">clubes libertinos</Link>, los <Link to="/es/eventos" className="text-primary hover:underline">eventos</Link>, los <Link to="/es/live" className="text-primary hover:underline">lives en directo</Link> y accede al <Link to="/es/vip" className="text-primary hover:underline">estatus VIP</Link> directamente desde la app.</p>
         </div>
       </section>
     </ContentPageLayout>

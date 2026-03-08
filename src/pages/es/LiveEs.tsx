@@ -48,7 +48,7 @@ const LiveEs = () => (
           <h3 className="text-xl font-semibold text-primary mt-8 mb-3">Lives Solo</h3>
           <p className="text-muted-foreground leading-relaxed mb-4">Hombres y mujeres solteros que comparten sus experiencias e interactúan con la comunidad. El formato más popular para los principiantes que quieren explorar antes de tomar la decisión de vivir experiencias en persona.</p>
           <h3 className="text-xl font-semibold text-primary mt-8 mb-3">Lives desde Clubs</h3>
-          <p className="text-muted-foreground leading-relaxed mb-4">Algunos de nuestros clubs socios difunden veladas en directo exclusivamente para la comunidad AKOKY. Una inmersión total en el ambiente de las mejores veladas libertinas de Europa.</p>
+          <p className="text-muted-foreground leading-relaxed mb-4">Algunos de nuestros <Link to="/es/clubes-libertinos" className="text-primary hover:underline">clubs socios</Link> difunden veladas en directo exclusivamente para la comunidad AKOKY. Explora también los <Link to="/es/eventos" className="text-primary hover:underline">eventos libertinos</Link>, descubre los <Link to="/es/juegos" className="text-primary hover:underline">juegos AKOKY</Link> y accede a contenidos exclusivos con el <Link to="/es/vip" className="text-primary hover:underline">estatus VIP</Link>. Descarga la <Link to="/es/app" className="text-primary hover:underline">app AKOKY</Link> para no perderte ningún live.</p>
         </div>
       </section>
     </ContentPageLayout>

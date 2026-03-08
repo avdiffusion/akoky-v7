@@ -43,7 +43,7 @@ const ParrainageEs = () => (
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">¿Cómo Empezar?</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">Accede a tu espacio de miembro AKOKY, ve a la sección &#39;Afiliación&#39; y copia tu enlace personal. Compártelo con tus amigos, en redes sociales o donde quieras. Cada registro con tu enlace se contabiliza automáticamente.</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">Condiciones</h2>
-          <p className="text-muted-foreground leading-relaxed mb-4">El programa de afiliación es gratuito y abierto a todos los miembros AKOKY. Las ventajas se atribuyen automáticamente cuando el nuevo miembro activa su cuenta. No se paga comisión en efectivo: todas las recompensas son en forma de ventajas dentro de la plataforma.</p>
+          <p className="text-muted-foreground leading-relaxed mb-4">El programa de afiliación es gratuito y abierto a todos los miembros AKOKY. Descubre también el <Link to="/es/vip" className="text-primary hover:underline">estatus VIP</Link>, los <Link to="/es/eventos" className="text-primary hover:underline">eventos exclusivos</Link>, los <Link to="/es/clubes-libertinos" className="text-primary hover:underline">clubes libertinos</Link> y la <Link to="/es/app" className="text-primary hover:underline">aplicación AKOKY</Link>.</p>
         </div>
       </section>
     </ContentPageLayout>

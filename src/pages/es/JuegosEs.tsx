@@ -47,7 +47,7 @@ const JuegosEs = () => (
           <h3 className="text-xl font-semibold text-primary mt-8 mb-3">🧠 Quiz Libertino Interactivo</h3>
           <p className="text-muted-foreground leading-relaxed mb-4">Pon a prueba tus conocimientos sobre el mundo libertino: vocabulario, historia, prácticas, códigos. Divertido, educativo y perfecto para romper el hielo al inicio de una velada.</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">Reglas Fundamentales de los Juegos AKOKY</h2>
-          <p className="text-muted-foreground leading-relaxed mb-4">Todos los juegos AKOKY se basan en los mismos principios: consentimiento explícito antes de cada acción, derecho absoluto a pasar sin explicaciones, respeto de los límites de cada participante. Jugar debe ser siempre una fuente de placer, nunca de presión.</p>
+          <p className="text-muted-foreground leading-relaxed mb-4">Todos los juegos AKOKY se basan en los mismos principios: consentimiento explícito antes de cada acción, derecho absoluto a pasar sin explicaciones, respeto de los límites de cada participante. Descubre también nuestros <Link to="/es/eventos" className="text-primary hover:underline">eventos libertinos</Link>, el <Link to="/es/clubbing" className="text-primary hover:underline">clubbing libertino</Link> en España, los <Link to="/es/live" className="text-primary hover:underline">lives en directo</Link> y accede a funcionalidades exclusivas con el <Link to="/es/vip" className="text-primary hover:underline">estatus VIP AKOKY</Link>.</p>
         </div>
       </section>
     </ContentPageLayout>

@@ -44,9 +44,9 @@ const EventosEs = () => (
           <h3 className="text-xl font-semibold text-primary mt-8 mb-3">🔒 Encuentros Privados</h3>
           <p className="text-muted-foreground leading-relaxed mb-4">Encuentros más íntimos organizados en casa particular, con un número reducido de participantes seleccionados. El acceso requiere verificación previa y a menudo invitación de un miembro de la comunidad.</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">Eventos para Principiantes</h2>
-          <p className="text-muted-foreground leading-relaxed mb-4">AKOKY organiza regularmente eventos especialmente diseñados para los recién llegados al libertinaje. Estos eventos, claramente identificados en el calendario, se caracterizan por un ambiente acogedor, sin presión y con la presencia de anfitriones experimentados.</p>
+          <p className="text-muted-foreground leading-relaxed mb-4">AKOKY organiza regularmente eventos especialmente diseñados para los recién llegados al libertinaje. Consulta nuestra guía para <Link to="/es/empezar-libertinaje" className="text-primary hover:underline">empezar en el libertinaje</Link> para preparar tu primera experiencia.</p>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-12 mb-4">¿Cómo Reservar?</h2>
-          <p className="text-muted-foreground leading-relaxed mb-4">Todos los eventos AKOKY se reservan online directamente en la plataforma. Crea tu cuenta gratuita, explora el calendario de eventos cerca de ti y reserva tu plaza con unos pocos clics.</p>
+          <p className="text-muted-foreground leading-relaxed mb-4">Todos los eventos AKOKY se reservan online directamente en la plataforma. Descarga la <Link to="/es/app" className="text-primary hover:underline">aplicación AKOKY</Link> para recibir alertas de eventos cerca de ti. Explora también nuestro <Link to="/es/clubes-libertinos" className="text-primary hover:underline">directorio de clubes libertinos</Link>, los <Link to="/es/saunas-libertinos" className="text-primary hover:underline">saunas libertinos</Link> y accede a privilegios exclusivos con el <Link to="/es/vip" className="text-primary hover:underline">estatus VIP</Link>.</p>
         </div>
       </section>
     </ContentPageLayout>
