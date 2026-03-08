@@ -81,7 +81,6 @@ const LOGIN_LABELS: Record<Lang, string> = {
 
 const LANG_LABEL: Record<Lang, string> = {
   fr: "Langue",
-  en: "Language",
   es: "Idioma",
   de: "Sprache",
   it: "Lingua",
