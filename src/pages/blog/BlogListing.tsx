@@ -29,14 +29,6 @@ const META: Record<BlogLang, { title: string; description: string; heroTitle: st
     search: "Rechercher un article…",
     noArticles: "Aucun article publié pour le moment.",
   },
-  en: {
-    title: "AKOKY Libertine Blog – News, Tips & Guides",
-    description: "Discover exclusive news, tips, guides and testimonials about the libertine lifestyle.",
-    heroTitle: "AKOKY Blog",
-    heroSub: "Exclusive news, tips, guides and testimonials about the libertine lifestyle",
-    search: "Search articles…",
-    noArticles: "No articles published yet.",
-  },
   es: {
     title: "Blog libertino AKOKY – Noticias, Consejos & Guías",
     description: "Descubre noticias, consejos, guías y testimonios exclusivos sobre el libertinaje.",

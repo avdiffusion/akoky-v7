@@ -22,7 +22,7 @@ interface ComparisonTableProps {
   competitorName: string;
 }
 
-type Lang = "fr" | "en" | "es" | "de" | "it" | "pt";
+type Lang = "fr" | "es" | "de" | "it" | "pt";
 
 interface ComparatifLayoutProps {
   lang?: Lang;
@@ -70,21 +70,6 @@ const I18N: Record<Lang, {
     ctaClubs: "Voir les clubs", ctaClubsPath: "/clubs",
     ctaDisclaimer: "Certifié 100% discret • Données hébergées en Europe",
     imgAlt: "Comparatif AKOKY vs",
-  },
-  en: {
-    home: "Home", homePath: "/en", comparatifs: "Comparisons", comparatifsPath: "/en/comparisons",
-    badge: "⚖️ Comparison 2026 — Verified Data",
-    verdict: "Our verdict", verdictTitle: "the essentials",
-    tableTitle: "Detailed comparison table", tableSubtitle: "Point-by-point feature analysis",
-    criterion: "Criterion", globalScore: "Overall Score",
-    whyTitle: "Why choose AKOKY in 2026?",
-    faqTitle: "Frequently asked questions",
-    ctaTitle: "Ready to discover real swinging?",
-    ctaSubtitle: "Join 1.5 million members on the first complete libertine social network. Free sign-up, no credit card required.",
-    ctaButton: "Create my free account",
-    ctaClubs: "Browse clubs", ctaClubsPath: "/en/clubs",
-    ctaDisclaimer: "100% discreet • Data hosted in Europe",
-    imgAlt: "AKOKY vs comparison",
   },
   es: {
     home: "Inicio", homePath: "/es", comparatifs: "Comparativas", comparatifsPath: "/es/mejor-sitio-libertino",

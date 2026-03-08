@@ -4,7 +4,7 @@ interface HreflangTagsProps {
   slug?: string; // e.g. "" for home, "clubs" for /clubs
 }
 
-const LANGS = ["fr", "de", "es", "pt", "it", "en"];
+const LANGS = ["fr", "de", "es", "pt", "it"];
 const BASE = "https://akoky.com";
 
 const HreflangTags = ({ slug = "" }: HreflangTagsProps) => {

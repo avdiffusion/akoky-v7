@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-type Lang = "fr" | "en" | "es" | "de" | "it" | "pt";
+type Lang = "fr" | "es" | "de" | "it" | "pt";
 
 interface FooterProps {
   lang?: Lang;
@@ -18,15 +18,6 @@ const DISCOVER_LINKS: Record<Lang, FooterLink[]> = {
     { href: "/fr/avis", icon: "⭐", label: "Avis" },
     { href: "/fr/application", icon: "📱", label: "App mobile" },
   ],
-  en: [
-    { href: "/en", icon: "🏠", label: "Home" },
-    { href: "/en/akoky", icon: "ℹ️", label: "About" },
-    { href: "/en/blog", icon: "📖", label: "Blog" },
-    { href: "/en/events", icon: "📅", label: "Events" },
-    { href: "/en/games", icon: "🎮", label: "Games" },
-    { href: "/en/reviews", icon: "⭐", label: "Reviews" },
-    { href: "/en/app", icon: "📱", label: "Mobile App" },
-  ],
   es: [
     { href: "/es", icon: "🏠", label: "Inicio" },
     { href: "/es/akoky", icon: "ℹ️", label: "Acerca de" },
@@ -40,7 +31,7 @@ const DISCOVER_LINKS: Record<Lang, FooterLink[]> = {
     { href: "/de", icon: "🏠", label: "Startseite" },
     { href: "/de/akoky", icon: "ℹ️", label: "Über uns" },
     { href: "/de/blog", icon: "📖", label: "Blog" },
-    { href: "/de/veranstaltungen", icon: "📅", label: "Events" },
+    { href: "/de/events", icon: "📅", label: "Events" },
     { href: "/de/spiele", icon: "🎮", label: "Spiele" },
     { href: "/de/bewertungen", icon: "⭐", label: "Bewertungen" },
     { href: "/de/app", icon: "📱", label: "Mobile App" },
@@ -73,14 +64,6 @@ const COMMUNITY_LINKS: Record<Lang, FooterLink[]> = {
     { href: "/presse", icon: "📰", label: "Espace presse" },
     { href: "/faq", icon: "❓", label: "FAQ" },
     { href: "/contact", icon: "✉️", label: "Contact" },
-  ],
-  en: [
-    { href: "/en/clubbing", icon: "🏢", label: "Clubbing" },
-    { href: "/en/vip", icon: "💎", label: "VIP Membership" },
-    { href: "/en/lexicon", icon: "📚", label: "Libertine Lexicon" },
-    { href: "/en/press", icon: "📰", label: "Press Room" },
-    { href: "/en/faq", icon: "❓", label: "FAQ" },
-    { href: "/en/contact", icon: "✉️", label: "Contact" },
   ],
   es: [
     { href: "/es/clubbing", icon: "🏢", label: "Clubbing" },
@@ -118,7 +101,7 @@ const COMMUNITY_LINKS: Record<Lang, FooterLink[]> = {
 
 const SECTION_TITLES: Record<Lang, { discover: string; community: string; resources: string }> = {
   fr: { discover: "Découvrir", community: "Communauté", resources: "Ressources" },
-  en: { discover: "Discover", community: "Community", resources: "Resources" },
+  
   es: { discover: "Descubrir", community: "Comunidad", resources: "Recursos" },
   de: { discover: "Entdecken", community: "Community", resources: "Ressourcen" },
   it: { discover: "Scopri", community: "Comunità", resources: "Risorse" },
@@ -127,7 +110,7 @@ const SECTION_TITLES: Record<Lang, { discover: string; community: string; resour
 
 const BRAND_DESC: Record<Lang, string> = {
   fr: "La plus grande communauté libertine d'Europe. Un espace élégant, sécurisé et authentique.",
-  en: "Europe's largest libertine community. An elegant, secure and authentic space.",
+  
   es: "La mayor comunidad libertina de Europa. Un espacio elegante, seguro y auténtico.",
   de: "Europas größte libertine Community. Ein eleganter, sicherer und authentischer Raum.",
   it: "La più grande comunità libertina d'Europa. Uno spazio elegante, sicuro e autentico.",
@@ -136,7 +119,7 @@ const BRAND_DESC: Record<Lang, string> = {
 
 const CTA_LABELS: Record<Lang, { join: string; clubs: string; joinDesc: string }> = {
   fr: { join: "Rejoignez la communauté AKOKY", clubs: "Voir les clubs", joinDesc: "1,5 million de membres sur le premier réseau social libertin complet. Inscription gratuite, sans carte bancaire." },
-  en: { join: "Join the AKOKY community", clubs: "View clubs", joinDesc: "1.5 million members on the leading complete libertine social network. Free sign-up, no credit card required." },
+  
   es: { join: "Únete a la comunidad AKOKY", clubs: "Ver clubes", joinDesc: "1,5 millones de miembros en la primera red social libertina completa. Registro gratuito, sin tarjeta de crédito." },
   de: { join: "Treten Sie der AKOKY-Community bei", clubs: "Clubs anzeigen", joinDesc: "1,5 Millionen Mitglieder im führenden libertinen sozialen Netzwerk. Kostenlose Anmeldung, keine Kreditkarte erforderlich." },
   it: { join: "Unisciti alla comunità AKOKY", clubs: "Vedi i club", joinDesc: "1,5 milioni di membri sulla prima rete sociale libertina completa. Iscrizione gratuita, senza carta di credito." },
@@ -145,7 +128,7 @@ const CTA_LABELS: Record<Lang, { join: string; clubs: string; joinDesc: string }
 
 const REGISTER_LABELS: Record<Lang, string> = {
   fr: "Créer mon compte gratuit",
-  en: "Create my free account",
+  
   es: "Crear mi cuenta gratis",
   de: "Kostenloses Konto erstellen",
   it: "Crea il mio account gratuito",
@@ -154,7 +137,7 @@ const REGISTER_LABELS: Record<Lang, string> = {
 
 const COPYRIGHT_LABELS: Record<Lang, { rights: string; adults: string; lang: string; available: string; secure: string; gdpr: string; update: string }> = {
   fr: { rights: "Tous droits réservés.", adults: "Le contenu de ce site est réservé aux adultes.", lang: "Langue", available: "Akoky est disponible en 6 langues", secure: "🔒 Connexion sécurisée", gdpr: "✅ RGPD conforme", update: "🕒 Mise à jour : janv. 2026" },
-  en: { rights: "All rights reserved.", adults: "This website's content is for adults only.", lang: "Language", available: "Akoky is available in 6 languages", secure: "🔒 Secure connection", gdpr: "✅ GDPR compliant", update: "🕒 Updated: Jan. 2026" },
+  
   es: { rights: "Todos los derechos reservados.", adults: "El contenido de este sitio es solo para adultos.", lang: "Idioma", available: "Akoky está disponible en 6 idiomas", secure: "🔒 Conexión segura", gdpr: "✅ Cumple con el RGPD", update: "🕒 Actualización: ene. 2026" },
   de: { rights: "Alle Rechte vorbehalten.", adults: "Der Inhalt dieser Website ist nur für Erwachsene.", lang: "Sprache", available: "Akoky ist in 6 Sprachen verfügbar", secure: "🔒 Sichere Verbindung", gdpr: "✅ DSGVO-konform", update: "🕒 Aktualisierung: Jan. 2026" },
   it: { rights: "Tutti i diritti riservati.", adults: "Il contenuto di questo sito è riservato agli adulti.", lang: "Lingua", available: "Akoky è disponibile in 6 lingue", secure: "🔒 Connessione sicura", gdpr: "✅ Conforme al GDPR", update: "🕒 Aggiornamento: gen. 2026" },
@@ -170,15 +153,6 @@ const RESOURCE_LINKS: Record<Lang, FooterLink[]> = {
     { href: "https://legal.akoky.com/cookies", icon: "🍪", label: "Cookies" },
     { href: "https://legal.akoky.com/securite", icon: "🛡️", label: "Sécurité" },
     { href: "https://legal.akoky.com/charte", icon: "📜", label: "Charte AKOKY" },
-  ],
-  en: [
-    { href: "https://legal.akoky.com/mentions-legales", icon: "📄", label: "Legal notices" },
-    { href: "https://legal.akoky.com/conditions-utilisation", icon: "🤝", label: "Terms of use" },
-    { href: "https://legal.akoky.com/conditions-vente", icon: "🛒", label: "Terms of sale" },
-    { href: "https://legal.akoky.com/confidentialite", icon: "🔒", label: "Privacy policy" },
-    { href: "https://legal.akoky.com/cookies", icon: "🍪", label: "Cookies" },
-    { href: "https://legal.akoky.com/securite", icon: "🛡️", label: "Security" },
-    { href: "https://legal.akoky.com/charte", icon: "📜", label: "AKOKY Charter" },
   ],
   es: [
     { href: "https://legal.akoky.com/mentions-legales", icon: "📄", label: "Aviso legal" },
@@ -242,24 +216,6 @@ const SEO_LINKS: Record<Lang, { href: string; label: string }[]> = {
     { href: "https://sites-libertins-fiables.com", label: "Sites libertins fiables" },
     { href: "https://Kokyland.com", label: "Événements Kokyland" },
   ],
-  en: [
-    { href: "https://Akoky.com", label: "Akoky Europe – libertine platform" },
-    { href: "https://Akoky.es", label: "Akoky Spain – swinger platform" },
-    { href: "https://Akoky.it", label: "Akoky Italy – libertine platform" },
-    { href: "https://Akoky.de", label: "Akoky Germany – swinger platform" },
-    { href: "https://Akoky.pt", label: "Akoky Portugal – libertine platform" },
-    { href: "https://Akoky.be", label: "Libertines Belgium" },
-    { href: "https://Akoky.eu", label: "Libertine dating" },
-    { href: "https://akoky.click", label: "Swingers" },
-    { href: "https://Akoky.info", label: "Libertine sauna" },
-    { href: "https://Akoky.org", label: "BDSM & fetish" },
-    { href: "https://Akoky.space", label: "Libertine games" },
-    { href: "https://akokyclubinfo.website", label: "Club & sauna listings" },
-    { href: "https://comparatif-libertin.com", label: "Libertine comparison" },
-    { href: "https://meilleur-site-libertin.com", label: "Best libertine site" },
-    { href: "https://sites-libertins-fiables.com", label: "Reliable libertine sites" },
-    { href: "https://Kokyland.com", label: "Kokyland events" },
-  ],
   es: [
     { href: "https://Akoky.es", label: "Akoky España – plataforma libertina" },
     { href: "https://Akoky.com", label: "Akoky Europa – red social libertina" },
@@ -322,18 +278,21 @@ const SEO_LINKS: Record<Lang, { href: string; label: string }[]> = {
   ],
 };
 
-const SOCIAL_LINKS = [
+const CONTACT_HREFS: Record<Lang, string> = {
+  fr: "/contact", es: "/es/contacto", de: "/de/kontakt", it: "/it/contatto", pt: "/pt/contacto-akoky",
+};
+
+const getSocialLinks = (lang: Lang) => [
   { href: "https://www.facebook.com/groups/1732578494300828/", icon: "📘", label: "Facebook" },
   { href: "https://x.com/AcoquiVotre", icon: "✖️", label: "X/Twitter" },
   { href: "https://www.instagram.com/akoky_libertin", icon: "📷", label: "Instagram" },
   { href: "https://www.tiktok.com/@akoky69", icon: "🎵", label: "TikTok" },
   { href: "https://www.youtube.com/@AKOKY-COM-Libertin", icon: "📹", label: "YouTube" },
-  { href: "/contact", icon: "✉️", label: "Email" },
+  { href: CONTACT_HREFS[lang], icon: "✉️", label: "Email" },
 ];
 
 const LANGUAGES = [
   { code: "fr" as Lang, flag: "🇫🇷", label: "Français", href: "/" },
-  { code: "en" as Lang, flag: "🇬🇧", label: "English", href: "/en" },
   { code: "es" as Lang, flag: "🇪🇸", label: "Español", href: "/es" },
   { code: "de" as Lang, flag: "🇩🇪", label: "Deutsch", href: "/de" },
   { code: "it" as Lang, flag: "🇮🇹", label: "Italiano", href: "/it" },
@@ -342,7 +301,7 @@ const LANGUAGES = [
 
 const LEGAL_QUICK_LABELS: Record<Lang, { legal: string; terms: string; privacy: string; cookies: string; security: string; charter: string }> = {
   fr: { legal: "Mentions légales", terms: "Conditions", privacy: "Confidentialité", cookies: "Cookies", security: "Sécurité", charter: "Charte AKOKY" },
-  en: { legal: "Legal notices", terms: "Terms", privacy: "Privacy", cookies: "Cookies", security: "Security", charter: "AKOKY Charter" },
+  
   es: { legal: "Aviso legal", terms: "Condiciones", privacy: "Privacidad", cookies: "Cookies", security: "Seguridad", charter: "Carta AKOKY" },
   de: { legal: "Impressum", terms: "AGB", privacy: "Datenschutz", cookies: "Cookies", security: "Sicherheit", charter: "AKOKY Charta" },
   it: { legal: "Note legali", terms: "Condizioni", privacy: "Privacy", cookies: "Cookies", security: "Sicurezza", charter: "Carta AKOKY" },
@@ -351,7 +310,7 @@ const LEGAL_QUICK_LABELS: Record<Lang, { legal: string; terms: string; privacy: 
 
 const COOKIE_LABELS: Record<Lang, { manage: string; info: string }> = {
   fr: { manage: "⚙️ Gérer les cookies", info: "🍪 Informations cookies" },
-  en: { manage: "⚙️ Manage cookies", info: "🍪 Cookie information" },
+  
   es: { manage: "⚙️ Gestionar cookies", info: "🍪 Información de cookies" },
   de: { manage: "⚙️ Cookies verwalten", info: "🍪 Cookie-Informationen" },
   it: { manage: "⚙️ Gestisci cookie", info: "🍪 Informazioni cookie" },
@@ -360,7 +319,7 @@ const COOKIE_LABELS: Record<Lang, { manage: string; info: string }> = {
 
 const TRADEMARK_LABELS: Record<Lang, string> = {
   fr: "AKOKY est une marque déposée.",
-  en: "AKOKY is a registered trademark.",
+  
   es: "AKOKY es una marca registrada.",
   de: "AKOKY ist eine eingetragene Marke.",
   it: "AKOKY è un marchio registrato.",
@@ -455,7 +414,7 @@ const Footer = ({ lang = "fr" }: FooterProps) => {
           {/* Social */}
           <div className="flex justify-center my-8">
             <div className="flex gap-4 flex-wrap justify-center">
-              {SOCIAL_LINKS.map((s) => (
+              {getSocialLinks(lang).map((s) => (
                 <a
                   key={s.label}
                   href={s.href}
@@ -497,7 +456,7 @@ const Footer = ({ lang = "fr" }: FooterProps) => {
           <div className="text-center my-8">
             <h3 className="flex items-center justify-center gap-2 text-sm font-bold uppercase tracking-wider text-[#9ca3af] mb-6">
               <span>🌍</span>
-              {copy.lang} / Languages
+              {copy.lang}
             </h3>
             <div className="flex flex-wrap justify-center gap-4 mb-6">
               {LANGUAGES.map((l) => (
@@ -549,27 +508,32 @@ const Footer = ({ lang = "fr" }: FooterProps) => {
           <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent my-10" />
 
           {/* Legal Seal */}
-          <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 my-8 pt-10 border-t border-border">
-            <div className="flex-shrink-0">
-              <img
-                loading="lazy"
-                src="https://akoky.com/legal-akoky.webp"
-                alt="Tampon légal Akoky – Conformité & Protection Légale"
-                className="max-w-[180px] sm:max-w-[220px] md:max-w-[260px] lg:max-w-[300px] opacity-90"
-              />
-            </div>
-            <div className="max-w-[768px] text-center md:text-left text-[#9ca3af] text-sm leading-7">
-              <p className="mb-3">
-                Akoky est une plateforme opérée par <strong className="text-foreground">Liberty-Interactive-Ltd</strong>, société enregistrée sous le numéro <strong className="text-foreground">932607310</strong>. Liberty-Interactive-Ltd assure la gouvernance légale, la conformité internationale et la protection des données de l'écosystème Akoky, conformément au Data Protection Act (DPA 2018), au RGPD, ainsi qu'aux réglementations applicables aux plateformes pour adultes.
-              </p>
-              <p>
-                Informations institutionnelles :{" "}
-                <a href="https://liberty-interactive-ltd.online/" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary-dark transition-colors">
-                  liberty-interactive-ltd.online
-                </a>
-              </p>
-            </div>
-          </div>
+          {(() => {
+            const LEGAL_TEXTS: Record<Lang, { desc: string; info: string; alt: string }> = {
+              fr: { desc: "Akoky est une plateforme opérée par Liberty-Interactive-Ltd, société enregistrée sous le numéro 932607310. Liberty-Interactive-Ltd assure la gouvernance légale, la conformité internationale et la protection des données de l'écosystème Akoky, conformément au Data Protection Act (DPA 2018), au RGPD, ainsi qu'aux réglementations applicables aux plateformes pour adultes.", info: "Informations institutionnelles :", alt: "Tampon légal Akoky – Conformité & Protection Légale" },
+              es: { desc: "Akoky es una plataforma operada por Liberty-Interactive-Ltd, sociedad registrada con el número 932607310. Liberty-Interactive-Ltd garantiza la gobernanza legal, el cumplimiento internacional y la protección de datos del ecosistema Akoky, conforme al Data Protection Act (DPA 2018), al RGPD y a las regulaciones aplicables a plataformas para adultos.", info: "Información institucional:", alt: "Sello legal Akoky – Conformidad y protección legal" },
+              de: { desc: "Akoky ist eine Plattform, die von Liberty-Interactive-Ltd betrieben wird, einer unter der Nummer 932607310 registrierten Gesellschaft. Liberty-Interactive-Ltd gewährleistet die rechtliche Governance, die internationale Compliance und den Datenschutz des Akoky-Ökosystems gemäß dem Data Protection Act (DPA 2018), der DSGVO sowie den für Erwachsenenplattformen geltenden Vorschriften.", info: "Institutionelle Informationen:", alt: "Rechtliches Siegel Akoky – Konformität & Datenschutz" },
+              it: { desc: "Akoky è una piattaforma gestita da Liberty-Interactive-Ltd, società registrata con il numero 932607310. Liberty-Interactive-Ltd garantisce la governance legale, la conformità internazionale e la protezione dei dati dell'ecosistema Akoky, in conformità con il Data Protection Act (DPA 2018), il GDPR e le normative applicabili alle piattaforme per adulti.", info: "Informazioni istituzionali:", alt: "Sigillo legale Akoky – Conformità e protezione legale" },
+              pt: { desc: "Akoky é uma plataforma operada pela Liberty-Interactive-Ltd, sociedade registada com o número 932607310. A Liberty-Interactive-Ltd assegura a governança legal, a conformidade internacional e a proteção de dados do ecossistema Akoky, em conformidade com o Data Protection Act (DPA 2018), o RGPD e as regulamentações aplicáveis a plataformas para adultos.", info: "Informações institucionais:", alt: "Selo legal Akoky – Conformidade e proteção legal" },
+            };
+            const lt = LEGAL_TEXTS[lang];
+            return (
+              <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 my-8 pt-10 border-t border-border">
+                <div className="flex-shrink-0">
+                  <img loading="lazy" src="https://akoky.com/legal-akoky.webp" alt={lt.alt} className="max-w-[180px] sm:max-w-[220px] md:max-w-[260px] lg:max-w-[300px] opacity-90" />
+                </div>
+                <div className="max-w-[768px] text-center md:text-left text-[#9ca3af] text-sm leading-7">
+                  <p className="mb-3">{lt.desc}</p>
+                  <p>
+                    {lt.info}{" "}
+                    <a href="https://liberty-interactive-ltd.online/" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary-dark transition-colors">
+                      liberty-interactive-ltd.online
+                    </a>
+                  </p>
+                </div>
+              </div>
+            );
+          })()}
 
           {/* Trust Labels */}
           <div className="flex justify-center items-center flex-wrap gap-6 mt-8 pb-8">

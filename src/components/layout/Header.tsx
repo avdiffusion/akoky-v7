@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
-type Lang = "fr" | "en" | "es" | "de" | "it" | "pt";
+type Lang = "fr" | "es" | "de" | "it" | "pt";
 
 interface HeaderProps {
   lang?: Lang;
@@ -9,7 +9,6 @@ interface HeaderProps {
 
 const LANGUAGES = [
   { code: "fr" as Lang, flag: "🇫🇷", label: "Français" },
-  { code: "en" as Lang, flag: "🇬🇧", label: "English" },
   { code: "es" as Lang, flag: "🇪🇸", label: "Español" },
   { code: "de" as Lang, flag: "🇩🇪", label: "Deutsch" },
   { code: "it" as Lang, flag: "🇮🇹", label: "Italiano" },
@@ -25,13 +24,6 @@ const NAV_LINKS: Record<Lang, NavLink[]> = {
     { href: "/debuter-libertinage", label: "Débuter", icon: "📝" },
     { href: "/fr/blog", label: "Blog", icon: "🎭" },
     { href: "/faq", label: "FAQ", icon: "❓" },
-  ],
-  en: [
-    { href: "/en", label: "Home", icon: "🏠" },
-    { href: "/en/akoky", label: "About", icon: "ℹ️" },
-    { href: "/en/start-swinging", label: "Getting Started", icon: "📝" },
-    { href: "/en/blog", label: "Blog", icon: "🎭" },
-    { href: "/en/faq", label: "FAQ", icon: "❓" },
   ],
   es: [
     { href: "/es", label: "Inicio", icon: "🏠" },
@@ -65,7 +57,6 @@ const NAV_LINKS: Record<Lang, NavLink[]> = {
 
 const AVIS_LABELS: Record<Lang, { href: string; label: string }> = {
   fr: { href: "/fr/avis", label: "AVIS" },
-  en: { href: "/en/reviews", label: "REVIEWS" },
   es: { href: "/es/avis", label: "OPINIONES" },
   de: { href: "/de/bewertungen", label: "BEWERTUNGEN" },
   it: { href: "/it/recensioni", label: "RECENSIONI" },
@@ -74,7 +65,6 @@ const AVIS_LABELS: Record<Lang, { href: string; label: string }> = {
 
 const CONCOURS_LABELS: Record<Lang, { href: string; label: string }> = {
   fr: { href: "/concours", label: "Concours" },
-  en: { href: "/en/concours", label: "Contest" },
   es: { href: "/es/concurso", label: "Concurso" },
   de: { href: "/de/wettbewerb", label: "Wettbewerb" },
   it: { href: "/it/concorso", label: "Concorso" },
@@ -83,7 +73,6 @@ const CONCOURS_LABELS: Record<Lang, { href: string; label: string }> = {
 
 const LOGIN_LABELS: Record<Lang, string> = {
   fr: "Connexion",
-  en: "Login",
   es: "Iniciar sesión",
   de: "Anmelden",
   it: "Accedi",
@@ -92,7 +81,6 @@ const LOGIN_LABELS: Record<Lang, string> = {
 
 const LANG_LABEL: Record<Lang, string> = {
   fr: "Langue",
-  en: "Language",
   es: "Idioma",
   de: "Sprache",
   it: "Lingua",
@@ -101,7 +89,6 @@ const LANG_LABEL: Record<Lang, string> = {
 
 const CLOSE_LABEL: Record<Lang, string> = {
   fr: "Fermer le menu",
-  en: "Close menu",
   es: "Cerrar menú",
   de: "Menü schließen",
   it: "Chiudi menu",

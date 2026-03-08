@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-type Lang = "fr" | "en" | "es" | "de" | "it" | "pt";
+type Lang = "fr" | "es" | "de" | "it" | "pt";
 
 interface Slide {
   id: number;
@@ -26,7 +26,6 @@ interface SlidesData {
 
 const LABELS: Record<Lang, { badge: string; cta: string; aria: string; prev: string; next: string; goTo: string; schema: string }> = {
   fr: { badge: "Club partenaire", cta: "Découvrir le club →", aria: "Clubs partenaires en vedette", prev: "Slide précédent", next: "Slide suivant", goTo: "Aller au slide", schema: "Clubs libertins partenaires AKOKY" },
-  en: { badge: "Partner Club", cta: "Discover the club →", aria: "Featured partner clubs", prev: "Previous slide", next: "Next slide", goTo: "Go to slide", schema: "AKOKY partner libertine clubs" },
   es: { badge: "Club asociado", cta: "Descubrir el club →", aria: "Clubes asociados destacados", prev: "Slide anterior", next: "Slide siguiente", goTo: "Ir al slide", schema: "Clubes libertinos asociados AKOKY" },
   de: { badge: "Partnerclub", cta: "Club entdecken →", aria: "Ausgewählte Partnerclubs", prev: "Vorheriger Slide", next: "Nächster Slide", goTo: "Zum Slide gehen", schema: "AKOKY Partner-Libertinerclubs" },
   it: { badge: "Club partner", cta: "Scopri il club →", aria: "Club partner in evidenza", prev: "Slide precedente", next: "Slide successivo", goTo: "Vai allo slide", schema: "Club libertini partner AKOKY" },

@@ -149,7 +149,7 @@ const ConcoursAdmin = () => {
         ) : (
           <div className="space-y-3">
             {filtered.map((article) => {
-              const frTitle = article.translations.fr?.title || article.translations.en?.title || "Sans titre";
+              const frTitle = article.translations.fr?.title || article.translations.es?.title || "Sans titre";
               const status = getConcoursStatus(article);
               return (
                 <div key={article.id} className="flex items-center gap-4 p-4 bg-card border border-border rounded-xl hover:border-primary/30 transition-colors">
