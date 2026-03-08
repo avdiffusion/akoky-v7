@@ -300,6 +300,7 @@ import GuideGuidePt from "./pages/pt/GuideGuidePt";
 import GuideUltimeGuidePt from "./pages/pt/GuideUltimeGuidePt";
 import ConcoursGuidePt from "./pages/pt/ConcoursGuidePt";
 import ConcursoPt from "./pages/pt/ConcursoPt";
+import PrimeiroEncontroLibertinoPt from "./pages/pt/PrimeiroEncontroLibertinoPt";
 import ConcoursClesGuidePt from "./pages/pt/ConcoursClesGuidePt";
 import ContactGuidePt from "./pages/pt/ContactGuidePt";
 import CookiesGuidePt from "./pages/pt/CookiesGuidePt";
