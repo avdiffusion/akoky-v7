@@ -16,7 +16,7 @@ const Parrainage = () => {
       lang="fr"
       title="Programme de Parrainage AKOKY | Gagnez 6 Mois VIP+ Gratuits"
       description="Parrainez 10 amis et gagnez 6 mois d'abonnement VIP+ offerts sur AKOKY. Programme de parrainage simple, automatique et sans engagement."
-      canonical="https://akoky.com/parrainage"
+      canonical="https://akoky.com/fr/parrainage"
       heroTitle="Invitez. Gagnez. Profitez."
       heroSubtitle="Invitez 10 membres sur Akoky et recevez 6 mois d'abonnement VIP+ offerts."
       heroImage="/images/soiree-couple-libertin.webp"
