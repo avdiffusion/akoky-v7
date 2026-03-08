@@ -232,6 +232,7 @@ import ClubbingIt from "./pages/it/ClubbingIt";
 import RecensioniIt from "./pages/it/RecensioniIt";
 import ReferralIt from "./pages/it/ReferralIt";
 import LessicoLibertino from "./pages/it/LessicoLibertino";
+import ConcorsoIt from "./pages/it/ConcorsoIt";
 
 
 // ─── Pages IT livraison 6 ─────────────────────────────────────────────────────
@@ -594,6 +595,7 @@ const App = () => (
             <Route path="/it/recensioni" element={<RecensioniIt />} />
             <Route path="/it/referral" element={<ReferralIt />} />
             <Route path="/it/lessico-libertino" element={<LessicoLibertino />} />
+            <Route path="/it/concorso" element={<ConcorsoIt />} />
             
             {/* ── Pages IT livraison 6 ───────────────────────────────────── */}
             <Route path="/it/attualita-libertina-2026" element={<ActualitesIt />} />
