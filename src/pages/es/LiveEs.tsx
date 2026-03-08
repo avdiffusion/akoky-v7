@@ -1,6 +1,7 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
+import { Link } from "react-router-dom";
 
 const FAQ = [
   { question: "¿Cómo acceder a los lives AKOKY?", answer: "Los lives son accesibles para los miembros inscritos. Algunos contenidos están reservados a los miembros VIP. Crea tu cuenta gratuitamente en AKOKY." },
