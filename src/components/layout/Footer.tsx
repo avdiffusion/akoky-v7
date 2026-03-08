@@ -279,7 +279,7 @@ const SEO_LINKS: Record<Lang, { href: string; label: string }[]> = {
 };
 
 const CONTACT_HREFS: Record<Lang, string> = {
-  fr: "/contact", es: "/es/contacto", de: "/de/kontakt", it: "/it/contatto", pt: "/pt/contacto-akoky",
+  fr: "/fr/contact", es: "/es/contacto", de: "/de/kontakt", it: "/it/contatto", pt: "/pt/contacto-akoky",
 };
 
 const getSocialLinks = (lang: Lang) => [
