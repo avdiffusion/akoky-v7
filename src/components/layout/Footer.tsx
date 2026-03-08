@@ -534,13 +534,13 @@ const Footer = ({ lang = "fr" }: FooterProps) => {
           <div className="text-center my-8">
             <p className="text-sm text-[#9ca3af]">© {currentYear} AKOKY. {copy.rights}</p>
             <p className="text-xs text-muted-foreground mt-2">
-              AKOKY est une marque déposée. {copy.adults}
+              {TRADEMARK_LABELS[lang]} {copy.adults}
             </p>
             <div className="flex justify-center items-center gap-4 mt-4 flex-wrap">
-              <span className="text-sm text-[#9ca3af]">⚙️ Gérer les cookies</span>
+              <span className="text-sm text-[#9ca3af]">{COOKIE_LABELS[lang].manage}</span>
               <span className="text-border">•</span>
               <a href="https://legal.akoky.com/cookies" target="_blank" rel="noopener noreferrer" className="text-sm text-[#9ca3af] hover:text-primary transition-colors">
-                🍪 Informations cookies
+                {COOKIE_LABELS[lang].info}
               </a>
             </div>
           </div>
