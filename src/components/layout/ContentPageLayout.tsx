@@ -29,7 +29,7 @@ interface ContentPageLayoutProps {
 
 const HOME_LABELS: Record<Lang, string> = {
   fr: "Accueil",
-  en: "Home",
+  fr: "Accueil",
   es: "Inicio",
   de: "Startseite",
   it: "Home",
