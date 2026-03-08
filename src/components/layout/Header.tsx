@@ -132,7 +132,7 @@ const Header = ({ lang = "fr" }: HeaderProps) => {
       >
         <div className="container flex items-center justify-between h-[70px] gap-8">
           {/* Logo */}
-          <Link to={lang === "fr" ? "/" : `/${lang}`} className="flex-shrink-0 z-[1001]">
+          <Link to={`/${lang}`} className="flex-shrink-0 z-[1001]">
             <span className="text-2xl font-black tracking-wider text-gradient-gold">AKOKY</span>
           </Link>
 
