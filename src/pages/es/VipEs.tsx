@@ -1,6 +1,7 @@
 import ContentPageLayout from "@/components/layout/ContentPageLayout";
 import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
+import { Link } from "react-router-dom";
 
 const FAQ = [
   { question: "¿Cuáles son las ventajas del estatus VIP AKOKY?", answer: "Acceso a eventos exclusivos, multiperfiles certificados, álbumes privados, lives VIP, mensajería prioritaria y badge de confianza visible por la comunidad." },
