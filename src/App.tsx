@@ -154,6 +154,7 @@ import QuestionsGuideEs from "./pages/es/QuestionsGuideEs";
 import GuideGuideEs from "./pages/es/GuideGuideEs";
 import GuideUltimeGuideEs from "./pages/es/GuideUltimeGuideEs";
 import ConcoursGuideEs from "./pages/es/ConcoursGuideEs";
+import ConcursoEs from "./pages/es/ConcursoEs";
 import ConcoursClesGuideEs from "./pages/es/ConcoursClesGuideEs";
 import ContactGuideEs from "./pages/es/ContactGuideEs";
 import CookiesGuideEs from "./pages/es/CookiesGuideEs";
@@ -502,6 +503,7 @@ const App = () => (
             <Route path="/es/faq" element={<Navigate to="https://ask.akoky.com" replace />} />
             <Route path="/es/blog" element={<BlogListing lang="es" />} />
             <Route path="/es/blog/:slug" element={<BlogArticlePage lang="es" />} />
+            <Route path="/es/concurso" element={<ConcursoEs />} />
             <Route path="/es/concours" element={<ConcoursListing lang="es" />} />
             <Route path="/es/concours/:slug" element={<ConcoursArticlePage lang="es" />} />
 
