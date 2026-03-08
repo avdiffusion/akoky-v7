@@ -204,7 +204,7 @@ const AkokyPt = () => (
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   A nossa missão? Oferecer um espaço seguro, moderno e autêntico para casais e solteiros que desejam explorar o lifestyle libertino com elegância e respeito. Deseja falar do AKOKY nos seus média? Contacte a nossa equipa de imprensa para entrevistas, visuais HD ou qualquer informação complementar.
                 </p>
-                <Link to="/pt/imprensa" className="px-6 py-3 rounded-full bg-gradient-to-r from-primary to-primary-dark text-primary-foreground font-bold hover:scale-105 transition-all inline-flex items-center gap-2 self-start">
+                <Link to="/pt/sala-de-imprensa" className="px-6 py-3 rounded-full bg-gradient-to-r from-primary to-primary-dark text-primary-foreground font-bold hover:scale-105 transition-all inline-flex items-center gap-2 self-start">
                   Aceder ao dossier de imprensa →
                 </Link>
               </div>
