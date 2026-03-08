@@ -95,7 +95,7 @@ const PremierClubLibertin = () => (
                 <div className="bg-background border border-border rounded-xl p-4">
                   <p className="text-sm font-medium text-destructive mb-1">❌ Mythe</p>
                   <p className="text-muted-foreground text-sm mb-2">On sera sollicité constamment</p>
-                  <p className="text-sm font-medium text-green-500 mb-1">✅ Réalité</p>
+                  <p className="text-sm font-medium text-primary mb-1">✅ Réalité</p>
                   <p className="text-muted-foreground text-sm">Le respect des espaces personnels est la règle, on n'insiste jamais</p>
                 </div>
                 <div className="bg-background border border-border rounded-xl p-4">
