@@ -18,30 +18,60 @@ const FAQ = [
 
 const FR_CARDS = [
   {
-    img: "https://akoky.com/images/soirreeparis.webp",
+    img: "https://akoky.com/fr/images/soirreeparis.webp",
     alt: "Soirée libertine Akoky en club à Paris",
     title: "Soirées Libertines en Club Parisien",
-    text: "Paris accueille les événements libertins Akoky les plus exclusifs. Nos soirées dans les clubs parisiens réputés combinent raffinement et sensualité. Chaque soirée libertine à Paris est une expérience "
+    text: "Paris accueille les événements libertins Akoky les plus exclusifs. Nos soirées dans les clubs parisiens réputés combinent raffinement et sensualité. Chaque soirée libertine à Paris est une expérience unique dans l'un des lieux les plus emblématiques de la vie libertine européenne."
   },
   {
-    img: "https://akoky.com/images/apero-libertin.webp",
+    img: "https://akoky.com/fr/images/apero-libertin.webp",
     alt: "Apéro libertin Akoky afterwork à Paris",
     title: "Apéros Libertins Afterwork",
-    text: "Les apéros libertins Akoky sont l'occasion parfaite de découvrir la communauté dans une ambiance décontractée. Ces événements afterwork à Paris et dans les grandes villes françaises permettent de fair"
+    text: "Les apéros libertins Akoky sont l'occasion parfaite de découvrir la communauté dans une ambiance décontractée. Ces événements afterwork à Paris et dans les grandes villes françaises permettent de faire connaissance avant de participer aux soirées libertines plus intimistes."
   },
   {
-    img: "https://akoky.com/images/evenement-libertin-europe.webp",
+    img: "https://akoky.com/fr/images/evenement-libertin-europe.webp",
     alt: "Weekend libertin Akoky en château",
     title: "Weekends Libertins Exclusifs",
-    text: "Les weekends libertins Akoky dans des châteaux privatisés offrent une immersion totale dans l'art de vivre libertin. Ces événements d'exception en France réunissent les membres dans des cadres somptue"
+    text: "Les weekends libertins Akoky dans des châteaux privatisés offrent une immersion totale dans l'art de vivre libertin. Ces événements d'exception en France réunissent les membres dans des cadres somptueux pour des moments inoubliables loin du quotidien."
+  },
+];
+
+const BE_CARDS = [
+  {
+    img: "https://akoky.com/fr/images/soiree-belgique.webp",
+    alt: "Soirée libertine Akoky en club à Bruxelles",
+    title: "Soirées Club Bruxelles",
+    text: "Bruxelles, carrefour européen du libertinage, accueille nos soirées libertines les plus cosmopolites. Les clubs partenaires d'Akoky à Bruxelles proposent des espaces élégants où se mêlent traditions libertines belges et innovation Akoky."
+  },
+  {
+    img: "https://akoky.com/fr/images/apero-bruxelle.webp",
+    alt: "Apéro libertin Akoky en Belgique",
+    title: "Apéros Libertins Internationaux",
+    text: "Les apéros libertins Akoky en Belgique rassemblent une communauté multilingue et ouverte. Ces événements sont l'occasion de rencontrer des membres venus de France, des Pays-Bas, d'Allemagne et au-delà, dans l'esprit d'ouverture qui caractérise la Belgique."
+  },
+];
+
+const ES_CARDS = [
+  {
+    img: "https://akoky.com/fr/images/barcelone.webp",
+    alt: "Soirée libertine Akoky à Barcelone",
+    title: "Soirées Barcelone Exclusives",
+    text: "Barcelone accueille les événements libertins Akoky les plus créatifs et avant-gardistes. La capitale catalane, connue pour son ouverture d'esprit, offre un cadre exceptionnel pour nos soirées libertines où se mêlent art, culture et sensualité."
+  },
+  {
+    img: "https://akoky.com/fr/images/soiree-libertine-plage.webp",
+    alt: "Événement libertin Akoky en bord de mer",
+    title: "Événements Bord de Mer",
+    text: "Les soirées libertines Akoky en bord de mer espagnol célèbrent la beauté de la Méditerranée. Des apéros au coucher du soleil aux soirées sur des plages privatisées, ces événements offrent une expérience unique où nature et libertinage se rencontrent."
   },
 ];
 
 const BENEFITS = [
-  { icon: "✨", title: "Ambiance Premium", text: "Chaque événement libertin Akoky est organisé dans des lieux d'exception. Nos soirées libertines se déroulent dans les clubs les plus réputés et les espaces les plus élégants. L'amb" },
-  { icon: "🛡️", title: "Sécurité & Respect", text: "La sécurité de nos membres est notre priorité absolue. Nos événements libertins appliquent des protocoles stricts de respect et de consentement. Chaque soirée Akoky est encadrée pa" },
-  { icon: "🎭", title: "Liberté Assumée", text: "Les soirées libertines Akoky célèbrent la liberté d'être soi-même. Nos événements offrent un espace où chacun peut explorer ses désirs en toute sérénité. La philosophie Akoky encou" },
-  { icon: "🌍", title: "Communauté Internationale", text: "Rejoindre les événements libertins Akoky, c'est intégrer la plus grande communauté libertine d'Europe. Nos soirées réunissent des membres de France, Belgique, Espagne et bien au-de" },
+  { icon: "✨", title: "Ambiance Premium", text: "Chaque événement libertin Akoky est organisé dans des lieux d'exception. Nos soirées libertines se déroulent dans les clubs les plus réputés et les espaces les plus élégants. L'ambiance raffinée de nos événements garantit une expérience mémorable à chaque participation." },
+  { icon: "🛡️", title: "Sécurité & Respect", text: "La sécurité de nos membres est notre priorité absolue. Nos événements libertins appliquent des protocoles stricts de respect et de consentement. Chaque soirée Akoky est encadrée par une équipe attentive qui veille au bien-être de tous les participants." },
+  { icon: "🎭", title: "Liberté Assumée", text: "Les soirées libertines Akoky célèbrent la liberté d'être soi-même. Nos événements offrent un espace où chacun peut explorer ses désirs en toute sérénité. La philosophie Akoky encourage l'authenticité et le respect des choix de chacun dans une atmosphère bienveillante." },
+  { icon: "🌍", title: "Communauté Internationale", text: "Rejoindre les événements libertins Akoky, c'est intégrer la plus grande communauté libertine d'Europe. Nos soirées réunissent des membres de France, Belgique, Espagne et bien au-delà. L'esprit communautaire qui règne lors de nos apéros libertins et soirées exclusives crée des liens authentiques et durables." },
 ];
 
 const GALLERY = [
