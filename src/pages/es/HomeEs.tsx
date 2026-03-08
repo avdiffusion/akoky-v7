@@ -226,7 +226,7 @@ const HomeEs = () => {
                     </li>
                   ))}
                 </ul>
-                <Link to="/es/aplicacion" className="inline-block px-8 py-4 rounded-full font-bold btn-gradient-primary text-primary-foreground hover:-translate-y-0.5 transition-all hover:shadow-xl hover:shadow-primary/30">
+                <Link to="/es/app" className="inline-block px-8 py-4 rounded-full font-bold btn-gradient-primary text-primary-foreground hover:-translate-y-0.5 transition-all hover:shadow-xl hover:shadow-primary/30">
                   DESCARGAR LA APP
                 </Link>
               </div>
