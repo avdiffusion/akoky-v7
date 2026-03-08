@@ -19,11 +19,11 @@ interface NavLink { href: string; label: string; icon: string }
 
 const NAV_LINKS: Record<Lang, NavLink[]> = {
   fr: [
-    { href: "/", label: "Accueil", icon: "🏠" },
-    { href: "/akoky", label: "À propos", icon: "ℹ️" },
-    { href: "/debuter-libertinage", label: "Débuter", icon: "📝" },
+    { href: "/fr", label: "Accueil", icon: "🏠" },
+    { href: "/fr/akoky", label: "À propos", icon: "ℹ️" },
+    { href: "/fr/debuter-libertinage", label: "Débuter", icon: "📝" },
     { href: "/fr/blog", label: "Blog", icon: "🎭" },
-    { href: "/faq", label: "FAQ", icon: "❓" },
+    { href: "/fr/faq", label: "FAQ", icon: "❓" },
   ],
   es: [
     { href: "/es", label: "Inicio", icon: "🏠" },
