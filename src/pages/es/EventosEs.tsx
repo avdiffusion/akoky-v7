@@ -75,11 +75,11 @@ const BENEFITS = [
 ];
 
 const GALLERY = [
-  { img: "/images/apero-libertin.webp", label: "Apéro libertino Akoky en Madrid" },
+  { img: "/images/apero-libertin.webp", label: "Encuentro libertino Akoky en Madrid" },
   { img: "/images/soiree-libertine-plage.webp", label: "Velada libertina Akoky playa" },
   { img: "/images/cap-agde-libertin.webp", label: "Evento libertino Akoky Costa Brava" },
   { img: "/images/soiree-couple-libertin.webp", label: "Velada libertina parejas España" },
-  { img: "/images/apero-libertin-akoky.webp", label: "Apéro libertino Akoky en Barcelona" },
+  { img: "/images/apero-libertin-akoky.webp", label: "Encuentro libertino Akoky en Barcelona" },
   { img: "/images/jeux-libertin.webp", label: "Juegos libertinos exclusivos Akoky" },
   { img: "/images/soiree-club-libertin.webp", label: "Velada Akoky en club libertino España" },
   { img: "/images/evenement-libertin-espagne.webp", label: "Evento libertino Akoky en España" },
