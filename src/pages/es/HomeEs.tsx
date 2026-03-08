@@ -209,7 +209,7 @@ const HomeEs = () => {
               <div>
                 <h2 className="text-3xl md:text-4xl font-black mb-6">LA APLICACIÓN AKOKY</h2>
                 <p className="text-lg text-muted-foreground mb-8">
-                  Descarga <Link to="/es/aplicacion" className="text-primary">la aplicación AKOKY</Link>, disponible en iOS y Android.
+                  Descarga <Link to="/es/app" className="text-primary">la aplicación AKOKY</Link>, disponible en iOS y Android.
                   Disfruta de una mensajería segura, geolocalización de{" "}
                   <Link to="/es/clubbing" className="text-primary">clubes asociados</Link>, notificaciones para{" "}
                   <Link to="/es/eventos" className="text-primary">eventos privados</Link> y un espacio de intercambio reservado a miembros.
