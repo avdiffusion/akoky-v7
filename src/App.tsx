@@ -654,10 +654,14 @@ const App = () => (
             <Route path="/pt/faq" element={<Navigate to="https://ask.akoky.com" replace />} />
             <Route path="/pt/blog" element={<BlogListing lang="pt" />} />
             <Route path="/pt/blog/:slug" element={<BlogArticlePage lang="pt" />} />
+            <Route path="/pt/concours" element={<ConcoursListing lang="pt" />} />
+            <Route path="/pt/concours/:slug" element={<ConcoursArticlePage lang="pt" />} />
 
-            {/* ── EN Blog ─────────────────────────────────────────────── */}
+            {/* ── EN Blog + Concours ──────────────────────────────────── */}
             <Route path="/en/blog" element={<BlogListing lang="en" />} />
             <Route path="/en/blog/:slug" element={<BlogArticlePage lang="en" />} />
+            <Route path="/en/concours" element={<ConcoursListing lang="en" />} />
+            <Route path="/en/concours/:slug" element={<ConcoursArticlePage lang="en" />} />
 
             {/* ── Admin Blog ─────────────────────────────────────────────── */}
             <Route path="/admin/blog/login" element={<BlogLogin />} />
