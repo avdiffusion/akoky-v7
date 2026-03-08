@@ -354,6 +354,7 @@ const Application = () => {
         </div>
       </section>
     </ContentPageLayout>
+    </>
   );
 };
 

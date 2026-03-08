@@ -66,7 +66,17 @@ const comparatifs = [
 
 const Clubbing = () => {
   return (
+    <>
+    <MetaTags
+      title="Guide Complet des Clubs & Saunas Libertins en France | AKOKY"
+      description="Guide de référence sur les clubs libertins, saunas et établissements échangistes en France et en Europe."
+      canonical="https://akoky.com/fr/clubbing"
+      lang="fr"
+      ogImage="/images/club.webp"
+    />
+    <HreflangTags slug="clubbing" />
     <ContentPageLayout
+      lang="fr"
       title="Guide Complet des Clubs & Saunas Libertins en France | AKOKY"
       description="Guide de référence sur les clubs libertins, saunas et établissements échangistes en France et en Europe. Découvrez l'univers libertin, les différents types de lieux, et trouvez votre établissement idéal."
       canonical="https://akoky.com/fr/clubbing"
