@@ -100,13 +100,6 @@ const CTA_LINKS = [
 
 const EventsDe = () => (
   <>
-    <MetaTags
-      title="Libertine Events AKOKY 2026 – Abende & Afterworks in Deutschland"
-      description="Libertine Abende, Afterworks und exklusive Wochenenden mit AKOKY. Werde Teil der Premium-Community in Deutschland: Berlin, München, Hamburg und mehr."
-      canonical="https://akoky.com/de/events"
-      lang="de"
-      ogImage="/images/es-eventos-cover.webp"
-    />
     <HreflangTags slug="events" />
     <ContentPageLayout
       lang="de"
