@@ -22,7 +22,7 @@ const ActualitesLibertines = () => (
       canonical="https://akoky.com/fr/actualites-libertines"
       heroTitle="Actualités & Tendances Libertines"
       heroSubtitle="Toutes les nouveautés de la communauté libertine : événements, tendances et vie libertine."
-      heroImage="https://akoky.com/images/actualites-libertines-cover.webp"
+      heroImage="/images/actualites-libertines-cover.webp"
       breadcrumb={[{ label: "Actualités Libertines" }]}
       faq={FAQ}
     >
