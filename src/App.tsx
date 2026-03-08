@@ -598,7 +598,7 @@ const App = () => (
             <Route path="/it/concorso" element={<ConcorsoIt />} />
             
             {/* ── Pages IT livraison 6 ───────────────────────────────────── */}
-            <Route path="/it/attualita-libertina-2026" element={<ActualitesIt />} />
+            <Route path="/it/attualita-libertina-2026" element={<Navigate to="/it/attualita-libertine" replace />} />
             <Route path="/it/come-iniziare-libertinismo" element={<DebuterGuideIt />} />
             <Route path="/it/libertinismo-guida" element={<LibertinageGuideIt />} />
             <Route path="/it/saune-libertine-guida" element={<SaunasGuideIt />} />
