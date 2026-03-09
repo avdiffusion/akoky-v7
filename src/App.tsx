@@ -702,6 +702,7 @@ const App = () => (
             <Route path="/admin/blog" element={<BlogAdmin />} />
             <Route path="/admin/blog/new" element={<BlogEditor />} />
             <Route path="/admin/blog/edit/:id" element={<BlogEditor />} />
+            <Route path="/admin/blog/import" element={<BlogImporter />} />
 
             {/* ── Admin Concours ──────────────────────────────────────────── */}
             <Route path="/admin/concours/login" element={<ConcoursLogin />} />

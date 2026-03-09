@@ -146,6 +146,9 @@ const BlogAdmin = () => {
             <Badge variant="secondary" className="text-xs">{articles.length} articles</Badge>
           </div>
           <div className="flex items-center gap-2">
+            <Button variant="outline" size="sm" onClick={() => navigate("/admin/blog/import")} title="Import automatisé">
+              <Download className="h-4 w-4 mr-1" /> Importer WP
+            </Button>
             <Button variant="outline" size="sm" onClick={handleExport} title="Exporter JSON">
               <Download className="h-4 w-4 mr-1" /> Export
             </Button>
