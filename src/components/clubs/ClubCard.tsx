@@ -71,11 +71,11 @@ const ClubCard = ({ club, onOpenDetail }: ClubCardProps) => {
       itemType="https://schema.org/LocalBusiness"
     >
       {/* Carousel */}
-      <div className="aspect-[16/7] overflow-hidden relative">
+      <div className="aspect-[16/7] overflow-hidden relative img-zoom">
         <img
           src={images[imgIdx]}
           alt={`${club.name} — ${club.type} à ${club.city}`}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          className="w-full h-full object-cover transition-transform duration-700"
           loading="lazy"
           itemProp="image"
         />
