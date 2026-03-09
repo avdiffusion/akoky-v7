@@ -345,6 +345,46 @@ const Header = ({ lang = "fr" }: HeaderProps) => {
 
           {/* Mobile Actions */}
           <div className="flex flex-col gap-6 pt-4 border-t border-border">
+            {/* Theme Selector */}
+            <div>
+              <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-wide mb-3">🎨 Thème</h4>
+              <div className="grid grid-cols-3 gap-3">
+                <button
+                  onClick={() => setTheme("light")}
+                  className={`flex flex-col items-center justify-center gap-2 p-3 rounded-lg border text-sm font-semibold transition-all ${
+                    theme === "light"
+                      ? "bg-primary/10 border-primary text-primary"
+                      : "bg-card border-border hover:bg-primary/10 hover:border-primary"
+                  }`}
+                >
+                  <Sun className="w-6 h-6" />
+                  <span>Jour</span>
+                </button>
+                <button
+                  onClick={() => setTheme("dark")}
+                  className={`flex flex-col items-center justify-center gap-2 p-3 rounded-lg border text-sm font-semibold transition-all ${
+                    theme === "dark"
+                      ? "bg-primary/10 border-primary text-primary"
+                      : "bg-card border-border hover:bg-primary/10 hover:border-primary"
+                  }`}
+                >
+                  <Moon className="w-6 h-6" />
+                  <span>Nuit</span>
+                </button>
+                <button
+                  onClick={() => setTheme("system")}
+                  className={`flex flex-col items-center justify-center gap-2 p-3 rounded-lg border text-sm font-semibold transition-all ${
+                    theme === "system"
+                      ? "bg-primary/10 border-primary text-primary"
+                      : "bg-card border-border hover:bg-primary/10 hover:border-primary"
+                  }`}
+                >
+                  <Monitor className="w-6 h-6" />
+                  <span>Auto</span>
+                </button>
+              </div>
+            </div>
+
             {/* Language */}
             <div>
               <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-wide mb-3">🌍 {LANG_LABEL[lang]}</h4>
