@@ -128,14 +128,17 @@ const ContentPageLayout = ({
         {/* HERO */}
         {heroType === "cover" ? (
           <section className="relative min-h-[70vh] flex items-center justify-center pt-24 pb-16 px-4 overflow-hidden">
-            <div className="absolute inset-0 z-0">
+            <div 
+              className="absolute inset-0 z-0"
+              style={{
+                backgroundImage: `url(${heroImage})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                backgroundAttachment: "fixed",
+              }}
+            >
               <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background z-10" />
-              <img
-                src={heroImage}
-                alt={heroTitle}
-                className="w-full h-full object-cover"
-                loading="eager"
-              />
             </div>
             <div className="container relative z-20 max-w-4xl mx-auto text-center">
               {breadcrumb && (
