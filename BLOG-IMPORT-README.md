@@ -2,7 +2,7 @@
 
 ## Vue d'ensemble
 
-Ce système permet d'importer automatiquement tous les articles du blog WordPress d'AKOKY vers le système de blog interne. Il a été conçu pour fonctionner en arrière-plan, avec gestion de la progression, détection des doublons et gestion des erreurs.
+Ce système permet d'importer automatiquement tous les articles du blog WordPress d'AKOKY vers le système de blog interne. Il a été conçu pour fonctionner en arrière-plan, avec gestion de la progression, détection des doublons et téléchargement automatique des images.
 
 ## 📁 Architecture
 
@@ -14,23 +14,35 @@ Ce système permet d'importer automatiquement tous les articles du blog WordPres
    - Détection de doublons
    - Scraping des articles
    - Conversion au format interne
+   - Intégration avec le système d'images
 
-2. **`src/pages/admin/BlogImporter.tsx`** - Interface admin
+2. **`src/lib/blog-image-downloader.ts`** - Gestionnaire d'images
+   - Extraction des URLs d'images depuis le HTML
+   - Génération de noms de fichiers locaux
+   - Mapping WordPress → local
+   - Export de scripts bash pour téléchargement en batch
+
+3. **`src/pages/admin/BlogImporter.tsx`** - Interface admin
    - Visualisation de la progression
    - Contrôles pause/reprise/reset
    - Affichage des stats en temps réel
-   - Liste des erreurs
+   - Liste des images à télécharger
+   - Export du script de téléchargement
 
-3. **`public/data/blog-sitemap.xml`** - Sitemap WordPress
+4. **`public/data/blog-sitemap.xml`** - Sitemap WordPress
    - Contient toutes les URLs des articles FR
    - Parsé automatiquement au démarrage
+
+5. **`public/images/blog/`** - Dossier des images téléchargées
+   - Format : `{slug}-{filename}.{ext}`
+   - Référencé automatiquement dans les articles
 
 ## 🎯 Fonctionnalités
 
 ### ✅ Implémenté
 
 - ✅ Extraction automatique des URLs depuis le sitemap XML
-- ✅ Filtrage des URLs (uniquement `/fr/blog/`, sans pagination, sans doublons)
+- ✅ Filtrage des URLs (uniquement `/blog/`, sans pagination, sans doublons)
 - ✅ Détection des slugs existants pour éviter les doublons
 - ✅ Système de queue avec persistance localStorage
 - ✅ Tracking de progression en temps réel
@@ -40,13 +52,14 @@ Ce système permet d'importer automatiquement tous les articles du blog WordPres
 - ✅ Nettoyage du HTML WordPress
 - ✅ Génération automatique des meta tags SEO
 - ✅ Interface admin complète avec stats
+- ✅ **Extraction automatique des images**
+- ✅ **Mapping URLs WordPress → chemins locaux**
+- ✅ **Génération de script bash pour téléchargement en batch**
+- ✅ **Compteur d'images dans les stats**
 
 ### 🔄 À finaliser
 
 - 🔄 **Scraping réel des articles WordPress** (actuellement placeholder)
-- 🔄 Téléchargement des images et stockage local
-- 🔄 Extraction des métadonnées WordPress (date, auteur, etc.)
-- 🔄 Gestion avancée des catégories WordPress
 
 ## 🚀 Utilisation
 
@@ -57,7 +70,7 @@ Ce système permet d'importer automatiquement tous les articles du blog WordPres
 3. Cliquez sur **"Importer WP"** dans le header
 4. Vous êtes redirigé vers : `/admin/blog/import`
 
-### Processus
+### Processus complet
 
 1. **Démarrage** : Cliquez sur "Démarrer l'import"
    - Le système extrait toutes les URLs du sitemap
@@ -66,68 +79,58 @@ Ce système permet d'importer automatiquement tous les articles du blog WordPres
 
 2. **En cours** : L'import traite les URLs une par une
    - Progression affichée en temps réel
-   - Stats mises à jour en direct
+   - Stats mises à jour en direct (incluant les images)
    - Possibilité de mettre en pause à tout moment
 
-3. **Pause/Reprise** : Utilisez les boutons de contrôle
-   - La progression est sauvegardée dans localStorage
-   - Vous pouvez fermer l'onglet et reprendre plus tard
+3. **Images** : Après l'import
+   - La section "Images à télécharger" apparaît
+   - Cliquez sur "Télécharger Script" pour obtenir le script bash
+   - Exécutez le script dans votre terminal :
+   
+   ```bash
+   chmod +x download-blog-images.sh
+   ./download-blog-images.sh
+   ```
 
 4. **Terminé** : Une fois tous les articles traités
    - Récapitulatif complet des stats
    - Liste des erreurs éventuelles
    - Possibilité de reset pour un nouvel import
 
-## 🔧 Prochaines étapes (pour vous, développeur)
+## 📷 Système d'images
 
-### 1️⃣ Implémenter le scraping réel
+### Comment ça marche
 
-Dans `src/lib/blog-importer.ts`, remplacer la fonction `scrapeWordPressArticle`:
+1. **Extraction** : Le système scanne le HTML de chaque article pour trouver :
+   - Tags `<img src="...">`
+   - Attributs `srcset`
+   - Meta tags `og:image`
+   - Backgrounds CSS `url(...)`
 
-```typescript
-async function scrapeWordPressArticle(url: string): Promise<ScrapedContent | null> {
-  try {
-    // TODO: Utiliser lov-fetch-website ou une API WordPress REST
-    const response = await fetch(url);
-    const html = await response.text();
-    
-    // Parser le HTML pour extraire :
-    // - Titre : <h1 class="entry-title">
-    // - Contenu : <div class="entry-content">
-    // - Image : <meta property="og:image">
-    // - Date : <time class="entry-date">
-    
-    return {
-      title: extractedTitle,
-      content: extractedContent,
-      excerpt: extractedExcerpt,
-      imageUrl: extractedImageUrl,
-      publishedDate: extractedDate,
-    };
-  } catch (error) {
-    console.error("Scraping error:", error);
-    return null;
-  }
-}
+2. **Mapping** : Chaque URL WordPress est convertie en chemin local :
+   - `https://akoky.com/wp-content/uploads/2024/01/image.jpg`
+   - → `/images/blog/{article-slug}-image.jpg`
+
+3. **Remplacement** : Le contenu HTML est mis à jour avec les chemins locaux
+
+4. **Téléchargement** : Un script bash est généré pour télécharger toutes les images
+
+### Format des noms de fichiers
+
+```
+{slug}-{original-filename}.{extension}
 ```
 
-### 2️⃣ Améliorer la détection de catégorie
+Exemples :
+- `cap-d-agde-libertin-plage-naturiste.webp`
+- `wyylde-vs-akoky-comparatif.jpg`
 
-Affinez la fonction `detectCategory()` pour mieux classifier les articles selon leur contenu WordPress réel.
+### Nettoyage automatique
 
-### 3️⃣ Ajouter le téléchargement d'images
-
-```typescript
-async function downloadImage(url: string): Promise<string> {
-  // Télécharger l'image depuis WordPress
-  // Sauvegarder dans /public/images/blog/
-  // Retourner le chemin local
-}
-```
-
-### 4️⃣ Tester avec quelques articles
-
-Commencez par importer 5-10 articles pour valider le système avant de lancer l'import complet de ~200 articles.
+Le système supprime automatiquement :
+- Suffixes de taille WordPress (`-150x150`, `-300x200`, etc.)
+- Caractères spéciaux
+- Espaces (remplacés par des tirets)
 
 ## 📊 Données stockées
 
@@ -137,12 +140,35 @@ Commencez par importer 5-10 articles pour valider le système avant de lancer l'
 - `akoky_blog_import_queue` : URLs restantes à traiter
 - `akoky_blog_import_processed` : URLs déjà traitées (évite doublons)
 - `akoky_blog_articles` : Articles importés (via blog-store)
+- `akoky_blog_pending_images` : Images en attente de téléchargement
 
 ### Reset
 
 Pour recommencer depuis zéro :
 1. Cliquez sur "Reset" dans l'interface
 2. Ou supprimez manuellement les clés localStorage
+
+## 🔧 API JavaScript
+
+```typescript
+// Import d'articles
+import { startImportJob, runImportJob } from "@/lib/blog-importer";
+const job = await startImportJob();
+await runImportJob((progress) => console.log(progress));
+
+// Gestion des images
+import { 
+  getNotDownloadedImages, 
+  exportDownloadScript,
+  processContentImages 
+} from "@/lib/blog-image-downloader";
+
+const pending = getNotDownloadedImages();
+const script = exportDownloadScript();
+
+// Traitement manuel d'un contenu
+const { content, featuredImage, images } = processContentImages(htmlContent, "article-slug");
+```
 
 ## 🐛 Gestion des erreurs
 
@@ -159,9 +185,10 @@ Toutes les erreurs sont affichées dans l'interface avec l'URL concernée et le 
 1. **Testez d'abord avec 10 articles** pour valider le scraping
 2. **Lancez l'import complet la nuit** (peut prendre du temps)
 3. **Vérifiez les erreurs** après l'import pour corriger manuellement
-4. **Exportez le JSON** après l'import réussi (backup)
+4. **Téléchargez les images** avant de publier
+5. **Exportez le JSON** après l'import réussi (backup)
 
-## 🔗 Routes ajoutées
+## 🔗 Routes
 
 - `/admin/blog/import` - Interface d'import WordPress
 
@@ -172,8 +199,10 @@ Toutes les erreurs sont affichées dans l'interface avec l'URL concernée et le 
 - Nettoyage du HTML WordPress (suppression classes, inline styles, etc.)
 - Génération auto des meta title (max 60 chars) et meta description (max 160 chars)
 - Support multi-langue prêt (actuellement FR uniquement)
+- Images mappées vers `/images/blog/` pour hébergement local
 
 ---
 
 **Créé le** : 2026-03-09
-**Status** : ✅ Infrastructure complète, 🔄 Scraping à finaliser
+**Mis à jour** : 2026-03-09
+**Status** : ✅ Infrastructure complète avec images, 🔄 Scraping réel à finaliser
