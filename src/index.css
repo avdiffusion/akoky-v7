@@ -6,6 +6,56 @@
 
 @layer base {
   :root {
+    /* Light mode */
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 34 56% 63%;
+    --primary-foreground: 0 0% 0%;
+    --primary-dark: 25 48% 45%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 34 56% 63%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 34 56% 63%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 34 56% 63%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 34 56% 63%;
+
+    /* Custom Akoky tokens */
+    --gold: 43 72% 46%;
+    --bg-mid: 210 40% 96%;
+    --accent-red: 351 85% 42%;
+    --accent-fire: 22 82% 46%;
+  }
+
+  .dark {
+    /* Dark mode */
     --background: 240 20% 4%;
     --foreground: 270 10% 95%;
 
@@ -34,8 +84,6 @@
     --border: 240 14% 18%;
     --input: 240 14% 18%;
     --ring: 34 56% 63%;
-
-    --radius: 0.75rem;
 
     --sidebar-background: 240 20% 4%;
     --sidebar-foreground: 270 10% 95%;

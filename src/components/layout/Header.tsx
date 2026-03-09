@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { Sun, Moon, Monitor } from "lucide-react";
+import { useTheme } from "@/hooks/useTheme";
 
 type Lang = "fr" | "es" | "de" | "it" | "pt";
 
@@ -100,6 +102,7 @@ const Header = ({ lang = "fr" }: HeaderProps) => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
   const location = useLocation();
+  const { theme, setTheme } = useTheme();
 
   const navLinks = NAV_LINKS[lang];
   const avis = AVIS_LABELS[lang];
@@ -170,6 +173,43 @@ const Header = ({ lang = "fr" }: HeaderProps) => {
 
           {/* Desktop Actions */}
           <div className="hidden lg:flex items-center gap-3">
+            {/* Theme Selector */}
+            <div className="flex items-center gap-1 border border-border rounded-lg p-1">
+              <button
+                onClick={() => setTheme("light")}
+                className={`p-2 rounded-md transition-all ${
+                  theme === "light" 
+                    ? "bg-primary text-primary-foreground" 
+                    : "hover:bg-muted"
+                }`}
+                title="Mode jour"
+              >
+                <Sun className="w-4 h-4" />
+              </button>
+              <button
+                onClick={() => setTheme("dark")}
+                className={`p-2 rounded-md transition-all ${
+                  theme === "dark" 
+                    ? "bg-primary text-primary-foreground" 
+                    : "hover:bg-muted"
+                }`}
+                title="Mode nuit"
+              >
+                <Moon className="w-4 h-4" />
+              </button>
+              <button
+                onClick={() => setTheme("system")}
+                className={`p-2 rounded-md transition-all ${
+                  theme === "system" 
+                    ? "bg-primary text-primary-foreground" 
+                    : "hover:bg-muted"
+                }`}
+                title="Mode automatique"
+              >
+                <Monitor className="w-4 h-4" />
+              </button>
+            </div>
+
             {/* Language Selector */}
             <div className="relative">
               <button
@@ -305,6 +345,46 @@ const Header = ({ lang = "fr" }: HeaderProps) => {
 
           {/* Mobile Actions */}
           <div className="flex flex-col gap-6 pt-4 border-t border-border">
+            {/* Theme Selector */}
+            <div>
+              <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-wide mb-3">🎨 Thème</h4>
+              <div className="grid grid-cols-3 gap-3">
+                <button
+                  onClick={() => setTheme("light")}
+                  className={`flex flex-col items-center justify-center gap-2 p-3 rounded-lg border text-sm font-semibold transition-all ${
+                    theme === "light"
+                      ? "bg-primary/10 border-primary text-primary"
+                      : "bg-card border-border hover:bg-primary/10 hover:border-primary"
+                  }`}
+                >
+                  <Sun className="w-6 h-6" />
+                  <span>Jour</span>
+                </button>
+                <button
+                  onClick={() => setTheme("dark")}
+                  className={`flex flex-col items-center justify-center gap-2 p-3 rounded-lg border text-sm font-semibold transition-all ${
+                    theme === "dark"
+                      ? "bg-primary/10 border-primary text-primary"
+                      : "bg-card border-border hover:bg-primary/10 hover:border-primary"
+                  }`}
+                >
+                  <Moon className="w-6 h-6" />
+                  <span>Nuit</span>
+                </button>
+                <button
+                  onClick={() => setTheme("system")}
+                  className={`flex flex-col items-center justify-center gap-2 p-3 rounded-lg border text-sm font-semibold transition-all ${
+                    theme === "system"
+                      ? "bg-primary/10 border-primary text-primary"
+                      : "bg-card border-border hover:bg-primary/10 hover:border-primary"
+                  }`}
+                >
+                  <Monitor className="w-6 h-6" />
+                  <span>Auto</span>
+                </button>
+              </div>
+            </div>
+
             {/* Language */}
             <div>
               <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-wide mb-3">🌍 {LANG_LABEL[lang]}</h4>
