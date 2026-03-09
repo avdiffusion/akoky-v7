@@ -311,19 +311,32 @@ export async function processNextUrl(): Promise<boolean> {
       throw new Error("Failed to scrape content");
     }
     
-    // Create article
+    // Process images - extract URLs and create local mappings
+    const { content: processedContent, featuredImage, images } = processContentImages(
+      scraped.content,
+      slug
+    );
+    
+    // Add images to download queue
+    if (images.length > 0) {
+      addPendingImages(images);
+      job.imagesCount += images.length;
+      console.log(`📷 Found ${images.length} images to download`);
+    }
+    
+    // Create article with processed content and local image paths
     const category = detectCategory(url, scraped.content);
     const article: BlogArticle = {
       id: generateId(),
       category,
-      image: scraped.imageUrl || "/images/blog-cover-ak.webp",
+      image: featuredImage,
       translations: {
         fr: {
           slug,
           metaTitle: generateMetaTitle(scraped.title),
-          metaDescription: generateMetaDescription(scraped.content),
+          metaDescription: generateMetaDescription(processedContent),
           title: scraped.title,
-          content: cleanWordPressContent(scraped.content),
+          content: cleanWordPressContent(processedContent),
           published: true,
         },
       },
