@@ -181,41 +181,13 @@ const Header = ({ lang = "fr" }: HeaderProps) => {
           {/* Desktop Actions */}
           <div className="hidden lg:flex items-center gap-3">
             {/* Theme Selector */}
-            <div className="flex items-center gap-1 border border-border rounded-lg p-1">
-              <button
-                onClick={() => setTheme("light")}
-                className={`p-2 rounded-md transition-all ${
-                  theme === "light" 
-                    ? "bg-primary text-primary-foreground" 
-                    : "hover:bg-muted"
-                }`}
-                title="Mode jour"
-              >
-                <Sun className="w-4 h-4" />
-              </button>
-              <button
-                onClick={() => setTheme("dark")}
-                className={`p-2 rounded-md transition-all ${
-                  theme === "dark" 
-                    ? "bg-primary text-primary-foreground" 
-                    : "hover:bg-muted"
-                }`}
-                title="Mode nuit"
-              >
-                <Moon className="w-4 h-4" />
-              </button>
-              <button
-                onClick={() => setTheme("system")}
-                className={`p-2 rounded-md transition-all ${
-                  theme === "system" 
-                    ? "bg-primary text-primary-foreground" 
-                    : "hover:bg-muted"
-                }`}
-                title="Mode automatique"
-              >
-                <Monitor className="w-4 h-4" />
-              </button>
-            </div>
+            <button
+              onClick={cycleTheme}
+              className="p-2 border border-border rounded-lg hover:bg-primary/10 hover:border-primary transition-all"
+              title={`Theme: ${theme}`}
+            >
+              <ThemeIcon className="w-4 h-4" />
+            </button>
 
             {/* Language Selector */}
             <div className="relative">
