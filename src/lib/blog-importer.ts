@@ -29,10 +29,6 @@ export interface ImportJob {
   currentUrl?: string;
   errors: Array<{ url: string; error: string }>;
 }
-  completedAt?: string;
-  currentUrl?: string;
-  errors: Array<{ url: string; error: string }>;
-}
 
 export interface ScrapedContent {
   title: string;
