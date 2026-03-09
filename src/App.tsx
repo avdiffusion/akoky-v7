@@ -106,6 +106,7 @@ import BlogArticlePage from "./pages/blog/BlogArticle";
 import BlogAdmin from "./pages/admin/BlogAdmin";
 import BlogEditor from "./pages/admin/BlogEditor";
 import BlogLogin from "./pages/admin/BlogLogin";
+import BlogImporter from "./pages/admin/BlogImporter";
 
 // ─── Concours system ─────────────────────────────────────────────────────────
 import ConcoursListing from "./pages/concours/ConcoursListing";
