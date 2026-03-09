@@ -247,6 +247,7 @@ export async function startImportJob(): Promise<ImportJob> {
     successCount: 0,
     errorCount: 0,
     duplicateCount: 0,
+    imagesCount: 0,
     errors: [],
   };
   
