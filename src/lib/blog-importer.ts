@@ -56,12 +56,16 @@ export async function extractUrlsFromSitemap(): Promise<string[]> {
     const urlMatches = xmlText.matchAll(/<loc>(.*?)<\/loc>/g);
     const allUrls = Array.from(urlMatches).map(match => match[1]);
     
-    // Filter only FR blog articles
+    // Filter only blog articles (WordPress uses /blog/ path)
     const blogUrls = allUrls
-      .filter(url => url.includes("/fr/blog/"))
+      .filter(url => url.includes("/blog/"))
       .filter(url => !url.includes("?")) // Remove query strings
       .filter(url => !url.includes("/page/")) // Remove pagination
-      .filter(url => !url.endsWith("/fr/blog") && !url.endsWith("/fr/blog/")); // Remove list page
+      .filter(url => {
+        // Remove list pages
+        const path = new URL(url).pathname.replace(/\/$/, "");
+        return path !== "/blog" && path !== "/fr/blog";
+      });
     
     // Remove duplicates
     const uniqueUrls = Array.from(new Set(blogUrls));
@@ -78,7 +82,7 @@ export async function extractUrlsFromSitemap(): Promise<string[]> {
  * Extract slug from URL
  */
 function extractSlugFromUrl(url: string): string {
-  const match = url.match(/\/fr\/blog\/([^/?]+)/);
+  const match = url.match(/\/blog\/([^/?]+)/);
   return match ? match[1] : "";
 }
 
