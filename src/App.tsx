@@ -106,6 +106,7 @@ import BlogArticlePage from "./pages/blog/BlogArticle";
 import BlogAdmin from "./pages/admin/BlogAdmin";
 import BlogEditor from "./pages/admin/BlogEditor";
 import BlogLogin from "./pages/admin/BlogLogin";
+import BlogImporter from "./pages/admin/BlogImporter";
 
 // ─── Concours system ─────────────────────────────────────────────────────────
 import ConcoursListing from "./pages/concours/ConcoursListing";
@@ -701,6 +702,7 @@ const App = () => (
             <Route path="/admin/blog" element={<BlogAdmin />} />
             <Route path="/admin/blog/new" element={<BlogEditor />} />
             <Route path="/admin/blog/edit/:id" element={<BlogEditor />} />
+            <Route path="/admin/blog/import" element={<BlogImporter />} />
 
             {/* ── Admin Concours ──────────────────────────────────────────── */}
             <Route path="/admin/concours/login" element={<ConcoursLogin />} />
