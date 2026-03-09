@@ -102,6 +102,7 @@ const Header = ({ lang = "fr" }: HeaderProps) => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
   const location = useLocation();
+  const { theme, setTheme } = useTheme();
 
   const navLinks = NAV_LINKS[lang];
   const avis = AVIS_LABELS[lang];
