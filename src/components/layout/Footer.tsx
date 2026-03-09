@@ -361,7 +361,7 @@ const Footer = ({ lang = "fr" }: FooterProps) => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
             {/* Brand */}
             <div className="flex flex-col gap-6">
-              <span className="text-3xl font-black text-gradient-gold">AKOKY</span>
+              <img src="/images/logo-akoky.webp" alt="AKOKY" className="h-12 w-auto" />
               <p className="text-[#9ca3af] text-sm leading-relaxed">
                 {BRAND_DESC[lang]}
               </p>
