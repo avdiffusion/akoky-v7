@@ -109,6 +109,13 @@ const Header = ({ lang = "fr" }: HeaderProps) => {
   const concours = CONCOURS_LABELS[lang];
   const currentLang = LANGUAGES.find((l) => l.code === lang) || LANGUAGES[0];
 
+  const cycleTheme = () => {
+    const next = theme === "light" ? "dark" : theme === "dark" ? "system" : "light";
+    setTheme(next);
+  };
+
+  const ThemeIcon = theme === "light" ? Sun : theme === "dark" ? Moon : Monitor;
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -174,41 +181,13 @@ const Header = ({ lang = "fr" }: HeaderProps) => {
           {/* Desktop Actions */}
           <div className="hidden lg:flex items-center gap-3">
             {/* Theme Selector */}
-            <div className="flex items-center gap-1 border border-border rounded-lg p-1">
-              <button
-                onClick={() => setTheme("light")}
-                className={`p-2 rounded-md transition-all ${
-                  theme === "light" 
-                    ? "bg-primary text-primary-foreground" 
-                    : "hover:bg-muted"
-                }`}
-                title="Mode jour"
-              >
-                <Sun className="w-4 h-4" />
-              </button>
-              <button
-                onClick={() => setTheme("dark")}
-                className={`p-2 rounded-md transition-all ${
-                  theme === "dark" 
-                    ? "bg-primary text-primary-foreground" 
-                    : "hover:bg-muted"
-                }`}
-                title="Mode nuit"
-              >
-                <Moon className="w-4 h-4" />
-              </button>
-              <button
-                onClick={() => setTheme("system")}
-                className={`p-2 rounded-md transition-all ${
-                  theme === "system" 
-                    ? "bg-primary text-primary-foreground" 
-                    : "hover:bg-muted"
-                }`}
-                title="Mode automatique"
-              >
-                <Monitor className="w-4 h-4" />
-              </button>
-            </div>
+            <button
+              onClick={cycleTheme}
+              className="p-2 border border-border rounded-lg hover:bg-primary/10 hover:border-primary transition-all"
+              title={`Theme: ${theme}`}
+            >
+              <ThemeIcon className="w-4 h-4" />
+            </button>
 
             {/* Language Selector */}
             <div className="relative">
@@ -348,44 +327,18 @@ const Header = ({ lang = "fr" }: HeaderProps) => {
           {/* Mobile Actions */}
           <div className="flex flex-col gap-6 pt-4 border-t border-border">
             {/* Theme Selector */}
-            <div>
-              <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-wide mb-3">🎨 Thème</h4>
-              <div className="grid grid-cols-3 gap-3">
-                <button
-                  onClick={() => setTheme("light")}
-                  className={`flex flex-col items-center justify-center gap-2 p-3 rounded-lg border text-sm font-semibold transition-all ${
-                    theme === "light"
-                      ? "bg-primary/10 border-primary text-primary"
-                      : "bg-card border-border hover:bg-primary/10 hover:border-primary"
-                  }`}
-                >
-                  <Sun className="w-6 h-6" />
-                  <span>Jour</span>
-                </button>
-                <button
-                  onClick={() => setTheme("dark")}
-                  className={`flex flex-col items-center justify-center gap-2 p-3 rounded-lg border text-sm font-semibold transition-all ${
-                    theme === "dark"
-                      ? "bg-primary/10 border-primary text-primary"
-                      : "bg-card border-border hover:bg-primary/10 hover:border-primary"
-                  }`}
-                >
-                  <Moon className="w-6 h-6" />
-                  <span>Nuit</span>
-                </button>
-                <button
-                  onClick={() => setTheme("system")}
-                  className={`flex flex-col items-center justify-center gap-2 p-3 rounded-lg border text-sm font-semibold transition-all ${
-                    theme === "system"
-                      ? "bg-primary/10 border-primary text-primary"
-                      : "bg-card border-border hover:bg-primary/10 hover:border-primary"
-                  }`}
-                >
-                  <Monitor className="w-6 h-6" />
-                  <span>Auto</span>
-                </button>
+            <button
+              onClick={cycleTheme}
+              className="flex items-center justify-between p-4 rounded-xl border border-border hover:bg-primary/10 hover:border-primary transition-all"
+            >
+              <div className="flex items-center gap-3">
+                <ThemeIcon className="w-6 h-6" />
+                <span className="font-semibold">
+                  {theme === "light" ? "Mode Jour" : theme === "dark" ? "Mode Nuit" : "Mode Auto"}
+                </span>
               </div>
-            </div>
+              <span className="text-xs text-muted-foreground">Changer</span>
+            </button>
 
             {/* Language */}
             <div>
