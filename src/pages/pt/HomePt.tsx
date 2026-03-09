@@ -80,7 +80,7 @@ const schemas = [
     "@type": "Organization",
     name: "AKOKY",
     url: "https://akoky.com",
-    logo: "/images/logo-akoky.webp",
+    logo: "https://akoky.com/images/logo-akoky.webp",
     description: "Plataforma comunitária libertina premium na Europa",
     foundingDate: "2014",
     contactPoint: { "@type": "ContactPoint", contactType: "Customer Service", email: "contact@akoky.com", availableLanguage: ["fr", "en", "es", "de", "it", "pt"] },
