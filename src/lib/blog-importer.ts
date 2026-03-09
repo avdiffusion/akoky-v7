@@ -23,7 +23,12 @@ export interface ImportJob {
   successCount: number;
   errorCount: number;
   duplicateCount: number;
+  imagesCount: number; // NEW: Track images found
   startedAt?: string;
+  completedAt?: string;
+  currentUrl?: string;
+  errors: Array<{ url: string; error: string }>;
+}
   completedAt?: string;
   currentUrl?: string;
   errors: Array<{ url: string; error: string }>;
