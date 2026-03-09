@@ -14,7 +14,7 @@ function shouldEnableAutoReveal(pathname: string) {
 export default function AutoReveal() {
   const location = useLocation();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const enabled = shouldEnableAutoReveal(location.pathname);
     const root = document.documentElement;
 
