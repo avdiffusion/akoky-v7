@@ -143,7 +143,7 @@ const ClubCard = ({ club, onOpenDetail }: ClubCardProps) => {
             <p className="text-[10px] text-muted-foreground">🕐 {club.schedule.split(";")[0]}</p>
           )}
         </div>
-        <span className="inline-flex items-center gap-1 text-primary text-xs font-semibold mt-2 group-hover:gap-2 transition-all">
+        <span className="inline-flex items-center gap-1 text-primary text-xs font-semibold mt-2 group-hover:gap-2.5 group-hover:translate-x-1 transition-all duration-300">
           Voir la fiche détaillée →
         </span>
       </div>
