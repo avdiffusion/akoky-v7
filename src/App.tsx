@@ -311,12 +311,13 @@ const RedirectToFrPath = () => {
 
 const App = () => (
   <HelmetProvider>
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <Routes>
+    <ThemeProvider>
+      <QueryClientProvider client={queryClient}>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <Routes>
 
             {/* ── RACINE ─────────────────────────────────────────────────── */}
             <Route path="/" element={<Navigate to="/fr" replace />} />
