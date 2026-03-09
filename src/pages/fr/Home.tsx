@@ -6,6 +6,7 @@ import MetaTags from "@/components/seo/MetaTags";
 import HreflangTags from "@/components/seo/HreflangTags";
 import SchemaOrg from "@/components/seo/SchemaOrg";
 import LatestBlogSection from "@/components/blog/LatestBlogSection";
+import { Reveal } from "@/hooks/useScrollReveal";
 
 const EXPLORE_CARDS = [
   { href: "/fr/clubbing", icon: "🏛️", title: "Clubs partenaires", desc: "Découvrez des établissements sélectionnés en France et en Europe, avec fiches détaillées, avis vérifiés et informations pratiques.", cta: "Voir les clubs →" },
@@ -139,67 +140,82 @@ const Home = () => {
           <div className="absolute left-0 right-0 bottom-0 h-[180px] z-[2] pointer-events-none" style={{ background: "linear-gradient(to bottom, transparent 0%, hsl(240 20% 4% / 0.4) 45%, hsl(240 20% 4% / 0.8) 75%, hsl(240 20% 4%) 100%)" }} />
 
           <div className="relative z-[3] max-w-[900px] px-4">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-semibold mb-6">
-              <span>✨</span><span>Premium Community</span>
-            </div>
-            <h1 className="text-gradient-gold text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-wider leading-tight mb-4">
-              Rencontres adultes &amp; expériences exclusives en France
-            </h1>
-            <p className="text-lg md:text-xl font-normal text-white/95 mb-8 max-w-[800px] mx-auto">
-              Une communauté premium pour rencontrer des personnes ouvertes d'esprit, découvrir des clubs et participer à des événements adultes partout en France.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a href="https://app.akoky.com/register" className="w-full sm:w-auto px-8 py-4 rounded-full font-bold btn-gradient-primary text-primary-foreground hover:-translate-y-0.5 transition-all hover:shadow-xl hover:shadow-primary/30">
-                REJOINDRE LA COMMUNAUTÉ
-              </a>
-              <Link to="/fr/clubs" className="w-full sm:w-auto px-8 py-4 rounded-full font-bold bg-secondary text-foreground border border-border hover:bg-secondary/80 hover:-translate-y-0.5 transition-all">
-                EXPLORER LES CLUBS
-              </Link>
-            </div>
+            <Reveal animation="fade-down" duration={800}>
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-semibold mb-6 backdrop-blur-sm">
+                <span>✨</span><span>Premium Community</span>
+              </div>
+            </Reveal>
+            <Reveal animation="blur-in" duration={1000} delay={200}>
+              <h1 className="text-gradient-animated text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-wider leading-tight mb-4">
+                Rencontres adultes &amp; expériences exclusives en France
+              </h1>
+            </Reveal>
+            <Reveal animation="fade-up" duration={800} delay={500}>
+              <p className="text-lg md:text-xl font-normal text-white/95 mb-8 max-w-[800px] mx-auto">
+                Une communauté premium pour rencontrer des personnes ouvertes d'esprit, découvrir des clubs et participer à des événements adultes partout en France.
+              </p>
+            </Reveal>
+            <Reveal animation="fade-up" duration={800} delay={700}>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://app.akoky.com/register" className="group w-full sm:w-auto px-8 py-4 rounded-full font-bold btn-gradient-primary text-primary-foreground hover:-translate-y-1 transition-all duration-500 hover:shadow-xl hover:shadow-primary/30 relative overflow-hidden">
+                  <span className="relative z-10">REJOINDRE LA COMMUNAUTÉ</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary-dark to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                </a>
+                <Link to="/fr/clubs" className="w-full sm:w-auto px-8 py-4 rounded-full font-bold bg-secondary/80 backdrop-blur-sm text-foreground border border-border hover:bg-secondary hover:border-primary/30 hover:-translate-y-1 transition-all duration-500">
+                  EXPLORER LES CLUBS
+                </Link>
+              </div>
+            </Reveal>
           </div>
         </section>
 
         {/* ═══════════ SEO INTRO ═══════════ */}
         <section className="py-20 bg-mid">
           <div className="container max-w-[900px]">
-            <div className="text-center mb-8">
-              <h2 className="text-2xl md:text-3xl font-bold mb-6">La Plateforme Libertine de Référence en France</h2>
-              <p className="text-base md:text-lg leading-8 text-muted-foreground">
-                AKOKY s'impose comme <strong className="text-foreground">le réseau social libertin premium</strong> avec plus de 1.5 million de membres actifs.
-                Contrairement aux plateformes généralistes, AKOKY offre une expérience complète dédiée au{" "}
-                <Link to="/fr/libertinage" className="text-primary hover:underline">libertinage moderne</Link> :
-                annuaire des <Link to="/fr/clubs" className="text-primary hover:underline">meilleurs clubs libertins</Link> d'Europe,{" "}
-                <Link to="/fr/evenements" className="text-primary hover:underline">événements exclusifs</Link> mensuels,{" "}
-                <Link to="/fr/live" className="text-primary hover:underline">lives libertins</Link> en direct et{" "}
-                <Link to="/fr/application" className="text-primary hover:underline">application mobile</Link> avec géolocalisation.
-              </p>
-              <p className="text-base md:text-lg leading-8 text-muted-foreground mt-4">
-                Que vous soyez <Link to="/fr/debuter-libertinage" className="text-primary hover:underline">débutant dans le libertinage</Link>{" "}
-                ou membre confirmé, AKOKY vous accompagne avec <Link to="/fr/faq" className="text-primary hover:underline">des ressources complètes</Link>,
-                un <Link to="/fr/lexique" className="text-primary hover:underline">lexique libertin</Link> détaillé et une{" "}
-                <Link to="/fr/vision" className="text-primary hover:underline">charte éthique</Link> qui place le consentement au cœur de chaque interaction.
-              </p>
-            </div>
+            <Reveal animation="fade-up">
+              <div className="text-center mb-8">
+                <h2 className="text-2xl md:text-3xl font-bold mb-6">La Plateforme Libertine de Référence en France</h2>
+                <p className="text-base md:text-lg leading-8 text-muted-foreground">
+                  AKOKY s'impose comme <strong className="text-foreground">le réseau social libertin premium</strong> avec plus de 1.5 million de membres actifs.
+                  Contrairement aux plateformes généralistes, AKOKY offre une expérience complète dédiée au{" "}
+                  <Link to="/fr/libertinage" className="text-primary hover:underline">libertinage moderne</Link> :
+                  annuaire des <Link to="/fr/clubs" className="text-primary hover:underline">meilleurs clubs libertins</Link> d'Europe,{" "}
+                  <Link to="/fr/evenements" className="text-primary hover:underline">événements exclusifs</Link> mensuels,{" "}
+                  <Link to="/fr/live" className="text-primary hover:underline">lives libertins</Link> en direct et{" "}
+                  <Link to="/fr/application" className="text-primary hover:underline">application mobile</Link> avec géolocalisation.
+                </p>
+                <p className="text-base md:text-lg leading-8 text-muted-foreground mt-4">
+                  Que vous soyez <Link to="/fr/debuter-libertinage" className="text-primary hover:underline">débutant dans le libertinage</Link>{" "}
+                  ou membre confirmé, AKOKY vous accompagne avec <Link to="/fr/faq" className="text-primary hover:underline">des ressources complètes</Link>,
+                  un <Link to="/fr/lexique" className="text-primary hover:underline">lexique libertin</Link> détaillé et une{" "}
+                  <Link to="/fr/vision" className="text-primary hover:underline">charte éthique</Link> qui place le consentement au cœur de chaque interaction.
+                </p>
+              </div>
+            </Reveal>
           </div>
         </section>
 
         {/* ═══════════ EXPLORER L'UNIVERS ═══════════ */}
         <section className="py-20">
           <div className="container">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-black mb-4">Explorer l'univers AKOKY</h2>
-              <p className="text-muted-foreground max-w-[700px] mx-auto">
-                Une plateforme communautaire adulte complète pour découvrir, rencontrer et vivre des expériences exclusives, à votre rythme.
-              </p>
-            </div>
+            <Reveal animation="fade-up">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-black mb-4">Explorer l'univers AKOKY</h2>
+                <p className="text-muted-foreground max-w-[700px] mx-auto">
+                  Une plateforme communautaire adulte complète pour découvrir, rencontrer et vivre des expériences exclusives, à votre rythme.
+                </p>
+              </div>
+            </Reveal>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {EXPLORE_CARDS.map((card) => (
-                <Link key={card.href} to={card.href} className="group bg-card border border-border rounded-2xl p-8 card-hover-glow relative">
-                  <div className="w-12 h-12 rounded-full icon-box-primary flex items-center justify-center text-xl mb-5">{card.icon}</div>
-                  <h3 className="text-lg font-bold mb-3">{card.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{card.desc}</p>
-                  <span className="text-primary font-bold text-sm mt-3 inline-block">{card.cta}</span>
-                </Link>
+              {EXPLORE_CARDS.map((card, i) => (
+                <Reveal key={card.href} animation="fade-up" delay={i * 150}>
+                  <Link to={card.href} className="group bg-card border border-border rounded-2xl p-8 card-hover-glow glow-border relative block h-full">
+                    <div className="w-12 h-12 rounded-full icon-box-primary flex items-center justify-center text-xl mb-5 group-hover:animate-float transition-all">{card.icon}</div>
+                    <h3 className="text-lg font-bold mb-3">{card.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{card.desc}</p>
+                    <span className="text-primary font-bold text-sm mt-3 inline-block group-hover:translate-x-1 transition-transform duration-300">{card.cta}</span>
+                  </Link>
+                </Reveal>
               ))}
             </div>
           </div>
@@ -210,64 +226,85 @@ const Home = () => {
           <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-black mb-6">L'APPLICATION AKOKY</h2>
-                <p className="text-lg text-muted-foreground mb-8">
-                  Téléchargez <Link to="/fr/application" className="text-primary">l'application AKOKY</Link>, disponible sur iOS et Android.
-                  Profitez d'une messagerie sécurisée, de la géolocalisation des{" "}
-                  <Link to="/fr/clubs" className="text-primary">clubs partenaires</Link>, de notifications pour les{" "}
-                  <Link to="/fr/evenements" className="text-primary">événements privés</Link> et d'un espace d'échange réservé aux membres.
-                </p>
+                <Reveal animation="fade-right">
+                  <h2 className="text-3xl md:text-4xl font-black mb-6">L'APPLICATION AKOKY</h2>
+                </Reveal>
+                <Reveal animation="fade-right" delay={100}>
+                  <p className="text-lg text-muted-foreground mb-8">
+                    Téléchargez <Link to="/fr/application" className="text-primary">l'application AKOKY</Link>, disponible sur iOS et Android.
+                    Profitez d'une messagerie sécurisée, de la géolocalisation des{" "}
+                    <Link to="/fr/clubs" className="text-primary">clubs partenaires</Link>, de notifications pour les{" "}
+                    <Link to="/fr/evenements" className="text-primary">événements privés</Link> et d'un espace d'échange réservé aux membres.
+                  </p>
+                </Reveal>
                 <ul className="flex flex-col gap-6 mb-8">
                   {[
                     { icon: "💬", label: "Messagerie instantanée sécurisée" },
                     { icon: "📍", label: "Géolocalisation des clubs" },
                     { icon: "🔔", label: "Notifications en temps réel" },
-                  ].map((item) => (
-                    <li key={item.label} className="flex items-center gap-4">
-                      <div className="w-12 h-12 rounded-full icon-box-primary flex items-center justify-center text-xl flex-shrink-0">{item.icon}</div>
-                      <span className="font-semibold">{item.label}</span>
-                    </li>
+                  ].map((item, i) => (
+                    <Reveal key={item.label} animation="fade-right" delay={200 + i * 100}>
+                      <li className="flex items-center gap-4 group">
+                        <div className="w-12 h-12 rounded-full icon-box-primary flex items-center justify-center text-xl flex-shrink-0 group-hover:scale-110 transition-transform duration-300">{item.icon}</div>
+                        <span className="font-semibold">{item.label}</span>
+                      </li>
+                    </Reveal>
                   ))}
                 </ul>
-                <Link to="/fr/application" className="inline-block px-8 py-4 rounded-full font-bold btn-gradient-primary text-primary-foreground hover:-translate-y-0.5 transition-all hover:shadow-xl hover:shadow-primary/30">
-                  TÉLÉCHARGER L'APP
-                </Link>
+                <Reveal animation="fade-up" delay={500}>
+                  <Link to="/fr/application" className="inline-block px-8 py-4 rounded-full font-bold btn-gradient-primary text-primary-foreground hover:-translate-y-1 transition-all duration-500 hover:shadow-xl hover:shadow-primary/30">
+                    TÉLÉCHARGER L'APP
+                  </Link>
+                </Reveal>
               </div>
-              <div className="text-center">
-                <img loading="lazy" src="/images/tel.webp" alt="App Akoky" width="380" height="760" className="w-[380px] mx-auto rounded-3xl shadow-2xl" />
-              </div>
+              <Reveal animation="fade-left" delay={200}>
+                <div className="text-center">
+                  <img loading="lazy" src="/images/tel.webp" alt="App Akoky" width="380" height="760" className="w-[380px] mx-auto rounded-3xl shadow-2xl hover:shadow-primary/10 hover:-translate-y-2 transition-all duration-700 float-slow" />
+                </div>
+              </Reveal>
             </div>
           </div>
         </section>
 
         {/* ═══════════ LIVE / ÉCHANGES CONTINUS ═══════════ */}
-        <section className="py-20" style={{ background: "linear-gradient(rgb(15, 23, 42), rgb(0, 0, 0))", color: "white" }}>
-          <div className="container">
+        <section className="py-20 relative overflow-hidden" style={{ background: "linear-gradient(rgb(15, 23, 42), rgb(0, 0, 0))", color: "white" }}>
+          <div className="absolute inset-0 gold-particles opacity-30" />
+          <div className="container relative z-10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div>
-                <div className="bg-card border border-border rounded-2xl overflow-hidden">
-                  <div className="relative">
-                    <div className="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full z-10 animate-pulse">LIVE</div>
-                    <img loading="lazy" src="/images/live-akoky.webp" alt="Live Preview" width="600" height="400" className="w-full aspect-video object-cover" />
-                  </div>
-                  <div className="p-4 flex justify-between items-center">
-                    <div>
-                      <h4 className="font-bold">Soirée Exclusive Paris</h4>
-                      <p className="text-xs text-muted-foreground">En direct du Club Le Glamour</p>
+              <Reveal animation="scale-up">
+                <div>
+                  <div className="bg-card border border-border rounded-2xl overflow-hidden glow-border">
+                    <div className="relative img-zoom">
+                      <div className="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full z-10 animate-pulse">LIVE</div>
+                      <img loading="lazy" src="/images/live-akoky.webp" alt="Live Preview" width="600" height="400" className="w-full aspect-video object-cover" />
                     </div>
-                    <div className="text-green-400 font-bold">+420 👀</div>
+                    <div className="p-4 flex justify-between items-center">
+                      <div>
+                        <h4 className="font-bold">Soirée Exclusive Paris</h4>
+                        <p className="text-xs text-muted-foreground">En direct du Club Le Glamour</p>
+                      </div>
+                      <div className="text-green-400 font-bold">+420 👀</div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Reveal>
               <div>
-                <div className="inline-block px-4 py-1 bg-primary/20 text-primary rounded-full mb-4 font-semibold text-xs">ACCÈS MEMBRES CONTINU</div>
-                <h2 className="text-3xl md:text-4xl font-black mb-6">Échanges continus entre membres</h2>
-                <p className="text-lg opacity-80 mb-8">
-                  Un espace accessible à tout moment pour échanger librement, à votre rythme, au sein d'une communauté réservée aux membres Akoky.
-                </p>
-                <Link to="/fr/live" className="inline-block px-8 py-4 rounded-full font-bold btn-gradient-primary text-primary-foreground hover:-translate-y-0.5 transition-all hover:shadow-xl hover:shadow-primary/30">
-                  Découvrir l'espace d'échange
-                </Link>
+                <Reveal animation="fade-left" delay={100}>
+                  <div className="inline-block px-4 py-1 bg-primary/20 text-primary rounded-full mb-4 font-semibold text-xs">ACCÈS MEMBRES CONTINU</div>
+                </Reveal>
+                <Reveal animation="fade-left" delay={200}>
+                  <h2 className="text-3xl md:text-4xl font-black mb-6">Échanges continus entre membres</h2>
+                </Reveal>
+                <Reveal animation="fade-left" delay={300}>
+                  <p className="text-lg opacity-80 mb-8">
+                    Un espace accessible à tout moment pour échanger librement, à votre rythme, au sein d'une communauté réservée aux membres Akoky.
+                  </p>
+                </Reveal>
+                <Reveal animation="fade-left" delay={400}>
+                  <Link to="/fr/live" className="inline-block px-8 py-4 rounded-full font-bold btn-gradient-primary text-primary-foreground hover:-translate-y-1 transition-all duration-500 hover:shadow-xl hover:shadow-primary/30">
+                    Découvrir l'espace d'échange
+                  </Link>
+                </Reveal>
               </div>
             </div>
           </div>
@@ -276,64 +313,78 @@ const Home = () => {
         {/* ═══════════ NOTRE VISION ═══════════ */}
         <section className="py-20">
           <div className="container">
-            <div className="text-center mb-12">
-              <span className="inline-block mb-4 font-bold text-primary tracking-widest text-sm">NOTRE VISION</span>
-              <h2 className="text-3xl md:text-4xl font-black">AKOKY, UNE COMMUNAUTÉ ADULTE À PART ENTIÈRE</h2>
-              <p className="max-w-3xl mx-auto text-muted-foreground mt-6">
-                Akoky est né d'une conviction simple : repenser les rencontres entre adultes à travers une plateforme moderne, sécurisée, humaine et respectueuse, affranchie des clichés et des dérives d'hier.
-              </p>
-            </div>
+            <Reveal animation="fade-up">
+              <div className="text-center mb-12">
+                <span className="inline-block mb-4 font-bold text-primary tracking-widest text-sm">NOTRE VISION</span>
+                <h2 className="text-3xl md:text-4xl font-black">AKOKY, UNE COMMUNAUTÉ ADULTE À PART ENTIÈRE</h2>
+                <p className="max-w-3xl mx-auto text-muted-foreground mt-6">
+                  Akoky est né d'une conviction simple : repenser les rencontres entre adultes à travers une plateforme moderne, sécurisée, humaine et respectueuse, affranchie des clichés et des dérives d'hier.
+                </p>
+              </div>
+            </Reveal>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-2xl font-extrabold mb-4">🌱 Une évolution naturelle du libertinage</h3>
-                <p className="text-muted-foreground leading-relaxed mb-4">
-                  Issu de l'expérience AcoquinementVotre, Akoky s'inscrit dans la continuité d'années d'observation du milieu libertin en France, Belgique et Europe.
-                </p>
-                <p className="text-muted-foreground leading-relaxed">
-                  Là où de nombreuses plateformes se sont figées, Akoky propose une nouvelle approche : plus fluide, plus moderne, et centrée sur l'expérience réelle des membres.
+              <Reveal animation="fade-right" delay={100}>
+                <div>
+                  <h3 className="text-2xl font-extrabold mb-4">🌱 Une évolution naturelle du libertinage</h3>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    Issu de l'expérience AcoquinementVotre, Akoky s'inscrit dans la continuité d'années d'observation du milieu libertin en France, Belgique et Europe.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Là où de nombreuses plateformes se sont figées, Akoky propose une nouvelle approche : plus fluide, plus moderne, et centrée sur l'expérience réelle des membres.
+                  </p>
+                </div>
+              </Reveal>
+              <Reveal animation="fade-left" delay={200}>
+                <div>
+                  <h3 className="text-2xl font-extrabold mb-4">🔗 Une plateforme pensée pour durer</h3>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    Akoky n'est pas un simple service de rencontres. C'est une architecture complète qui réunit échanges entre membres, événements privés, contenus éditoriaux et applications dédiées, au sein d'un même écosystème.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Chaque fonctionnalité est conçue pour évoluer avec la communauté, sans dépendre des effets de mode ni d'algorithmes instables.
+                  </p>
+                </div>
+              </Reveal>
+            </div>
+            <Reveal animation="fade-up" delay={300}>
+              <div className="text-center mt-16">
+                <p className="text-xl font-semibold max-w-[900px] mx-auto">
+                  Akoky, c'est une vision long terme du libertinage :<br />
+                  <span className="text-gradient-animated font-black">plus responsable, plus libre, plus humaine.</span>
                 </p>
               </div>
-              <div>
-                <h3 className="text-2xl font-extrabold mb-4">🔗 Une plateforme pensée pour durer</h3>
-                <p className="text-muted-foreground leading-relaxed mb-4">
-                  Akoky n'est pas un simple service de rencontres. C'est une architecture complète qui réunit échanges entre membres, événements privés, contenus éditoriaux et applications dédiées, au sein d'un même écosystème.
-                </p>
-                <p className="text-muted-foreground leading-relaxed">
-                  Chaque fonctionnalité est conçue pour évoluer avec la communauté, sans dépendre des effets de mode ni d'algorithmes instables.
-                </p>
+            </Reveal>
+            <Reveal animation="fade-up" delay={400}>
+              <div className="text-center mt-12 flex gap-4 justify-center flex-wrap">
+                <Link to="/fr/vision" className="px-8 py-4 rounded-full font-bold btn-gradient-primary text-primary-foreground hover:-translate-y-1 transition-all duration-500">
+                  Découvrir la vision Akoky
+                </Link>
+                <Link to="/fr/libertinage" className="px-8 py-4 rounded-full font-bold bg-secondary text-foreground border border-border hover:bg-secondary/80 hover:-translate-y-1 hover:border-primary/30 transition-all duration-500">
+                  Comprendre le libertinage moderne
+                </Link>
               </div>
-            </div>
-            <div className="text-center mt-16">
-              <p className="text-xl font-semibold max-w-[900px] mx-auto">
-                Akoky, c'est une vision long terme du libertinage :<br />
-                <span className="text-primary">plus responsable, plus libre, plus humaine.</span>
-              </p>
-            </div>
-            <div className="text-center mt-12 flex gap-4 justify-center flex-wrap">
-              <Link to="/fr/vision" className="px-8 py-4 rounded-full font-bold btn-gradient-primary text-primary-foreground hover:-translate-y-0.5 transition-all">
-                Découvrir la vision Akoky
-              </Link>
-              <Link to="/fr/libertinage" className="px-8 py-4 rounded-full font-bold bg-secondary text-foreground border border-border hover:bg-secondary/80 hover:-translate-y-0.5 transition-all">
-                Comprendre le libertinage moderne
-              </Link>
-            </div>
+            </Reveal>
           </div>
         </section>
 
         {/* ═══════════ L'UNIVERS AKOKY (Trust) ═══════════ */}
         <section className="py-20">
           <div className="container">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-black">L'UNIVERS AKOKY</h2>
-              <p className="text-muted-foreground mt-4">Une plateforme complète et sécurisée pour rencontrer, échanger et partager au sein d'une communauté adulte.</p>
-            </div>
+            <Reveal animation="fade-up">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-black">L'UNIVERS AKOKY</h2>
+                <p className="text-muted-foreground mt-4">Une plateforme complète et sécurisée pour rencontrer, échanger et partager au sein d'une communauté adulte.</p>
+              </div>
+            </Reveal>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {UNIVERS_CARDS.map((card) => (
-                <a key={card.title} href={card.href} target="_blank" rel="noopener noreferrer" className="bg-card border border-border rounded-2xl p-8 card-hover-glow relative block">
-                  <div className="text-3xl mb-4">{card.icon}</div>
-                  <h3 className="font-bold mb-4">{card.title}</h3>
-                  <p className="text-muted-foreground">{card.desc}</p>
-                </a>
+              {UNIVERS_CARDS.map((card, i) => (
+                <Reveal key={card.title} animation="fade-up" delay={i * 150}>
+                  <a href={card.href} target="_blank" rel="noopener noreferrer" className="bg-card border border-border rounded-2xl p-8 card-hover-glow glow-border relative block h-full group">
+                    <div className="text-3xl mb-4 group-hover:scale-110 transition-transform duration-300 inline-block">{card.icon}</div>
+                    <h3 className="font-bold mb-4">{card.title}</h3>
+                    <p className="text-muted-foreground">{card.desc}</p>
+                  </a>
+                </Reveal>
               ))}
             </div>
           </div>
@@ -344,31 +395,39 @@ const Home = () => {
           <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
               <div>
-                <div className="text-primary font-bold tracking-widest mb-4 text-sm">PRESSE &amp; MÉDIAS</div>
-                <h2 className="text-3xl md:text-4xl font-black mb-6" style={{ whiteSpace: "pre-line" }}>
-                  AKOKY, UN ACTEUR OBSERVÉ DES RENCONTRES ADULTES MODERNES
-                </h2>
-                <p className="text-muted-foreground leading-relaxed mb-4">
-                  Akoky suscite l'intérêt des médias, des observateurs du numérique et des analystes du secteur pour son approche innovante, sécurisée et résolument moderne.
-                </p>
-                <p className="text-muted-foreground leading-relaxed mb-8">
-                  Plateforme communautaire, événements privés, contenus éditoriaux et applications dédiées : Akoky développe un écosystème complet, régulièrement analysé et relayé dans la presse spécialisée comme généraliste.
-                </p>
-                <Link to="/fr/presse" className="inline-block px-8 py-4 rounded-full font-bold btn-gradient-primary text-primary-foreground hover:-translate-y-0.5 transition-all">
-                  Voir les parutions &amp; dossiers presse
-                </Link>
+                <Reveal animation="fade-right">
+                  <div className="text-primary font-bold tracking-widest mb-4 text-sm">PRESSE &amp; MÉDIAS</div>
+                  <h2 className="text-3xl md:text-4xl font-black mb-6" style={{ whiteSpace: "pre-line" }}>
+                    AKOKY, UN ACTEUR OBSERVÉ DES RENCONTRES ADULTES MODERNES
+                  </h2>
+                </Reveal>
+                <Reveal animation="fade-right" delay={150}>
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    Akoky suscite l'intérêt des médias, des observateurs du numérique et des analystes du secteur pour son approche innovante, sécurisée et résolument moderne.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed mb-8">
+                    Plateforme communautaire, événements privés, contenus éditoriaux et applications dédiées : Akoky développe un écosystème complet, régulièrement analysé et relayé dans la presse spécialisée comme généraliste.
+                  </p>
+                </Reveal>
+                <Reveal animation="fade-up" delay={300}>
+                  <Link to="/fr/presse" className="inline-block px-8 py-4 rounded-full font-bold btn-gradient-primary text-primary-foreground hover:-translate-y-1 transition-all duration-500">
+                    Voir les parutions &amp; dossiers presse
+                  </Link>
+                </Reveal>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {PRESSE_ITEMS.map((item) => (
-                  <div key={item.title} className="bg-card border border-border rounded-xl p-5">
-                    <div className="flex items-start gap-3">
-                      <span className="text-xl">{item.icon}</span>
-                      <div>
-                        <h4 className="font-bold text-sm mb-1">{item.title}</h4>
-                        <p className="text-xs text-muted-foreground leading-relaxed">{item.desc}</p>
+                {PRESSE_ITEMS.map((item, i) => (
+                  <Reveal key={item.title} animation="fade-left" delay={i * 80}>
+                    <div className="bg-card border border-border rounded-xl p-5 glow-border group">
+                      <div className="flex items-start gap-3">
+                        <span className="text-xl group-hover:scale-110 transition-transform duration-300">{item.icon}</span>
+                        <div>
+                          <h4 className="font-bold text-sm mb-1">{item.title}</h4>
+                          <p className="text-xs text-muted-foreground leading-relaxed">{item.desc}</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </Reveal>
                 ))}
               </div>
             </div>
@@ -378,17 +437,21 @@ const Home = () => {
         {/* ═══════════ LA CONFIANCE AKOKY ═══════════ */}
         <section className="py-20">
           <div className="container">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-black mb-4">LA CONFIANCE AKOKY</h2>
-              <p className="text-muted-foreground">Comprendre, apprendre et explorer les rencontres entre adultes en toute sérénité.</p>
-            </div>
+            <Reveal animation="fade-up">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-black mb-4">LA CONFIANCE AKOKY</h2>
+                <p className="text-muted-foreground">Comprendre, apprendre et explorer les rencontres entre adultes en toute sérénité.</p>
+              </div>
+            </Reveal>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-              {CONFIANCE_CARDS.map((card) => (
-                <Link key={card.href} to={card.href} className="bg-card border border-border rounded-2xl p-8 card-hover-glow relative">
-                  <div className="text-3xl mb-4">{card.icon}</div>
-                  <h3 className="font-bold mb-3">{card.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{card.desc}</p>
-                </Link>
+              {CONFIANCE_CARDS.map((card, i) => (
+                <Reveal key={card.href} animation="scale-up" delay={i * 100}>
+                  <Link to={card.href} className="bg-card border border-border rounded-2xl p-8 card-hover-glow glow-border relative block h-full group">
+                    <div className="text-3xl mb-4 group-hover:scale-110 transition-transform duration-300 inline-block">{card.icon}</div>
+                    <h3 className="font-bold mb-3">{card.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{card.desc}</p>
+                  </Link>
+                </Reveal>
               ))}
             </div>
           </div>
@@ -397,26 +460,30 @@ const Home = () => {
         {/* ═══════════ ÉVÉNEMENTS À VENIR ═══════════ */}
         <section className="py-20">
           <div className="container">
-            <div className="text-center mb-12">
-              <div className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full mb-4 font-semibold text-xs">✨ ÉVÉNEMENTS À VENIR</div>
-              <h2 className="text-3xl md:text-4xl font-black mb-4">CE QUI SE PASSE SUR AKOKY</h2>
-              <p className="text-muted-foreground">Rejoignez des événements exclusifs et rencontrez des personnes exceptionnelles.</p>
-            </div>
+            <Reveal animation="fade-up">
+              <div className="text-center mb-12">
+                <div className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full mb-4 font-semibold text-xs animate-glow-pulse">✨ ÉVÉNEMENTS À VENIR</div>
+                <h2 className="text-3xl md:text-4xl font-black mb-4">CE QUI SE PASSE SUR AKOKY</h2>
+                <p className="text-muted-foreground">Rejoignez des événements exclusifs et rencontrez des personnes exceptionnelles.</p>
+              </div>
+            </Reveal>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {EVENT_CARDS.map((event, i) => (
-                <Link key={i} to="/fr/evenements" className="group bg-card border border-border rounded-2xl overflow-hidden card-hover-glow">
-                  <div className="h-[200px] overflow-hidden">
-                    <img loading="lazy" src={event.img} alt={event.alt} width="400" height="200" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="font-bold mb-2">{event.title}</h3>
-                    <p className="text-sm text-muted-foreground mb-4">{event.desc}</p>
-                    <div className="flex justify-between text-xs text-primary font-bold">
-                      <span>📍 {event.location}</span>
-                      <span>👥 {event.count}</span>
+                <Reveal key={i} animation="fade-up" delay={i * 150}>
+                  <Link to="/fr/evenements" className="group bg-card border border-border rounded-2xl overflow-hidden card-hover-glow glow-border block">
+                    <div className="h-[200px] overflow-hidden img-zoom">
+                      <img loading="lazy" src={event.img} alt={event.alt} width="400" height="200" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                     </div>
-                  </div>
-                </Link>
+                    <div className="p-6">
+                      <h3 className="font-bold mb-2">{event.title}</h3>
+                      <p className="text-sm text-muted-foreground mb-4">{event.desc}</p>
+                      <div className="flex justify-between text-xs text-primary font-bold">
+                        <span>📍 {event.location}</span>
+                        <span>👥 {event.count}</span>
+                      </div>
+                    </div>
+                  </Link>
+                </Reveal>
               ))}
             </div>
           </div>
@@ -425,21 +492,25 @@ const Home = () => {
         {/* ═══════════ COMMENT ÇA MARCHE ═══════════ */}
         <section className="py-20 bg-mid">
           <div className="container">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-black mb-4">COMMENT ÇA MARCHE</h2>
-              <p className="text-muted-foreground">Rejoindre AKOKY est simple et rapide.</p>
-            </div>
+            <Reveal animation="fade-up">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-black mb-4">COMMENT ÇA MARCHE</h2>
+                <p className="text-muted-foreground">Rejoindre AKOKY est simple et rapide.</p>
+              </div>
+            </Reveal>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 { step: "1", title: "Inscription", desc: <>Créez votre profil gratuitement en 2 minutes. Ajoutez vos préférences, photos et découvrez <Link to="/fr/debuter-libertinage" className="text-primary hover:underline">les premiers pas</Link> dans cet univers.</> },
                 { step: "2", title: "Exploration", desc: <>Parcourez les profils vérifiés, consultez notre <Link to="/fr/clubs" className="text-primary hover:underline">annuaire des clubs</Link> et explorez les <Link to="/fr/evenements" className="text-primary hover:underline">300 événements mensuels</Link>.</> },
                 { step: "3", title: "Rencontre", desc: <>Réservez vos places pour les <Link to="/fr/evenements" className="text-primary hover:underline">soirées exclusives</Link>, échangez via la messagerie et vivez des expériences respectueuses du <Link to="/fr/vision" className="text-primary hover:underline">consentement</Link>.</> },
-              ].map((item) => (
-                <div key={item.step} className="text-center">
-                  <div className="w-16 h-16 rounded-full icon-box-primary flex items-center justify-center text-xl font-bold mx-auto mb-6 text-primary-foreground">{item.step}</div>
-                  <h3 className="font-bold text-lg mb-4">{item.title}</h3>
-                  <p className="text-muted-foreground">{item.desc}</p>
-                </div>
+              ].map((item, i) => (
+                <Reveal key={item.step} animation="fade-up" delay={i * 200}>
+                  <div className="text-center group">
+                    <div className="w-16 h-16 rounded-full icon-box-primary flex items-center justify-center text-xl font-bold mx-auto mb-6 text-primary-foreground group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-primary/30 transition-all duration-500">{item.step}</div>
+                    <h3 className="font-bold text-lg mb-4">{item.title}</h3>
+                    <p className="text-muted-foreground">{item.desc}</p>
+                  </div>
+                </Reveal>
               ))}
             </div>
           </div>
@@ -448,17 +519,21 @@ const Home = () => {
         {/* ═══════════ ACCÈS RAPIDE ═══════════ */}
         <section className="py-20">
           <div className="container">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-black mb-4">ACCÈS RAPIDE</h2>
-              <p className="text-muted-foreground">Explorez l'univers Akoky en un seul geste</p>
-            </div>
+            <Reveal animation="fade-up">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-black mb-4">ACCÈS RAPIDE</h2>
+                <p className="text-muted-foreground">Explorez l'univers Akoky en un seul geste</p>
+              </div>
+            </Reveal>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-              {QUICK_ACCESS.map((item) => (
-                <Link key={item.href} to={item.href} className="bg-card border border-border rounded-2xl p-8 card-hover-glow">
-                  <div className="text-3xl mb-4">{item.icon}</div>
-                  <h3 className="font-bold mb-2">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.desc}</p>
-                </Link>
+              {QUICK_ACCESS.map((item, i) => (
+                <Reveal key={item.href} animation="fade-up" delay={i * 100}>
+                  <Link to={item.href} className="bg-card border border-border rounded-2xl p-8 card-hover-glow glow-border block h-full group">
+                    <div className="text-3xl mb-4 group-hover:scale-110 transition-transform duration-300 inline-block">{item.icon}</div>
+                    <h3 className="font-bold mb-2">{item.title}</h3>
+                    <p className="text-sm text-muted-foreground">{item.desc}</p>
+                  </Link>
+                </Reveal>
               ))}
             </div>
           </div>
@@ -467,19 +542,23 @@ const Home = () => {
         {/* ═══════════ REJOIGNEZ 1,5M ═══════════ */}
         <section className="py-20">
           <div className="container">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-black mb-4">REJOIGNEZ 1,5M DE MEMBRES</h2>
-              <p className="text-muted-foreground text-lg max-w-[600px] mx-auto">
-                Une plateforme communautaire adulte premium en Europe. Créez votre profil, explorez des clubs partenaires vérifiés et participez à des événements exclusifs.
-              </p>
-            </div>
+            <Reveal animation="blur-in">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-black mb-4">REJOIGNEZ 1,5M DE MEMBRES</h2>
+                <p className="text-muted-foreground text-lg max-w-[600px] mx-auto">
+                  Une plateforme communautaire adulte premium en Europe. Créez votre profil, explorez des clubs partenaires vérifiés et participez à des événements exclusifs.
+                </p>
+              </div>
+            </Reveal>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-              {STATS.map((stat) => (
-                <div key={stat.value} className="bg-card border border-border rounded-2xl p-8 text-center card-hover-glow">
-                  <div className="text-3xl mx-auto mb-6">{stat.icon}</div>
-                  <h3 className="font-bold text-lg mb-4">{stat.value}</h3>
-                  <p className="text-muted-foreground">{stat.desc}</p>
-                </div>
+              {STATS.map((stat, i) => (
+                <Reveal key={stat.value} animation="scale-up" delay={i * 150}>
+                  <div className="bg-card border border-border rounded-2xl p-8 text-center card-hover-glow glow-border group h-full">
+                    <div className="text-3xl mx-auto mb-6 group-hover:scale-125 transition-transform duration-500">{stat.icon}</div>
+                    <h3 className="font-bold text-lg mb-4 text-gradient-gold">{stat.value}</h3>
+                    <p className="text-muted-foreground">{stat.desc}</p>
+                  </div>
+                </Reveal>
               ))}
             </div>
           </div>
@@ -488,18 +567,22 @@ const Home = () => {
         {/* ═══════════ POURQUOI CHOISIR ═══════════ */}
         <section className="py-20 bg-mid">
           <div className="container">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-black mb-4">POURQUOI CHOISIR AKOKY ?</h2>
-              <p className="text-muted-foreground text-lg">L'excellence d'un écosystème communautaire adulte en Europe.</p>
-            </div>
+            <Reveal animation="fade-up">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-black mb-4">POURQUOI CHOISIR AKOKY ?</h2>
+                <p className="text-muted-foreground text-lg">L'excellence d'un écosystème communautaire adulte en Europe.</p>
+              </div>
+            </Reveal>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {WHY_CARDS.map((card) => (
-                <div key={card.title} className="bg-card border border-border rounded-2xl p-8 card-hover-glow">
-                  <h3 className="font-bold text-lg mb-4 flex items-center gap-3">
-                    <span className="text-3xl">{card.icon}</span> {card.title}
-                  </h3>
-                  <p className="text-muted-foreground leading-7">{card.desc}</p>
-                </div>
+              {WHY_CARDS.map((card, i) => (
+                <Reveal key={card.title} animation={i % 2 === 0 ? "fade-right" : "fade-left"} delay={i * 100}>
+                  <div className="bg-card border border-border rounded-2xl p-8 card-hover-glow glow-border group h-full">
+                    <h3 className="font-bold text-lg mb-4 flex items-center gap-3">
+                      <span className="text-3xl group-hover:scale-110 transition-transform duration-300">{card.icon}</span> {card.title}
+                    </h3>
+                    <p className="text-muted-foreground leading-7">{card.desc}</p>
+                  </div>
+                </Reveal>
               ))}
             </div>
           </div>
@@ -510,50 +593,58 @@ const Home = () => {
         {/* ═══════════ FAQ ═══════════ */}
         <section className="py-20">
           <div className="container max-w-[900px]">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-black mb-4">Questions Fréquentes</h2>
-              <p className="text-muted-foreground">Tout ce que vous devez savoir sur AKOKY</p>
-            </div>
+            <Reveal animation="fade-up">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-black mb-4">Questions Fréquentes</h2>
+                <p className="text-muted-foreground">Tout ce que vous devez savoir sur AKOKY</p>
+              </div>
+            </Reveal>
             <div className="flex flex-col gap-6">
               {FAQ_ITEMS.map((faq, i) => (
-                <div key={i} className="bg-card border border-border rounded-2xl p-6 cursor-pointer card-hover-glow" onClick={() => setOpenFaq(openFaq === i ? null : i)}>
-                  <div className="flex justify-between items-center gap-4">
-                    <h3 className="font-bold text-base md:text-lg">{faq.q}</h3>
-                    <span className={`text-primary transition-transform flex-shrink-0 ${openFaq === i ? "rotate-180" : ""}`}>▼</span>
+                <Reveal key={i} animation="fade-up" delay={i * 80}>
+                  <div className="bg-card border border-border rounded-2xl p-6 cursor-pointer card-hover-glow glow-border" onClick={() => setOpenFaq(openFaq === i ? null : i)}>
+                    <div className="flex justify-between items-center gap-4">
+                      <h3 className="font-bold text-base md:text-lg">{faq.q}</h3>
+                      <span className={`text-primary transition-transform duration-300 flex-shrink-0 ${openFaq === i ? "rotate-180" : ""}`}>▼</span>
+                    </div>
+                    <div className={`overflow-hidden transition-all duration-500 ${openFaq === i ? "max-h-[500px] opacity-100 mt-4" : "max-h-0 opacity-0"}`}>
+                      <p className="text-muted-foreground leading-7">{faq.a}</p>
+                    </div>
                   </div>
-                  {openFaq === i && <p className="text-muted-foreground mt-4 leading-7">{faq.a}</p>}
-                </div>
+                </Reveal>
               ))}
             </div>
           </div>
         </section>
 
         {/* ═══════════ COMPARATIF ═══════════ */}
-        <section className="py-12 text-center">
-          <p className="text-muted-foreground max-w-[700px] mx-auto mb-8">
-            Vous comparez AKOKY à d'autres plateformes ?{" "}
-            <Link to="/fr/akoky-vs-wyylde" className="text-primary font-semibold hover:underline">
-              Découvrez notre comparatif AKOKY vs Wyylde
-            </Link>.
-          </p>
-          <div className="max-w-[720px] mx-auto bg-primary/5 border border-primary/20 rounded-2xl px-8 py-8">
-            <p className="text-xs font-bold text-primary uppercase tracking-widest mb-3">Guide comparatif 2026</p>
-            <h2 className="text-xl font-extrabold mb-3">Quel est le meilleur site libertin en France ?</h2>
-            <p className="text-sm text-muted-foreground leading-7 mb-6">
-              Wyylde, NousLib, Gleese, JM&nbsp;Libertins, EntreCoquins, SexyLib — tous les sites libertins analysés et comparés dans un seul guide : fonctionnalités, tarifs, avis réels et faux profils.
+        <Reveal animation="fade-up">
+          <section className="py-12 text-center">
+            <p className="text-muted-foreground max-w-[700px] mx-auto mb-8">
+              Vous comparez AKOKY à d'autres plateformes ?{" "}
+              <Link to="/fr/akoky-vs-wyylde" className="text-primary font-semibold hover:underline">
+                Découvrez notre comparatif AKOKY vs Wyylde
+              </Link>.
             </p>
-            <Link to="/fr/meilleur-site-libertin" className="inline-flex items-center gap-2 px-7 py-3 rounded-full btn-gradient-primary text-primary-foreground font-extrabold text-sm hover:opacity-85 transition-opacity">
-              🏆 Voir le classement complet 2026
-            </Link>
-            <div className="flex flex-wrap gap-2 justify-center mt-5">
-              {COMPARATIF_LINKS.map((c) => (
-                <Link key={c.href} to={c.href} className="text-xs text-muted-foreground px-3 py-1.5 border border-border rounded-full hover:border-primary hover:text-primary transition-all">
-                  {c.label}
-                </Link>
-              ))}
+            <div className="max-w-[720px] mx-auto bg-primary/5 border border-primary/20 rounded-2xl px-8 py-8 glow-border">
+              <p className="text-xs font-bold text-primary uppercase tracking-widest mb-3">Guide comparatif 2026</p>
+              <h2 className="text-xl font-extrabold mb-3">Quel est le meilleur site libertin en France ?</h2>
+              <p className="text-sm text-muted-foreground leading-7 mb-6">
+                Wyylde, NousLib, Gleese, JM&nbsp;Libertins, EntreCoquins, SexyLib — tous les sites libertins analysés et comparés dans un seul guide : fonctionnalités, tarifs, avis réels et faux profils.
+              </p>
+              <Link to="/fr/meilleur-site-libertin" className="inline-flex items-center gap-2 px-7 py-3 rounded-full btn-gradient-primary text-primary-foreground font-extrabold text-sm hover:opacity-85 transition-opacity">
+                🏆 Voir le classement complet 2026
+              </Link>
+              <div className="flex flex-wrap gap-2 justify-center mt-5">
+                {COMPARATIF_LINKS.map((c) => (
+                  <Link key={c.href} to={c.href} className="text-xs text-muted-foreground px-3 py-1.5 border border-border rounded-full hover:border-primary hover:text-primary transition-all duration-300">
+                    {c.label}
+                  </Link>
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </Reveal>
       </main>
 
       <Footer />

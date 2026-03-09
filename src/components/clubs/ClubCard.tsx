@@ -65,17 +65,17 @@ const ClubCard = ({ club, onOpenDetail }: ClubCardProps) => {
 
   return (
     <article
-      className="group border border-border rounded-xl bg-card hover:border-primary hover:shadow-lg hover:shadow-primary/5 transition-all duration-200 overflow-hidden cursor-pointer"
+      className="group border border-border rounded-xl bg-card hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 overflow-hidden cursor-pointer hover:-translate-y-1 glow-border"
       onClick={handleClick}
       itemScope
       itemType="https://schema.org/LocalBusiness"
     >
       {/* Carousel */}
-      <div className="aspect-[16/7] overflow-hidden relative">
+      <div className="aspect-[16/7] overflow-hidden relative img-zoom">
         <img
           src={images[imgIdx]}
           alt={`${club.name} — ${club.type} à ${club.city}`}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          className="w-full h-full object-cover transition-transform duration-700"
           loading="lazy"
           itemProp="image"
         />
@@ -143,7 +143,7 @@ const ClubCard = ({ club, onOpenDetail }: ClubCardProps) => {
             <p className="text-[10px] text-muted-foreground">🕐 {club.schedule.split(";")[0]}</p>
           )}
         </div>
-        <span className="inline-flex items-center gap-1 text-primary text-xs font-semibold mt-2 group-hover:gap-2 transition-all">
+        <span className="inline-flex items-center gap-1 text-primary text-xs font-semibold mt-2 group-hover:gap-2.5 group-hover:translate-x-1 transition-all duration-300">
           Voir la fiche détaillée →
         </span>
       </div>
