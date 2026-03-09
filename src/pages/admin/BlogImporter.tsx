@@ -292,7 +292,7 @@ const BlogImporter = () => {
             <Button
               onClick={handleStart}
               disabled={isRunning || urlCount === 0}
-              className="bg-primary text-primary-foreground font-bold"
+              className="font-bold"
             >
               {isRunning ? (
                 <>
