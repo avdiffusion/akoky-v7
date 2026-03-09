@@ -82,7 +82,7 @@ export async function extractUrlsFromSitemap(): Promise<string[]> {
  * Extract slug from URL
  */
 function extractSlugFromUrl(url: string): string {
-  const match = url.match(/\/fr\/blog\/([^/?]+)/);
+  const match = url.match(/\/blog\/([^/?]+)/);
   return match ? match[1] : "";
 }
 
