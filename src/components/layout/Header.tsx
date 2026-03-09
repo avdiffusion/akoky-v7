@@ -109,6 +109,13 @@ const Header = ({ lang = "fr" }: HeaderProps) => {
   const concours = CONCOURS_LABELS[lang];
   const currentLang = LANGUAGES.find((l) => l.code === lang) || LANGUAGES[0];
 
+  const cycleTheme = () => {
+    const next = theme === "light" ? "dark" : theme === "dark" ? "system" : "light";
+    setTheme(next);
+  };
+
+  const ThemeIcon = theme === "light" ? Sun : theme === "dark" ? Moon : Monitor;
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", onScroll, { passive: true });
