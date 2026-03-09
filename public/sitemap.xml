@@ -1,9 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://akoky.com/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <lastmod>2026-02-19</lastmod>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ═══ FR ═══ -->
+  <url><loc>https://akoky.com/fr</loc><changefreq>weekly</changefreq><priority>1.0</priority><lastmod>2026-03-09</lastmod></url>
+  <url><loc>https://akoky.com/fr/akoky</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/fr/application</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/fr/libertinage</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://akoky.com/fr/debuter-libertinage</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://akoky.com/fr/clubbing</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://akoky.com/fr/clubs-libertins</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://akoky.com/fr/saunas-libertins</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/fr/evenements</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://akoky.com/fr/live</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://akoky.com/fr/vip</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/fr/lexique</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/fr/jeux</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://akoky.com/fr/vision</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://akoky.com/fr/presse</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://akoky.com/fr/contact</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://akoky.com/fr/avis</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://akoky.com/fr/parrainage</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://akoky.com/fr/blog</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/fr/concours</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://akoky.com/fr/actualites-libertines</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://akoky.com/fr/premier-club-libertin</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/fr/premier-rendez-vous-libertin</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/fr/questions-debutants-libertinage</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/fr/guide-libertin-france</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://akoky.com/fr/guide-ultime-libertinage-france</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://akoky.com/fr/meilleur-site-libertin</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/fr/akoky-vs-wyylde</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://akoky.com/fr/akoky-vs-nouslib</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://akoky.com/fr/clubs-libertins-paris</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/fr/clubs-libertins-lyon</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/fr/clubs-libertins-marseille</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/fr/clubs-libertins-bordeaux</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://akoky.com/fr/clubs-libertins-toulouse</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://akoky.com/fr/clubs-libertins-nice</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://akoky.com/fr/clubs-libertins-lille</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://akoky.com/fr/clubs-libertins-nantes</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://akoky.com/fr/clubs-libertins-strasbourg</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://akoky.com/fr/clubs-libertins-bruxelles</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://akoky.com/fr/clubs-libertins-geneve</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- ═══ ES ═══ -->
+  <url><loc>https://akoky.com/es</loc><changefreq>weekly</changefreq><priority>1.0</priority><lastmod>2026-03-09</lastmod></url>
+  <url><loc>https://akoky.com/es/akoky</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/es/libertinaje</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://akoky.com/es/empezar-libertinaje</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://akoky.com/es/clubes-libertinos</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://akoky.com/es/clubbing</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://akoky.com/es/saunas-libertinos</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/es/eventos</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://akoky.com/es/live</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://akoky.com/es/vip</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/es/app</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/es/vision</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://akoky.com/es/contacto</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://akoky.com/es/blog</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/es/mejor-sitio-libertino</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/es/akoky-vs-wyylde</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://akoky.com/es/juegos</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- ═══ DE ═══ -->
+  <url><loc>https://akoky.com/de</loc><changefreq>weekly</changefreq><priority>1.0</priority><lastmod>2026-03-09</lastmod></url>
+  <url><loc>https://akoky.com/de/akoky</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/de/libertinismus</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://akoky.com/de/libertinismus-anfangen</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://akoky.com/de/libertine-clubs</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://akoky.com/de/clubbing</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://akoky.com/de/saunas</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/de/events</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://akoky.com/de/live</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://akoky.com/de/vip</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/de/app</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/de/vision</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://akoky.com/de/kontakt</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://akoky.com/de/lexikon</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/de/spiele</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://akoky.com/de/blog</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/de/beste-libertine-seite</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/de/akoky-vs-wyylde</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- ═══ IT ═══ -->
+  <url><loc>https://akoky.com/it</loc><changefreq>weekly</changefreq><priority>1.0</priority><lastmod>2026-03-09</lastmod></url>
+  <url><loc>https://akoky.com/it/akoky</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/it/libertinismo</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://akoky.com/it/iniziare-libertinismo</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://akoky.com/it/club-libertini</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://akoky.com/it/clubbing</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://akoky.com/it/saune-libertine</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/it/eventi</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://akoky.com/it/live</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://akoky.com/it/vip</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/it/app</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/it/visione</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://akoky.com/it/contatto</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://akoky.com/it/lessico-libertino</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/it/giochi</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://akoky.com/it/blog</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/it/miglior-sito-libertino</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/it/akoky-vs-wyylde</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://akoky.com/it/club-libertini-milano</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/it/club-libertini-roma</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- ═══ PT ═══ -->
+  <url><loc>https://akoky.com/pt</loc><changefreq>weekly</changefreq><priority>1.0</priority><lastmod>2026-03-09</lastmod></url>
+  <url><loc>https://akoky.com/pt/akoky</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/pt/libertinismo</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://akoky.com/pt/comecar-libertinagem</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://akoky.com/pt/clubes-libertinos</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://akoky.com/pt/clubbing</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://akoky.com/pt/saunas-libertinos</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/pt/eventos</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://akoky.com/pt/live</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://akoky.com/pt/vip</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/pt/app</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/pt/visao</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://akoky.com/pt/contato</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://akoky.com/pt/lexico-libertino</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/pt/jogos</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://akoky.com/pt/blog</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/pt/melhor-sitio-libertino</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://akoky.com/pt/akoky-vs-wyylde</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
