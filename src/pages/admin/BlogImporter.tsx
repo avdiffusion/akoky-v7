@@ -11,6 +11,12 @@ import {
   extractUrlsFromSitemap,
   type ImportJob,
 } from "@/lib/blog-importer";
+import {
+  getNotDownloadedImages,
+  exportDownloadScript,
+  clearPendingImages,
+  type ImageMapping,
+} from "@/lib/blog-image-downloader";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
@@ -25,6 +31,9 @@ import {
   FileText,
   Download,
   ArrowLeft,
+  Image,
+  Copy,
+  Trash2,
 } from "lucide-react";
 import { toast } from "sonner";
 
@@ -33,6 +42,7 @@ const BlogImporter = () => {
   const [job, setJob] = useState<ImportJob | null>(null);
   const [isRunning, setIsRunning] = useState(false);
   const [urlCount, setUrlCount] = useState<number | null>(null);
+  const [pendingImages, setPendingImages] = useState<ImageMapping[]>([]);
 
   useEffect(() => {
     if (!isBlogAdminAuthenticated()) {
@@ -46,7 +56,15 @@ const BlogImporter = () => {
     
     // Count URLs in sitemap
     extractUrlsFromSitemap().then(urls => setUrlCount(urls.length));
+    
+    // Load pending images
+    setPendingImages(getNotDownloadedImages());
   }, [navigate]);
+
+  // Refresh pending images when job updates
+  useEffect(() => {
+    setPendingImages(getNotDownloadedImages());
+  }, [job]);
 
   const handleStart = async () => {
     try {
@@ -63,6 +81,7 @@ const BlogImporter = () => {
       });
       
       setIsRunning(false);
+      setPendingImages(getNotDownloadedImages());
       toast.success("✅ Import terminé !");
     } catch (error) {
       console.error("Error starting import:", error);
@@ -89,6 +108,7 @@ const BlogImporter = () => {
     });
     
     setIsRunning(false);
+    setPendingImages(getNotDownloadedImages());
     toast.success("✅ Import terminé !");
   };
 
@@ -98,6 +118,32 @@ const BlogImporter = () => {
       setJob(null);
       setIsRunning(false);
       toast.success("Import réinitialisé");
+    }
+  };
+
+  const handleCopyDownloadScript = () => {
+    const script = exportDownloadScript();
+    navigator.clipboard.writeText(script);
+    toast.success("Script copié dans le presse-papier !");
+  };
+
+  const handleDownloadScript = () => {
+    const script = exportDownloadScript();
+    const blob = new Blob([script], { type: "text/plain" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "download-blog-images.sh";
+    a.click();
+    URL.revokeObjectURL(url);
+    toast.success("Script téléchargé !");
+  };
+
+  const handleClearImages = () => {
+    if (confirm("Vider la liste des images en attente ?")) {
+      clearPendingImages();
+      setPendingImages([]);
+      toast.success("Liste des images vidée");
     }
   };
 
@@ -224,7 +270,7 @@ const BlogImporter = () => {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-6">
               <div className="text-center p-3 bg-muted/50 rounded-lg">
                 <div className="text-2xl font-bold text-primary">
                   {job.successCount}
@@ -248,6 +294,12 @@ const BlogImporter = () => {
                   {job.totalUrls - job.processedUrls}
                 </div>
                 <div className="text-xs text-muted-foreground">Restants</div>
+              </div>
+              <div className="text-center p-3 bg-primary/10 rounded-lg border border-primary/20">
+                <div className="text-2xl font-bold text-primary">
+                  {job.imagesCount || 0}
+                </div>
+                <div className="text-xs text-muted-foreground">Images</div>
               </div>
             </div>
 
@@ -314,6 +366,76 @@ const BlogImporter = () => {
           </Card>
         )}
 
+        {/* Pending Images Section */}
+        {pendingImages.length > 0 && (
+          <Card className="p-6 mt-6 border-primary/20">
+            <div className="flex items-start justify-between mb-4">
+              <div className="flex items-center gap-3">
+                <Image className="h-6 w-6 text-primary" />
+                <div>
+                  <h3 className="font-bold">Images à télécharger</h3>
+                  <p className="text-sm text-muted-foreground">
+                    {pendingImages.length} images détectées dans les articles
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={handleCopyDownloadScript}
+                >
+                  <Copy className="h-4 w-4 mr-1" /> Copier Script
+                </Button>
+                <Button
+                  variant="default"
+                  size="sm"
+                  onClick={handleDownloadScript}
+                >
+                  <Download className="h-4 w-4 mr-1" /> Télécharger Script
+                </Button>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={handleClearImages}
+                >
+                  <Trash2 className="h-4 w-4" />
+                </Button>
+              </div>
+            </div>
+
+            <div className="bg-muted/50 rounded-lg p-4 max-h-60 overflow-y-auto">
+              <div className="space-y-2">
+                {pendingImages.slice(0, 20).map((img, i) => (
+                  <div key={i} className="flex items-center gap-2 text-xs">
+                    <span className={img.downloaded ? "text-primary" : "text-muted-foreground"}>
+                      {img.downloaded ? "✅" : "📷"}
+                    </span>
+                    <span className="font-mono truncate flex-1">{img.filename}</span>
+                    <a
+                      href={img.originalUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:underline"
+                    >
+                      Source
+                    </a>
+                  </div>
+                ))}
+                {pendingImages.length > 20 && (
+                  <p className="text-xs text-muted-foreground mt-2">
+                    ... et {pendingImages.length - 20} autres images
+                  </p>
+                )}
+              </div>
+            </div>
+
+            <p className="text-xs text-muted-foreground mt-4">
+              💡 Exécutez le script bash dans le terminal pour télécharger toutes les images automatiquement vers <code className="bg-muted px-1 rounded">public/images/blog/</code>
+            </p>
+          </Card>
+        )}
+
         {/* Instructions */}
         <div className="mt-6 text-sm text-muted-foreground">
           <h4 className="font-semibold mb-2">ℹ️ Comment ça marche ?</h4>
@@ -322,6 +444,7 @@ const BlogImporter = () => {
             <li>Chaque URL est visitée et le contenu est récupéré</li>
             <li>Les articles existants sont ignorés (pas de doublons)</li>
             <li>Le contenu est nettoyé et adapté au format interne</li>
+            <li>Les images sont mappées vers <code className="bg-muted px-1 rounded">/images/blog/</code></li>
             <li>Les articles sont sauvegardés automatiquement</li>
           </ol>
           <p className="mt-4 text-xs">
