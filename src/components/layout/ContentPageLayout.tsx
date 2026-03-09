@@ -3,6 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import { Reveal } from "@/hooks/useScrollReveal";
 import {
   Accordion,
   AccordionContent,
@@ -75,7 +76,6 @@ const ContentPageLayout = ({
     window.scrollTo(0, 0);
   }, []);
 
-  // Build FAQ schema if FAQ exists
   const faqSchema = faq && faq.length > 0 ? {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -142,52 +142,64 @@ const ContentPageLayout = ({
             </div>
             <div className="container relative z-20 max-w-4xl mx-auto text-center">
               {breadcrumb && (
-                <nav className="flex items-center justify-center gap-2 text-sm text-white/60 mb-6 flex-wrap">
-                  <Link to={homeHref} className="hover:text-primary transition-colors">{homeLabel}</Link>
-                  {breadcrumb.map((item, idx) => (
-                    <span key={idx} className="flex items-center gap-2">
-                      <span>›</span>
-                      {item.href ? (
-                        <Link to={item.href} className="hover:text-primary transition-colors">{item.label}</Link>
-                      ) : (
-                        <span className="text-white">{item.label}</span>
-                      )}
-                    </span>
-                  ))}
-                </nav>
+                <Reveal animation="fade-down" duration={600}>
+                  <nav className="flex items-center justify-center gap-2 text-sm text-white/60 mb-6 flex-wrap">
+                    <Link to={homeHref} className="hover:text-primary transition-colors">{homeLabel}</Link>
+                    {breadcrumb.map((item, idx) => (
+                      <span key={idx} className="flex items-center gap-2">
+                        <span>›</span>
+                        {item.href ? (
+                          <Link to={item.href} className="hover:text-primary transition-colors">{item.label}</Link>
+                        ) : (
+                          <span className="text-white">{item.label}</span>
+                        )}
+                      </span>
+                    ))}
+                  </nav>
+                </Reveal>
               )}
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight font-display">
-                {heroTitle}
-              </h1>
-              <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
-                {heroSubtitle}
-              </p>
+              <Reveal animation="blur-in" duration={1000} delay={100}>
+                <h1 className="text-3xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight font-display">
+                  {heroTitle}
+                </h1>
+              </Reveal>
+              <Reveal animation="fade-up" duration={800} delay={300}>
+                <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                  {heroSubtitle}
+                </p>
+              </Reveal>
             </div>
           </section>
         ) : (
           <section className="relative min-h-[60vh] flex items-center justify-center pt-24 pb-16 px-4 overflow-hidden bg-gradient-to-b from-black via-card to-background">
             <div className="container relative z-20 max-w-4xl mx-auto text-center">
               {breadcrumb && (
-                <nav className="flex items-center justify-center gap-2 text-sm text-white/60 mb-6 flex-wrap">
-                  <Link to={homeHref} className="hover:text-primary transition-colors">{homeLabel}</Link>
-                  {breadcrumb.map((item, idx) => (
-                    <span key={idx} className="flex items-center gap-2">
-                      <span>›</span>
-                      {item.href ? (
-                        <Link to={item.href} className="hover:text-primary transition-colors">{item.label}</Link>
-                      ) : (
-                        <span className="text-white">{item.label}</span>
-                      )}
-                    </span>
-                  ))}
-                </nav>
+                <Reveal animation="fade-down" duration={600}>
+                  <nav className="flex items-center justify-center gap-2 text-sm text-white/60 mb-6 flex-wrap">
+                    <Link to={homeHref} className="hover:text-primary transition-colors">{homeLabel}</Link>
+                    {breadcrumb.map((item, idx) => (
+                      <span key={idx} className="flex items-center gap-2">
+                        <span>›</span>
+                        {item.href ? (
+                          <Link to={item.href} className="hover:text-primary transition-colors">{item.label}</Link>
+                        ) : (
+                          <span className="text-white">{item.label}</span>
+                        )}
+                      </span>
+                    ))}
+                  </nav>
+                </Reveal>
               )}
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight font-display">
-                {heroTitle}
-              </h1>
-              <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
-                {heroSubtitle}
-              </p>
+              <Reveal animation="blur-in" duration={1000} delay={100}>
+                <h1 className="text-3xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight font-display">
+                  {heroTitle}
+                </h1>
+              </Reveal>
+              <Reveal animation="fade-up" duration={800} delay={300}>
+                <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                  {heroSubtitle}
+                </p>
+              </Reveal>
             </div>
           </section>
         )}
@@ -199,19 +211,23 @@ const ContentPageLayout = ({
         {faq && faq.length > 0 && (
           <section className="py-16 md:py-24 px-4">
             <div className="container max-w-3xl mx-auto">
-              <h2 className="text-3xl font-bold text-foreground mb-10 text-center font-display">
-                {faqTitle}
-              </h2>
+              <Reveal animation="fade-up">
+                <h2 className="text-3xl font-bold text-foreground mb-10 text-center font-display">
+                  {faqTitle}
+                </h2>
+              </Reveal>
               <Accordion type="single" collapsible className="w-full space-y-4">
                 {faq.map((item, idx) => (
-                  <AccordionItem key={idx} value={`item-${idx}`} className="border border-border rounded-xl px-4 bg-card/50 data-[state=open]:border-primary/30">
-                    <AccordionTrigger className="text-left text-lg font-medium hover:text-primary transition-colors py-6">
-                      {item.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground text-base leading-relaxed pb-6">
-                      {item.answer}
-                    </AccordionContent>
-                  </AccordionItem>
+                  <Reveal key={idx} animation="fade-up" delay={idx * 80}>
+                    <AccordionItem value={`item-${idx}`} className="border border-border rounded-xl px-4 bg-card/50 data-[state=open]:border-primary/30 glow-border transition-all duration-500">
+                      <AccordionTrigger className="text-left text-lg font-medium hover:text-primary transition-colors py-6">
+                        {item.question}
+                      </AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground text-base leading-relaxed pb-6">
+                        {item.answer}
+                      </AccordionContent>
+                    </AccordionItem>
+                  </Reveal>
                 ))}
               </Accordion>
             </div>
@@ -221,27 +237,34 @@ const ContentPageLayout = ({
         {/* CTA */}
         <section className="py-24 px-4 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-t from-black via-primary/5 to-black z-0" />
+          <div className="absolute inset-0 gold-particles opacity-20 z-0" />
           <div className="container relative z-10 max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-black text-white mb-8 font-display">
-              {cta.title}
-            </h2>
-            <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-              {cta.desc}
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a
-                href="https://app.akoky.com/register"
-                className="px-8 py-4 rounded-full bg-gradient-to-r from-primary to-primary-dark text-black font-black text-lg hover:scale-105 hover:shadow-xl hover:shadow-primary/20 transition-all w-full sm:w-auto"
-              >
-                {cta.register}
-              </a>
-              <Link
-                to={cta.clubsHref}
-                className="px-8 py-4 rounded-full bg-white/5 border border-white/10 text-white font-bold text-lg hover:bg-white/10 transition-all w-full sm:w-auto"
-              >
-                {cta.clubs}
-              </Link>
-            </div>
+            <Reveal animation="blur-in" duration={800}>
+              <h2 className="text-4xl md:text-5xl font-black text-white mb-8 font-display">
+                {cta.title}
+              </h2>
+            </Reveal>
+            <Reveal animation="fade-up" delay={200}>
+              <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+                {cta.desc}
+              </p>
+            </Reveal>
+            <Reveal animation="scale-up" delay={400}>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a
+                  href="https://app.akoky.com/register"
+                  className="group px-8 py-4 rounded-full bg-gradient-to-r from-primary to-primary-dark text-black font-black text-lg hover:scale-105 hover:shadow-xl hover:shadow-primary/20 transition-all duration-500 w-full sm:w-auto relative overflow-hidden"
+                >
+                  <span className="relative z-10">{cta.register}</span>
+                </a>
+                <Link
+                  to={cta.clubsHref}
+                  className="px-8 py-4 rounded-full bg-white/5 border border-white/10 text-white font-bold text-lg hover:bg-white/10 hover:border-primary/30 transition-all duration-500 w-full sm:w-auto"
+                >
+                  {cta.clubs}
+                </Link>
+              </div>
+            </Reveal>
           </div>
         </section>
       </main>
