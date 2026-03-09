@@ -226,13 +226,13 @@ const BlogImporter = () => {
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
               <div className="text-center p-3 bg-muted/50 rounded-lg">
-                <div className="text-2xl font-bold text-green-600">
+                <div className="text-2xl font-bold text-primary">
                   {job.successCount}
                 </div>
                 <div className="text-xs text-muted-foreground">Importés</div>
               </div>
               <div className="text-center p-3 bg-muted/50 rounded-lg">
-                <div className="text-2xl font-bold text-orange-600">
+                <div className="text-2xl font-bold text-muted-foreground">
                   {job.duplicateCount}
                 </div>
                 <div className="text-xs text-muted-foreground">Doublons</div>
