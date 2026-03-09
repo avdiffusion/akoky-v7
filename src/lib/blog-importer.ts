@@ -5,6 +5,11 @@
 
 import { BlogArticle, BlogCategory } from "./blog-types";
 import { generateId, saveArticle, getAllArticles } from "./blog-store";
+import { 
+  processContentImages, 
+  addPendingImages, 
+  ImageMapping 
+} from "./blog-image-downloader";
 
 // ═══════════════════════════════════════════════════════════════
 // TYPES
