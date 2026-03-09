@@ -65,7 +65,7 @@ const ClubCard = ({ club, onOpenDetail }: ClubCardProps) => {
 
   return (
     <article
-      className="group border border-border rounded-xl bg-card hover:border-primary hover:shadow-lg hover:shadow-primary/5 transition-all duration-200 overflow-hidden cursor-pointer"
+      className="group border border-border rounded-xl bg-card hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 transition-all duration-500 overflow-hidden cursor-pointer hover:-translate-y-1 glow-border"
       onClick={handleClick}
       itemScope
       itemType="https://schema.org/LocalBusiness"
