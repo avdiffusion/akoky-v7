@@ -1,4 +1,23 @@
 {
-  "nav": { "home": "", "about": "", "start": "", "blog": "", "faq": "", "reviews": "", "safe": "", "contest": "", "login": "", "language": "" },
-  "footer": { "description": "", "discover": "", "community": "", "resources": "", "copyright": "", "disclaimer": "", "languages_available": "" }
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "start": "Começar",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "reviews": "AVALIAÇÕES",
+    "safe": "SAFE",
+    "contest": "Concurso",
+    "login": "Entrar",
+    "language": "Idioma"
+  },
+  "footer": {
+    "description": "A maior comunidade libertina da Europa. Um espaço elegante, seguro e autêntico.",
+    "discover": "Descobrir",
+    "community": "Comunidade",
+    "resources": "Recursos",
+    "copyright": "Todos os direitos reservados.",
+    "disclaimer": "AKOKY é uma marca registrada. O conteúdo deste site é reservado a adultos.",
+    "languages_available": "Akoky está disponível em 6 idiomas"
+  }
 }
