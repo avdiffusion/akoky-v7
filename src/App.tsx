@@ -319,6 +319,7 @@ const App = () => (
           <Toaster />
           <Sonner />
           <BrowserRouter>
+            <AutoReveal />
             <Routes>
 
             {/* ── RACINE ─────────────────────────────────────────────────── */}
