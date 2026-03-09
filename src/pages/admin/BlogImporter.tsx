@@ -160,10 +160,10 @@ const BlogImporter = () => {
                   <Loader2 className="h-5 w-5 text-primary animate-spin" />
                 )}
                 {job.status === "completed" && (
-                  <CheckCircle2 className="h-5 w-5 text-green-500" />
+                  <CheckCircle2 className="h-5 w-5 text-primary" />
                 )}
                 {job.status === "paused" && (
-                  <Pause className="h-5 w-5 text-orange-500" />
+                  <Pause className="h-5 w-5 text-muted-foreground" />
                 )}
                 {job.status === "error" && (
                   <AlertCircle className="h-5 w-5 text-destructive" />
