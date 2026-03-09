@@ -136,7 +136,7 @@ const Header = ({ lang = "fr" }: HeaderProps) => {
         <div className="container flex items-center justify-between h-[70px] gap-8">
           {/* Logo */}
           <Link to={`/${lang}`} className="flex-shrink-0 z-[1001]">
-            <span className="text-2xl font-black tracking-wider text-gradient-gold">AKOKY</span>
+            <img src="/images/logo-akoky.webp" alt="AKOKY" className="h-10 w-auto" />
           </Link>
 
           {/* Desktop Nav */}
@@ -294,7 +294,9 @@ const Header = ({ lang = "fr" }: HeaderProps) => {
         >
           {/* Mobile Header */}
           <div className="flex justify-between items-center pb-4 border-b border-border">
-            <Link to={`/${lang}`} className="text-xl font-black text-gradient-gold">AKOKY</Link>
+            <Link to={`/${lang}`}>
+              <img src="/images/logo-akoky.webp" alt="AKOKY" className="h-8 w-auto" />
+            </Link>
             <button
               onClick={() => setMobileOpen(false)}
               className="p-2 min-w-[44px] min-h-[44px] flex items-center justify-center hover:text-primary transition-all"
